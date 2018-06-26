@@ -17,7 +17,7 @@ subCategories: [ "Advanced I/O" ]
 
 [float]
 === Beschreibung
-Generiert einen Ton mit der angegebenen Frequenz (und 50% duty cycle) auf einem Pin. Eine Dauer des Tons kann festgelegt werden; Sonst wird der Ton abgespielt, bis ein link:../noTone[noTone()] aufgerufen wird.
+Generiert einen Ton mit der angegebenen Frequenz (und 50% duty cycle) auf einem Pin. Eine Dauer des Tons kann festgelegt werden; Sonst wird der Ton abgespielt, bis ein link:noTone.adoc[noTone()] aufgerufen wird.
 Der Pin kann an einen Piezo oder an einen Lautsprecher angeschlossen werden, um Töne abzuspielen.
 
 Nur ein Ton kann gleichzeitig abgespielt werden. Wenn bereits ein Ton auf einem anderen Pin abgespielt wird, hat `tone()` auf einem 2. Pin keinen Effekt. Wenn der Ton auf dem gleichen Pin gespielt wird, setzt

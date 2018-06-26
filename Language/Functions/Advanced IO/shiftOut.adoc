@@ -103,7 +103,7 @@ void loop() {
 
 [float]
 === Anmerkungen und Warnungen
-Der dataPin und der clockPin müssen vorher als Outputs konfiguriert sein. Dies wird mit dem Aufruf von link:../../digital-io/pinmode[pinMode()] erreicht.
+Der dataPin und der clockPin müssen vorher als Outputs konfiguriert sein. Dies wird mit dem Aufruf von link:../Digital%20IO/pinMode.adoc[pinMode()] erreicht.
 
 shiftOut shiftet aktuell maximal 1 Byte (8 bits) hinaus. Wenn Werte größer 255 hinausgeshiftet werden sollen, benötigt das Register 2 Schritte.
 [source,arduino]
