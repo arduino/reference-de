@@ -30,7 +30,7 @@ Stoppt die Tonerzeugung, die von `tone()` erzeugt wurde. Macht nichts, wenn kein
 `pin`: Der Pin, auf dem die Tonerzeugung gestoppt werden soll
 
 [float]
-=== Returns
+=== Gibt zurück
 Nichts
 
 --
