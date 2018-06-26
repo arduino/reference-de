@@ -16,7 +16,7 @@ aliases: [ /language/functions/advanced-io/noTone/ ]
 
 [float]
 === Beschreibung
-Stoppt die Rechteckschwingung, die von `tone()` erzeugt wurde. Macht nichts, wenn kein Ton erzeugt wurde.
+Stoppt die Tonerzeugung, die von `tone()` erzeugt wurde. Macht nichts, wenn kein Ton erzeugt wurde.
 [%hardbreaks]
 
 
@@ -45,7 +45,7 @@ Nichts
 
 [float]
 === Anmerkungen und Warnungen
-Wenn du mehrere Töne auf mehreren Pins abspielen willst, musst du noTone() auf einem Pin aufrufen, bevor du `tone()` auf dem nächsten Pin aufrufen kannst.
+Wenn du mehrere Töne auf mehreren Pins abspielen willst, musst du `noTone()` auf einem Pin aufrufen, bevor du `tone()` auf dem nächsten Pin aufrufen kannst.
 [%hardbreaks]
 
 --
