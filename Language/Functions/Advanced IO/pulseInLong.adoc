@@ -72,7 +72,7 @@ void loop() {
 
 [float]
 === Anmerkungen und Warnungen
-Diese Funktion verlässt sich auf `micros()` und kann somit in link:../../interrupts/nointerrupts[noInterrupts()] Kontexten nicht verwendet werden.
+Diese Funktion verlässt sich auf `micros()` und kann somit in link:../Interrupts/noInterrupts.adoc[noInterrupts()] Kontexten nicht verwendet werden.
 
 --
 // HOW TO USE SECTION ENDS
