@@ -45,7 +45,7 @@ Nichts
 
 [float]
 === Anmerkungen und Warnungen
-Wenn du mehrere Töne auf mehreren Pins abspielen willst, musst du `noTone()` auf einem Pin aufrufen, bevor du `tone()` auf dem nächsten Pin aufrufen kannst.
+Wenn du verschiedene Töne auf mehreren Pins spielen willst, musst du zunächst mit `noTone()` auf einem Pin den Ton stoppen und anschließend mit `tone()` auf dem nächsten Pin einen neuen Ton generieren.
 [%hardbreaks]
 
 --
