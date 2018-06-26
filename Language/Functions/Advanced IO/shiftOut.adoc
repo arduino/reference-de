@@ -12,12 +12,15 @@ subCategories: [ "Advanced I/O" ]
 --
 
 [float]
-=== Description
-Shifts out a byte of data one bit at a time. Starts from either the most (i.e. the leftmost) or least (rightmost) significant bit. Each bit is written in turn to a data pin, after which a clock pin is pulsed (taken high, then low) to indicate that the bit is available.
+=== Beschreibung
+Shiftet ein Byte von Daten hinaus, ein Bit pro Zeiteinheit. Beginnt entweder mit dem most significant bit (linkestes Bit) oder dem least significant bit (rechtestes Bit). Für jedes Bit wird der clock pin *HIGH* geschalten.
+Anschließend wird das nächste Bit gelesen und der clock pin auf *LOW* gesetzt.
 
-Note- if you're interfacing with a device that's clocked by rising edges, you'll need to make sure that the clock pin is low before the call to `shiftOut()`, e.g. with a call to `digitalWrite(clockPin, LOW)`.
+Wenn du mit einem Gerät arbeitest, das bei steigender Flanke die clock auslöst, musst du darauf achten, dass der clock pin *LOW* ist, bevor das erste Mal `shiftIn()` aufgerufen wird. Das ist z.B. möglich mit einem
+Aufruf von `digitalWrite(clockPin, LOW)`.
 
-This is a software implementation; see also the linkhttps://www.arduino.cc/en/Reference/SPI[SPI library], which provides a hardware implementation that is faster but works only on specific pins.
+Bemerkung: Das ist eine Softwareimplementierung; Arduino bietet auch eine link:https://www.arduino.cc/en/Reference/SPI[SPI-Bibliothek] an, die eine Hardwareimplementierung benutzt. Diese ist zwar schneller, funktioniert
+aber nur mit spezifischen Pins.
 [%hardbreaks]
 
 
@@ -27,19 +30,19 @@ This is a software implementation; see also the linkhttps://www.arduino.cc/en/Re
 
 
 [float]
-=== Parameters
-`dataPin`: the pin on which to output each bit (int)
+=== Parameter
+`dataPin`: Der Pin, auf dem jedes Bit ausgegeben wird (int)
 
-`clockPin`: the pin to toggle once the dataPin has been set to the correct value (int)
+`clockPin`: Der Pin, auf dem das Signal gesetzt wird, um den *dataPin* zu lesen (int)
 
-`bitOrder`: which order to shift out the bits; either MSBFIRST or LSBFIRST.
-(Most Significant Bit First, or, Least Significant Bit First)
+`bitOrder`: Welche Ordnung verwendet werden soll, um zu shiften. Entweder ist dies *MSBFIRST* oder *LSBFIRST*.
+(Most Significant Bit First oder Least Significant Bit First)
 
-`value`: the data to shift out. (byte)
+`value`: Die Daten, die hinausgeshiftet werden sollen. (byte)
 
 [float]
-=== Returns
-Nothing
+=== Gibt zurück
+Nichts
 
 --
 // OVERVIEW SECTION ENDS
@@ -52,43 +55,45 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-For accompanying circuit, see the http://arduino.cc/en/Tutorial/ShiftOut[tutorial on controlling a 74HC595 shift register].
+Für eingebaute Schaltkreise beachte das http://arduino.cc/en/Tutorial/ShiftOut[Tutorial, wie man ein 74HC595 Shift-Register verwendet].
+
+For accompanying circuit, see the 
 
 [source,arduino]
 ----
 //**************************************************************//
-//  Name    : shiftOutCode, Hello World                         //
+//  Name    : shiftOutCode, Hello World, Auf Deutsch übersetzt  //
 //  Author  : Carlyn Maw,Tom Igoe                               //
 //  Date    : 25 Oct, 2006                                      //
 //  Version : 1.0                                               //
-//  Notes   : Code for using a 74HC595 Shift Register           //
-//          : to count from 0 to 255                            //
+//  Notes   : Code, um mit einem 74HC595 Shift Register         //
+//          : von 0 to 255 zu zählen                            //
 //****************************************************************
 
-//Pin connected to ST_CP of 74HC595
+//Pin verbunden mit ST_CP des 74HC595
 int latchPin = 8;
-//Pin connected to SH_CP of 74HC595
+//Pin verbunden mit SH_CP des 74HC595
 int clockPin = 12;
-////Pin connected to DS of 74HC595
+////Pin verbunden mit DS des 74HC595
 int dataPin = 11;
 
 void setup() {
-  //set pins to output because they are addressed in the main loop
+  //Pins auf output setzen, weil diese im loop() verwendet werden
   pinMode(latchPin, OUTPUT);
   pinMode(clockPin, OUTPUT);
   pinMode(dataPin, OUTPUT);
 }
 
 void loop() {
-  //count up routine
+  //Zähler-Routine
   for (int j = 0; j < 256; j++) {
-    //ground latchPin and hold low for as long as you are transmitting
+	//Register pin grounden und low halten, solange übertragen wird
     digitalWrite(latchPin, LOW);
     shiftOut(dataPin, clockPin, LSBFIRST, j);
-    //return the latch pin high to signal chip that it
-    //no longer needs to listen for information
+	//Register pin auf high setzen, um dem Chip zu signalisieren, dass
+	//er nicht mehr länger Informationen lesen muss
     digitalWrite(latchPin, HIGH);
     delay(1000);
   }
@@ -97,24 +102,24 @@ void loop() {
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-The dataPin and clockPin must already be configured as outputs by a call to link:../../digital-io/pinmode[pinMode()].
+=== Anmerkungen und Warnungen
+Der dataPin und der clockPin müssen vorher als Outputs konfiguriert sein. Dies wird mit dem Aufruf von link:../../digital-io/pinmode[pinMode()] erreicht.
 
-shiftOut is currently written to output 1 byte (8 bits) so it requires a two step operation to output values larger than 255.
+shiftOut shiftet aktuell maximal 1 Byte (8 bits) hinaus. Wenn Werte größer 255 hinausgeshiftet werden sollen, benötigt das Register 2 Schritte.
 [source,arduino]
 ----
-// Do this for MSBFIRST serial
+// Beispiel für MSBFIRST:
 int data = 500;
-// shift out highbyte
+// High byte hinausshiften
 shiftOut(dataPin, clock, MSBFIRST, (data >> 8));
-// shift out lowbyte
+// Low byte hinausshiften
 shiftOut(dataPin, clock, MSBFIRST, data);
 
-// Or do this for LSBFIRST serial
+// Beispiel für LSBFIRST:
 data = 500;
-// shift out lowbyte
+// Low byte hinausshiften
 shiftOut(dataPin, clock, LSBFIRST, data);
-// shift out highbyte
+// Low byte hinausshiften
 shiftOut(dataPin, clock, LSBFIRST, (data >> 8));
 ----
 [%hardbreaks]
