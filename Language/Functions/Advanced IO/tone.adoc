@@ -16,14 +16,16 @@ subCategories: [ "Advanced I/O" ]
 --
 
 [float]
-=== Description
-Generates a square wave of the specified frequency (and 50% duty cycle) on a pin. A duration can be specified, otherwise the wave continues until a call to link:../noTone[noTone()]. The pin can be connected to a piezo buzzer or other speaker to play tones.
+=== Beschreibung
+Generiert einen Ton mit der angegebenen Frequenz (und 50% duty cycle) auf einem Pin. Eine Dauer des Tons kann festgelegt werden; Sonst wird der Ton abgespielt, bis ein link:../noTone[noTone()] aufgerufen wird.
+Der Pin kann an einen Piezo oder an einen Lautsprecher angeschlossen werden, um Töne abzuspielen.
 
-Only one tone can be generated at a time. If a tone is already playing on a different pin, the call to tone() will have no effect. If the tone is playing on the same pin, the call will set its frequency.
+Nur ein Ton kann gleichzeitig abgespielt werden. Wenn bereits ein Ton auf einem anderen Pin abgespielt wird, hat `tone()` auf einem 2. Pin keinen Effekt. Wenn der Ton auf dem gleichen Pin gespielt wird, setzt
+der Aufruf der Funktion die Frequenz des Tons.
 
-Use of the `tone()` function will interfere with PWM output on pins 3 and 11 (on boards other than the Mega).
+Die Nutzung der `tone()` Funktion interferiert mit PWM outputs auf Pin 3 und 11 (Auf Boards außer dem Arduino Mega).
 
-It is not possible to generate tones lower than 31Hz. For technical details, see https://github.com/bhagman/Tone#ugly-details[Brett Hagman's notes].
+Es ist nicht möglich, Töne mit einer Frequenz niedriger als 31Hz zu erstellen. Für technische Details, siehe https://github.com/bhagman/Tone#ugly-details[Brett Hagman's post].
 [%hardbreaks]
 
 
@@ -35,17 +37,17 @@ It is not possible to generate tones lower than 31Hz. For technical details, see
 [%hardbreaks]
 
 [float]
-=== Parameters
-`pin`: the pin on which to generate the tone
+=== Parameter
+`pin`: Der Pin, auf dem der Ton generiert werden soll
 
-`frequency`: the frequency of the tone in hertz - `unsigned int`
+`frequency`: Die Frequenz des Tons in Hertz (unsigned int)
 
-`duration`: the duration of the tone in milliseconds (optional) - `unsigned long`
+`duration`: Die Dauer des Tons in Millisekunden (optional) (unsigned long)
 [%hardbreaks]
 
 [float]
-=== Returns
-Nothing
+=== Gibt zurück
+Nichts
 
 --
 // OVERVIEW SECTION ENDS
@@ -58,8 +60,8 @@ Nothing
 --
 
 [float]
-=== Notes and Warnings
-If you want to play different pitches on multiple pins, you need to call `noTone()` on one pin before calling `tone() on the next pin.
+=== Anmerkungen und Warnungen
+Wenn du verschiedene Töne auf mehreren Pins spielen willst, musst du zunächst mit `noTone()` auf einem Pin den Ton stoppen und anschließend mit `tone()` auf dem nächsten Pin einen neuen Ton generieren.
 [%hardbreaks]
 
 --
@@ -71,16 +73,16 @@ If you want to play different pitches on multiple pins, you need to call `noTone
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
-* #LANGUAGE# link:../../analog-io/analogwrite[analogWrite()]
+* #LANGUAGE# link:../Analog%20IO/analogWrite.adoc[analogWrite()]
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/Tone[Tone^]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/Tone[Pitch follower^]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/Tone3[Simple Keyboard^]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/Tone4[multiple tones^]
+* #EXAMPLE# http://arduino.cc/en/Tutorial/Tone[Töne^]
+* #EXAMPLE# http://arduino.cc/en/Tutorial/Tone[Tonleiter^]
+* #EXAMPLE# http://arduino.cc/en/Tutorial/Tone3[Einfaches Keyboard^]
+* #EXAMPLE# http://arduino.cc/en/Tutorial/Tone4[Mehrere Töne^]
 * #EXAMPLE# http://arduino.cc/en/Tutorial/PWM[PWM^]
 
 --
