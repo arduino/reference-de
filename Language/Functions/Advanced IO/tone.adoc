@@ -61,7 +61,7 @@ Nichts
 
 [float]
 === Anmerkungen und Warnungen
-Wenn du verschiedene Töne auf mehreren Pins spielen willst, musst du zunächst mit `noTone()` auf einem Pin den Ton stoppen und anschließend mit `tone()` auf dem nächsten Pin einen neuen Ton generieren.
+Wenn du verschiedene Töne auf mehreren Pins spielen willst, musst du zunächst mit link:noTone.adoc[noTone()] auf einem Pin den Ton stoppen und anschließend mit `tone()` auf dem nächsten Pin einen neuen Ton generieren.
 [%hardbreaks]
 
 --
