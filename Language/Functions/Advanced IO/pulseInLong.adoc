@@ -16,10 +16,10 @@ subCategories: [ "Advanced I/O" ]
 --
 
 [float]
-=== Description
-Reads a pulse (either HIGH or LOW) on a pin. For example, if value is HIGH, `pulseInLong()` waits for the pin to go `HIGH`, starts timing, then waits for the pin to go `LOW` and stops timing. Returns the length of the pulse in microseconds or 0 if no complete pulse was received within the timeout.
+=== Beschreibung
+Liest einen Stromwert von einem Pin ein (entweder HIGH oder LOW). Wenn der *Wert* z.B. *HIGH* ist, wartet `pulseInLong()` darauf, dass der Pin auf den Wert *HIGH* wechselt, startet einen Timer und wartet anschließend darauf, dass der Pin wieder auf *LOW* wechselt. Daraufhin stoppt `pulseInLong()` den Timer. Gibt die Länge des Stromstoßes in Mikrosekunden zurück. Stoppt und gibt 0 zurück, wenn ein bestimmter Timeout erreicht wird.
 
-The timing of this function has been determined empirically and will probably show errors in shorter pulses. Works on pulses from 10 microseconds to 3 minutes in length. Please also note that if the pin is already high when the function is called, it will wait for the pin to go LOW and then HIGH before it starts counting. This routine can be used only if interrupts are activated. Furthermore the highest resolution is obtained with large intervals.
+Das Timing der Funktion wurde empirisch getestet und wird vermutlich bei längeren Stromstößen Fehler werfen. Die Funktion funtioniert mit einer Stromstößen der Länge von 10 Mikrosekunden bis 3 Minuten. Bitte beachte auch, dass, wenn ein Pin, der bereits *HIGH* ist, wenn die Funktion aufgerufen wird, zunächst auf *LOW* und dann wieder auf *HIGH* wechselt, bevor die Funktion startet. Diese Routine kann nur benutzt werden, wenn Interrupts aktiviert werden. Die beste Auflösung wird erreicht, wenn große Intervalle verwendet werden.
 [%hardbreaks]
 
 
@@ -30,15 +30,15 @@ The timing of this function has been determined empirically and will probably sh
 `pulseInLong(pin, value, timeout)`
 
 [float]
-=== Parameters
-`pin`: the number of the pin on which you want to read the pulse. (int)
+=== Parameter
+`pin`: Die Pinnummer, an der der Stromstoß gelesen werden soll. (int)
 
-`value`: type of pulse to read: either link:../../../variables/constants/constants/[HIGH] or link:../../../variables/constants/constants/[LOW]. (int)
+`value`: Welche Art von Stromstoß gelesen werden soll: Entweder link:../../Variables/Constants/constants.adoc[HIGH] oder link:../../Variables/Constants/constants.adoc[LOW]. (int)
 
-`timeout` (optional): the number of microseconds to wait for the pulse to start; default is one second (unsigned long)
+`timeout` (optional): Die Anzahl an Mikrosekunden, die gewartet werden soll, bis ein Stromstoß gemessen wurde; Default-Wert ist eine Sekunde (unsigned long)
 [float]
-=== Returns
-the length of the pulse (in microseconds) or 0 if no pulse started before the timeout (unsigned long)
+=== Gibt zurück
+Die Länge des Stromstoßes (in Mikrosekunden) oder 0, wenn kein Stromstoß vor dem Timeout gemessen wird (unsigned long)
 
 --
 // OVERVIEW SECTION ENDS
@@ -51,9 +51,9 @@ the length of the pulse (in microseconds) or 0 if no pulse started before the ti
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The example calculated the time duration of a pulse on pin 7.
+Das Beispiel errechnet den Zeitraum eines Stromstoßes auf Pin 7.
 
 [source,arduino]
 ----
@@ -71,8 +71,8 @@ void loop() {
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-This function relies on micros() so cannot be used in link:../../interrupts/nointerrupts[noInterrupts()] context.
+=== Anmerkungen und Warnungen
+Diese Funktion verlässt sich auf `micros()` und kann somit in link:../Interrupts/noInterrupts.adoc[noInterrupts()] Kontexten nicht verwendet werden.
 
 --
 // HOW TO USE SECTION ENDS
