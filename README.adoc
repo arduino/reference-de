@@ -9,7 +9,7 @@ Danke, dass du die Zeit findest, zum Arduino-Projekt beizutragen. Das hilft der 
 == Inhalte erstellen und editieren
 Wenn du neuen Inhalt bereitstellen willst, erstelle eine neue Datei (Mit deinem Lieblings-Code-Editor) und speichere die Datei als .asdoc-Format.
 Bitte benutze keine Klammern oder andere Sonderzeichen im Dateinamen.
-Einen Überblick über die https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample/AsciiDoc_Dictionary/AsciiDoc_Template-Dictionary.adoc[`reference-de/AsciiDoc_sample/AsciiDoc_Dictionary`] findest du einen Überblick über die AsciiDoc-Syntax.
+Unter https://raw.githubusercontent.com/arduino/reference-en/master/AsciiDoc_sample/AsciiDoc_Dictionary/AsciiDoc_Template-Dictionary.adoc[`reference-de/AsciiDoc_sample/AsciiDoc_Dictionary`] findest du einen Überblick über die AsciiDoc-Syntax.
 Diese schließt Titel, Text, Links, Bilder, Tabellen, Programmcode und viele andere eingebettete Typen (Videos, Präsentationen, Audio und Code) ein. Eine Vorschau dazu findest du https://www.arduino.cc/reference/en/asciidoc_sample/asciidoc_dictionary/asciidoc_template-dictionary/[hier].
 
 Wenn du zur Arduino-Referenz Beitrag leisten willst oder Inhalte ändern, kannst du 2 Templates in reference-de/AsciiDoc_sample/Reference_Terms finden:
@@ -17,14 +17,14 @@ Wenn du zur Arduino-Referenz Beitrag leisten willst oder Inhalte ändern, kannst
 * Nutze https://raw.githubusercontent.com/arduino/reference-de/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Single_Entity.adoc[`AsciiDoc_Template-Single_Entity.adoc`] (Gerenderte Version https://www.arduino.cc/reference/en/asciidoc_sample/reference_terms/asciidoc_template-single_entity/[hier]) für Begriffe wie link:http://arduino.cc/de/Reference/AnalogWrite[analogWrite].
 * Nutze https://raw.githubusercontent.com/arduino/reference-de/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Parent_Of_Entities.adoc[`AsciiDoc_Template-Parent_Of_Entities.adoc`] (erenderte Version https://www.arduino.cc/reference/de/asciidoc_sample/reference_terms/asciidoc_template-parent_of_entities/[hier]) für Gruppen oder Funktionen wie link:http://arduino.cc/de/Reference/Serial[Serial].
 
-Bitte beachte, dass jede Datei in der Referenz mindestens eine Beschreibung, Beispielcode und Links zu anderen relevanten Informationen (Siehe Also Abschnitt).
+Bitte beachte, dass jede Datei in der Referenz mindestens eine Beschreibung, Beispielcode und Links zu anderen relevanten Informationen enthält (Siehe Also Abschnitt).
 
 Wenn du Bilder in die Asciidoc-Datei einfügen willst, erstelle bitte einen Ordner **attachments** im gleichen Ordner wie die Asciidoc-Datei. Bilder können im SVG- und PNG-Format gespeichert werden. Die maximale Größe beträgt hierbei 200KB.
 
 == Trage zum Inhalt auf Github bei
 Wenn du mit Git nicht vertraut bist, kannst du Inhalte direkt über den Online-Editor einfügen. Ein kurzes Tutorial, wie das geht, findest du hier: https://create.arduino.cc/projecthub/Arduino_Genuino/contribute-to-the-arduino-reference-af7c37[CHECK IT OUT!]
 
-link:https://help.github.com/articles/editing-files-in-another-user-s-repository/[Du kannst auch dieser Anleitung folgen] (geschrieben vom Github-Team), um zu lernen, wie du eine .adoc-Datei editierne kannst und Dateiänderungen an das Arduino-Team vorschlagen kannst. Wenn du eine Änderung vorschlagen willst, folge bitte den Guidelines in den Referenz-Templates.
+link:https://help.github.com/articles/editing-files-in-another-user-s-repository/[Du kannst auch dieser Anleitung folgen] (geschrieben vom Github-Team), um zu lernen, wie du eine .adoc-Datei editieren kannst und Dateiänderungen an das Arduino-Team vorschlagen kannst. Wenn du eine Änderung vorschlagen willst, folge bitte den Guidelines in den Referenz-Templates.
 
 == Pull request stellen
 Wir freuen uns, dass du zur Arduino-Referenz beitragen willst: Das ist der beste Weg, der Community zu helfen.
