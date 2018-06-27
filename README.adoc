@@ -15,7 +15,7 @@ Diese schließt Titel, Text, Links, Bilder, Tabellen, Programmcode und viele and
 Wenn du zur Arduino-Referenz Beitrag leisten willst oder Inhalte ändern, kannst du 2 Templates in reference-de/AsciiDoc_sample/Reference_Terms finden:
 
 * Nutze https://raw.githubusercontent.com/arduino/reference-de/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Single_Entity.adoc[`AsciiDoc_Template-Single_Entity.adoc`] (Gerenderte Version https://www.arduino.cc/reference/de/asciidoc_sample/reference_terms/asciidoc_template-single_entity/[hier]) für Begriffe wie link:http://arduino.cc/de/Reference/AnalogWrite[analogWrite].
-* Nutze https://raw.githubusercontent.com/arduino/reference-de/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Parent_Of_Entities.adoc[`AsciiDoc_Template-Parent_Of_Entities.adoc`] (erenderte Version https://www.arduino.cc/reference/de/asciidoc_sample/reference_terms/asciidoc_template-parent_of_entities/[hier]) für Gruppen oder Funktionen wie link:http://arduino.cc/de/Reference/Serial[Serial].
+* Nutze https://raw.githubusercontent.com/arduino/reference-de/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Parent_Of_Entities.adoc[`AsciiDoc_Template-Parent_Of_Entities.adoc`] (Gerenderte Version https://www.arduino.cc/reference/de/asciidoc_sample/reference_terms/asciidoc_template-parent_of_entities/[hier]) für Gruppen oder Funktionen wie link:http://arduino.cc/de/Reference/Serial[Serial].
 
 Bitte beachte, dass jede Datei in der Referenz mindestens eine Beschreibung, Beispielcode und Links zu anderen relevanten Informationen enthält (Siehe Also Abschnitt).
 
