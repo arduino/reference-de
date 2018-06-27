@@ -1,6 +1,6 @@
 = Reference-de
 
-Reference-de ist das Repository der Arduino-Referenzdokumentation in **Deutsch**.
+Reference-de ist das Repository der Arduino-Programmiersprachen-Referenzdokumentation in **Deutsch**.
   
 Alle Referenz-Dateien existieren im AsciiDoc format.
 
