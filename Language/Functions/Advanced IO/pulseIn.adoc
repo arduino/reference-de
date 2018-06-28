@@ -36,8 +36,8 @@ Das Timing der Funktion wurde empirisch getestet und wird vermutlich bei länger
 `value`: Welche Art von Stromstoß gelesen werden soll: Entweder link:../../../variables/constants/constants/[HIGH] oder link:../../../variables/constants/constants/[LOW]. (int) 
 
 `timeout` (optional): Die Anzahl an Mikrosekunden, die gewartet werden soll, bis ein Stromstoß gemessen wurde; Default-Wert ist eine Sekunde (unsigned long)
-[float]
 
+[float]
 === Gibt zurück
 Die Länge des Stromstoßes (in Mikrosekunden) oder 0, wenn kein Stromstoß vor dem Timeout gemessen wird (unsigned long)
 
