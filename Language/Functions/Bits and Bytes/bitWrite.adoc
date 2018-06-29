@@ -16,8 +16,8 @@ subCategories: [ "Bits and Bytes" ]
 --
 
 [float]
-=== Description
-Writes a bit of a numeric variable.
+=== Beschreibung
+Schreibt ein Bit einer Zahlenvariable.
 [%hardbreaks]
 
 
@@ -27,16 +27,16 @@ Writes a bit of a numeric variable.
 
 
 [float]
-=== Parameters
-`x`: the numeric variable to which to write
+=== Parameter
+`x`: Die Zahlenvariable, auf die geschrieben werden soll
 
-`n`: which bit of the number to write, starting at 0 for the least-significant (rightmost) bit
+`n`: Welches Bit der Zahlenvariable geschrieben werden soll; Startet bei 0 für das least-significant (rechteste) Bit
 
-`b`: the value to write to the bit (0 or 1)
+`b`: Der Wert, der auf das Bit geschrieben werden soll (0 oder 1)
 
 [float]
-=== Returns
-Nothing
+=== Gibt zurück
+Nichts
 
 --
 // OVERVIEW SECTION ENDS
