@@ -16,8 +16,8 @@ subCategories: [ "Bits and Bytes" ]
 --
 
 [float]
-=== Description
-Reads a bit of a number.
+=== Beschreibung
+Liest ein Bit aus einer Zahlenvariable.
 [%hardbreaks]
 
 
@@ -27,15 +27,15 @@ Reads a bit of a number.
 
 
 [float]
-=== Parameters
-`x`: the number from which to read
+=== Parameter
+`x`: Die Zahlenvariable, aus der gelesen werden soll
 
-`n`: which bit to read, starting at 0 for the least-significant (rightmost) bit
+`n`: Welches Bit gelesen werden soll; Startet bei 0 für das least-significant (rechteste) Bit
 
 
 [float]
-=== Returns
-the value of the bit (0 or 1).
+=== Gibt zurück
+Den Wert des Bits (0 oder 1).
 
 --
 // OVERVIEW SECTION ENDS
