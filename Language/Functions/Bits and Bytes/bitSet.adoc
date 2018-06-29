@@ -12,12 +12,13 @@ subCategories: [ "Bits and Bytes" ]
 
 
 // OVERVIEW SECTION STARTS
-Sets (writes a 1 to) a bit of a numeric variable.
+
 [#overview]
 --
 
 [float]
-=== Description
+=== Beschreibung
+Setzt (Schreibt eine 1) ein Bit einer Zahlenvariable.
 [%hardbreaks]
 
 
@@ -27,14 +28,14 @@ Sets (writes a 1 to) a bit of a numeric variable.
 
 
 [float]
-=== Parameters
-`x`: the numeric variable whose bit to set
+=== Parameter
+`x`: Die Zahlenvariable, in der das Bit gesetzt werden soll
 
-`n`: which bit to set, starting at 0 for the least-significant (rightmost) bit
+`n`: Welches Bit gesetzt werden soll; Startet bei 0 für das least-significant (rechteste) Bit
 
 [float]
-=== Returns
-Nothing
+=== Gibt zurück
+Nichts
 
 --
 // OVERVIEW SECTION ENDS
