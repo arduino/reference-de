@@ -16,8 +16,8 @@ subCategories: [ "Bits and Bytes" ]
 --
 
 [float]
-=== Description
-Clears (writes a 0 to) a bit of a numeric variable.
+=== Beschreibung
+Löscht den Wert (Schreibt 0) eines Bits einer Zahlen-Variable.
 [%hardbreaks]
 
 
@@ -28,13 +28,13 @@ Clears (writes a 0 to) a bit of a numeric variable.
 
 [float]
 === Parameters
-`x`: the numeric variable whose bit to clear
+`x`: Die Zahlenvariable, deren Wert gelöscht werden soll
 
-`n`: which bit to clear, starting at 0 for the least-significant (rightmost) bit
+`n`: Welches Bit gelöscht werden soll; Startet bei 0 für das least-significant (rechteste) Bit
 
 [float]
-=== Returns
-Nothing
+=== Gibt zurück
+Nichts
 
 --
 // OVERVIEW SECTION ENDS
