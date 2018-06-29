@@ -31,8 +31,6 @@ Wir freuen uns, dass du zur Arduino-Referenz beitragen willst: Das ist der beste
 
 Dein Beitrag fügt neue Inhalte hinzu oder ändert existierenden Code oder Beschreibungen, bitte verweise bei Änderungen immer auf einen offenen Github-Issue oder erstelle einen Neuen, bevor du Änderungen einbringst.
 
-Bitte beachte, dass dein Beitrag zur Arduino-Referenz unter der Creative Commons Attribution-Share Alike 3.0 License lizensiert wird. Siehe https://creativecommons.org/licenses/by-sa/3.0/deed.de
-
 === Ordnerstruktur
 [source]
 ----
@@ -55,3 +53,9 @@ reference-de
 ----
 
 Im **Language**-Ordner folgt der Dateibaum der gleichen Struktur wie die link:https://www.arduino.cc/reference/de[Arduino-Referenz-Webseite]
+
+=== Lizenz
+
+Bitte beachte, dass dein Beitrag zur Arduino-Referenz unter der Creative Commons Attribution-Share Alike 3.0 License lizensiert wird. Siehe https://creativecommons.org/licenses/by-sa/3.0/deed.de
+
+image:https://i.creativecommons.org/l/by-sa/3.0/88x31.png[Creative Commons Lizenzvertrag, title="Creative Commons Lizenzvertrag"] Dieses Werk ist lizenziert unter einer link:https://creativecommons.org/licenses/by-sa/3.0/deed.de[Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 3.0 Unported Lizenz].
