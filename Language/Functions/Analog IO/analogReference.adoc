@@ -16,14 +16,14 @@ subCategories: [ "Analog I/O" ]
 --
 
 [float]
-=== Description
-Configures the reference voltage used for analog input (i.e. the value used as the top of the input range). The options are:
+=== Beschreibung
+Konfiguriert die Referenzspannung, die für analoge Eingabe-Pins genutzt wird (z.B. Der maximal Wert der Eingangsspannung). Dabei sind die folgenden Optionen verfügbar:
 
-* DEFAULT: the default analog reference of 5 volts (on 5V Arduino boards) or 3.3 volts (on 3.3V Arduino boards)
-* INTERNAL: an built-in reference, equal to 1.1 volts on the ATmega168 or ATmega328P and 2.56 volts on the ATmega8 (not available on the Arduino Mega)
-* INTERNAL1V1: a built-in 1.1V reference (Arduino Mega only)
-* INTERNAL2V56: a built-in 2.56V reference (Arduino Mega only)
-* EXTERNAL: the voltage applied to the AREF pin (0 to 5V only) is used as the reference.
+* DEFAULT: Default analoge Einstellung (5 V für 5 V-Arduino; 3,3 V für 3,3 V-Arduinos)
+* INTERNAL: Eingebaute Referenz; Festgelegt auf 1,1 V auf dem ATmega168 oder ATmega328P und 2,56 V auf dem ATmega8 (Nicht verfügbar auf dem Arduino Mega) 
+* INTERNAL1V1: Eingebaute Referenz; 1,1 V (Nur Arduino Mega)
+* INTERNAL2V56: Eingebaute Referenz; 2,56 V (Nur Arduino Mega)
+* EXTERNAL: Die Spannung, die auf dem AREF-Pin (nur 0 bis 5 V) angelegt ist, wird als Referenz verwendet.
 [%hardbreaks]
 
 
@@ -33,12 +33,12 @@ Configures the reference voltage used for analog input (i.e. the value used as t
 
 
 [float]
-=== Parameters
-`type`: which type of reference to use (DEFAULT, INTERNAL, INTERNAL1V1, INTERNAL2V56, or EXTERNAL).
+=== Parameter
+`type`: Welche Art von Einstellung benutzt werden soll (DEFAULT, INTERNAL, INTERNAL1V1, INTERNAL2V56, oder EXTERNAL).
 
 [float]
-=== Returns
-Nothing
+=== Gibt zurück
+Nichts
 
 --
 // OVERVIEW SECTION ENDS
@@ -51,12 +51,14 @@ Nothing
 --
 
 [float]
-=== Notes and Warnings
-After changing the analog reference, the first few readings from `analogRead()` may not be accurate.
+=== Anmerkungen und Warnungen
+Wenn die Referenzspannung geändert wird, können die ersten Messwerte von `analogRead()` fehlerhaft sein.
 
-*Don't use anything less than 0V or more than 5V for external reference voltage on the AREF pin! If you're using an external reference on the AREF pin, you must set the analog reference to EXTERNAL before calling `analogRead()`.* Otherwise, you will short together the active reference voltage (internally generated) and the AREF pin, possibly damaging the microcontroller on your Arduino board.
+* Benutze niemals Spannungen geringer als 0 V oder höher als 5 V für externe Referenzspannungen auf dem AREF-Pin! Wenn du eine externe Referenzspannung auf dem AREF-Pin nutzen willst, musst du zunächst die analoge Referenzspannung auf EXTERNAL setzen, bevor du `analogRead()` nutzen kannst.
+* Sonst kann es dazu führen, dass auf dem Board ein Kurzschluss entsteht zwischen interner und auf dem AREF-Pin angelegter Spannung. Dies kann eine Beschädigung des Mikrokontrollers oder Boards zur Folge haben.
 
-Alternatively, you can connect the external reference voltage to the AREF pin through a 5K resistor, allowing you to switch between external and internal reference voltages. Note that the resistor will alter the voltage that gets used as the reference because there is an internal 32K resistor on the AREF pin. The two act as a voltage divider, so, for example, 2.5V applied through the resistor will yield 2.5 * 32 / (32 + 5) = ~2.2V at the AREF pin.
+Alternativ kannst du die externe Referenzspannung auf dem AREF-Pin über einen 5k-Widerstand verbinden. Das hat den Vorteil, dass du zwischen externer und interner Referenzspannung wechseln kannst. Beachte auch, dass sich dadurch die Nutzungsspannung ändert, weil der AREF-Pin einen internen 32K-Widerstand besitzt. Diese 2 Widerstände funktionieren als Spannungsteiler. Wenn also 2,5 V durch den Widerstand fließen, werden auf dem AREF-Pin 2.5 * 32 / (32 + 5) V = ~2.2 V anliegen.
+
 [%hardbreaks]
 
 --
@@ -68,10 +70,10 @@ Alternatively, you can connect the external reference voltage to the AREF pin th
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/AnalogInputPins[Description of analog input pins]
+* #EXAMPLE# http://arduino.cc/en/Tutorial/AnalogInputPins[Beschreibung der analogen Eingangspins]
 
 --
 // SEE ALSO SECTION ENDS
