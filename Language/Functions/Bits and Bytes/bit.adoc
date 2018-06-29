@@ -16,8 +16,8 @@ subCategories: [ "Bits and Bytes" ]
 --
 
 [float]
-=== Description
-Computes the value of the specified bit (bit 0 is 1, bit 1 is 2, bit 2 is 4, etc.).
+=== Beschreibung
+Berechnet den Wert des angegebenen Bits (Bit 0 ist 1, Bit 1 ist 2, Bit 2 ist 4, etc.).
 [%hardbreaks]
 
 
@@ -28,11 +28,11 @@ Computes the value of the specified bit (bit 0 is 1, bit 1 is 2, bit 2 is 4, etc
 
 [float]
 === Parameters
-`n`: the bit whose value to compute
+`n`: Das Bit, von dem der Wert berechnet werden soll.
 
 [float]
-=== Returns
-The value of the bit.
+=== Gibt zurück
+Der Wert des Bits
 
 --
 // OVERVIEW SECTION ENDS
