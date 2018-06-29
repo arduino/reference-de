@@ -16,8 +16,8 @@ subCategories: [ "Bits and Bytes" ]
 --
 
 [float]
-=== Description
-Extracts the high-order (leftmost) byte of a word (or the second lowest byte of a larger data type).
+=== Beschreibung
+Liest das most-significant (linkeste) Bit eines Wortes (oder das zweitkleinste Bit eines größeren Datentypes).
 [%hardbreaks]
 
 
@@ -27,12 +27,12 @@ Extracts the high-order (leftmost) byte of a word (or the second lowest byte of 
 
 
 [float]
-=== Parameters
-`x`: a value of any type
+=== Parameter
+`x`: Wert von beliebigen Typ
 
 [float]
-=== Returns
-byte
+=== Gibt zurück
+Das geforderte Byte (byte)
 
 --
 // OVERVIEW SECTION ENDS
@@ -43,7 +43,7 @@ byte
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #LANGUAGE# link:../../../variables/data-types/word[word()]
