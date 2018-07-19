@@ -1,4 +1,4 @@
-﻿---
+---
 title: "isPrintable()"
 categories: [ "Functions" ]
 subCategories: [ "Characters" ]
@@ -16,8 +16,8 @@ subCategories: [ "Characters" ]
 --
 
 [float]
-=== Description
-Analyse if a char is printable (that is any character that produces an output, even a blank space). Returns true if thisChar is printable. 
+=== Beschreibung
+Analysiert, ob das Zeichen druckbar ist (Also jedes Zeichen, das eine Ausgabe erzeugt, auch das Leerzeichen). Gibt ``true`` zurück, wenn das Zeichen druckbar ist.
 [%hardbreaks]
 
 
@@ -29,12 +29,12 @@ Analyse if a char is printable (that is any character that produces an output, e
 ----
 
 [float]
-=== Parameters
-`thisChar`: variable. *Allowed data types:* char
+=== Parameter
+`thisChar`: Variable. *Erlaubte Datentypen:* char
 
 [float]
-=== Returns
-`true`: if thisChar is printable.
+=== Gibt zurück
+`true`: Wenn das Zeichen druckbar ist.
 
 --
 // OVERVIEW SECTION ENDS
@@ -46,17 +46,17 @@ Analyse if a char is printable (that is any character that produces an output, e
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 
 [source,arduino]
 ----
-if (isPrintable(this))      // tests if this is printable char
+if (isPrintable(this))      // Testet, ob das Zeichen druckbar ist.
 {
-	Serial.println("The character is printable");
+	Serial.println("Das Zeichen ist druckbar.");
 }
 else
 {
-	Serial.println("The character is not printable");
+	Serial.println("Das Zeichen ist nicht druckbar.");
 }
 
 ----
@@ -70,7 +70,7 @@ else
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]
