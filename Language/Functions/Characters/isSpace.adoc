@@ -1,4 +1,4 @@
-﻿---
+---
 title: "isSpace()"
 categories: [ "Functions" ]
 subCategories: [ "Characters" ]
@@ -16,8 +16,8 @@ subCategories: [ "Characters" ]
 --
 
 [float]
-=== Description
-Analyse if a char is the space character. Returns true if thisChar contains the space character. 
+=== Beschreibung
+Analysiert das Zeichen, ob es ein Leerzeichen ist. Gibt ``true`` zurück, wenn das Zeichen ein Leerzeichen ist.
 [%hardbreaks]
 
 
@@ -29,12 +29,12 @@ Analyse if a char is the space character. Returns true if thisChar contains the 
 ----
 
 [float]
-=== Parameters
-`thisChar`: variable. *Allowed data types:* char
+=== Parameter
+`thisChar`: Variable. *Erlaubte Datentypen:* char
 
 [float]
-=== Returns
-`true`: if thisChar is a space.
+=== Gibt zurück
+`true`: wenn das Zeichen ein Leerzeichen ist.
 
 --
 // OVERVIEW SECTION ENDS
@@ -46,17 +46,17 @@ Analyse if a char is the space character. Returns true if thisChar contains the 
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 
 [source,arduino]
 ----
-if (isSpace(this))      // tests if this is the space character
+if (isSpace(this))      // Testet, ob das Zeichen ein Leerzeichen ist.
 {
-	Serial.println("The character is a space");
+	Serial.println("Das Zeichen ist ein Leerzeichen");
 }
 else
 {
-	Serial.println("The character is not a space");
+	Serial.println("Das Zeichen ist kein Leerzeichen");
 }
 
 ----
@@ -70,7 +70,7 @@ else
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]
