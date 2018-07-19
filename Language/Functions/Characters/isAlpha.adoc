@@ -17,7 +17,7 @@ subCategories: [ "Characters" ]
 
 [float]
 === Beschreibung
-Analysiert, ob ein Zeichen ein Buchstabe ist. Gibt ``True`` zurück, wenn das Zeichen ein Buchstabe (Also keine Zahl oder ein Sonderzeichen) ist.
+Analysiert, ob ein Zeichen ein Buchstabe ist. Gibt ``true`` zurück, wenn das Zeichen ein Buchstabe (Also keine Zahl oder ein Sonderzeichen) ist.
 [%hardbreaks]
 
 
