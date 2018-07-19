@@ -1,4 +1,4 @@
-﻿---
+---
 title: "isHexadecimalDigit()"
 categories: [ "Functions" ]
 subCategories: [ "Characters" ]
@@ -16,8 +16,8 @@ subCategories: [ "Characters" ]
 --
 
 [float]
-=== Description
-Analyse if a char is an hexadecimal digit (A-F, 0-9). Returns true if thisChar contains an hexadecimal digit. 
+=== Beschreibung
+Analysiert, ob ein Zeichen hexadezimal ist (A-F, 0-9). Gibt ``true`` zurück, wenn das Zeichen hexadezimal ist.
 [%hardbreaks]
 
 
@@ -29,12 +29,12 @@ Analyse if a char is an hexadecimal digit (A-F, 0-9). Returns true if thisChar c
 ----
 
 [float]
-=== Parameters
-`thisChar`: variable. *Allowed data types:* char
+=== Parameter
+`thisChar`: Variable. *Erlaubte Datentypen:* char
 
 [float]
 === Returns
-`true`: if thisChar is an hexadecimal digit.
+`true`: Wenn das Zeichen hexadezimal ist.
 
 --
 // OVERVIEW SECTION ENDS
@@ -46,17 +46,17 @@ Analyse if a char is an hexadecimal digit (A-F, 0-9). Returns true if thisChar c
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 
 [source,arduino]
 ----
-if (isHexadecimalDigit(this))      // tests if this is an hexadecimal digit
+if (isHexadecimalDigit(this))      // Testet, ob das Zeichen hexadezimal ist
 {
-	Serial.println("The character is an hexadecimal digit");
+	Serial.println("Das Zeichen ist hexadezimal");
 }
 else
 {
-	Serial.println("The character is not an hexadecimal digit");
+	Serial.println("Das Zeichen ist nicht hexadezimal");
 }
 
 ----
@@ -70,7 +70,7 @@ else
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]
