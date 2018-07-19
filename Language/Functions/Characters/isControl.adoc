@@ -1,4 +1,4 @@
-﻿---
+---
 title: "isControl()"
 categories: [ "Functions" ]
 subCategories: [ "Characters" ]
@@ -16,8 +16,8 @@ subCategories: [ "Characters" ]
 --
 
 [float]
-=== Description
-Analyse if a char is a control character. Returns true if thisChar is a control character. 
+=== Beschreibung
+Analysiert, ob das Zeichen ein Steuerzeichen ist. Gibt ``true`` zurück, wenn es ein Steuerzeichen ist.
 [%hardbreaks]
 
 
@@ -29,12 +29,12 @@ Analyse if a char is a control character. Returns true if thisChar is a control 
 ----
 
 [float]
-=== Parameters
-`thisChar`: variable. *Allowed data types:* char
+=== Parameter
+`thisChar`: Variable. *Erlaubter Datentyp:* char
 
 [float]
-=== Returns
-`true`: if thisChar is a control character.
+=== Gibt zurück
+`true`: Wenn das Zeichen ein Steuerzeichen ist.
 
 --
 // OVERVIEW SECTION ENDS
@@ -46,17 +46,17 @@ Analyse if a char is a control character. Returns true if thisChar is a control 
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 
 [source,arduino]
 ----
-if (isControl(this))      // tests if this is a control character
+if (isControl(this))      // Testet, ob das Zeichen ein Steuerzeichen ist
 {
-	Serial.println("The character is a control character");
+	Serial.println("Das Zeichen ist ein Steuerzeichen");
 }
 else
 {
-	Serial.println("The character is not a control character");
+	Serial.println("Das Zeichen ist kein Steuerzeichen");
 }
 
 ----
@@ -70,7 +70,7 @@ else
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]
