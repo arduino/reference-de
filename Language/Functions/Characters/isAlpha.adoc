@@ -1,4 +1,4 @@
-﻿---
+---
 title: "isAlpha()"
 categories: [ "Functions" ]
 subCategories: [ "Characters" ]
@@ -16,8 +16,8 @@ subCategories: [ "Characters" ]
 --
 
 [float]
-=== Description
-Analyse if a char is alpha (that is a letter). Returns true if thisChar contains a letter. 
+=== Beschreibung
+Analysiert, ob ein Zeichen ein Buchstabe ist. Gibt ``True`` zurück, wenn das Zeichen ein Buchstabe (Also keine Zahl oder ein Sonderzeichen) ist.
 [%hardbreaks]
 
 
@@ -29,12 +29,12 @@ isAlpha(thisChar)
 ----
 
 [float]
-=== Parameters
-`thisChar`: variable. *Allowed data types:* char
+=== Parameter
+`thisChar`: Variable. *Erlaubter Datentyp:* char
 
 [float]
-=== Returns
-`true`: if thisChar is alpha.
+=== Gibt zurück
+`true`: Wenn das Zeichen ein Buchstabe ist.
 
 --
 // OVERVIEW SECTION ENDS
@@ -46,17 +46,17 @@ isAlpha(thisChar)
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 
 [source,arduino]
 ----
-if (isAlpha(this))      // tests if this is a letter
+if (isAlpha(this))      // Testet, ob der char ein Buchstabe ist
 {
-	Serial.println("The character is a letter");
+	Serial.println("Das Zeichen ist ein Buchstabe");
 }
 else
 {
-	Serial.println("The character is not a letter");
+	Serial.println("Das Zeichen ist kein Buchstabe");
 }
 
 ----
@@ -70,7 +70,7 @@ else
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]
