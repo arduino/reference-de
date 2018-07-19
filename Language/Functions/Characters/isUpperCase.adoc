@@ -1,4 +1,4 @@
-﻿---
+---
 title: "isUpperCase()"
 categories: [ "Functions" ]
 subCategories: [ "Characters" ]
@@ -16,8 +16,8 @@ subCategories: [ "Characters" ]
 --
 
 [float]
-=== Description
-Analyse if a char is upper case (that is a letter in upper case). Returns true if thisChar is upper case. 
+=== Beschreibung
+Analysiert ein Zeichen, ob dieses upper case ist. Gibt ``true`` zurück, wenn das Zeichen upper case ist.
 [%hardbreaks]
 
 
@@ -29,12 +29,12 @@ Analyse if a char is upper case (that is a letter in upper case). Returns true i
 ----
 
 [float]
-=== Parameters
-`thisChar`: variable. *Allowed data types:* char
+=== Parameter
+`thisChar`: Variable. *Erlaubte Datentypen:* char
 
 [float]
-=== Returns
-`true`: if thisChar is upper case.
+=== Gibt zurück
+`true`: Wenn das Zeichen upper case ist.
 
 --
 // OVERVIEW SECTION ENDS
@@ -46,17 +46,17 @@ Analyse if a char is upper case (that is a letter in upper case). Returns true i
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 
 [source,arduino]
 ----
-if (isUpperCase(this))      // tests if this is an upeer case letter
+if (isUpperCase(this))      // Testet, ob das Zeichen upper case ist.
 {
-	Serial.println("The character is upper case");
+	Serial.println("Das Zeichen ist upper case");
 }
 else
 {
-	Serial.println("The character is not upper case");
+	Serial.println("Das Zeichen ist nicht upper case");
 }
 
 ----
@@ -70,7 +70,7 @@ else
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]
