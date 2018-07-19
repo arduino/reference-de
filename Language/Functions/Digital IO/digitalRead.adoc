@@ -86,7 +86,7 @@ Die analogen Inputpins können als digitale Pins benutzt werden mit den Namen A0
 === Siehe auch
 
 [role="example"]
-* #EXAMPLE# Tutorial: (http://arduino.cc/en/Tutorial/DigitalPins[Digitale Pins])
+* #Beispiel#-Tutorial: (http://arduino.cc/en/Tutorial/DigitalPins[Digitale Pins])
 
 --
 // SEE ALSO SECTION ENDS
