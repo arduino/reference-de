@@ -1,4 +1,4 @@
-﻿---
+---
 title: "isPunct()"
 categories: [ "Functions" ]
 subCategories: [ "Characters" ]
@@ -16,8 +16,8 @@ subCategories: [ "Characters" ]
 --
 
 [float]
-=== Description
-Analyse if a char is punctuation (that is a comma, a semicolon, an exlamation mark and so on). Returns true if thisChar is punctuation. 
+=== Beschreibung
+Analysiert, ob ein Zeichen eine Punktuation ist (Komma, Semikolon, Ausrufezeichen, etc.). Gibt ```true`` zurück, wenn das Zeichen eine Punktuation ist.
 [%hardbreaks]
 
 
@@ -29,13 +29,12 @@ Analyse if a char is punctuation (that is a comma, a semicolon, an exlamation ma
 ----
 
 [float]
-=== Parameters
-`thisChar`: variable. *Allowed data types:* char
+=== Parameter
+`thisChar`: Variable. *Erlaubte Datentypen:* char
 
 [float]
-=== Returns
-`true`: if thisChar is a punctuation.
-
+=== Gibt zurück
+`true`: wenn das Zeichen eine Punktuation ist.
 --
 // OVERVIEW SECTION ENDS
 
@@ -46,17 +45,17 @@ Analyse if a char is punctuation (that is a comma, a semicolon, an exlamation ma
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 
 [source,arduino]
 ----
-if (isPunct(this))      // tests if this is a punctuation character
+if (isPunct(this))      // Testet, ob das Zeichen eine Punktuation ist.
 {
-	Serial.println("The character is a punctuation");
+	Serial.println("Das Zeichen ist eine Punktuation.");
 }
 else
 {
-	Serial.println("The character is not a punctuation");
+	Serial.println("Das Zeichen ist keine Punktuation.");
 }
 
 ----
@@ -70,7 +69,7 @@ else
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]
