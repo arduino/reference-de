@@ -38,7 +38,7 @@ Wenn du `pinMode()` nicht auf `OUTPUT` setzt, aber eine LED auf den Pin anschlie
 
 [float]
 === Gibt zurück
-Nothing
+Nichts
 
 --
 // OVERVIEW SECTION ENDS
