@@ -1,4 +1,4 @@
-﻿---
+---
 title: "isAscii()"
 categories: [ "Functions" ]
 subCategories: [ "Characters" ]
@@ -16,8 +16,8 @@ subCategories: [ "Characters" ]
 --
 
 [float]
-=== Description
-Analyse if a char is Ascii. Returns true if thisChar contains an Ascii character. 
+=== Beschreibung
+Analysiert, ob das Zeichen ein Ascii-Zeichen ist. Gibt ```true`` zurück, wenn das Zeichen ein Ascii-Zeichen ist.
 [%hardbreaks]
 
 
@@ -29,12 +29,12 @@ Analyse if a char is Ascii. Returns true if thisChar contains an Ascii character
 ----
 
 [float]
-=== Parameters
-`thisChar`: variable. *Allowed data types:* char
+=== Parameter
+`thisChar`: Variable. *Erlaubte Datentypen:* char
 
 [float]
-=== Returns
-`true`: if thisChar is Ascii.
+=== Gibt zurück
+`true`: Wenn das Zeichen ein Ascii-Zeichen ist.
 
 --
 // OVERVIEW SECTION ENDS
@@ -46,17 +46,17 @@ Analyse if a char is Ascii. Returns true if thisChar contains an Ascii character
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 
 [source,arduino]
 ----
-if (isAscii(this))      // tests if this is an Ascii character
+if (isAscii(this))      // Testet, ob das Zeichen ein Ascii-Zeichen ist.
 {
-	Serial.println("The character is Ascii");
+	Serial.println("Das Zeichen ist ein Ascii-Zeichen.");
 }
 else
 {
-	Serial.println("The character is not Ascii");
+	Serial.println("Das Zeichen ist kein Ascii-Zeichen.");
 }
 
 ----
@@ -70,7 +70,7 @@ else
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]
