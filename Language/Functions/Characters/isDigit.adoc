@@ -46,7 +46,7 @@ isDigit(thisChar)
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 
 [source,arduino]
 ----
