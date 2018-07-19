@@ -1,4 +1,4 @@
-﻿---
+---
 title: "isLowerCase()"
 categories: [ "Functions" ]
 subCategories: [ "Characters" ]
@@ -16,8 +16,8 @@ subCategories: [ "Characters" ]
 --
 
 [float]
-=== Description
-Analyse if a char is lower case (that is a letter in lower case). Returns true if thisChar contains a letter in lower case. 
+=== Beschreibung
+Analysiert, ob das Zeichen lower case ist. Gibt ``true`` zurück, wenn das Zeichen lower case ist.
 [%hardbreaks]
 
 
@@ -29,12 +29,12 @@ Analyse if a char is lower case (that is a letter in lower case). Returns true i
 ----
 
 [float]
-=== Parameters
-`thisChar`: variable. *Allowed data types:* char
+=== Parameter
+`thisChar`: Variable. *Erlaubte Datentypen:* char
 
 [float]
-=== Returns
-`true`: if thisChar is lower case.
+=== Gibt zurück
+`true`: Ob das Zeichen lower case ist.
 
 --
 // OVERVIEW SECTION ENDS
@@ -46,17 +46,17 @@ Analyse if a char is lower case (that is a letter in lower case). Returns true i
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 
 [source,arduino]
 ----
-if (isLowerCase(this))      // tests if this is a lower case letter
+if (isLowerCase(this))      // Testet, ob das Zeichen lower case ist
 {
-	Serial.println("The character is lower case");
+	Serial.println("Das Zeichen ist lower case");
 }
 else
 {
-	Serial.println("The character is not lower case");
+	Serial.println("Das Zeichen ist nicht lower case");
 }
 
 ----
@@ -70,7 +70,7 @@ else
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]
