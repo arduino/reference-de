@@ -1,4 +1,4 @@
-﻿---
+---
 title: "isDigit()"
 categories: [ "Functions" ]
 subCategories: [ "Characters" ]
@@ -16,8 +16,8 @@ subCategories: [ "Characters" ]
 --
 
 [float]
-=== Description
-Analyse if a char is a digit (that is a number). Returns true if thisChar is a number. 
+=== Beschreibung
+Analysiert, ob ein Zeichen eine Zahl ist. Gibt ``true`` zurück, wenn das Zeichen eine Zahl ist.
 [%hardbreaks]
 
 
@@ -29,12 +29,12 @@ isDigit(thisChar)
 ----
 
 [float]
-=== Parameters
-`thisChar`: variable. *Allowed data types:* char
+=== Parameter
+`thisChar`: Variable. *Erlaubter Datentyp:* char
 
 [float]
-=== Returns
-`true`: if thisChar is a number.
+=== Gibt zurück
+`true`: Wenn das Zeichen eine Zahl ist.
 
 --
 // OVERVIEW SECTION ENDS
@@ -50,13 +50,13 @@ isDigit(thisChar)
 
 [source,arduino]
 ----
-if (isDigit(this))      // tests if this is a digit
+if (isDigit(this))      // Testet, ob das Zeichen eine Zahl ist.
 {
-	Serial.println("The character is a number");
+	Serial.println("Das Zeichen ist eine Zahl");
 }
 else
 {
-	Serial.println("The character is not a number");
+	Serial.println("Das Zeichen ist keine Zahl");
 }
 
 ----
@@ -70,7 +70,7 @@ else
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]
