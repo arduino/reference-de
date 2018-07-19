@@ -17,7 +17,7 @@ subCategories: [ "Characters" ]
 
 [float]
 === Beschreibung
-Analysiert, ob das Zeichen lower case ist. Gibt ``true`` zurück, wenn das Zeichen lower case ist.
+Analysiert, ob das Zeichen lower case (Kleinbuchstaben) ist. Gibt ``true`` zurück, wenn das Zeichen lower case ist.
 [%hardbreaks]
 
 
