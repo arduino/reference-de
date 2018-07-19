@@ -33,7 +33,7 @@ Analysiert, ob ein Zeichen hexadezimal ist (A-F, 0-9). Gibt ``true`` zurück, we
 `thisChar`: Variable. *Erlaubte Datentypen:* char
 
 [float]
-=== Returns
+=== Gibt zurück
 `true`: Wenn das Zeichen hexadezimal ist.
 
 --
