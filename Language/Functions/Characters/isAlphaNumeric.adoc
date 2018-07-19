@@ -16,8 +16,8 @@ subCategories: [ "Characters" ]
 --
 
 [float]
-=== Description
-Analyse if a char is alphanumeric (that is a letter or a numbers). Returns true if thisChar contains either a number or a letter. 
+=== Beschreibung
+Analysiert, ob ein Zeichen alphanumerisch ist. (Buchstabe oder Zahl). Gibt ``true`` zurück, wenn das Zeichen eine Zahl oder ein Buchstabe ist. 
 [%hardbreaks]
 
 
@@ -29,12 +29,12 @@ Analyse if a char is alphanumeric (that is a letter or a numbers). Returns true 
 ----
 
 [float]
-=== Parameters
-`thisChar`: variable. *Allowed data types:* char
+=== Parameter
+`thisChar`: Variable. *Erlaubte Datentypen:* char
 
 [float]
 === Returns
-`true`: if thisChar is alphanumeric.
+`true`: Wenn das Zeichen alphanumerisch ist.
 
 --
 // OVERVIEW SECTION ENDS
@@ -50,13 +50,13 @@ Analyse if a char is alphanumeric (that is a letter or a numbers). Returns true 
 
 [source,arduino]
 ----
-if (isAlphaNumeric(this))      // tests if this isa letter or a number
+if (isAlphaNumeric(this))      // Testet, ob das Zeichen alphanumerisch ist.
 {
-	Serial.println("The character is alphanumeric");
+	Serial.println("Das Zeichen ist alphanumerisch");
 }
 else
 {
-	Serial.println("The character is not alphanumeric");
+	Serial.println("Das Zeichen ist nicht alphanumerisch");
 }
 
 ----
@@ -70,7 +70,7 @@ else
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #LANGUAGE#  link:../../../variables/data-types/char[char]
