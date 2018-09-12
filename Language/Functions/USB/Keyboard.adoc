@@ -15,23 +15,26 @@ subCategories: [ "USB" ]
 --
 
 [float]
-=== Description
-The keyboard functions enable a 32u4 or SAMD micro based boards to send keystrokes to an attached computer through their micro's native USB port.
+=== Beschreibung
+Die `keyboard`-Funktionen ermöglichen es, 32u4- oder SAMD-micro-basiertend boards, Tastenanschläge an einen verbundenen Computer über dessen nativen USB-Port zu senden.
 [%hardbreaks]
-*Note: Not every possible ASCII character, particularly the non-printing ones, can be sent with the Keyboard library.* +
-The library supports the use of modifier keys. Modifier keys change the behavior of another key when pressed simultaneously. link:../keyboard/keyboardmodifiers[See here] for additional information on supported keys and their use.
+*Anmerkung: Nicht jedes mögliche ASCII-Zeichen kann eingegeben werden. Besonders die Nichtdruckbaren Zeichen können nicht über die Bilbiothek eingegeben werden.* +
+Die Bibliothek unterstützt die Verwendung von Hotkey. Hotkeys verändern das Verhalten anderer Tasten, wenn diese gleichzeitig gedrückt werden.
+link:../keyboard/keyboardmodifiers[Siehe hier] für weitere Informationen über die unterstützten Tasten und deren Benutzung.
 
 --
 // OVERVIEW SECTION ENDS
 
 [float]
-=== Notes and Warnings
-These core libraries allow the 32u4 and SAMD based boards (Leonardo, Esplora, Zero, Due and MKR Family) to appear as a native Mouse and/or Keyboard to a connected computer.
+=== Anmerkungen und Warnungen
+Diese Core-Bibliotheken erlauben es 32u4- oder SAMD-basierten Boards (Leonardo, Esplora, Zero, Due und MKR Family), als native Maus und/oder Tastatur auf dem verbundenen Computer zu erscheinen.
 [%hardbreaks]
-*A word of caution on using the Mouse and Keyboard libraries*: if the Mouse or Keyboard library is constantly running, it will be difficult to program your board. Functions such as `Mouse.move()` and `Keyboard.print()` will move your cursor or send keystrokes to a connected computer and should only be called when you are ready to handle them. It is recommended to use a control system to turn this functionality on, like a physical switch or only responding to specific input you can control.
+*Achtung: Wenn die Maus oder Tastatur permanent läuft, wird es schwer, das Board noch zu programmieren. Funktionen wie `Mouse.move()` und `Keyboard.print()` bewegen den Cursor oder senden Tastenanschläge
+an den verbundenen Computer. Diese Funktionen sollten nur aufgerufen werden, wenn das Programm diese behandeln kann. Es wird deshalb empfohlen, ein Kontrollsystem zu nutzen, z.B. einen physikalischen Schalter
+oder nur auf bestimmte Eingaben zu antworten.
 [%hardbreaks]
-When using the Mouse or Keyboard library, it may be best to test your output first using `Serial.print()`. This way, you can be sure you know what values are being reported. Refer to the Mouse and Keyboard examples for some ways to handle this.
-
+Wenn die Mouse- oder Keyboard-Bibliothek benutzt wird, sollte die Ausgabe zunächst mit `Serial.print()` überprüft werden. Auf diesem Weg kann man sich sicher sein, dass die richtigen Werte an den verbundenen
+Computer gesendet werden. Die Beispiele liefern weitere Informationen dazu.
 
 // FUNCTIONS SECTION STARTS
 [#functions]
@@ -40,7 +43,7 @@ When using the Mouse or Keyboard library, it may be best to test your output fir
 '''
 
 [float]
-=== Functions
+=== Funktionen
 link:../keyboard/keyboardbegin[Keyboard.begin()] +
 link:../keyboard/keyboardend[Keyboard.end()] +
 link:../keyboard/keyboardpress[Keyboard.press()] +
@@ -61,14 +64,14 @@ link:../keyboard/keyboardwrite[Keyboard.write()]
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
-* #EXAMPLE# http://www.arduino.cc/en/Tutorial/KeyboardAndMouseControl[KeyboardAndMouseControl]: Demonstrates the Mouse and Keyboard commands in one program.
-* #EXAMPLE# http://www.arduino.cc/en/Tutorial/KeyboardMessage[KeyboardMessage]: Sends a text string when a button is pressed.
-* #EXAMPLE# http://www.arduino.cc/en/Tutorial/KeyboardLogout[KeyboardLogout]: Logs out the current user with key commands
-* #EXAMPLE# http://www.arduino.cc/en/Tutorial/KeyboardSerial[KeyboardSerial]: Reads a byte from the serial port, and sends back a keystroke.
-* #EXAMPLE# http://www.arduino.cc/en/Tutorial/KeyboardReprogram[KeyboardReprogram]: opens a new window in the Arduino IDE and reprograms the board with a simple blink program
+* #EXAMPLE# http://www.arduino.cc/en/Tutorial/KeyboardAndMouseControl[KeyboardAndMouseControl]: Zeigt, wie die Mouse- und Keyboard-Bibliothek verwendet werden.
+* #EXAMPLE# http://www.arduino.cc/en/Tutorial/KeyboardMessage[KeyboardMessage]: Sendet einen Text, wenn ein Button gedrückt wird.
+* #EXAMPLE# http://www.arduino.cc/en/Tutorial/KeyboardLogout[KeyboardLogout]: Loggt den aktuellen Benutzer aus.
+* #EXAMPLE# http://www.arduino.cc/en/Tutorial/KeyboardSerial[KeyboardSerial]: Liest ein Byte von einem seriellen Port und liefert einen Tastenanschlag zurück.
+* #EXAMPLE# http://www.arduino.cc/en/Tutorial/KeyboardReprogram[KeyboardReprogram]: Öffnet ein neues Fenster in der Arduino IDE und lädt ein simples Blinkprogramm auf das Board.
 
 --
 // SEE ALSO SECTION ENDS

@@ -13,12 +13,13 @@ title: Mouse.press()
 --
 
 [float]
-=== Description
-Sends a button press to a connected computer. A press is the equivalent of clicking and continuously holding the mouse button. A press is cancelled with link:../mouserelease[Mouse.release()].
+=== Beschreibung
+Sendet den Mausbuttondruck an einen verbundenen Computer. Ist äquivalent zu einem Klick, bei dem der Button kontinuierlich gehalten wird.
+Der Buttondruck kann mit link:../mouserelease[Mouse.release()] beendet werden.
 
-Before using `Mouse.press()`, you need to start communication with link:../mousebegin[Mouse.begin()].
+Bevor `Mouse.press()` benutzt werden kann, muss die Kommunikation mit link:../mousebegin[Mouse.begin()] gestartet werden.
 
-`Mouse.press()` defaults to a left button press.
+Der Defaultbutton von `Mouse.press()` ist der linke Mausbutton.
 [%hardbreaks]
 
 
@@ -29,8 +30,8 @@ Before using `Mouse.press()`, you need to start communication with link:../mouse
 
 
 [float]
-=== Parameters
-`button`: which mouse button to press - `char`
+=== Parameter
+`button`: Welcher Mausbutton gedrückt werden soll - Char
 
 * `MOUSE_LEFT (default)`
 
@@ -39,8 +40,8 @@ Before using `Mouse.press()`, you need to start communication with link:../mouse
 * `MOUSE_MIDDLE`
 
 [float]
-=== Returns
-Nothing
+=== Gibt zurück
+Nichts
 
 --
 // OVERVIEW SECTION ENDS
@@ -53,29 +54,29 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-
+Setzt den Mausbutton und löst ihn wieder abhängig vom gedrückten Schalter an Pin 2 und 3.
 
 [source,arduino]
 ----
 #include <Mouse.h>
 
 void setup(){
-  //The switch that will initiate the Mouse press
+  // Der Schalter, der den Mauszeigerdruck startet: Pin 2
   pinMode(2,INPUT);
-  //The switch that will terminate the Mouse press
+  // Der Schalter, der den Mauszeigerdruck beendet: Pin 3
   pinMode(3,INPUT);
-  //initiate the Mouse library
+  // Initialisiere die Maus-Bibliothek:
   Mouse.begin();
 }
 
 void loop(){
-  //if the switch attached to pin 2 is closed, press and hold the left mouse button
+  // Wenn Pin 2 HIGH ist (Schalter geschlossen), drücke den Mausbutton und halte ihn.
   if(digitalRead(2) == HIGH){
     Mouse.press();
   }
-  //if the switch attached to pin 3 is closed, release the left mouse button
+  // Wenn Pin 3 HIGH ist (Schalter geschlossen), löse den gedrückten Mausbutton.
   if(digitalRead(3) == HIGH){
     Mouse.release();
   }
@@ -84,8 +85,9 @@ void loop(){
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-When you use the `Mouse.press()` command, the Arduino takes over your mouse! Make sure you have control before you use the command. A pushbutton to toggle the mouse control state is effective.
+=== Anmerkungen und Warnungen
+Wenn das `Mouse.press()`-Kommando benutzt wird, übernimmt der Arduino die Tastatur! Stelle sicher, dass du Kontrolle über die Tastatur hast, bevor du das Kommando verwendest.
+Ein Button, um die Funktion notfalls zu sperren, ist sinnvoll.
 
 --
 // HOW TO USE SECTION ENDS
@@ -96,7 +98,7 @@ When you use the `Mouse.press()` command, the Arduino takes over your mouse! Mak
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #LANGUAGE# link:../mouseclick[Mouse.click()]

@@ -13,10 +13,10 @@ title: Keyboard.print()
 --
 
 [float]
-=== Description
-Sends a keystroke to a connected computer.
+=== Beschreibung
+Sendet einen Tastenanschlag an einen verbundenen Computer.
 
-`Keyboard.print()` must be called after initiating link:../keyboardbegin[Keyboard.begin()].
+link:../keyboardbegin[Keyboard.begin()] muss aufgerufen werden, bevor `Keyboard.print()` verwendet werden kann.
 [%hardbreaks]
 
 
@@ -26,12 +26,14 @@ Sends a keystroke to a connected computer.
 `Keyboard.print(characters)`
 
 [float]
-=== Parameters
-`character` : a char or int to be sent to the computer as a keystroke characters : a string to be sent to the computer as a keystroke.
+=== Parameter
+`character` : Ein Char oder Integer, der an den verbundenen Computer gesendet werden soll.
+
+`characters` : Ein String, der an den verbundenen Computer gesendet werden soll, gefolgt von newline und carriage return.
 
 [float]
-=== Returns
-`size_t` : number of bytes sent.
+=== Gibt zurück
+`size_t` : Anzahl an gesendeten Bytes.
 
 --
 // OVERVIEW SECTION ENDS
@@ -44,26 +46,27 @@ Sends a keystroke to a connected computer.
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
+Sendet eine Nachricht über die Keyboard-Bibliothek, wenn der angeschlossene Button gedrückt wird.
 
 [source,arduino]
 ----
 #include <Keyboard.h>
 
 void setup() {
-  // make pin 2 an input and turn on the
-  // pullup resistor so it goes high unless
-  // connected to ground:
+  // Pin 2 wird ein Inputpin mit Pullup-Widerstand.
+  // Pin 2 ist damit immer high, bis er auf Ground
+  // verbunden wird:
   pinMode(2, INPUT_PULLUP);
   Keyboard.begin();
 }
 
 void loop() {
-  //if the button is pressed
+  //Wenn der Button gedrückt wird
   if(digitalRead(2)==LOW){
-    //Send the message
+    //Sende die Nachricht
     Keyboard.print("Hello!");
   }
 }
@@ -71,8 +74,9 @@ void loop() {
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-When you use the `Keyboard.print()` command, the Arduino takes over your keyboard! Make sure you have control before you use the command. A pushbutton to toggle the keyboard control state is effective.
+=== Anmerkungen und Warnungen
+Wenn das `Keyboard.print()`-Kommando benutzt wird, übernimmt der Arduino die Tastatur! Stelle sicher, dass du Kontrolle über die Tastatur hast, bevor du das Kommando verwendest.
+Ein Button, um die Funktion notfalls zu sperren, ist sinnvoll.
 
 --
 // HOW TO USE SECTION ENDS
