@@ -16,8 +16,11 @@ subCategories: [ "Interrupts" ]
 --
 
 [float]
-=== Description
-Re-enables interrupts (after they've been disabled by link:../nointerrupts[nointerrupts()]. Interrupts allow certain important tasks to happen in the background and are enabled by default. Some functions will not work while interrupts are disabled, and incoming communication may be ignored. Interrupts can slightly disrupt the timing of code, however, and may be disabled for particularly critical sections of code.
+=== Beschreibung
+Aktiviert Interrupts (nachdem diese mit link:../nointerrupts[nointerrupts()] deaktiviert wurden). Interrupts erlauben bestimmten wichtigen Tasks, im Hintergrund zu laufen
+und sind somit per default aktiviert. Wenn Interrupts deaktiviert werden, werden einige Funktionen nicht funktionieren und eingehende Kommunikation wird
+möglicherweise ignoriert. Interrupts beeinflussen die Geschwindigkeit und das Timing im Code minimal. Für besonders zeitkritische Codeabschnitte sollten sie
+deshalb deaktiviert werden.
 [%hardbreaks]
 
 
@@ -27,12 +30,13 @@ Re-enables interrupts (after they've been disabled by link:../nointerrupts[noint
 
 
 [float]
-=== Parameters
-Nothing
+=== Parameter
+Keine
 
 [float]
-=== Returns
-Nothing
+=== Gibt zurück
+Nichts
+
 
 --
 // OVERVIEW SECTION ENDS
@@ -45,9 +49,9 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code enables Interrupts.
+Der Code zeigt, wie man Interrupts aktiviert und deaktiviert.
 
 [source,arduino]
 ----
@@ -56,22 +60,14 @@ void setup() {}
 void loop()
 {
   noInterrupts();
-  // critical, time-sensitive code here
+  // Zeitkritischer Code hier
   interrupts();
-  // other code here
+  // Restlicher Code hier
 }
 ----
 
---
-// HOW TO USE SECTION ENDS
-
-
-// SEE ALSO SECTION
-[#see_also]
---
-
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #LANGUAGE# link:../../external-interrupts/attachinterrupt[attachInterrupts()]
