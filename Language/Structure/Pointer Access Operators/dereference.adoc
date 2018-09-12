@@ -17,8 +17,9 @@ subCategories: [ "Pointer Access Operators" ]
 --
 
 [float]
-=== Description
-Dereferencing is one of the features specifically for use with pointers. The asterisk operator `*` is used for this purpose. If `p` is a pointer, then `*p` represents the value contained in the address pointed by `p`.
+=== Beschreibung
+Dereferenzierung ist eines der Features, bei denen Zeiger benötigt werden. Der Operator `*` wird dafür verwendet.
+Wenn `p` ein Zeiger ist, dann ist `*p` der Wert, der in der Adresse enthalten ist, auf die `p` zeigt.
 [%hardbreaks]
 
 --
@@ -33,21 +34,23 @@ Dereferencing is one of the features specifically for use with pointers. The ast
 [float]
 === Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-Der Code zeigt ein kleines Beispiel, welches den einen Inputpin festlegt.
+Der Code zeigt ein kleines Rechenbeispiel zur Verwendung von Zeigern.
 
 [source,arduino]
 ----
-int *p;       // declare a pointer to an int data type
-int i = 5, result = 0;
-p = &i;       // now 'p' contains the address of 'i'
-result = *p;  // 'result' gets the value at the address pointed by 'p'
-              // i.e., it gets the value of 'i' which is 5
+int *p;       // Definiere einen Zeiger als Integerdatentyp
+int i = 5, result = 0; // Initialisiere 'i' mit 5 und 'result' mit 0
+p = &i;       // 'p' enthält nun die Adress von 'i'
+result = *p;  // 'result' erhält nun den Wert, der an der Adress von 'i' steht
+              // 'result' ist also 5
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-Pointers are one of the complicated subjects for beginners in learning C, and it is possible to write the vast majority of Arduino sketches without ever encountering pointers. However for manipulating certain data structures, the use of pointers can simplify the code, and and knowledge of manipulating pointers is handy to have in one's toolkit.
+=== Anmerkungen und Warnungen
+Zeiger sind eines der komplexesten Themen für Anfänger beim Lernen von C. Es ist aber möglich, den Großteil der Arduino-Sketches ohne eine
+einzige Verwendung von Zeigern zu schreiben. Zur Verwendung einiger Datenstrukturen sind Pointer aber unersätzlich und bieten eine starke
+Vereinfachung des Codes an.
 [%hardbreaks]
 
 --
