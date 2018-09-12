@@ -16,8 +16,8 @@ subCategories: [ "Trigonometry" ]
 --
 
 [float]
-=== Description
-Calculates the tangent of an angle (in radians). The result will be between negative infinity and infinity.
+=== Beschreibung
+Berechnet den Tangens eines Winkels (Im Bogenmaß). Das Ergebnis liegt zwischen undendlich und negativ unendlich.
 [%hardbreaks]
 
 
@@ -27,12 +27,12 @@ Calculates the tangent of an angle (in radians). The result will be between nega
 
 
 [float]
-=== Parameters
-`rad`: The angle in Radians (`float`).
+=== Parameter
+`rad`: Der Winkel im Bogenmaß (`float`).
 
 [float]
-=== Returns
-The tangent of the angle (`double`).
+=== Gibt zurück
+Den Tangens des Winkels (`double`).
 
 --
 // OVERVIEW SECTION ENDS
@@ -43,7 +43,7 @@ The tangent of the angle (`double`).
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #LANGUAGE# link:../../../variables/data-types/float[float]

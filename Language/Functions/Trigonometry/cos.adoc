@@ -16,8 +16,8 @@ subCategories: [ "Trigonometry" ]
 --
 
 [float]
-=== Description
-Calculates the cosine of an angle (in radians). The result will be between -1 and 1.
+=== Beschreibung
+Berechnet den Cosinus eines Winkels (Im Bogenmaß). Das Ergebnis liegt zwischen -1 und 1.
 [%hardbreaks]
 
 
@@ -27,12 +27,12 @@ Calculates the cosine of an angle (in radians). The result will be between -1 an
 
 
 [float]
-=== Parameters
-`rad`: The angle in Radians (float).
+=== Parameter
+`rad`: Der Winkel im Bogenmaß (`float`).
 
 [float]
-=== Returns
-The cos of the angle (`double`).
+=== Gibt zurück
+Den Cosinus des Winkels (`double`).
 
 --
 // OVERVIEW SECTION ENDS
@@ -43,7 +43,7 @@ The cos of the angle (`double`).
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #LANGUAGE# link:../../../variables/data-types/float[float]
