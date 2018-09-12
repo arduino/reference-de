@@ -17,8 +17,9 @@ subCategories: [ "Pointer Access Operators" ]
 --
 
 [float]
-=== Description
-Referencing is one of the features specifically for use with pointers. The ampersand operator `&` is used for this purpose. If `x` is a variable, then `&x` represents the address of the variable `x`.
+=== Beschreibung
+Referenzierung ist eines der Features, bei denen Zeiger benötigt werden. Der Operator `&` wird dafür verwendet.
+Wenn `x` eine Variable ist, dann ist `&x` die Adresse der Variable `x`.
 [%hardbreaks]
 
 --
@@ -31,7 +32,9 @@ Referencing is one of the features specifically for use with pointers. The amper
 --
 
 [float]
-=== Example Code
+=== Beispielcode
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+Der Code zeigt ein kleines Beispiel, welches den einen Inputpin festlegt.
 
 [source,arduino]
 ----
@@ -60,7 +63,7 @@ Pointers are one of the complicated subjects for beginners in learning C, and it
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 

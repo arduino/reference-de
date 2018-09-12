@@ -31,7 +31,9 @@ Dereferencing is one of the features specifically for use with pointers. The ast
 --
 
 [float]
-=== Example Code
+=== Beispielcode
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+Der Code zeigt ein kleines Beispiel, welches den einen Inputpin festlegt.
 
 [source,arduino]
 ----
@@ -59,7 +61,7 @@ Pointers are one of the complicated subjects for beginners in learning C, and it
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 
