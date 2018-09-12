@@ -13,12 +13,15 @@ title: Keyboard.write()
 --
 
 [float]
-=== Description
-Sends a keystroke to a connected computer. This is similar to pressing and releasing a key on your keyboard. You can send some ASCII characters or the additional link:../keyboardmodifiers[keyboard modifiers and special keys].
+=== Beschreibung
+Sendet einen Tastenanschlag an einen verbundenen Computer. Das ist das gleiche wie eine Taste zu drücken und wieder loszulassen.
+Gesendet werden können ASCII-Zeichen und link:../keyboardmodifiers[Hotkeys].
 
-Only ASCII characters that are on the keyboard are supported. For example, ASCII 8 (backspace) would work, but ASCII 25 (Substitution) would not. When sending capital letters, Keyboard.write() sends a shift command plus the desired character, just as if typing on a keyboard. If sending a numeric type, it sends it as an ASCII character (ex. Keyboard.write(97) will send 'a').
+Nur ASCII-Zeichen, die auf der Tastatur zu finden sind, werden unterstützt. Z.B. ASCII 8 (Rücktaste) würde funktionieren, ASCII25 (Ersetzungszeichen) nicht.
+Wenn Großbuchstaben gesendet werden sollen, sendet `Keyboard.write()` den Shift-Hotkey plus das gewünschte Zeichen. Wenn ein numerischer Wert übergeben wird,
+sendet die Funktion das ASCII-Zeichen, z.B. Keyboard.write(97) wird zu 'a'.
 
-For a complete list of ASCII characters, see http://www.asciitable.com/[ASCIITable.com].
+Für eine Liste an ASCII-Zeichen siehe http://www.asciitable.com/[ASCIITable.com].
 [%hardbreaks]
 
 
@@ -28,19 +31,21 @@ For a complete list of ASCII characters, see http://www.asciitable.com/[ASCIITab
 
 
 [float]
-=== Parameters
-`character` : a char or int to be sent to the computer. Can be sent in any notation that's acceptable for a char. For example, all of the below are acceptable and send the same value, 65 or ASCII A:
+=== Parameter
+`character` : Ein Char oder Integer, der an den verbundenen Computer gesendet werden kann. Kann in jeder beliebigen Notation eines Chars gesendet werden.
+Siehe dazu auch die Beispiele unten.
+
 [source,arduino]
 ----
-Keyboard.write(65);         // sends ASCII value 65, or A
-Keyboard.write('A');            // same thing as a quoted character
-Keyboard.write(0x41);       // same thing in hexadecimal
-Keyboard.write(0b01000001); // same thing in binary (weird choice, but it works)
+Keyboard.write(65);         // Sendet das ASCII-Zeichen 65 oder 'A'
+Keyboard.write('A');            // Das Gleiche
+Keyboard.write(0x41);       // Das Gleiche in Hexadezimalnotation
+Keyboard.write(0b01000001); // Das Gleiche in Binärnotation
 ----
 
 [float]
-=== Returns
-`size_t` : number of bytes sent.
+=== Gibt zurück
+`size_t` : Die Anzahl der gesendeten Bytes.
 
 --
 // OVERVIEW SECTION ENDS
@@ -53,26 +58,27 @@ Keyboard.write(0b01000001); // same thing in binary (weird choice, but it works)
 --
 
 [float]
-=== Example Code
+=== Besipielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
+Sendet ein ASCII-'A' über die Keyboard-Bibliothek, wenn der angeschlossene Button gedrückt wird.
 
 [source,arduino]
 ----
 #include <Keyboard.h>
 
 void setup() {
-  // make pin 2 an input and turn on the
-  // pullup resistor so it goes high unless
-  // connected to ground:
+  // Pin 2 wird ein Inputpin mit Pullup-Widerstand.
+  // Pin 2 ist damit immer high, bis er auf Ground
+  // verbunden wird:
   pinMode(2, INPUT_PULLUP);
   Keyboard.begin();
 }
 
 void loop() {
-  //if the button is pressed
+  //Wenn der Button gedrückt wird
   if(digitalRead(2)==LOW){
-    //Send an ASCII 'A',
+    //Sende ein ASCII 'A'
     Keyboard.write(65);
   }
 }
@@ -80,8 +86,9 @@ void loop() {
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-When you use the Keyboard.write() command, the Arduino takes over your keyboard! Make sure you have control before you use the command. A pushbutton to toggle the keyboard control state is effective.
+=== Anmerkungen und Warnungen
+Wenn das `Keyboard.println()`-Kommando benutzt wird, übernimmt der Arduino die Tastatur! Stelle sicher, dass du Kontrolle über die Tastatur hast, bevor du das Kommando verwendest.
+Ein Button, um die Funktion notfalls zu sperren, ist sinnvoll.
 
 --
 // HOW TO USE SECTION ENDS

@@ -13,21 +13,23 @@ title: Keyboard Modifiers
 --
 
 [float]
-=== Description
-The `Keyboard.write()` and `Keyboard.press()` and `Keyboard.release()` commands don’t work with every possible ASCII character, only those that correspond to a key on the keyboard. For example, backspace works, but many of the other non-printable characters produce unpredictable results. For capital letters (and other keys), what’s sent is shift plus the character (i.e. the equivalent of pressing both of those keys on the keyboard).
+=== Beschreibung
+Die `Keyboard.write()`-, `Keyboard.press()`- und `Keyboard.release()`-Kommandos funktionieren nicht mit jedem ASCII-Zeichen, nur mit denen, die auf einer Tastatur verfügbar sind.
+Die Rücktaste funktioniert z.B., aber viele andere Nichtdruckbare Zeichen produzieren unvorhersagbares Verhalten. Für Großbuchstanben (und andere Spezialzeichen) muss die Shift-
+und zusätzlich die gewünschte andere Taste gesendet werden (Funktioniert also genauso wie auf der Tastatur, wenn beide Tasten gedrückt werden).
 [%hardbreaks]
-A modifier key is a special key on a computer keyboard that modifies the normal action of another key when the two are pressed in combination.
+Ein Hotkey ist eine spezielle Taste auf einer Computertastatur, welche die normale Aktion einer Taste verändert, wenn beide in Kombination gedrückt werden.
 [%hardbreaks]
-For more on ASCII values and the characters or functions they represent, see http://www.asciitable.com/[asciitable.com]
+Für mehr Informationen zu ASCII-Zeichen siehe http://www.asciitable.com/[asciitable.com]
 [%hardbreaks]
-For multiple key presses use link:../keyboardpress[Keyboard.press]()
+Benutze link:../keyboardpress[Keyboard.press]() für viele Tastenanschläge.
 [%hardbreaks]
-The Leonardo's definitions for modifier keys are listed below:
+Die Hotkey-Definitionen des Leonardo sind unten aufgelistet:
 [%hardbreaks]
 
 
 |===
-|Key	|Hexadecimal value	|Decimal value
+|Hotkey	|Hexadezimalwert	|Dezimalwert
 
 |KEY_LEFT_CTRL	|0x80	|128
 |KEY_LEFT_SHIFT	|0x81	|129

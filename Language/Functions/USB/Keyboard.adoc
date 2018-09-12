@@ -19,7 +19,7 @@ subCategories: [ "USB" ]
 Die `keyboard`-Funktionen ermöglichen es, 32u4- oder SAMD-micro-basiertend boards, Tastenanschläge an einen verbundenen Computer über dessen nativen USB-Port zu senden.
 [%hardbreaks]
 *Anmerkung: Nicht jedes mögliche ASCII-Zeichen kann eingegeben werden. Besonders die Nichtdruckbaren Zeichen können nicht über die Bilbiothek eingegeben werden.* +
-Die Bibliothek unterstützt die Verwendung von Tastenkombinationen. Tastenkombinationstasten verändern das Verhalten anderer Tasten, wenn diese gleichzeitig gedrückt werden.
+Die Bibliothek unterstützt die Verwendung von Hotkey. Hotkeys verändern das Verhalten anderer Tasten, wenn diese gleichzeitig gedrückt werden.
 link:../keyboard/keyboardmodifiers[Siehe hier] für weitere Informationen über die unterstützten Tasten und deren Benutzung.
 
 --

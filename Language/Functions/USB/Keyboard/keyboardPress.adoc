@@ -13,10 +13,11 @@ title: Keyboard.press()
 --
 
 [float]
-=== Description
-When called, `Keyboard.press()` functions as if a key were pressed and held on your keyboard. Useful when using link:../keyboardmodifiers[modifier keys]. To end the key press, use link:../keyboardrelease[Keyboard.release()] or link:../keyboardreleaseall[Keyboard.releaseAll()].
-
-It is necessary to call link:../keyboardbegin[Keyboard.begin()] before using `press()`.
+=== Beschreibung
+Wenn die Funktion aufgerufen wird, funktioniert sie, wie wenn eine Taste auf der Computertastatur gedrückt und gehalten wird.
+Die Funktion ist sinnvoll, wenn link:../keyboardmodifiers[Hotkeys] verwendet werden sollen. Um den Tastenanschlag zu beenden,
+benutze link:../keyboardrelease[Keyboard.release()] oderr link:../keyboardreleaseall[Keyboard.releaseAll()].
+Bevor `Keyboard.press()` benutzt werden kann, muss link:../keyboardbegin[Keyboard.begin()] aufgerufen werden.
 [%hardbreaks]
 
 
@@ -26,12 +27,12 @@ It is necessary to call link:../keyboardbegin[Keyboard.begin()] before using `pr
 
 
 [float]
-=== Parameters
-`char` : the key to press
+=== Parameter
+`char` : Die Taste, die gedrückt werden soll.
 
 [float]
-=== Returns
-`size_t` : number of key presses sent.
+=== Gibt zurück
+`size_t` : Die Anzahl der Tastenanschläge, die gesendet wurden.
 
 --
 // OVERVIEW SECTION ENDS
@@ -44,40 +45,40 @@ It is necessary to call link:../keyboardbegin[Keyboard.begin()] before using `pr
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-
+Öffnet ein neues Dokument und wartet, bis dieses offen ist.
 
 [source,arduino]
 ----
 #include <Keyboard.h>
 
-// use this option for OSX:
+// Benutze diese Option für OSX:
 char ctrlKey = KEY_LEFT_GUI;
-// use this option for Windows and Linux:
+// Benutze diese Option für Windows und Linux:
 //  char ctrlKey = KEY_LEFT_CTRL;
 
 void setup() {
-  // make pin 2 an input and turn on the
-  // pullup resistor so it goes high unless
-  // connected to ground:
+  // Pin 2 wird ein Inputpin mit Pullup-Widerstand.
+  // Pin 2 ist damit immer high, bis er auf Ground
+  // verbunden wird:
   pinMode(2, INPUT_PULLUP);
-  // initialize control over the keyboard:
+  // Initialisiere die Tastatur:
   Keyboard.begin();
 }
 
 void loop() {
   while (digitalRead(2) == HIGH) {
-    // do nothing until pin 2 goes low
+    // Tue nichts, solange Pin nicht LOW ist
     delay(500);
   }
   delay(1000);
-  // new document:
+  // Erstelle ein neues Dokument: (STRG + N)
   Keyboard.press(ctrlKey);
   Keyboard.press('n');
   delay(100);
   Keyboard.releaseAll();
-  // wait for new window to open:
+  // Warte, bis sich das Fenster öffnet:
   delay(1000);
 ----
 

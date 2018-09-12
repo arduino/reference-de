@@ -13,8 +13,8 @@ title: Keyboard.begin()
 --
 
 [float]
-=== Description
-When used with a Leonardo or Due board, `Keyboard.begin()` starts emulating a keyboard connected to a computer. To end control, use link:../keyboardend[Keyboard.end()].
+=== Beschreibung
+Wenn die Funktion mit einem Leonardo- oder Due-Board benutzt wird, startet `Keyboard.begin()` eine Tastaturemulation auf dem verbundenen Computer. Zum Beenden benutze link:../keyboardend[Keyboard.end()].
 [%hardbreaks]
 
 
@@ -24,12 +24,12 @@ When used with a Leonardo or Due board, `Keyboard.begin()` starts emulating a ke
 
 
 [float]
-=== Parameters
-Nothing
+=== Parameter
+Keine
 
 [float]
-=== Returns
-Nothing
+=== Gibt zurück
+Nichts
 
 --
 // OVERVIEW SECTION ENDS
@@ -42,26 +42,27 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
+Sendet eine Nachricht über die Keyboard-Bibliothek, wenn der angeschlossene Button gedrückt wird.
 
 [source,arduino]
 ----
 #include <Keyboard.h>
 
 void setup() {
-  // make pin 2 an input and turn on the
-  // pullup resistor so it goes high unless
-  // connected to ground:
+  // Pin 2 wird ein Inputpin mit Pullup-Widerstand.
+  // Pin 2 ist damit immer high, bis er auf Ground
+  // verbunden wird:
   pinMode(2, INPUT_PULLUP);
   Keyboard.begin();
 }
 
 void loop() {
-  //if the button is pressed
+  //Wenn der Button gedrückt wird
   if(digitalRead(2)==LOW){
-    //Send the message
+    //Sende die Nachricht
     Keyboard.print("Hello!");
   }
 }
