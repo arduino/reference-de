@@ -13,10 +13,10 @@ title: Mouse.click()
 --
 
 [float]
-=== Description
-Sends a momentary click to the computer at the location of the cursor. This is the same as pressing and immediately releasing the mouse button.
+=== Beschreibung
+Sendet einen Mausklick an den verbundenen Computer. Dies ist das Gleiche wie den Button zu drücken und sofort wieder loszulassen.
 
-`Mouse.click()` defaults to the left mouse button.
+Der Defaultbutton von `Mouse.click()` ist der linke Mausbutton.
 [%hardbreaks]
 
 
@@ -27,16 +27,16 @@ Sends a momentary click to the computer at the location of the cursor. This is t
 
 
 [float]
-=== Parameters
-`button`: which mouse button to press - `char`
+=== Parameter
+`button`: Welcher Mausbutton gedrückt werden soll - `char`
 
 * `MOUSE_LEFT` (default)
 * `MOUSE_RIGHT`
 * `MOUSE_MIDDLE`
 
 [float]
-=== Returns
-Nothing
+=== Gibt zurück
+Nichts
 
 --
 // OVERVIEW SECTION ENDS
@@ -49,22 +49,23 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-
+Sendet einen linken Mausklick, wenn der Button gedrückt wird.
 
 [source,arduino]
 ----
 #include <Mouse.h>
 
 void setup(){
+  // Setze Pin 2 als Inputpin
   pinMode(2,INPUT);
-  //initiate the Mouse library
+  //Initialisiere die Maus-Bibliothek
   Mouse.begin();
 }
 
 void loop(){
-  //if the button is pressed, send a left mouse click
+  // Sende einen linken Mausklick, wenn der Button gedrückt wird
   if(digitalRead(2) == HIGH){
     Mouse.click();
   }
@@ -73,8 +74,9 @@ void loop(){
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-When you use the `Mouse.click()` command, the Arduino takes over your mouse! Make sure you have control before you use the command. A pushbutton to toggle the mouse control state is effective.
+=== Anmerkungen und Warnungen
+Wenn das `Mouse.click()`-Kommando benutzt wird, übernimmt der Arduino die Tastatur! Stelle sicher, dass du Kontrolle über die Tastatur hast, bevor du das Kommando verwendest.
+Ein Button, um die Funktion notfalls zu sperren, ist sinnvoll.
 
 --
 // HOW TO USE SECTION ENDS
@@ -85,7 +87,7 @@ When you use the `Mouse.click()` command, the Arduino takes over your mouse! Mak
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #LANGUAGE# link:../mouseend[Mouse.end()]

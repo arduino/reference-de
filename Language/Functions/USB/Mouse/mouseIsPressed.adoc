@@ -13,8 +13,8 @@ title: Mouse.isPressed()
 --
 
 [float]
-=== Description
-Checks the current status of all mouse buttons, and reports if any are pressed or not.
+=== Beschreibung
+Checkt den aktuellsten Status des Mausbuttons und liefert zurück, ob dieser gedrückt ist.
 [%hardbreaks]
 
 
@@ -24,10 +24,10 @@ Checks the current status of all mouse buttons, and reports if any are pressed o
 `Mouse.isPressed(button);`
 
 [float]
-=== Parameters
-When there is no value passed, it checks the status of the left mouse button.
+=== Parameter
+Default wird der linke Mausbutton gecheckt.
 
-`button`: which mouse button to check - `char`
+`button`: Welcher Mausbutton gecheckt werden soll - `char`
 
 * `MOUSE_LEFT (default)`
 
@@ -36,8 +36,8 @@ When there is no value passed, it checks the status of the left mouse button.
 * `MOUSE_MIDDLE`
 
 [float]
-=== Returns
-`boolean` : reports whether a button is pressed or not.
+=== Gibt zurück
+`boolean` : Ob ein Mausbutton gedrückt ist oder nicht.
 
 --
 // OVERVIEW SECTION ENDS
@@ -50,39 +50,39 @@ When there is no value passed, it checks the status of the left mouse button.
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-
+Setzt den Mausbutton und löst ihn wieder abhängig vom gedrückten Schalter an Pin 2 und 3. Speichert dabei den Status der Maus.
 
 [source,arduino]
 ----
 #include <Mouse.h>
 
 void setup(){
-  //The switch that will initiate the Mouse press
+  // Der Schalter, der den Mauszeigerdruck startet: Pin 2
   pinMode(2,INPUT);
-  //The switch that will terminate the Mouse press
+  // Der Schalter, der den Mauszeigerdruck beendet: Pin 3
   pinMode(3,INPUT);
-  //Start serial communication with the computer
+  //Starte serielle Kommunikation mit dem Computer
   Serial1.begin(9600);
-  //initiate the Mouse library
+  // Initialisiere die Maus-Bibliothek:
   Mouse.begin();
 }
 
 void loop(){
-  //a variable for checking the button's state
+  // Eine Variable, um den aktuellen Status der Maus zu speichern
   int mouseState=0;
-  //if the switch attached to pin 2 is closed, press and hold the left mouse button and save the state ina  variable
+  // Wenn Pin 2 HIGH ist (Schalter geschlossen), drücke den Mausbutton und halte ihn. Speichere den Status der Maus in die Variable.
   if(digitalRead(2) == HIGH){
     Mouse.press();
     mouseState=Mouse.isPressed();
   }
-  //if the switch attached to pin 3 is closed, release the left mouse button and save the state in a variable
+  // Wenn Pin 3 HIGH ist (Schalter geschlossen), löse den gedrückten Mausbutton. Speichere den Status der Maus in die Variable.
   if(digitalRead(3) == HIGH){
     Mouse.release();
     mouseState=Mouse.isPressed();
   }
-  //print out the current mouse button state
+  // Gib den aktuellen Status der Maus aus
   Serial1.println(mouseState);
   delay(10);
 }
@@ -97,7 +97,7 @@ void loop(){
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #LANGUAGE# link:../mouseclick[Mouse.click()]

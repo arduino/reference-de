@@ -13,8 +13,9 @@ title: Mouse.move()
 --
 
 [float]
-=== Description
-Moves the cursor on a connected computer. The motion onscreen is always relative to the cursor's current location. Before using `Mouse.move()` you must call link:../mousebegin[Mouse.begin()]
+=== Beschreibung
+Bewegt den Mauszeiger auf einem verbundenen Computer. Die Bewegung ist dabei immer relativ zu der aktuellen Position des Mauszeigers.
+Bevor `Mouse.move()` benutzt werden kann, muss link:../mousebegin[Mouse.begin()] aufgerufen werden.
 [%hardbreaks]
 
 
@@ -24,15 +25,15 @@ Moves the cursor on a connected computer. The motion onscreen is always relative
 
 
 [float]
-=== Parameters
-`xVal`: amount to move along the x-axis - `signed char`
+=== Parameter
+`xVal`: Wie weit der Mauszeiger auf der X-Achse bewegt werden soll - `signed char`
 
-`yVal`: amount to move along the y-axis - `signed char`
+`yVal`: Wie weit der Mauszeiger auf der Y-Achse bewegt werden soll - `signed char`
 
-`wheel`: amount to move scroll wheel - `signed char`
+`wheel`: Wie weit das Mausrad gedreht werden soll - `signed char`
 [float]
-=== Returns
-Nothing
+=== Gibt zurück
+Nichts
 
 --
 // OVERVIEW SECTION ENDS
@@ -45,28 +46,29 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
+Bewegt den Mauszeiger anhand der analogen Eingänge.
 
 [source,arduino]
 ----
 #include <Mouse.h>
 
-const int xAxis = A1;         //analog sensor for X axis
-const int yAxis = A2;         // analog sensor for Y axis
+const int xAxis = A1;         // Analoger sensor für die X-Achse
+const int yAxis = A2;         // Analoger sensor für die Y-Achse
 
-int range = 12;               // output range of X or Y movement
-int responseDelay = 2;       // response delay of the mouse, in ms
-int threshold = range/4;      // resting threshold
-int center = range/2;         // resting position value
+int range = 12;               // Ausgabebreite der X- und Y-Bewegung
+int responseDelay = 2;       // Antwortverzögerung der Maus in ms
+int threshold = range/4;      // Wartethreshold
+int center = range/2;         // Warteposition
 int minima[] = {
-  1023, 1023};                // actual analogRead minima for {x, y}
+  1023, 1023};                // Aktuelle analogRead Minima für {x, y}
 int maxima[] = {
-  0,0};                       // actual analogRead maxima for {x, y}
+  0,0};                       // Aktuelle analogRead Maxima für {x, y}
 int axis[] = {
-  xAxis, yAxis};              // pin numbers for {x, y}
-int mouseReading[2];          // final mouse readings for {x, y}
+  xAxis, yAxis};              // Pinnummern für {x, y}
+int mouseReading[2];          // Finale Position von {x, y}
 
 
 void setup() {
@@ -75,28 +77,28 @@ void setup() {
 
 void loop() {
 
-// read and scale the two axes:
+// Lies uns skaliere beide Achsen:
   int xReading = readAxis(0);
   int yReading = readAxis(1);
 
-// move the mouse:
+// Bewege die Maus:
     Mouse.move(xReading, yReading, 0);
     delay(responseDelay);
 }
 
 /*
-  reads an axis (0 or 1 for x or y) and scales the
-  analog input range to a range from 0 to <range>
+	Liest eine Achse (0 oder 1 für x oder y) und skaliert die
+	analoge Eingabebreite auf eine Breite von 0 bis <range>
 */
 
 int readAxis(int axisNumber) {
-  int distance = 0;    // distance from center of the output range
+  int distance = 0;    // Distanz von der Bildschirmmitte zum Rand
 
-  // read the analog input:
+  // Lies den analogen Inputpin
   int reading = analogRead(axis[axisNumber]);
 
-// of the current reading exceeds the max or min for this axis,
-// reset the max or min:
+// Wenn der aktuelle Wert das Maximum oder Minimum über-/ untersteigt,
+// setze das Maximum oder Minimum neu:
   if (reading < minima[axisNumber]) {
     minima[axisNumber] = reading;
   }
@@ -104,30 +106,30 @@ int readAxis(int axisNumber) {
     maxima[axisNumber] = reading;
   }
 
-  // map the reading from the analog input range to the output range:
+  // Mappe den gelesenen Wert von der Eingabebreite auf die Ausgabebreite:
   reading = map(reading, minima[axisNumber], maxima[axisNumber], 0, range);
 
- // if the output reading is outside from the
- // rest position threshold,  use it:
+ // Wenn die Ausgabe außerhalbe des Wartethresholds liegt,
+ // nutze sie als Distanz:
   if (abs(reading - center) > threshold) {
     distance = (reading - center);
   }
 
-  // the Y axis needs to be inverted in order to
-  // map the movemment correctly:
+  // Die Y-Achse muss invertiert werden, um die Bewegung richtig anzuzeigen.
   if (axisNumber == 1) {
     distance = -distance;
   }
 
-  // return the distance for this axis:
+  // Gibt die Distanz für die Achse zurück
   return distance;
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-When you use the `Mouse.move()` command, the Arduino takes over your mouse! Make sure you have control before you use the command. A pushbutton to toggle the mouse control state is effective.
+=== Anmerkungen und Warnungen
+Wenn das `Mouse.move()`-Kommando benutzt wird, übernimmt der Arduino die Tastatur! Stelle sicher, dass du Kontrolle über die Tastatur hast, bevor du das Kommando verwendest.
+Ein Button, um die Funktion notfalls zu sperren, ist sinnvoll.
 
 --
 // HOW TO USE SECTION ENDS
@@ -138,7 +140,7 @@ When you use the `Mouse.move()` command, the Arduino takes over your mouse! Make
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #LANGUAGE# link:../mouseclick[Mouse.click()]
