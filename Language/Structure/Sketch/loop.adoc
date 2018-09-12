@@ -16,7 +16,7 @@ subCategories: [ "Sketch" ]
 --
 
 [float]
-=== Description
+=== Beschreibung
 After creating a link:../setup[setup()] function, which initializes and sets the initial values, the `loop()` function does precisely what its name suggests, and loops consecutively, allowing your program to change and respond. Use it to actively control the Arduino board.
 [%hardbreaks]
 
@@ -29,27 +29,34 @@ After creating a link:../setup[setup()] function, which initializes and sets the
 --
 
 [float]
-=== Example Code
+=== Beispielcode
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+Der Code zeigt ein kleines Beispiel, welches den einen Inputpin festlegt. Bei jedem Durchlauf wird je nach Zustand einen Wert
+auf den seriellen Ausgang geschrieben. Anschließend wartet das Board eine Sekunde und beginnt den Durchlauf von Neuem.
+
 [source,arduino]
 ----
+// Lege Button auf Pin 3
 int buttonPin = 3;
 
-// setup initializes serial and the button pin
 void setup()
 {
-  beginSerial(9600);
+  // Starte die serielle Verbindung
+  Serial.begin(9600);
+  // Setze den Pin 3 als Inputpin
   pinMode(buttonPin, INPUT);
 }
 
-// loop checks the button pin each time,
-// and will send serial if it is pressed
+// Loop checkt den Button bei jedem Durchlauf und schreibt je nach Zustand einen Wert auf den seriellen Ausgang.
 void loop()
 {
+  // Wenn Pin HIGH ist, schreibe H
   if (digitalRead(buttonPin) == HIGH)
     serialWrite('H');
+  // Sonst, schreibe L
   else
     serialWrite('L');
-
+  //Warte 1 Sekunde
   delay(1000);
 }
 ----
