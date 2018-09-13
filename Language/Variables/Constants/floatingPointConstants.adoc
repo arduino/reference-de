@@ -16,8 +16,9 @@ subCategories: [ "Constants" ]
 --
 
 [float]
-=== Description
-Similar to integer constants, floating point constants are used to make code more readable. Floating point constants are swapped at compile time for the value to which the expression evaluates.
+=== Beschreibung
+Ähnlich zu Integerkonstanten werden Gleitkommazahlkonstanten benutzt, um den Code lesbarer zu machen. Gleitkommazahlkonstanten werden zur Compilezeit
+auf den Wert, den der Ausdruck ergibt, gesetzt.
 [%hardbreaks]
 
 --
@@ -30,21 +31,21 @@ Similar to integer constants, floating point constants are used to make code mor
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 
 [source,arduino]
 ----
-n = 0.005;  // 0.005 is a floating point constant
+n = 0.005;  // 0.005 ist eine Gleitkommazahlkonstante
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-Floating point constants can also be expressed in a variety of scientific notation. 'E' and 'e' are both accepted as valid exponent indicators.
+=== Anmerkungen und Warnungen
+Gleitkommazahlkonstanten können auch wissenschaftliche Notationen enthalten. 'E' und 'e' werden als Exponentenindikatoren verwendet.
 [%hardbreaks]
 
 |===
-|floating-point constant |evaluates to: |also evaluates to:
+|Gleitkommazahlkonstanten |wird zu: |wird auch zu:
 
 |10.0
 |10
@@ -72,7 +73,7 @@ Floating point constants can also be expressed in a variety of scientific notati
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 
