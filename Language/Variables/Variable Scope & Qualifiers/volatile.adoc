@@ -16,16 +16,37 @@ subCategories: [ "Variable Scope & Qualifiers" ]
 --
 
 [float]
-=== Description
-`volatile` is a keyword known as a variable _qualifier_, it is usually used before the datatype of a variable, to modify the way in which the compiler and subsequent program treats the variable.
+=== Beschreibung
+`volatile` ist ein Variablenkennzeichner. Dieser wird normalerweise vor dem Datentyp der Variable angegeben. Der Compiler behandelt je nach Kennzeichner dann die
+Variable auf andere Art.
 
-Declaring a variable volatile is a directive to the compiler. The compiler is software which translates your C/C++ code into the machine code, which are the real instructions for the Atmega chip in the Arduino.
+Eine `volatile`- Variable ist eine Direktive für den Compiler. Der Compiler ist eine Software, die deinen C/C++-Code in Maschinencode übersetzt, der dann die "richtigen"
+Anweisungen für den Arduino enthält.
 
-Specifically, it directs the compiler to load the variable from RAM and not from a storage register, which is a temporary memory location where program variables are stored and manipulated. Under certain conditions, the value for a variable stored in registers can be inaccurate.
+Im Detail zeigt `volatile` dem Compiler, dass er die Variable aus dem RAM und nicht aus dem Speicherregister laden soll. Unter bestimmten Bedingungen können die Variablen
+in den Registern ungenau sein.
 
-A variable should be declared volatile whenever its value can be changed by something beyond the control of the code section in which it appears, such as a concurrently executing thread. In the Arduino, the only place that this is likely to occur is in sections of code associated with interrupts, called an interrupt service routine.
+Eine Variable sollte als `volatile` deklariert werden, wenn sie von irgendwo anders geändert werden kann außer in dem Codeteil, in dem sie auftaucht. Beispiele dafür sind
+Threads, die parallel ausgeführt werden. Im Arduino kann das nur bei Interrupts vorkommen, in sogennanten Interrupt Service Routinen.
 [%hardbreaks]
 
+[float]
+=== int oder long volatile Variablen
+Wenn die Variable größer als Byte ist (also z.B. ein 16-Bit-Integer oder ein 32-Bit-Long), kann der Mikrocontroller sie nicht in einem Durchgang lesen, da es ein
+8-Bit-Mikrocontroller ist. Das bedeutet, das während das Hauptprogramm die ersten 8 Bit der Variable liest, kann der Interrupt bereits die zweiten 8 Bit geändert haben.
+Das kann zufällig und unvorhersehbare Ergebnisse liefern.
+
+Gegenmaßnahme:
+
+Während die Variable gelesen wird, müssen Interrupts deaktiviert werden, sodass diese die Bits nicht verändern können während sie gelesen werden.
+
+Es gibt mehrere Möglichkeiten, das zu tun:
+
+1. #LANGUAGE# link:../../../functions/interrupts/nointerrupts[noInterrupts]
+
+2. Das ATOMIC_BLOCK-Makro. Atomare Operationen sind einzelne MCU-Operationen-Die kleinste mögliche Einheit.
+
+[%hardbreaks]
 --
 // OVERVIEW SECTION ENDS
 
@@ -37,34 +58,53 @@ A variable should be declared volatile whenever its value can be changed by some
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-
+Die LED wird angeschaltet, wenn der Interruptpin den Status ändert.
 
 [source,arduino]
 ----
-// toggles LED when interrupt pin changes state
-
+// Initialisiere den Pin der LED auf Pin 13
 int pin = 13;
+// Intitialisiere den Status als volatile auf LOW
 volatile int state = LOW;
 
 void setup()
 {
+  // Deklariere den Pin als Outputpin
   pinMode(pin, OUTPUT);
+  // Setze einen Interrupt auf Pin 0, wenn 
   attachInterrupt(0, blink, CHANGE);
 }
 
 void loop()
 {
+  // Schreibe den Status auf den Pin zurück
   digitalWrite(pin, state);
 }
 
 void blink()
 {
+  // Invertiere den Status, dass die LED blinkt
   state = !state;
 }
 
 ----
+
+
+[source,arduino]
+----
+#include <util/atomic.h> // Diese Bibliothek fügt das ATOMIC_BLOCK-Makro ein.
+volatile int input_from_interrupt;
+
+  ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
+     // Code mit geblockten Interrupts hier (Mehrere atomare Operationen hintereinander werden nicht durch Interrupts unterbrochen)
+     int result = input_from_interrupt;
+   }
+
+----
+
+
 
 --
 // HOW TO USE SECTION ENDS
@@ -75,7 +115,7 @@ void blink()
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #LANGUAGE# link:../../../functions/external-interrupts/attachinterrupt[attachInterrupt]
