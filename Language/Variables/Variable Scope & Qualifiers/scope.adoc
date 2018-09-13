@@ -16,14 +16,18 @@ subCategories: [ "Variable Scope & Qualifiers" ]
 --
 
 [float]
-=== Description
-Variables in the C programming language, which Arduino uses, have a property called scope. This is in contrast to early versions of languages such as BASIC where every variable is a _global_ variable.
+=== Beschreibung
+Variablen in der C-Programmiersprache, auf die Arduino aufbaut, haben eine Eigenschaft, die sich Scope nennt. Im Gegensatz zu früheren Programmiersprachen,
+wie z.B. BASIC, sind in C nicht alle Variablen _global_ verfügar.
 
-A global variable is one that can be seen by every function in a program. Local variables are only visible to the function in which they are declared. In the Arduino environment, any variable declared outside of a function (e.g. setup(), loop(), etc. ), is a _global_ variable.
+Eine globale Variable ist eine Variable, die vo jeder Funktion in dem Programm "gesehen" werden kann. Lokale Variablen sind nur gültig in der Funktion, in der
+sie deklariert wurden und können von außerhalb nicht verändert werden. In der Arduino-Umgebung ist jede Variable, die außerhalb einer Funktion (z.B. setup(), loop(), etc. )
+definiert wird, eine _globale_ Variable.
 
-When programs start to get larger and more complex, local variables are a useful way to insure that only one function has access to its own variables. This prevents programming errors when one function inadvertently modifies variables used by another function.
+Wenn Programme größer und komplexer werden, sind lokale Variablen eine Möglichkeit, sicherzustellen, dass nur die Funktion Zugriff auf die Variable hat, die dies wirklich benötigt.
+Das verhindert unter Anderem, dass Funktionen unabsichtlich die Variablen anderer Funktionen ändern und damit unvorhersehbare Ergebnisse produzieren.
 
-It is also sometimes handy to declare and initialize a variable inside a `for` loop. This creates a variable that can only be accessed from inside the for-loop brackets. 
+Manchmal macht es auch Sinn, eine Variable direkt in einer for-Schleife zu initialisieren. Diese Variable ist dann nur innerhalb der for-Schleife gültig.
 [%hardbreaks]
 
 --
@@ -37,13 +41,13 @@ It is also sometimes handy to declare and initialize a variable inside a `for` l
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-
+Der Code beschreibt den Unterschied zwischen lokalen und globalen Variablen.
 
 [source,arduino]
 ----
-int gPWMval;  // any function will see this variable
+int gPWMval;  // Globale Variable, die jede Funktion "sehen" kann
 
 void setup()
 {
@@ -52,12 +56,12 @@ void setup()
 
 void loop()
 {
-  int i;    // "i" is only "visible" inside of "loop"
-  float f;  // "f" is only "visible" inside of "loop"
+  int i;    // "i" ist nur "sichtbar" innerhalb von "loop"
+  float f;  // "f" ist nur "sichtbar" innerhalb von "loop"
   // ...
 
   for (int j = 0; j <100; j++){
-  // variable j can only be accessed inside the for-loop brackets
+    // Variable j kann nur innerhalb der Schleife benutzt werden
   }
 
 }
