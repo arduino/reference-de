@@ -16,8 +16,8 @@ subCategories: [ "Conversion" ]
 --
 
 [float]
-=== Description
-Converts a value to the link:../../data-types/long[long] data type.
+=== Beschreibung
+Konvertiert einen Wert in den link:../../data-types/long[long]-Datentyp.
 [%hardbreaks]
 
 
@@ -27,11 +27,11 @@ Converts a value to the link:../../data-types/long[long] data type.
 
 
 [float]
-=== Parameters
-`x`: a value of any type
+=== Parameter
+`x`: Ein Wert beliebigen Datentyps
 
 [float]
-=== Returns
+=== Gibt zurück
 `long`
 
 --
@@ -45,7 +45,7 @@ Converts a value to the link:../../data-types/long[long] data type.
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #LANGUAGE# link:../../data-types/long[long]
