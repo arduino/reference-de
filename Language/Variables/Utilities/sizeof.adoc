@@ -16,8 +16,8 @@ subCategories: [ "Utilities" ]
 --
 
 [float]
-=== Description
-The sizeof operator returns the number of bytes in a variable type, or the number of bytes occupied by an array.
+=== Beschreibung
+`sizeof` gibt die Anzahl an Bytes in einem Variablentyp oder die Anzahl an Bytes eines Arrays zurück.
 [%hardbreaks]
 
 
@@ -27,12 +27,12 @@ The sizeof operator returns the number of bytes in a variable type, or the numbe
 
 
 [float]
-=== Parameters
-`variable`: any variable type or array (e.g. int, float, byte)
+=== Parameter
+`variable`: Jeder beliebige Variablentyp oder auch ein Array (z.B. int, float, byte)
 
 [float]
-=== Returns
-Nothing
+=== Gibt zurück
+Nichts
 
 --
 // OVERVIEW SECTION ENDS
@@ -45,41 +45,50 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The `sizeof` operator is useful for dealing with arrays (such as strings) where it is convenient to be able to change the size of the array without breaking other parts of the program.
+Der `sizeof`-Operator ist nützlich, um mit Arrays (wie z.B. Strings) umzugehen. Dort ist es Standard, dass die Größe des Arrays sich ändert, ohne
+dass das ganze restliche Programm umgeschrieben werden muss.
 
-This program prints out a text string one character at a time. Try changing the text phrase.
+Das Programm gibt einen Text zeichenweise aus. Versuche, den Text zu ändern, das Programm wird weiter funktionieren.
 
 [source,arduino]
 ----
+// Definiere Text und Zählervariable
 char myStr[] = "this is a test";
 int i;
 
 void setup(){
+  // Initialisiere seriellen Port
   Serial.begin(9600);
 }
 
 void loop() {
+  // Laufe über das Array (den String), egal, wie lange dieser ist
   for (i = 0; i < sizeof(myStr) - 1; i++){
+	// Gib die Zeichennummer als Dezimalzahl aus
     Serial.print(i, DEC);
+	// Gib ein Gleichheitszeichen aus
     Serial.print(" = ");
+	// Gib das Zeichen des Strings an Stelle "i" aus
     Serial.write(myStr[i]);
+	// Schreibe eine neue Zeile
     Serial.println();
   }
-  delay(5000); // slow down the program
+  delay(5000); // Warte 5 Sekunden
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-Note that `sizeof` returns the total number of bytes. So for larger variable types such as ints, the for loop would look something like this. Note also that a properly formatted string ends with the NULL symbol, which has ASCII value 0.
+=== Anmerkungen und Warnungen
+`sizeof` gibt die Anzahl an Bytes zurück. Für größere Variablentypen, wie z.B. Integer, sieht die Schleife wie folgt aus:
+Beachte zusätzlich, dass ein richtig formattierter String mit dem `NULL`-Symbol beendet wird, also dem ASCII-Zeichen mit Nummer 0.
 
 [source,arduino]
 ----
 for (i = 0; i < (sizeof(myInts)/sizeof(int)); i++) {
-  // do something with myInts[i]
+  // Tue was auch immer mit myInts[i]
 }
 ----
 

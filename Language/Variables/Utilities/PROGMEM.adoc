@@ -16,12 +16,15 @@ subCategories: [ "Utilities" ]
 --
 
 [float]
-=== Description
-Store data in flash (program) memory instead of SRAM. There's a description of the various http://www.arduino.cc/playground/Learning/Memory[types of memory] available on an Arduino board.
+=== Beschreibung
+Speichere Daten im Flash-/Programm-Speicher statt im SRAM. Eine Beschreibung der unterschiedlichen Arten von Speicher des Arduinos
+findest du http://www.arduino.cc/playground/Learning/Memory[hier].
 
-The `PROGMEM` keyword is a variable modifier, it should be used only with the datatypes defined in pgmspace.h. It tells the compiler "put this information into flash memory", instead of into SRAM, where it would normally go.
+`PROGMEM` ist ein Variablenmodifikator, welcher nur mit den Datentypen in link:http://www.nongnu.org/avr-libc/user-manual/group\__avr__pgmspace.html[pgmspace.h]
+verwendet werden sollte. Es ist eine Anweisung an den Compiler, um die Daten im Flash-/Programm-Speicher statt im SRAM zu speichern.
 
-PROGMEM is part of the http://www.nongnu.org/avr-libc/user-manual/group\__avr__pgmspace.html[pgmspace.h] library. It is included automatically in modern versions of the IDE, however if you are using an IDE version below 1.0 (2011), you'll first need to include the library at the top your sketch, like this:
+`PROGMEM` gehört zur link:http://www.nongnu.org/avr-libc/user-manual/group\__avr__pgmspace.html[pgmspace.h]-Softwarebibliothek. Diese ist in allen modernen IDE-Versionen
+standardmäßig enthalten. Solltest du eine IDE-Version niedriger als 1.0 (von 2011) besitzen, musst du die Bibliothek erst händisch einbinden. Dies funktioniert wie folgt:
 
 `#include <avr/pgmspace.h>`
 [%hardbreaks]
@@ -31,20 +34,22 @@ PROGMEM is part of the http://www.nongnu.org/avr-libc/user-manual/group\__avr__p
 === Syntax
 const dataType variableName[] PROGMEM = {data0, data1, data3...};`
 
-`dataType` - any variable type
-`variableName` - the name for your array of data
+`dataType` - Beliebiger Variablentyp
+`variableName` - Der Variablenname
 
-Note that because PROGMEM is a variable modifier, there is no hard and fast rule about where it should go, so the Arduino compiler accepts all of the definitions below, which are also synonymous. However experiments have indicated that, in various versions of Arduino (having to do with GCC version), PROGMEM may work in one location and not in another. The "string table" example below has been tested to work with Arduino 13. Earlier versions of the IDE may work better if PROGMEM is included after the variable name.
+`PROGMEM` ist ein variabler Modifikator, weshalb die Arduino-IDE alle folgenden synonymen Versionen der Syntax akzeptiert. Durch Experimente wurde allerdings festgestellt,
+dass in einigen Versionen der Arduino-IDE (Durch die unterschiedlichen GCC-Versionen) an einigen Stellen funktioniert und an anderen nicht. Die Beispiele unten funktionieren
+mit der Arduino IDE Version 13. Frühere Versionen der IDE arbeiten besser, wenn `PROGMEM` nach dem Variablennamen eingefügt wird.
 
-`const dataType variableName[] PROGMEM = {};   // use this form` +
-`const PROGMEM  dataType  variableName[] = {}; // or this one`+
-`const dataType PROGMEM variableName[] = {};   // not this one
+`const dataType variableName[] PROGMEM = {};   // Benutze dies` +
+`const PROGMEM  dataType  variableName[] = {}; // oder das,`+
+`const dataType PROGMEM variableName[] = {};   // aber nicht diese Version!
 
+`PROGMEM` kann auch für einzelne Variablen benutzt werden, dies ist aber nur sinnvoll, wenn ein großer Block von Daten gespeichert werden soll. Normalerweise ist das bei Arrays,
+Strings (die auch Arrays sind) und weiteren komplizierteren Datenstrukturen der Fall.
 
-While `PROGMEM` could be used on a single variable, it is really only worth the fuss if you have a larger block of data that needs to be stored, which is usually easiest in an array, (or another C data structure beyond our present discussion).
-
-Using `PROGMEM` is also a two-step procedure. After getting the data into Flash memory, it requires special methods (functions), also defined in the http://www.nongnu.org/avr-libc/user-manual/group__avr__pgmspace.html[pgmspace.h] library, to read the data from program memory back into SRAM, so we can do something useful with it.
-
+Die Benutzung von `PROGMEM` erfolgt in 2 Schritten. Nachdem die Daten in den Flash-/Programm-Speicher geladen wurden, müssen spezielle Methoden verwendet werden, um diese Variablen
+wieder auszulesen und zu bearbeiten. Diese sind auch in der link:http://www.nongnu.org/avr-libc/user-manual/group\__avr__pgmspace.html[pgmspace.h]-Softwarebibliothek definiert. 
 
 --
 // OVERVIEW SECTION ENDS
@@ -57,110 +62,106 @@ Using `PROGMEM` is also a two-step procedure. After getting the data into Flash 
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The following code fragments illustrate how to read and write unsigned chars (bytes) and ints (2 bytes) to PROGMEM.
+Das folgende Code-Fragment zeigt, wie ein unsigned chars (bytes) und ints (2 bytes) in `PROGMEM` geschrieben und wieder ausgelesen werden können.
 
 [source,arduino]
 ----
-// save some unsigned ints
+// Speichere einige unsigned ints
 const PROGMEM  uint16_t charSet[]  = { 65000, 32796, 16843, 10, 11234};
 
-// save some chars
+// Speichere einen String
 const char signMessage[] PROGMEM  = {"I AM PREDATOR,  UNSEEN COMBATANT. CREATED BY THE UNITED STATES DEPART"};
 
-unsigned int displayInt;
-int k;    // counter variable
-char myChar;
+unsigned int displayInt; // Rückgabewert der Funktion zum Auslesen der Daten
+int k; // Definiere eine Zählervariable
+char myChar; // Definiere einen Char, um diesen zu bearbeiten
 
 
 void setup() {
-  Serial.begin(9600);
-  while (!Serial);  // wait for serial port to connect. Needed for native USB
+  Serial.begin(9600); // Initialisiere den seriellen Port
+  while (!Serial);  // Warte, bis der serielle Port verbunden ist
 
-  // put your setup code here, to run once:
-  // read back a 2-byte int
+  // Setup code:
+  // Lies einen 2-Byte-Int
   for (k = 0; k < 5; k++)
   {
-    displayInt = pgm_read_word_near(charSet + k);
-    Serial.println(displayInt);
+    displayInt = pgm_read_word_near(charSet + k); // Lies den charSet-Wert wieder aus dem Flash-/Programm-Speicher
+    Serial.println(displayInt); // Gib den gelesenen Wert aus
   }
-  Serial.println();
+  Serial.println(); // Schreibe eine neue Zeile
 
-  // read back a char
+  // Lies einen Char
   for (k = 0; k < strlen_P(signMessage); k++)
   {
-    myChar =  pgm_read_byte_near(signMessage + k);
-    Serial.print(myChar);
+    myChar =  pgm_read_byte_near(signMessage + k); // Lies den signMessage-Wert wieder aus dem Flash-/Programm-Speicher
+    Serial.print(myChar); // Gib den gelesenen Wert aus
   }
 
-  Serial.println();
+  Serial.println(); // Schreibe eine neue Zeile
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-
+  // ...
 }
 
 ----
-*Arrays of strings*
+*Array von Strings*
 
-It is often convenient when working with large amounts of text, such as a project with an LCD display, to setup an array of strings. Because strings themselves are arrays, this is in actually an example of a two-dimensional array.
+Wenn mit einer großen Menge an Text gearbeitet wird (Beispiel: Projekt mit LCD-Display), ist es häufig nötig, Texte in ein Array von Strings zu packen.
+Dadurch, dass Strings bereits selbst Arrays sind, entsteht dadurch ein 2-dimensionales Array.
 
-These tend to be large structures so putting them into program memory is often desirable. The code below illustrates the idea.
+Diese großen Datenstrukturen können in den Flash-/Programm-Speicher geladen werden. Das Beispiel unten zeigt das.
 
 [source,arduino]
 ----
 /*
  PROGMEM string demo
- How to store a table of strings in program memory (flash),
- and retrieve them.
+ Wie man ein Stringarray in den Flash-/Programm-Speicher lädt und wieder liest.
 
- Information summarized from:
+ Für weitere Informationen siehe:
  http://www.nongnu.org/avr-libc/user-manual/pgmspace.html
 
- Setting up a table (array) of strings in program memory is slightly complicated, but
- here is a good template to follow.
-
- Setting up the strings is a two-step process. First define the strings.
+ Stringarrays in den Flash-/Programm-Speicher zu laden, ist etwas komplizierter,
+ das Beispiel ziegt dies jedoch.
 */
 
 #include <avr/pgmspace.h>
-const char string_0[] PROGMEM = "String 0";   // "String 0" etc are strings to store - change to suit.
-const char string_1[] PROGMEM = "String 1";
-const char string_2[] PROGMEM = "String 2";
-const char string_3[] PROGMEM = "String 3";
-const char string_4[] PROGMEM = "String 4";
-const char string_5[] PROGMEM = "String 5";
+const char string_0[] PROGMEM = "String 0"; // Definiere deine Strings "String 0" ist hier nur ein Beispiel
+const char string_1[] PROGMEM = "String 1"; // Definiere deine Strings "String 1" ist hier nur ein Beispiel
+const char string_2[] PROGMEM = "String 2"; // Definiere deine Strings "String 2" ist hier nur ein Beispiel
+const char string_3[] PROGMEM = "String 3"; // Definiere deine Strings "String 3" ist hier nur ein Beispiel
+const char string_4[] PROGMEM = "String 4"; // Definiere deine Strings "String 4" ist hier nur ein Beispiel
+const char string_5[] PROGMEM = "String 5"; // Definiere deine Strings "String 5" ist hier nur ein Beispiel
 
 
-// Then set up a table to refer to your strings.
-
+// Initialisiere die Tabelle von Strings
 const char* const string_table[] PROGMEM = {string_0, string_1, string_2, string_3, string_4, string_5};
 
-char buffer[30];    // make sure this is large enough for the largest string it must hold
+char buffer[30]; // Der Buffer zum Lesen der Daten muss so lang sein wie der längste String!
 
 void setup()
 {
-  Serial.begin(9600);
-  while(!Serial); // wait for serial port to connect. Needed for native USB
-  Serial.println("OK");
+  Serial.begin(9600); // Initialisiere den seriellen Port
+  while(!Serial); // Warten, bis der serielle Port verfügbar ist
+  Serial.println("OK"); // Schreibe "OK" auf den seriellen Port
 }
 
 
 void loop()
 {
-  /* Using the string table in program memory requires the use of special functions to retrieve the data.
-     The strcpy_P function copies a string from program space to a string in RAM ("buffer").
-     Make sure your receiving string in RAM  is large enough to hold whatever
-     you are retrieving from program space. */
+  /* Spezielle Funktionen zum Lesen der Daten sind nötig. "strcpy_P" kopiert den String vom
+     Flash-/Programm-Speicher in dem SRAM/ den Buffer. Stelle sicher, dass der empfangende 
+	 String lang genug ist für den String. 
+  */
 
-
+  // Iteriere über das Array: 6-mal, da 6 Strings im Array sind
   for (int i = 0; i < 6; i++)
   {
-    strcpy_P(buffer, (char*)pgm_read_word(&(string_table[i]))); // Necessary casts and dereferencing, just copy.
-    Serial.println(buffer);
-    delay( 500 );
+    strcpy_P(buffer, (char*)pgm_read_word(&(string_table[i]))); // Casts und Dereferenzierung des Speichers
+    Serial.println(buffer); // Gib den gelesenen Wert aus
+    delay(500); // Warte eine halbe Sekunde
   }
 }
 
@@ -168,33 +169,35 @@ void loop()
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-Please note that variables must be either globally defined, OR defined with the static keyword, in order to work with PROGMEM.
+=== Anmerkungen und Warnungen
+Bitte beachte, dass die Variablen entweder global definiert oder als `static` definiert sein müssen, um mit `PROGMEM` zu funktionieren.
 
-The following code will NOT work when inside a function:
+Der folgende Code wird nicht funktionieren, wenn er in einer Funktion ausgeführt wird:
 
 [source,arduino]
 ----
 const char long_str[] PROGMEM = "Hi, I would like to tell you a bit about myself.\n";
 ----
 
-The following code WILL work, even if locally defined within a function:
+Der folgende Code wird funktionieren, wenn er in einer Funktion ausgeführt wird:
 
 [source,arduino]
 ----
 const static char long_str[] PROGMEM = "Hi, I would like to tell you a bit about myself.\n"
 ----
 
-=== The `F()` macro
+=== Das `F()`-Makro
 
-When an instruction like :
+Wenn eine Instruktion wie
 
 [source,arduino]
 ----
 Serial.print("Write something on  the Serial Monitor");
 ----
 
-is used, the string to be printed is normally saved in RAM. If your sketch prints a lot of stuff on the Serial Monitor, you can easily fill the RAM. If you have free FLASH memory space, you can easily indicate that the string must be saved in FLASH using the syntax:
+benutzt wird, wird der String bevor er auf den seriellen Ausgang geschrieben wird, normalerweise in den RAM gespeichert. Der RAM kann aber sehr leicht volllaufen, wenn der Code
+sehr viel auf den seriellen Port schreibt. Wenn du noch freien Flash-/Programm-Speicher hast, kannst du dem Compiler sagen, dass er die Werte in den Flash-/Programm-Speicher
+schreiben soll:
 
 [source,arduino]
 ----
@@ -209,10 +212,10 @@ Serial.print(F("Write something on the Serial Monitor that is stored in FLASH"))
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
-* #EXAMPLE# https://www.arduino.cc/playground/Learning/Memory[Types of memory available on an Arduino board]
+* #EXAMPLE# https://www.arduino.cc/playground/Learning/Memory[Arten von Speicher auf dem Arduino]
 
 [role="definition"]
 * #DEFINITION# link:../../data-types/array[array]
