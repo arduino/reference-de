@@ -16,8 +16,8 @@ subCategories: [ "Control Structure" ]
 --
 
 [float]
-=== Description
-Terminate a function and return a value from a function to the calling function, if desired.
+=== Beschreibung
+Beendet eine Funktion und gibt einen Wert an die aufrufende Funktion zurück, wenn gewünscht.
 [%hardbreaks]
 
 
@@ -27,13 +27,17 @@ Terminate a function and return a value from a function to the calling function,
 ----
 return;
 
-return value; // both forms are valid
+return value; // Beide Formen davon sind gültig
 ----
 
 
 [float]
-=== Parameters
-`value': any variable or constant type
+=== Parameter
+`value`: Beliebige Variable oder Parameter (Optional)
+
+[float]
+=== Gibt zurück
+Den Datentyp des Parameters `value`
 
 --
 // OVERVIEW SECTION ENDS
@@ -46,32 +50,39 @@ return value; // both forms are valid
 --
 
 [float]
-=== Example Code
-A function to compare a sensor input to a threshold
+=== Beispielcode
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+
+Vergleicht einen Sensorwert mit einem Thresholdwert.
 
 [source,arduino]
 ----
  int checkSensor(){
+	// Lies Wer von Sensor ein und vergleiche diesen mit der Konstante 400
     if (analogRead(0) > 400) {
+		// Wenn Sensorwert größer als 400: Gib 1 zurück
         return 1;
     }
     else{
+		// Sonst gib 0 zurück
         return 0;
     }
 }
 ----
 
-The return keyword is handy to test a section of code without having to "comment out" large sections of possibly buggy code.
+Das `return`-Keywort kann dazu dienen, Codeabschnitte zu testen ohne viel Code auskommentieren zu müssen.
+
+
 [source,arduino]
 ----
 void loop(){
 
-// brilliant code idea to test here
+// Codeidee, die getestet werden soll, hier.
 
 return;
 
-// the rest of a dysfunctional sketch here
-// this code will never be executed
+// Der Rest des Sketches hier.
+// Wird niemals ausgeführt
 }
 ----
 [%hardbreaks]
@@ -88,7 +99,7 @@ return;
 --
 
 [float]
-=== See also
+=== Siehe auch
 [role="language"]
 
 --

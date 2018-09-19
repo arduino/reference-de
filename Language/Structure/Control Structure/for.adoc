@@ -16,8 +16,9 @@ subCategories: [ "Control Structure" ]
 --
 
 [float]
-=== Description
-The `for` statement is used to repeat a block of statements enclosed in curly braces. An increment counter is usually used to increment and terminate the loop. The `for` statement is useful for any repetitive operation, and is often used in combination with arrays to operate on collections of data/pins.
+=== Beschreibung
+Das `for`-Statement wiederholt die in Klammern nachfolgenden Anweisungen. Meistens wird eine Zählervariable verwendet, welche hochgezählt wird und die Schleife irgendwann beendet.
+Das `for`-Statement wird häufig zur Iteration über Arrays oder Listen von Daten oder Pins verwendet.
 [%hardbreaks]
 
 
@@ -26,12 +27,20 @@ The `for` statement is used to repeat a block of statements enclosed in curly br
 [source,arduino]
 ----
 for (initialization; condition; increment) {
-	//statement(s);
+	// Statement(s);
 }
 ----
 
-The *initialization* happens first and exactly once. Each time through the loop, the *condition* is tested; if it's `true`, the statement block, and the *increment* is executed, then the *condition* is tested again. When the *condition* becomes `false`, the loop ends.
-[%hardbreaks]
+[float]
+=== Parameter
+`initialization`: Passiert genau einmal am Anfang der Schleife.
+`condition`: Wird bei jedem Schleifendurchlauf getestet. Wenn sie `true` ist, werden alle Statements in den Klammern ausgeführt und `increment` hochgezählt. Wenn
+			 die `condition` `false` ist, wird die Schleife abgebrochen.
+`increment`: Wird hochgezählt, wenn die `condition` `true` ist.
+
+[float]
+=== Gibt zurück
+Nichts
 
 --
 // OVERVIEW SECTION ENDS
@@ -44,21 +53,26 @@ The *initialization* happens first and exactly once. Each time through the loop,
 --
 
 [float]
-=== Example Code
+=== Beispielcode
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+Eine LED wird über einen PWM-Pin gedimmt.
+
 [source,arduino]
 ----
-// Dim an LED using a PWM pin
-int PWMpin = 10; // LED in series with 470 ohm resistor on pin 10
+int PWMpin = 10; // LED in Serie mit 470-Ohm-Widerstand auf Pin 10
 
 void setup()
 {
-  // no setup needed
+  // Nichts
 }
 
 void loop()
 {
+   // Wiederhole 255 Mal:
    for (int i=0; i <= 255; i++){
+	  // Schreibe den Wert von "i" auf den LED-Pin
       analogWrite(PWMpin, i);
+	  // Warte 10 Millisekunden
       delay(10);
    }
 }
@@ -66,32 +80,38 @@ void loop()
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-The C `for` loop is much more flexible than `for` loops found in some other computer languages, including BASIC. Any or all of the three header elements may be omitted, although the semicolons are required. Also the statements for initialization, condition, and increment can be any valid C statements with unrelated variables, and use any C datatypes including floats. These types of unusual `for` statements may provide solutions to some rare programming problems.
+=== Anmerkungen und Warnungen
+Die `for`-Schleife in C ist deutlich ausgeprägter als in anderen Sprachen wie z.B. BASIC. Einige oder sogar alle der 3 Parameter können weggelassen werden,
+allerdings sind die Strichpunkte immer nötig. Alle 3 Parameter können mit beliebigen Variablen belegt werden und jeden Datentyp inklusive `float` nutzen.
+Die Beispiele unten zeigen die Verwendung einiger Spezialformen der `for`-Schleife.
 [%hardbreaks]
 
-For example, using a multiplication in the increment line will generate a logarithmic progression:
+Eine Multiplikation im `increment` generiert ein logarithmisches Verhalten:
 
 [source,arduino]
 ----
 for(int x = 2; x < 100; x = x * 1.5){
-println(x);
+   println(x);
 }
 ----
 
-Generates: 2,3,4,6,9,13,19,28,42,63,94
+Gibt aus: 2,3,4,6,9,13,19,28,42,63,94
 [%hardbreaks]
 
-Another example, fade an LED up and down with one `for` loop:
+LED hoch- und runterdimmen in einer Schleife:
 
 [source,arduino]
 ----
 void loop()
 {
+   // Globale Zählervariable "x"
    int x = 1;
+   // Laufe über die Variable solange i größer -1 ist und zähle i um x hoch
    for (int i = 0; i > -1; i = i + x){
+	  // Schreibe auf den LED-Pin
       analogWrite(PWMpin, i);
-      if (i == 255) x = -1;             // switch direction at peak
+      if (i == 255) x = -1; // Ändere die Richtung des Dimmens auf dem "Peek"
+	  // Warte 10 Millisekunden
       delay(10);
    }
 }
@@ -107,7 +127,7 @@ void loop()
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 

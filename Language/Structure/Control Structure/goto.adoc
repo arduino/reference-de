@@ -16,8 +16,8 @@ subCategories: [ "Control Structure" ]
 --
 
 [float]
-=== Description
-Transfers program flow to a labeled point in the program
+=== Beschreibung
+Springt im Programmfluss zu einem bestimmten benannten Punkt.
 [%hardbreaks]
 
 
@@ -27,8 +27,16 @@ Transfers program flow to a labeled point in the program
 ----
 label:
 
-goto label; // sends program flow to the label
+goto label; // Springt zu dem Label.
 ----
+
+[float]
+=== Parameter
+`label`: Das Label an der Stelle, zu der gesprungen werden soll.
+
+[float]
+=== Gibt zurück
+Nichts
 
 --
 // OVERVIEW SECTION ENDS
@@ -41,7 +49,10 @@ goto label; // sends program flow to the label
 --
 
 [float]
-=== Example Code
+=== Beispielcode
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+
+Der Code zeigt, wie `goto` aus einem Programm mit 3 Schleifen an eine bestimmte Stelle springt.
 
 [source,arduino]
 ----
@@ -49,7 +60,7 @@ for(byte r = 0; r < 255; r++){
     for(byte g = 255; g > -1; g--){
         for(byte b = 0; b < 255; b++){
             if (analogRead(0) > 250){ goto bailout;}
-            // more statements ...
+            // Weitere Statements
         }
     }
 }
@@ -59,10 +70,11 @@ bailout:
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-The use of `goto` is discouraged in C programming, and some authors of C programming books claim that the `goto` statement is never necessary, but used judiciously, it can simplify certain programs. The reason that many programmers frown upon the use of goto is that with the unrestrained use of `goto` statements, it is easy to create a program with undefined program flow, which can never be debugged.
+=== Anmerkungen und Warnungen
+Es wird nicht empfohlen, `goto` in der C-Programmierung zu verwenden. Viele Autoren sagen sogar, dass der `goto`-Operator unnötig ist.
+Das Problem mit `goto` ist, dass der Code schnell nahezu unlesbar wird und nicht mehr zu debuggen ist.
 
-With that said, there are instances where a `goto` statement can come in handy, and simplify coding. One of these situations is to break out of deeply nested link:../for[for] loops, or link:../if[if] logic blocks, on a certain condition.
+Manchmal kann ein `goto` nützlich sein. Z.B um aus einer hohen Schleifentiefe wie im Beispielcode oben herauszuspringen (Obwohl dies mit link:../return[return] auch klappen würde).
 [%hardbreaks]
 
 --
@@ -76,7 +88,7 @@ With that said, there are instances where a `goto` statement can come in handy, 
 --
 
 [float]
-=== See also
+=== Siehe auch
 [role="language"]
 
 --
