@@ -16,19 +16,27 @@ subCategories: [ "Control Structure" ]
 --
 
 [float]
-=== Description
+=== Beschreibung
 [%hardbreaks]
-A `while` loop will loop continuously, and infinitely, until the expression inside the parenthesis, () becomes false. Something must change the tested variable, or the while loop will never exit. This could be in your code, such as an incremented variable, or an external condition, such as testing a sensor.
+Eine `while`-Schleife läuft solange weiter (Eventuell auch unendlich), bis die Bedingung in den Klammern "()" `false` wird. Wenn die Variable in der Schleife
+sich nie ändert, läuft die Schleife unendlich. Dies kann z.B. durch das Hochzählen einer Variable oder das Lesen eines Sensorwertes erfolgen.
 
 [float]
 === Syntax
 [source,arduino]
 ----
 while(condition){
-  // statement(s)
+  // Statement(s)
 }
 ----
-The `condition` is a boolean expression that evaluates to `true` or `false`.
+
+[float]
+=== Parameter
+`condition`: Ein Ausdruck, der auf `true` oder `false` evaluiert.
+
+[float]
+=== Gibt zurück
+Nichts
 
 --
 // OVERVIEW SECTION ENDS
@@ -41,13 +49,16 @@ The `condition` is a boolean expression that evaluates to `true` or `false`.
 --
 
 [float]
-=== Example Code
+=== Beispielcode
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+Dieser Code zählt eine Variable 200-mal um 1 hoch.
 
 [source,arduino]
 ----
 var = 0;
+// Wiederhole etwas 200 Mal
 while(var < 200){
-  // do something repetitive 200 times
+  // Zähle Variable x um 1 hoch
   var++;
 }
 ----
@@ -62,12 +73,12 @@ while(var < 200){
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 
 [role="example"]
-* #EXAMPLE#	https://arduino.cc/en/Tutorial/WhileLoop[While Loop Tutorial^]
+* #EXAMPLE#	https://arduino.cc/en/Tutorial/WhileLoop[While-Tutorial^]
 
 --
 // SEE ALSO SECTION ENDS

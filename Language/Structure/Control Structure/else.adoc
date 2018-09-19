@@ -16,14 +16,16 @@ subCategories: [ "Control Structure" ]
 --
 
 [float]
-=== Description
-The `if...else` allows greater control over the flow of code than the basic link:../if[if] statement, by allowing multiple tests to be grouped together. An `else` clause (if at all exists) will be executed if the condition in the `if` statement results in `false`. The `else` can proceed another `if` test, so that multiple, mutually exclusive tests can be run at the same time.
+=== Beschreibung
+`if...else` erlaubt mehr Optionen als das einfache link:../if[if]. Es erlaubt, mehrere Variablen hintereinander abzufragen. Der `else`-Teil wird dann ausgeführt,
+wenn die Bedingung im `if`-Teil `false` ist. Auf den `else`-Teil kann wieder ein `if` folgen, sodass viele sich gegenseitig ausschließende Konditionen gestestet werden können.
 [%hardbreaks]
 
-Each test will proceed to the next one until a true test is encountered. When a true test is found, its associated block of code is run, and the program then skips to the line following the entire if/else construction. If no test proves to be true, the default `else` block is executed, if one is present, and sets the default behavior.
+Dabei wird immer weiter fortgefahren, bis ein Test auf `true` evaluiert wird. Daraufhin wird dessen zugehöriger Code ausgeführt, woraufhin das Programm ans Ende des kompletten
+`if...else`-Konstrukts springt. Wenn ein Default-`else`-Teil vorhanden ist, wird dieser ausgeführt, wenn alle anderen Tests auf `false` evaluiert wurden.
 [%hardbreaks]
 
-Note that an `else if` block may be used with or without a terminating `else` block and vice versa. An unlimited number of such `else if` branches is allowed.
+Ein `else if`-Block kann benutzt werden ohne einen terminierenden `else`-Block und umgekehrt. Somit ist eine unbegrenzte Anzahl an `else if`s möglich.
 
 [float]
 === Syntax
@@ -31,17 +33,26 @@ Note that an `else if` block may be used with or without a terminating `else` bl
 ----
 if (condition1)
 {
-  // do Thing A
+  // Tue Task 1
 }
 else if (condition2)
 {
-  // do Thing B
+  // Tue Task 2
 }
 else
 {
-  // do Thing C
+  // Tue Task 3
 }
 ----
+
+[float]
+=== Parameter
+`condition`: Die Bedingung, die abgeprüft wird. Evaluiert zu `true` oder `false`.
+
+[float]
+=== Gibt zurück
+Nichts
+
 --
 // OVERVIEW SECTION ENDS
 
@@ -51,21 +62,23 @@ else
 [#howtouse]
 --
 [float]
-=== Example Code
-Below is an extract from a code for temperature sensor system
+=== Beispielcode
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+Der folgende Code testet einige Werte in den Bedingungen ab. Im Detail handelt es sich um ein simples Temperaturwarnsystem.
+
 [source,arduino]
 ----
 if (temperature >= 70)
 {
-  //Danger! Shut down the system
+  //Schalte das System ab
 }
 else if (temperature >= 60 && temperature < 70)
 {
-  //Warning! User attention required
+  //Schicke dem Benutzer eine Warnung
 }
 else
 {
-  //Safe! Continue usual tasks...
+  //Keine Probleme erkannt.
 }
 ----
 
@@ -79,7 +92,7 @@ else
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 

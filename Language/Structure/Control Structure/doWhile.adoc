@@ -16,9 +16,10 @@ subCategories: [ "Control Structure" ]
 --
 
 [float]
-=== Description
+=== Beschreibung
 [%hardbreaks]
-The `do...while` loop works in the same manner as the link:../while[while] loop, with the exception that the condition is tested at the end of the loop, so the do loop will always run at least once.
+`do...while` funktioniert genauso wie eine link:../while[while]-Schleife. Der einzige Unterschied ist, dass `do...while` immer mindestens einmal ausgeführt wird,
+da die Bedingung erst am Schluss der Schleife getestet wird.
 
 [float]
 === Syntax
@@ -26,11 +27,17 @@ The `do...while` loop works in the same manner as the link:../while[while] loop,
 ----
 do
 {
-    // statement block
+   //Statement(s)
 } while (condition);
 ----
-The `condition` is a boolean expression that evaluates to `true` or `false`.
 
+[float]
+=== Parameter
+`condition`: Ein Ausdruck, der auf `true` oder `false` evaluiert.
+
+[float]
+=== Gibt zurück
+Nichts
 --
 // OVERVIEW SECTION ENDS
 
@@ -42,16 +49,21 @@ The `condition` is a boolean expression that evaluates to `true` or `false`.
 --
 
 [float]
-=== Example Code
+=== Beispielcode
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+Liest in do-while-Schleife 100 Mal einen Sensorwert aus.
 
 [source,arduino]
 ----
+// Initialisiere x mit Wert 0
+int x = 0;
+
 do
 {
-  delay(50);          // wait for sensors to stabilize
-  x = readSensors();  // check the sensors
-
-} while (x < 100);
+  delay(50);          // Warte 50 Millieskunden, bis der Sensor wieder einen stabilen Wert liefert.
+  x = readSensor();   // Lies den Sensorwert
+  x++;                //Inkrementiere die Zählervariable
+} while (x < 100);    // Wiederhole das ganze 100 Mal
 ----
 
 
@@ -64,7 +76,7 @@ do
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 

@@ -16,11 +16,31 @@ subCategories: [ "Control Structure" ]
 --
 
 [float]
-=== Description
+=== Beschreibung
 [%hardbreaks]
-`break` is used to exit from a link:../for[for], link:../while[while] or link:../dowhile[do...while] loop, bypassing the normal loop condition. It is also used to exit from a link:../switchcase[switch case] statement.
+`break` wird benutzt, um aus link:../for[for-], link:../while[while-] oder link:../dowhile[do...while-]Schleifen zu springen, wobei
+die normalen `condition` übersprungen werden. Es wird auch benutzt, um aus link:../switchcase[switch case]-Statements zu springen.
 [%hardbreaks]
 
+[float]
+=== Syntax
+[source,arduino]
+----
+while (condition)
+{
+   //Statement(s)
+   break;
+   //Statement(s)
+}
+----
+
+[float]
+=== Parameter
+Keine
+
+[float]
+=== Gibt zurück
+Nichts
 --
 // OVERVIEW SECTION ENDS
 
@@ -31,18 +51,28 @@ subCategories: [ "Control Structure" ]
 [#howtouse]
 --
 [float]
-=== Example Code
-In the following code, the control exits the `for` loop when the sensor value exceeds the threshold.
+=== Beispielcode
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+
+Der folgende Code springt aus der `for`-Schleife, wenn der Sensorwert den Threshold übersteigt.
+
 [source,arduino]
 ----
+// Iteriere über die Zahlen von 0 bis 255
 for (x = 0; x < 255; x ++)
 {
+	// Schreibe auf den LED-Pin
     analogWrite(PWMpin, x);
+	// Lies den Sensorwert ein
     sens = analogRead(sensorPin);
-    if (sens > threshold){      // bail out on sensor detect
+	// Wenn der Wert größer als der Threshold ist
+    if (sens > 40){
+	   // Setze x auf 0
        x = 0;
+	   // Springe raus
        break;
     }
+	// Warte 50 Millisekunden
     delay(50);
 }
 ----
@@ -57,7 +87,7 @@ for (x = 0; x < 255; x ++)
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 

@@ -16,11 +16,31 @@ subCategories: [ "Control Structure" ]
 --
 
 [float]
-=== Description
+=== Beschreibung
 [%hardbreaks]
-The `continue` statement skips the rest of the current iteration of a loop (link:../for[for], link:../while[while], or link:../dowhile[do...while]). It continues by checking the conditional expression of the loop, and proceeding with any subsequent iterations.
+Das `continue`-Statement überspringt die restliche Iteration einer Schleife (link:../for[for], link:../while[while], oder link:../dowhile[do...while]).
+Das `continue`-Statement checkt anschließend die `condition` und durchläuft die Schleife erneut, bis die Abbruchbedingung erreicht ist.
 [%hardbreaks]
 
+[float]
+=== Syntax
+[source,arduino]
+----
+while (condition)
+{
+   //Statement(s)
+   continue;
+   //Statement(s)
+}
+----
+
+[float]
+=== Parameter
+Keine
+
+[float]
+=== Gibt zurück
+Nichts
 --
 // OVERVIEW SECTION ENDS
 
@@ -32,17 +52,22 @@ The `continue` statement skips the rest of the current iteration of a loop (link
 --
 
 [float]
-=== Example Code
-The following code writes the value of 0 to 255 to the `PWMpin`, but skips the values in the range of 41 to 119.
+=== Beispielcode
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+Der Code schreibt die Werte von 0 bis 255 auf den LED-Pin, aber überspringt Werte zwischen 41 und 119.
+
 [source,arduino]
 ----
+// Iteriere über die Werte von 0 bis 255
 for (x = 0; x <= 255; x ++)
 {
-    if (x > 40 && x < 120){      // create jump in values
+	// Springe bei den Werten zwischen 40 und 120 weiter
+    if (x > 40 && x < 120){
         continue;
     }
-
+	// Schreibe den Wert auf den LED-Pin
     analogWrite(PWMpin, x);
+	// Warte 50 Millieskunden
     delay(50);
 }
 ----
@@ -58,7 +83,7 @@ for (x = 0; x <= 255; x ++)
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 

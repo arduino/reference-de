@@ -16,11 +16,14 @@ subCategories: [ "Control Structure" ]
 --
 
 [float]
-=== Description
-Like link:../if[if] statements, link:../switchcase[switch case] controls the flow of programs by allowing programmers to specify different code that should be executed in various conditions. In particular, a switch statement compares the value of a variable to the values specified in case statements. When a case statement is found whose value matches that of the variable, the code in that case statement is run.
+=== Beschreibung
+Wie auch link:../if[if]-Statements, erlaubt es auch `switch case`, dass abhängig von der Bedingung in verschiedenen Situationen unterschiedlicher Code ausgeführt wird.
+Im Detail vergleicht `switch case` die Variablenwerte mit denen in den `case`-Statements. Wenn ein passendes `case`-Statement gefunden wird, so wird der Code in diesem
+`case`-Statement ausgeführt.
 [%hardbreaks]
 
-The link:../break[break] keyword exits the switch statement, and is typically used at the end of each case. Without a break statement, the switch statement will continue executing the following expressions ("falling-through") until a break, or the end of the switch statement is reached.
+Das link:../break[break]-Keywort beendet das `switch case`-Statement und wird üblicherweise am Ende jedes `case`-Statements verwendet. Wenn kein link:../break[break]-Keywort
+verwendet wird, führt `switch case` alle Statements aus, bis ein link:../break[break]-Keywort auftaucht oder das `switch case` zu Ende ist.
 [%hardbreaks]
 
 
@@ -30,25 +33,25 @@ The link:../break[break] keyword exits the switch statement, and is typically us
 ----
 switch (var) {
   case label1:
-    // statements
+    // Statement(s)
     break;
   case label2:
-    // statements
+    // Statement(s)
     break;
   default:
-    // statements
+    // Statement(s)
 }
 ----
 
 
 [float]
-=== Parameters
-`var`: a variable whose value to compare with various cases. *Allowed data types:* int, char +
-`label1`, `label2`: constants. *Allowed data types:* int, char
+=== Parameter
+`var`: Eine Variable, die mit den eizelnen Fällen verglichen werden sollen *Erlaubte Datentypen:* int, char +
+`label1`, `label2`: Konstanten. *Erlaubte Datentypen:* int, char
 
 [float]
-=== Returns
-Nothing
+=== Gibt zurück
+Nichts
 
 --
 // OVERVIEW SECTION ENDS
@@ -61,20 +64,22 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== Beispielcode
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+Das Code-Beispiel zeigt die Verwendung des switch-case-Statements.
 
 [source,arduino]
 ----
   switch (var) {
     case 1:
-      //do something when var equals 1
+      // Tue etwas, wenn "var" 1 ist
       break;
     case 2:
-      //do something when var equals 2
+      // Tue etwas, wenn "var" 2 ist
       break;
     default:
-      // if nothing else matches, do the default
-      // default is optional
+      // Tue etwas, im Defaultfall
+	  // Dieser Fall ist optional
       break;
   }
 
@@ -92,7 +97,7 @@ Nothing
 --
 
 [float]
-=== See also
+=== Siehe auch
 [role="language"]
 
 --
