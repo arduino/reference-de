@@ -25,7 +25,7 @@ Analysiert, ob ein Zeichen hexadezimal ist (A-F, 0-9). Gibt ``true`` zurück, we
 === Syntax
 [source,arduino]
 ----
-`isHexadecilamDigit(thisChar)`
+isHexadecilamDigit(thisChar)
 ----
 
 [float]
