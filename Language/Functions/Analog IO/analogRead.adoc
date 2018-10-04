@@ -16,7 +16,7 @@ subCategories: [ "Analog I/O" ]
 
 [float]
 === Beschreibung
-Liest den Wert vom angegebenen analogen Pin ein. Das Arduino-Board enthält einen 6-Kanal- (8-Kanal- auf dem Mini und Nano, 16-Kanal- auf dem Mega) 10-Bit-Digital-Konverter. D.h. das Board mappt Eingangsspannungen zwischen 0 und 5 V auf Integer-Werte zwischen 0 und 1023. Die erreichte Auflösung ist damit 5 V / 1024 Teile oder 0,0049 V (4,9 mV) per Teil. Die Eingangsspannung und Auflösung kann mit link:../analogreference[analogReference()] geändert werden.
+Liest den Wert vom angegebenen analogen Pin ein. Das Arduino-Board enthält einen 6-Kanal- (7-Kanal- auf dem MKR, 8-Kanal- auf dem Mini und Nano, 16-Kanal- auf dem Mega) 10-Bit-Digital-Konverter. D.h. das Board mappt Eingangsspannungen zwischen 0 und 5 V auf Integer-Werte zwischen 0 und 1023. Die erreichte Auflösung ist damit 5 V / 1024 Teile oder 0,0049 V (4,9 mV) per Teil. Die Eingangsspannung und Auflösung kann mit link:../analogreference[analogReference()] geändert werden.
 
 Um einen analogen Pin zu lesen, benötigt das Board circa 100 Mikrosekunden (0,0001 s). Damit ist die maximale Lesegeschwindigkeit 10000 Lesevorgänge pro Sekunde.
 [%hardbreaks]
@@ -29,7 +29,7 @@ Um einen analogen Pin zu lesen, benötigt das Board circa 100 Mikrosekunden (0,0
 
 [float]
 === Parameter
-`pin`: Die Pinnummer, von der gelesen werden soll (0 bis 5 auf den meisten Boards, 0 bis 7 auf dem Mini und Nano, 0 bis 15 auf dem Mega)
+`pin`: Die Pinnummer, von der gelesen werden soll (0 bis 5 auf den meisten Boards,  0 bis 6 auf dem MKR, 0 bis 7 auf dem Mini und Nano, 0 bis 15 auf dem Mega)
 
 [float]
 === Gibt zurück
