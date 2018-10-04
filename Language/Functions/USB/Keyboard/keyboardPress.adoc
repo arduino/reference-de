@@ -80,6 +80,7 @@ void loop() {
   Keyboard.releaseAll();
   // Warte, bis sich das Fenster öffnet:
   delay(1000);
+}
 ----
 
 --
