@@ -55,7 +55,7 @@ Nichts
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 Der Code deklariert Digitalpin 13 als `OUTPUT` und alterniert auf diesem Pin von link:../../variables/constants/constants/[HIGH] auf link:../../variables/constants/constants/[LOW] mit einem Abstand von einer Sekunde.
 
-//[source,arduino]
+[source,arduino]
 ----
 void setup()
 {
