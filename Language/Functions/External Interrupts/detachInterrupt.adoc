@@ -26,11 +26,16 @@ Deaktiviert den übergebenen Interrupt.
 `detachInterrupt()` +
 `detachInterrupt(pin)` 	(Nur Arduino Due)
 
+
+`detachInterrupt(digitalPinToInterrupt(pin))` (Nur Arduino-AVR-Boards, empfohlen) +
+`detachInterrupt(interrupt)` (Nur Arduino-AVR-Boards, nicht empfohlen) +
+`detachInterrupt(pin)` (Nur Arduino-SAMD-Boards, Due, 101)
+
 [float]
 === Parameter
 `interrupt`: Die Interruptnummer des Interrupts, der deaktiviert werden soll (Siehe link:../attachinterrupt[attachInterrupt()] für weitere Informationen).
 
-`pin`: Die Interruptnummer des Interrupts, der deaktiviert werden soll (Nur Arduino Due)
+`pin`: Die Interruptnummer des Interrupts, der deaktiviert werden soll
 
 [float]
 === Gibt zurück
