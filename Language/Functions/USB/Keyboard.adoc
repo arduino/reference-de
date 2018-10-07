@@ -31,10 +31,10 @@ Diese Core-Bibliotheken erlauben es 32u4- oder SAMD-basierten Boards (Leonardo, 
 [%hardbreaks]
 *Achtung: Wenn die Maus oder Tastatur permanent läuft, wird es schwer, das Board noch zu programmieren. Funktionen wie `Mouse.move()` und `Keyboard.print()` bewegen den Cursor oder senden Tastenanschläge
 an den verbundenen Computer. Diese Funktionen sollten nur aufgerufen werden, wenn das Programm diese behandeln kann. Es wird deshalb empfohlen, ein Kontrollsystem zu nutzen, z.B. einen physikalischen Schalter
-oder nur auf bestimmte Eingaben zu antworten.
+oder nur auf bestimmte Eingaben zu antworten. Die Beispiele liefern weitere Informationen dazu.
 [%hardbreaks]
-Wenn die Mouse- oder Keyboard-Bibliothek benutzt wird, sollte die Ausgabe zunächst mit `Serial.print()` überprüft werden. Auf diesem Weg kann man sich sicher sein, dass die richtigen Werte an den verbundenen
-Computer gesendet werden. Die Beispiele liefern weitere Informationen dazu.
+Wenn die Mouse- oder Keyboard-Bibliothek benutzt wird, sollte die Ausgabe zunächst mit link:../../communication/serial/print[Serial.print()] überprüft werden. Auf diesem Weg kann man sich sicher sein, dass die richtigen Werte an den verbundenen
+Computer gesendet werden.
 
 // FUNCTIONS SECTION STARTS
 [#functions]
