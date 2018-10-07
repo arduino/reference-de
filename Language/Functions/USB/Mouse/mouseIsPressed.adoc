@@ -64,7 +64,7 @@ void setup(){
   // Der Schalter, der den Mauszeigerdruck beendet: Pin 3
   pinMode(3,INPUT);
   //Starte serielle Kommunikation mit dem Computer
-  Serial1.begin(9600);
+  Serial.begin(9600);
   // Initialisiere die Maus-Bibliothek:
   Mouse.begin();
 }
@@ -83,7 +83,7 @@ void loop(){
     mouseState=Mouse.isPressed();
   }
   // Gib den aktuellen Status der Maus aus
-  Serial1.println(mouseState);
+  Serial.println(mouseState);
   delay(10);
 }
 ----
