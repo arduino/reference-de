@@ -40,6 +40,7 @@ switch (var) {
     break;
   default:
     // Statement(s)
+    break; // Wird nicht benötigt, wenn Statement(s) vorhanden sind
 }
 ----
 
@@ -80,7 +81,7 @@ Das Code-Beispiel zeigt die Verwendung des switch-case-Statements.
     default:
       // Tue etwas, im Defaultfall
 	  // Dieser Fall ist optional
-      break;
+      break; // Wird nicht benötigt, wenn Statement(s) vorhanden sind
   }
 
 ----
