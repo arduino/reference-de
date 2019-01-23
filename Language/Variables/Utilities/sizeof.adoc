@@ -87,7 +87,7 @@ Beachte zusätzlich, dass ein richtig formattierter String mit dem `NULL`-Symbol
 
 [source,arduino]
 ----
-for (i = 0; i < (sizeof(myInts)/sizeof(int)); i++) {
+for (i = 0; i < (sizeof(myInts)/sizeof(myInts[0])); i++) {
   // Tue was auch immer mit myInts[i]
 }
 ----
