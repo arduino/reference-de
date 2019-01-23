@@ -21,7 +21,7 @@ Bevor `Mouse.move()` benutzt werden kann, muss link:../mousebegin[Mouse.begin()]
 
 [float]
 === Syntax
-`Mouse.move(xVal, yPos, wheel);`
+`Mouse.move(xVal, yVal, wheel);`
 
 
 [float]
