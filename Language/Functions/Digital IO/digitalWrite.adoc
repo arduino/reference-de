@@ -74,7 +74,8 @@ void loop()
 
 [float]
 === Anmerkungen und Warnungen
-Die analogen Inputpins können als Digitalpins verwendet werden mit den Namen A0, A1, etc.
+Die analogen Inputpins können als Digitalpins verwendet werden mit den Namen A0, A1, etc. Die Ausnahme sind der Arduino Nano, Pro Mini, und die Arduino Mini-Pins A6 und A7, welche nur
+als analoge Inputs genutzt werden können.
 
 --
 // HOW TO USE SECTION ENDS
