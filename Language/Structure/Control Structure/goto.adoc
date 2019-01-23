@@ -71,7 +71,7 @@ bailout:
 
 [float]
 === Anmerkungen und Warnungen
-Es wird nicht empfohlen, `goto` in der C-Programmierung zu verwenden. Viele Autoren sagen sogar, dass der `goto`-Operator unnötig ist.
+Es wird nicht empfohlen, `goto` in der C++-Programmierung zu verwenden. Viele Autoren sagen sogar, dass der `goto`-Operator unnötig ist.
 Das Problem mit `goto` ist, dass der Code schnell nahezu unlesbar wird und nicht mehr zu debuggen ist.
 
 Manchmal kann ein `goto` nützlich sein. Z.B um aus einer hohen Schleifentiefe wie im Beispielcode oben herauszuspringen (Obwohl dies mit link:../return[return] auch klappen würde).

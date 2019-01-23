@@ -80,7 +80,7 @@ Achtung: Nicht zufällig ein einzelnes `=`-Zeichen in der Bedingung verwenden (z
 Benutze stattdessen `==` (z.B. `if (x == 10)`). Dies vergleicht die Werte von `x` und der Konstante 10. Das 2. Beispiel wird nur `true`, wenn `x` genau gleich 10 ist, das
 1. Statement wird immer `true`.
  
-Das passiert, weil C woe folgt evaluiert: 10 wird auf `x` zugewiesen (`=` ist der http://arduino.cc/en/Reference/Assignment[Zuweisungsoperator^]), weshalb `x` nun den Wert 10
+Das passiert, weil C++ wie folgt evaluiert: 10 wird auf `x` zugewiesen (`=` ist der http://arduino.cc/en/Reference/Assignment[Zuweisungsoperator^]), weshalb `x` nun den Wert 10
 enthält. Daraufhin evaluiert die If-Bedingung zu 10. 10 ist immer `true`, da jede Zahl, die nicht 0 ist, immer `true` ist. Dies ist meistens nicht erwünscht, also bitte darauf achten.
 [%hardbreaks]
 

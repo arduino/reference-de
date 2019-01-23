@@ -81,7 +81,7 @@ void loop()
 
 [float]
 === Anmerkungen und Warnungen
-Die `for`-Schleife in C ist deutlich ausgeprägter als in anderen Sprachen wie z.B. BASIC. Einige oder sogar alle der 3 Parameter können weggelassen werden,
+Die `for`-Schleife in C++ ist deutlich ausgeprägter als in anderen Sprachen wie z.B. BASIC. Einige oder sogar alle der 3 Parameter können weggelassen werden,
 allerdings sind die Strichpunkte immer nötig. Alle 3 Parameter können mit beliebigen Variablen belegt werden und jeden Datentyp inklusive `float` nutzen.
 Die Beispiele unten zeigen die Verwendung einiger Spezialformen der `for`-Schleife.
 [%hardbreaks]

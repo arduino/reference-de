@@ -17,7 +17,7 @@ subCategories: [ "Variable Scope & Qualifiers" ]
 
 [float]
 === Beschreibung
-Variablen in der C-Programmiersprache, auf die Arduino aufbaut, haben eine Eigenschaft, die sich Scope nennt. Im Gegensatz zu früheren Programmiersprachen,
+Variablen in der C++-Programmiersprache, auf die Arduino aufbaut, haben eine Eigenschaft, die sich Scope nennt. Im Gegensatz zu früheren Programmiersprachen,
 wie z.B. BASIC, sind in C nicht alle Variablen _global_ verfügar.
 
 Eine globale Variable ist eine Variable, die vo jeder Funktion in dem Programm "gesehen" werden kann. Lokale Variablen sind nur gültig in der Funktion, in der
