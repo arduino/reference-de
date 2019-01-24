@@ -83,7 +83,6 @@ void loop() {
 [float]
 === Anmerkungen und Warnungen
 `sizeof` gibt die Anzahl an Bytes zurück. Für größere Variablentypen, wie z.B. Integer, sieht die Schleife wie folgt aus:
-Beachte zusätzlich, dass ein richtig formattierter String mit dem `NULL`-Symbol beendet wird, also dem ASCII-Zeichen mit Nummer 0.
 
 [source,arduino]
 ----
@@ -91,6 +90,8 @@ for (i = 0; i < (sizeof(myInts)/sizeof(myInts[0])); i++) {
   // Tue was auch immer mit myInts[i]
 }
 ----
+
+Beachte zusätzlich, dass ein richtig formattierter String mit dem `NULL`-Symbol beendet wird, also dem ASCII-Zeichen mit Nummer 0.
 
 --
 // HOW TO USE SECTION ENDS
