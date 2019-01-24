@@ -53,7 +53,7 @@ Die Länge des Stromstoßes (in Mikrosekunden) oder 0, wenn kein Stromstoß vor 
 [float]
 === Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-Das Beispiel errechnet den Zeitraum eines Stromstoßes auf Pin 7.
+Das Beispiel gibt den Zeitraum eines Stromstoßes auf Pin 7 aus.
 
 [source,arduino]
 ----
@@ -61,11 +61,13 @@ int pin = 7;
 unsigned long duration;
 
 void setup() {
+  Serial.begin(9600);
   pinMode(pin, INPUT);
 }
 
 void loop() {
   duration = pulseInLong(pin, HIGH);
+  Serial.println(duration);
 }
 ----
 [%hardbreaks]
