@@ -163,3 +163,14 @@ Für Due, Zero, MKR1000 und 101 Boards gilt: *Interruptnummer = Pinnummer*.
 
 --
 // HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== Siehe auch
+
+--
+// SEE ALSO SECTION ENDS

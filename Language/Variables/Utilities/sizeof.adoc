@@ -95,3 +95,14 @@ Beachte zusätzlich, dass ein richtig formattierter String mit dem `NULL`-Symbol
 
 --
 // HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== Siehe auch
+
+--
+// SEE ALSO SECTION ENDS

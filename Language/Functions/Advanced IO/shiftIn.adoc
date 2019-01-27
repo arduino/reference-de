@@ -48,3 +48,16 @@ Den gelesenen Wert (byte)
 
 --
 // OVERVIEW SECTION ENDS
+
+// OVERVIEW SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== Siehe auch
+
+--
+// SEE ALSO SECTION ENDS

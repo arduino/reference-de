@@ -126,3 +126,14 @@ shiftOut(dataPin, clock, LSBFIRST, (data >> 8));
 
 --
 // HOW TO USE SECTION ENDS
+
+
+// SEE ALSO SECTION
+[#see_also]
+--
+
+[float]
+=== Siehe auch
+
+--
+// SEE ALSO SECTION ENDS
