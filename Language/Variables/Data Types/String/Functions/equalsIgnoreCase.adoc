@@ -26,17 +26,17 @@ Compares two strings for equality. The comparison is not case-sensitive, meaning
 === Syntax
 [source,arduino]
 ----
-string.equalsIgnoreCase(string2)
+`myString.equalsIgnoreCase(myString2)`
 ----
 
 [float]
 === Parameters
-`string, string2`: variables of type String
+`myString, myString2`: variables of type String
 
 
 [float]
 === Returns
-`true`: if string equals string2 (ignoring case) 
+`true`: if myString equals myString2 (ignoring case) 
 
 `false`: otherwise
 --

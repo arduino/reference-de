@@ -26,7 +26,7 @@ Appends the parameter to a String.
 === Syntax
 [source,arduino]
 ----
-string.concat(parameter)
+`myString.concat(parameter)`
 ----
 
 [float]
@@ -37,7 +37,7 @@ string.concat(parameter)
 === Returns
 `true`: success
 
-`false`: failure (in which case the string is left unchanged).
+`false`: failure (in which case the String is left unchanged).
 
 --
 // OVERVIEW SECTION ENDS

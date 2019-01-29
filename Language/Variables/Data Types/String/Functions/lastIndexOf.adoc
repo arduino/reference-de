@@ -26,14 +26,13 @@ Locates a character or String within another String. By default, searches from t
 === Syntax
 [source,arduino]
 ----
-string.lastIndexOf(val)
-
-string.lastIndexOf(val, from)
+`myString.lastIndexOf(val)` +
+`myString.lastIndexOf(val, from)`
 ----
 
 [float]
 === Parameters
-`string`: a variable of type String
+`myString`: a variable of type String
 
 `val`: the value to search for - char or String
 

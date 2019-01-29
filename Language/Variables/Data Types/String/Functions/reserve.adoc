@@ -26,7 +26,7 @@ The String reserve() function allows you to allocate a buffer in memory for mani
 === Syntax
 [source,arduino]
 ----
-string.reserve(size)
+`myString.reserve(size)`
 ----
 
 [float]

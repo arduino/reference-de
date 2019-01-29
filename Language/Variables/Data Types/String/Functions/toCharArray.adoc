@@ -26,12 +26,12 @@ Copies the string's characters to the supplied buffer.
 === Syntax
 [source,arduino]
 ----
-string.toCharArray(buf, len)
+`myString.toCharArray(buf, len)`
 ----
 
 [float]
 === Parameters
-`string`: a variable of type String
+`myString`: a variable of type String
 
 `buf`: the buffer to copy the characters into (_char []_)
 

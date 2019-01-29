@@ -25,12 +25,12 @@ Get an upper-case version of a String. As of 1.0, toUpperCase() modifies the str
 === Syntax
 [source,arduino]
 ----
-string.toUpperCase()
+`myString.toUpperCase()`
 ----
 
 [float]
 === Parameters
-`string`: a variable of type String
+`myString`: a variable of type String
 
 
 [float]

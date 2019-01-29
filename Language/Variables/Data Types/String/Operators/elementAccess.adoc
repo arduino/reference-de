@@ -18,7 +18,7 @@ subCategories: [ "StringObject Operator" ]
 
 [float]
 === Description
-Allows you access to the individual characters of a string.
+Allows you access to the individual characters of a String.
 
 [%hardbreaks]
 
@@ -27,20 +27,20 @@ Allows you access to the individual characters of a string.
 === Syntax
 [source,arduino]
 ----
-char thisChar = string1[n]
+char thisChar = myString[n]
 ----
 
 [float]
 === Parameters
 `char thisChar` - a character variable
 
-`string1` - a string variable
+`myString` - a String variable
 
 `int n` - a numeric variable
 
 [float]
 === Returns
-The nth char of the string. Same as charAt().
+The nth char of the String. Same as charAt().
 
 --
 

@@ -28,17 +28,17 @@ Compares two strings for equality. The comparison is case-sensitive, meaning the
 === Syntax
 [source,arduino]
 ----
-string1 == string2
+myString == myString2
 ----
 
 [float]
 === Parameters
-`string1, string2` - a string variable
+`myString, myString2` - a string variable
 
 [float]
 === Returns
 The nth char of the string. Same as charAt().
-`true`: if string1 equals string2
+`true`: if myString equals myString2
  
 `false`: otherwise
 --

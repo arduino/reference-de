@@ -26,9 +26,8 @@ Modify in place a string removing chars from the provided index to the end of th
 === Syntax
 [source,arduino]
 ----
-string.remove(index)
-
-string.remove(index, count)
+`myString.remove(index)` +
+`myString.remove(index, count)
 ----
 
 [float]
