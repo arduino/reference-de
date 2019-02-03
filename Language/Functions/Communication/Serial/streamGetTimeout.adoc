@@ -1,11 +1,8 @@
 ---
-title: Stream.getTimeout()
+title: Serial.write()
 ---
 
-
-
-
-= getTimeout()
+= write()
 
 
 // OVERVIEW SECTION STARTS
@@ -14,30 +11,61 @@ title: Stream.getTimeout()
 
 [float]
 === Description
-`getTimeout()` returns the timeout value set by `setTimeout()`. This function is part of the Stream class, and is called by any class that inherits from it (Wire, Serial, etc). See the link:../../stream[Stream class] main page for more information.
+Writes binary data to the serial port. This data is sent as a byte or series of bytes; to send the characters representing the digits of a number use the link:../print[print()] function instead.
 [%hardbreaks]
 
 
 [float]
 === Syntax
-`stream.getTimeout()`
+`_Serial_.write(val)` +
+`_Serial_.write(str)` +
+`_Serial_.write(buf, len)`
 
 
 [float]
 === Parameters
-None
+`_Serial_`: serial port object. See the list of available serial ports for each board on the link:../../serial[Serial main page].
+
+`val`: a value to send as a single byte
+
+`str`: a string to send as a series of bytes
+
+`buf`: an array to send as a series of bytes
+
+`len`: the number of bytes to be sent from the array
 
 [float]
 === Returns
-The timeout value set by `stream.setTimeout()` (unsigned long)
+`size_t`
+
+`write()` will return the number of bytes written, though reading that number is optional
 
 --
 // OVERVIEW SECTION ENDS
 
 
+
+
 // HOW TO USE SECTION STARTS
 [#howtouse]
 --
+[float]
+=== Example Code
+// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+
+
+[source,arduino]
+----
+void setup(){
+  Serial.begin(9600);
+}
+
+void loop(){
+  Serial.write(45); // send a byte with the value 45
+
+   int bytesSent = Serial.write(“hello”); //send the string “hello” and return the length of the string.
+}
+----
 
 --
 // HOW TO USE SECTION ENDS
