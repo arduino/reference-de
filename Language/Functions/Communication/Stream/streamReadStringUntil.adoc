@@ -29,6 +29,8 @@ This function is part of the Stream class, and is called by any class that inher
 === Parameters
 `stream` : an instance of a class that inherits from Stream.
 
+`terminator` : the character to search for (`char`)
+
 [float]
 === Returns
 The entire string read from a stream, until the terminator character is detected.
