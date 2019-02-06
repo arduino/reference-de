@@ -16,7 +16,8 @@ title: Serial.readStringUntil()
 === Description
 `readStringUntil()` reads characters from the serial buffer into a String. The function terminates if it times out (see link:../settimeout[setTimeout()]).
 
-`Serial.readStringUntil()` inherits from the link:../../stream[Stream] utility class.
+This function is part of the Stream class, and is called by any class that inherits from it (Wire, Serial, etc). See the link:../../stream[Stream class] main page for more information.
+
 [%hardbreaks]
 
 
@@ -32,10 +33,23 @@ title: Serial.readStringUntil()
 
 [float]
 === Returns
-The entire String read from the serial buffer, until the terminator character is detected
+The entire String read from the serial buffer, up to the terminator character
 
 --
 // OVERVIEW SECTION ENDS
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Notes and Warnings
+The terminator character is discarded from the serial buffer.
+[%hardbreaks]
+
+--
+// HOW TO USE SECTION ENDS
 
 
 // SEE ALSO SECTION
