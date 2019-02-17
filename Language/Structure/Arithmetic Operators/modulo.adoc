@@ -17,8 +17,10 @@ subCategories: [ "Arithmetic Operators" ]
 --
 
 [float]
-=== Description
-*Modulo* operation calculates the remainder when one integer is divided by another. It is useful for keeping a variable within a particular range (e.g. the size of an array). The `%` (percent) symbol is used to carry out modulo operation.
+=== Beschreibung
+Die Operation *Modulo* berechnet den Rest, wenn eine ganze Zahl durch eine andere geteilt wird.
+Dies ist nützlich, um eine Variable innerhalb eines bestimmten Bereichs zu halten (z. B. die Größe eines Arrays).
+Das `%` (Prozent) -Symbol wird zur Ausführung der Modulo-Operation verwendet.
 [%hardbreaks]
 
 
@@ -30,10 +32,10 @@ remainder = dividend % divisor;
 ----
 
 [float]
-=== Parameters
-`remainder` : variable. *Allowed data types:* int, float, double +
-`dividend` : variable or constant. *Allowed data types:* int +
-`divisor` : *non zero* variable or constant. *Allowed data types:* int
+=== Parameter
+`remainder` : Variable. *Erlaubte Datentypen:* int, float, double +
+`dividend` : Variable oder Konstante. *Erlaubte Datentypen:* int +
+`divisor` : *Nicht null* Variable oder Konstante. *Erlaubte Datentypen:* int
 [%hardbreaks]
 
 --
@@ -46,20 +48,20 @@ remainder = dividend % divisor;
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 
 [source,arduino]
 ----
 int x = 0;
-x = 7 % 5;    // x now contains 2
-x = 9 % 5;    // x now contains 4
-x = 5 % 5;    // x now contains 0
-x = 4 % 5;    // x now contains 4
+x = 7 % 5;    // x enthält jetzt 2
+x = 9 % 5;    // x enthält jetzt 4
+x = 5 % 5;    // x enthält jetzt 0
+x = 4 % 5;    // x enthält jetzt 4
 ----
 
 [source,arduino]
 ----
-/* update one value in an array each time through a loop */
+/* Aktualisieren eines Werts in einem Array durch eine Schleife */
 
 int values[10];
 int i = 0;
@@ -69,14 +71,14 @@ void setup() {}
 void loop()
 {
   values[i] = analogRead(0);
-  i = (i + 1) % 10;   // modulo operator rolls over variable
+  i = (i + 1) % 10;   // Modulo-Operator überschreibt Variable
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-The modulo operator does not work on floats.
+=== Anmerkungen und Warnungen
+Der Modulo-Operator arbeitet nicht mit float-Werten.
 [%hardbreaks]
 
 --
@@ -87,7 +89,7 @@ The modulo operator does not work on floats.
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 

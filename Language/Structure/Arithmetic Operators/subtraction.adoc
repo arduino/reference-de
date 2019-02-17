@@ -17,8 +17,8 @@ subCategories: [ "Arithmetic Operators" ]
 --
 
 [float]
-=== Description
-*Subtraction* is one of the four primary arithmetic operations. The operator `-` (minus) operates on two operands to produce the difference of the second from the first.
+=== Beschreibung
+*Subtraktion* ist eine der vier primären Rechenoperationen. Der Operator `-` (minus) verarbeitet zwei Operanden, um die Differenz des zweiten zum ersten zu erzeugen.
 [%hardbreaks]
 
 
@@ -30,10 +30,10 @@ difference = operand1 - operand2;
 ----
 
 [float]
-=== Parameters
-`difference` : variable. *Allowed data types:* int, float, double, byte, short, long +
-`operand1` : variable or constant. *Allowed data types:* int, float, double, byte, short, long +
-`operand2` : variable or constant. *Allowed data types:* int, float, double, byte, short, long
+=== Parameter
+`difference` : Variable. *Erlaubte Datentypen:* int, float, double, byte, short, long +
+`operand1` : Variable oder Konstante. *Erlaubte Datentypen:* int, float, double, byte, short, long +
+`operand2` : Variable oder Konstante. *Erlaubte Datentypen:* int, float, double, byte, short, long
 [%hardbreaks]
 
 --
@@ -47,28 +47,28 @@ difference = operand1 - operand2;
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 
 [source,arduino]
 ----
 int a = 5, b = 10, c = 0;
-c = a - b; // the variable 'c' gets a value of -5 after this statement is executed
+c = a - b; // Die Variable 'c' erhält nach der Ausführung dieser Anweisung einen Wert von -5
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-1. The subtraction operation can overflow if the result is smaller than that which can be stored in the data type (e.g. subtracting 1 from an integer with the value -32,768 gives 32,767).
+=== Anmerkungen und Warnungen
+1. Die Subtraktionsoperation kann überlaufen, wenn das Ergebnis kleiner als das ist, das in dem Datentyp gespeichert werden kann (z. B. ergibt das Subtrahieren von 1 von einer Ganzzahl mit dem Wert -32,768 den Wert 32,767).
 
-2. If one of the numbers (operands) are of the type float or of type double, floating point math will be used for the calculation.
+2. Wenn eine der Zahlen (Operanden) vom Typ float oder vom Typ double ist, wird für die Berechnung Fließkomma-Mathematik verwendet.
 
-3. If the operands are of float / double data type and the variable that stores the difference is an integer, then only the integral part is stored and the fractional part of the number is lost.
+3. Wenn die Operanden vom Datentyp float / double sind und die Variable, die die Differenz speichert, eine Ganzzahl ist, wird nur die Ganzzahl gespeichert und der Bruchteil der Zahl geht verloren.
 
 [source,arduino]
 ----
 float a = 5.5, b = 6.6;
 int c = 0;
-c = a - b; // the variable 'c' stores a value of -1 only as opposed to the expected difference of -1.1
+c = a - b; // Die Variable 'c' speichert nur den Wert -1 und nicht die erwartete Differenz von -1.1
 ----
 [%hardbreaks]
 
@@ -83,7 +83,7 @@ c = a - b; // the variable 'c' stores a value of -1 only as opposed to the expec
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 

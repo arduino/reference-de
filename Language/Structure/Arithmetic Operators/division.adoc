@@ -17,8 +17,8 @@ subCategories: [ "Arithmetic Operators" ]
 --
 
 [float]
-=== Description
-*Division* is one of the four primary arithmetic operations. The operator `/` (slash) operates on two operands to produce the result.
+=== Beschreibung
+*Division* ist eine der vier primären Rechenoperationen. Der Operator `/` (Schrägstrich) bearbeitet zwei Operanden, um das Ergebnis zu erzeugen.
 [%hardbreaks]
 
 
@@ -30,10 +30,10 @@ result = numerator / denominator;
 ----
 
 [float]
-=== Parameters
-`result` : variable. *Allowed data types:* int, float, double, byte, short, long  +
-`numerator` : variable or constant. *Allowed data types:* int, float, double, byte, short, long  +
-`denominator` : *non zero* variable or constant. *Allowed data types:* int, float, double, byte, short, long
+=== Parameter
+`result` : Variable. *Erlaubte Datentypen:* int, float, double, byte, short, long  +
+`numerator` : Variable oder Konstante. *Erlaubte Datentypen:* int, float, double, byte, short, long  +
+`denominator` : *Nicht null* Variable oder Konstante. *Erlaubte Datentypen:* int, float, double, byte, short, long
 [%hardbreaks]
 
 --
@@ -47,26 +47,26 @@ result = numerator / denominator;
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 
 [source,arduino]
 ----
 int a = 50, b = 10, c = 0;
-c = a / b; // the variable 'c' gets a value of 5 after this statement is executed
+c = a / b; // Die Variable 'c' erhält einen Wert von 5, nachdem diese Anweisung ausgeführt wurde
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-1. If one of the numbers (operands) are of the type float or of type double, floating point math will be used for the calculation.
+=== Anmerkungen und Warnungen
+1. Wenn eine der Zahlen (Operanden) vom Typ float oder vom Typ double ist, wird für die Berechnung Fließkomma-Mathematik verwendet.
 
-2. If the operands are of float / double data type and the variable that stores the sum is an integer, then only the integral part is stored and the fractional part of the number is lost.
+2. Wenn die Operanden vom Datentyp float / double sind und die Variable, die die Summe speichert, eine Ganzzahl ist, wird nur die Ganzzahl gespeichert und der Bruchteil der Zahl geht verloren.
 
 [source,arduino]
 ----
 float a = 55.5, b = 6.6;
 int c = 0;
-c = a / b; // the variable 'c' stores a value of 8 only as opposed to the expected result of 8.409
+c = a / b; // Die Variable 'c' speichert nur den Wert 8 im Gegensatz zum erwarteten Ergebnis von 8,409
 ----
 [%hardbreaks]
 
@@ -78,7 +78,7 @@ c = a / b; // the variable 'c' stores a value of 8 only as opposed to the expect
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 

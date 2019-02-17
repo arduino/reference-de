@@ -17,8 +17,8 @@ subCategories: [ "Arithmetic Operators" ]
 --
 
 [float]
-=== Description
-*Multiplication* is one of the four primary arithmetic operations. The operator `*` (asterisk) operates on two operands to produce the product.
+=== Beschreibung
+*Multiplikation* ist eine der vier primären Rechenoperationen. Der Operator `*` (Sternchen) bearbeitet zwei Operanden, um das Produkt zu erzeugen.
 [%hardbreaks]
 
 
@@ -30,10 +30,10 @@ product = operand1 * operand2;
 ----
 
 [float]
-=== Parameters
-`product` : variable. *Allowed data types:* int, float, double, byte, short, long  +
-`operand1` : variable or constant. *Allowed data types:* int, float, double, byte, short, long  +
-`operand2` : variable or constant. *Allowed data types:* int, float, double, byte, short, long
+=== Parameter
+`product` : Variable. *Erlaubte Datentypen:* int, float, double, byte, short, long  +
+`operand1` : Variable oder Konstante. *Erlaubte Datentypen:* int, float, double, byte, short, long  +
+`operand2` : Variable oder Konstante. *Erlaubte Datentypen:* int, float, double, byte, short, long
 [%hardbreaks]
 
 --
@@ -47,28 +47,28 @@ product = operand1 * operand2;
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 
 [source,arduino]
 ----
 int a = 5, b = 10, c = 0;
-c = a * b; // the variable 'c' gets a value of 50 after this statement is executed
+c = a * b; // Die Variable 'c' erhält einen Wert von 50, nachdem diese Anweisung ausgeführt wurde
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-1. The multiplication operation can overflow if the result is bigger than that which can be stored in the data type.
+=== Anmerkungen und Warnungen
+1. Die Multiplikationsoperation kann überlaufen, wenn das Ergebnis größer ist als das, welches im Datentyp gespeichert werden kann.
 
-2. If one of the numbers (operands) are of the type float or of type double, floating point math will be used for the calculation.
+2. Wenn eine der Zahlen (Operanden) vom Typ float oder vom Typ double ist, wird für die Berechnung Fließkomma-Mathematik verwendet.
 
-3. If the operands are of float / double data type and the variable that stores the product is an integer, then only the integral part is stored and the fractional part of the number is lost.
+3. Wenn die Operanden vom Datentyp float / double sind und die Variable, in der das Produkt gespeichert wird, eine ganze Zahl ist, wird nur die Ganzzahl gespeichert und der Bruchteil der Zahl geht verloren.
 
 [source,arduino]
 ----
 float a = 5.5, b = 6.6;
 int c = 0;
-c = a * b; // the variable 'c' stores a value of 36 only as opposed to the expected product of 36.3
+c = a * b; // Die Variable 'c' speichert nur den Wert 36 und nicht das erwartete Produkt 36,3
 ----
 [%hardbreaks]
 
@@ -83,7 +83,7 @@ c = a * b; // the variable 'c' stores a value of 36 only as opposed to the expec
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 
