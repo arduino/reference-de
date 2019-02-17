@@ -17,11 +17,12 @@ subCategories: [ "Bitwise Operators" ]
 --
 
 [float]
-=== Description
-The bitwise NOT operator in C++ is the tilde character `~`. Unlike & and |, the bitwise NOT operator is applied to a single operand to its right. Bitwise NOT changes each bit to its opposite: 0 becomes 1, and 1 becomes 0.
+=== Beschreibung
+Der bitweise NOT-Operator in C ++ ist das Tilde-Zeichen `~`. Im Gegensatz zu `&` und `|` wird der bitweise NOT-Operator auf einen einzelnen Operanden rechts davon angewendet.
+Bitweises NOT ändert jedes Bit in sein Gegenteil: 0 wird 1 und 1 wird 0.
 [%hardbreaks]
 
-In other words:
+In anderen Worten:
 
     0  1    operand1
     -----
@@ -37,22 +38,26 @@ In other words:
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 
 [source,arduino]
 ----
-int a = 103;    // binary:  0000000001100111
-int b = ~a;     // binary:  1111111110011000 = -104
+int a = 103;    // Binär:  0000000001100111
+int b = ~a;     // Binär:  1111111110011000 = -104
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-You might be surprised to see a negative number like -104 as the result of this operation. This is because the highest bit in an int variable is the so-called sign bit. If the highest bit is 1, the number is interpreted as negative. This encoding of positive and negative numbers is referred to as two's complement. For more information, see the Wikipedia article on http://en.wikipedia.org/wiki/Twos_complement[two's complement^].
+=== Anmerkungen und Warnungen
+Möglicherweise sind Sie überrascht, als Ergebnis dieses Vorgangs eine negative Zahl wie -104 zu sehen.
+Dies liegt daran, dass das höchste Bit in einer int-Variablen das sogenannte Vorzeichenbit ist.
+Wenn das höchste Bit 1 ist, wird die Zahl als negativ interpretiert.
+Diese Kodierung von positiven und negativen Zahlen wird als Zweierkomplement bezeichnet.
+Weitere Informationen finden sich im Wikipedia-Artikel über das https://de.wikipedia.org/wiki/Zweierkomplement[Zweierkomplement^].
 
-As an aside, it is interesting to note that for any integer x, ~x is the same as -x-1.
+Nebenbei bemerkt ist es interessant zu wissen, dass ~x für jede ganze Zahl x das gleiche ist wie -x-1.
 
-At times, the sign bit in a signed integer expression can cause some unwanted surprises.
+Das Vorzeichenbit in einem vorzeichenbehafteten ganzzahligen Ausdruck kann manchmal zu unerwünschten Überraschungen führen.
 [%hardbreaks]
 
 --
@@ -65,12 +70,12 @@ At times, the sign bit in a signed integer expression can cause some unwanted su
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 
 [role="example"]
-* #EXAMPLE# https://www.arduino.cc/playground/Code/BitMath[BitMath Tutorial^]
+* #EXAMPLE# https://www.arduino.cc/playground/Code/BitMath[BitMath-Tutorial^]
 
 --
 //SEE ALSO SECTION ENDS

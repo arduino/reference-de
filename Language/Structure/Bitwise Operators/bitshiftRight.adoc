@@ -17,8 +17,8 @@ subCategories: [ "Bitwise Operators" ]
 --
 
 [float]
-=== Description
-The right shift operator `>>` causes the bits of the left operand to be shifted *right* by the number of positions specified by the right operand.
+=== Beschreibung
+Der rechte Right-Shift-Operator bewirkt, dass die Bits des linken Operanden um die durch den rechten Operanden angegebene Anzahl von Positionen *nach rechts* verschoben werden.
 [%hardbreaks]
 
 
@@ -30,9 +30,9 @@ variable >> number_of_bits;
 ----
 
 [float]
-=== Parameters
-`variable`: *Allowed data types:* byte, int, long +
-`number_of_bits`: a number that is < = 32. *Allowed data types:* int
+=== Parameter
+`variable`: *Erlaubte Datentypen:* byte, int, long +
+`number_of_bits`: Eine Zahl < = 32. *Erlaubte Datentypen:* int
 
 --
 // OVERVIEW SECTION ENDS
@@ -44,39 +44,44 @@ variable >> number_of_bits;
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 
 [source,arduino]
 ----
-int a = 40;       // binary: 0000000000101000
-int b = a >> 3;   // binary: 0000000000000101, or 5 in decimal
+int a = 40;       // Binär: 0000000000101000
+int b = a >> 3;   // Binär: 0000000000000101, oder 5 dezimal
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-When you shift x right by y bits (x >> y), and the highest bit in x is a 1, the behavior depends on the exact data type of x. If x is of type int, the highest bit is the sign bit, determining whether x is negative or not, as we have discussed above. In that case, the sign bit is copied into lower bits, for esoteric historical reasons:
+=== Anmerkungen und Warnungen
+Wenn x um y Bits (x >> y) nach rechts verschoben wird und das höchste Bit in x eine 1 ist, hängt das Verhalten vom genauen Datentyp von x ab.
+Wenn x vom Typ int ist, ist das höchste Bit das Vorzeichenbit, das bestimmt, ob x negativ ist oder nicht, wie oben diskutiert wurde.
+In diesem Fall wird das Vorzeichenbit aus esoterischen historischen Gründen in niedrigere Bits kopiert:
 
 [source,arduino]
 ----
-int x = -16;     // binary: 1111111111110000
+int x = -16;     // Binär: 1111111111110000
 int y = 3;
-int result = x >> y;  // binary: 1111111111111110
+int result = x >> y;  // Binär: 1111111111111110
 ----
-This behavior, called sign extension, is often not the behavior you want. Instead, you may wish zeros to be shifted in from the left. It turns out that the right shift rules are different for unsigned int expressions, so you can use a typecast to suppress ones being copied from the left:
+Dieses Verhalten, das als Zeichenerweiterung bezeichnet wird, ist häufig nicht das gewünschte Verhalten.
+Stattdessen möchte man möglicherweise, dass Nullen von links nach innen verschoben werden.
+Es stellt sich heraus, dass die Rechtsverschiebungsregeln für vorzeichenlose int-Ausdrücke unterschiedlich sind.
+Man kann also eine Typumwandlung verwenden, um zu verhindern, dass die von links kopierten Werte verwendet werden:
 
 [source,arduino]
 ----
-int x = -16;                   // binary: 1111111111110000
+int x = -16;                   // Binär: 1111111111110000
 int y = 3;
-int result = (unsigned int)x >> y;  // binary: 0001111111111110
+int result = (unsigned int)x >> y;  // Binär: 0001111111111110
 ----
-If you are careful to avoid sign extension, you can use the right-shift operator `>>` as a way to divide by powers of 2. For example:
+Wenn Sie die Vorzeichenerweiterung sorgfältig vermeiden, können Sie den rechten Umschaltoperator `>>` verwenden, um die Division durch Potenzen von 2 zu berechnen. Zum Beispiel:
 
 [source,arduino]
 ----
 int x = 1000;
-int y = x >> 3;   // integer division of 1000 by 8, causing y = 125.
+int y = x >> 3;   // Integer-Division von 1000 durch 8, wodurch y = 125.
 ----
 
 --
@@ -88,12 +93,12 @@ int y = x >> 3;   // integer division of 1000 by 8, causing y = 125.
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 
 [role="example"]
-* #EXAMPLE# http://www.arduino.cc/playground/Code/BitMath[BitMath Tutorial^]
+* #EXAMPLE# http://www.arduino.cc/playground/Code/BitMath[BitMath-Tutorial^]
 
 --
 // SEE ALSO SECTION ENDS

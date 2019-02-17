@@ -17,8 +17,8 @@ subCategories: [ "Bitwise Operators" ]
 --
 
 [float]
-=== Description
-The left shift operator `<<` causes the bits of the left operand to be shifted *left* by the number of positions specified by the right operand.
+=== Beschreibung
+Der Left-Shift-Operator `<<` bewirkt, dass die Bits des linken Operanden um die vom rechten Operanden angegebene Anzahl von Positionen *nach links* verschoben werden.
 [%hardbreaks]
 
 
@@ -30,9 +30,9 @@ variable << number_of_bits;
 ----
 
 [float]
-=== Parameters
-`variable`: *Allowed data types:* byte, int, long +
-`number_of_bits`: a number that is < = 32. *Allowed data types:* int
+=== Parameter
+`variable`: *Erlaubte Datentypen:* byte, int, long +
+`number_of_bits`: Eine Zahl < = 32. *Erlaubte Datentypen:* int
 
 --
 // OVERVIEW SECTION ENDS
@@ -44,31 +44,33 @@ variable << number_of_bits;
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 
 [source,arduino]
 ----
-int a = 5;        // binary: 0000000000000101
-int b = a << 3;   // binary: 0000000000101000, or 40 in decimal
+int a = 5;        // Binär: 0000000000000101
+int b = a << 3;   // Binär: 0000000000101000, oder 40 als Dezimal
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-When you shift a value x by y bits (x << y), the leftmost y bits in x are lost, literally shifted out of existence:
+=== Anmerkungen und Warnungen
+Wenn Sie einen Wert x um y Bits (x << y) verschieben, gehen die am weitesten links liegenden y Bits in x verloren.
 
 [source,arduino]
 ----
-int x = 5;        // binary: 0000000000000101
+int x = 5;        // Binär: 0000000000000101
 int y = 14;
-int result = x << y;  // binary: 0100000000000000 - the first 1 in 101 was discarded
+int result = x << y;  // Binär: 0100000000000000 - Die erste 1 von 101 wurde verworfen
 ----
 
-If you are certain that none of the ones in a value are being shifted into oblivion, a simple way to think of the left-shift operator is that it multiplies the left operand by 2 raised to the right operand power. For example, to generate powers of 2, the following expressions can be employed:
+Wenn Sie sicher sind, dass keine der Einsen in einem Wert in Vergessenheit gerät, ist ein einfacher Weg, sich den Operator für die linke Verschiebung vorzustellen,
+dass er den linken Operanden mit 2 multipliziert, um die Potenz des rechten Operanden zu erreichen.
+Um beispielsweise Potenzen von 2 zu erzeugen, können die folgenden Ausdrücke verwendet werden:
 
 [source,arduino]
 ----
-   Operation  Result
+   Operation  Ergebnis
    ---------  ------
     1 <<  0      1
     1 <<  1      2
@@ -81,14 +83,15 @@ If you are certain that none of the ones in a value are being shifted into obliv
     ...
 ----
 
-The following example can be used to print out the value of a received byte to the serial monitor, using the left shift operator to move along the byte from bottom(LSB) to top (MSB), and print out its Binary value:
+Das folgende Beispiel kann verwendet werden, um den Wert eines empfangenen Bytes an den seriellen Monitor auszugeben.
+Verwende den linken Umschaltoperator, um das Byte von unten (LSB) nach oben (MSB) zu verschieben und seinen binären Wert auszugeben:
 
 [source,arduino]
 ----
-// Prints out Binary value (1 or 0) of byte
+// Gibt den binären Wert (1 oder 0) des Bytes aus
 void printOut1(int c) {
   for (int bits = 7; bits > -1; bits--) {
-    // Compare bits 7-0 in byte
+    // Vergleiche die Bits 7-0 im Byte
     if (c & (1 << bits)) {
       Serial.print ("1");
     }
@@ -111,12 +114,12 @@ void printOut1(int c) {
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 
 [role="example"]
-* #EXAMPLE# https://www.arduino.cc/playground/Code/BitMath[BitMath Tutorial^]
+* #EXAMPLE# https://www.arduino.cc/playground/Code/BitMath[BitMath-Tutorial^]
 
 --
 //SEE ALSO SECTION ENDS
