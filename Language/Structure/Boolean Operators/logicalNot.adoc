@@ -17,8 +17,8 @@ subCategories: [ "Boolean Operators" ]
 --
 
 [float]
-=== Description
-*Logical NOT* results in a `true` if the operand is `false` and vice versa.
+=== Beschreibung
+*Logical NOT* führt zu einem `true`, wenn der Operand `false` ist und umgekehrt.
 [%hardbreaks]
 
 --
@@ -31,28 +31,28 @@ subCategories: [ "Boolean Operators" ]
 --
 
 [float]
-=== Example Code
-This operator can be used inside the condition of an link:../../control-structure/if/[if] statement.
+=== Beispielcode
+Dieser Operator kann in einer link:../../control-structure/if/[if]-Anweisung verwendet werden.
 
 [source,arduino]
 ----
-if (!x) { // if x is not true
-  // statements
+if (!x) { // Wenn x nicht true ist
+  // Statement(s)
 }
 ----
 
-It can be used to invert the boolean value.
+Es kann verwendet werden, um den booleschen Wert zu invertieren.
 [source,arduino]
 ----
-x = !y;   // the inverted value of y is stored in x
+x = !y;   // Der invertierte Wert von y wird in x gespeichert
 ----
 
 
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-The bitwise not ~ (tilde) looks much different than the boolean not ! (exclamation point or "bang" as the programmers say) but you still have to be sure which one you want where.
+=== Anmerkungen und Warnungen
+Das bitweise NOT ~ (Tilde) sieht sehr anders aus als das boolesche NOT ! (Ausrufezeichen oder "Knall", wie die Programmierer sagen), aber man muss immer noch wissen, welches man will.
 
 --
 // HOW TO USE SECTION ENDS
@@ -63,10 +63,10 @@ The bitwise not ~ (tilde) looks much different than the boolean not ! (exclamati
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
-* #LANGUAGE# link:../../bitwise-operators/bitwisenot[~ Bitwise NOT]
+* #LANGUAGE# link:../../bitwise-operators/bitwisenot[~ Bitweises NOT]
 
 --
 // SEE ALSO SECTION ENDS
