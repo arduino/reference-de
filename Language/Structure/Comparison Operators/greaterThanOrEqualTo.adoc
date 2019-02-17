@@ -17,8 +17,8 @@ subCategories: [ "Comparison Operators" ]
 --
 
 [float]
-=== Description
-Compares the variable on the left with the value or variable on the right of the operator. Returns true when the operand on the left is greater (bigger) than or equal to the operand on the right. 
+=== Beschreibung
+Vergleicht die linke Variable mit dem Wert oder der Variablen rechts vom Operator. Gibt `true` zurück, wenn der Operand links größer als oder gleich dem Operanden rechts ist.
 [%hardbreaks]
 
 
@@ -26,13 +26,13 @@ Compares the variable on the left with the value or variable on the right of the
 === Syntax
 [source,arduino]
 ----
-x >= y;   // is true if x is bigger than or equal to y and it is false if x is smaller than y
+x >= y;   // ist true, wenn x größer als oder gleich y ist und false, wenn x kleiner als y ist
 ----
 
 [float]
-=== Parameters
-`x`: variable. *Allowed data types:* int, float, double, byte, short, long +
-`y`: variable or constant. *Allowed data types:* int, float, double, byte, short, long
+=== Parameter
+`x`: Variable. *Erlaubte Datentypen:* int, float, double, byte, short, long +
+`y`: Variable oder Konstante. *Erlaubte Datentypen:* int, float, double, byte, short, long
 
 --
 // OVERVIEW SECTION ENDS
@@ -44,20 +44,20 @@ x >= y;   // is true if x is bigger than or equal to y and it is false if x is s
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 
 [source,arduino]
 ----
-if (x>=y)      // tests if x is greater (bigger) than or equal to y
+if (x>=y)      // Prüft, ob x größer als oder gleich y ist
 {
-// do something only if the comparison result is true
+  // Tue etwas nur dann, wenn das Vergleichsergebnis wahr ist
 }
 ----
 [%hardbreaks]
 
 [float]
 === Notes and Warnings
-Positive numbers are greater than negative numbers. 
+Positive Zahlen sind größer als negative Zahlen.
 [%hardbreaks]
 
 --
@@ -69,7 +69,7 @@ Positive numbers are greater than negative numbers.
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 
 --
