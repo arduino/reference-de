@@ -16,8 +16,8 @@ subCategories: [ "Math" ]
 --
 
 [float]
-=== Description
-Constrains a number to be within a range.
+=== Beschreibung
+Beschränkt eine Zahl auf einen Bereich.
 [%hardbreaks]
 
 
@@ -27,18 +27,18 @@ Constrains a number to be within a range.
 
 
 [float]
-=== Parameters
-`x`: the number to constrain, all data types
-`a`: the lower end of the range, all data types
-`b`: the upper end of the range, all data types
+=== Parameter
+`x`: Die zu beschränkende Zahl, alle Datentypen
+`a`: Das unteren Ende des Bereichs, alle Datentypen
+`b`: Das obere Ende des Bereichs, alle Datentypen
 
 [float]
-=== Returns
-x: if x is between a and b
+=== Gibt zurück
+x: Wenn x zwischen a und b liegt
 
-a: if x is less than a
+a: wenn x kleiner als a ist
 
-b: if x is greater than b
+b: wenn x größer als b ist
 
 --
 // OVERVIEW SECTION ENDS
@@ -51,29 +51,29 @@ b: if x is greater than b
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code limits the sensor values to between 10 to 150.
+Der Code begrenzt den Bereich der Sensorwerte auf 10 bis 150.
 
 [source,arduino]
 ----
-sensVal = constrain(sensVal, 10, 150);    // limits range of sensor values to between 10 and 150
+sensVal = constrain(sensVal, 10, 150);    // Begrenzt den Bereich der Sensorwerte auf 10 bis 150.
 ----
 
 [float]
-=== Notes and Warnings
-Because of the way the `constrain()` function is implemented, avoid using other functions inside the brackets, it may lead to incorrect results.
+=== Anmerkungen und Warnungen
+Es sollten keine anderen Funktionen innerhalb der Klammern verwendet werden. Dies kann zu falschen Ergebnissen führen.
 
-This code will yield incorrect results:
+Dieser Code führt zu falschen Ergebnissen:
 [source,arduino]
 ----
-int constrainedInput = constrain(Serial.parseInt(), minimumValue, maximumValue);   // avoid this
+int constrainedInput = constrain(Serial.parseInt(), minimumValue, maximumValue);   // Vermeide dies
 ----
 
-Use this instead:
+Benutze stattdessen diesen Code:
 [source,arduino]
 ----
-int input = Serial.parseInt();  // keep other operations outside the constrain function
+int input = Serial.parseInt();  // Halte andere Operationen außerhalb der Einschränkungsfunktion
 int constrainedInput = constrain(input, minimumValue, maximumValue);
 ----
 [%hardbreaks]
@@ -87,7 +87,7 @@ int constrainedInput = constrain(input, minimumValue, maximumValue);
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 --
 // SEE ALSO SECTION ENDS

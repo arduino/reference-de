@@ -16,8 +16,9 @@ subCategories: [ "Math" ]
 --
 
 [float]
-=== Description
-Calculates the value of a number raised to a power. `Pow()` can be used to raise a number to a fractional power. This is useful for generating exponential mapping of values or curves.
+=== Beschreibung
+Berechnet den Wert einer Zahl, die auf eine Potenz erhöht wird. Mit `pow ()` kann eine Zahl auf eine gebrochene Potenz erhöht werden.
+Dies ist nützlich, um eine exponentielle Abbildung von Werten oder Kurven zu erstellen.
 [%hardbreaks]
 
 
@@ -27,14 +28,14 @@ Calculates the value of a number raised to a power. `Pow()` can be used to raise
 
 
 [float]
-=== Parameters
-`base`: the number (`float`)
+=== Parameter
+`base`: Die Zahl (`float`)
 
-`exponent`: the power to which the base is raised (`float`)
+`exponent`: Die Potenz, auf die die Zahl angehoben wird (`float`)
 
 [float]
-=== Returns
-The result of the exponentiation. (`double`)
+=== Gibt zurück
+Das Ergebnis der Potenzierung. (`double`)
 
 --
 // OVERVIEW SECTION ENDS
@@ -45,14 +46,14 @@ The result of the exponentiation. (`double`)
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-Calculate the value of x raised to the power of y:
+Berechnet den Wert von x mit Potenz von y:
 [source,arduino]
 ----
 z = pow(x, y);
 ----
-See the (http://arduino.cc/playground/Main/Fscale[fscale]) sketch for a more complex example of the use of `map()`.
+Siehe auch den (http://arduino.cc/playground/Main/Fscale[fscale]) Sketch für ein komplexeres Beispiel der `map()`-Funktion.
 [%hardbreaks]
 
 --
@@ -64,7 +65,7 @@ See the (http://arduino.cc/playground/Main/Fscale[fscale]) sketch for a more com
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="definition"]
 * #DEFINITION# link:../../../variables/data-types/float[float]

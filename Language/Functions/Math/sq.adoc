@@ -16,8 +16,8 @@ subCategories: [ "Math" ]
 --
 
 [float]
-=== Description
-Calculates the square of a number: the number multiplied by itself.
+=== Beschreibung
+Berechnet das Quadrat einer Zahl: Die Zahl, die mit sich selbst multipliziert wird.
 [%hardbreaks]
 
 
@@ -27,12 +27,12 @@ Calculates the square of a number: the number multiplied by itself.
 
 
 [float]
-=== Parameters
-`x`: the number, any data type
+=== Parameter
+`x`: Die Zahl, beliebiger Datentyp
 
 [float]
-=== Returns
-The square of the number. (double)
+=== Gibt zurück
+Den Quadratwert der Zahl. (double)
 
 --
 // OVERVIEW SECTION ENDS
@@ -43,19 +43,19 @@ The square of the number. (double)
 --
 
 [float]
-=== Notes and Warnings
-Because of the way the `sq()` function is implemented, avoid using other functions inside the brackets, it may lead to incorrect results.
+=== Anmerkungen und Warnungen
+Es sollten keine anderen Funktionen innerhalb der Klammern verwendet werden. Dies kann zu falschen Ergebnissen führen.
 
-This code will yield incorrect results:
+Dieser Code führt zu falschen Ergebnissen:
 [source,arduino]
 ----
-int inputSquared = sq(Serial.parseInt()); // avoid this
+int inputSquared = sq(Serial.parseInt()); // Vermeide dies
 ----
 
 Use this instead:
 [source,arduino]
 ----
-int input = Serial.parseInt();  // keep other operations outside the sq function
+int input = Serial.parseInt();  // Halten Sie andere Operationen außerhalb der sq-Funktion
 int inputSquared = sq(input);
 ----
 [%hardbreaks]
@@ -69,7 +69,7 @@ int inputSquared = sq(input);
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 --
 // SEE ALSO SECTION ENDS

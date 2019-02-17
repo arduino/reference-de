@@ -16,8 +16,8 @@ subCategories: [ "Math" ]
 --
 
 [float]
-=== Description
-Calculates the absolute value of a number.
+=== Beschreibung
+Berechnet den absoluten Wert einer Zahl.
 [%hardbreaks]
 
 
@@ -26,14 +26,14 @@ Calculates the absolute value of a number.
 `abs(x)`
 
 [float]
-=== Parameters
-`x`: the number
+=== Parameter
+`x`: Die Zahl
 
 [float]
-=== Returns
-`x`: if x is greater than or equal to 0.
+=== Gibt zurück
+`x`: wenn x größer oder gleich 0 ist.
 
-`-x`: if x is less than 0.
+`-x`: wenn x kleiner als 0 ist.
 
 --
 // OVERVIEW SECTION ENDS
@@ -47,14 +47,15 @@ Calculates the absolute value of a number.
 
 
 [float]
-=== Notes and Warnings
-Because of the way the abs() function is implemented, avoid using other functions inside the brackets, it may lead to incorrect results.
+=== Anmerkungen und Warnungen
+Es sollten keine anderen Funktionen innerhalb der Klammern verwendet werden. Dies kann zu falschen Ergebnissen führen.
+
 [source,arduino]
 ----
-abs(a++);   // avoid this - yields incorrect results
+abs(a++);   // Vermeiden - führt zu falschen Ergebnissen
 
-abs(a);         // use this instead -
-a++;        // keep other math outside the function
+abs(a);         // Benutze dies stattdessen -
+a++;        // Andere Mathematik außerhalb der Funktion benutzen
 ----
 [%hardbreaks]
 

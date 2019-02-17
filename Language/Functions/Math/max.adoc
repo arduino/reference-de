@@ -16,8 +16,8 @@ subCategories: [ "Math" ]
 --
 
 [float]
-=== Description
-Calculates the maximum of two numbers.
+=== Beschreibung
+Berechnet das Maximum von zwei Zahlen.
 [%hardbreaks]
 
 
@@ -27,13 +27,13 @@ Calculates the maximum of two numbers.
 
 
 [float]
-=== Parameters
-`x`: the first number, any data type
-`y`: the second number, any data type
+=== Parameter
+`x`: Die erste Zahl, beliebiger Datentyp
+`y`: Die zweite Zahl, beliebiger Datentyp
 
 [float]
-=== Returns
-The larger of the two parameter values.
+=== Gibt zurück
+Der größere der beiden Parameterwerte.
 
 --
 // OVERVIEW SECTION ENDS
@@ -46,28 +46,28 @@ The larger of the two parameter values.
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code ensures that sensVal is at least 20.
+Der Code stellt sicher, dass sensVal mindestens 20 beträgt.
 
 [source,arduino]
 ----
-sensVal = max(senVal, 20); // assigns sensVal to the larger of sensVal or 20
-                           // (effectively ensuring that it is at least 20)
+sensVal = max(senVal, 20); // Ordnet sensVal dem größeren Wert von sensVal oder 20 zu
+                           // (Stellt sicher, dass sensVal mindestens 20 ist)
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-Perhaps counter-intuitively, `max()` is often used to constrain the lower end of a variable's range, while `min()` is used to constrain the upper end of the range.
+=== Anmerkungen und Warnungen
+Vielleicht kontra-intuitiv wird `max()` häufig verwendet, um das untere Ende des Bereichs einer Variablen zu beschränken, während `min()` verwendet wird, um das obere Ende des Bereichs zu beschränken.
 
-Because of the way the `max()` function is implemented, avoid using other functions inside the brackets, it may lead to incorrect results
+Es sollten keine anderen Funktionen innerhalb der Klammern verwendet werden. Dies kann zu falschen Ergebnissen führen.
 [source,arduino]
 ----
-max(a--, 0);   // avoid this - yields incorrect results
+max(a--, 0);   // Vermeide dies - führt zu falschen Ergebnissen
 
-max(a, 0);           // use this instead -
-a--;     // keep other math outside the function
+max(a, 0);           // Benutze dies stattdessen -
+a--;     // Andere Mathematik außerhalb der Funktion halten
 ----
 
 --

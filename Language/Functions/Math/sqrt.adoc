@@ -12,12 +12,12 @@ subCategories: [ "Math" ]
 
 
 // OVERVIEW SECTION STARTS
-Calculates the square root of a number.
+Berechnet die Quadratwurzel einer Zahl.
 [#overview]
 --
 
 [float]
-=== Description
+=== Beschreibung
 [%hardbreaks]
 
 
@@ -27,12 +27,12 @@ Calculates the square root of a number.
 
 
 [float]
-=== Parameters
-`x`: the number, any data type
+=== Parameter
+`x`: Die Zahl, beliebiger Datentyp
 
 [float]
-=== Returns
-The number's square root. (double)
+=== Gibt zurück
+Quadratwurzel der Zahl. (double)
 
 --
 // OVERVIEW SECTION ENDS

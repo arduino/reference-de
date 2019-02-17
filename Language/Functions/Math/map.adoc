@@ -16,22 +16,24 @@ subCategories: [ "Math" ]
 --
 
 [float]
-=== Description
-Re-maps a number from one range to another. That is, a value of *fromLow* would get mapped to *toLow*, a value of *fromHigh* to *toHigh*, values in-between to values in-between, etc.
+=== Beschreibung
+Bildet eine Zahl von einem Bereich in einen anderen ab. Das heißt, ein Wert von *fromLow* würde auf *toLow*, einen Wert von *fromHigh* bis *toHigh*, Werte zwischen dazwischen auf Werte dazwischen usw. zugeordnet.
 
-Does not constrain values to within the range, because out-of-range values are sometimes intended and useful. The `constrain()` function may be used either before or after this function, if limits to the ranges are desired.
+Beschränkt die Werte nicht innerhalb des Bereichs, da Werte außerhalb des Bereichs manchmal beabsichtigt und nützlich sind.
+Die `constrain ()`-Funktion kann entweder vor oder nach dieser Funktion verwendet werden, wenn eine Begrenzung der Bereiche gewünscht werden.
 
-Note that the "lower bounds" of either range may be larger or smaller than the "upper bounds" so the `map()` function may be used to reverse a range of numbers, for example
+Beachten Sie, dass die "unteren Grenzen" eines Bereichs größer oder kleiner als die "oberen Grenzen" sein können, sodass die Funktion "map ()" beispielsweise zum Umkehren eines Arrays verwendet werden kann.
 
 `y = map(x, 1, 50, 50, 1);`
 
-The function also handles negative numbers well, so that this example
+Die Funktion kann auch mit negativen Zahlen gut umgehen, so dass dieses Beispiel:
 
 `y = map(x, 1, 50, 50, -100);`
 
-is also valid and works well.
+auch valide ist und funktioniert.
 
-The `map()` function uses integer math so will not generate fractions, when the math might indicate that it should do so. Fractional remainders are truncated, and are not rounded or averaged.
+Die `map ()` - Funktion verwendet Ganzzahl-Mathematik, so dass keine Brüche generiert werden, wenn die Mathematik möglicherweise darauf hinweist, dass dies der Fall ist.
+Bruchreste werden abgeschnitten und nicht gerundet oder gemittelt.
 [%hardbreaks]
 
 
@@ -41,20 +43,20 @@ The `map()` function uses integer math so will not generate fractions, when the 
 
 
 [float]
-=== Parameters
-`value`: the number to map
+=== Parameter
+`value`: Die Nummer, die zugeordnet werden soll
 
-`fromLow`: the lower bound of the value's current range
+`fromLow`: Die untere Grenze des aktuellen Wertebereichs
 
-`fromHigh`: the upper bound of the value's current range
+`fromHigh`: Die obere Grenze des aktuellen Wertebereichs
 
-`toLow`: the lower bound of the value's target range
+`toLow`: Die untere Grenze des Zielbereichs des Werts
 
-`toHigh`: the upper bound of the value's target range
+`toHigh`: Die obere Grenze des Zielbereichs des Werts
 
 [float]
-=== Returns
-The mapped value.
+=== Gibt zurück
+Den zugeordneten Wert.
 
 --
 // OVERVIEW SECTION ENDS
@@ -67,13 +69,13 @@ The mapped value.
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 
 
 [source,arduino]
 ----
-/* Map an analog value to 8 bits (0 to 255) */
+/* Zuordnen eines analogen Werts auf 8 Bits (0 bis 255). */
 void setup() {}
 
 void loop()
@@ -86,9 +88,9 @@ void loop()
 [%hardbreaks]
 
 [float]
-=== Appendix
+=== Anhang
 
-For the mathematically inclined, here's the whole function
+Für mathematisch Interessierte ist hier die ganze Funktion
 
 [source,arduino]
 ----
@@ -99,9 +101,11 @@ long map(long x, long in_min, long in_max, long out_min, long out_max)
 ----
 
 [float]
-=== Notes & Warnings
+=== Anmerkungen und Warnungen
 
-As previously mentioned, the map() function uses integer math. So fractions might get suppressed due to this. For example, fractions like 3/2, 4/3, 5/4 will all be returned as 1 from the map() function, despite their different actual values. So if your project requires precise calculations (e.g. voltage accurate to 3 decimal places), please consider avoiding map() and implementing the calculations manually in your code yourself.
+Wie bereits erwähnt, verwendet die map()-Funktion Ganzzahl-Mathematik. Dadurch können Brüche unterdrückt werden.
+Zum Beispiel werden Brüche wie 3/2, 4/3, 5/4 trotz ihrer unterschiedlichen tatsächlichen Werte von der Funktion map () als 1 zurückgegeben.
+Wenn also für das Projekt genaue Berechnungen erforderlich sind (z. B. eine auf 3 Dezimalstellen genaue Spannung), sollte man map() vermeiden und die Berechnungen manuell im Code implementieren.
 
 --
 // HOW TO USE SECTION ENDS
