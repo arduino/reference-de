@@ -16,8 +16,8 @@ subCategories: [ "Time" ]
 --
 
 [float]
-=== Description
-Returns the number of milliseconds since the Arduino board began running the current program. This number will overflow (go back to zero), after approximately 50 days.
+=== Beschreibung
+Gibt die Anzahl von Millisekunden zurück, seit das Arduino-Board das aktuelle Programm gestartet hat. Diese Zahl läuft nach etwa 50 Tagen über (geht auf Null zurück).
 [%hardbreaks]
 
 
@@ -27,12 +27,12 @@ Returns the number of milliseconds since the Arduino board began running the cur
 
 
 [float]
-=== Parameters
+=== Parameter
 Nothing
 
 [float]
-=== Returns
-Number of milliseconds since the program started (unsigned long)
+=== Gibt zurück
+Anzahl der Millisekunden seit dem Programmstart (unsigned long)
 
 --
 // OVERVIEW SECTION ENDS
@@ -45,9 +45,9 @@ Number of milliseconds since the program started (unsigned long)
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code reads the milllisecond since the Arduino board began.
+Der Code liest die Millisekunde seit Beginn des Arduino-Boards.
 
 [source,arduino]
 ----
@@ -60,15 +60,17 @@ void loop(){
   Serial.print("Time: ");
   time = millis();
 
-  Serial.println(time);    //prints time since program started
-  delay(1000);             // wait a second so as not to send massive amounts of data
+  Serial.println(time);    // Gibt die Zeit seit dem Programmstart aus
+  delay(1000);             // Eine Sekunde warten, um keine riesigen Datenmengen zu senden
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-Please note that the return value for millis() is an unsigned long, logic errors may occur if a programmer tries to do arithmetic with smaller data types such as int's. Even signed long may encounter errors as its maximum value is half that of its unsigned counterpart.
+=== Anmerkungen und Warnungen
+Bitte beachten Sie, dass der Rückgabewert für `millis()` ein unsigned long Wert ist.
+Es können logische Fehler auftreten, wenn ein Programmierer versucht, mit kleineren Datentypen (z. B. ints) zu rechnen.
+Sogar mit Vorzeichen versehene Long-Werte können auf Fehler stoßen, da ihr Maximalwert die Hälfte des vorzeichenlosen Gegenstücks ist.
 
 --
 // HOW TO USE SECTION ENDS
@@ -79,10 +81,10 @@ Please note that the return value for millis() is an unsigned long, logic errors
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blink Without Delay^]
+* #EXAMPLE# http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blinken ohne Verzögerung^]
 
 --
 // SEE ALSO SECTION ENDS

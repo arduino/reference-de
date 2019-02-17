@@ -16,10 +16,13 @@ subCategories: [ "Time" ]
 --
 
 [float]
-=== Description
-Pauses the program for the amount of time (in microseconds) specified as parameter. There are a thousand microseconds in a millisecond, and a million microseconds in a second.
+=== Beschreibung
+Hält das Programm für die als Parameter angegebene Zeit (in Mikrosekunden) an.
+Es gibt tausend Mikrosekunden in einer Millisekunde und eine Million Mikrosekunden in einer Sekunde.
 
-Currently, the largest value that will produce an accurate delay is 16383. This could change in future Arduino releases. For delays longer than a few thousand microseconds, you should use `delay()` instead.
+Derzeit ist der größte Wert, der eine genaue Verzögerung erzeugt, 16383.
+Dies könnte sich in zukünftigen Arduino-Releases ändern.
+Bei Verzögerungen von mehr als einigen tausend Mikrosekunden sollte stattdessen `delay()` verwendet werden.
 [%hardbreaks]
 
 
@@ -29,12 +32,12 @@ Currently, the largest value that will produce an accurate delay is 16383. This 
 
 
 [float]
-=== Parameters
-`us`: the number of microseconds to pause (`unsigned int`)
+=== Parameter
+`us`: die Anzahl der Mikrosekunden, die angehalten werden sollen (`unsigned int`)
 
 [float]
-=== Returns
-Nothing
+=== Gibt zurück
+Nichts
 
 --
 // OVERVIEW SECTION ENDS
@@ -47,34 +50,36 @@ Nothing
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code configures pin number 8 to work as an output pin. It sends a train of pulses of approximately 100 microseconds period. The approximation is due to execution of the other instructions in the code. 
+Der Code konfiguriert Pin 8 als Ausgangspin. Er sendet eine Impulsfolge von ungefähr 100 Mikrosekunden.
+Die Annäherung beruht auf der Ausführung der anderen Anweisungen im Code. 
 
 [source,arduino]
 ----
-int outPin = 8;                 // digital pin 8
+int outPin = 8;                 // Digitalpin 8
 
 void setup()
 {
-  pinMode(outPin, OUTPUT);      // sets the digital pin as output
+  pinMode(outPin, OUTPUT);      // Digitalpin als Output setzen
 }
 
 void loop()
 {
-  digitalWrite(outPin, HIGH);   // sets the pin on
-  delayMicroseconds(50);        // pauses for 50 microseconds
-  digitalWrite(outPin, LOW);    // sets the pin off
-  delayMicroseconds(50);        // pauses for 50 microseconds
+  digitalWrite(outPin, HIGH);   // Pin auf HIGH setzen
+  delayMicroseconds(50);        // 50 Mikrosekunden warten
+  digitalWrite(outPin, LOW);    // Pin auf LOW setzen
+  delayMicroseconds(50);        // 50 Mikrosekunden warten
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-This function works very accurately in the range 3 microseconds and up. We cannot assure that delayMicroseconds will perform precisely for smaller delay-times.
+=== Anmerkungen und Warnungen
+Diese Funktion arbeitet im Bereich von 3 Mikrosekunden und mehr sehr genau.
+Wir können nicht garantieren, dass `delayMicroseconds()` genau für kürzere Verzögerungszeiten funktionieren.
 
-As of Arduino 0018, delayMicroseconds() no longer disables interrupts.
+`delayMicroseconds()` deaktiviert ab Arduino 0018 keine Interrupts mehr.
 
 --
 // HOW TO USE SECTION ENDS

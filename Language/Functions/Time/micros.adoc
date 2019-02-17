@@ -16,8 +16,11 @@ subCategories: [ "Time" ]
 --
 
 [float]
-=== Description
-Returns the number of microseconds since the Arduino board began running the current program. This number will overflow (go back to zero), after approximately 70 minutes. On 16 MHz Arduino boards (e.g. Duemilanove and Nano), this function has a resolution of four microseconds (i.e. the value returned is always a multiple of four). On 8 MHz Arduino boards (e.g. the LilyPad), this function has a resolution of eight microseconds.
+=== Beschreibung
+Gibt die Anzahl der Mikrosekunden zurück, seit das Arduino-Board das aktuelle Programm gestartet hat.
+Diese Zahl läuft nach ca. 70 Minuten über (Nullstellen).
+Auf 16-MHz-Arduino-Boards (z. B. Duemilanove und Nano) hat diese Funktion eine Auflösung von vier Mikrosekunden (d. H. Der zurückgegebene Wert ist immer ein Vielfaches von vier).
+Auf 8-MHz-Arduino-Boards (z. B. dem LilyPad) hat diese Funktion eine Auflösung von acht Mikrosekunden.
 [%hardbreaks]
 
 
@@ -27,12 +30,12 @@ Returns the number of microseconds since the Arduino board began running the cur
 
 
 [float]
-=== Parameters
+=== Parameter
 Nothing
 
 [float]
-=== Returns
-Returns the number of microseconds since the Arduino board began running the current program.(unsigned long)
+=== Gibt zurück
+Gibt die Anzahl der Mikrosekunden zurück, seit das Arduino-Board das aktuelle Programm gestartet hat. (unsigned long)
 
 --
 // OVERVIEW SECTION ENDS
@@ -45,9 +48,9 @@ Returns the number of microseconds since the Arduino board began running the cur
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code returns the number of microseconds since the Arduino board began.
+Der Code gibt die Anzahl der Mikrosekunden seit dem Beginn des Arduino-Boards zurück.
 
 [source,arduino]
 ----
@@ -60,15 +63,15 @@ void loop(){
   Serial.print("Time: ");
   time = micros();
 
-  Serial.println(time);  //prints time since program started
-  delay(1000);           // wait a second so as not to send massive amounts of data
+  Serial.println(time);  // gibt die Zeit seit dem Programmstart aus
+  delay(1000);           // Warten Sie eine Sekunde, um keine riesigen Datenmengen zu senden
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-There are 1,000 microseconds in a millisecond and 1,000,000 microseconds in a second.
+=== Anmerkungen und Warnungen
+Es gibt 1.000 Mikrosekunden in einer Millisekunde und 1.000.000 Mikrosekunden in einer Sekunde.
 
 --
 // HOW TO USE SECTION ENDS
