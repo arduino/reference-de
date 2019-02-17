@@ -16,13 +16,20 @@ subCategories: [ "Further Syntax" ]
 --
 
 [float]
-=== Description
-Curly braces (also referred to as just "braces" or as "curly brackets") are a major part of the C++ programming language. They are used in several different constructs, outlined below, and this can sometimes be confusing for beginners. +
-An opening curly brace `{` must always be followed by a closing curly brace `}`. This is a condition that is often referred to as the braces being balanced. The Arduino IDE (Integrated Development Environment) includes a convenient feature to check the balance of curly braces. Just select a brace, or even click the insertion point immediately following a brace, and its logical companion will be highlighted.
+=== Beschreibung
+Geschweifte Klammern (auch als "geschweifte Klammern" oder "geschweifte Klammern" bezeichnet) sind ein Hauptbestandteil der Programmiersprache C ++.
+Sie werden in mehreren verschiedenen Konstrukten verwendet (siehe unten), was für Anfänger manchmal verwirrend sein kann.
+Auf eine öffnende geschweifte Klammer `{` muss immer eine schließende geschweifte Klammer `}` folgen.
+Dies ist eine Bedingung, die oft als ausgeglichene Klammern bezeichnet wird.
+Die Arduino IDE (Integrated Development Environment) enthält eine praktische Funktion zum Überprüfen des Gleichgewichts von geschweiften Klammern.
+Wähle einfach eine geschweifte Klammer aus oder klicke auf die Einfügemarke unmittelbar nach einer geschweiften Klammer. Der logische Begleiter wird hervorgehoben.
 [%hardbreaks]
-Beginners programmers, and programmers coming to C++ from the BASIC language often find using braces confusing or daunting. After all, the same curly braces replace the RETURN statement in a subroutine (function), the ENDIF statement in a conditional and the NEXT statement in a FOR loop.
+Anfänger und Programmierer, die aus der BASIC-Sprache zu C ++ kommen, finden Klammern oft verwirrend oder abschreckend.
+Letztendlich aber, ersetzen dieselben geschweiften Klammern die RETURN-Anweisung in einer Subroutine (Funktion), die ENDIF-Anweisung in einer Bedingung und die NEXT-Anweisung in einer FOR-Schleife.
 [%hardbreaks]
-Unbalanced braces can often lead to cryptic, impenetrable compiler errors that can sometimes be hard to track down in a large program. Because of their varied usages, braces are also incredibly important to the syntax of a program and moving a brace one or two lines will often dramatically affect the meaning of a program.
+Unausgeglichene geschweifte Klammern können oft zu kryptischen, undurchdringlichen Compiler-Fehlern führen, die in einem großen Programm manchmal schwer zu finden sind.
+Aufgrund ihrer unterschiedlichen Verwendungsmöglichkeiten sind Klammern auch für die Syntax eines Programms unglaublich wichtig.
+Wenn Sie eine oder zwei Zeilen einer Klammer verschieben, hat dies oft einen dramatischen Einfluss auf die Bedeutung eines Programms.
 [%hardbreaks]
 
 --
@@ -36,40 +43,40 @@ Unbalanced braces can often lead to cryptic, impenetrable compiler errors that c
 --
 
 [float]
-=== Example Code
-The main uses of curly braces are listed in the examples below.
+=== Beispielcode
+Die Hauptanwendungen von geschweiften Klammern sind in den folgenden Beispielen aufgeführt.
 
 
 [float]
-==== Functions
+==== Funktionen
 
 [source,arduino]
 ----
-void myfunction(datatype argument){
-  statements(s)
+void myFunction(Datentyp Argument){
+  // Beliebige Anweisungen
 }
 ----
 [%hardbreaks]
 
 
 [float]
-==== Loops
+==== Schleifen
 
 [source,arduino]
 ----
-while (boolean expression)
+while (Boolean-Ausdruck)
 {
- statement(s)
+   // Beliebige Anweisungen
 }
 
 do
 {
- statement(s)
-} while (boolean expression);
+   // Beliebige Anweisungen
+} while (Boolean-Ausdruck);
 
-for (initialisation; termination condition; incrementing expr)
+for (Initialisierung; Schlussbedingung; inkrementierender Ausdruck)
 {
- statement(s)
+   // Beliebige Anweisungen
 }
 ----
 [%hardbreaks]
@@ -78,22 +85,22 @@ for (initialisation; termination condition; incrementing expr)
 
 
 [float]
-==== Conditional Statements
+==== Bedingte Anweisungen
 
 [source,arduino]
 ----
-if (boolean expression)
+if (Boolean-Ausdruck)
 {
- statement(s)
+   // Beliebige Anweisungen
 }
 
-else if (boolean expression)
+else if (Boolean-Ausdruck)
 {
- statement(s)
+   // Beliebige Anweisungen
 }
 else
 {
- statement(s)
+   // Beliebige Anweisungen
 }
 ----
 [%hardbreaks]
@@ -108,7 +115,7 @@ else
 --
 
 [float]
-=== See also
+=== Siehe auch
 [role="language"]
 
 --

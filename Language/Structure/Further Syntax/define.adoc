@@ -17,23 +17,26 @@ subCategories: [ "Further Syntax" ]
 --
 
 [float]
-=== Description
-`#define` is a useful C++ component that allows the programmer to give a name to a constant value before the program is compiled. Defined constants in arduino don't take up any program memory space on the chip. The compiler will replace references to these constants with the defined value at compile time.
+=== Beschreibung
+`#define` ist eine nützliche C ++ - Komponente, mit der der Programmierer einem konstanten Wert einen Namen geben kann, bevor das Programm kompiliert wird.
+Definierte Konstanten in Arduino belegen keinen Programmspeicherplatz auf dem Chip.
+Der Compiler ersetzt zur Kompilierzeit Verweise auf diese Konstanten durch den definierten Wert.
 [%hardbreaks]
 
-This can have some unwanted side effects though, if for example, a constant name that had been #defined is included in some other constant or variable name. In that case the text would be replaced by the #defined number (or text).
+Dies kann jedoch einige unerwünschte Nebenwirkungen haben, wenn zum Beispiel ein konstanter Name, der #defined wurde, in einer anderen Konstanten- oder Variablenname enthalten ist.
+In diesem Fall würde der Text durch die #definierte Nummer (oder den Text) ersetzt.
 [%hardbreaks]
 
-In general, the link:../../../variables/variable-scope\--qualifiers/const[const] keyword is preferred for defining constants and should be used instead of #define.
+Generell sollte das link:../../../variables/variable-scope\--qualifiers/const[const]-Schlüsselwort für die Definition von Konstanten bevorzugt und anstelle von #define verwendet werden.
 [%hardbreaks]
 
 [float]
 === Syntax
 [source,arduino]
 ----
-#define constantName value
+#define Konstantenname Wert
 ----
-Note that the # is necessary.
+Beachte, dass das # erforderlich ist.
 [%hardbreaks]
 
 --
@@ -47,29 +50,29 @@ Note that the # is necessary.
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 
 [source,arduino]
 ----
 #define ledPin 3
-// The compiler will replace any mention of ledPin with the value 3 at compile time.
+// Der Compiler ersetzt alle Erwähnungen von ledPin zur Kompilierzeit durch den Wert 3.
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-There is no semicolon after the #define statement. If you include one, the compiler will throw cryptic errors further down the page.
+=== Anmerkungen und Warnungen
+Es gibt kein Semikolon nach der Anweisung #define. Wenn eines hinzufügt wird, so wirft der Compiler weiter unten auf der Seite kryptische Fehler aus.
 
 [source,arduino]
 ----
-#define ledPin 3;    // this is an error
+#define ledPin 3;    // Das ist ein Fehler
 ----
 
-Similarly, including an equal sign after the #define statement will also generate a cryptic compiler error further down the page.
+Wenn ein Gleichheitszeichen nach der Anweisung #define einfügt wird, wird ebenfalls ein kryptischer Compiler-Fehler weiter unten auf der Seite generiert.
 
 [source,arduino]
 ----
-#define ledPin  = 3  // this is also an error
+#define ledPin  = 3  // Das ist auch ein Fehler
 ----
 [%hardbreaks]
 
@@ -84,11 +87,11 @@ Similarly, including an equal sign after the #define statement will also generat
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #LANGUAGE#	link:../../../variables/variable-scope\--qualifiers/const[const]
-* #LANGUAGE#	link:../../../variables/constants/constants[Constants]
+* #LANGUAGE#	link:../../../variables/constants/constants[Konstanten]
 
 --
 // SEE ALSO SECTION ENDS

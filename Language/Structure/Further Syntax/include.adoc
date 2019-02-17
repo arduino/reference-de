@@ -17,14 +17,15 @@ subCategories: [ "Further Syntax" ]
 --
 
 [float]
-=== Description
-`#include` is used to include outside libraries in your sketch. This gives the programmer access to a large group of standard C libraries (groups of pre-made functions), and also libraries written especially for Arduino.
+=== Beschreibung
+`#include` wird verwendet, um externe Bibliotheken in den Sketch aufzunehmen.
+Dadurch erhält der Programmierer Zugriff auf eine große Gruppe von Standard-C-Bibliotheken (Gruppen vorgefertigter Funktionen) sowie auf speziell für Arduino geschriebene Bibliotheken.
 [%hardbreaks]
 
-The main reference page for AVR C libraries (AVR is a reference to the Atmel chips on which the Arduino is based) is http://www.nongnu.org/avr-libc/user-manual/modules.html[here^].
+Die Hauptreferenzseite für AVR C-Bibliotheken (AVR ist eine Referenz auf die Atmel-Chips, auf denen der Arduino basiert) ist http://www.nongnu.org/avr-libc/user-manual/modules.html[hier^].
 [%hardbreaks]
 
-Note that `#include`, similar to link:../define[`#define`], has no semicolon terminator, and the compiler will yield cryptic error messages if you add one.
+Beachten Sie, dass `#include`, ähnlich wie link:../define[`#define`] kein Semikolon-Abschlusszeichen enthält und der Compiler bei der Eingabe kryptische Fehlermeldungen ausgibt.
 [%hardbreaks]
 
 --
@@ -38,8 +39,9 @@ Note that `#include`, similar to link:../define[`#define`], has no semicolon ter
 --
 
 [float]
-=== Example Code
-This example includes a library that is used to put data into the program space _flash_ instead of _ram_. This saves the ram space for dynamic memory needs and makes large lookup tables more practical.
+=== Beispielcode
+Dieses Beispiel fügt eine Bibliothek ein, in der Daten anstelle von _RAM-Speicher_ in den Programmspeicher (_flash_) eingefügt werden.
+Dies spart den RAM-Speicherplatz für dynamische Speicheranforderungen und macht große Nachschlagetabellen praktischer.
 
 
 [source,arduino]
@@ -61,7 +63,7 @@ prog_uint16_t myConstants[] PROGMEM = {0, 21140, 702  , 9128,  0, 25764, 8456,
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 

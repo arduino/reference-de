@@ -17,11 +17,14 @@ subCategories: [ "Further Syntax" ]
 --
 
 [float]
-=== Description
-*Comments* are lines in the program that are used to inform yourself or others about the way the program works. They are ignored by the compiler, and not exported to the processor, so they don't take up any space in the microcontroller's flash memory. Comments' only purpose is to help you understand (or remember), or to inform others about how your program works.
+=== Beschreibung
+*Kommentare* sind Zeilen im Programm, die dazu dienen, sich oder andere über die Funktionsweise des Programms zu informieren.
+Sie werden vom Compiler ignoriert und nicht in den Prozessor exportiert, sodass sie keinen Platz im Flash-Speicher des Mikrocontrollers beanspruchen.
+Der einzige Zweck von Kommentaren besteht darin, zu helfen (zu verstehen oder sich daran zu erinnern) oder andere über die Funktionsweise des Programms zu informieren.
 [%hardbreaks]
 
-The beginning of a *block comment* or a *multi-line comment* is marked by the symbol `/\*` and the symbol `*/` marks its end. This type of a comment is called so as this can extend over more than one line; once the compiler reads the `/\*` it ignores whatever follows unitl it enounters a `*/`.
+Der Anfang eines *Blockkommentars* oder eines *mehrzeiligen Kommentars* ist mit dem Symbol `/\*` gekennzeichnet und das Symbol `*/` markiert sein Ende.
+Diese Art von Kommentar wird aufgerufen, da sich dieser über mehrere Zeilen erstrecken kann. Sobald der Compiler das `/\*` liest, ignoriert er alles, was folgt, bis er ein `*/` findet.
 
 // NOTE TO THE EDITOR: The '\' before the '*' in certain places are to escape the '*' from making the text bolder.
 // In places were '\' is not used before '*', it is not actually required.
@@ -36,31 +39,34 @@ The beginning of a *block comment* or a *multi-line comment* is marked by the sy
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 [source,arduino]
 ----
-/* This is a valid comment */
+/* Dies ist ein gültiger Kommentar */
 
 /*
   Blink
-  Turns on an LED on for one second, then off for one second, repeatedly.
+  Schaltet eine LED für eine Sekunde ein und dann für eine Sekunde wiederholt aus.
 
-  This example code is in the public domain.
-  (Another valid comment)
+  Dieser Beispielcode ist im öffentlichen Bereich.
+  (Ein weiterer gültiger Kommentar)
 */
 
 /*
-  if (gwb == 0){   // single line comment is OK inside a multi-line comment
-  x = 3;           /* but not another multi-line comment - this is invalid */
+  if (gwb == 0){   // Ein einzeiliger Kommentar ist in einem mehrzeiligen Kommentar in Ordnung
+  x = 3;           /* aber kein weiterer mehrzeiliger Kommentar - das ist ungültig */
   }
-// don't forget the "closing" comment - they have to be balanced!
+// Vergessen Sie nicht den abschließenden Kommentar - sie müssen ausgewogen sein!
 */
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-When experimenting with code, "commenting out" parts of your program is a convenient way to remove lines that may be buggy. This leaves the lines in the code, but turns them into comments, so the compiler just ignores them. This can be especially useful when trying to locate a problem, or when a program refuses to compile and the compiler error is cryptic or unhelpful.
+=== Anmerkungen und Warnungen
+Beim Experimentieren mit Code ist das Herauskommentieren von Programmteilen eine bequeme Möglichkeit, fehlerhafte Zeilen zu entfernen.
+Dadurch bleiben die Zeilen im Code erhalten, werden jedoch in Kommentare umgewandelt, sodass der Compiler sie einfach ignoriert.
+Dies kann besonders nützlich sein, wenn Sie versuchen, ein Problem zu finden, oder wenn ein Programm die Kompilierung ablehnt und
+der Compilerfehler kryptisch oder nicht hilfreich ist.
 [%hardbreaks]
 
 --
@@ -74,7 +80,7 @@ When experimenting with code, "commenting out" parts of your program is a conven
 --
 
 [float]
-=== See also
+=== Siehe auch
 [role="language"]
 
 --
