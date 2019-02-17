@@ -73,7 +73,7 @@ Alternativ kannst du die externe Referenzspannung auf dem AREF-Pin über einen 5
 === Siehe auch
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/AnalogInputPins[Beschreibung der analogen Eingangspins]
+* #EXAMPLE# http://arduino.cc/en/Tutorial/AnalogInputPins[Beschreibung der analogen Eingangspins^]
 
 --
 // SEE ALSO SECTION ENDS

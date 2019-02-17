@@ -89,7 +89,7 @@ als analoge Inputs genutzt werden können.
 === Siehe auch
 
 [role="example"]
-* #Beispiel# http://arduino.cc/en/Tutorial/DigitalPins[Tutorial: Digitale Pins]
+* #Beispiel# http://arduino.cc/en/Tutorial/DigitalPins[Tutorial: Digitale Pins^]
 
 --
 // SEE ALSO SECTION ENDS

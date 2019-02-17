@@ -66,9 +66,9 @@ link:../mouse/mouseispressed[Mouse.isPressed()]
 === Siehe auch
 
 [role="example"]
-* #EXAMPLE# http://www.arduino.cc/en/Tutorial/KeyboardAndMouseControl[KeyboardAndMouseControl]: Zeigt, wie die Mouse- und Keyboard-Bibliothek verwendet werden.
-* #EXAMPLE# http://www.arduino.cc/en/Tutorial/ButtonMouseControl[ButtonMouseControl]: Steuert den Mauszeiger mit 5 Buttons.
-* #EXAMPLE# http://www.arduino.cc/en/Tutorial/JoystickMouseControl[JoystickMouseControl]: Steuert den Mauszeiger eines Computers mit einem Joystick, wenn ein Button gedrückt wird.
+* #EXAMPLE# http://www.arduino.cc/en/Tutorial/KeyboardAndMouseControl[KeyboardAndMouseControl^]: Zeigt, wie die Mouse- und Keyboard-Bibliothek verwendet werden.
+* #EXAMPLE# http://www.arduino.cc/en/Tutorial/ButtonMouseControl[ButtonMouseControl^]: Steuert den Mauszeiger mit 5 Buttons.
+* #EXAMPLE# http://www.arduino.cc/en/Tutorial/JoystickMouseControl[JoystickMouseControl^]: Steuert den Mauszeiger eines Computers mit einem Joystick, wenn ein Button gedrückt wird.
 
 --
 // SEE ALSO SECTION ENDS

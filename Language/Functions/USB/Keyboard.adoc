@@ -67,11 +67,11 @@ link:../keyboard/keyboardwrite[Keyboard.write()]
 === Siehe auch
 
 [role="example"]
-* #EXAMPLE# http://www.arduino.cc/en/Tutorial/KeyboardAndMouseControl[KeyboardAndMouseControl]: Zeigt, wie die Mouse- und Keyboard-Bibliothek verwendet werden.
-* #EXAMPLE# http://www.arduino.cc/en/Tutorial/KeyboardMessage[KeyboardMessage]: Sendet einen Text, wenn ein Button gedrückt wird.
-* #EXAMPLE# http://www.arduino.cc/en/Tutorial/KeyboardLogout[KeyboardLogout]: Loggt den aktuellen Benutzer aus.
-* #EXAMPLE# http://www.arduino.cc/en/Tutorial/KeyboardSerial[KeyboardSerial]: Liest ein Byte von einem seriellen Port und liefert einen Tastenanschlag zurück.
-* #EXAMPLE# http://www.arduino.cc/en/Tutorial/KeyboardReprogram[KeyboardReprogram]: Öffnet ein neues Fenster in der Arduino IDE und lädt ein simples Blinkprogramm auf das Board.
+* #EXAMPLE# http://www.arduino.cc/en/Tutorial/KeyboardAndMouseControl[KeyboardAndMouseControl^]: Zeigt, wie die Mouse- und Keyboard-Bibliothek verwendet werden.
+* #EXAMPLE# http://www.arduino.cc/en/Tutorial/KeyboardMessage[KeyboardMessage^]: Sendet einen Text, wenn ein Button gedrückt wird.
+* #EXAMPLE# http://www.arduino.cc/en/Tutorial/KeyboardLogout[KeyboardLogout^]: Loggt den aktuellen Benutzer aus.
+* #EXAMPLE# http://www.arduino.cc/en/Tutorial/KeyboardSerial[KeyboardSerial^]: Liest ein Byte von einem seriellen Port und liefert einen Tastenanschlag zurück.
+* #EXAMPLE# http://www.arduino.cc/en/Tutorial/KeyboardReprogram[KeyboardReprogram^]: Öffnet ein neues Fenster in der Arduino IDE und lädt ein simples Blinkprogramm auf das Board.
 
 --
 // SEE ALSO SECTION ENDS
