@@ -50,7 +50,7 @@ Analysiert, ob das Zeichen upper case (Großbuchstaben) ist. Gibt ``true`` zurü
 
 [source,arduino]
 ----
-if (isUpperCase(this))      // Testet, ob das Zeichen upper case ist.
+if (isUpperCase(thisChar))      // Testet, ob das Zeichen upper case ist.
 {
 	Serial.println("Das Zeichen ist upper case");
 }

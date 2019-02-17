@@ -50,7 +50,7 @@ Analysiert, ob das Zeichen druckbar ist und einen Inhalt hat (Space ist z.B. dru
 
 [source,arduino]
 ----
-if (isGraph(this))      // Testet, ob das Zeichen druckbar ist und Inhalt hat.
+if (isGraph(thisChar))      // Testet, ob das Zeichen druckbar ist und Inhalt hat.
 {
 	Serial.println("Das Zeichen ist druckbar.");
 }

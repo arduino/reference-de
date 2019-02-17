@@ -50,7 +50,7 @@ Analysiert, ob das Zeichen ein Ascii-Zeichen ist. Gibt ```true`` zurück, wenn d
 
 [source,arduino]
 ----
-if (isAscii(this))      // Testet, ob das Zeichen ein Ascii-Zeichen ist.
+if (isAscii(thisChar))      // Testet, ob das Zeichen ein Ascii-Zeichen ist.
 {
 	Serial.println("Das Zeichen ist ein Ascii-Zeichen.");
 }

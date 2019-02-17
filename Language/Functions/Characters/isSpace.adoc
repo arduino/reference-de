@@ -50,7 +50,7 @@ Analysiert das Zeichen, ob es ein Leerzeichen ist. Gibt ``true`` zurück, wenn d
 
 [source,arduino]
 ----
-if (isSpace(this))      // Testet, ob das Zeichen ein Leerzeichen ist.
+if (isSpace(thisChar))      // Testet, ob das Zeichen ein Leerzeichen ist.
 {
 	Serial.println("Das Zeichen ist ein Leerzeichen");
 }

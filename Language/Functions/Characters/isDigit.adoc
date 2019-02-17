@@ -50,7 +50,7 @@ isDigit(thisChar)
 
 [source,arduino]
 ----
-if (isDigit(this))      // Testet, ob das Zeichen eine Zahl ist.
+if (isDigit(thisChar))      // Testet, ob das Zeichen eine Zahl ist.
 {
 	Serial.println("Das Zeichen ist eine Zahl");
 }

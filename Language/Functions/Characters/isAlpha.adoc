@@ -50,7 +50,7 @@ isAlpha(thisChar)
 
 [source,arduino]
 ----
-if (isAlpha(this))      // Testet, ob der char ein Buchstabe ist
+if (isAlpha(thisChar))      // Testet, ob der char ein Buchstabe ist
 {
 	Serial.println("Das Zeichen ist ein Buchstabe");
 }

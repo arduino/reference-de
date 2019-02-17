@@ -50,7 +50,7 @@ Analysiert, ob ein Zeichen ein Leerzeichen, formfeed ('\f'), newline ('\n'), car
 
 [source,arduino]
 ----
-if (isWhitespace(this))      // Testet, ob das Zeichen ein Leerzeichen ist.
+if (isWhitespace(thisChar))      // Testet, ob das Zeichen ein Leerzeichen ist.
 {
 	Serial.println("Das Zeichen ist ein Leerzeichen");
 }
