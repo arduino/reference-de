@@ -77,13 +77,13 @@ Für weitere Informationen zu Interrupts, siehe auch http://gammon.com.au/interr
 === Syntax
 `attachInterrupt(digitalPinToInterrupt(pin), ISR, mode);`	(Empfohlen) +
 `attachInterrupt(interrupt, ISR, mode);`	(Nicht empfohlen) + 
-`attachInterrupt(pin, ISR, mode);`	(Nicht empfohlen; Nur Arduino Due, Zero, MKR1000, 101)
+`attachInterrupt(pin, ISR, mode);`	(Nicht empfohlen; Nur Arduino-SAMD-Boards, Uno WiFi Rev2, Due, 101)
 
 
 [float]
 === Parameter
 `interrupt`: 	Die Interruptnummer (`int`) +
-`pin`: 	      Die Pinnummer 	            _(Nur bei Arduino Due, Zero, MKR1000)_ +
+`pin`: 	      Die Pinnummer +
 `ISR`: 	      Die Interrupt Service Routine, die aufgerufen werden soll. Die Funktion darf keine Parameter haben und nichts zurückgeben. +
 `mode`: 	   Definiert, wann der Interrupt getriggert werden soll. 4 Konstanten sind dafür definiert: +
 
