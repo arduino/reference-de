@@ -17,8 +17,8 @@ subCategories: [ "Compound Operators" ]
 --
 
 [float]
-=== Description
-Decrements the value of a variable by 1.
+=== Beschreibung
+Dekrementiert den Wert einer Variablen um 1.
 [%hardbreaks]
 
 
@@ -26,17 +26,17 @@ Decrements the value of a variable by 1.
 === Syntax
 [source,arduino]
 ----
-x-- ;   // decrement x by one and returns the old value of x
---x ;   // decrement x by one and returns the new value of x
+x-- ;   // Dekrementiert x um eins und gibt den alten Wert von x zurück
+--x ;   // Dekrementiert x um eins und gibt den neuen Wert von x zurück
 ----
 
 [float]
-=== Parameters
-`x`: variable. *Allowed data types:* integer, long (possibly unsigned)
+=== Parameter
+`x`: Variable. *Erlaubte Datentypen:* integer, long (possibly unsigned)
 
 [float]
-=== Returns
-The original or newly decremented value of the variable.
+=== Gibt zurück
+Den ursprünglichen oder den neu dekrementierten Wert der Variablen.
 
 --
 // OVERVIEW SECTION ENDS
@@ -48,13 +48,13 @@ The original or newly decremented value of the variable.
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 
 [source,arduino]
 ----
 x = 2;
-y = --x;      // x now contains 1, y contains 1
-y = x--;      // x contains 0, but y still contains 1
+y = --x;      // x enthält jetzt 1, y enthält 1
+y = x--;      // x enthält 0, aber y enthält noch 1
 ----
 
 --
@@ -67,7 +67,7 @@ y = x--;      // x contains 0, but y still contains 1
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 

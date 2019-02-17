@@ -17,8 +17,8 @@ subCategories: [ "Compound Operators" ]
 --
 
 [float]
-=== Description
-This is a convenient shorthand to perform addition on a variable with another constant or variable.
+=== Beschreibung
+Dies ist eine praktische Abkürzung, um eine Variable mit einer anderen Konstanten oder Variablen zu addieren.
 [%hardbreaks]
 
 
@@ -26,13 +26,13 @@ This is a convenient shorthand to perform addition on a variable with another co
 === Syntax
 [source,arduino]
 ----
-x += y;   // equivalent to the expression x = x + y;
+x += y;   // Äquivalent zum Ausdruck x = x + y;
 ----
 
 [float]
-=== Parameters
-`x`: variable. *Allowed data types:* int, float, double, byte, short, long +
-`y`: variable or constant. *Allowed data types:* int, float, double, byte, short, long
+=== Parameter
+`x`: Variable. *Erlaubte Datentypen:* int, float, double, byte, short, long +
+`y`: Variable oder Konstante. *Erlaubte Datentypen:* int, float, double, byte, short, long
 
 --
 // OVERVIEW SECTION ENDS
@@ -44,12 +44,12 @@ x += y;   // equivalent to the expression x = x + y;
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 
 [source,arduino]
 ----
 x = 2;
-x += 4;      // x now contains 6
+x += 4;      // x enthält jetzt 6
 ----
 
 --
@@ -61,10 +61,10 @@ x += 4;      // x now contains 6
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
-* #LANGUAGE#  link:../../arithmetic-operators/addition[Normal Addition]
+* #LANGUAGE#  link:../../arithmetic-operators/addition[Normale Addition]
 
 --
 // SEE ALSO SECTION ENDS

@@ -17,29 +17,29 @@ subCategories: [ "Compound Operators" ]
 --
 
 [float]
-=== Description
-The compound bitwise OR operator `|=` is often used with a variable and a constant to "set" (set to 1) particular bits in a variable.
+=== Beschreibung
+Der zusammengesetzte bitweise OR-Operator `| =` wird häufig mit einer Variablen und einer Konstante verwendet, um bestimmte Bits in einer Variablen "zu setzen" (auf 1 zu setzen).
 [%hardbreaks]
 
-A review of the Bitwise OR `|` operator:
+Ein Überblick über den bitweisen OR `|` Operator:
 
    0  0  1  1    operand1
    0  1  0  1    operand2
    ----------
-   0  1  1  1    (operand1 | operand2) - returned result
+   0  1  1  1    (operand1 | operand2) - Ergebnis
 [%hardbreaks]
 
 [float]
 === Syntax
 [source,arduino]
 ----
-x |= y;   // equivalent to x = x | y;
+x |= y;   // Äquivalent zu x = x | y;
 ----
 
 [float]
-=== Parameters
-`x`: variable. *Allowed data types:* char, int, long +
-`y`: variable or constant. *Allowed data types:* char, int, long
+=== Parameter
+`x`: Variable. *Erlaubte Datentypen:* char, int, long +
+`y`: Variable oder Konstante. *Erlaubte Datentypen:* char, int, long
 
 --
 // OVERVIEW SECTION ENDS
@@ -51,14 +51,14 @@ x |= y;   // equivalent to x = x | y;
 --
 
 [float]
-=== Example Code
-Bits that are "bitwise ORed" with 0 are unchanged, so if myByte is a byte variable,
+=== Beispielcode
+Bits, die "bitweise verODERt" mit 0 sind, bleiben unverändert, wenn myByte eine Byte-Variable ist:
 [source,arduino]
 ----
 myByte | B00000000 = myByte;
 ----
 
-Bits that are "bitwise ORed" with 1 are set to 1 so:
+Bits, die "bitweise verODERt" mit 1 sind, werden auf 1 gesetzt:
 [source,arduino]
 ----
 myByte | B11111111 = B11111111;
@@ -66,32 +66,35 @@ myByte | B11111111 = B11111111;
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-Because we are dealing with bits in a bitwise operator - it is convenient to use the binary formatter with constants. The numbers are still the same value in other representations, they are just not as easy to understand. Also, B00000000 is shown for clarity, but zero in any number format is zero.
+=== Anmerkungen und Warnungen
+Da es sich um einen bitweisen Operator handelt, ist es sinnvoll, den binären Formatierer mit Konstanten zu verwenden.
+Die Zahlen haben in anderen Darstellungen immer noch den gleichen Wert, sie sind einfach nicht so leicht zu verstehen.
+Außerdem wird B00000000 zur Verdeutlichung gezeigt, aber Null in einem beliebigen Zahlenformat ist Null.
 [%hardbreaks]
 
-Consequently - to set bits 0 & 1 of a variable, while leaving the rest of the variable unchanged, use the compound bitwise OR operator (|=) with the constant B00000011
+Um die Bits 0 und 1 einer Variablen zu setzen, während der Rest der Variablen unverändert bleibt,
+verwende den zusammengesetzten bitweisen OR-Operator (| =) mit der Konstanten B00000011
 
-   1  0  1  0  1  0  1  0    variable
-   0  0  0  0  0  0  1  1    mask
+   1  0  1  0  1  0  1  0    Variable
+   0  0  0  0  0  0  1  1    Maske
    ----------------------
    1  0  1  0  1  0  1  1
 
-    bits unchanged
-                     bits set
+    Bits unverändert
+                     Bits gesetzt
 
 
-Here is the same representation with the variables bits replaced with the symbol x
+Hier ist die gleiche Darstellung mit den Variablenbits durch das Symbol x ersetzt
 
-   x  x  x  x  x  x  x  x    variable
-   0  0  0  0  0  0  1  1    mask
+   x  x  x  x  x  x  x  x    Variable
+   0  0  0  0  0  0  1  1    Maske
    ----------------------
    x  x  x  x  x  x  1  1
 
-    bits unchanged
-                     bits set
+    Bits unverändert
+                     Bits gesetzt
 
-So if:
+Also ergibt:
 [source,arduino]
 ----
 myByte =  B10101010;
@@ -109,10 +112,10 @@ myByte |= B00000011 == B10101011;
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
-* #LANGUAGE#  link:../../bitwise-operators/bitwiseor[& Bitwise OR]
+* #LANGUAGE#  link:../../bitwise-operators/bitwiseor[& Bitweises OR]
 
 --
 // SEE ALSO SECTION ENDS

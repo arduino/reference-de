@@ -17,29 +17,30 @@ subCategories: [ "Compound Operators" ]
 --
 
 [float]
-=== Description
-The compound bitwise AND operator `&=` is often used with a variable and a constant to force particular bits in a variable to the LOW state (to 0). This is often referred to in programming guides as "clearing" or "resetting" bits.
+=== Beschreibung
+Der zusammengesetzte bitweise AND-Operator `& =` wird häufig mit einer Variablen und einer Konstanten verwendet, um bestimmte Bits in einer Variablen in den Zustand LOW (auf 0) zu bringen.
+Dies wird in Programmierhandbüchern oft als "Löschen" oder "Zurücksetzen" der Bits bezeichnet.
 [%hardbreaks]
 
-A review of the Bitwise AND `&` operator:
+Ein Überblick über den bitweisen AND `&` Operator:
 
    0  0  1  1    operand1
    0  1  0  1    operand2
    ----------
-   0  0  0  1    (operand1 & operand2) - returned result
+   0  0  0  1    (operand1 & operand2) - Ergebnis
 [%hardbreaks]
 
 [float]
 === Syntax
 [source,arduino]
 ----
-x &= y;   // equivalent to x = x & y;
+x &= y;   // Äquivalent zu x = x & y;
 ----
 
 [float]
-=== Parameters
-`x`: variable. *Allowed data types:* char, int, long +
-`y`: variable or constant. *Allowed data types:* char, int, long
+=== Parameter
+`x`: Variable. *Erlaubte Datentypen:* char, int, long +
+`y`: Variable oder Konstante. *Erlaubte Datentypen:* char, int, long
 
 --
 // OVERVIEW SECTION ENDS
@@ -51,15 +52,15 @@ x &= y;   // equivalent to x = x & y;
 --
 
 [float]
-=== Example Code
-Bits that are "bitwise ANDed" with 0 are cleared to 0 so, if myByte is a byte variable,
+=== Beispielcode
+Bits, die "bitweise verUNDet" mit 0 sind, werden auf 0 zurückgesetzt, wenn myByte eine Byte-Variable ist:
 
 [source,arduino]
 ----
 myByte & B00000000 = 0;
 ----
 
-Bits that are "bitwise ANDed" with 1 are unchanged so,
+Bits die "bitweise verUNDet" mit 1 sind, werden nicht verändert:
 
 [source,arduino]
 ----
@@ -68,35 +69,37 @@ myByte & B11111111 = myByte;
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-Because we are dealing with bits in a bitwise operator - it is convenient to use the binary formatter with constants. The numbers are still the same value in other representations, they are just not as easy to understand. Also, B00000000 is shown for clarity, but zero in any number format is zero (hmmm something philosophical there?)
+=== Anmerkungen und Warnungen
+Da es sich um einen bitweisen Operator handelt, ist es sinnvoll, den binären Formatierer mit Konstanten zu verwenden.
+Die Zahlen haben in anderen Darstellungen immer noch den gleichen Wert, sie sind einfach nicht so leicht zu verstehen.
+Außerdem wird B00000000 zur Verdeutlichung gezeigt, aber Null in einem beliebigen Zahlenformat ist Null.
 
-Consequently - to clear (set to zero) bits 0 & 1 of a variable, while leaving the rest of the variable unchanged, use the compound bitwise AND operator (&=) with the constant B11111100
+Um die Bits 0 & 1 einer Variablen zu löschen (auf Null zu setzen), während der Rest der Variablen unverändert bleibt,
+verwende den zusammengesetzten bitweisen AND-Operator (& =) mit der Konstanten B11111100
 
-   1  0  1  0  1  0  1  0    variable
-   1  1  1  1  1  1  0  0    mask
+   1  0  1  0  1  0  1  0    Variable
+   1  1  1  1  1  1  0  0    Maske
    ----------------------
    1  0  1  0  1  0  0  0
 
-    bits unchanged
-                     bits cleared
+    Bits unverändert
+                     Bits gelöscht
 
-Here is the same representation with the variable's bits replaced with the symbol x
+Hier ist die gleiche Darstellung, wobei die Bits der Variablen durch das Symbol x ersetzt werden
 
-   x  x  x  x  x  x  x  x    variable
-   1  1  1  1  1  1  0  0    mask
+   x  x  x  x  x  x  x  x    Variable
+   1  1  1  1  1  1  0  0    Maske
    ----------------------
    x  x  x  x  x  x  0  0
 
-    bits unchanged
-                     bits cleared
+    Bits unverändert
+                     Bits gelöscht
 
-So if:
-
+Also ergibt:
 [source,arduino]
 ----
 myByte =  B10101010;
-myByte &= B11111100; // results in B10101000
+myByte &= B11111100; // Ergibt B10101000
 ----
 
 [%hardbreaks]
@@ -112,10 +115,10 @@ myByte &= B11111100; // results in B10101000
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
-* #LANGUAGE#  link:../../bitwise-operators/bitwiseand[& Bitwise AND]
+* #LANGUAGE#  link:../../bitwise-operators/bitwiseand[& Bitweises AND]
 
 --
 // SEE ALSO SECTION ENDS

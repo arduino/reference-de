@@ -17,8 +17,8 @@ subCategories: [ "Compound Operators" ]
 --
 
 [float]
-=== Description
-Increments the value of a variable by 1.
+=== Beschreibung
+Erhöht den Wert einer Variablen um 1.
 [%hardbreaks]
 
 
@@ -26,17 +26,17 @@ Increments the value of a variable by 1.
 === Syntax
 [source,arduino]
 ----
-x++;  // increment x by one and returns the old value of x
-++x;  // increment x by one and returns the new value of x
+x++;  // x um eins erhöhen und den alten Wert von x zurückgeben
+++x;  // x um eins erhöhen und den neuen Wert von x zurückgeben
 ----
 
 [float]
-=== Parameters
-`x`: variable. *Allowed data types:* integer, long (possibly unsigned)
+=== Parameter
+`x`: Variable. *Erlaubte Datentypen:* integer, long (possibly unsigned)
 
 [float]
-=== Returns
-The original or newly incremented value of the variable.
+=== Gibt zurück
+Den ursprünglichen oder den neu inkrementierten Wert der Variablen.
 
 --
 // OVERVIEW SECTION ENDS
@@ -48,13 +48,13 @@ The original or newly incremented value of the variable.
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 
 [source,arduino]
 ----
 x = 2;
-y = ++x;      // x now contains 3, y contains 3
-y = x++;      // x contains 4, but y still contains 3
+y = ++x;      // x enthält jetzt 3, y enthält 3
+y = x++;      // x enthält 4, aber y enthält noch 3
 ----
 
 --
@@ -66,7 +66,7 @@ y = x++;      // x contains 4, but y still contains 3
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 

@@ -17,8 +17,8 @@ subCategories: [ "Compound Operators" ]
 --
 
 [float]
-=== Description
-This is a convenient shorthand to calculate the remainder when one integer is divided by another and assign it back to the variable the calculation was done on.
+=== Beschreibung
+Dies ist eine praktische Abkürzung, um den Rest zu berechnen, wenn eine ganze Zahl durch eine andere geteilt wird.
 [%hardbreaks]
 
 
@@ -26,13 +26,13 @@ This is a convenient shorthand to calculate the remainder when one integer is di
 === Syntax
 [source,arduino]
 ----
-x %= divisor;   // equivalent to the expression x = x % divisor;
+x %= divisor;   // Äquivalent zum Ausdruck x = x% divisor;
 ----
 
 [float]
-=== Parameters
-`x`: variable. *Allowed data types:* int +
-`divisor`: *non zero* variable or constant. *Allowed data types:* int
+=== Parameter
+`x`: Variable. *Erlaubte Datentypen:* int +
+`divisor`: *nicht null* Variable oder Konstante. *Erlaubte Datentypen:* int
 
 --
 // OVERVIEW SECTION ENDS
@@ -44,21 +44,21 @@ x %= divisor;   // equivalent to the expression x = x % divisor;
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 
 [source,arduino]
 ----
 int x = 7;
-x %= 5;    // x now contains 2
+x %= 5;    // x enthält jetzt 2
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-1. The compound remainder operator does not work on floats.
+=== Anmerkungen und Warnungen
+1. Der zusammengsetzte Rest-Operator funktioniert nicht mit floats.
 
-2. If the *first* operand is negative, the result is negative (or zero).
-Therefore, the result of `x %= 10` will not always be between 0 and 9 if `x` can be negative.
+2. Wenn der *erste* Operand negativ ist, ist das Ergebnis negativ (oder null).
+Daher ist das Ergebnis von `x% = 10` nicht immer zwischen 0 und 9, wenn x negativ sein kann.
 [%hardbreaks]
 
 --
@@ -71,10 +71,10 @@ Therefore, the result of `x %= 10` will not always be between 0 and 9 if `x` can
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
-* #LANGUAGE#  link:../../arithmetic-operators/remainder[Remainder]
+* #LANGUAGE#  link:../../arithmetic-operators/remainder[Rest]
 
 --
 // SEE ALSO SECTION ENDS
