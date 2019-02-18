@@ -1,5 +1,5 @@
 ---
-title: boolean
+title: bool
 categories: [ "Variables" ]
 subCategories: [ "Data Types" ]
 ---
@@ -8,7 +8,7 @@ subCategories: [ "Data Types" ]
 
 
 
-= boolean
+= bool
 
 
 // OVERVIEW SECTION STARTS
@@ -17,10 +17,21 @@ subCategories: [ "Data Types" ]
 
 [float]
 === Description
-A `boolean` holds one of two values, `true` or `false`. (Each `boolean` variable occupies one byte of memory.)
+A `bool` holds one of two values, `true` or `false`. (Each `bool` variable occupies one byte of memory.)
 
 
 [%hardbreaks]
+
+
+[float]
+=== Syntax
+`bool var = val;`
+
+
+[float]
+=== Parameters
+`var`: variable name +
+`val`: the value to assign to that variable
 
 --
 // OVERVIEW SECTION ENDS
@@ -35,14 +46,14 @@ A `boolean` holds one of two values, `true` or `false`. (Each `boolean` variable
 [float]
 === Example Code
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-This code shows how to use the `boolean` datatype.
+This code shows how to use the `bool` datatype.
 
 [source,arduino]
 ----
 int LEDpin = 5;       // LED on pin 5
 int switchPin = 13;   // momentary switch on 13, other side connected to ground
 
-boolean running = false;
+bool running = false;
 
 void setup()
 {
@@ -74,6 +85,7 @@ void loop()
 === See also
 
 [role="language"]
+* #LANGUAGE# link:../../../variables/constants/constants[constants]
 
 --
 // SEE ALSO SECTION ENDS
