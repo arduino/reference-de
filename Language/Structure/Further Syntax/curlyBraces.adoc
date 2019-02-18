@@ -53,7 +53,7 @@ Die Hauptanwendungen von geschweiften Klammern sind in den folgenden Beispielen 
 [source,arduino]
 ----
 void myFunction(Datentyp Argument){
-  // Beliebige Anweisungen
+  // Beliebige Anweisung(en)
 }
 ----
 [%hardbreaks]
@@ -66,17 +66,17 @@ void myFunction(Datentyp Argument){
 ----
 while (Boolean-Ausdruck)
 {
-   // Beliebige Anweisungen
+   // Beliebige Anweisung(en)
 }
 
 do
 {
-   // Beliebige Anweisungen
+   // Beliebige Anweisung(en)
 } while (Boolean-Ausdruck);
 
 for (Initialisierung; Schlussbedingung; inkrementierender Ausdruck)
 {
-   // Beliebige Anweisungen
+   // Beliebige Anweisung(en)
 }
 ----
 [%hardbreaks]
@@ -91,16 +91,16 @@ for (Initialisierung; Schlussbedingung; inkrementierender Ausdruck)
 ----
 if (Boolean-Ausdruck)
 {
-   // Beliebige Anweisungen
+   // Beliebige Anweisung(en)
 }
 
 else if (Boolean-Ausdruck)
 {
-   // Beliebige Anweisungen
+   // Beliebige Anweisung(en)
 }
 else
 {
-   // Beliebige Anweisungen
+   // Beliebige Anweisung(en)
 }
 ----
 [%hardbreaks]
