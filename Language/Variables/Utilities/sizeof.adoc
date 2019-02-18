@@ -82,12 +82,14 @@ void loop() {
 
 [float]
 === Anmerkungen und Warnungen
-`sizeof` gibt die Anzahl an Bytes zurück. Für größere Variablentypen, wie z.B. Integer, sieht die Schleife wie folgt aus:
+`sizeof` gibt die Anzahl an Bytes zurück. Für Arrays größerer Variablentypen, wie z.B. Integer, sieht die Schleife wie folgt aus:
 
 [source,arduino]
 ----
-for (i = 0; i < (sizeof(myInts)/sizeof(myInts[0])); i++) {
-  // Tue was auch immer mit myInts[i]
+int myValues[] = {123, 456, 789};
+// Diese for-Schleife funktioniert ordnungsgemäß mit einem Array eines beliebigen Typs und jeder Größe
+for (i = 0; i < (sizeof(myValues)/sizeof(myValues[0])); i++) {
+  // Tue etwas mit myValues[i]
 }
 ----
 
