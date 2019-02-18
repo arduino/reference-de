@@ -40,16 +40,27 @@ Beachten Sie, dass `#include`, ähnlich wie link:../define[`#define`] kein Semik
 
 [float]
 === Beispielcode
-Dieses Beispiel fügt eine Bibliothek ein, in der Daten anstelle von _RAM-Speicher_ in den Programmspeicher (_flash_) eingefügt werden.
-Dies spart den RAM-Speicherplatz für dynamische Speicheranforderungen und macht große Nachschlagetabellen praktischer.
+Dieses Beispiel enthält die Servobibliothek, sodass ihre Funktionen zur Steuerung eines Servomotors verwendet werden können.
 
 
 [source,arduino]
 ----
-#include <avr/pgmspace.h>
-
-prog_uint16_t myConstants[] PROGMEM = {0, 21140, 702  , 9128,  0, 25764, 8456,
-0,0,0,0,0,0,0,0,29810,8968,29762,29762,4500};
+#include <Servo.h>
+Servo myservo;  // Servoobjekt erstellen, um einen Servomotor zu steuern
+void setup() {
+  myservo.attach(9);  // Bindet den Servomotor an Pin 9 an das Servoobjekt
+}
+void loop() {
+  for (int pos = 0; pos <= 180; pos += 1) { // Geht von 0 Grad bis 180 Grad
+    // in 1 Grad-Stufen
+    myservo.write(pos);              // Servo anweisen, in Position von Variable 'pos' zu gehen
+    delay(15);                       // Wartet 15ms, bis der Servomotor die Position erreicht hat
+  }
+  for (int pos = 180; pos >= 0; pos -= 1) { // Geht von 180 Grad bis 0 Grad
+    myservo.write(pos);              // Servo anweisen, in Position von Variable 'pos' zu gehen
+    delay(15);                       // Wartet 15ms, bis der Servomotor die Position erreicht hat
+  }
+}
 ----
 
 
