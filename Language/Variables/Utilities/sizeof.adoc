@@ -56,7 +56,6 @@ Das Programm gibt einen Text zeichenweise aus. Versuche, den Text zu ändern, da
 ----
 // Definiere Text und Zählervariable
 char myStr[] = "this is a test";
-int i;
 
 void setup() {
   // Initialisiere seriellen Port
@@ -65,7 +64,7 @@ void setup() {
 
 void loop() {
   // Laufe über das Array (den String), egal, wie lange dieser ist
-  for (i = 0; i < sizeof(myStr) - 1; i++) {
+  for (byte i = 0; i < sizeof(myStr) - 1; i++) {
 	// Gib die Zeichennummer als Dezimalzahl aus
     Serial.print(i, DEC);
 	// Gib ein Gleichheitszeichen aus
@@ -88,7 +87,7 @@ void loop() {
 ----
 int myValues[] = {123, 456, 789};
 // Diese for-Schleife funktioniert ordnungsgemäß mit einem Array eines beliebigen Typs und jeder Größe
-for (i = 0; i < (sizeof(myValues)/sizeof(myValues[0])); i++) {
+for (byte i = 0; i < (sizeof(myValues)/sizeof(myValues[0])); i++) {
   // Tue etwas mit myValues[i]
 }
 ----

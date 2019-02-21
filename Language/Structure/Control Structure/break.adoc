@@ -58,7 +58,7 @@ Der folgende Code springt aus der `for`-Schleife, wenn der Sensorwert den Thresh
 [source,arduino]
 ----
 // Iteriere über die Zahlen von 0 bis 255
-for (x = 0; x < 255; x ++) {
+for (int x = 0; x < 255; x ++) {
   // Schreibe auf den LED-Pin
   analogWrite(PWMpin, x);
   // Lies den Sensorwert ein
