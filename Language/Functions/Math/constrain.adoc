@@ -67,13 +67,13 @@ Es sollten keine anderen Funktionen innerhalb der Klammern verwendet werden. Die
 Dieser Code führt zu falschen Ergebnissen:
 [source,arduino]
 ----
-int constrainedInput = constrain(Serial.parseInt(), minimumValue, maximumValue);   // Vermeide dies
+int constrainedInput = constrain(Serial.parseInt(), minimumValue, maximumValue); // Vermeide dies
 ----
 
 Benutze stattdessen diesen Code:
 [source,arduino]
 ----
-int input = Serial.parseInt();  // Halte andere Operationen außerhalb der Einschränkungsfunktion
+int input = Serial.parseInt(); // Halte andere Operationen außerhalb der Einschränkungsfunktion
 int constrainedInput = constrain(input, minimumValue, maximumValue);
 ----
 [%hardbreaks]

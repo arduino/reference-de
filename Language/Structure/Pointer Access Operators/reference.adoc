@@ -39,7 +39,8 @@ Der Code zeigt ein kleines Rechenbeispiel zur Verwendung von Zeigern.
 [source,arduino]
 ----
 int *p;       // Definiere einen Zeiger als Integerdatentyp
-int i = 5, result = 0; // Initialisiere 'i' mit 5 und 'result' mit 0
+int i = 5;
+int result = 0; // Initialisiere 'i' mit 5 und 'result' mit 0
 p = &i;       // 'p' enthält nun die Adress von 'i'
 result = *p;  // 'result' erhält nun den Wert, der an der Adress von 'i' steht
               // 'result' ist also 5

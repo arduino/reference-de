@@ -31,16 +31,13 @@ Ein `else if`-Block kann benutzt werden ohne einen terminierenden `else`-Block u
 === Syntax
 [source,arduino]
 ----
-if (condition1)
-{
+if (condition1) {
   // Tue Task 1
 }
-else if (condition2)
-{
+else if (condition2) {
   // Tue Task 2
 }
-else
-{
+else {
   // Tue Task 3
 }
 ----
@@ -68,16 +65,13 @@ Der folgende Code testet einige Werte in den Bedingungen ab. Im Detail handelt e
 
 [source,arduino]
 ----
-if (temperature >= 70)
-{
+if (temperature >= 70) {
   //Schalte das System ab
 }
-else if (temperature >= 60 && temperature < 70)
-{
+else if (temperature >= 60 && temperature < 70) {
   //Schicke dem Benutzer eine Warnung
 }
-else
-{
+else {
   //Keine Probleme erkannt.
 }
 ----

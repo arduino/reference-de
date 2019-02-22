@@ -39,8 +39,7 @@ auf den seriellen Ausgang geschrieben. Anschließend wartet das Board eine Sekun
 // Lege Button auf Pin 3
 int buttonPin = 3;
 
-void setup()
-{
+void setup() {
   // Starte die serielle Verbindung
   Serial.begin(9600);
   // Setze den Pin 3 als Inputpin
@@ -48,14 +47,15 @@ void setup()
 }
 
 // Loop checkt den Button bei jedem Durchlauf und schreibt je nach Zustand einen Wert auf den seriellen Ausgang.
-void loop()
-{
+void loop() {
   // Wenn Pin HIGH ist, schreibe H
-  if (digitalRead(buttonPin) == HIGH)
+  if (digitalRead(buttonPin) == HIGH) {
     serialWrite('H');
+  }
   // Sonst, schreibe L
-  else
+  else {
     serialWrite('L');
+  }
   //Warte 1 Sekunde
   delay(1000);
 }

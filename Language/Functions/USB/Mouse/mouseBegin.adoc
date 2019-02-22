@@ -52,18 +52,16 @@ Initialisiert die Maus-Bibliothek, wenn der Button an Pin 2 gedrückt wird.
 ----
 #include <Mouse.h>
 
-void setup(){
- // Setze Pin 2 als Inputpin
- pinMode(2, INPUT);
+void setup() {
+  // Setze Pin 2 als Inputpin
+  pinMode(2, INPUT);
 }
 
-void loop(){
-
+void loop() {
   // Initialisiere die Maus-Bibliothek, wenn der Button gedrückt wird.
   if(digitalRead(2) == HIGH){
-     Mouse.begin();
-   }
-
+    Mouse.begin();
+  }
 }
 ----
 

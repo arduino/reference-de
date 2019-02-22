@@ -42,8 +42,8 @@ In anderen Worten:
 
 [source,arduino]
 ----
-int a = 103;    // Binär:  0000000001100111
-int b = ~a;     // Binär:  1111111110011000 = -104
+int a = 103; // Binär: 0000000001100111
+int b = ~a;  // Binär: 1111111110011000 = -104
 ----
 [%hardbreaks]
 

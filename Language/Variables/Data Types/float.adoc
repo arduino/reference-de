@@ -61,8 +61,8 @@ If doing math with floats, you need to add a decimal point, otherwise it will be
   float z;
 
   x = 1;
-  y = x / 2;            // y now contains 0, ints can't hold fractions
-  z = (float)x / 2.0;   // z now contains .5 (you have to use 2.0, not 2)
+  y = x / 2;          // y now contains 0, ints can't hold fractions
+  z = (float)x / 2.0; // z now contains .5 (you have to use 2.0, not 2)
 ----
 
 

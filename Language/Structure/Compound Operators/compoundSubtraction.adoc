@@ -26,7 +26,7 @@ Dies ist eine praktische Abkürzung, um eine Konstante oder eine Variable von ei
 === Syntax
 [source,arduino]
 ----
-x -= y;   // Äquivalent zum Ausdruck x = x - y;
+x -= y; // Äquivalent zum Ausdruck x = x - y;
 ----
 
 [float]
@@ -49,7 +49,7 @@ x -= y;   // Äquivalent zum Ausdruck x = x - y;
 [source,arduino]
 ----
 x = 20;
-x -= 2;      // x enthält jetzt 18
+x -= 2; // x enthält jetzt 18
 ----
 
 

@@ -46,9 +46,9 @@ Precisely,
 
 [source,arduino]
 ----
-int x = 12;     // Binär: 1100
-int y = 10;     // Binär: 1010
-int z = x ^ y;  // Binär: 0110, oder dezimal 6
+int x = 12;    // Binär: 1100
+int y = 10;    // Binär: 1010
+int z = x ^ y; // Binär: 0110, oder dezimal 6
 ----
 [%hardbreaks]
 
@@ -60,14 +60,14 @@ Wenn es eine 0 gibt, wird das Bit nicht invertiert und bleibt gleich.
 ----
 // Hinweis: Dieser Code verwendet Register, die für AVR-Mikrocontroller spezifisch sind (Uno, Nano, Leonardo, Mega usw.).
 // Es wird für andere Architekturen nicht kompilieren
-void setup(){
-DDRB = DDRB | B00100000; // Setzen von PB5 (Pin 13 beim Uno / Nano, Pin 9 beim Leonardo / Micro, Pin 11 beim Mega) als OUTPUT
-Serial.begin(9600);
+void setup() {
+  DDRB = DDRB | B00100000; // Setzen von PB5 (Pin 13 beim Uno / Nano, Pin 9 beim Leonardo / Micro, Pin 11 beim Mega) als OUTPUT
+  Serial.begin(9600);
 }
 
-void loop(){
-PORTB = PORTB ^ B00100000;  // PB5 invertieren, andere unberührt lassen
-delay(100);
+void loop() {
+  PORTB = PORTB ^ B00100000;  // PB5 invertieren, andere unberührt lassen
+  delay(100);
 }
 ----
 

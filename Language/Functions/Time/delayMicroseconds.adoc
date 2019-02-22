@@ -57,19 +57,17 @@ Die Annäherung beruht auf der Ausführung der anderen Anweisungen im Code.
 
 [source,arduino]
 ----
-int outPin = 8;                 // Digitalpin 8
+int outPin = 8; // Digitalpin 8
 
-void setup()
-{
-  pinMode(outPin, OUTPUT);      // Digitalpin als Output setzen
+void setup() {
+  pinMode(outPin, OUTPUT); // Digitalpin als Output setzen
 }
 
-void loop()
-{
-  digitalWrite(outPin, HIGH);   // Pin auf HIGH setzen
-  delayMicroseconds(50);        // 50 Mikrosekunden warten
-  digitalWrite(outPin, LOW);    // Pin auf LOW setzen
-  delayMicroseconds(50);        // 50 Mikrosekunden warten
+void loop() {
+  digitalWrite(outPin, HIGH); // Pin auf HIGH setzen
+  delayMicroseconds(50);      // 50 Mikrosekunden warten
+  digitalWrite(outPin, LOW);  // Pin auf LOW setzen
+  delayMicroseconds(50);      // 50 Mikrosekunden warten
 }
 ----
 [%hardbreaks]

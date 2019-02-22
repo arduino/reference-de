@@ -45,7 +45,7 @@ if (x > 0 || y > 0) { // Wenn entweder x oder y größer als null ist
 
 [float]
 === Anmerkungen und Warnungen
-Verwechsele nicht das boolesche || (Doppel-Pipe) Operator mit dem bitweisen OR-Operator | (Einzelne Pipe).
+Verwechsle nicht das boolesche || (Doppel-Pipe) Operator mit dem bitweisen OR-Operator | (Einzelne Pipe).
 [%hardbreaks]
 
 --

@@ -56,7 +56,7 @@ Der Code generiert Zufallszahlen und zeigt sie an.
 ----
 long randNumber;
 
-void setup(){
+void setup() {
   Serial.begin(9600);
 
   // Wenn der analoge Eingangspin 0 nicht verbunden ist, wird zufälliges analoges

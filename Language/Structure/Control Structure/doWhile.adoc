@@ -25,8 +25,7 @@ da die Bedingung erst am Schluss der Schleife getestet wird.
 === Syntax
 [source,arduino]
 ----
-do
-{
+do {
    //Statement(s)
 } while (condition);
 ----
@@ -58,8 +57,7 @@ Liest in do-while-Schleife 100 Mal einen Sensorwert aus.
 // Initialisiere x mit Wert 0
 int x = 0;
 
-do
-{
+do {
   delay(50);          // Warte 50 Millieskunden, bis der Sensor wieder einen stabilen Wert liefert.
   x = readSensor();   // Lies den Sensorwert
   x++;                //Inkrementiere die Zählervariable

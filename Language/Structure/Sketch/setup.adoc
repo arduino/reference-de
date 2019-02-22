@@ -39,16 +39,14 @@ Der Code zeigt ein kleines Beispiel, welches den einen Inputpin festlegt.
 // Lege Button auf Pin 3
 int buttonPin = 3;
 
-void setup()
-{
+void setup() {
   // Starte die serielle Verbindung
   Serial.begin(9600);
   // Setze den Pin 3 als Inputpin
   pinMode(buttonPin, INPUT);
 }
 
-void loop()
-{
+void loop() {
   // ...
 }
 ----

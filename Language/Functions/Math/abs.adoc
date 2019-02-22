@@ -52,10 +52,10 @@ Es sollten keine anderen Funktionen innerhalb der Klammern verwendet werden. Die
 
 [source,arduino]
 ----
-abs(a++);   // Vermeiden - führt zu falschen Ergebnissen
+abs(a++); // Vermeiden - führt zu falschen Ergebnissen
 
-abs(a);         // Benutze dies stattdessen -
-a++;        // Andere Mathematik außerhalb der Funktion benutzen
+abs(a); // Benutze dies stattdessen -
+a++;    // Andere Mathematik außerhalb der Funktion benutzen
 ----
 [%hardbreaks]
 

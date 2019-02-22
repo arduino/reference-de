@@ -69,22 +69,19 @@ int pin = 13;
 // Intitialisiere den Status als volatile auf LOW
 volatile int state = LOW;
 
-void setup()
-{
+void setup() {
   // Deklariere den Pin als Outputpin
   pinMode(pin, OUTPUT);
   // Setze einen Interrupt auf Pin 0, wenn 
   attachInterrupt(digitalPinToInterrupt(2), blink, CHANGE);
 }
 
-void loop()
-{
+void loop() {
   // Schreibe den Status auf den Pin zurück
   digitalWrite(pin, state);
 }
 
-void blink()
-{
+void blink() {
   // Invertiere den Status, dass die LED blinkt
   state = !state;
 }
@@ -97,11 +94,10 @@ void blink()
 #include <util/atomic.h> // Diese Bibliothek fügt das ATOMIC_BLOCK-Makro ein.
 volatile int input_from_interrupt;
 
-  ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
-     // Code mit geblockten Interrupts hier (Mehrere atomare Operationen hintereinander werden nicht durch Interrupts unterbrochen)
-     int result = input_from_interrupt;
-   }
-
+ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
+  // Code mit geblockten Interrupts hier (Mehrere atomare Operationen hintereinander werden nicht durch Interrupts unterbrochen)
+  int result = input_from_interrupt;
+}
 ----
 
 

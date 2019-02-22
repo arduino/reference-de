@@ -48,8 +48,8 @@ variable << number_of_bits;
 
 [source,arduino]
 ----
-int a = 5;        // Binär: 0000000000000101
-int b = a << 3;   // Binär: 0000000000101000, oder 40 als Dezimal
+int a = 5;      // Binär: 0000000000000101
+int b = a << 3; // Binär: 0000000000101000, oder 40 als Dezimal
 ----
 [%hardbreaks]
 
@@ -59,9 +59,9 @@ Wenn Sie einen Wert x um y Bits (x << y) verschieben, gehen die am weitesten lin
 
 [source,arduino]
 ----
-int x = 5;        // Binär: 0000000000000101
+int x = 5; // Binär: 0000000000000101
 int y = 14;
-int result = x << y;  // Binär: 0100000000000000 - Die erste 1 von 101 wurde verworfen
+int result = x << y; // Binär: 0100000000000000 - Die erste 1 von 101 wurde verworfen
 ----
 
 Wenn Sie sicher sind, dass keine der Einsen in einem Wert in Vergessenheit gerät, ist ein einfacher Weg, sich den Operator für die linke Verschiebung vorzustellen,
@@ -93,10 +93,10 @@ void printOut1(int c) {
   for (int bits = 7; bits > -1; bits--) {
     // Vergleiche die Bits 7-0 im Byte
     if (c & (1 << bits)) {
-      Serial.print ("1");
+      Serial.print("1");
     }
     else {
-      Serial.print ("0");
+      Serial.print("0");
     }
   }
 }

@@ -53,8 +53,8 @@ Diese Art von Kommentar wird aufgerufen, da sich dieser über mehrere Zeilen ers
 */
 
 /*
-  if (gwb == 0){   // Ein einzeiliger Kommentar ist in einem mehrzeiligen Kommentar in Ordnung
-  x = 3;           /* aber kein weiterer mehrzeiliger Kommentar - das ist ungültig */
+  if (gwb == 0) {   // Ein einzeiliger Kommentar ist in einem mehrzeiligen Kommentar in Ordnung
+    x = 3;           /* aber kein weiterer mehrzeiliger Kommentar - das ist ungültig */
   }
 // Vergessen Sie nicht den abschließenden Kommentar - sie müssen ausgewogen sein!
 */

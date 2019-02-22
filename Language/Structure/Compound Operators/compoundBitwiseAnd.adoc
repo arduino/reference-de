@@ -34,7 +34,7 @@ Ein Überblick über den bitweisen AND `&` Operator:
 === Syntax
 [source,arduino]
 ----
-x &= y;   // Äquivalent zu x = x & y;
+x &= y; // Äquivalent zu x = x & y;
 ----
 
 [float]

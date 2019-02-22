@@ -79,7 +79,7 @@ Der Code zeigt, wie ADC mit unterschiedlichen Auflösungen verwendet wird.
 
 [source,arduino]
 ----
-void setup(){
+void setup() {
   // Öffne serielle Kommunikation
   Serial.begin(9600);
   // Pins als Ausgabepins setzen
@@ -88,7 +88,7 @@ void setup(){
   pinMode(13, OUTPUT);
 }
 
-void loop(){
+void loop() {
   // Lesen des Eingangspins auf A0 und Zuordnung zu einem
   // PWM-Pin mit einer LED
   int sensorVal = analogRead(A0);
@@ -97,9 +97,9 @@ void loop(){
 
   // Die standardmäßige PWM-Auflösung
   analogWriteResolution(8);
-  analogWrite(11, map(sensorVal, 0, 1023, 0 ,255));
+  analogWrite(11, map(sensorVal, 0, 1023, 0, 255));
   Serial.print(" , 8-bit PWM value : ");
-  Serial.print(map(sensorVal, 0, 1023, 0 ,255));
+  Serial.print(map(sensorVal, 0, 1023, 0, 255));
 
   // Ändern der PWM-Auflösung auf 12 Bit.
   // Die volle 12-Bit-Auflösung wird nur auf dem Due unterstützt

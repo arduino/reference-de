@@ -26,7 +26,7 @@ Vergleicht die linke Variable mit dem Wert oder der Variablen rechts vom Operato
 === Syntax
 [source,arduino]
 ----
-x == y;   // Ist true, wenn x gleich y ist und false, wenn x nicht gleich y ist
+x == y; // Ist true, wenn x gleich y ist und false, wenn x nicht gleich y ist
 ----
 
 [float]
@@ -48,8 +48,7 @@ x == y;   // Ist true, wenn x gleich y ist und false, wenn x nicht gleich y ist
 
 [source,arduino]
 ----
-if (x==y)      // Prüft, ob x gleich y ist
-{
+if (x==y) { // Prüft, ob x gleich y ist
   // Tue etwas nur dann, wenn das Vergleichsergebnis wahr ist
 }
 ----

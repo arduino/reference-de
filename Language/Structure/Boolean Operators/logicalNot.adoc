@@ -44,7 +44,7 @@ if (!x) { // Wenn x nicht true ist
 Es kann verwendet werden, um den booleschen Wert zu invertieren.
 [source,arduino]
 ----
-x = !y;   // Der invertierte Wert von y wird in x gespeichert
+x = !y; // Der invertierte Wert von y wird in x gespeichert
 ----
 
 

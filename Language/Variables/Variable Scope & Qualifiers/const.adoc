@@ -50,11 +50,8 @@ float x;
 
 // ....
 
-x = pi * 2;    // Das ist erlaubt.
-
-pi = 7;        // Illegal-Konstante darf/kann nicht verändert werden.
-
-
+x = pi * 2; // Das ist erlaubt.
+pi = 7;     // Illegal-Konstante darf/kann nicht verändert werden.
 ----
 [%hardbreaks]
 

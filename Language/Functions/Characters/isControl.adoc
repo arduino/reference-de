@@ -50,12 +50,10 @@ Analysiert, ob das Zeichen ein Steuerzeichen ist. Gibt ``true`` zurück, wenn es
 
 [source,arduino]
 ----
-if (isControl(thisChar))      // Testet, ob das Zeichen ein Steuerzeichen ist
-{
+if (isControl(thisChar)) { // Testet, ob das Zeichen ein Steuerzeichen ist
 	Serial.println("Das Zeichen ist ein Steuerzeichen");
 }
-else
-{
+else {
 	Serial.println("Das Zeichen ist kein Steuerzeichen");
 }
 

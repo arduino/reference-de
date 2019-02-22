@@ -50,17 +50,17 @@ Sendet einen linken Mausclick, wenn der Button gedrückt wird und beendet die Em
 ----
 #include <Mouse.h>
 
-void setup(){
+void setup() {
   // Setze Pin 2 als Inputpin
-  pinMode(2,INPUT);
+  pinMode(2, INPUT);
   // Initialisiere die Maus-Bibliothek
   Mouse.begin();
 }
 
-void loop(){
+void loop() {
   // Wenn der Button an Pin 2 gedrückt wird, sende einen linken Mausklick
   // und beende die Emulation wieder.
-  if(digitalRead(2) == HIGH){
+  if (digitalRead(2) == HIGH){
     Mouse.click();
     Mouse.end();
   }

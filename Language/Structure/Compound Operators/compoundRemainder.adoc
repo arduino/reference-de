@@ -26,7 +26,7 @@ Dies ist eine praktische Abkürzung, um den Rest zu berechnen, wenn eine ganze Z
 === Syntax
 [source,arduino]
 ----
-x %= divisor;   // Äquivalent zum Ausdruck x = x% divisor;
+x %= divisor; // Äquivalent zum Ausdruck x = x% divisor;
 ----
 
 [float]
@@ -49,7 +49,7 @@ x %= divisor;   // Äquivalent zum Ausdruck x = x% divisor;
 [source,arduino]
 ----
 int x = 7;
-x %= 5;    // x enthält jetzt 2
+x %= 5; // x enthält jetzt 2
 ----
 [%hardbreaks]
 

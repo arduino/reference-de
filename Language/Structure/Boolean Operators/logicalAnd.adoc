@@ -36,7 +36,7 @@ Dieser Operator kann innerhalb der Bedingung einer link:../../control-structure/
 
 [source,arduino]
 ----
-if (digitalRead(2) == HIGH  && digitalRead(3) == HIGH) { // Wenn beide Werte HIGH sind
+if (digitalRead(2) == HIGH && digitalRead(3) == HIGH) { // Wenn beide Werte HIGH sind
     // Statement(s)
 }
 ----

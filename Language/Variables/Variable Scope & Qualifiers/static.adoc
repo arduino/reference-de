@@ -58,14 +58,12 @@ int stepsize;
 int thisTime;
 int total;
 
-void setup()
-{
+void setup() {
   // Initialisiere die serielle Verbindung
   Serial.begin(9600);
 }
 
-void loop()
-{ 
+void loop() { 
   // Initialisiere die Schrittweite
   stepsize = 5;
   // Rufe die randomWalk-Funktion auf und speichere das Ergebnis
@@ -77,7 +75,7 @@ void loop()
   delay(10);
 }
 
-int randomWalk(int moveSize){
+int randomWalk(int moveSize) {
   // Variable, um den Wert in der randomWalk-Funktion zu speichern
   // Nur diese Funktion kann den Wert ändern, der Wert ist aber von
   // Aufruf zu Aufruf wieder verfügbar
@@ -85,11 +83,11 @@ int randomWalk(int moveSize){
   // Zufällige Bewegung
   place = place + (random(-moveSize, moveSize + 1));
   // Check, ob die Limits verletzt wurden
-  if (place < randomWalkLowRange){
+  if (place < randomWalkLowRange) {
 	// Korrigiere den aktuellen Schritt in die positive Richtung
     place = randomWalkLowRange + (randomWalkLowRange - place);
   }
-  else if(place > randomWalkHighRange){
+  else if(place > randomWalkHighRange) {
 	// Korrigiere den aktuellen Schritt in die negative Richtung
     place = randomWalkHighRange - (place - randomWalkHighRange); 
   }

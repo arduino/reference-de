@@ -26,8 +26,7 @@ Das `continue`-Statement checkt anschließend die `condition` und durchläuft di
 === Syntax
 [source,arduino]
 ----
-while (condition)
-{
+while (condition) {
    //Statement(s)
    continue;
    //Statement(s)
@@ -59,16 +58,15 @@ Der Code schreibt die Werte von 0 bis 255 auf den LED-Pin, aber überspringt Wer
 [source,arduino]
 ----
 // Iteriere über die Werte von 0 bis 255
-for (x = 0; x <= 255; x ++)
-{
-	// Springe bei den Werten zwischen 40 und 120 weiter
-    if (x > 40 && x < 120){
-        continue;
-    }
-	// Schreibe den Wert auf den LED-Pin
-    analogWrite(PWMpin, x);
-	// Warte 50 Millieskunden
-    delay(50);
+for (x = 0; x <= 255; x ++) {
+  // Springe bei den Werten zwischen 40 und 120 weiter
+  if (x > 40 && x < 120){
+    continue;
+  }
+  // Schreibe den Wert auf den LED-Pin
+  analogWrite(PWMpin, x);
+  // Warte 50 Millieskunden
+  delay(50);
 }
 ----
 

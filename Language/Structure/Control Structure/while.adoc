@@ -25,7 +25,7 @@ sich nie ändert, läuft die Schleife unendlich. Dies kann z.B. durch das Hochz�
 === Syntax
 [source,arduino]
 ----
-while(condition){
+while(condition) {
   // Statement(s)
 }
 ----
@@ -57,7 +57,7 @@ Dieser Code zählt eine Variable 200-mal um 1 hoch.
 ----
 var = 0;
 // Wiederhole etwas 200 Mal
-while(var < 200){
+while(var < 200) {
   // Zähle Variable x um 1 hoch
   var++;
 }

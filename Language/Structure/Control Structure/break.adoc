@@ -26,8 +26,7 @@ die normalen `condition` übersprungen werden. Es wird auch benutzt, um aus link
 === Syntax
 [source,arduino]
 ----
-while (condition)
-{
+while (condition) {
    //Statement(s)
    break;
    //Statement(s)
@@ -59,21 +58,20 @@ Der folgende Code springt aus der `for`-Schleife, wenn der Sensorwert den Thresh
 [source,arduino]
 ----
 // Iteriere über die Zahlen von 0 bis 255
-for (x = 0; x < 255; x ++)
-{
-	// Schreibe auf den LED-Pin
-    analogWrite(PWMpin, x);
-	// Lies den Sensorwert ein
-    sens = analogRead(sensorPin);
-	// Wenn der Wert größer als der Threshold ist
-    if (sens > 40){
-	   // Setze x auf 0
-       x = 0;
-	   // Springe raus
-       break;
-    }
-	// Warte 50 Millisekunden
-    delay(50);
+for (x = 0; x < 255; x ++) {
+  // Schreibe auf den LED-Pin
+  analogWrite(PWMpin, x);
+  // Lies den Sensorwert ein
+  sens = analogRead(sensorPin);
+  // Wenn der Wert größer als der Threshold ist
+  if (sens > 40){
+    // Setze x auf 0
+    x = 0;
+    // Springe raus
+    break;
+  }
+  // Warte 50 Millisekunden
+  delay(50);
 }
 ----
 

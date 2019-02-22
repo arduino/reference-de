@@ -45,9 +45,9 @@ In anderen Worten:
 
 [source,arduino]
 ----
-int a =  92;    // Binär: 0000000001011100
-int b = 101;    // Binär: 0000000001100101
-int c = a | b;  // Ergebnis:    0000000001111101, oder 125 dezimal.
+int a =  92;   // Binär:    0000000001011100
+int b = 101;   // Binär:    0000000001100101
+int c = a | b; // Ergebnis: 0000000001111101, oder 125 dezimal.
 ----
 [%hardbreaks]
 

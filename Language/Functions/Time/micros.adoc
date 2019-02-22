@@ -56,15 +56,14 @@ Der Code gibt die Anzahl der Mikrosekunden seit dem Beginn des Arduino-Boards zu
 ----
 unsigned long time;
 
-void setup(){
+void setup() {
   Serial.begin(9600);
 }
-void loop(){
+void loop() {
   Serial.print("Time: ");
   time = micros();
-
-  Serial.println(time);  // gibt die Zeit seit dem Programmstart aus
-  delay(1000);           // Warten Sie eine Sekunde, um keine riesigen Datenmengen zu senden
+  Serial.println(time); // gibt die Zeit seit dem Programmstart aus
+  delay(1000);          // Warten Sie eine Sekunde, um keine riesigen Datenmengen zu senden
 }
 ----
 [%hardbreaks]

@@ -55,35 +55,30 @@ Bewegt den Mauszeiger anhand der analogen Eingänge.
 ----
 #include <Mouse.h>
 
-const int xAxis = A1;         // Analoger sensor für die X-Achse
-const int yAxis = A2;         // Analoger sensor für die Y-Achse
+const int xAxis = A1;        // Analoger sensor für die X-Achse
+const int yAxis = A2;        // Analoger sensor für die Y-Achse
 
-int range = 12;               // Ausgabebreite der X- und Y-Bewegung
+int range = 12;              // Ausgabebreite der X- und Y-Bewegung
 int responseDelay = 2;       // Antwortverzögerung der Maus in ms
-int threshold = range/4;      // Wartethreshold
-int center = range/2;         // Warteposition
-int minima[] = {
-  1023, 1023};                // Aktuelle analogRead Minima für {x, y}
-int maxima[] = {
-  0,0};                       // Aktuelle analogRead Maxima für {x, y}
-int axis[] = {
-  xAxis, yAxis};              // Pinnummern für {x, y}
-int mouseReading[2];          // Finale Position von {x, y}
-
+int threshold = range / 4;   // Wartethreshold
+int center = range/2;        // Warteposition
+int minima[] = {1023, 1023}; // Aktuelle analogRead Minima für {x, y}
+int maxima[] = {0, 0};       // Aktuelle analogRead Maxima für {x, y}
+int axis[] = {xAxis, yAxis}; // Pinnummern für {x, y}
+int mouseReading[2];         // Finale Position von {x, y}
 
 void setup() {
- Mouse.begin();
+  Mouse.begin();
 }
 
 void loop() {
-
-// Lies uns skaliere beide Achsen:
+  // Lies uns skaliere beide Achsen:
   int xReading = readAxis(0);
   int yReading = readAxis(1);
 
-// Bewege die Maus:
-    Mouse.move(xReading, yReading, 0);
-    delay(responseDelay);
+  // Bewege die Maus:
+  Mouse.move(xReading, yReading, 0);
+  delay(responseDelay);
 }
 
 /*
@@ -92,13 +87,13 @@ void loop() {
 */
 
 int readAxis(int axisNumber) {
-  int distance = 0;    // Distanz von der Bildschirmmitte zum Rand
+  int distance = 0; // Distanz von der Bildschirmmitte zum Rand
 
   // Lies den analogen Inputpin
   int reading = analogRead(axis[axisNumber]);
 
-// Wenn der aktuelle Wert das Maximum oder Minimum über-/ untersteigt,
-// setze das Maximum oder Minimum neu:
+  // Wenn der aktuelle Wert das Maximum oder Minimum über-/ untersteigt,
+  // setze das Maximum oder Minimum neu:
   if (reading < minima[axisNumber]) {
     minima[axisNumber] = reading;
   }
@@ -109,8 +104,8 @@ int readAxis(int axisNumber) {
   // Mappe den gelesenen Wert von der Eingabebreite auf die Ausgabebreite:
   reading = map(reading, minima[axisNumber], maxima[axisNumber], 0, range);
 
- // Wenn die Ausgabe außerhalbe des Wartethresholds liegt,
- // nutze sie als Distanz:
+  // Wenn die Ausgabe außerhalbe des Wartethresholds liegt,
+  // nutze sie als Distanz:
   if (abs(reading - center) > threshold) {
     distance = (reading - center);
   }

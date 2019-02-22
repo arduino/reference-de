@@ -48,8 +48,7 @@ x <= y;   // Ist true, wenn x kleiner oder gleich y ist und false, wenn x größ
 
 [source,arduino]
 ----
-if (x<=y)      // Prüft, ob x kleiner oder gleich y ist
-{
+if (x<=y) { // Prüft, ob x kleiner oder gleich y ist
   // Tue etwas nur dann, wenn das Vergleichsergebnis wahr ist
 }
 ----

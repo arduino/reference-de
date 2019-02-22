@@ -45,7 +45,7 @@ Es gibt zwei Möglichkeiten, eine Zeile als Kommentar zu kennzeichnen:
 int led = 13;
 
 
-digitalWrite(led, HIGH);   // LED einschalten (HIGH ist der Spannungspegel)
+digitalWrite(led, HIGH); // LED einschalten (HIGH ist der Spannungspegel)
 ----
 [%hardbreaks]
 

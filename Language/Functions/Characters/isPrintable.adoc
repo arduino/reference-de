@@ -50,12 +50,10 @@ Analysiert, ob das Zeichen druckbar ist (Also jedes Zeichen, das eine Ausgabe er
 
 [source,arduino]
 ----
-if (isPrintable(thisChar))      // Testet, ob das Zeichen druckbar ist.
-{
+if (isPrintable(thisChar)) { // Testet, ob das Zeichen druckbar ist.
 	Serial.println("Das Zeichen ist druckbar.");
 }
-else
-{
+else {
 	Serial.println("Das Zeichen ist nicht druckbar.");
 }
 

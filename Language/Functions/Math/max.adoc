@@ -64,10 +64,10 @@ Vielleicht kontra-intuitiv wird `max()` häufig verwendet, um das untere Ende de
 Es sollten keine anderen Funktionen innerhalb der Klammern verwendet werden. Dies kann zu falschen Ergebnissen führen.
 [source,arduino]
 ----
-max(a--, 0);   // Vermeide dies - führt zu falschen Ergebnissen
+max(a--, 0); // Vermeide dies - führt zu falschen Ergebnissen
 
-max(a, 0);           // Benutze dies stattdessen -
-a--;     // Andere Mathematik außerhalb der Funktion halten
+max(a, 0); // Benutze dies stattdessen -
+a--;       // Andere Mathematik außerhalb der Funktion halten
 ----
 
 --

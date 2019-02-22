@@ -51,7 +51,9 @@ product = operand1 * operand2;
 
 [source,arduino]
 ----
-int a = 5, b = 10, c = 0;
+int a = 5;
+int b = 10;
+int c = 0;
 c = a * b; // Die Variable 'c' erhält einen Wert von 50, nachdem diese Anweisung ausgeführt wurde
 ----
 [%hardbreaks]
@@ -66,7 +68,8 @@ c = a * b; // Die Variable 'c' erhält einen Wert von 50, nachdem diese Anweisun
 
 [source,arduino]
 ----
-float a = 5.5, b = 6.6;
+float a = 5.5;
+float b = 6.6;
 int c = 0;
 c = a * b; // Die Variable 'c' speichert nur den Wert 36 und nicht das erwartete Produkt 36,3
 ----

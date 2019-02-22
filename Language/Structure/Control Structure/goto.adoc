@@ -56,13 +56,13 @@ Der Code zeigt, wie `goto` aus einem Programm mit 3 Schleifen an eine bestimmte 
 
 [source,arduino]
 ----
-for(byte r = 0; r < 255; r++){
-    for(byte g = 255; g > -1; g--){
-        for(byte b = 0; b < 255; b++){
-            if (analogRead(0) > 250){ goto bailout;}
-            // Weitere Statements
-        }
-    }
+for(byte r = 0; r < 255; r++) {
+  for(byte g = 255; g > -1; g--) {
+    for(byte b = 0; b < 255; b++){
+      if (analogRead(0) > 250){ goto bailout;}
+        // Weitere Statements
+      }
+  }
 }
 
 bailout:

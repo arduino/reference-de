@@ -61,20 +61,18 @@ Eine LED wird über einen PWM-Pin gedimmt.
 ----
 int PWMpin = 10; // LED in Serie mit 470-Ohm-Widerstand auf Pin 10
 
-void setup()
-{
+void setup() {
   // Nichts
 }
 
-void loop()
-{
-   // Wiederhole 255 Mal:
-   for (int i=0; i <= 255; i++){
-	  // Schreibe den Wert von "i" auf den LED-Pin
-      analogWrite(PWMpin, i);
-	  // Warte 10 Millisekunden
-      delay(10);
-   }
+void loop() {
+  // Wiederhole 255 Mal:
+  for (int i=0; i <= 255; i++){
+    // Schreibe den Wert von "i" auf den LED-Pin
+    analogWrite(PWMpin, i);
+    // Warte 10 Millisekunden
+    delay(10);
+  }
 }
 ----
 [%hardbreaks]
@@ -90,7 +88,7 @@ Eine Multiplikation im `increment` generiert ein logarithmisches Verhalten:
 
 [source,arduino]
 ----
-for(int x = 2; x < 100; x = x * 1.5){
+for(int x = 2; x < 100; x = x * 1.5) {
    println(x);
 }
 ----
@@ -102,18 +100,19 @@ LED hoch- und runterdimmen in einer Schleife:
 
 [source,arduino]
 ----
-void loop()
-{
-   // Globale Zählervariable "x"
-   int x = 1;
-   // Laufe über die Variable solange i größer -1 ist und zähle i um x hoch
-   for (int i = 0; i > -1; i = i + x){
-	  // Schreibe auf den LED-Pin
-      analogWrite(PWMpin, i);
-      if (i == 255) x = -1; // Ändere die Richtung des Dimmens auf dem "Peek"
-	  // Warte 10 Millisekunden
+void loop() {
+  // Globale Zählervariable "x"
+  int x = 1;
+  // Laufe über die Variable solange i größer -1 ist und zähle i um x hoch
+  for (int i = 0; i > -1; i = i + x){
+    // Schreibe auf den LED-Pin
+    analogWrite(PWMpin, i);
+    if (i == 255) {
+	  x = -1; // Ändere die Richtung des Dimmens auf dem "Peek"
+      // Warte 10 Millisekunden
       delay(10);
-   }
+	}
+  }
 }
 ----
 

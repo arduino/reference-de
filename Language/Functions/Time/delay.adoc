@@ -51,19 +51,17 @@ Der Code hält das Programm für eine Sekunde an, bevor der Ausgangs-Pin umgesch
 
 [source,arduino]
 ----
-int ledPin = 13;                 // LED auf Digitalpin 13
+int ledPin = 13; // LED auf Digitalpin 13
 
-void setup()
-{
-  pinMode(ledPin, OUTPUT);      // Setzt den digitalen Pin als Ausgang
+void setup() {
+  pinMode(ledPin, OUTPUT); // Setzt den digitalen Pin als Ausgang
 }
 
-void loop()
-{
-  digitalWrite(ledPin, HIGH);   // LED an
-  delay(1000);                  // Eine Sekunde warten
-  digitalWrite(ledPin, LOW);    // LED aus
-  delay(1000);                  // Eine Sekunde warten
+void loop() {
+  digitalWrite(ledPin, HIGH); // LED an
+  delay(1000);                // Eine Sekunde warten
+  digitalWrite(ledPin, LOW);  // LED aus
+  delay(1000);                // Eine Sekunde warten
 }
 ----
 [%hardbreaks]

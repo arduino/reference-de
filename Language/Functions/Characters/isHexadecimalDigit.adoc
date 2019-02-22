@@ -50,12 +50,10 @@ isHexadecilamDigit(thisChar)
 
 [source,arduino]
 ----
-if (isHexadecimalDigit(thisChar))      // Testet, ob das Zeichen hexadezimal ist
-{
+if (isHexadecimalDigit(thisChar)) { // Testet, ob das Zeichen hexadezimal ist
 	Serial.println("Das Zeichen ist hexadezimal");
 }
-else
-{
+else {
 	Serial.println("Das Zeichen ist nicht hexadezimal");
 }
 

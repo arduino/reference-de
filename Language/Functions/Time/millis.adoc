@@ -48,15 +48,14 @@ Der Code liest die Millisekunden seit Beginn des Sketches des Arduino-Boards und
 ----
 unsigned long time;
 
-void setup(){
+void setup() {
   Serial.begin(9600);
 }
-void loop(){
+void loop() {
   Serial.print("Time: ");
   time = millis();
-
-  Serial.println(time);    // Gibt die Zeit seit dem Programmstart aus
-  delay(1000);             // Eine Sekunde warten, um keine riesigen Datenmengen zu senden
+  Serial.println(time);// Gibt die Zeit seit dem Programmstart aus
+  delay(1000);         // Eine Sekunde warten, um keine riesigen Datenmengen zu senden
 }
 ----
 [%hardbreaks]

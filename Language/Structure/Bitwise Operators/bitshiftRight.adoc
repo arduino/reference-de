@@ -48,8 +48,8 @@ variable >> number_of_bits;
 
 [source,arduino]
 ----
-int a = 40;       // Binär: 0000000000101000
-int b = a >> 3;   // Binär: 0000000000000101, oder 5 dezimal
+int a = 40;     // Binär: 0000000000101000
+int b = a >> 3; // Binär: 0000000000000101, oder 5 dezimal
 ----
 [%hardbreaks]
 
@@ -61,9 +61,9 @@ In diesem Fall wird das Vorzeichenbit aus esoterischen historischen Gründen in 
 
 [source,arduino]
 ----
-int x = -16;     // Binär: 1111111111110000
+int x = -16; // Binär: 1111111111110000
 int y = 3;
-int result = x >> y;  // Binär: 1111111111111110
+int result = x >> y; // Binär: 1111111111111110
 ----
 Dieses Verhalten, das als Zeichenerweiterung bezeichnet wird, ist häufig nicht das gewünschte Verhalten.
 Stattdessen möchte man möglicherweise, dass Nullen von links nach innen verschoben werden.
@@ -72,16 +72,16 @@ Man kann also eine Typumwandlung verwenden, um zu verhindern, dass die von links
 
 [source,arduino]
 ----
-int x = -16;                   // Binär: 1111111111110000
+int x = -16; // Binär: 1111111111110000
 int y = 3;
-int result = (unsigned int)x >> y;  // Binär: 0001111111111110
+int result = (unsigned int)x >> y; // Binär: 0001111111111110
 ----
 Wenn Sie die Vorzeichenerweiterung sorgfältig vermeiden, können Sie den rechten Umschaltoperator `>>` verwenden, um die Division durch Potenzen von 2 zu berechnen. Zum Beispiel:
 
 [source,arduino]
 ----
 int x = 1000;
-int y = x >> 3;   // Integer-Division von 1000 durch 8, wodurch y = 125.
+int y = x >> 3; // Integer-Division von 1000 durch 8, wodurch y = 125.
 ----
 
 --

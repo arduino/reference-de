@@ -55,8 +55,7 @@ Der Code zeigt, wie man Interrupts aktiviert und deaktiviert.
 ----
 void setup() {}
 
-void loop()
-{
+void loop() {
   noInterrupts();
   // Zeitkritischer Code hier
   interrupts();

@@ -22,8 +22,8 @@ Der Defaultbutton von `Mouse.click()` ist der linke Mausbutton.
 
 [float]
 === Syntax
-`Mouse.click();` +
-`Mouse.click(button);`
+`Mouse.click()` +
+`Mouse.click(button)`
 
 
 [float]
@@ -57,16 +57,16 @@ Sendet einen linken Mausklick, wenn der Button gedrückt wird.
 ----
 #include <Mouse.h>
 
-void setup(){
+void setup() {
   // Setze Pin 2 als Inputpin
   pinMode(2,INPUT);
   //Initialisiere die Maus-Bibliothek
   Mouse.begin();
 }
 
-void loop(){
+void loop() {
   // Sende einen linken Mausklick, wenn der Button gedrückt wird
-  if(digitalRead(2) == HIGH){
+  if (digitalRead(2) == HIGH){
     Mouse.click();
   }
 }

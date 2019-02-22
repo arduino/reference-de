@@ -20,8 +20,8 @@ Checkt den aktuellsten Status des Mausbuttons und liefert zurück, ob dieser ged
 
 [float]
 === Syntax
-`Mouse.isPressed();` +
-`Mouse.isPressed(button);`
+`Mouse.isPressed()` +
+`Mouse.isPressed(button)`
 
 [float]
 === Parameter
@@ -58,27 +58,27 @@ Setzt den Mausbutton und löst ihn wieder abhängig vom gedrückten Schalter an 
 ----
 #include <Mouse.h>
 
-void setup(){
+void setup() {
   // Der Schalter, der den Mauszeigerdruck startet: Pin 2
-  pinMode(2,INPUT);
+  pinMode(2, INPUT);
   // Der Schalter, der den Mauszeigerdruck beendet: Pin 3
-  pinMode(3,INPUT);
+  pinMode(3, INPUT);
   //Starte serielle Kommunikation mit dem Computer
   Serial.begin(9600);
   // Initialisiere die Maus-Bibliothek:
   Mouse.begin();
 }
 
-void loop(){
+void loop() {
   // Eine Variable, um den aktuellen Status der Maus zu speichern
-  int mouseState=0;
+  int mouseState = 0;
   // Wenn Pin 2 HIGH ist (Schalter geschlossen), drücke den Mausbutton und halte ihn. Speichere den Status der Maus in die Variable.
-  if(digitalRead(2) == HIGH){
+  if (digitalRead(2) == HIGH) {
     Mouse.press();
     mouseState=Mouse.isPressed();
   }
   // Wenn Pin 3 HIGH ist (Schalter geschlossen), löse den gedrückten Mausbutton. Speichere den Status der Maus in die Variable.
-  if(digitalRead(3) == HIGH){
+  if (digitalRead(3) == HIGH) {
     Mouse.release();
     mouseState=Mouse.isPressed();
   }

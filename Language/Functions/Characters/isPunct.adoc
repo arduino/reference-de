@@ -49,12 +49,10 @@ Analysiert, ob ein Zeichen eine Punktuation ist (Komma, Semikolon, Ausrufezeiche
 
 [source,arduino]
 ----
-if (isPunct(thisChar))      // Testet, ob das Zeichen eine Punktuation ist.
-{
+if (isPunct(thisChar)) { // Testet, ob das Zeichen eine Punktuation ist.
 	Serial.println("Das Zeichen ist eine Punktuation.");
 }
-else
-{
+else {
 	Serial.println("Das Zeichen ist keine Punktuation.");
 }
 

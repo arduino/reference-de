@@ -50,12 +50,10 @@ Analysiert, ob das Zeichen lower case (Kleinbuchstaben) ist. Gibt ``true`` zurü
 
 [source,arduino]
 ----
-if (isLowerCase(thisChar))      // Testet, ob das Zeichen lower case ist
-{
+if (isLowerCase(thisChar)) { // Testet, ob das Zeichen lower case ist
 	Serial.println("Das Zeichen ist lower case");
 }
-else
-{
+else {
 	Serial.println("Das Zeichen ist nicht lower case");
 }
 

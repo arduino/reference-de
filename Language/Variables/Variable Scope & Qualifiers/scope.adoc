@@ -4,10 +4,6 @@ categories: [ "Variables" ]
 subCategories: [ "Variable Scope & Qualifiers" ]
 ---
 
-
-
-
-
 = Variable Scope
 
 
@@ -49,21 +45,18 @@ Der Code beschreibt den Unterschied zwischen lokalen und globalen Variablen.
 ----
 int gPWMval;  // Globale Variable, die jede Funktion "sehen" kann
 
-void setup()
-{
+void setup() {
   // ...
 }
 
-void loop()
-{
+void loop() {
   int i;    // "i" ist nur "sichtbar" innerhalb von "loop"
   float f;  // "f" ist nur "sichtbar" innerhalb von "loop"
   // ...
 
-  for (int j = 0; j <100; j++){
+  for (int j = 0; j <100; j++) {
     // Variable j kann nur innerhalb der Schleife benutzt werden
   }
-
 }
 ----
 [%hardbreaks]

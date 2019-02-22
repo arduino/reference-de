@@ -72,12 +72,11 @@ Das folgende Code-Fragment zeigt, wie ein unsigned chars (bytes) und ints (2 byt
 const PROGMEM  uint16_t charSet[]  = { 65000, 32796, 16843, 10, 11234};
 
 // Speichere einen String
-const char signMessage[] PROGMEM  = {"I AM PREDATOR,  UNSEEN COMBATANT. CREATED BY THE UNITED STATES DEPART"};
+const char signMessage[] PROGMEM  = { "I AM PREDATOR, UNSEEN COMBATANT. CREATED BY THE UNITED STATES DEPART"};
 
 unsigned int displayInt; // Rückgabewert der Funktion zum Auslesen der Daten
 int k; // Definiere eine Zählervariable
 char myChar; // Definiere einen Char, um diesen zu bearbeiten
-
 
 void setup() {
   Serial.begin(9600); // Initialisiere den seriellen Port
@@ -85,16 +84,15 @@ void setup() {
 
   // Setup code:
   // Lies einen 2-Byte-Int
-  for (k = 0; k < 5; k++)
-  {
+  for (k = 0; k < 5; k++) {
     displayInt = pgm_read_word_near(charSet + k); // Lies den charSet-Wert wieder aus dem Flash-/Programm-Speicher
     Serial.println(displayInt); // Gib den gelesenen Wert aus
   }
+  
   Serial.println(); // Schreibe eine neue Zeile
 
   // Lies einen Char
-  for (k = 0; k < strlen_P(signMessage); k++)
-  {
+  for (k = 0; k < strlen_P(signMessage); k++) {
     myChar =  pgm_read_byte_near(signMessage + k); // Lies den signMessage-Wert wieder aus dem Flash-/Programm-Speicher
     Serial.print(myChar); // Gib den gelesenen Wert aus
   }
@@ -105,7 +103,6 @@ void setup() {
 void loop() {
   // ...
 }
-
 ----
 *Array von Strings*
 
@@ -135,36 +132,30 @@ const char string_3[] PROGMEM = "String 3"; // Definiere deine Strings "String 3
 const char string_4[] PROGMEM = "String 4"; // Definiere deine Strings "String 4" ist hier nur ein Beispiel
 const char string_5[] PROGMEM = "String 5"; // Definiere deine Strings "String 5" ist hier nur ein Beispiel
 
-
 // Initialisiere die Tabelle von Strings
-const char* const string_table[] PROGMEM = {string_0, string_1, string_2, string_3, string_4, string_5};
+const char* const string_table[] PROGMEM = { string_0, string_1, string_2, string_3, string_4, string_5 };
 
 char buffer[30]; // Der Buffer zum Lesen der Daten muss so lang sein wie der längste String!
 
-void setup()
-{
+void setup() {
   Serial.begin(9600); // Initialisiere den seriellen Port
   while(!Serial); // Warten, bis der serielle Port verfügbar ist
   Serial.println("OK"); // Schreibe "OK" auf den seriellen Port
 }
 
-
-void loop()
-{
+void loop() {
   /* Spezielle Funktionen zum Lesen der Daten sind nötig. "strcpy_P" kopiert den String vom
      Flash-/Programm-Speicher in dem SRAM/ den Buffer. Stelle sicher, dass der empfangende 
 	 String lang genug ist für den String. 
   */
 
   // Iteriere über das Array: 6-mal, da 6 Strings im Array sind
-  for (int i = 0; i < 6; i++)
-  {
+  for (int i = 0; i < 6; i++) {
     strcpy_P(buffer, (char*)pgm_read_word(&(string_table[i]))); // Casts und Dereferenzierung des Speichers
     Serial.println(buffer); // Gib den gelesenen Wert aus
     delay(500); // Warte eine halbe Sekunde
   }
 }
-
 ----
 [%hardbreaks]
 

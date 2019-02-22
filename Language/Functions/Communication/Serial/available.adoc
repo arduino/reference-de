@@ -48,16 +48,15 @@ void setup() {
 }
 
 void loop() {
+  // reply only when you receive data:
+  if (Serial.available() > 0) {
+    // read the incoming byte:
+    incomingByte = Serial.read();
 
-	// reply only when you receive data:
-	if (Serial.available() > 0) {
-		// read the incoming byte:
-		incomingByte = Serial.read();
-
-		// say what you got:
-		Serial.print("I received: ");
-		Serial.println(incomingByte, DEC);
-	}
+    // say what you got:
+    Serial.print("I received: ");
+    Serial.println(incomingByte, DEC);
+  }
 }
 ----
 [%hardbreaks]
@@ -70,7 +69,6 @@ This code sends data received in one serial port of the Arduino Mega to another.
 void setup() {
   Serial.begin(9600);
   Serial1.begin(9600);
-
 }
 
 void loop() {
@@ -78,7 +76,6 @@ void loop() {
   if (Serial.available()) {
     int inByte = Serial.read();
     Serial1.print(inByte, DEC);
-
   }
   // read from port 1, send to port 0:
   if (Serial1.available()) {

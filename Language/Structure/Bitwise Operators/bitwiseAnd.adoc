@@ -49,9 +49,9 @@ In einem Codefragment wie:
 
 [source,arduino]
 ----
-int a =  92;    // Binär: 0000000001011100
-int b = 101;    // Binär: 0000000001100101
-int c = a & b;  // Ergebnis:    0000000001000100, oder 68 dezimal.
+int a =  92;   // Binär: 0000000001011100
+int b = 101;   // Binär: 0000000001100101
+int c = a & b; // Ergebnis: 0000000001000100, oder 68 dezimal.
 ----
 Jedes der 16 Bits in a und b wird unter Verwendung des bitweisen AND verarbeitet, und alle 16 resultierenden Bits werden in c gespeichert.
 Dies führt zu einem binären Wert von 01000100, der als Dezimalzahl 68 ist.

@@ -26,8 +26,8 @@ Dekrementiert den Wert einer Variablen um 1.
 === Syntax
 [source,arduino]
 ----
-x-- ;   // Dekrementiert x um eins und gibt den alten Wert von x zurück
---x ;   // Dekrementiert x um eins und gibt den neuen Wert von x zurück
+x-- ; // Dekrementiert x um eins und gibt den alten Wert von x zurück
+--x ; // Dekrementiert x um eins und gibt den neuen Wert von x zurück
 ----
 
 [float]
@@ -53,8 +53,8 @@ Den ursprünglichen oder den neu dekrementierten Wert der Variablen.
 [source,arduino]
 ----
 x = 2;
-y = --x;      // x enthält jetzt 1, y enthält 1
-y = x--;      // x enthält 0, aber y enthält noch 1
+y = --x; // x enthält jetzt 1, y enthält 1
+y = x--; // x enthält 0, aber y enthält noch 1
 ----
 
 --

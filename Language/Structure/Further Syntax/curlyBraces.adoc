@@ -64,19 +64,16 @@ void myFunction(Datentyp Argument){
 
 [source,arduino]
 ----
-while (Boolean-Ausdruck)
-{
+while (Boolean-Ausdruck) {
    // Beliebige Anweisung(en)
 }
 
-do
-{
-   // Beliebige Anweisung(en)
+do {
+  // Beliebige Anweisung(en)
 } while (Boolean-Ausdruck);
 
-for (Initialisierung; Schlussbedingung; inkrementierender Ausdruck)
-{
-   // Beliebige Anweisung(en)
+for (Initialisierung; Schlussbedingung; inkrementierender Ausdruck) {
+  // Beliebige Anweisung(en)
 }
 ----
 [%hardbreaks]
@@ -89,18 +86,14 @@ for (Initialisierung; Schlussbedingung; inkrementierender Ausdruck)
 
 [source,arduino]
 ----
-if (Boolean-Ausdruck)
-{
-   // Beliebige Anweisung(en)
+if (Boolean-Ausdruck) {
+  // Beliebige Anweisung(en)
 }
-
-else if (Boolean-Ausdruck)
-{
-   // Beliebige Anweisung(en)
+else if (Boolean-Ausdruck) {
+  // Beliebige Anweisung(en)
 }
-else
-{
-   // Beliebige Anweisung(en)
+else {
+  // Beliebige Anweisung(en)
 }
 ----
 [%hardbreaks]

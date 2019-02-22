@@ -58,14 +58,14 @@ Das Programm gibt einen Text zeichenweise aus. Versuche, den Text zu ändern, da
 char myStr[] = "this is a test";
 int i;
 
-void setup(){
+void setup() {
   // Initialisiere seriellen Port
   Serial.begin(9600);
 }
 
 void loop() {
   // Laufe über das Array (den String), egal, wie lange dieser ist
-  for (i = 0; i < sizeof(myStr) - 1; i++){
+  for (i = 0; i < sizeof(myStr) - 1; i++) {
 	// Gib die Zeichennummer als Dezimalzahl aus
     Serial.print(i, DEC);
 	// Gib ein Gleichheitszeichen aus
