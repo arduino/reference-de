@@ -4,12 +4,7 @@ categories: [ "Variables" ]
 subCategories: [ "Data Types" ]
 ---
 
-
-
-
-
 = size_t
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -30,7 +25,7 @@ subCategories: [ "Data Types" ]
 === Parameters
 `var`: variable name +
 `val`: the value to assign to that variable
-
+[%hardbreaks]
 --
 // OVERVIEW SECTION ENDS
 

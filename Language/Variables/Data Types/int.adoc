@@ -4,12 +4,7 @@ categories: [ "Variables" ]
 subCategories: [ "Data Types" ]
 ---
 
-
-
-
-
 = int
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -32,9 +27,11 @@ The Arduino takes care of dealing with negative numbers for you, so that arithme
 === Syntax
 `int var = val;`
 
-`var` - your int variable name +
-`val` - the value you assign to that variable
-
+[float]
+=== Parameters
+`var`: variable name +
+`val`: the value you assign to that variable
+[%hardbreaks]
 --
 // OVERVIEW SECTION ENDS
 
