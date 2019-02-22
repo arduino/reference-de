@@ -4,12 +4,7 @@ categories: [ "Functions" ]
 subCategories: [ "Time" ]
 ---
 
-
-
-
-
 = millis()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -47,7 +42,7 @@ Anzahl der Millisekunden seit dem Programmstart (unsigned long)
 [float]
 === Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-Der Code liest die Millisekunde seit Beginn des Arduino-Boards.
+Der Code liest die Millisekunden seit Beginn des Sketches des Arduino-Boards und gibt diese auf den seriellen Port aus.
 
 [source,arduino]
 ----
@@ -68,9 +63,9 @@ void loop(){
 
 [float]
 === Anmerkungen und Warnungen
-Bitte beachten Sie, dass der Rückgabewert für `millis()` ein unsigned long Wert ist.
-Es können logische Fehler auftreten, wenn ein Programmierer versucht, mit kleineren Datentypen (z. B. ints) zu rechnen.
-Sogar mit Vorzeichen versehene Long-Werte können auf Fehler stoßen, da ihr Maximalwert die Hälfte des vorzeichenlosen Gegenstücks ist.
+Bitte beachte, dass der Rückgabewert für `millis()` ein `unsigned long`-Wert ist.
+Es können logische Fehler auftreten, wenn ein Programmierer versucht, mit kleineren Datentypen (z. B. `int`) zu rechnen.
+Sogar mit Vorzeichen versehene `long`-Werte können auf Fehler stoßen, da ihr Maximalwert die Hälfte des vorzeichenlosen Gegenstücks ist.
 
 --
 // HOW TO USE SECTION ENDS
