@@ -4,12 +4,7 @@ categories: [ "Functions" ]
 subCategories: [ "Math" ]
 ---
 
-
-
-
-
 = pow(base, exponent)
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -53,7 +48,7 @@ Berechnet den Wert von x mit Potenz von y:
 ----
 z = pow(x, y);
 ----
-Siehe auch den (http://arduino.cc/playground/Main/Fscale[fscale]) Sketch für ein komplexeres Beispiel der `map()`-Funktion.
+Siehe auch den (http://arduino.cc/playground/Main/Fscale[fscale]) Sketch für ein komplexeres Beispiel der `pow()`-Funktion.
 [%hardbreaks]
 
 --
