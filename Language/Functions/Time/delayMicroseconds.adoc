@@ -53,7 +53,7 @@ Nichts
 === Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
 Der Code konfiguriert Pin 8 als Ausgangspin. Er sendet eine Impulsfolge von ungefähr 100 Mikrosekunden.
-Die Annäherung beruht auf der Ausführung der anderen Anweisungen im Code. 
+Die Annäherung beruht auf der Ausführung der anderen Anweisungen im Code.
 
 [source,arduino]
 ----

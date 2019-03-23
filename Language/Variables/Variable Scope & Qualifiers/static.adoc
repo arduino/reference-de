@@ -63,7 +63,7 @@ void setup() {
   Serial.begin(9600);
 }
 
-void loop() { 
+void loop() {
   // Initialisiere die Schrittweite
   stepsize = 5;
   // Rufe die randomWalk-Funktion auf und speichere das Ergebnis
@@ -89,7 +89,7 @@ int randomWalk(int moveSize) {
   }
   else if(place > randomWalkHighRange) {
 	// Korrigiere den aktuellen Schritt in die negative Richtung
-    place = randomWalkHighRange - (place - randomWalkHighRange); 
+    place = randomWalkHighRange - (place - randomWalkHighRange);
   }
   // Gib die neue Position zurück
   return place;

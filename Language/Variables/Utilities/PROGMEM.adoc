@@ -49,7 +49,7 @@ mit der Arduino IDE Version 13. Frühere Versionen der IDE arbeiten besser, wenn
 Strings (die auch Arrays sind) und weiteren komplizierteren Datenstrukturen der Fall.
 
 Die Benutzung von `PROGMEM` erfolgt in 2 Schritten. Nachdem die Daten in den Flash-/Programm-Speicher geladen wurden, müssen spezielle Methoden verwendet werden, um diese Variablen
-wieder auszulesen und zu bearbeiten. Diese sind auch in der link:http://www.nongnu.org/avr-libc/user-manual/group\__avr__pgmspace.html[pgmspace.h]-Softwarebibliothek definiert. 
+wieder auszulesen und zu bearbeiten. Diese sind auch in der link:http://www.nongnu.org/avr-libc/user-manual/group\__avr__pgmspace.html[pgmspace.h]-Softwarebibliothek definiert.
 
 --
 // OVERVIEW SECTION ENDS
@@ -88,7 +88,7 @@ void setup() {
     displayInt = pgm_read_word_near(charSet + k); // Lies den charSet-Wert wieder aus dem Flash-/Programm-Speicher
     Serial.println(displayInt); // Gib den gelesenen Wert aus
   }
-  
+
   Serial.println(); // Schreibe eine neue Zeile
 
   // Lies einen Char
@@ -145,8 +145,8 @@ void setup() {
 
 void loop() {
   /* Spezielle Funktionen zum Lesen der Daten sind nötig. "strcpy_P" kopiert den String vom
-     Flash-/Programm-Speicher in dem SRAM/ den Buffer. Stelle sicher, dass der empfangende 
-	 String lang genug ist für den String. 
+     Flash-/Programm-Speicher in dem SRAM/ den Buffer. Stelle sicher, dass der empfangende
+	 String lang genug ist für den String.
   */
 
   // Iteriere über das Array: 6-mal, da 6 Strings im Array sind

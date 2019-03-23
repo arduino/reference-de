@@ -72,7 +72,7 @@ volatile int state = LOW;
 void setup() {
   // Deklariere den Pin als Outputpin
   pinMode(pin, OUTPUT);
-  // Setze einen Interrupt auf Pin 0, wenn 
+  // Setze einen Interrupt auf Pin 0, wenn
   attachInterrupt(digitalPinToInterrupt(2), blink, CHANGE);
 }
 

@@ -18,7 +18,7 @@ subCategories: [ "Comparison Operators" ]
 
 [float]
 === Beschreibung
-Vergleicht die linke Variable mit dem Wert oder der Variablen rechts vom Operator. Gibt `true` zurück, wenn der Operand links kleiner oder gleich dem Operanden rechts ist. 
+Vergleicht die linke Variable mit dem Wert oder der Variablen rechts vom Operator. Gibt `true` zurück, wenn der Operand links kleiner oder gleich dem Operanden rechts ist.
 [%hardbreaks]
 
 
@@ -56,7 +56,7 @@ if (x<=y) { // Prüft, ob x kleiner oder gleich y ist
 
 [float]
 === Anmerkungen und Warnungen
-Negative Zahlen sind kleiner als positive Zahlen. 
+Negative Zahlen sind kleiner als positive Zahlen.
 [%hardbreaks]
 
 --

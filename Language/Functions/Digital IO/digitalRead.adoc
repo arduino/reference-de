@@ -52,7 +52,7 @@ Setzt pin 13 auf den gleichen Wert wie Pin 7, welcher als Eingang definiert ist.
 [source,arduino]
 ----
 int ledPin = 13; // LED verbunden auf Digitalpin 13
-int inPin = 7;   // Button verbunden auf Digitalpin 7 
+int inPin = 7;   // Button verbunden auf Digitalpin 7
 int val = 0;     // Variable, um den gelesenen Wert zu speichern
 
 void setup() {

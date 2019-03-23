@@ -1,7 +1,7 @@
 = Reference-de
 
 Reference-de ist das Repository der Arduino-Programmiersprachen-Referenzdokumentation in **Deutsch**.
-  
+
 Alle Referenz-Dateien existieren im AsciiDoc format.
 
 Danke, dass du die Zeit findest, zum Arduino-Projekt beizutragen. Das hilft der ganzen Arduino Community sehr weiter. Wenn du mehr lesen willst, wie du deinen Beitrag leisten kannst, sieh dir https://create.arduino.cc/projecthub/Arduino_Genuino/contribute-to-the-arduino-reference-af7c37[dieses Schritt-für-Schritt-Tutorial] an.

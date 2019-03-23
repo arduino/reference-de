@@ -49,7 +49,7 @@ Nichts
 [float]
 === Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-Der Code generiert eine Pseudo-Zufallszahl und sendet die erzeugte Nummer an die serielle Schnittstelle. 
+Der Code generiert eine Pseudo-Zufallszahl und sendet die erzeugte Nummer an die serielle Schnittstelle.
 
 [source,arduino]
 ----

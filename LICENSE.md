@@ -7,7 +7,7 @@ Namensnennung - Weitergabe unter gleichen Bedingungen 3.0 Deutschland
 	MANDATSVERHÄLTNIS. CREATIVE COMMONS STELLT DIESE INFORMATIONEN
 	OHNE GEWÄHR ZUR VERFÜGUNG. CREATIVE COMMONS ÜBERNIMMT KEINE
 	GEWÄHRLEISTUNG FÜR DIE GELIEFERTEN INFORMATIONEN UND SCHLIEßT
-	DIE HAFTUNG FÜR SCHÄDEN AUS, DIE SICH AUS DEREN GEBRAUCH ERGEBEN. 
+	DIE HAFTUNG FÜR SCHÄDEN AUS, DIE SICH AUS DEREN GEBRAUCH ERGEBEN.
 
 Lizenz
 
@@ -18,7 +18,7 @@ Lizenz
 	GESETZE GESCHÜTZT. JEDE FORM DER NUTZUNG DES SCHUTZGEGENSTANDES,
 	DIE NICHT AUFGRUND DIESER LIZENZ ODER DURCH GESETZE GESTATTET IST,
 	IST UNZULÄSSIG.
-	
+
 	DURCH DIE AUSÜBUNG EINES DURCH DIESE LIZENZ GEWÄHRTEN RECHTS AN DEM
 	SCHUTZGEGENSTAND ERKLÄREN SIE SICH MIT DEN LIZENZBEDINGUNGEN
 	RECHTSVERBINDLICH EINVERSTANDEN. SOWEIT DIESE LIZENZ ALS
@@ -47,7 +47,7 @@ Lizenz
  c. "Verbreiten" im Sinne dieser Lizenz bedeutet, den Schutzgegenstand
     oder Abwandlungen im Original oder in Form von
 	Vervielfältigungsstücken, mithin in körperlich fixierter Form der
-	Öffentlichkeit anzubieten oder in Verkehr zu bringen. 
+	Öffentlichkeit anzubieten oder in Verkehr zu bringen.
  d. Unter "Lizenzelementen" werden im Sinne dieser Lizenz die folgenden
     übergeordneten Lizenzcharakteristika verstanden, die vom Lizenzgeber
     ausgewählt wurden und in der Bezeichnung der Lizenz zum Ausdruck
@@ -104,9 +104,9 @@ Lizenz
 	und die durch Creative Commons als grundsätzlich zur vorliegenden
 	Lizenz äquivalent akzeptiert wurde, da zumindest folgende
 	Voraussetzungen erfüllt sind:
-	
+
 	Diese mit Creative Commons kompatible Lizenz
-	
+
 	i.  enthält Bestimmungen, welche die gleichen Ziele verfolgen, die
 	    gleiche Bedeutung haben und die gleichen Wirkungen erzeugen wie
 		die Lizenzelemente der vorliegenden Lizenz; und
@@ -234,7 +234,7 @@ Lizenz
 	Dieser Abschnitt 4.b) gilt auch für den Fall, dass die Abwandlung
 	einen Bestandteil eines Sammelwerkes bildet, was jedoch nicht
 	bedeutet, dass das Sammelwerk insgesamt der verwendbaren Lizenz
-	unterstellt werden muss. 
+	unterstellt werden muss.
  c. Die Verbreitung und das öffentliche Zeigen des Schutzgegenstandes
     oder auf ihm aufbauender Abwandlungen oder ihn enthaltender
 	Sammelwerke ist Ihnen nur unter der Bedingung gestattet, dass Sie,

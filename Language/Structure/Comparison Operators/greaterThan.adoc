@@ -18,7 +18,7 @@ subCategories: [ "Comparison Operators" ]
 
 [float]
 === Beschreibung
-Vergleicht die linke Variable mit dem Wert oder der Variablen rechts vom Operator. Gibt `true` zurück, wenn der linke Operand größer ist als der rechte Operand. 
+Vergleicht die linke Variable mit dem Wert oder der Variablen rechts vom Operator. Gibt `true` zurück, wenn der linke Operand größer ist als der rechte Operand.
 [%hardbreaks]
 
 
