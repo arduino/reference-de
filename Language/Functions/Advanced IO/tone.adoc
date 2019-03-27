@@ -80,7 +80,7 @@ Wenn du verschiedene Töne auf mehreren Pins spielen willst, musst du zunächst 
 
 [role="example"]
 * #EXAMPLE# http://arduino.cc/en/Tutorial/Tone[Töne^]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/Tone[Tonleiter^]
+* #EXAMPLE# http://arduino.cc/en/Tutorial/tonePitchFollower[Tonleiter^]
 * #EXAMPLE# http://arduino.cc/en/Tutorial/Tone3[Einfaches Keyboard^]
 * #EXAMPLE# http://arduino.cc/en/Tutorial/Tone4[Mehrere Töne^]
 * #EXAMPLE# http://arduino.cc/en/Tutorial/PWM[PWM^]
