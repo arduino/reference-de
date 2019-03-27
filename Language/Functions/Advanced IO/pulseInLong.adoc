@@ -33,7 +33,7 @@ Das Timing der Funktion wurde empirisch getestet und wird vermutlich bei länger
 === Parameter
 `pin`: Die Pinnummer, an der der Stromstoß gelesen werden soll. (int)
 
-`value`: Welche Art von Stromstoß gelesen werden soll: Entweder link:../../../variables/constants/constants/[HIGH] oder link:../../../variables/constants/constants/[LOW]. (int) 
+`value`: Welche Art von Stromstoß gelesen werden soll: Entweder link:../../../variables/constants/constants/[HIGH] oder link:../../../variables/constants/constants/[LOW]. (int)
 
 `timeout` (optional): Die Anzahl an Mikrosekunden, die gewartet werden soll, bis ein Stromstoß gemessen wurde; Default-Wert ist eine Sekunde (unsigned long)
 [float]
@@ -74,7 +74,7 @@ void loop() {
 
 [float]
 === Anmerkungen und Warnungen
-Diese Funktion verlässt sich auf `micros()` und kann somit in link:../../interrupts/nointerrupts[noInterrupts()] Kontexten nicht verwendet werden. 
+Diese Funktion verlässt sich auf `micros()` und kann somit in link:../../interrupts/nointerrupts[noInterrupts()] Kontexten nicht verwendet werden.
 
 --
 // HOW TO USE SECTION ENDS

@@ -14,7 +14,7 @@ title: Keyboard.release()
 
 [float]
 === Beschreibung
-Löst die mit link:../keyboardpress[Keyboard.press()] zuvor gedrückte Taste. 
+Löst die mit link:../keyboardpress[Keyboard.press()] zuvor gedrückte Taste.
 [%hardbreaks]
 
 

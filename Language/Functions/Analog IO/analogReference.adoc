@@ -20,7 +20,7 @@ subCategories: [ "Analog I/O" ]
 Konfiguriert die Referenzspannung, die für analoge Eingabe-Pins genutzt wird (z.B. Der maximal Wert der Eingangsspannung). Dabei sind die folgenden Optionen verfügbar:
 
 * DEFAULT: Default analoge Einstellung (5 V für 5 V-Arduino; 3,3 V für 3,3 V-Arduinos)
-* INTERNAL: Eingebaute Referenz; Festgelegt auf 1,1 V auf dem ATmega168 oder ATmega328P und 2,56 V auf dem ATmega8 (Nicht verfügbar auf dem Arduino Mega) 
+* INTERNAL: Eingebaute Referenz; Festgelegt auf 1,1 V auf dem ATmega168 oder ATmega328P und 2,56 V auf dem ATmega8 (Nicht verfügbar auf dem Arduino Mega)
 * INTERNAL1V1: Eingebaute Referenz; 1,1 V (Nur Arduino Mega)
 * INTERNAL2V56: Eingebaute Referenz; 2,56 V (Nur Arduino Mega)
 * EXTERNAL: Die Spannung, die auf dem AREF-Pin (nur 0 bis 5 V) angelegt ist, wird als Referenz verwendet.
