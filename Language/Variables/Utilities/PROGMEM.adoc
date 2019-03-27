@@ -69,10 +69,10 @@ Das folgende Code-Fragment zeigt, wie ein unsigned chars (bytes) und ints (2 byt
 [source,arduino]
 ----
 // Speichere einige unsigned ints
-const PROGMEM  uint16_t charSet[]  = { 65000, 32796, 16843, 10, 11234};
+const PROGMEM uint16_t charSet[] = { 65000, 32796, 16843, 10, 11234};
 
 // Speichere einen String
-const char signMessage[] PROGMEM  = { "I AM PREDATOR, UNSEEN COMBATANT. CREATED BY THE UNITED STATES DEPART"};
+const char signMessage[] PROGMEM = {"I AM PREDATOR, UNSEEN COMBATANT. CREATED BY THE UNITED STATES DEPART"};
 
 unsigned int displayInt; // Rückgabewert der Funktion zum Auslesen der Daten
 char myChar; // Definiere einen Char, um diesen zu bearbeiten
@@ -92,7 +92,7 @@ void setup() {
 
   // Lies einen Char
   for (byte k = 0; k < strlen_P(signMessage); k++) {
-    myChar =  pgm_read_byte_near(signMessage + k); // Lies den signMessage-Wert wieder aus dem Flash-/Programm-Speicher
+    myChar = pgm_read_byte_near(signMessage + k); // Lies den signMessage-Wert wieder aus dem Flash-/Programm-Speicher
     Serial.print(myChar); // Gib den gelesenen Wert aus
   }
 
