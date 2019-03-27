@@ -58,7 +58,7 @@ Der Code schreibt die Werte von 0 bis 255 auf den LED-Pin, aber überspringt Wer
 [source,arduino]
 ----
 // Iteriere über die Werte von 0 bis 255
-for (x = 0; x <= 255; x ++) {
+for (int x = 0; x <= 255; x ++) {
   // Springe bei den Werten zwischen 40 und 120 weiter
   if (x > 40 && x < 120){
     continue;
