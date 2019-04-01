@@ -71,7 +71,7 @@ void loop() {
 Während es einfach ist, eine blinkende LED mit der Funktion `delay()` zu erstellen, und viele Sketchn kurze Verzögerungen für Aufgaben wie das Entprellen des Switches verwenden,
 hat die Verwendung von `delay()` in einem Sketch erhebliche Nachteile.
 Während der Verzögerungsfunktion kann kein anderes Lesen von Sensoren, mathematischen Berechnungen oder Pin-Manipulationen durchgeführt werden, sodass die meisten anderen Aktivitäten zum Erliegen kommen.
-Für alternative Ansätze zum Steuern des Timings siehe den link: http://arduino.cc/de/Tutorial/BlinkWithoutDelay[Blinken ohne Verzögerung]-Sketch, welcher über Schleifen die Funktion link:../millis[millis(millis()) abfrägt, bis genügend Zeit vergangen ist.
+Für alternative Ansätze zum Steuern des Timings siehe den link:http://arduino.cc/de/Tutorial/BlinkWithoutDelay[Blinken ohne Verzögerung]-Sketch, welcher über Schleifen die Funktion link:../millis[millis()] abfrägt, bis genügend Zeit vergangen ist.
 Erfahrene Programmierer vermeiden normalerweise die Verwendung von `delay()` für das Timing von Ereignissen, die länger als 10 Millisekunden sind, es sei denn, der Arduino-Sketch ist sehr einfach.
 
 Bestimmte Dinge laufen jedoch weiter, während die `delay()`-Funktion den Atmega-Chip steuert, da die `delay()`-Funktion Interrupts nicht deaktiviert.
