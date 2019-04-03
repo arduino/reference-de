@@ -4,12 +4,7 @@ categories: [ "Functions" ]
 subCategories: [ "External Interrupts" ]
 ---
 
-
-
-
-
 = attachInterrupt()
-
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -77,8 +72,7 @@ Für weitere Informationen zu Interrupts, siehe auch http://gammon.com.au/interr
 === Syntax
 `attachInterrupt(digitalPinToInterrupt(pin), ISR, mode);`	(Empfohlen) +
 `attachInterrupt(interrupt, ISR, mode);`	(Nicht empfohlen) +
-`attachInterrupt(pin, ISR, mode);`	(Nicht empfohlen; Nur Arduino-SAMD-Boards, Uno WiFi Rev2, Due, 101)
-
+`attachInterrupt(pin, ISR, mode);`	(Nicht empfohlen; Funktioniert nur auf Arduino SAMD-, Uno WiFi Rev2-, Due- und 101-Boards.)
 
 [float]
 === Parameter
