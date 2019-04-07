@@ -98,6 +98,6 @@ Wenn der analoge Pin nicht verbunden ist, wird der zurückgegebene Wert schwanke
 
 [role="language"]
 * #LANGUAGE# link:../../zero-due-mkr-family/analogreadresolution[analogReadResolution()]
-* #LANGUAGE# https://www.arduino.cc/en/Tutorial/AnalogInputPins[Tutorial: Analoge Eingangspins^]
+* #EXAMPLE# https://www.arduino.cc/en/Tutorial/AnalogInputPins[Beschreibung der analogen Eingangspins^]
 --
 // SEE ALSO SECTION ENDS
