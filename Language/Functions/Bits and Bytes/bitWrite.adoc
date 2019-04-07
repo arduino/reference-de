@@ -41,6 +41,29 @@ Nichts
 --
 // OVERVIEW SECTION ENDS
 
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+[float]
+=== Beispielcode
+Demonstriert die Verwendung von `bitWrite`, indem der Wert einer Variablen vor und nach der Verwendung von `bitWrite()` auf dem seriellen Monitor geschrieben wird.
+
+[source,arduino]
+void setup() {
+  Serial.begin(9600);
+  while (!Serial) {}  // Warten, bis die serielle Schnittstelle verbunden ist. Wird nur für den nativen USB-Anschluss benötigt
+  byte x = 0b10000000;  // Das 0b-Präfix gibt eine binäre Konstante an
+  Serial.println(x, BIN); // 10000000
+  bitWrite(x, 0, 1);  // Schreibe 1 auf das niedrigstwertige Bit von x
+  Serial.println(x, BIN); // 10000001
+}
+
+void loop() {}
+----
+[%hardbreaks]
+--
+// HOW TO USE SECTION ENDS
 
 // SEE ALSO SECTION
 [#see_also]
