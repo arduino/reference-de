@@ -76,7 +76,7 @@ Wenn du verschiedene Töne auf mehreren Pins spielen willst, musst du zunächst 
 === Siehe auch
 
 [role="language"]
-* #LANGUAGE# link:../Analog%20IO/analogWrite.adoc[analogWrite()]
+* #SPRACHE# link:../Analog%20IO/analogWrite.adoc[analogWrite()]
 
 [role="example"]
 * #BEISPIEL# http://arduino.cc/en/Tutorial/Tone[Töne^]

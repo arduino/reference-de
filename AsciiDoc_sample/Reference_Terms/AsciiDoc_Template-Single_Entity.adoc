@@ -106,9 +106,9 @@ image::http://arduino.cc/en/uploads/Main/ArduinoUno_R3_Front_450px.jpg[caption="
 
 [float]
 === See also
-// Link relevant content by category, such as other Reference terms (please add the tag #LANGUAGE#),
+// Link relevant content by category, such as other Reference terms (please add the tag #SPRACHE#),
 // definitions: (please add the tag #DEFINITION#), and examples of Projects and Tutorials
-// examples: (please add the tag #EXAMPLE#)
+// examples: (please add the tag #BEISPIEL#)
 
 
 [role="language"]
@@ -119,8 +119,8 @@ image::http://arduino.cc/en/uploads/Main/ArduinoUno_R3_Front_450px.jpg[caption="
 // For language tag, items will be automatically generated for any other item of the same subcategory,
 // no need to add links to other pages of the same subcategory
 // if you don't include this section, a minimal version with only the other pages of the same subcategory will be generated.
-* #LANGUAGE# link:../AsciiDoc_Template-Parent_Of_Entities[Parent Of Entities]
-* #LANGUAGE# link:../../AsciiDoc_Dictionary/AsciiDoc_Template-Dictionary[AsciiDoc Template Dictionary]
+* #SPRACHE# link:../AsciiDoc_Template-Parent_Of_Entities[Parent Of Entities]
+* #SPRACHE# link:../../AsciiDoc_Dictionary/AsciiDoc_Template-Dictionary[AsciiDoc Template Dictionary]
 
 [role="definition"]
 // Please note that all external links need to be opened in a new window/tab by adding ^ right before the last square brackets
@@ -128,7 +128,7 @@ image::http://arduino.cc/en/uploads/Main/ArduinoUno_R3_Front_450px.jpg[caption="
 
 [role="example"]
 // Please note that all external links need to be opened in a new window/tab by adding ^ right before the last square brackets
-* #EXAMPLE# http://arduino.cc/en/Tutorial/Blink[Blink^]
+* #BEISPIEL# http://arduino.cc/en/Tutorial/Blink[Blink^]
 
 --
 // SEE ALSO SECTION ENDS

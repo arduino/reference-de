@@ -78,7 +78,7 @@ Nothing
 === See also
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/SerialEvent[Serial Event Tutorial^]
+* #BEISPIEL# http://arduino.cc/en/Tutorial/SerialEvent[Serial Event Tutorial^]
 
 [role="language"]
 * #SPRACHE# link:../begin[begin()]

@@ -42,7 +42,7 @@ Während die Variable gelesen wird, müssen Interrupts deaktiviert werden, sodas
 
 Es gibt mehrere Möglichkeiten, das zu tun:
 
-1. #LANGUAGE# link:../../../functions/interrupts/nointerrupts[noInterrupts]
+1. #SPRACHE# link:../../../functions/interrupts/nointerrupts[noInterrupts]
 
 2. Das ATOMIC_BLOCK-Makro. Atomare Operationen sind einzelne MCU-Operationen-Die kleinste mögliche Einheit.
 

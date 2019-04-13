@@ -67,8 +67,8 @@ void loop() {
 === Siehe auch
 
 [role="language"]
-* #LANGUAGE# link:../../external-interrupts/attachinterrupt[attachInterrupts()]
-* #LANGUAGE# link:../../external-interrupts/detachinterrupt[detachInterrupts()]
+* #SPRACHE# link:../../external-interrupts/attachinterrupt[attachInterrupts()]
+* #SPRACHE# link:../../external-interrupts/detachinterrupt[detachInterrupts()]
 
 --
 // SEE ALSO SECTION ENDS
