@@ -1,52 +1,61 @@
 ---
-title: Parent of Entity Title
+title: Übergeordneter Titel der Entität
 categories: [ "Functions" ]
-subCategories: [ "Subcategory Name" ]
+subCategories: [ "Name der Unterkategorie" ]
 ---
-// ARDUINO LANGUAGE REFERENCE TAG (above)   ►►►►► ALWAYS INCLUDE IN YOUR FILE ◄◄◄◄◄
-// title will show up in the Index of all Reference terms
-// categories: Pick between Structure, Variable or Function
-// The subcategory within the ones available in the index ("Digital I/O", "Arithmetic Operators")
+// ARDUINO SPRACHE REFERENCE TAG (oben)   ►►►►► IMMER IN DIE DATEI EINFÜGEN ◄◄◄◄◄
+// Titel wird im Index aller Referenzbegriffe angezeigt
+// Kategorien: Wähle zwischen `Structure`, `Variable` oder `Function`
+// Die Unterkategorie innerhalb der im Index verfügbaren ("Digital I/O", "Arithmetic Operators")
 
 
 
 
 
-// PAGE TITLE   ►►►►► THIS IS MANDATORY ◄◄◄◄◄
-= Parent of Entities title()
+// SEITENTITEL   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
+= Übergeordneter Titel der Entität()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT BEGINNT
 [#overview]
 --
 
 [float]
-=== Description
-// Describe what this group of Reference terms is used for, -- THIS SECTION IS MANDATORY --
-Used for communication between the Arduino board and a computer or other devices. All Arduino boards have at least one serial port (also known as a UART or USART): Serial. It communicates on digital pins 0 (RX) and 1 (TX) as well as with the computer via USB. Thus, if you use these functions, you cannot also use pins 0 and 1 for digital input or output. +
-You can use the Arduino environment's built-in serial monitor to communicate with an Arduino board. Click the serial monitor button in the toolbar and select the same baud rate used in the call to `begin()`.
+=== Beschreibung
+// Beschreiben, wofür diese Gruppe von Referenzbegriffen verwendet wird. ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
+Wird für die Kommunikation zwischen dem Arduino-Board und einem Computer oder underen Geräten verwendet. Alle Arduino-Karten haben mindestens eine serielle Schnittstelle (auch UART oder USART genannt): Seriell.
+Der Arduino kommuniziert über die digitalen Pins 0 (RX) und 1 (TX) sowie mit dem Computer über USB. Wenn diese Funktionen verwendet werden, können daher nicht die Pins 0 und 1 für die digitale Eingabe oder
+Ausgabe verwendet werden. +
+Du kannst den eingebauten seriellen Monitor der Arduino-Umgebung verwenden, um mit einem Arduino-Board zu kommunizieren. Klicke in der Symbolleiste auf die Schaltfläche für den seriellen Monitor,
+und wähle dieselbe Baudrate aus, die für den Aufruf von `begin ()` verwendet wurde.
 [%hardbreaks]
-The *Arduino Mega* has three additional serial ports: `Serial1` on pins 19 (RX) and 18 (TX), `Serial2` on pins 17 (RX) and 16 (TX), `Serial3` on pins 15 (RX) and 14 (TX). To use these pins to communicate with your personal computer, you will need an additional USB-to-serial adaptor, as they are not connected to the Mega's USB-to-serial adaptor. To use them to communicate with an external TTL serial device, connect the TX pin to your device's RX pin, the RX to your device's TX pin, and the ground of your Mega to your device's ground. (Don't connect these pins directly to an RS232 serial port; they operate at +/- 12V and can damage your Arduino board.)
+Der *Arduino Mega* hat drei zusätzliche serielle Ports: `Seriell1` auf den Pins 19 (RX) und 18 (TX), `Seriell2` auf den Pins 17 (RX) und 16 (TX), `Seriall3` auf den Pins 15 (RX) und 14 (TX).
+Um diese Pins für die Kommunikation mit dem PC zu verwenden, benötigst du einen zusätzlichen USB-zu-Seriell-Adapter, da sie nicht an den USB-an-Seriell-Adapter des Mega angeschlossen sind.
+Um mit einem externen seriellen TTL-Gerät zu kommunizieren, verbinde den TX-Pin mit dem RX-Pin des Geräts, den RX mit dem TX-Pin des Geräts und die Masse des Mega mit der Masse des Geräts.
+(Verbinde diese Pins nicht direkt mit einer seriellen RS232-Schnittstelle. Diese arbeiten mit +/- 12 V und können das Arduino-Board beschädigen.)
 [%hardbreaks]
-The *Arduino DUE* has three additional 3.3V TTL serial ports: `Serial1` on pins 19 (RX) and 18 (TX); `Serial2` on pins 17 (RX) and 16 (TX), `Serial3` on pins 15 (RX) and 14 (TX). Pins 0 and 1 are also connected to the corresponding pins of the ATmega16U2 USB-to-TTL Serial chip, which is connected to the USB debug port. Additionally, there is a native USB-serial port on the SAM3X chip, SerialUSB'.
+Der *Arduino DUE* verfügt über drei zusätzliche serielle 3.3V-TTL-Ports: `Seriall1` auf den Pins 19 (RX) und 18 (TX); `Seriell2` auf den Pins 17 (RX) und 16 (TX), `Seriall3` auf den Pins 15 (RX) und 14 (TX).
+Die Pins 0 und 1 sind auch mit den entsprechenden Pins des seriellen ATmega16U2-USB-zu-TTL-Chips verbunden, der mit dem USB-Debug-Port verbunden ist.
+Zusätzlich gibt es einen nativen seriellen USB-Port auf dem SAM3X chip (SerialUSB).
 [%hardbreaks]
-The *Arduino Leonardo* board uses `Serial1` to communicate via TTL (5V) serial on pins 0 (RX) and 1 (TX). `Serial` is reserved for USB CDC communication. For more information, refer to the Leonardo getting started page and hardware page.
+Das *Arduino Leonardo* Board benutzt `Seriall1` zur Kommunikation über TTL (5V) seriell auf den Pins 0 (RX) und 1 (TX). `Seriell1` ist für die USB-CDC-Kommunikation reserviert.
+Weitere Informationen findest du auf der Leonardo-Einführungsseite und der Hardware-Seite.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// FUNCTIONS SECTION STARTS
+// FUNKTIONSABSCHNITT STARTET
 [#functions]
 --
 
 '''
 
 [float]
-=== Functions
-// List all the functions within this Reference parent, ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Funktionen
+// Auflisten aller Funktionen in diesem Referenz-übergeordneten Element. ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
 http://arduino.cc[if] (Serial) +
 http://arduino.cc[available()] +
 http://arduino.cc[begin()] +
@@ -69,35 +78,35 @@ http://arduino.cc[serialEvent()]
 '''
 
 --
-// FUNCTIONS SECTION ENDS
+// FUNKTIONSABSCHNITT ENDET
 
 
-// SEE ALSO SECTION STARTS
+// SIEHE-AUCH-ABSCHNITT STARTET
 [#seealso]
 --
 
 [float]
-=== See also
-// Link relevant content by category, such as other Reference terms (please add the tag #SPRACHE#),
-// definitions (please add the tag #DEFINITION#), and examples of Projects and Tutorials
-// (please add the tag #BEISPIEL#)  ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Siehe auch
+// Verknüpfe relevanten Inhalt nach Kategorie, z. B. andere Referenzbegriffe (Bitte füge den Tag #SPRACHE# hinzu).
+// Für Definitionen bitte das Tag #DEFINITION# hinzufügen und für Beispiele für Projekte und Tutorials
+// das Tag #BEISPIEL# hinzufügen. ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
 
 
 [role="language"]
-// Whenever you want to link to another Reference term, or more in general to a relative link,
-// use the syntax shown below. Please note that the file format is subsituted by  attribute.
-// Please note that you always need to replace spaces that you might find in folder/file names with %20
-// The entire link to Reference pages must be lower case, regardless of the case of the folders and files in this repository.
-* #SPRACHE# link:../AsciiDoc_Template-Single_Entity[Single Entity]
-* #SPRACHE# link:../../AsciiDoc_Dictionary/AsciiDoc_Template-Dictionary[AsciiDoc Template Dictionary]
+// Wenn du eine Verknüpfung zu einem anderen Referenzbegriff oder allgemein zu einer relativen Verknüpfung herstellen möchtest, verwende die unten gezeigte Syntax.
+// Bitte beachte, dass das Dateiformat nach Attributen subsitiert wird.
+// Bitte beachte, dass Leerzeichen, die in Ordner-/Dateinamen gefunden werden, immer durch %20 ersetzt werden müssen.
+// Der gesamte Link zu den Referenzseiten muss unabhängig von den Ordnern und Dateien in diesem Repository klein geschrieben werden.
+* #SPRACHE# link:../AsciiDoc_Template-Single_Entity[Einzelne Einheit]
+* #SPRACHE# link:../../AsciiDoc_Dictionary/AsciiDoc_Template-Dictionary[AsciiDoc Vorlagen]
 
 [role="definition"]
-// Please note that all external links need to be opened in a new window/tab by adding ^ right before the last square brackets
+// Bitte beachte, dass alle externen Links in einem neuen Fenster/Tab geöffnet werden müssen, indem ^ vor den letzten eckigen Klammern hinzugefügt wird
 * #DEFINITION# http://arduino.cc/en/Tutorial/PWM[PWM^]
 
 [role="example"]
-// Please note that all external links need to be opened in a new window/tab by adding ^ right before the last square brackets
+// Bitte beachte, dass alle externen Links in einem neuen Fenster/Tab geöffnet werden müssen, indem ^ vor den letzten eckigen Klammern hinzugefügt wird
 * #BEISPIEL# http://arduino.cc/en/Tutorial/Blink[Blink^]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT ENDET
