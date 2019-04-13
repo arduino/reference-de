@@ -55,6 +55,6 @@ Tests whether or not a String starts with the characters of another String.
 === See also
 
 [role="example"]
-* #EXAMPLE# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
 --
 // SEE ALSO SECTION ENDS

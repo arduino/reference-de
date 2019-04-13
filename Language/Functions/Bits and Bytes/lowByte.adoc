@@ -45,7 +45,7 @@ Das geforderte Byte (byte)
 === Siehe auch
 
 [role="language"]
-* #LANGUAGE# link:../../../variables/data-types/word[word()]
+* #SPRACHE# link:../../../variables/data-types/word[word()]
 
 --
 // SEE ALSO SECTION ENDS

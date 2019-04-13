@@ -80,7 +80,7 @@ When signed variables are made to exceed their maximum or minimum capacity they 
 === See also
 
 [role="language"]
-* #LANGUAGE# link:../../constants/integerconstants[Integer Constants]
+* #SPRACHE# link:../../constants/integerconstants[Integer Constants]
 
 --
 // SEE ALSO SECTION ENDS

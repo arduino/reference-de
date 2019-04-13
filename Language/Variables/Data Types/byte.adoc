@@ -47,7 +47,7 @@ A byte stores an 8-bit unsigned number, from 0 to 255.
 === See also
 
 [role="language"]
-* #LANGUAGE# link:../../conversion/bytecast[byte()]
+* #SPRACHE# link:../../conversion/bytecast[byte()]
 
 --
 // SEE ALSO SECTION ENDS

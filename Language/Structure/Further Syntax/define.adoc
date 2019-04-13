@@ -90,8 +90,8 @@ Wenn ein Gleichheitszeichen nach der Anweisung #define einfügt wird, wird ebenf
 === Siehe auch
 
 [role="language"]
-* #LANGUAGE#	link:../../../variables/variable-scope\--qualifiers/const[const]
-* #LANGUAGE#	link:../../../variables/constants/constants[Konstanten]
+* #SPRACHE#	link:../../../variables/variable-scope\--qualifiers/const[const]
+* #SPRACHE#	link:../../../variables/constants/constants[Konstanten]
 
 --
 // SEE ALSO SECTION ENDS

@@ -96,7 +96,7 @@ For a complete program that demonstrates the use of arrays, see the (http://www.
 === See also
 
 [role="language"]
-* #LANGUAGE# link:../../utilities/progmem[PROGMEM]
+* #SPRACHE# link:../../utilities/progmem[PROGMEM]
 
 
 --

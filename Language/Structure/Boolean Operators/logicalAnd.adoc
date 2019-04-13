@@ -58,7 +58,7 @@ Stelle sicher, dass der booleschen AND-Operator && (doppeltes kaufmännisches Un
 === Siehe auch
 
 [role="language"]
-* #LANGUAGE# link:../../bitwise-operators/bitwiseand[& (Bitweises UND)]
+* #SPRACHE# link:../../bitwise-operators/bitwiseand[& (Bitweises UND)]
 
 --
 // SEE ALSO SECTION ENDS

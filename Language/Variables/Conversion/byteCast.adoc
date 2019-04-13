@@ -47,7 +47,7 @@ Konvertiert einen Wert in den link:../../data-types/byte[byte]-Datentyp.
 === Siehe auch
 
 [role="language"]
-* #LANGUAGE# link:../../data-types/byte[byte]
+* #SPRACHE# link:../../data-types/byte[byte]
 
 --
 // SEE ALSO SECTION ENDS

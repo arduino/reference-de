@@ -90,7 +90,7 @@ Auch link:../../external-interrupts/attachinterrupt[Interrupts] funktionieren wi
 === Siehe auch
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blinken ohne Verzögerung^]
+* #BEISPIEL# http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blinken ohne Verzögerung^]
 
 --
 // SEE ALSO SECTION ENDS

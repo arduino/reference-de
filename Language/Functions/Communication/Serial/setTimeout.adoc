@@ -66,8 +66,8 @@ Serial functions that use the timeout value set via `_Serial_.setTimeout()`:
 === See also
 
 [role="language"]
-* #LANGUAGE# link:../../stream[stream]
-* #LANGUAGE# link:../../stream/streamsettimeout[stream.setTimeout()]
+* #SPRACHE# link:../../stream[stream]
+* #SPRACHE# link:../../stream/streamsettimeout[stream.setTimeout()]
 
 --
 // SEE ALSO SECTION ENDS

@@ -46,8 +46,8 @@ Den Sinus des Winkels (`double`).
 === Siehe auch
 
 [role="language"]
-* #LANGUAGE# link:../../../variables/data-types/float[float]
-* #LANGUAGE# link:../../../variables/data-types/double[double]
+* #SPRACHE# link:../../../variables/data-types/float[float]
+* #SPRACHE# link:../../../variables/data-types/double[double]
 
 --
 // SEE ALSO SECTION ENDS

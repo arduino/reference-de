@@ -77,12 +77,12 @@ void loop() {
 === Siehe auch
 
 [role="language"]
-* #LANGUAGE# link:../mouseclick[Mouse.click()]
-* #LANGUAGE# link:../mouseend[Mouse.end()]
-* #LANGUAGE# link:../mousemove[Mouse.move()]
-* #LANGUAGE# link:../mousepress[Mouse.press()]
-* #LANGUAGE# link:../mouserelease[Mouse.release()]
-* #LANGUAGE# link:../mouseispressed[Mouse.isPressed()]
+* #SPRACHE# link:../mouseclick[Mouse.click()]
+* #SPRACHE# link:../mouseend[Mouse.end()]
+* #SPRACHE# link:../mousemove[Mouse.move()]
+* #SPRACHE# link:../mousepress[Mouse.press()]
+* #SPRACHE# link:../mouserelease[Mouse.release()]
+* #SPRACHE# link:../mouseispressed[Mouse.isPressed()]
 
 --
 // SEE ALSO SECTION ENDS

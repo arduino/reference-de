@@ -45,16 +45,16 @@ Nothing
 === See also
 
 [role="language"]
-* #LANGUAGE# link:../begin[begin()]
-* #LANGUAGE# link:../end[end()]
-* #LANGUAGE# link:../available[available()]
-* #LANGUAGE# link:../read[read()]
-* #LANGUAGE# link:../peek[peek()]
-* #LANGUAGE# link:../print[print()]
-* #LANGUAGE# link:../println[println()]
-* #LANGUAGE# link:../write[write()]
-* #LANGUAGE# link:../serialevent[SerialEvent()]
-* #LANGUAGE# link:../../stream/streamflush[stream.flush()]
+* #SPRACHE# link:../begin[begin()]
+* #SPRACHE# link:../end[end()]
+* #SPRACHE# link:../available[available()]
+* #SPRACHE# link:../read[read()]
+* #SPRACHE# link:../peek[peek()]
+* #SPRACHE# link:../print[print()]
+* #SPRACHE# link:../println[println()]
+* #SPRACHE# link:../write[write()]
+* #SPRACHE# link:../serialevent[SerialEvent()]
+* #SPRACHE# link:../../stream/streamflush[stream.flush()]
 
 --
 // SEE ALSO SECTION ENDS

@@ -63,10 +63,10 @@ sensVal = analogRead(0);  // Speichern der (digitalisierten) Eingangsspannung am
 === Siehe auch
 
 [role="language"]
-* #LANGUAGE#  link:../../control-structure/if[if (conditional operators)]
-* #LANGUAGE#  link:../../../variables/data-types/char[char]
-* #LANGUAGE#  link:../../../variables/data-types/int[int]
-* #LANGUAGE#  link:../../../variables/data-types/long[long]
+* #SPRACHE#  link:../../control-structure/if[if (conditional operators)]
+* #SPRACHE#  link:../../../variables/data-types/char[char]
+* #SPRACHE#  link:../../../variables/data-types/int[int]
+* #SPRACHE#  link:../../../variables/data-types/long[long]
 
 --
 // SEE ALSO SECTION ENDS

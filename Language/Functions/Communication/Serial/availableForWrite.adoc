@@ -42,16 +42,16 @@ The number of bytes available to write.
 === See also
 
 [role="language"]
-* #LANGUAGE# link:../begin[begin()] +
-* #LANGUAGE# link:../end[end()] +
-* #LANGUAGE# link:../read[read()] +
-* #LANGUAGE# link:../peek[peek()] +
-* #LANGUAGE# link:../flush[flush()] +
-* #LANGUAGE# link:../print[print()] +
-* #LANGUAGE# link:../println[println()] +
-* #LANGUAGE# link:../write[write()] +
-* #LANGUAGE# link:../serialevent[SerialEvent()] +
-* #LANGUAGE# link:../../stream/streamavailable[Stream.available()]
+* #SPRACHE# link:../begin[begin()] +
+* #SPRACHE# link:../end[end()] +
+* #SPRACHE# link:../read[read()] +
+* #SPRACHE# link:../peek[peek()] +
+* #SPRACHE# link:../flush[flush()] +
+* #SPRACHE# link:../print[print()] +
+* #SPRACHE# link:../println[println()] +
+* #SPRACHE# link:../write[write()] +
+* #SPRACHE# link:../serialevent[SerialEvent()] +
+* #SPRACHE# link:../../stream/streamavailable[Stream.available()]
 
 --
 // SEE ALSO SECTION ENDS

@@ -84,7 +84,7 @@ void loop() {
 === Siehe auch
 
 [role="example"]
-* #EXAMPLE# https://www.arduino.cc/playground/Code/BitMath[BitMath-Tutorial^]
+* #BEISPIEL# https://www.arduino.cc/playground/Code/BitMath[BitMath-Tutorial^]
 
 --
 // SEE ALSO SECTION ENDS

@@ -78,10 +78,10 @@ PORTD = PORTD & B00000011;  // Löschen der Bits 2 - 7 und Pins PD0 und PD1 (xx 
 
 
 [role="language"]
-* #LANGUAGE# link:../../boolean-operators/logicaland[&& Logisches Und]
+* #SPRACHE# link:../../boolean-operators/logicaland[&& Logisches Und]
 
 [role="example"]
-* #EXAMPLE# https://www.arduino.cc/playground/Code/BitMath[BitMath-Tutorial^]
+* #BEISPIEL# https://www.arduino.cc/playground/Code/BitMath[BitMath-Tutorial^]
 
 --
 // SEE ALSO SECTION ENDS

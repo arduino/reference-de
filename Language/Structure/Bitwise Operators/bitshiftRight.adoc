@@ -98,7 +98,7 @@ int y = x >> 3; // Integer-Division von 1000 durch 8, wodurch y = 125.
 [role="language"]
 
 [role="example"]
-* #EXAMPLE# http://www.arduino.cc/playground/Code/BitMath[BitMath-Tutorial^]
+* #BEISPIEL# http://www.arduino.cc/playground/Code/BitMath[BitMath-Tutorial^]
 
 --
 // SEE ALSO SECTION ENDS

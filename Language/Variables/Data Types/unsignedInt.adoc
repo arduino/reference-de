@@ -71,7 +71,7 @@ x = x + 1; // x now contains 0 - rolls over
 === See also
 
 [role="language"]
-* #LANGUAGE# link:../../constants/integerconstants[Integer Constants]
+* #SPRACHE# link:../../constants/integerconstants[Integer Constants]
 
 --
 // SEE ALSO SECTION ENDS

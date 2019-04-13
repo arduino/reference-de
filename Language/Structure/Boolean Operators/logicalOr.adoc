@@ -60,7 +60,7 @@ Verwechsle nicht das boolesche || (Doppel-Pipe) Operator mit dem bitweisen OR-Op
 === Siehe auch
 
 [role="language"]
-* #LANGUAGE# link:../../bitwise-operators/bitwiseor[| Bitweises OR]
+* #SPRACHE# link:../../bitwise-operators/bitwiseor[| Bitweises OR]
 
 --
 // SEE ALSO SECTION ENDS

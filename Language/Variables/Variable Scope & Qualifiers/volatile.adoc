@@ -114,7 +114,7 @@ ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
 === Siehe auch
 
 [role="language"]
-* #LANGUAGE# link:../../../functions/external-interrupts/attachinterrupt[attachInterrupt]
+* #SPRACHE# link:../../../functions/external-interrupts/attachinterrupt[attachInterrupt]
 
 --
 // SEE ALSO SECTION ENDS

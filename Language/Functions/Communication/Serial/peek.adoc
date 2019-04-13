@@ -45,17 +45,17 @@ The first byte of incoming serial data available (or -1 if no data is available)
 === See also
 
 [role="language"]
-* #LANGUAGE# link:../begin[begin()] +
-* #LANGUAGE# link:../end[end()] +
-* #LANGUAGE# link:../available[available()] +
-* #LANGUAGE# link:../read[read()] +
-* #LANGUAGE# link:../peek[peek()] +
-* #LANGUAGE# link:../flush[flush()] +
-* #LANGUAGE# link:../print[print()] +
-* #LANGUAGE# link:../println[println()] +
-* #LANGUAGE# link:../write[write()] +
-* #LANGUAGE# link:../serialevent[SerialEvent()] +
-* #LANGUAGE# link:../../stream/streampeek[Stream.peek()]
+* #SPRACHE# link:../begin[begin()] +
+* #SPRACHE# link:../end[end()] +
+* #SPRACHE# link:../available[available()] +
+* #SPRACHE# link:../read[read()] +
+* #SPRACHE# link:../peek[peek()] +
+* #SPRACHE# link:../flush[flush()] +
+* #SPRACHE# link:../print[print()] +
+* #SPRACHE# link:../println[println()] +
+* #SPRACHE# link:../write[write()] +
+* #SPRACHE# link:../serialevent[SerialEvent()] +
+* #SPRACHE# link:../../stream/streampeek[Stream.peek()]
 
 --
 // SEE ALSO SECTION ENDS

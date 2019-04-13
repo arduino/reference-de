@@ -74,7 +74,7 @@ Daher ist das Ergebnis von `x% = 10` nicht immer zwischen 0 und 9, wenn x negati
 === Siehe auch
 
 [role="language"]
-* #LANGUAGE#  link:../../arithmetic-operators/remainder[Rest]
+* #SPRACHE#  link:../../arithmetic-operators/remainder[Rest]
 
 --
 // SEE ALSO SECTION ENDS

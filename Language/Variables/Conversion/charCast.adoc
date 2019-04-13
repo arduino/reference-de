@@ -47,7 +47,7 @@ Konvertiert einen Wert in den link:../../data-types/char[char]-Datentyp.
 === Siehe auch
 
 [role="language"]
-* #LANGUAGE# link:../../data-types/char[char]
+* #SPRACHE# link:../../data-types/char[char]
 
 --
 // SEE ALSO SECTION ENDS

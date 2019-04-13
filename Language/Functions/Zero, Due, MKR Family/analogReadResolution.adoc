@@ -112,10 +112,10 @@ wenn diese auf zukünftigen Boards verfügbar sind, ohne dass eine Codezeile ge�
 === Siehe auch
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/AnalogInputPins[Beschreibung der analogen Inputpins^]
+* #BEISPIEL# http://arduino.cc/en/Tutorial/AnalogInputPins[Beschreibung der analogen Inputpins^]
 
 [role="language"]
-* #LANGUAGE# link:../../analog-io/analogread[analogRead()]
+* #SPRACHE# link:../../analog-io/analogread[analogRead()]
 
 --
 // SEE ALSO SECTION ENDS

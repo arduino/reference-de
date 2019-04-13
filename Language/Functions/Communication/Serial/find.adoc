@@ -49,8 +49,8 @@ Serial.find() inherits from the link:../../stream[stream] utility class.
 === See also
 
 [role="language"]
-* #LANGUAGE# link:../../stream[stream] +
-* #LANGUAGE# link:../../stream/streamfind[stream.find()]
+* #SPRACHE# link:../../stream[stream] +
+* #SPRACHE# link:../../stream/streamfind[stream.find()]
 
 --
 // SEE ALSO SECTION ENDS

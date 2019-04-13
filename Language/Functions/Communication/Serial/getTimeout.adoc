@@ -52,9 +52,9 @@ The timeout value set by `Serial.setTimeout()` (unsigned long)
 === See also
 
 [role="language"]
-* #LANGUAGE# link:../../stream[stream]
-* #LANGUAGE# link:../../stream/streamsettimeout[stream.setTimeout()]
-* #LANGUAGE# link:../../stream/streamgettimeout[stream.getTimeout()]
+* #SPRACHE# link:../../stream[stream]
+* #SPRACHE# link:../../stream/streamsettimeout[stream.setTimeout()]
+* #SPRACHE# link:../../stream/streamgettimeout[stream.getTimeout()]
 
 --
 // SEE ALSO SECTION ENDS

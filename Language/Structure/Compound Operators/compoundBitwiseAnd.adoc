@@ -118,7 +118,7 @@ myByte &= B11111100; // Ergibt B10101000
 === Siehe auch
 
 [role="language"]
-* #LANGUAGE#  link:../../bitwise-operators/bitwiseand[& Bitweises AND]
+* #SPRACHE#  link:../../bitwise-operators/bitwiseand[& Bitweises AND]
 
 --
 // SEE ALSO SECTION ENDS

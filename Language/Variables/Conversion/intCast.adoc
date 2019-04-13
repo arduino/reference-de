@@ -48,7 +48,7 @@ Konvertiert einen Wert in den link:../../data-types/int[int]-Datentyp.
 === Siehe auch
 
 [role="language"]
-* #LANGUAGE# link:../../data-types/int[int]
+* #SPRACHE# link:../../data-types/int[int]
 
 
 --

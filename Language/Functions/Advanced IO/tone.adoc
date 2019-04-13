@@ -79,11 +79,11 @@ Wenn du verschiedene Töne auf mehreren Pins spielen willst, musst du zunächst 
 * #LANGUAGE# link:../Analog%20IO/analogWrite.adoc[analogWrite()]
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/Tone[Töne^]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/tonePitchFollower[Tonleiter^]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/Tone3[Einfaches Keyboard^]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/Tone4[Mehrere Töne^]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/PWM[PWM^]
+* #BEISPIEL# http://arduino.cc/en/Tutorial/Tone[Töne^]
+* #BEISPIEL# http://arduino.cc/en/Tutorial/tonePitchFollower[Tonleiter^]
+* #BEISPIEL# http://arduino.cc/en/Tutorial/Tone3[Einfaches Keyboard^]
+* #BEISPIEL# http://arduino.cc/en/Tutorial/Tone4[Mehrere Töne^]
+* #BEISPIEL# http://arduino.cc/en/Tutorial/PWM[PWM^]
 
 --
 // SEE ALSO SECTION ENDS

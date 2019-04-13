@@ -45,8 +45,8 @@ title: Serial.parseFloat()
 === See also
 
 [role="language"]
-* #LANGUAGE# link:../../stream[stream()]
-* #LANGUAGE# link:../../stream/streamparsefloat[Stream.parseFloat()]
+* #SPRACHE# link:../../stream[stream()]
+* #SPRACHE# link:../../stream/streamparsefloat[Stream.parseFloat()]
 
 --
 // SEE ALSO SECTION ENDS

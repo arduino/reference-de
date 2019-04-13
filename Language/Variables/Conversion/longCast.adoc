@@ -48,7 +48,7 @@ Konvertiert einen Wert in den link:../../data-types/long[long]-Datentyp.
 === Siehe auch
 
 [role="language"]
-* #LANGUAGE# link:../../data-types/long[long]
+* #SPRACHE# link:../../data-types/long[long]
 
 
 --

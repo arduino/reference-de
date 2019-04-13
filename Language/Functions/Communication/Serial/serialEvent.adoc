@@ -81,15 +81,15 @@ Nothing
 * #EXAMPLE# http://arduino.cc/en/Tutorial/SerialEvent[Serial Event Tutorial^]
 
 [role="language"]
-* #LANGUAGE# link:../begin[begin()]
-* #LANGUAGE# link:../end[end()]
-* #LANGUAGE# link:../available[available()]
-* #LANGUAGE# link:../read[read()]
-* #LANGUAGE# link:../peek[peek()]
-* #LANGUAGE# link:../flush[flush()]
-* #LANGUAGE# link:../print[print()]
-* #LANGUAGE# link:../println[println()]
-* #LANGUAGE# link:../write[write()]
+* #SPRACHE# link:../begin[begin()]
+* #SPRACHE# link:../end[end()]
+* #SPRACHE# link:../available[available()]
+* #SPRACHE# link:../read[read()]
+* #SPRACHE# link:../peek[peek()]
+* #SPRACHE# link:../flush[flush()]
+* #SPRACHE# link:../print[print()]
+* #SPRACHE# link:../println[println()]
+* #SPRACHE# link:../write[write()]
 
 --
 // SEE ALSO SECTION ENDS

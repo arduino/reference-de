@@ -71,10 +71,10 @@ else {
 === Siehe auch
 
 [role="language"]
-* #LANGUAGE#  link:../../../variables/data-types/char[char]
-* #LANGUAGE#  link:../../../structure/control-structure/if[if (conditional operators)]
-* #LANGUAGE#  link:../../../structure/control-structure/while[while (conditional operators)]
-* #LANGUAGE# link:../../communication/serial/read[read()]
+* #SPRACHE#  link:../../../variables/data-types/char[char]
+* #SPRACHE#  link:../../../structure/control-structure/if[if (conditional operators)]
+* #SPRACHE#  link:../../../structure/control-structure/while[while (conditional operators)]
+* #SPRACHE# link:../../communication/serial/read[read()]
 
 --
 // SEE ALSO SECTION ENDS

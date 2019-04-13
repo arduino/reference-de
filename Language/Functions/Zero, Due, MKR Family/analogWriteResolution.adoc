@@ -142,12 +142,12 @@ fügt der Arduino dem 8-Bit-Wert, der in `analogWrite()` verwendet wird, 4 Null-
 === Siehe auch
 
 [role="language"]
-* #LANGUAGE# link:../../analog-io/analogwrite[analogWrite()]
-* #LANGUAGE# link:../../analog-io/analogread[analogRead()]
-* #LANGUAGE# link:../../math/map[map()]
+* #SPRACHE# link:../../analog-io/analogwrite[analogWrite()]
+* #SPRACHE# link:../../analog-io/analogread[analogRead()]
+* #SPRACHE# link:../../math/map[map()]
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/AnalogInputPins[Beschreibung der analogen Inputpins^]
+* #BEISPIEL# http://arduino.cc/en/Tutorial/AnalogInputPins[Beschreibung der analogen Inputpins^]
 
 --
 // SEE ALSO SECTION ENDS

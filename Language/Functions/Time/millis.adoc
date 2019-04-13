@@ -78,7 +78,7 @@ Sogar mit Vorzeichen versehene `long`-Werte können auf Fehler stoßen, da ihr M
 === Siehe auch
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blinken ohne Verzögerung^]
+* #BEISPIEL# http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blinken ohne Verzögerung^]
 
 --
 // SEE ALSO SECTION ENDS

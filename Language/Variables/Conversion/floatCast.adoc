@@ -63,7 +63,7 @@ Siehe die Referenz des Datentyps link:../../data-types/float[float] für Details
 
 
 [role="language"]
-* #LANGUAGE# link:../../data-types/float[float]
+* #SPRACHE# link:../../data-types/float[float]
 
 --
 // SEE ALSO SECTION ENDS

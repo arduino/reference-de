@@ -66,8 +66,8 @@ The terminator character is discarded from the serial buffer.
 === See also
 
 [role="language"]
-* #LANGUAGE# link:../../stream[Stream]
-* #LANGUAGE# link:../../stream/streamreadbytesuntil[Stream.readBytesUntil()]
+* #SPRACHE# link:../../stream[Stream]
+* #SPRACHE# link:../../stream/streamreadbytesuntil[Stream.readBytesUntil()]
 
 --
 // SEE ALSO SECTION ENDS

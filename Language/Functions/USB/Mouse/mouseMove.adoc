@@ -138,11 +138,11 @@ Ein Button, um die Funktion notfalls zu sperren, ist sinnvoll.
 === Siehe auch
 
 [role="language"]
-* #LANGUAGE# link:../mouseclick[Mouse.click()]
-* #LANGUAGE# link:../mouseend[Mouse.end()]
-* #LANGUAGE# link:../mousepress[Mouse.press()]
-* #LANGUAGE# link:../mouserelease[Mouse.release()]
-* #LANGUAGE# link:../mouseispressed[Mouse.isPressed()]
+* #SPRACHE# link:../mouseclick[Mouse.click()]
+* #SPRACHE# link:../mouseend[Mouse.end()]
+* #SPRACHE# link:../mousepress[Mouse.press()]
+* #SPRACHE# link:../mouserelease[Mouse.release()]
+* #SPRACHE# link:../mouseispressed[Mouse.isPressed()]
 
 --
 // SEE ALSO SECTION ENDS

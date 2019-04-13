@@ -77,7 +77,7 @@ void loop() {
 === See also
 
 [role="language"]
-* #LANGUAGE# link:../../../variables/constants/constants[constants]
+* #SPRACHE# link:../../../variables/constants/constants[constants]
 
 --
 // SEE ALSO SECTION ENDS

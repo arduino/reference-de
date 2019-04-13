@@ -51,8 +51,8 @@ The number of bytes placed in the buffer (`size_t`)
 === See also
 
 [role="language"]
-* #LANGUAGE# link:../../stream[stream]
-* #LANGUAGE# link:../../stream/streamreadbytes[stream.readBytes()]
+* #SPRACHE# link:../../stream[stream]
+* #SPRACHE# link:../../stream/streamreadbytes[stream.readBytes()]
 
 --
 // SEE ALSO SECTION ENDS

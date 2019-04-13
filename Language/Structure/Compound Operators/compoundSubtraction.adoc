@@ -65,7 +65,7 @@ x -= 2; // x enthält jetzt 18
 === Siehe auch
 
 [role="language"]
-* #LANGUAGE#  link:../../arithmetic-operators/subtraction[Normale Subtraktion]
+* #SPRACHE#  link:../../arithmetic-operators/subtraction[Normale Subtraktion]
 
 --
 // SEE ALSO SECTION ENDS

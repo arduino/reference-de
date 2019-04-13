@@ -86,13 +86,13 @@ Die PWM-Ausgaben auf Pins 5 und 6 werden höhere Zyklen als erwartet haben. Dies
 === Siehe auch
 
 [role="language"]
-* #LANGUAGE# link:../../zero-due-mkr-family/analogwriteresolution[analogWriteResolution()]
+* #SPRACHE# link:../../zero-due-mkr-family/analogwriteresolution[analogWriteResolution()]
 
 [role="definition"]
 * #DEFINITION# http://arduino.cc/en/Tutorial/PWM[PWM^]
 
 [role="example"]
-* #EXAMPLE# http://arduino.cc/en/Tutorial/Blink[Blinken^]
+* #BEISPIEL# http://arduino.cc/en/Tutorial/Blink[Blinken^]
 
 --
 // SEE ALSO SECTION ENDS
