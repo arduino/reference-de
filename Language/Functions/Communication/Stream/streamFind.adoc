@@ -30,9 +30,9 @@ Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, 
 === Parameter
 `stream` : Eine Instanz einer Klasse, die von Stream erbt.
 
-`target` : Die Zeichenfolge, nach der gesucht werden soll `(char)`
+`target` : Die Zeichenfolge, nach der gesucht werden soll (`char`)
 
-`length` : Länge des Ergebnisses `(size_t)`
+`length` : Länge des Ergebnisses (`size_t`)
 
 [float]
 === Gibt zurück
