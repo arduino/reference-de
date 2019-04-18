@@ -1,5 +1,5 @@
 ---
-title: Integer Constants
+title: Integer-Konstanten
 categories: [ "Variables" ]
 subCategories: [ "Konstanten" ]
 ---
@@ -8,7 +8,7 @@ subCategories: [ "Konstanten" ]
 
 
 
-= Integer Constants
+= Integer-Konstanten
 
 
 // OVERVIEW SECTION STARTS
