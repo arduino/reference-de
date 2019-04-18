@@ -10,10 +10,10 @@ title: Serial.available()
 --
 
 [float]
-=== Description
-Get the number of bytes (characters) available for reading from the serial port. This is data that's already arrived and stored in the serial receive buffer (which holds 64 bytes).
+=== Beschreibung
+Rufe die Anzahl der zum Lesen verfügbaren Bytes (Zeichen) von der seriellen Schnittstelle ab. Dies sind Daten, die bereits eingetroffen sind und im seriellen Empfangspuffer gespeichert sind (der 64 Byte enthält).
 
-`Serial.available()` inherits from the link:../../stream[Stream] utility class.
+`Serial.available()` erbt von der link:../../stream[Stream]-Dienstklasse.
 [%hardbreaks]
 
 
@@ -22,12 +22,12 @@ Get the number of bytes (characters) available for reading from the serial port.
 `_Serial_.available()`
 
 [float]
-=== Parameters
-`_Serial_`: serial port object. See the list of available serial ports for each board on the link:../../serial[Serial main page].
+=== Parameter
+`_Serial_`: Serielles Port-Objekt. Siehe die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite].
 
 [float]
-=== Returns
-The number of bytes available to read .
+=== Gibt zurück
+Die Anzahl der zum Lesen verfügbaren Bytes.
 --
 // OVERVIEW SECTION ENDS
 
@@ -35,25 +35,25 @@ The number of bytes available to read .
 [#howtouse]
 --
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The following code returns a character received through the serial port.
+=== Beispielcode
+// Beschreibe, worum es im Beispielcode geht und fügen Sie relevanten Code hinzu   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
+Der folgende Code gibt ein Zeichen zurück, das über die serielle Schnittstelle empfangen wurde.
 
 [source,arduino]
 ----
-int incomingByte = 0;	// for incoming serial data
+int incomingByte = 0;	// Für eingehende serielle Daten
 
 void setup() {
-	Serial.begin(9600);	// opens serial port, sets data rate to 9600 bps
+	Serial.begin(9600);	// Öffnet die serielle Schnittstelle und stellt die Datenrate auf 9600 Bit/s ein
 }
 
 void loop() {
-  // reply only when you receive data:
+  // Antworten, wenn Daten erhalten werden:
   if (Serial.available() > 0) {
-    // read the incoming byte:
+    // Lies das eingehende Byte:
     incomingByte = Serial.read();
 
-    // say what you got:
+    // Ausgabe:
     Serial.print("I received: ");
     Serial.println(incomingByte, DEC);
   }
@@ -61,8 +61,9 @@ void loop() {
 ----
 [%hardbreaks]
 
-*Arduino Mega example:*
-This code sends data received in one serial port of the Arduino Mega to another. This can be used, for example, to connect a serial device to the computer through the Arduino board.
+*Arduino Mega Beispiel:*
+Dieser Code sendet Daten, die über einen seriellen Port des Arduino Mega empfangen werden, an einen anderen.
+Dies kann zum Beispiel verwendet werden, um ein serielles Gerät über das Arduino-Board an den Computer anzuschließen.
 
 [source,arduino]
 ----
@@ -72,12 +73,12 @@ void setup() {
 }
 
 void loop() {
-  // read from port 0, send to port 1:
+  // Von Port 0 lesen, an Port 1 senden:
   if (Serial.available()) {
     int inByte = Serial.read();
     Serial1.print(inByte, DEC);
   }
-  // read from port 1, send to port 0:
+  // Von Port 1 lesen, an Port 0 senden:
   if (Serial1.available()) {
     int inByte = Serial1.read();
     Serial.print(inByte, DEC);
@@ -94,7 +95,7 @@ void loop() {
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #SPRACHE# link:../begin[begin()] +

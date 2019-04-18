@@ -13,10 +13,10 @@ title: Stream.flush()
 --
 
 [float]
-=== Description
-`flush()` clears the buffer once all outgoing characters have been sent.
+=== Beschreibung
+`flush()` löscht den Puffer, sobald alle ausgehenden Zeichen gesendet wurden.
 
-This function is part of the Stream class, and can be called by any class that inherits from it (Wire, Serial, etc). See the link:../../stream[stream class] main page for more information.
+Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, die von ihr erbt (Wire, Serial usw.). Siehe die link:../../stream[Stream-Klasse] für weitere Informationen.
 [%hardbreaks]
 
 
@@ -26,11 +26,11 @@ This function is part of the Stream class, and can be called by any class that i
 
 
 [float]
-=== Parameters
-`stream` : an instance of a class that inherits from Stream.
+=== Parameter
+`stream` : Eine Instanz einer Klasse, die von Stream erbt.
 
 [float]
-=== Returns
+=== Gibt zurück
 `boolean`
 
 --

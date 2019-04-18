@@ -13,10 +13,10 @@ title: Stream.peek()
 --
 
 [float]
-=== Description
-Read a byte from the file without advancing to the next one. That is, successive calls to `peek()` will return the same value, as will the next call to `read()`.
+=== Beschreibung
+Liest ein Byte aus der Datei, ohne zum nächsten zu gelangen. Das bedeutet, dass aufeinanderfolgende Aufrufe von `peek()` denselben Wert zurückgeben, der nächste Wert wird über `read()` gelesen.
 
-This function is part of the Stream class, and can be called by any class that inherits from it (Wire, Serial, etc). See the link:../../stream[Stream class] main page for more information.
+Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, die von ihr erbt (Wire, Serial usw.). Siehe die link:../../stream[Stream-Klasse] für weitere Informationen.
 [%hardbreaks]
 
 
@@ -26,12 +26,12 @@ This function is part of the Stream class, and can be called by any class that i
 
 
 [float]
-=== Parameters
-`stream` : an instance of a class that inherits from Stream.
+=== Parameter
+`stream` : Eine Instanz einer Klasse, die von Stream erbt.
 
 [float]
-=== Returns
-The next byte (or character), or -1 if none is available.
+=== Gibt zurück
+Das nächste Byte (oder Zeichen) oder -1, wenn keines verfügbar ist.
 
 --
 // OVERVIEW SECTION ENDS

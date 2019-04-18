@@ -13,10 +13,11 @@ title: Serial.peek()
 --
 
 [float]
-=== Description
-Returns the next byte (character) of incoming serial data without removing it from the internal serial buffer. That is, successive calls to `peek()` will return the same character, as will the next call to `read()`.
+=== Beschreibung
+Gibt das nächste Byte (Zeichen) eingehender serieller Daten zurück, ohne sie aus dem internen seriellen Puffer zu entfernen.
+Das bedeutet, dass aufeinanderfolgende Aufrufe von `peek()` dasselbe Zeichen zurückgeben wie der nächste Aufruf von `read()`.
 
-`Serial.peek()` inherits from the link:../../stream[Stream] utility class.
+`Serial.peek()` erbt von der link:../../stream[Stream]-Dienstklasse.
 [%hardbreaks]
 
 
@@ -26,12 +27,12 @@ Returns the next byte (character) of incoming serial data without removing it fr
 
 
 [float]
-=== Parameters
-`_Serial_`: serial port object. See the list of available serial ports for each board on the link:../../serial[Serial main page].
+=== Parameter
+`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite].
 
 [float]
-=== Returns
-The first byte of incoming serial data available (or -1 if no data is available) - `int`
+=== Gibt zurück
+Das erste verfügbare Byte der eingehenden seriellen Daten (oder -1, wenn keine Daten verfügbar sind). - `int`
 
 --
 // OVERVIEW SECTION ENDS
@@ -42,7 +43,7 @@ The first byte of incoming serial data available (or -1 if no data is available)
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #SPRACHE# link:../begin[begin()] +

@@ -13,10 +13,10 @@ title: Serial.getTimeout()
 --
 
 [float]
-=== Description
-`Serial.getTimeout()` returns the timeout value set by `Serial.setTimeout()`.
+=== Beschreibung
+`Serial.getTimeout()` gibt den Timeout-Wert zurück, der von `Serial.setTimeout()` gesetzt wurde.
 
-`Serial.getTimeout()` inherits from the link:../../stream[Stream] utility class.
+`Serial.getTimeout()` erbt von der link:../../stream[Stream]-Dienstklasse.
 [%hardbreaks]
 
 
@@ -25,12 +25,12 @@ title: Serial.getTimeout()
 `_Serial_.getTimeout()`
 
 [float]
-=== Parameters
+=== Parameter
 None
 
 [float]
-=== Returns
-The timeout value set by `Serial.setTimeout()` (unsigned long)
+=== Gibt zurück
+Der von `Serial.setTimeout()` festgelegte Timeout-Wert (unsigned long)
 
 --
 // OVERVIEW SECTION ENDS
@@ -49,7 +49,7 @@ The timeout value set by `Serial.setTimeout()` (unsigned long)
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #SPRACHE# link:../../stream[stream]

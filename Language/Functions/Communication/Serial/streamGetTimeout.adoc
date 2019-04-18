@@ -10,8 +10,9 @@ title: Serial.write()
 --
 
 [float]
-=== Description
-Writes binary data to the serial port. This data is sent as a byte or series of bytes; to send the characters representing the digits of a number use the link:../print[print()] function instead.
+=== Beschreibung
+Schreibt binäre Daten an die serielle Schnittstelle. Diese Daten werden als ein Byte oder eine Reihe von Bytes gesendet.
+Zum Senden der Zeichen, die die Ziffern einer Zahl darstellen, verwende die link:../print[print()]-Funktion.
 [%hardbreaks]
 
 
@@ -23,22 +24,22 @@ Writes binary data to the serial port. This data is sent as a byte or series of 
 
 
 [float]
-=== Parameters
-`_Serial_`: serial port object. See the list of available serial ports for each board on the link:../../serial[Serial main page].
+=== Parameter
+`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite].
 
-`val`: a value to send as a single byte
+`val`: Ein Wert, der als einzelnes Byte gesendet werden soll
 
-`str`: a string to send as a series of bytes
+`str`: Eine Zeichenfolge, die als Folge von Bytes gesendet werden soll
 
-`buf`: an array to send as a series of bytes
+`buf`: Ein Array, das als Folge von Bytes gesendet werden soll
 
-`len`: the number of bytes to be sent from the array
+`len`: Die Anzahl der Bytes, die vom Array gesendet werden sollen
 
 [float]
-=== Returns
+=== Gibt zurück
 `size_t`
 
-`write()` will return the number of bytes written, though reading that number is optional
+`write()` gibt die Anzahl der geschriebenen Bytes zurück, das Lesen dieser Anzahl ist jedoch optional
 
 --
 // OVERVIEW SECTION ENDS
@@ -50,8 +51,8 @@ Writes binary data to the serial port. This data is sent as a byte or series of 
 [#howtouse]
 --
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Beispielcode
+// Beschreibe, worum es im Beispielcode geht und fügen Sie relevanten Code hinzu   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
 
 
 [source,arduino]
@@ -61,9 +62,9 @@ void setup(){
 }
 
 void loop(){
-  Serial.write(45); // send a byte with the value 45
+  Serial.write(45); // Ein Byte mit dem Wert 45 senden
 
-   int bytesSent = Serial.write(“hello”); //send the string “hello” and return the length of the string.
+  int bytesSent = Serial.write(“hello”); // Sendet die Zeichenfolge "Hallo" und gibt die Länge der Zeichenfolge zurück.
 }
 ----
 

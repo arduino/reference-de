@@ -13,8 +13,9 @@ title: Serial.end()
 --
 
 [float]
-=== Description
-Disables serial communication, allowing the RX and TX pins to be used for general input and output. To re-enable serial communication, call link:../begin[Serial.begin()].
+=== Beschreibung
+Deaktiviert die serielle Kommunikation, sodass die RX- und TX-Pins für die allgemeine Eingabe und Ausgabe verwendet werden können.
+Um die serielle Kommunikation wieder zu aktivieren, rufe link:../begin[Serial.begin()] auf.
 [%hardbreaks]
 
 
@@ -24,12 +25,12 @@ Disables serial communication, allowing the RX and TX pins to be used for genera
 
 
 [float]
-=== Parameters
-`_Serial_`: serial port object. See the list of available serial ports for each board on the link:../../serial[Serial main page].
+=== Parameter
+`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite].
 
 [float]
-=== Returns
-Nothing
+=== Gibt zurück
+Nichts
 
 --
 // OVERVIEW SECTION ENDS

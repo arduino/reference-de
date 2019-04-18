@@ -13,8 +13,9 @@ title: Serial.println()
 --
 
 [float]
-=== Description
-Prints data to the serial port as human-readable ASCII text followed by a carriage return character (ASCII 13, or '\r') and a newline character (ASCII 10, or '\n'). This command takes the same forms as link:../print[Serial.print()].
+=== Beschreibung
+Druckt Daten an den seriellen Anschluss als von Menschen lesbarer ASCII-Text, gefolgt von einem Carriage-Return (ASCII 13 oder '\r') und einem Zeilenvorschubzeichen (ASCII 10 oder '\n').
+Dieser Befehl hat die gleiche Form wie link:../print[Serial.print()].
 [%hardbreaks]
 
 
@@ -25,16 +26,16 @@ Prints data to the serial port as human-readable ASCII text followed by a carria
 
 
 [float]
-=== Parameters
-`_Serial_`: serial port object. See the list of available serial ports for each board on the link:../../serial[Serial main page].
+=== Parameter
+`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite].
 
-`val`: the value to print - any data type
+`val`: Der zu druckende Wert - beliebiger Datentyp
 
-`format`: specifies the number base (for integral data types) or number of decimal places (for floating point types)
+`format`: Gibt die Basis (für ganzzahlige Datentypen) oder die Anzahl der Dezimalstellen (für Gleitkommatypen) an.
 
 [float]
-=== Returns
-`size_t`: `println()` returns the number of bytes written, though reading that number is optional
+=== Gibt zurück
+`size_t`: `println()` gibt die Anzahl der geschriebenen Bytes zurück, das Lesen dieser Anzahl ist jedoch optional
 --
 // OVERVIEW SECTION ENDS
 
@@ -46,45 +47,45 @@ Prints data to the serial port as human-readable ASCII text followed by a carria
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Beispielcode
+// Beschreibe, worum es im Beispielcode geht und fügen Sie relevanten Code hinzu   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
 
 
 [source,arduino]
 ----
 /*
- Analog input reads an analog input on analog in 0, prints the value out.
- created 24 March 2006
- by Tom Igoe
+ Analogeingang liest einen analogen Eingang in 0 und druckt den Wert aus.
+ Erstellt am 24. März 2006
+ von Tom Igoe
  */
 
-int analogValue = 0;    // variable to hold the analog value
+int analogValue = 0;    // Variable für den analogen Wert
 
 void setup() {
-  // open the serial port at 9600 bps:
+  // Öffnen Sie die serielle Schnittstelle bei 9600 Bit/s:
   Serial.begin(9600);
 }
 
 void loop() {
-  // read the analog input on pin 0:
+  // Lesen Sie den Analogeingang an Pin 0:
   analogValue = analogRead(0);
 
   // print it out in many formats:
-  Serial.println(analogValue);       // print as an ASCII-encoded decimal
-  Serial.println(analogValue, DEC);  // print as an ASCII-encoded decimal
-  Serial.println(analogValue, HEX);  // print as an ASCII-encoded hexadecimal
-  Serial.println(analogValue, OCT);  // print as an ASCII-encoded octal
-  Serial.println(analogValue, BIN);  // print as an ASCII-encoded binary
+  Serial.println(analogValue);       // Drucken als ASCII-codierte Dezimalzahl
+  Serial.println(analogValue, DEC);  // Drucken als ASCII-codierte Dezimalzahl
+  Serial.println(analogValue, HEX);  // Drucken als ASCII-codierte Hexadezimalzahl
+  Serial.println(analogValue, OCT);  // Drucken als ASCII-codierte Oktalzahl
+  Serial.println(analogValue, BIN);  // Drucken als ASCII-codierte Binärzahl
 
-  // delay 10 milliseconds before the next reading:
+  // Verzögerung 10 Millisekunden vor der nächsten Ablesung:
   delay(10);
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-For information on the asyncronicity of `Serial.println()`, see the Notes and Warnings section of the link:../write#howtouse[Serial.write() reference page].
+=== Anmerkungen und Warnungen
+Informationen zur Asynchronität von `Serial.println()` findest du im Abschnitt Hinweise und Warnungen von link:../write#howtouse[Serial.write()].
 
 --
 // HOW TO USE SECTION ENDS

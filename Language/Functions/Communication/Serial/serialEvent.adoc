@@ -13,8 +13,8 @@ title: serialEvent()
 --
 
 [float]
-=== Description
-Called when data is available. Use `Serial.read()` to capture this data.
+=== Beschreibung
+Wird aufgerufen, wenn Daten verfügbar sind. Verwende `Serial.read()`, um diese Daten zu erfassen.
 [%hardbreaks]
 
 
@@ -24,32 +24,32 @@ Called when data is available. Use `Serial.read()` to capture this data.
 [source,arduino]
 ----
 void serialEvent() {
-//statements
+   // Statement(s)
 }
 ----
-For boards with additional serial ports (see the list of available serial ports for each board on the link:../../serial[Serial main page]):
+Für Boards mit zusätzlichen seriellen Anschlüssen (siehe Liste der verfügbaren seriellen Anschlüsse für jede Karte auf der link:../../serial[Serial-Hauptseite]):
 [source,arduino]
 ----
 void serialEvent1() {
-//statements
+   // Statement(s)
 }
 
 void serialEvent2() {
-//statements
+   // Statement(s)
 }
 
 void serialEvent3() {
-//statements
+   // Statement(s)
 }
 ----
 
 [float]
-=== Parameters
-`statements`: any valid statements
+=== Parameter
+`Statement(s)`: Alle gültigen Aussagen
 
 [float]
-=== Returns
-Nothing
+=== Gibt zurück
+Nichts
 
 --
 // OVERVIEW SECTION ENDS
@@ -59,12 +59,12 @@ Nothing
 --
 
 [float]
-=== Notes and Warnings
-`serialEvent()` doesn't work on the Leonardo, Micro, or Yún.
+=== Anmerkungen und Warnungen
+`serialEvent()` funktioniert nicht mit dem Leonardo, Micro oder Yún.
 
-`serialEvent()` and `serialEvent1()` don't work on the Arduino SAMD Boards
+`serialEvent()` und `serialEvent1()` funktionieren nicht auf den Arduino-SAMD-Boards.
 
-`serialEvent()`, `serialEvent1()``serialEvent2()`, and `serialEvent3()`  don't work on the Arduino Due.
+`serialEvent()`, `serialEvent1()``serialEvent2()`, und `serialEvent3()` funktionieren nicht auf dem Arduino Due.
 [%hardbreaks]
 
 --
@@ -78,7 +78,7 @@ Nothing
 === See also
 
 [role="example"]
-* #BEISPIEL# http://arduino.cc/en/Tutorial/SerialEvent[Serial Event Tutorial^]
+* #BEISPIEL# http://arduino.cc/en/Tutorial/SerialEvent[Lernprogramm für serielle Ereignisse^]
 
 [role="language"]
 * #SPRACHE# link:../begin[begin()]

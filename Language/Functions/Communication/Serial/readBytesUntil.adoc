@@ -13,12 +13,14 @@ title: Serial.readBytesUntil()
 --
 
 [float]
-=== Description
-Serial.readBytesUntil() reads characters from the serial buffer into an array. The function terminates if the terminator character is detected, the determined length has been read, or it times out (see link:../settimeout[Serial.setTimeout()]). The function returns the characters up to the last character before the supplied terminator. The terminator itself is not returned in the buffer.
+=== Beschreibung
+`Serial.readBytesUntil()` liest Zeichen aus dem seriellen Puffer in ein Array.
+Die Funktion wird beendet, wenn das Abschlusszeichen erkannt wird, die ermittelte Länge gelesen wurde oder das Zeitlimit überschritten wurde (siehe link:../settimeout[Serial.setTimeout()]).
+Die Funktion gibt die Zeichen bis zum letzten Zeichen vor dem angegebenen Abschluss zurück. Das Terminatorzeichen selbst wird nicht im Puffer zurückgegeben.
 
-`Serial.readBytesUntil()` returns the number of characters read into the buffer. A 0 means no valid data was found.
+`Serial.readBytesUntil()` gibt die Anzahl der in den Puffer eingelesenen Zeichen zurück. Eine 0 bedeutet, dass keine gültigen Daten gefunden wurden.
 
-`Serial.readBytesUntil()` inherits from the link:../../stream[Stream] utility class.
+`Serial.readBytesUntil()` erbt von der link:../../stream [Stream]-Dienstklasse.
 [%hardbreaks]
 
 
@@ -28,17 +30,17 @@ Serial.readBytesUntil() reads characters from the serial buffer into an array. T
 
 
 [float]
-=== Parameters
-`_Serial_`: serial port object. See the list of available serial ports for each board on the link:../../serial[Serial main page].
+=== Parameter
+`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite].
 
-`character` : the character to search for (`char`)
+`character` : Das zu suchende Zeichen (`char`)
 
-`buffer`: the buffer to store the bytes in (`char[]` or `byte[]`)
+`buffer`: der Puffer zum Speichern der Bytes (`char[]` or `byte[]`)
 
-`length` : the number of bytes to read (`int`)
+`length` : die Anzahl der zu lesenden Bytes (`int`)
 
 [float]
-=== Returns
+=== Gibt zurück
 `size_t`
 
 --
@@ -50,8 +52,8 @@ Serial.readBytesUntil() reads characters from the serial buffer into an array. T
 --
 
 [float]
-=== Notes and Warnings
-The terminator character is discarded from the serial buffer.
+=== Anmerkungen und Warnungen
+Das Abschlusszeichen wird aus dem seriellen Puffer gelöscht.
 [%hardbreaks]
 
 --
@@ -63,7 +65,7 @@ The terminator character is discarded from the serial buffer.
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #SPRACHE# link:../../stream[Stream]

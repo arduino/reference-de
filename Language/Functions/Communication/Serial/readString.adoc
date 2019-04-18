@@ -13,10 +13,10 @@ title: Serial.readString()
 --
 
 [float]
-=== Description
-`Serial.readString()` reads characters from the serial buffer into a String. The function terminates if it times out (see link:../settimeout[setTimeout()]).
+=== Beschreibung
+`Serial.readString()` liest Zeichen aus dem seriellen Puffer in einen String. Die Funktion wird abgebrochen, wenn eine Zeitüberschreitung auftritt (siehe link:../settimeout[setTimeout()]).
 
-`Serial.readString()` inherits from the link:../../stream[Stream] utility class.
+`Serial.readString()` erbt von der link:../../stream[Stream]-Dienstklasse.
 [%hardbreaks]
 
 
@@ -26,12 +26,12 @@ title: Serial.readString()
 
 
 [float]
-=== Parameters
-`_Serial_`: serial port object. See the list of available serial ports for each board on the link:../../serial[Serial main page].
+=== Parameter
+`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite].
 
 [float]
-=== Returns
-A String read from the serial buffer
+=== Gibt zurück
+Ein String, der aus dem seriellen Puffer gelesen wird.
 
 --
 // OVERVIEW SECTION ENDS
@@ -42,7 +42,7 @@ A String read from the serial buffer
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #SPRACHE# link:../../serial[Serial]

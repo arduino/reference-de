@@ -13,8 +13,8 @@ title: Serial.availableForWrite()
 --
 
 [float]
-=== Description
-Get the number of bytes (characters) available for writing in the serial buffer without blocking the write operation.
+=== Beschreibung
+Ruft die Anzahl der zum Schreiben verfügbaren Bytes (Zeichen) im seriellen Puffer ab, ohne den Schreibvorgang zu blockieren.
 [%hardbreaks]
 
 
@@ -24,12 +24,12 @@ Get the number of bytes (characters) available for writing in the serial buffer 
 
 
 [float]
-=== Parameters
-`_Serial_`: serial port object. See the list of available serial ports for each board on the link:../../serial[Serial main page].
+=== Parameter
+`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite].
 
 [float]
-=== Returns
-The number of bytes available to write.
+=== Gibt zurück
+Die Anzahl der zum Schreiben verfügbaren Bytes.
 --
 // OVERVIEW SECTION ENDS
 
@@ -39,7 +39,7 @@ The number of bytes available to write.
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #SPRACHE# link:../begin[begin()] +

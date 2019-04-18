@@ -13,10 +13,10 @@ title: Serial.flush()
 --
 
 [float]
-=== Description
-Waits for the transmission of outgoing serial data to complete. (Prior to Arduino 1.0, this instead removed any buffered incoming serial data.)
+=== Beschreibung
+Wartet, bis die Übertragung der ausgehenden seriellen Daten abgeschlossen ist. (Vor Arduino 1.0 wurden stattdessen alle gepufferten eingehenden seriellen Daten entfernt.)
 
-`flush()` inherits from the link:../flush[Stream] utility class.
+`flush()` erbt von der link:../../stream[Stream]-Dienstklasse.
 [%hardbreaks]
 
 
@@ -26,12 +26,12 @@ Waits for the transmission of outgoing serial data to complete. (Prior to Arduin
 
 
 [float]
-=== Parameters
-`_Serial_`: serial port object. See the list of available serial ports for each board on the link:../../serial[Serial main page].
+=== Parameter
+`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite].
 
 [float]
-=== Returns
-Nothing
+=== Gibt zurück
+Nichts
 
 --
 // OVERVIEW SECTION ENDS
@@ -42,7 +42,7 @@ Nothing
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #SPRACHE# link:../begin[begin()]

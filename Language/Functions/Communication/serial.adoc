@@ -15,28 +15,29 @@ subCategories: [ "Kommunikation" ]
 --
 
 [float]
-=== Description
-Used for communication between the Arduino board and a computer or other devices. All Arduino boards have at least one serial port (also known as a UART or USART), and some have several.
+=== Beschreibung
+Wird für die Kommunikation zwischen dem Arduino-Board und einem Computer oder anderen Geräten verwendet. Alle Arduino-Boards haben mindestens eine serielle Schnittstelle (auch als UART oder USART bezeichnet) und andere haben mehrere.
 [options="header"]
-|================================================================================================================================================
-| Board                | USB CDC name                     | Serial pins                   | Serial1 pins     | Serial2 pins      | Serial3 pins
-| Uno, Nano, Mini      |                                  | 0(RX), 1(TX)                  |                  |                   |
-| Mega                 |                                  | 0(RX), 1(TX)                  | 19(RX), 18(TX)   | 17(RX), 16(TX)    | 15(RX), 14(TX)
-| Leonardo, Micro, Yún | Serial                           | 0(RX), 1(TX)                  |                  |                   |
-| Uno WiFi Rev.2       |                                  | Connected to USB              | 0(RX), 1(TX)     | Connected to NINA |
-| MKR boards           | Serial                           |                               | 13(RX), 14(TX)   |                   |
-| Zero                 | SerialUSB (Native USB Port only) | Connected to Programming Port | 0(RX), 1(TX)     |                   |
-| Due                  | SerialUSB (Native USB Port only) | 0(RX), 1(TX)                  | 19(RX), 18(TX)   | 17(RX), 16(TX)    | 15(RX), 14(TX)
-| 101                  | Serial                           |                               | 0(RX), 1(TX)     |                   |
-|================================================================================================================================================
+|==========================================================================================================================================================
+| Board                | USB CDC Name                     	   | Serielle Pins                     | Serial1 Pins     | Serial2 Pins       | Serial3 Pins
+| Uno, Nano, Mini      |                                  	   | 0(RX), 1(TX)                      |                  |                    |
+| Mega                 |                                  	   | 0(RX), 1(TX)                      | 19(RX), 18(TX)   | 17(RX), 16(TX)     | 15(RX), 14(TX)
+| Leonardo, Micro, Yún | Serielle Schnittstelle           	   | 0(RX), 1(TX)                      |                  |                    |
+| Uno WiFi Rev.2       |                                  	   | An USB angeschlossen              | 0(RX), 1(TX)     | Verbunden mit NINA |
+| MKR boards           | Serielle Schnittstelle           	   |                                   | 13(RX), 14(TX)   |                    |
+| Zero                 | SerialUSB (Nur nativer USB-Anschluss) | Verbunden mit dem Programmierport | 0(RX), 1(TX)     |                    |
+| Due                  | SerialUSB (Nur nativer USB-Anschluss) | 0(RX), 1(TX)                      | 19(RX), 18(TX)   | 17(RX), 16(TX)     | 15(RX), 14(TX)
+| 101                  | Serielle Schnittstelle           	   |                                   | 0(RX), 1(TX)     |                    |
+|==========================================================================================================================================================
 
-On Uno, Nano, Mini, and Mega, pins 0 and 1 are used for communication with the computer. Connecting anything to these pins can interfere with that communication, including causing failed uploads to the board.
+Auf dem Uno, Nano, Mini und Mega werden die Pins 0 und 1 für die Kommunikation mit dem Computer verwendet. Wenn du irgendetwas an diese Pins anschließt, kann dies die Kommunikation beeinträchtigen.
 [%hardbreaks]
-You can use the Arduino environment's built-in serial monitor to communicate with an Arduino board. Click the serial monitor button in the toolbar and select the same baud rate used in the call to `begin()`.
+Du kannst den eingebauten seriellen Monitor der Arduino-Umgebung verwenden, um mit einem Arduino-Board zu kommunizieren. Klicke in der Symbolleiste auf die Schaltfläche für den seriellen Monitor und wähle dieselbe Baudrate aus, die für den Aufruf von `begin()` verwendet wird.
 [%hardbreaks]
-Serial communication on pins TX/RX uses TTL logic levels (5V or 3.3V depending on the board). Don't connect these pins directly to an RS232 serial port; they operate at +/- 12V and can damage your Arduino board.
+Die serielle Kommunikation an den Pins TX / RX verwendet TTL-Logikpegel (5 V oder 3,3 V je nach Board). Verbinde diese Pins nicht direkt mit einer seriellen RS232-Schnittstelle. Sie arbeiten mit +/- 12 V und können dein Arduino-Board beschädigen.
 [%hardbreaks]
-To use these extra serial ports to communicate with your personal computer, you will need an additional USB-to-serial adaptor, as they are not connected to the Mega's USB-to-serial adaptor. To use them to communicate with an external TTL serial device, connect the TX pin to your device's RX pin, the RX to your device's TX pin, and the ground of your Mega to your device's ground.
+Um diese zusätzlichen seriellen Anschlüsse für die Kommunikation mit deinem PC zu verwenden, benötigst du einen zusätzlichen USB-zu-Seriell-Adapter, da diese nicht an den USB-zu-Seriell-Adapter des Mega angeschlossen sind.
+Um sie zur Kommunikation mit einem externen seriellen TTL-Gerät zu verwenden, verbinde den TX-Pin mit dem RX-Pin deines Geräts, den RX mit dem TX-Pin deines Geräts und die Masse deines Mega mit der Masse deines Geräts.
 [%hardbreaks]
 
 --
@@ -50,7 +51,7 @@ To use these extra serial ports to communicate with your personal computer, you 
 '''
 
 [float]
-=== Functions
+=== Funktionen
 link:../serial/ifserial[if(Serial)] +
 link:../serial/available[available()] +
 link:../serial/availableforwrite[availableForWrite()] +
@@ -84,16 +85,16 @@ link:../serial/serialevent[serialEvent()]
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
 * #BEISPIEL# https://www.arduino.cc/en/Tutorial/ReadASCIIString[ReadASCIIString^]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/ASCIITable[ASCII TAble^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/ASCIITable[ASCII-Tabelle^]
 * #BEISPIEL# https://www.arduino.cc/en/Tutorial/Dimmer[Dimmer^]
 * #BEISPIEL# https://www.arduino.cc/en/Tutorial/Graph[Graph^]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/PhysicalPixel[Physical Pixel^]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/SerialCallResponse[Serial Call Response^]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/SerialCallResponseASCII[Serial Call Response ASCII^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/PhysicalPixel[Physikalischer Pixel^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/SerialCallResponse[Serielle Antwort auf einen Call^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/SerialCallResponseASCII[Serielle Antwort auf einen Call ASCII^]
 
 
 --

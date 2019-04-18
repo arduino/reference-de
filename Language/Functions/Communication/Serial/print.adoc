@@ -13,30 +13,33 @@ title: Serial.print()
 --
 
 [float]
-=== Description
-Prints data to the serial port as human-readable ASCII text. This command can take many forms. Numbers are printed using an ASCII character for each digit. Floats are similarly printed as ASCII digits, defaulting to two decimal places. Bytes are sent as a single character. Characters and strings are sent as is. For example-
+=== Beschreibung
+Druckt Daten an den seriellen Anschluss als von Menschen lesbarer ASCII-Text. Dieser Befehl kann viele Formen annehmen.
+Zahlen werden für jede Ziffer mit einem ASCII-Zeichen gedruckt. Floats werden in ähnlicher Weise als ASCII-Ziffern gedruckt. Die Standardeinstellung ist zwei Dezimalstellen. Bytes werden als einzelnes Zeichen gesendet.
+Zeichen und Zeichenfolgen werden unverändert gesendet. Zum Beispiel:
 
-* `Serial.print(78)` gives "78" +
-* `Serial.print(1.23456)` gives "1.23" +
-* `Serial.print('N')` gives "N" +
-* `Serial.print("Hello world.")` gives "Hello world."
+* `Serial.print(78)` gibt "78" aus +
+* `Serial.print(1.23456)` gibt "1.23" aus +
+* `Serial.print('N')` gibt "N" aus +
+* `Serial.print("Hello world.")` gibt "Hello world."
 
 
-An optional second parameter specifies the base (format) to use; permitted values are `BIN(binary, or base 2)`, `OCT(octal, or base 8)`, `DEC(decimal, or base 10)`, `HEX(hexadecimal, or base 16)`. For floating point numbers, this parameter specifies the number of decimal places to use. For example-
+Ein optionaler zweiter Parameter gibt die Basis (Format) an, die verwendet werden soll. Zulässige Werte sind `BIN(Binär, oder Basis 2)`, `OCT(Oktal, oder Basis 8)`, `DEC(Dezimal, oder Basis 10)`, `HEX(Hexadezimal, oder Basis 16)`.
+Bei Gleitkommazahlen gibt dieser Parameter die Anzahl der zu verwendenden Dezimalstellen an. Zum Beispiel:
 
-* `Serial.print(78, BIN)` gives "1001110" +
-* `Serial.print(78, OCT)` gives "116" +
-* `Serial.print(78, DEC)` gives "78" +
-* `Serial.print(78, HEX)` gives "4E" +
-* `Serial.print(1.23456, 0)` gives "1" +
-* `Serial.print(1.23456, 2)` gives "1.23" +
-* `Serial.print(1.23456, 4)` gives "1.2346"
+* `Serial.print(78, BIN)` gibt "1001110" aus +
+* `Serial.print(78, OCT)` gibt "116" aus +
+* `Serial.print(78, DEC)` gibt "78" aus +
+* `Serial.print(78, HEX)` gibt "4E" aus +
+* `Serial.print(1.23456, 0)` gibt "1" aus +
+* `Serial.print(1.23456, 2)` gibt "1.23" aus +
+* `Serial.print(1.23456, 4)` gibt "1.2346"
 
-You can pass flash-memory based strings to Serial.print() by wrapping them with link:../../../../variables/utilities/progmem[F()]. For example:
+Du kannst Flash-Speicher-basierte Zeichenfolgen an `Serial.print()` übergeben, indem du Sie mit link:../../../../variables/utilities/progmem[F()] einschließt. Zum Beispiel:
 
 `Serial.print(F(“Hello World”))`
 
-To send data without conversion to its representation as characters, use link:../write[Serial.write()].
+Um Daten ohne Umwandlung in ihre Darstellung als Zeichen zu senden, verwende link:../write[Serial.write()].
 [%hardbreaks]
 
 
@@ -47,13 +50,13 @@ To send data without conversion to its representation as characters, use link:..
 
 
 [float]
-=== Parameters
-`_Serial_`: serial port object. See the list of available serial ports for each board on the link:../../serial[Serial main page]. +
-`val`: the value to print - any data type
+=== Parameter
+`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite]. +
+`val`: Der zu druckende Wert - Beliebiger Datentyp
 
 [float]
 === Returns
-`size_t`: `print()` returns the number of bytes written, though reading that number is optional.
+`size_t`: `print()` gibt die Anzahl der geschriebenen Bytes zurück, das Lesen dieser Anzahl ist jedoch optional.
 
 --
 // OVERVIEW SECTION ENDS
@@ -66,23 +69,23 @@ To send data without conversion to its representation as characters, use link:..
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Beispielcode
+// Beschreibe, worum es im Beispielcode geht und fügen Sie relevanten Code hinzu   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
 
 
 [source,arduino]
 ----
 /*
-Uses a for loop to print numbers in various formats.
+Verwendet eine for-Schleife, um Zahlen in verschiedenen Formaten zu drucken.
 */
 void setup() {
-  Serial.begin(9600); // open the serial port at 9600 bps:
+  Serial.begin(9600); // Öffnet die serielle Schnittstelle bei 9600 Bit/s:
 }
 
 void loop() {
   // print labels
-  Serial.print("NO FORMAT");  // prints a label
-  Serial.print("\t");         // prints a tab
+  Serial.print("NO FORMAT");  // Gibt einen Text aus
+  Serial.print("\t");         // Gibt einen Tab aus
 
   Serial.print("DEC");
   Serial.print("\t");
@@ -94,34 +97,34 @@ void loop() {
   Serial.print("\t");
 
   Serial.print("BIN");
-  Serial.println();        // carriage return after the last label
+  Serial.println();        // Carriage return nach dem letzten Text
 
-  for (int x = 0; x < 64; x++) { // only part of the ASCII chart, change to suit
-    // print it out in many formats:
-    Serial.print(x);       // print as an ASCII-encoded decimal - same as "DEC"
-    Serial.print("\t\t");  // prints two tabs to accomodate the label lenght
+  for (int x = 0; x < 64; x++) { // nur ein Teil des ASCII-Diagramms, ändere es entsprechend
+    // Ausgabe in verschiedenen Formaten:
+    Serial.print(x);       // Gibt eine ASCII-codierte Dezimalzahl aus - wie "DEC"
+    Serial.print("\t\t");  // Gibt zwei Tabs aus, um die Textlänge auszugeben
 
-    Serial.print(x, DEC);  // print as an ASCII-encoded decimal
-    Serial.print("\t");    // prints a tab
+    Serial.print(x, DEC);  // Ausgabe als ASCII-codierte Dezimalzahl
+    Serial.print("\t");    // Gibt einen Tab aus
 
-    Serial.print(x, HEX);  // print as an ASCII-encoded hexadecimal
-    Serial.print("\t");    // prints a tab
+    Serial.print(x, HEX);  // Ausgabe als ASCII-codierte Hexadezimalzahl
+    Serial.print("\t");    // Gibt einen Tab aus
 
-    Serial.print(x, OCT);  // print as an ASCII-encoded octal
-    Serial.print("\t");    // prints a tab
+    Serial.print(x, OCT);  // Ausgabe als ASCII-codierte Oktalzahl
+    Serial.print("\t");    // Gibt einen Tab aus
 
-    Serial.println(x, BIN);  // print as an ASCII-encoded binary
-    // then adds the carriage return with "println"
-    delay(200);            // delay 200 milliseconds
+    Serial.println(x, BIN);  // Ausgabe als ASCII-codierte Binärzahl
+    // fügt dann den Carriage return mit "println" hinzu
+    delay(200);            // Warte 200 Millisekunden
   }
-  Serial.println();        // prints another carriage return
+  Serial.println();        // Gibt einen Carriage return aus
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-For information on the asyncronicity of `Serial.print()`, see the Notes and Warnings section of the link:../write#howtouse[Serial.write() reference page].
+=== Anmerkungen und Warnungen
+Informationen zur Asynchronität von `Serial.println()` findest du im Abschnitt Hinweise und Warnungen von link:../write#howtouse[Serial.write()].
 
 --
 // HOW TO USE SECTION ENDS
@@ -132,7 +135,7 @@ For information on the asyncronicity of `Serial.print()`, see the Notes and Warn
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #SPRACHE# link:../begin[begin()]

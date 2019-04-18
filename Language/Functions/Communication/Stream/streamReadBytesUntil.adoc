@@ -13,12 +13,14 @@ title: Stream.readBytesUntil()
 --
 
 [float]
-=== Description
-`readBytesUntil()` reads characters from a stream into a buffer. The function terminates if the terminator character is detected, the determined length has been read, or it times out (see link:../streamsettimeout[setTimeout()]). The function returns the characters up to the last character before the supplied terminator. The terminator itself is not returned in the buffer.
+=== Beschreibung
+`readBytesUntil()` liest Zeichen aus einem Stream in einen Puffer. Die Funktion wird beendet, wenn das Abschlusszeichen erkannt wird, die ermittelte Länge gelesen wurde
+oder das Zeitlimit überschritten wurde (siehe link:../streamsettimeout[setTimeout()]). Die Funktion gibt die Zeichen bis zum letzten Zeichen vor dem angegebenen Abschlusszeichen zurück.
+Der Terminator selbst wird nicht im Puffer zurückgegeben.
 
-`readBytesUntil()` returns the number of bytes placed in the buffer. A 0 means no valid data was found.
+`readBytesUntil()` gibt die Anzahl der Bytes in den Puffer zurück. Eine 0 bedeutet, dass keine gültigen Daten gefunden wurden.
 
-This function is part of the Stream class, and is called by any class that inherits from it (Wire, Serial, etc). See the link:../../stream[Stream class] main page for more information.
+Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, die von ihr erbt (Wire, Serial usw.). Siehe die link:../../stream[Stream-Klasse] für weitere Informationen.
 [%hardbreaks]
 
 
@@ -28,18 +30,18 @@ This function is part of the Stream class, and is called by any class that inher
 
 
 [float]
-=== Parameters
-`stream` : an instance of a class that inherits from Stream.
+=== Parameter
+`stream` : Eine Instanz einer Klasse, die von Stream erbt.
 
-`character` : the character to search for (`char`)
+`character` : Das zu suchende Zeichen (`char`)
 
-`buffer`: the buffer to store the bytes in (`char[]` or `byte[]`)
+`buffer`: Der Puffer zum Speichern der Bytes (`char[]` oder `byte[]`)
 
-`length` : the number of bytes to `read(int)`
+`length` : Die Anzahl der zu lesenden Bytes `(int)`
 
 [float]
-=== Returns
-The number of bytes placed in the buffer.
+=== Gibt zurück
+Die Anzahl der Bytes, die im Puffer abgelegt wurden.
 
 --
 // OVERVIEW SECTION ENDS
@@ -50,8 +52,8 @@ The number of bytes placed in the buffer.
 --
 
 [float]
-=== Notes and Warnings
-The terminator character is discarded from the stream.
+=== Anmerkungen und Warnungen
+Das Abschlusszeichen wird aus dem Stream entfernt.
 [%hardbreaks]
 
 --

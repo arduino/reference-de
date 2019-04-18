@@ -13,16 +13,16 @@ title: Stream.parseInt()
 --
 
 [float]
-=== Description
-`parseInt()` returns the first valid (long) integer number from the current position. Initial characters that are not integers (or the minus sign) are skipped.
+=== Beschreibung
+`parseInt()` gibt die erste gültige (long) Ganzzahl von der aktuellen Position zurück. Anfangszeichen, die keine Ganzzahlen sind (oder das Minuszeichen), werden übersprungen.
 
-In particular:
+Genauergesagt:
 
-* Initial characters that are not digits or a minus sign, are skipped; +
-* Parsing stops when no characters have been read for a configurable time-out value, or a non-digit is read; +
-* If no valid digits were read when the time-out (see link:../streamsettimeout[Stream.setTimeout()]) occurs, 0 is returned;
+* Anfangszeichen, die keine Ziffern oder Minuszeichen sind, werden übersprungen; +
+* Die Analyse stoppt, wenn für einen konfigurierbaren Timeout-Wert keine Zeichen gelesen wurden oder eine Nicht-Ziffer gelesen wird; +
+* Wenn zum Timeout keine gültigen Ziffern gelesen wurden, tritt ein (siehe link:../streamsettimeout[Stream.setTimeout()]) auf und 0 wird zurückgegeben;
 
-This function is part of the Stream class, and can be called by any class that inherits from it (Wire, Serial, etc). See the link:../../stream[Stream class] main page for more information.
+Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, die von ihr erbt (Wire, Serial usw.). Siehe die link:../../stream[Stream-Klasse] für weitere Informationen.
 [%hardbreaks]
 
 
@@ -33,15 +33,15 @@ This function is part of the Stream class, and can be called by any class that i
 `stream.parseInt(''list', char skipchar')`
 
 [float]
-=== Parameters
-`stream` : an instance of a class that inherits from Stream.
+=== Parameter
+`stream` : Eine Instanz einer Klasse, die von Stream erbt.
 
-`list` : the stream to check for ints (`char`)
+`list` : Der Stream, um nach Ints zu suchen (`char`)
 
-`skipChar`: used to skip the indicated char in the search. Used for example to skip thousands divider.
+`skipChar`: Wird verwendet, um das angegebene Zeichen bei der Suche zu überspringen. Wird beispielsweise verwendet, um den Tausenderteiler zu überspringen.
 
 [float]
-=== Returns
+=== Gibt zurück
 `long`
 
 --

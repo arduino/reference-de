@@ -13,12 +13,12 @@ title: Stream.findUntil()
 --
 
 [float]
-=== Description
-`findUntil()` reads data from the stream until the target string of given length or terminator string is found, or it times out (see ../streamsettimeout[Stream.setTimeout()]).
+=== Beschreibung
+`findUntil()` liest Daten aus dem Stream, bis die Zielzeichenfolge der angegebenen Länge oder Terminatorzeichenfolge gefunden wurde oder das Zeitlimit überschritten wurde (siehe link:../streamsettimeout[Stream.setTimeout()]).
 
-The function returns true if target string is found, false if timed out
+Die Funktion gibt `true` zurück, wenn ein Zielstring gefunden wird, `false`, wenn das Zeitlimit überschritten wird.
 
-This function is part of the Stream class, and can be called by any class that inherits from it (Wire, Serial, etc). See the link:../../stream[Stream class] main page for more information.
+Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, die von ihr erbt (Wire, Serial usw.). Siehe die link:../../stream[Stream-Klasse] für weitere Informationen.
 [%hardbreaks]
 
 
@@ -28,15 +28,15 @@ This function is part of the Stream class, and can be called by any class that i
 
 
 [float]
-=== Parameters
-`stream` : an instance of a class that inherits from Stream
+=== Parameter
+`stream` : Eine Instanz einer Klasse, die von Stream erbt
 
-`target` : the string to search for (char)
+`target` : Die Zeichenfolge, nach der gesucht werden soll `(char)`
 
-`terminal` : the terminal string in the search (char)
+`terminal` : Die Terminalzeichenfolge bei der Suche `(char)`
 
 [float]
-=== Returns
+=== Gibt zurück
 `bool`
 
 --
