@@ -11,8 +11,8 @@ subCategories: [ "Datentypen" ]
 --
 
 [float]
-=== Description
-A byte stores an 8-bit unsigned number, from 0 to 255.
+=== Beschreibung
+Ein Byte speichert eine vorzeichenlose 8-Bit-Zahl von 0 bis 255.
 [%hardbreaks]
 
 
@@ -22,9 +22,9 @@ A byte stores an 8-bit unsigned number, from 0 to 255.
 
 
 [float]
-=== Parameters
-`var`: variable name +
-`val`: the value to assign to that variable
+=== Parameter
+`var`: Variablenname +
+`val`: Der Wert, der der Variablen zugewiesen wird
 
 --
 // OVERVIEW SECTION ENDS
@@ -44,7 +44,7 @@ A byte stores an 8-bit unsigned number, from 0 to 255.
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #SPRACHE# link:../../conversion/bytecast[byte()]

@@ -11,10 +11,11 @@ subCategories: [ "Datentypen" ]
 --
 
 [float]
-=== Description
-Double precision floating point number. On the Uno and other ATMEGA based boards, this occupies 4 bytes. That is, the double implementation is exactly the same as the float, with no gain in precision.
+=== Beschreibung
+Fließkommazahl mit doppelter Genauigkeit. Auf dem Uno und anderen ATMEGA-basierten Boards belegt dies 4 Bytes.
+Das heißt, die double-Implementierung entspricht genau dem float, ohne dass die Genauigkeit zunimmt.
 
-On the Arduino Due, doubles have 8-byte (64 bit) precision.
+Auf dem Arduino Due haben doubles eine Genauigkeit von 8 Byte (64 Bit).
 [%hardbreaks]
 
 
@@ -24,9 +25,9 @@ On the Arduino Due, doubles have 8-byte (64 bit) precision.
 
 
 [float]
-=== Parameters
-`var`: variable name +
-`val`: the value to assign to that variable
+=== Parameter
+`var`: Variablenname +
+`val`: Der Wert, der der Variablen zugewiesen wird
 
 --
 // OVERVIEW SECTION ENDS
@@ -40,8 +41,9 @@ On the Arduino Due, doubles have 8-byte (64 bit) precision.
 
 
 [float]
-=== Notes and Warnings
-Users who borrow code from other sources that includes double variables may wish to examine the code to see if the implied precision is different from that actually achieved on ATMEGA based Arduinos.
+=== Anmerkungen und Warnungen
+Benutzer, die sich Code aus anderen Quellen leihen, der double-Variablen enthält, möchten möglicherweise den Code untersuchen, um zu sehen,
+ob sich die implizierte Genauigkeit von der tatsächlich bei ATMEGA-basierten Arduinos erreichten unterscheidet.
 [%hardbreaks]
 
 --
@@ -55,7 +57,7 @@ Users who borrow code from other sources that includes double variables may wish
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 --
 // SEE ALSO SECTION ENDS

@@ -11,16 +11,22 @@ subCategories: [ "Datentypen" ]
 --
 
 [float]
-=== Description
-Datatype for floating-point numbers, a number that has a decimal point. Floating-point numbers are often used to approximate analog and continuous values because they have greater resolution than integers. Floating-point numbers can be as large as 3.4028235E+38 and as low as -3.4028235E+38. They are stored as 32 bits (4 bytes) of information.
+=== Beschreibung
+Datentyp für Fließkommazahlen, eine Zahl mit Dezimalpunkt.
+Fließkommazahlen werden häufig zur Annäherung an analoge und kontinuierliche Werte verwendet, da sie eine höhere Auflösung als ganze Zahlen haben.
+Fließkommazahlen können bis zu 3.4028235E+38 und bis zu -3.4028235E+38 betragen. Sie werden als 32 Bit (4 Byte) Informationen gespeichert.
 
-Floats have only 6-7 decimal digits of precision. That means the total number of digits, not the number to the right of the decimal point. Unlike other platforms, where you can get more precision by using a double (e.g. up to 15 digits), on the Arduino, double is the same size as float.
+Floats haben eine Genauigkeit von nur 6-7 Dezimalstellen. Das bedeutet die Gesamtzahl der Ziffern, nicht die Zahl rechts vom Dezimalpunkt.
+Im Gegensatz zu anderen Plattformen, bei denen du durch die Verwendung eines doubles (z. B. bis zu 15 Ziffern) eine höhere Genauigkeit erzielen kannst, hat double auf dem Arduino die gleiche Größe wie float.
 
-Floating point numbers are not exact, and may yield strange results when compared. For example 6.0 / 3.0 may not equal 2.0. You should instead check that the absolute value of the difference between the numbers is less than some small number.
+Fließkommazahlen sind nicht genau und können beim Vergleich zu seltsamen Ergebnissen führen. Zum Beispiel kann 6.0 / 3.0 nicht gleich 2.0 sein.
+Du solltest stattdessen überprüfen, ob der absolute Wert der Differenz zwischen den Zahlen geringer als eine kleine Zahl ist.
 
-Floating point math is also much slower than integer math in performing calculations, so should be avoided if, for example, a loop has to run at top speed for a critical timing function. Programmers often go to some lengths to convert floating point calculations to integer math to increase speed.
+Die Gleitkomma-Mathematik ist bei Berechnungen auch viel langsamer als die Ganzzahl-Mathematik.
+Es sollte also vermieden werden, wenn beispielsweise eine Schleife für eine kritische Timing-Funktion mit Höchstgeschwindigkeit laufen muss.
+Programmierer gehen oft etwas in die Länge und konvertieren Gleitkomma-Berechnungen in Ganzzahl-Mathematik, um die Geschwindigkeit zu erhöhen.
 
-If doing math with floats, you need to add a decimal point, otherwise it will be treated as an int. See the link:../../constants/floatingpointconstants[Floating point] constants page for details.
+Wenn du mit floats rechnest, musst du ein Dezimalzeichen hinzufügen, andernfalls wird es als int behandelt. Siehe die link:../../constants/floatingpointconstants[Fließpunkt]-Konstanten-Seite für weitere Informationen.
 [%hardbreaks]
 
 [float]
@@ -28,9 +34,9 @@ If doing math with floats, you need to add a decimal point, otherwise it will be
 `float var=val;`
 
 [float]
-=== Parameters
-`var`: variable name +
-`val`: the value you assign to that variable
+=== Parameter
+`var`: Variablenname +
+`val`: Der Wert, der der Variablen zugewiesen wird
 [%hardbreaks]
 
 --
@@ -44,8 +50,8 @@ If doing math with floats, you need to add a decimal point, otherwise it will be
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Beispielcode
+// Beschreibe, worum es im Beispielcode geht, und füge relevanten Code hinzu   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
 
 
 [source,arduino]
@@ -58,8 +64,8 @@ If doing math with floats, you need to add a decimal point, otherwise it will be
   float z;
 
   x = 1;
-  y = x / 2;          // y now contains 0, ints can't hold fractions
-  z = (float)x / 2.0; // z now contains .5 (you have to use 2.0, not 2)
+  y = x / 2;          // y enthält jetzt 0, ints können keine Brüche enthalten
+  z = (float)x / 2.0; // z enthält jetzt .5 (Du musst 2.0 verwenden, nicht 2)
 ----
 
 
@@ -72,7 +78,7 @@ If doing math with floats, you need to add a decimal point, otherwise it will be
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 

@@ -11,8 +11,8 @@ subCategories: [ "Datentypen" ]
 --
 
 [float]
-=== Description
-A word can store an unsigned number of at least 16 bits (from 0 to 65535).
+=== Beschreibung
+Ein Wort kann eine vorzeichenlose Zahl von mindestens 16 Bits (von 0 bis 65535) speichern.
 [%hardbreaks]
 
 
@@ -22,9 +22,9 @@ A word can store an unsigned number of at least 16 bits (from 0 to 65535).
 
 
 [float]
-=== Parameters
-`var`: variable name +
-`val`: the value to assign to that variable
+=== Parameter
+`var`: Variablennamen +
+`val`: Der Wert, der dieser Variablen zugewiesen werden soll
 
 --
 // OVERVIEW SECTION ENDS
@@ -37,8 +37,8 @@ A word can store an unsigned number of at least 16 bits (from 0 to 65535).
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Beispielcode
+// Beschreibe, worum es im Beispielcode geht, und füge relevanten Code hinzu   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
 
 
 [source,arduino]
@@ -55,7 +55,7 @@ word w = 10000;
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 --
 // SEE ALSO SECTION ENDS

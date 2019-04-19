@@ -11,12 +11,14 @@ subCategories: [ "Datentypen" ]
 --
 
 [float]
-=== Description
-A data type used to store a character value. Character literals are written in single quotes, like this: 'A' (for multiple characters - strings - use double quotes: "ABC").
+=== Beschreibung
+Ein Datentyp zum Speichern eines Zeichenwerts. Zeichenliterale werden in einfache Anführungszeichen geschrieben: 'A' (für mehrere Zeichen - Zeichenfolgen - verwende doppelte Anführungszeichen: "ABC").
 
-Characters are stored as numbers however. You can see the specific encoding in the link:https://www.arduino.cc/en/Reference/ASCIIchart[ASCII chart]. This means that it is possible to do arithmetic on characters, in which the ASCII value of the character is used (e.g. 'A' + 1 has the value 66, since the ASCII value of the capital letter A is 65). See link:../../../functions/communication/serial/println[`Serial.println`] reference for more on how characters are translated to numbers.
+Zeichen werden jedoch als Zahlen gespeichert. Du kannst die spezifische Kodierung im link:https://www.arduino.cc/en/Reference/ASCIIchart[ASCII-Chart] sehen.
+Dies bedeutet, dass es möglich ist, Zeichen zu berechnen, bei denen der ASCII-Wert des Zeichens verwendet wird (z. B. hat 'A' + 1 den Wert 66, da der ASCII-Wert des Großbuchstaben A 65 ist).
+Siehe link:../../../functions/communication/serial/println[`Serial.println`] für weitere Informationen, wie Zeichen in Zahlen übersetzt werden.
 
-The size of the `char` datatype is at least 8 bits. It's recommended to only use `char` for storing characters. For an unsigned, one-byte (8 bit) data type, use the link:../byte[byte] data type.
+Die Größe des `char`-Datentyps beträgt mindestens 8 Bit. Es wird empfohlen, `char` nur zum Speichern von Zeichen zu verwenden. Verwende für einen vorzeichenlosen 1-Byte-Datentyp (8 Bit) den link:../byte[byte]-Datentyp.
 [%hardbreaks]
 
 --
@@ -30,13 +32,13 @@ The size of the `char` datatype is at least 8 bits. It's recommended to only use
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 
 
 [source,arduino]
 ----
 char myChar = 'A';
-char myChar = 65; // both are equivalent
+char myChar = 65; // Beide sind gleichwertig
 ----
 
 
@@ -49,7 +51,7 @@ char myChar = 65; // both are equivalent
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #SPRACHE# link:../../../functions/communication/serial/println[Serial.println]

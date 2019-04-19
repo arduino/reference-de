@@ -11,15 +11,19 @@ subCategories: [ "Datentypen" ]
 --
 
 [float]
-=== Description
-Integers are your primary data-type for number storage.
+=== Beschreibung
+Ganzzahlen sind der primäre Datentyp für die Nummernspeicherung.
 
-On the Arduino Uno (and other ATmega based boards) an int stores a 16-bit (2-byte) value. This yields a range of -32,768 to 32,767 (minimum value of -2^15 and a maximum value of (2^15) - 1).
-On the Arduino Due and SAMD based boards (like MKR1000 and Zero), an int stores a 32-bit (4-byte) value. This yields a range of -2,147,483,648 to 2,147,483,647 (minimum value of -2^31 and a maximum value of (2^31) - 1).
+Auf dem Arduino Uno (und anderen ATmega-basierten Boards) speichert ein int einen 16-Bit-Wert (2 Byte).
+Dies ergibt einen Bereich von -32,768 bis 32,767 (Minimalwert -2^15 und Maximalwert (2^15) - 1).
+Auf den Arduino Due- und SAMD-basierten Boards (wie MKR1000 und Zero) speichert ein int einen 32-Bit-Wert (4 Byte).
+Dies ergibt einen Bereich von -2,147,483,648 to 2,147,483,647 (Minimalwert -2^31 und Maximalwert (2^31) - 1).
 
-int's store negative numbers with a technique called (http://en.wikipedia.org/wiki/2%27s_complement[2's complement math]). The highest bit, sometimes referred to as the "sign" bit, flags the number as a negative number. The rest of the bits are inverted and 1 is added.
+Int speichert negative Zahlen mit einer Technik namens (https://de.wikipedia.org/wiki/Zweierkomplement[Zweierkomplement]).
+Das höchste Bit, manchmal auch als "Vorzeichen" bezeichnet, kennzeichnet die Zahl als negative Zahl. Die restlichen Bits werden invertiert und 1 wird hinzugefügt.
 
-The Arduino takes care of dealing with negative numbers for you, so that arithmetic operations work transparently in the expected manner. There can be an unexpected complication in dealing with the link:../../../structure/bitwise-operators/bitshiftright/[bitshift right operator] (>>) however.
+Der Arduino kümmert sich um den Umgang mit negativen Zahlen für dich, damit arithmetische Operationen auf die erwartete Weise transparent arbeiten.
+Es kann unerwartete Komplikationen im Umgang mit dem link:../../../structure/bitwise-operators/bitshiftright/[Rechten Bitshift-Operator] (>>) geben.
 [%hardbreaks]
 
 
@@ -28,9 +32,9 @@ The Arduino takes care of dealing with negative numbers for you, so that arithme
 `int var = val;`
 
 [float]
-=== Parameters
-`var`: variable name +
-`val`: the value you assign to that variable
+=== Parameter
+`var`: Variablenname +
+`val`: Der Wert, der der Variablen zugewiesen wird
 [%hardbreaks]
 --
 // OVERVIEW SECTION ENDS
@@ -43,29 +47,32 @@ The Arduino takes care of dealing with negative numbers for you, so that arithme
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-This code creates an integer called 'countUp', which is initially set as the number 0 (zero). The variable goes up by 1 (one) each loop, being displayed on the serial monitor.
+=== Beispielcode
+// Beschreibe, worum es im Beispielcode geht, und füge relevanten Code hinzu   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
+Dieser Code erstellt eine Ganzzahl namens 'countUp', die anfänglich als Zahl 0 (Null) festgelegt wird. Der Wert der Variable steigt in jeder Schleife um 1 (eins) und wird auf dem seriellen Monitor angezeigt.
 
 [source,arduino]
 ----
-int countUp = 0; // creates a variable integer called 'countUp'
+int countUp = 0; // Erstellt eine variable Ganzzahl mit dem Namen 'countUp'
 
 void setup() {
-  Serial.begin(9600); // use the serial port to print the number
+  Serial.begin(9600); // Verwende die serielle Schnittstelle, um die Nummer auszugeben
 }
 
 void loop() {
-  countUp++;               // Adds 1 to the countUp int on every loop
-  Serial.println(countUp); // prints out the current state of countUp
+  countUp++;               // Fügt der countUp-Variable in jeder Schleife 1 hinzu
+  Serial.println(countUp); // Gibt den aktuellen Stand von countUp aus
   delay(1000);
 }
 ----
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-When signed variables are made to exceed their maximum or minimum capacity they _overflow_. The result of an overflow is unpredictable so this should be avoided. A typical symptom of an overflow is the variable "rolling over" from its maximum capacity to its minimum or vice versa, but this is not always the case. If you want this behavior, use link:../unsignedint/[unsigned int].
+=== Anmerkungen und Warnungen
+Wenn vorzeichenbehaftete Variablen ihre maximale oder minimale Kapazität überschreiten, _laufen sie über_ (Overflow).
+Das Ergebnis eines Überlaufs ist unvorhersehbar, daher sollte dies vermieden werden.
+Ein typisches Symptom für einen Überlauf ist die Variable, die von ihrer maximalen Kapazität auf das Minimum "umgedreht" wird oder umgekehrt, dies ist jedoch nicht immer der Fall.
+Wenn du dieses Verhalten wünscht, verwende link:../unsignedint/[unsigned int].
 
 
 --
@@ -77,10 +84,10 @@ When signed variables are made to exceed their maximum or minimum capacity they 
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
-* #SPRACHE# link:../../constants/integerconstants[Integer Constants]
+* #SPRACHE# link:../../constants/integerconstants[Ganzzahlkonstanten]
 
 --
 // SEE ALSO SECTION ENDS

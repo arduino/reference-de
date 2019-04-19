@@ -11,8 +11,9 @@ subCategories: [ "Datentypen" ]
 --
 
 [float]
-=== Description
-Unsigned long variables are extended size variables for number storage, and store 32 bits (4 bytes). Unlike standard longs unsigned longs won't store negative numbers, making their range from 0 to 4,294,967,295 (2^32 - 1).
+=== Beschreibung
+Long-Variablen ohne Vorzeichen sind Variablen mit erweiterter Größe für die Nummernspeicherung und speichern 32 Bit (4 Byte).
+Im Gegensatz zu Standard-Longs werden bei unsigned Longs keine negativen Zahlen gespeichert, sodass der Bereich zwischen 0 und 4,294,967,295 (2^32 - 1) liegt.
 [%hardbreaks]
 
 [float]
@@ -21,9 +22,9 @@ Unsigned long variables are extended size variables for number storage, and stor
 `unsigned long var = val;`
 
 [float]
-=== Parameters
-`var`: variable name +
-`val`: the value you assign to that variable
+=== Parameter
+`var`: Variablenname +
+`val`: Der Wert, der der Variablen zugewiesen wird
 [%hardbreaks]
 
 --
@@ -37,8 +38,8 @@ Unsigned long variables are extended size variables for number storage, and stor
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Beispielcode
+// Beschreibe, worum es im Beispielcode geht, und füge relevanten Code hinzu   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
 
 
 [source,arduino]
@@ -52,9 +53,9 @@ void setup() {
 void loop() {
   Serial.print("Time: ");
   time = millis();
-  //prints time since program started
+  // Gibt die Zeit seit dem Programmstart aus
   Serial.println(time);
-  // wait a second so as not to send massive amounts of data
+  // Wartet eine Sekunde, um keine riesigen Datenmengen zu senden
   delay(1000);
 }
 ----
@@ -71,7 +72,7 @@ void loop() {
 === See also
 
 [role="language"]
-* #SPRACHE# link:../../constants/integerconstants[Integer Constants]
+* #SPRACHE# link:../../constants/integerconstants[Ganzzahlkonstanten]
 
 --
 // SEE ALSO SECTION ENDS

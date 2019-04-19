@@ -11,13 +11,15 @@ subCategories: [ "Datentypen" ]
 --
 
 [float]
-=== Description
-Text strings can be represented in two ways. you can use the string data type, which is part of the core as of version 0019, or you can make a string out of an array of type char and null-terminate it. This page described the latter method. For more details on the string object, which gives you more functionality at the cost of more memory, see the link:../stringobject[string object] page.
+=== Beschreibung
+Textzeichenfolgen können auf zwei Arten dargestellt werden. Du kannst den String-Datentyp verwenden, der ab Version 0019 Teil des Kerns ist oder du kannst einen
+String aus einem Array des Typs char erstellen und ihn mit einem Nullterminator abschließen.
+Diese Seite beschreibt die letztere Methode. Für weitere Informationen zum String-Objekt, das mehr Funktionalität auf Kosten von mehr Arbeitsspeicher bietet, siehe die link:../stringobject[string object]-Seite.
 [%hardbreaks]
 
 [float]
 === Syntax
-All of the following are valid declarations for strings.
+Alle folgenden Angaben sind gültige Deklarationen für Strings.
 
 `char Str1[15];` +
 `char Str2[8] = {'a', 'r', 'd', 'u', 'i', 'n', 'o'};` +
@@ -26,30 +28,35 @@ All of the following are valid declarations for strings.
 `char Str5[8] = "arduino";` +
 `char Str6[15] = "arduino";`
 
-*Possibilities for declaring strings*
+*Möglichkeiten zur Deklaration von Strings*
 
-* Declare an array of chars without initializing it as in Str1
-* Declare an array of chars (with one extra char) and the compiler will add the required null character, as in Str2
-* Explicitly add the null character, Str3
-* Initialize with a string constant in quotation marks; the compiler will size the array to fit the string constant and a terminating null character, Str4
-* Initialize the array with an explicit size and string constant, Str5
-* Initialize the array, leaving extra space for a larger string, Str6
+* Deklariere ein Array von Zeichen, ohne es wie in Str1 zu initialisieren
+* Deklariere ein Array von chars (mit einem zusätzlichen char) und der Compiler fügt das erforderliche Nullzeichen wie in Str2 hinzu
+* Füge das Nullzeichen explizit hinzu, Str3
+* Initialisiere mit einer String-Konstante in Anführungszeichen. Der Compiler passt die Größe des Arrays an die String-Konstante und fügt ein abschließendes Nullzeichen an, Str4
+* Initialisiere das Array mit einer expliziten Größen- und Zeichenfolgekonstante, Str5
+* Initialisiere das Array und lasse zusätzlichen Platz für eine größere Zeichenfolge, Str6
 
-*Null termination*
+*Null-Termination*
 
-Generally, strings are terminated with a null character (ASCII code 0). This allows functions (like `Serial.print()`) to tell where the end of a string is. Otherwise, they would continue reading subsequent bytes of memory that aren't actually part of the string.
+Im Allgemeinen werden Zeichenfolgen mit einem Nullzeichen (ASCII-Code 0) abgeschlossen. Dadurch können Funktionen (wie `Serial.print()`) erkennen, wo das Ende eines Strings ist.
+Andernfalls würden sie nachfolgende Speicherbytes lesen, die eigentlich nicht Teil der Zeichenfolge sind.
 
-This means that your string needs to have space for one more character than the text you want it to contain. That is why Str2 and Str5 need to be eight characters, even though "arduino" is only seven - the last position is automatically filled with a null character. Str4 will be automatically sized to eight characters, one for the extra null. In Str3, we've explicitly included the null character (written '\0') ourselves.
+Das bedeutet, dass die Zeichenfolge Platz für ein Zeichen mehr als den gewünschten Text haben muss.
+Aus diesem Grund müssen Str2 und Str5 acht Zeichen haben, obwohl "Arduino" nur sieben hat - die letzte Position wird automatisch mit einem Nullzeichen gefüllt.
+Str4 wird automatisch in acht Zeichen umgewandelt, eines für die zusätzliche Null. In Str3 haben wir das Nullzeichen (geschrieben als '\0') selbst explizit eingefügt.
 
-Note that it's possible to have a string without a final null character (e.g. if you had specified the length of Str2 as seven instead of eight). This will break most functions that use strings, so you shouldn't do it intentionally. If you notice something behaving strangely (operating on characters not in the string), however, this could be the problem.
+Beachte, dass es möglich ist, eine Zeichenfolge ohne ein abschließendes Nullzeichen zu verwenden (z. B. wenn du die Länge von Str2 mit sieben statt mit acht angegeben hättest).
+Dadurch werden die meisten Funktionen, die Zeichenfolgen verwenden, nicht mehr richtig funktionieren.
+Wenn du feststellst, dass sich etwas merkwürdig verhält (mit Zeichen, die sich nicht in der Zeichenfolge befinden), kann dies jedoch das Problem sein.
 
-*Single quotes or double quotes?*
+*Einfache oder doppelte Anführungszeichen?*
 
-Strings are always defined inside double quotes ("Abc") and characters are always defined inside single quotes('A').
+Strings werden immer in doppelten Anführungszeichen ("Abc") und chars in einfachen Anführungszeichen ('A') definiert.
 
-*Wrapping long strings*
+*Lange strings umbrechen*
 
-You can wrap long strings like this:
+Du kannst lange Zeichenfolgen wie folgt umbrechen:
 
 [source,arduino]
 ----
@@ -58,11 +65,15 @@ char myString[] = "This is the first line"
 " etcetera";
 ----
 
-*Arrays of strings*
+*Arrays von strings*
 
-It is often convenient, when working with large amounts of text, such as a project with an LCD display, to setup an array of strings. Because strings themselves are arrays, this is in actually an example of a two-dimensional array.
+Wenn du mit großen Textmengen arbeitest, z. B. bei einem Projekt mit LCD-Display, ist es oft praktisch, ein String-Array zu erstellen.
+Da Strings selbst Arrays sind, handelt es sich eigentlich um ein zweidimensionales Array.
 
-In the code below, the asterisk after the datatype `char` "`char*`" indicates that this is an array of "`pointers`". All array names are actually pointers, so this is required to make an array of arrays. Pointers are one of the more esoteric parts of C++ for beginners to understand, but it isn't necessary to understand pointers in detail to use them effectively here.
+
+In dem folgenden Code zeigt das Sternchen hinter dem Datentyp `char` "`char*`" an, dass dies ein Array von "`Zeigern`" ist.
+Alle Array-Namen sind eigentlich Zeiger, daher ist dies zum Erstellen eines Arrays aus Arrays erforderlich. Zeiger sind eine der eher esoterischen Komponenten von C ++,
+die für Anfänger schwer verständlich sind, aber es ist nicht notwendig,Zeiger im Detail zu verstehen, um sie hier effektiv zu verwenden.
 
 --
 // OVERVIEW SECTION ENDS
@@ -75,8 +86,8 @@ In the code below, the asterisk after the datatype `char` "`char*`" indicates th
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Beispielcode
+// Beschreibe, worum es im Beispielcode geht, und füge relevanten Code hinzu   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
 
 
 [source,arduino]
@@ -105,7 +116,7 @@ void loop() {
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #SPRACHE# link:../../utilities/progmem[PROGMEM]

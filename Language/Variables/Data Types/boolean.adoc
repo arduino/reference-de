@@ -11,8 +11,8 @@ subCategories: [ "Datentypen" ]
 --
 
 [float]
-=== Description
-A `bool` holds one of two values, `true` or `false`. (Each `bool` variable occupies one byte of memory.)
+=== Beschreibung
+Ein `bool` enthält einen von zwei Werten, `true` oder `false`. (Jede `bool`-Variable belegt ein Byte Speicher.)
 
 
 [%hardbreaks]
@@ -24,9 +24,9 @@ A `bool` holds one of two values, `true` or `false`. (Each `bool` variable occup
 
 
 [float]
-=== Parameters
-`var`: variable name +
-`val`: the value to assign to that variable
+=== Parameter
+`var`: Variablenname +
+`val`: Der Wert, der der Variablen zugewiesen wird
 
 --
 // OVERVIEW SECTION ENDS
@@ -39,28 +39,28 @@ A `bool` holds one of two values, `true` or `false`. (Each `bool` variable occup
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-This code shows how to use the `bool` datatype.
+=== Beispielcode
+// Beschreibe, worum es im Beispielcode geht, und füge relevanten Code hinzu   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
+Dieser Code zeigt, wie der `bool`-Datentyp verwendet wird.
 
 [source,arduino]
 ----
-int LEDpin = 5;     // LED on pin 5
-int switchPin = 13; // momentary switch on 13, other side connected to ground
+int LEDpin = 5;     // LED auf Pin 5
+int switchPin = 13; // Momentschalter auf 13, andere Seite mit Masse verbunden
 
 bool running = false;
 
 void setup() {
   pinMode(LEDpin, OUTPUT);
   pinMode(switchPin, INPUT);
-  digitalWrite(switchPin, HIGH); // turn on pullup resistor
+  digitalWrite(switchPin, HIGH); // Pullup-Widerstand einschalten
 }
 
 void loop() {
-  if (digitalRead(switchPin) == LOW) {  // switch is pressed - pullup keeps pin high normally
-    delay(100);                    // delay to debounce switch
-    running = !running;            // toggle running variable
-    digitalWrite(LEDpin, running); // indicate via LED
+  if (digitalRead(switchPin) == LOW) {  // Schalter wird gedrückt - Pullup hält den Pin normalerweise hoch
+    delay(100);                    // Verzögerung zum Entprellen des Schalters
+    running = !running;            // Laufvariable umschalten
+    digitalWrite(LEDpin, running); // Über LED anzeigen
   }
 }
 ----
@@ -74,10 +74,10 @@ void loop() {
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
-* #SPRACHE# link:../../../variables/constants/constants[constants]
+* #SPRACHE# link:../../../variables/constants/constants[Konstanten]
 
 --
 // SEE ALSO SECTION ENDS

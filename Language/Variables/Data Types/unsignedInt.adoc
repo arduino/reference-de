@@ -11,12 +11,15 @@ subCategories: [ "Datentypen" ]
 --
 
 [float]
-=== Description
-On the Uno and other ATMEGA based boards, unsigned ints (unsigned integers) are the same as ints in that they store a 2 byte value. Instead of storing negative numbers however they only store positive values, yielding a useful range of 0 to 65,535 (2^16) - 1).
+=== Beschreibung
+Auf Uno und anderen ATMEGA-basierten Boards sind vorzeichenlose Ganzzahlen (unsigned int) die gleichen wie ints, da sie einen 2-Byte-Wert speichern.
+Anstatt negative Zahlen zu speichern, speichern sie jedoch nur positive Werte, was einen Bereich von 0 bis 65,535 (2^16 - 1) ergibt.
 
-The Due stores a 4 byte (32-bit) value, ranging from 0 to 4,294,967,295 (2^32 - 1).
+The Due stores a 4 byte (32-bit) value, ranging from 0 bis 4,294,967,295 (2^32 - 1).
 
-The difference between unsigned ints and (signed) ints, lies in the way the highest bit, sometimes referred to as the "sign" bit, is interpreted. In the Arduino int type (which is signed), if the high bit is a "1", the number is interpreted as a negative number, and the other 15 bits are interpreted with (http://en.wikipedia.org/wiki/2%27s_complement[2's complement math]).
+Der Unterschied zwischen vorzeichenlosen Ints und signed Ints liegt in der Art und Weise, wie das höchste Bit, manchmal als "Vorzeichen" bezeichnet, interpretiert wird.
+Wenn im Arduino int-Typ (der mit Vorzeichen versehen ist) das High-Bit eine "1" ist, wird die Zahl als negative Zahl interpretiert und die anderen 15 Bits werden interpretiert
+mit dem (https://de.wikipedia.org/wiki/Zweierkomplement[Zweierkomplement]).
 [%hardbreaks]
 
 --
@@ -25,10 +28,11 @@ The difference between unsigned ints and (signed) ints, lies in the way the high
 [float]
 === Syntax
 `unsigned int var = val;`
+
 [float]
-=== Parameters
-`var`: variable name +
-`val`: the value you assign to that variable
+=== Parameter
+`var`: Variablenname +
+`val`: Der Wert, der der Variablen zugewiesen wird
 [%hardbreaks]
 
 // HOW TO USE SECTION STARTS
@@ -36,8 +40,8 @@ The difference between unsigned ints and (signed) ints, lies in the way the high
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Beispielcode
+// Beschreibe, worum es im Beispielcode geht, und füge relevanten Code hinzu   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
 
 
 [source,arduino]
@@ -47,15 +51,15 @@ The difference between unsigned ints and (signed) ints, lies in the way the high
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
-When unsigned variables are made to exceed their maximum capacity they "roll over" back to 0, and also the other way around:
+=== Anmerkungen und Warnungen
+Wenn Variablen ohne Vorzeichen ihre maximale Kapazität überschreiten, "rollen" sie wieder auf 0 zurück und umgekehrt:
 
 [source,arduino]
 ----
 unsigned int x;
 x = 0;
-x = x - 1; // x now contains 65535 - rolls over in neg direction
-x = x + 1; // x now contains 0 - rolls over
+x = x - 1; // x enthält jetzt 65535
+x = x + 1; // x enthält jetzt 0
 ----
 
 
@@ -68,10 +72,10 @@ x = x + 1; // x now contains 0 - rolls over
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
-* #SPRACHE# link:../../constants/integerconstants[Integer Constants]
+* #SPRACHE# link:../../constants/integerconstants[Ganzzahlkonstanten]
 
 --
 // SEE ALSO SECTION ENDS

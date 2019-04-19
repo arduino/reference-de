@@ -11,10 +11,11 @@ subCategories: [ "Datentypen" ]
 --
 
 [float]
-=== Description
-Long variables are extended size variables for number storage, and store 32 bits (4 bytes), from -2,147,483,648 to 2,147,483,647.
+=== Beschreibung
+Long-Variablen sind Variablen mit erweiterter Größe für die Nummernspeicherung und speichern 32 Bit (4 Byte), von -2,147,483,648 bis 2,147,483,647.
 
-If doing math with integers, at least one of the numbers must be followed by an L, forcing it to be a long. See the link:../../constants/integerconstants[Integer Constants] page for details.
+Wenn du mit ganzzahligen Zahlen rechnest, muss mindestens eine der Zahlen von einem L gefolgt werden, wodurch eine long-Zahl erzwungen wird.
+Siehe auch die link:../../constants/integerconstants[Ganzzahlkonstanten]-Seite für mehr Details.
 [%hardbreaks]
 
 [float]
@@ -23,9 +24,9 @@ If doing math with integers, at least one of the numbers must be followed by an 
 `long var = val;`
 
 [float]
-=== Parameters
-`var`: variable name +
-`val`: the value assigned to the variable
+=== Parameter
+`var`: Variablenname +
+`val`: Der Wert, der der Variablen zugewiesen wird
 [%hardbreaks]
 --
 // OVERVIEW SECTION ENDS
@@ -38,13 +39,13 @@ If doing math with integers, at least one of the numbers must be followed by an 
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Beispielcode
+// Beschreibe, worum es im Beispielcode geht, und füge relevanten Code hinzu   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
 
 
 [source,arduino]
 ----
-  long speedOfLight = 186000L; // see the Integer Constants page for explanation of the 'L'
+  long speedOfLight = 186000L; // Auf der Ganzzahlkonstanten-Seite findest du Erläuterungen zu dem 'L'.
 ----
 
 --
@@ -55,10 +56,10 @@ If doing math with integers, at least one of the numbers must be followed by an 
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
-* #SPRACHE# link:../../constants/integerconstants[Integer Constants]
+* #SPRACHE# link:../../constants/integerconstants[Ganzzahlkonstanten]
 
 --
 // SEE ALSO SECTION ENDS

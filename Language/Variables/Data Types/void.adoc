@@ -11,8 +11,8 @@ subCategories: [ "Datentypen" ]
 --
 
 [float]
-=== Description
-The `void` keyword is used only in function declarations. It indicates that the function is expected to return no information to the function from which it was called.
+=== Beschreibung
+Das Schlüsselwort `void` wird nur in Funktionsdeklarationen verwendet. Es zeigt an, dass die Funktion voraussichtlich keine Informationen an die Funktion zurückgibt, von der sie aufgerufen wurde.
 [%hardbreaks]
 
 --
@@ -26,14 +26,14 @@ The `void` keyword is used only in function declarations. It indicates that the 
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-The code shows how to use `void`.
+=== Beispielcode
+// Beschreibe, worum es im Beispielcode geht, und füge relevanten Code hinzu   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
+Der Code zeigt, wie `void` verwendet wird.
 
 [source,arduino]
 ----
-// actions are performed in the functions "setup" and "loop"
-// but  no information is reported to the larger program
+// Aktionen werden in den Funktionen `setup()` und `loop()` ausgeführt.
+// Es werden jedoch keine Informationen an das größere Programm gemeldet.
 
 void setup() {
   // ...
@@ -54,10 +54,10 @@ void loop() {
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
-* #SPRACHE# link:../../constants/integerconstants[Integer Constants]
+* #SPRACHE# link:../../constants/integerconstants[Ganzzahlkonstanten]
 
 --
 // SEE ALSO SECTION ENDS

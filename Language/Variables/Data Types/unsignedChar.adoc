@@ -11,12 +11,12 @@ subCategories: [ "Datentypen" ]
 --
 
 [float]
-=== Description
-An unsigned data type that occupies 1 byte of memory. Same as the link:../byte[byte] datatype.
+=== Beschreibung
+Ein vorzeichenloser Datentyp belegt 1 Byte Speicher. Genauso wie der link:../byte[byte]-Datentyp.
 
-The unsigned char datatype encodes numbers from 0 to 255.
+Der vorzeichenlose char-Datentyp codiert Zahlen von 0 bis 255.
 
-For consistency of Arduino programming style, the byte data type is to be preferred.
+Für die Konsistenz des Arduino-Programmierstils ist der Byte-Datentyp zu bevorzugen.
 [%hardbreaks]
 
 
@@ -26,9 +26,9 @@ For consistency of Arduino programming style, the byte data type is to be prefer
 
 
 [float]
-=== Parameters
-`var`: variable name +
-`val`: the value to assign to that variable
+=== Parameter
+`var`: Variablenname +
+`val`: Der Wert, der der Variablen zugewiesen wird
 
 --
 // OVERVIEW SECTION ENDS
@@ -41,8 +41,8 @@ For consistency of Arduino programming style, the byte data type is to be prefer
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Beispielcode
+// Beschreibe, worum es im Beispielcode geht, und füge relevanten Code hinzu   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
 
 
 [source,arduino]
@@ -59,7 +59,7 @@ unsigned char myChar = 240;
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #SPRACHE# link:../../../functions/communication/serial/println[Serial.println]
