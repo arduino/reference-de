@@ -16,8 +16,8 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-Converts a valid String to an integer. The input string should start with an integer number. If the string contains non-integer numbers, the function will stop performing the conversion.
+=== Beschreibung
+Konvertiert einen gültigen String in eine Ganzzahl. Die Eingabezeichenfolge sollte mit einer Ganzzahl beginnen. Wenn die Zeichenfolge nicht ganzzahlige Zahlen enthält, stoppt die Funktion die Konvertierung.
 
 [%hardbreaks]
 
@@ -30,15 +30,15 @@ Converts a valid String to an integer. The input string should start with an int
 ----
 
 [float]
-=== Parameters
-`myString`: a variable of type String
+=== Parameter
+`myString`: Eine Variable vom Typ String
 
 
 [float]
-=== Returns
+=== Gibt zurück
 `long`
 
-If no valid conversion could be performed because the string doesn't start with a integer number, a zero is returned.
+Wenn keine gültige Konvertierung durchgeführt werden konnte, weil der String nicht mit einer Ganzzahl beginnt, wird eine Null zurückgegeben.
 
 --
 // OVERVIEW SECTION ENDS
@@ -53,9 +53,9 @@ If no valid conversion could be performed because the string doesn't start with 
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
 // SEE ALSO SECTION ENDS

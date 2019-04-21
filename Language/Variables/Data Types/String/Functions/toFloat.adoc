@@ -16,8 +16,11 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-Converts a valid String to a float. The input string should start with a digit. If the string contains non-digit characters, the function will stop performing the conversion. For example, the strings "123.45", "123", and "123fish" are converted to 123.45, 123.00, and 123.00 respectively. Note that "123.456" is approximated with 123.46. Note too that floats have only 6-7 decimal digits of precision and that longer strings might be truncated.
+=== Beschreibung
+Konvertiert einen gültigen String in einen Float. Die Eingabezeichenfolge sollte mit einer Ziffer beginnen.
+Wenn die Zeichenfolge Nicht-Zahlen als Zeichen enthält, wird die Konvertierung abgebrochen.
+Beispielsweise werden die Zeichenfolgen "123.45", "123" und "123fish" in 123.45, 123.00 und 123.00 konvertiert. Beachte, dass "123.456" mit 123.46 approximiert wird.
+Beachte auch, dass Floats nur eine Genauigkeit von 6 bis 7 Dezimalstellen haben und längere Zeichenfolgen möglicherweise abgeschnitten werden.
 
 [%hardbreaks]
 
@@ -30,15 +33,15 @@ Converts a valid String to a float. The input string should start with a digit. 
 ----
 
 [float]
-=== Parameters
-`myString`: a variable of type String
+=== Parameter
+`myString`: Eine Variable vom Typ String
 
 
 [float]
-=== Returns
+=== Gibt zurück
 `float`
 
-If no valid conversion could be performed because the string doesn't start with a digit, a zero is returned.
+Wenn keine gültige Konvertierung durchgeführt werden konnte, weil die Zeichenfolge nicht mit einer Ziffer beginnt, wird eine Null zurückgegeben.
 
 --
 // OVERVIEW SECTION ENDS
@@ -53,9 +56,9 @@ If no valid conversion could be performed because the string doesn't start with 
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
 // SEE ALSO SECTION ENDS

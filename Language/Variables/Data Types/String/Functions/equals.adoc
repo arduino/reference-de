@@ -16,8 +16,8 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-Compares two Strings for equality. The comparison is case-sensitive, meaning the String "hello" is not equal to the String "HELLO".
+=== Beschreibung
+Vergleicht zwei Zeichenfolgen auf Gleichheit. Bei dem Vergleich wird zwischen Groß- und Kleinschreibung unterschieden. Dies bedeutet, dass der String "hallo" nicht mit dem String "HALLO" übereinstimmt.
 
 [%hardbreaks]
 
@@ -30,15 +30,15 @@ Compares two Strings for equality. The comparison is case-sensitive, meaning the
 ----
 
 [float]
-=== Parameters
-`myString, myString2`: variables of type String
+=== Parameter
+`myString, myString2`: Variablen vom Typ String
 
 
 [float]
-=== Returns
-`true`: if string equals string2 
+=== Gibt zurück
+`true`: Wenn myString gleich myString2 ist 
 
-`false`: otherwise
+`false`: Sonst
 --
 // OVERVIEW SECTION ENDS
 
@@ -52,9 +52,9 @@ Compares two Strings for equality. The comparison is case-sensitive, meaning the
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
 // SEE ALSO SECTION ENDS

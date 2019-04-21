@@ -9,7 +9,7 @@ subCategories: [ "StringObject Operator" ]
 
 
 
-= += Append
+= += Anhängen
 
 
 // OVERVIEW SECTION STARTS
@@ -17,8 +17,8 @@ subCategories: [ "StringObject Operator" ]
 --
 
 [float]
-=== Description
-It concatenates Strings with other data.
+=== Beschreibung
+Es verkettet Strings mit anderen Daten.
 
 [%hardbreaks]
 
@@ -31,12 +31,12 @@ myString1 += data
 ----
 
 [float]
-=== Parameters
-`myString1` - a String variable
+=== Parameter
+`myString1` - Eine String-Variable
 
 [float]
-=== Returns
-None
+=== Gibt zurück
+Nichts
 
 --
 
@@ -52,9 +52,9 @@ None
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
 // SEE ALSO SECTION ENDS

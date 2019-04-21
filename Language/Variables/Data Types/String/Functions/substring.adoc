@@ -16,8 +16,10 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-Get a substring of a String. The starting index is inclusive (the corresponding character is included in the substring), but the optional ending index is exclusive (the corresponding character is not included in the substring). If the ending index is omitted, the substring continues to the end of the String.
+=== Beschreibung
+Ruft einen Teilstring eines Strings ab. Der Startindex ist inklusive (das entsprechende Zeichen ist in der Teilzeichenfolge enthalten).
+Der optionale Endindex ist jedoch exklusiv (das entsprechende Zeichen ist nicht in der Teilzeichenfolge enthalten).
+Wenn der Endindex weggelassen wird, wird der Teilstring bis zum Ende des Strings fortgesetzt.
 
 [%hardbreaks]
 
@@ -31,17 +33,17 @@ Get a substring of a String. The starting index is inclusive (the corresponding 
 ----
 
 [float]
-=== Parameters
-`myString`: a variable of type String
+=== Parameter
+`myString`: Eine Variable vom Typ String
 
-`from`: the index to start the substring at
+`from`: Der Index, um den Teilstring zu starten
 
-`to` (optional): the index to end the substring before
+`to` (optional): Der Index, um den Teilstring vorher zu beenden
 
 
 [float]
-=== Returns
-The substring.
+=== Gibt zurück
+Der Teilstring.
 
 --
 // OVERVIEW SECTION ENDS
@@ -56,9 +58,9 @@ The substring.
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
 // SEE ALSO SECTION ENDS

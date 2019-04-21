@@ -16,8 +16,8 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-Modify in place a String removing chars from the provided index to the end of the String or from the provided index to index plus count.
+=== Beschreibung
+Ändert einen String, der die Zeichen aus dem angegebenen Index bis zum Ende des Strings oder aus dem bereitgestellten Index entfernt, um die Anzahl der Indizes zu zählen.
 
 [%hardbreaks]
 
@@ -28,17 +28,17 @@ Modify in place a String removing chars from the provided index to the end of th
 `myString.remove(index, count)`
 
 [float]
-=== Parameters
-`myString`: a variable of type String
+=== Parameter
+`myString`: Eine Variable vom Typ String
 
-`index`: a variable of type unsigned int
+`index`: Eine Variable vom Typ unsigned int
 
-`count`: a variable of type unsigned int
+`count`: Eine Variable vom Typ unsigned int
 
 
 [float]
-=== Returns
-None
+=== Gibt zurück
+Nichts
 
 --
 // OVERVIEW SECTION ENDS
@@ -49,12 +49,12 @@ None
 --
 
 [float]
-=== Example Code
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+=== Beispielcode
+// Beschreibe, worum es bei dem Beispielcode geht, und füge den entsprechenden Code hinzu. ►►►►► DIESER ABSCHNITT IST VERPFLICHTEND ◄◄◄◄◄
 [source,arduino]
 ----
 String greeting = "hello";
-greeting.remove(2, 2);  // greeting now contains "heo"
+greeting.remove(2, 2);  // greeting enthält jetzt "heo"
 ----
 [%hardbreaks]
 --
@@ -66,9 +66,9 @@ greeting.remove(2, 2);  // greeting now contains "heo"
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
 // SEE ALSO SECTION ENDS

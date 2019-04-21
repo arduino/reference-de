@@ -16,8 +16,8 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-Get a lower-case version of a String. As of 1.0, toLowerCase() modifies the string in place rather than returning a new one.
+=== Beschreibung
+Ruft eine Kleinbuchstabenversion eines Strings ab. Seit 1.0 ändert `toLowerCase(`) den String anstatt eine neue zurückzugeben.
 
 [%hardbreaks]
 
@@ -30,13 +30,13 @@ Get a lower-case version of a String. As of 1.0, toLowerCase() modifies the stri
 ----
 
 [float]
-=== Parameters
-`myString`: a variable of type String
+=== Parameter
+`myString`: Eine Variable vom Typ String
 
 
 [float]
-=== Returns
-None
+=== Gibt zurück
+Nichts
 
 --
 // OVERVIEW SECTION ENDS
@@ -51,9 +51,9 @@ None
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
 // SEE ALSO SECTION ENDS

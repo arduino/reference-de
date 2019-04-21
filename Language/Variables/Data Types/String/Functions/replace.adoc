@@ -16,8 +16,9 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-The String replace() function allows you to replace all instances of a given character with another character. You can also use replace to replace substrings of a string with a different substring.
+=== Beschreibung
+Mit der Funktion String `replace()` kannst du alle Instanzen eines bestimmten Zeichens durch ein anderes Zeichen ersetzen.
+Du kannst auch `replace()` verwenden, um Teilstrings eines Strings durch einen anderen Teilstring zu ersetzen.
 
 [%hardbreaks]
 
@@ -30,18 +31,18 @@ The String replace() function allows you to replace all instances of a given cha
 ----
 
 [float]
-=== Parameters
-`myString`: a variable of type String
+=== Parameter
+`myString`: Eine Variable vom Typ String
 
-`substring1`: another variable of type String
+`substring1`: Eine andere Variable vom Typ String
 
-`substring2`: another variable of type String
+`substring2`: Eine andere Variable vom Typ String
 
 
 
 [float]
-=== Returns
-None
+=== Gibt zurück
+Nichts
 --
 // OVERVIEW SECTION ENDS
 
@@ -55,9 +56,9 @@ None
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
 // SEE ALSO SECTION ENDS

@@ -16,8 +16,11 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-Converts a valid String to a double. The input String should start with a digit. If the String contains non-digit characters, the function will stop performing the conversion. For example, the Strings "123.45", "123", and "123fish" are converted to 123.45, 123.00, and 123.00 respectively. Note that "123.456" is approximated with 123.46. Note too that floats have only 6-7 decimal digits of precision and that longer Strings might be truncated.
+=== Beschreibung
+Wandelt einen gültigen String in ein Double um. Die Eingabezeichenfolge sollte mit einer Ziffer beginnen.
+Wenn der String Nicht-Zahlen als Zeichen enthält, wird die Konvertierung abgebrochen.
+Beispielsweise werden die Strings "123.45", "123" und "123fish" in 123.45, 123.00 und 123.00 konvertiert.
+Beachte, dass "123.456" mit 123.46 approximiert wird. Beachte auch, dass Floats nur eine Genauigkeit von 6-7 Dezimalstellen haben und längere Strings möglicherweise abgeschnitten werden.
 
 [%hardbreaks]
 
@@ -30,15 +33,15 @@ Converts a valid String to a double. The input String should start with a digit.
 ----
 
 [float]
-=== Parameters
-`myString`: a variable of type String
+=== Parameter
+`myString`: Eine Variable vom Typ String
 
 
 [float]
-=== Returns
+=== Gibt zurück
 `double`
 
-If no valid conversion could be performed because the String doesn't start with a digit, a zero is returned.
+Wenn keine gültige Konvertierung durchgeführt werden konnte, weil der String nicht mit einer Ziffer beginnt, wird eine Null zurückgegeben.
 
 --
 // OVERVIEW SECTION ENDS
@@ -53,9 +56,9 @@ If no valid conversion could be performed because the String doesn't start with 
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
 // SEE ALSO SECTION ENDS

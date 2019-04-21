@@ -16,8 +16,10 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-Converts the contents of a String as a C-style, null-terminated string. Note that this gives direct access to the internal String buffer and should be used with care. In particular, you should never modify the string through the pointer returned. When you modify the String object, or when it is destroyed, any pointer previously returned by c_str() becomes invalid and should not be used any longer.
+=== Beschreibung
+Konvertiert den Inhalt einer Zeichenfolge als nullterminierte Zeichenfolge im C-Stil. Beachte, dass dies direkten Zugriff auf den internen String-Puffer bietet und mit Vorsicht verwendet werden sollte.
+Insbesondere sollte die Zeichenfolge niemals über den zurückgegebenen Zeiger geändert werden.
+Wenn du das String-Objekt ändern willst oder wenn es zerstört wird, wird ein zuvor von `c_str()` zurückgegebener Zeiger ungültig und sollte nicht mehr verwendet werden.
 
 [%hardbreaks]
 
@@ -30,12 +32,12 @@ Converts the contents of a String as a C-style, null-terminated string. Note tha
 ----
 
 [float]
-=== Parameters
-`myString`: a variable of type String
+=== Parameter
+`myString`: Eine Variable vom Typ String
 
 [float]
-=== Returns
-A pointer to the C-style version of the invoking String.
+=== Gibt zurück
+Ein Zeiger auf die C-Style-Version des aufrufenden Strings.
 
 --
 // OVERVIEW SECTION ENDS
@@ -50,9 +52,9 @@ A pointer to the C-style version of the invoking String.
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
 // SEE ALSO SECTION ENDS

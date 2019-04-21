@@ -16,8 +16,8 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-Appends the parameter to a String.
+=== Beschreibung
+Hängt den Parameter an einen String an.
 
 [%hardbreaks]
 
@@ -30,16 +30,16 @@ Appends the parameter to a String.
 ----
 
 [float]
-=== Parameters
-`myString`: a variable of type String
+=== Parameter
+`myString`: Eine Variable vom Typ String
 
-`parameter`: *Allowed types are* String, string, char, byte, int, unsigned int, long, unsigned long, float, double, __FlashStringHelper(F() macro).
+`parameter`: *Zulässige Datentypen sind* String, string, char, byte, int, unsigned int, long, unsigned long, float, double, __FlashStringHelper(F() macro).
 
 [float]
-=== Returns
-`true`: success
+=== Gibt zurück
+`true`: Wenn das Anfügen erfolgreich war.
 
-`false`: failure (in which case the String is left unchanged).
+`false`: Sonst
 
 --
 // OVERVIEW SECTION ENDS
@@ -54,9 +54,9 @@ Appends the parameter to a String.
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
 // SEE ALSO SECTION ENDS

@@ -16,8 +16,10 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-Compares two Strings, testing whether one comes before or after the other, or whether they're equal. The strings are compared character by character, using the ASCII values of the characters. That means, for example, that 'a' comes before 'b' but after 'A'. Numbers come before letters.
+=== Beschreibung
+Vergleicht zwei Strings und testet, ob einer vor oder nach dem anderen kommt oder ob sie gleich sind.
+Die Zeichenfolgen werden zeichenweise verglichen, wobei die ASCII-Werte der Zeichen verwendet werden.
+Das bedeutet zum Beispiel, dass 'a' vor 'b' liegt, aber nach 'A'. Zahlen stehen vor Buchstaben.
 
 [%hardbreaks]
 
@@ -30,19 +32,19 @@ Compares two Strings, testing whether one comes before or after the other, or wh
 ----
 
 [float]
-=== Parameters
-`myString`: a variable of type String
+=== Parameter
+`myString`: Eine Variable vom Typ String
 
-`myString2`: another variable of type String
+`myString2`: Eine andere Variable vom Typ String
 
 
 [float]
-=== Returns
-`a negative number`: if myString comes before myString2
+=== Gibt zurück
+`Eine negative Zahl`: Wenn myString vor myString2 steht
 
-`0`: if String equals myString2
+`0`: Wenn String gleich myString2 ist
 
-`a positive number`: if myString comes after myString2
+`Eine positive Zahl`: Wenn myString nach myString2 kommt
 --
 
 // OVERVIEW SECTION ENDS
@@ -57,9 +59,9 @@ Compares two Strings, testing whether one comes before or after the other, or wh
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
 // SEE ALSO SECTION ENDS

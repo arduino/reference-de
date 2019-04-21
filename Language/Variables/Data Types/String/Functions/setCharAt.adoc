@@ -16,8 +16,8 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-Sets a character of the String. Has no effect on indices outside the existing length of the String.
+=== Beschreibung
+Legt ein Zeichen für den String fest. Hat keine Auswirkung auf Indizes außerhalb der vorhandenen Länge des Strings.
 
 [%hardbreaks]
 
@@ -30,17 +30,17 @@ Sets a character of the String. Has no effect on indices outside the existing le
 ----
 
 [float]
-=== Parameters
-`myString`: a variable of type String
+=== Parameter
+`myString`: Eine Variable vom Typ String
 
-`index`: the index to set the character at
+`index`: Der Index, auf den das Zeichen gesetzt werden soll
 
-`c`: the character to store to the given location
+`c`: Das Zeichen, das an dem angegebenen Ort gespeichert werden soll
 
 
 [float]
-=== Returns
-None
+=== Gibt zurück
+Nichts
 
 --
 // OVERVIEW SECTION ENDS
@@ -55,9 +55,9 @@ None
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
 // SEE ALSO SECTION ENDS

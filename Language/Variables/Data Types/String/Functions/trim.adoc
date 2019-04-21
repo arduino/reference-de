@@ -16,8 +16,8 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-Get a version of the String with any leading and trailing whitespace removed. As of 1.0, trim() modifies the string in place rather than returning a new one.
+=== Beschreibung
+Ruft eine Version des Strings ab, wobei führende und nachgestellte Leerzeichen entfernt werden. Mit Version 1.0 ändert `trim()` den String anstatt einen neuen zurückzugeben.
 
 [%hardbreaks]
 
@@ -30,13 +30,13 @@ Get a version of the String with any leading and trailing whitespace removed. As
 ----
 
 [float]
-=== Parameters
-`myString`: a variable of type String
+=== Parameter
+`myString`: Eine Variable vom Typ String
 
 
 [float]
-=== Returns
-None
+=== Gibt zurück
+Nichts
 
 --
 // OVERVIEW SECTION ENDS
@@ -51,9 +51,9 @@ None
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
 // SEE ALSO SECTION ENDS

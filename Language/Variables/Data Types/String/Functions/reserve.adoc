@@ -16,8 +16,8 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-The String reserve() function allows you to allocate a buffer in memory for manipulating strings.
+=== Beschreibung
+Mit der Funktion String `reserve()` kannst du einen Puffer für die Bearbeitung von Strings zuweisen.
 
 [%hardbreaks]
 
@@ -30,14 +30,14 @@ The String reserve() function allows you to allocate a buffer in memory for mani
 ----
 
 [float]
-=== Parameters
-`myString`: a variable of type String
+=== Parameter
+`myString`: Eine Variable vom Typ String
 
-`size`: unsigned int declaring the number of bytes in memory to save for string manipulation 
+`size`: Ein unsigned int, der die Anzahl der Bytes im Speicher deklariert, um sie für die Bearbeitung von Strings zu speichern
 
 [float]
-=== Returns
-None
+=== Gibt zurück
+Nichts
 --
 // OVERVIEW SECTION ENDS
 
@@ -46,17 +46,17 @@ None
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 
 [source,arduino]
 ----
 String myString;
 
 void setup() {
-  // initialize serial and wait for port to open:
+  // Seriell initialisieren und warten, bis sich der Port öffnet:
   Serial.begin(9600);
   while (!Serial) {
-    ; // wait for serial port to connect. Needed for native USB
+    ; // Warte, bis die serielle Schnittstelle verbunden ist. Wird für native USBs benötigt
   }
 
   myString.reserve(26);
@@ -64,12 +64,12 @@ void setup() {
   myString += "1234";
   myString += ", is that ok?";
 
-  // print the String:
+  // gib den String aus:
   Serial.println(myString);
 }
 
 void loop() {
-  // nothing to do here
+  // Hier gibt es nichts zu tun
 }
  
 ----
@@ -81,10 +81,9 @@ void loop() {
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
-// SEE ALSO SECTION ENDS
 // SEE ALSO SECTION ENDS

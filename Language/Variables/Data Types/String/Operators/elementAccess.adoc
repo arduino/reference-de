@@ -9,7 +9,7 @@ subCategories: [ "StringObject Operator" ]
 
 
 
-= [] Element Access
+= [] Elementzugriff
 
 
 // OVERVIEW SECTION STARTS
@@ -17,8 +17,8 @@ subCategories: [ "StringObject Operator" ]
 --
 
 [float]
-=== Description
-Allows you access to the individual characters of a String.
+=== Beschreibung
+Ermöglicht den Zugriff auf die einzelnen Zeichen einer Zeichenfolge.
 
 [%hardbreaks]
 
@@ -31,16 +31,16 @@ char thisChar = myString[n]
 ----
 
 [float]
-=== Parameters
-`char thisChar` - a character variable
+=== Parameter
+`char thisChar` - Eine Zeichenvariable
 
-`myString` - a String variable
+`myString` - Eine String-Variable
 
-`int n` - a numeric variable
+`int n` - Eine numerische Variable
 
 [float]
-=== Returns
-The nth char of the String. Same as charAt().
+=== Gibt zurück
+Das n-te Zeichen der Zeichenfolge. Gleich wie `charAt()`.
 
 --
 
@@ -56,9 +56,9 @@ The nth char of the String. Same as charAt().
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
 // SEE ALSO SECTION ENDS

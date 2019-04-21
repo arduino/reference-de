@@ -16,8 +16,9 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-Locates a character or String within another String. By default, searches from the beginning of the String, but can also start from a given index, allowing for the locating of all instances of the character or String.
+=== Beschreibung
+Sucht ein Zeichen oder eine Zeichenfolge in einer anderen Zeichenfolge. Sucht standardmäßig vom Anfang des Strings, kann aber auch von einem bestimmten Index aus beginnen.
+Ermöglicht das Auffinden aller Instanzen des Zeichens oder der Zeichenfolge.
 
 
 [%hardbreaks]
@@ -32,16 +33,16 @@ Locates a character or String within another String. By default, searches from t
 ----
 
 [float]
-=== Parameters
-`myString`: a variable of type String
+=== Parameter
+`myString`: Eine Variable vom Typ String
 
-`val`: the value to search for - char or String
+`val`: Der Wert, nach dem gesucht werden soll - char oder String
 
-`from`: the index to start the search from
+`from`: Der Index, von dem aus die Suche gestartet werden soll
 
 [float]
-=== Returns
-The index of val within the String, or -1 if not found.
+=== Gibt zurück
+Der Index des Werts innerhalb des Strings oder -1, falls nicht gefunden.
 
 --
 // OVERVIEW SECTION ENDS
@@ -56,9 +57,9 @@ The index of val within the String, or -1 if not found.
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
 // SEE ALSO SECTION ENDS

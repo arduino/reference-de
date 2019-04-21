@@ -9,7 +9,7 @@ subCategories: [ "StringObject Operator" ]
 
 
 
-= + Concatenation
+= + Verkettung
 
 
 // OVERVIEW SECTION STARTS
@@ -17,8 +17,9 @@ subCategories: [ "StringObject Operator" ]
 --
 
 [float]
-=== Description
-Combines, or concatenates two Strings into one new String. The second String is appended to the first, and the result is placed in a new String. Works the same as string.concat().
+=== Beschreibung
+Kombiniert oder verkettet zwei Strings zu einem neuen String. Der zweite String wird an den ersten angehängt und das Ergebnis wird in einen neuen String eingefügt.
+Funktioniert genauso wie `string.concat()`.
 
 [%hardbreaks]
 
@@ -31,12 +32,12 @@ myString3 = myString + myString2
 ----
 
 [float]
-=== Parameters
-`myString, myString2, myString3` - a String variable
+=== Parameter
+`myString, myString2, myString3` - Eine String-Variable
 
 [float]
-=== Returns
-new String that is the combination of the original two Strings.
+=== Gibt zurück
+Neuer String, der die Kombination der ursprünglichen zwei Strings darstellt.
 
 --
 
@@ -52,9 +53,9 @@ new String that is the combination of the original two Strings.
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
 // SEE ALSO SECTION ENDS

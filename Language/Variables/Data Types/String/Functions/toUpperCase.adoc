@@ -16,8 +16,8 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-Get an upper-case version of a String. As of 1.0, toUpperCase() modifies the string in place rather than returning a new one.
+=== Beschreibung
+Ruft eine Großbuchstabenversion eines Strings ab. Seit 1.0 ändert `toUpperCase()` den String anstatt einen neuen zurückzugeben.
 [%hardbreaks]
 
 
@@ -29,13 +29,13 @@ Get an upper-case version of a String. As of 1.0, toUpperCase() modifies the str
 ----
 
 [float]
-=== Parameters
-`myString`: a variable of type String
+=== Parameter
+`myString`: Eine Variable vom Typ String
 
 
 [float]
-=== Returns
-None
+=== Gibt zurück
+Nichts
 
 --
 // OVERVIEW SECTION ENDS
@@ -50,9 +50,9 @@ None
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
 // SEE ALSO SECTION ENDS

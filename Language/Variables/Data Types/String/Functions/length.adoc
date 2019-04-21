@@ -16,8 +16,8 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-Returns the length of the String, in characters. (Note that this doesn't include a trailing null character.)
+=== Beschreibung
+Gibt die Länge der Zeichenfolge in Zeichen zurück. (Beachte, dass dies kein nachfolgendes Nullzeichen enthält.)
 
 [%hardbreaks]
 
@@ -30,13 +30,13 @@ Returns the length of the String, in characters. (Note that this doesn't include
 ----
 
 [float]
-=== Parameters
-`myString`: a variable of type String
+=== Parameter
+`myString`: Eine Variable vom Typ String
 
 
 [float]
-=== Returns
-The length of the String in characters.
+=== Gibt zurück
+Die Länge der Zeichenfolge in Zeichen.
 
 --
 // OVERVIEW SECTION ENDS
@@ -51,9 +51,9 @@ The length of the String in characters.
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
 // SEE ALSO SECTION ENDS

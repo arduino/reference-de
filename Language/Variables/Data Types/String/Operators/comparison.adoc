@@ -9,7 +9,7 @@ subCategories: [ "StringObject Operator" ]
 
 
 
-= == Comparison
+= == Vergleich
 
 
 // OVERVIEW SECTION STARTS
@@ -17,8 +17,10 @@ subCategories: [ "StringObject Operator" ]
 --
 
 [float]
-=== Description
-Compares two strings for equality. The comparison is case-sensitive, meaning the String "hello" is not equal to the String "HELLO". Functionally the same as string.equals()
+=== Beschreibung
+Vergleicht zwei Zeichenfolgen auf Gleichheit.
+Bei dem Vergleich wird zwischen Groß- und Kleinschreibung unterschieden.
+Dies bedeutet, dass der String "hallo" nicht mit dem String "HALLO" übereinstimmt. Funktioniert genauso wie `string.equals()`.
 
 
 [%hardbreaks]
@@ -32,15 +34,15 @@ myString == myString2
 ----
 
 [float]
-=== Parameters
-`myString, myString2` - a string variable
+=== Parameter
+`myString, myString2` - Eine String-Variable
 
 [float]
-=== Returns
-The nth char of the string. Same as charAt().
-`true`: if myString equals myString2
+=== Gibt zurück
+Das n-te Zeichen der Zeichenfolge. Gleich wie `charAt()`.
+`true`: Wenn myString gleich myString2 ist
  
-`false`: otherwise
+`false`: Sonst
 --
 
 // OVERVIEW SECTION ENDS
@@ -55,9 +57,9 @@ The nth char of the string. Same as charAt().
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
 // SEE ALSO SECTION ENDS

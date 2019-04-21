@@ -16,8 +16,8 @@ subCategories: [ "StringObject Function" ]
 --
 
 [float]
-=== Description
-Copies the string's characters to the supplied buffer.
+=== Beschreibung
+Kopiert die Zeichen der Zeichenfolge in den angegebenen Puffer.
 
 [%hardbreaks]
 
@@ -30,16 +30,16 @@ Copies the string's characters to the supplied buffer.
 ----
 
 [float]
-=== Parameters
-`myString`: a variable of type String
+=== Parameter
+`myString`: Eine Variable vom Typ String
 
-`buf`: the buffer to copy the characters into (_char []_)
+`buf`: Der Puffer, in den die Zeichen kopiert werden sollen (_char []_)
 
-`len`: the size of the buffer (_unsigned int_)
+`len`: Die Größe des Puffers (_unsigned int_)
 
 [float]
-=== Returns
-None
+=== Gibt zurück
+Nichts
 
 --
 // OVERVIEW SECTION ENDS
@@ -54,9 +54,9 @@ None
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String Tutorials^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
 // SEE ALSO SECTION ENDS
