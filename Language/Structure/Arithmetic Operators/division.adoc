@@ -1,6 +1,6 @@
 ---
 title: "/"
-title_expanded: "division"
+title_expanded: Division
 categories: [ "Structure" ]
 subCategories: [ "Arithmetische Operatoren" ]
 ---

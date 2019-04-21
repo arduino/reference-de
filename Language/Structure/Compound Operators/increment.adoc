@@ -1,6 +1,6 @@
 ---
 title: "++"
-title_expanded: increment
+title_expanded: Inkrement
 categories: [ "Structure" ]
 subCategories: [ "Verbundoperatoren" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Verbundoperatoren" ]
 
 
 
-= ++ Increment
+= ++ Inkrement
 
 
 // OVERVIEW SECTION STARTS

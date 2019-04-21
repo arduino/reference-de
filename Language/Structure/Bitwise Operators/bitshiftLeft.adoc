@@ -1,6 +1,6 @@
 ---
 title: "<<"
-title_expanded: bitshift left
+title_expanded: Bitshift links
 categories: [ "Structure" ]
 subCategories: [ "Bitweise Operatoren" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Bitweise Operatoren" ]
 
 
 
-= << Bitshift Left
+= << Bitshift links
 
 
 // OVERVIEW SECTION STARTS

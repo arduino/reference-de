@@ -1,6 +1,6 @@
 ---
 title: "*="
-title_expanded: compound multiplication
+title_expanded: Zusammengesetzte Multiplikation
 categories: [ "Structure" ]
 subCategories: [ "Verbundoperatoren" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Verbundoperatoren" ]
 
 
 
-= *= Compound Multiplication
+= *= Zusammengesetzte Multiplikation
 
 
 // OVERVIEW SECTION STARTS

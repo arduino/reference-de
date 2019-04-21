@@ -1,6 +1,6 @@
 ---
 title: "*"
-title_expanded: "multiplication"
+title_expanded: Multiplikation
 categories: [ "Structure" ]
 subCategories: [ "Arithmetische Operatoren" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Arithmetische Operatoren" ]
 
 
 
-= * Multiplication
+= * Multiplikation
 
 
 // OVERVIEW SECTION STARTS

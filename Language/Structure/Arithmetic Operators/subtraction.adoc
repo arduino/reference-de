@@ -1,6 +1,6 @@
 ---
 title: "-"
-title_expanded: "subtraction"
+title_expanded: Subtraktion
 categories: [ "Structure" ]
 subCategories: [ "Arithmetische Operatoren" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Arithmetische Operatoren" ]
 
 
 
-= - Subtraction
+= - Subtraktion
 
 
 // OVERVIEW SECTION STARTS

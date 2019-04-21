@@ -1,6 +1,6 @@
 ---
 title: "||"
-title_expanded: logical or
+title_expanded: Logisches ODER
 categories: [ "Structure" ]
 subCategories: [ "Boolsche Operatoren" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Boolsche Operatoren" ]
 
 
 
-= || Logical OR
+= || Logisches ODER
 
 
 // OVERVIEW SECTION STARTS

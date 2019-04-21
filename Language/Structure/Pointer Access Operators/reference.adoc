@@ -1,6 +1,6 @@
 ---
 title: "&"
-title_expanded: reference opearator
+title_expanded: Referenzoperator
 categories: [ "Structure" ]
 subCategories: [ "Zeiger-Operatoren" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Zeiger-Operatoren" ]
 
 
 
-= & Reference Operator
+= & Referenzoperator
 
 
 // OVERVIEW SECTION STARTS

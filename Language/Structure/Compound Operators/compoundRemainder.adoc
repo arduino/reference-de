@@ -1,6 +1,6 @@
 ---
 title: "%="
-title_expanded: compound remainder
+title_expanded: Zusammengesetzter Rest
 categories: [ "Structure" ]
 subCategories: [ "Verbundoperatoren" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Verbundoperatoren" ]
 
 
 
-= %= Compound Remainder
+= %= Zusammengesetzter Rest
 
 
 // OVERVIEW SECTION STARTS

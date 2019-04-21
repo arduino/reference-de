@@ -1,6 +1,6 @@
 ---
 title: "~"
-title_expanded: bitwise not
+title_expanded: Bitweises NICHT
 categories: [ "Structure" ]
 subCategories: [ "Bitweise Operatoren" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Bitweise Operatoren" ]
 
 
 
-= ~ Bitwise NOT
+= ~ Bitweises NICHT
 
 
 // OVERVIEW SECTION STARTS

@@ -1,6 +1,6 @@
 ---
 title: "-="
-title_expanded: compound subtraction
+title_expanded: Zusammengesetzte Subtraktion
 categories: [ "Structure" ]
 subCategories: [ "Verbundoperatoren" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Verbundoperatoren" ]
 
 
 
-= -= Compound Subtraction
+= -= Zusammengesetzte Subtraktion
 
 
 // OVERVIEW SECTION STARTS

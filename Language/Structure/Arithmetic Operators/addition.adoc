@@ -1,6 +1,6 @@
 ---
 title: "+"
-title_expanded: "addition"
+title_expanded: Addition
 categories: [ "Structure" ]
 subCategories: [ "Arithmetische Operatoren" ]
 ---

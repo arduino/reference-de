@@ -1,6 +1,6 @@
 ---
 title: "%"
-title_expanded: "modulo"
+title_expanded: Modulo
 categories: [ "Structure" ]
 subCategories: [ "Arithmetische Operatoren" ]
 ---

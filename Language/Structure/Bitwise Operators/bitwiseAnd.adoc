@@ -1,6 +1,6 @@
 ---
 title: "&"
-title_expanded: bitwise and
+title_expanded: Bitweises UND
 categories: [ "Structure" ]
 subCategories: [ "Bitweise Operatoren" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Bitweise Operatoren" ]
 
 
 
-= & Bitwise AND
+= & Bitweises UND
 
 
 // OVERVIEW SECTION STARTS

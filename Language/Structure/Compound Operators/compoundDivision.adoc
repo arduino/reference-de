@@ -1,6 +1,6 @@
 ---
 title: "/="
-title_expanded: compound division
+title_expanded: Zusammengesetzte Division
 categories: [ "Structure" ]
 subCategories: [ "Verbundoperatoren" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Verbundoperatoren" ]
 
 
 
-= /= Compound Division
+= /= Zusammengesetzte Division
 
 
 // OVERVIEW SECTION STARTS

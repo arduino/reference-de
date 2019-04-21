@@ -1,6 +1,6 @@
 ---
 title: "|"
-title_expanded: bitwise or
+title_expanded: Bitweises OR
 categories: [ "Structure" ]
 subCategories: [ "Bitweise Operatoren" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Bitweise Operatoren" ]
 
 
 
-= | Bitwise OR
+= | Bitweises OR
 
 
 // OVERVIEW SECTION STARTS

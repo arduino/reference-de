@@ -1,6 +1,6 @@
 ---
 title: "+="
-title_expanded: compound addition
+title_expanded: Zusammengesetzte Addition
 categories: [ "Structure" ]
 subCategories: [ "Verbundoperatoren" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Verbundoperatoren" ]
 
 
 
-= += Compound Addition
+= += Zusammengesetzte Addition
 
 
 // OVERVIEW SECTION STARTS

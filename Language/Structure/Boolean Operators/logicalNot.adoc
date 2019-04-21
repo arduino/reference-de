@@ -1,6 +1,6 @@
 ---
 title: "!"
-title_expanded: logical not
+title_expanded: Logisches NICHT
 categories: [ "Structure" ]
 subCategories: [ "Boolsche Operatoren" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Boolsche Operatoren" ]
 
 
 
-= ! Logical NOT
+= ! Logisches NICHT
 
 
 // OVERVIEW SECTION STARTS

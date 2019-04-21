@@ -1,6 +1,6 @@
 ---
 title: "="
-title_expanded: "assignment operator"
+title_expanded: Zuweisung
 categories: [ "Structure" ]
 subCategories: [ "Arithmetische Operatoren" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Arithmetische Operatoren" ]
 
 
 
-= = Assignment (single equal sign)
+= = Zuweisung (Einzelnes Gleichheitszeichen)
 
 
 // OVERVIEW SECTION STARTS

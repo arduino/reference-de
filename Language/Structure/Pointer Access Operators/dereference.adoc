@@ -1,6 +1,6 @@
 ---
 title: "*"
-title_expanded: dereference operator
+title_expanded: Dereferenzoperator
 categories: [ "Structure" ]
 subCategories: [ "Zeiger-Operatoren" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Zeiger-Operatoren" ]
 
 
 
-= * Dereference Operator
+= * Dereferenzoperator
 
 
 // OVERVIEW SECTION STARTS

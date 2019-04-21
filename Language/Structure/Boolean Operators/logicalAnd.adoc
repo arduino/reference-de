@@ -1,6 +1,6 @@
 ---
 title: "&&"
-title_expanded: logical and
+title_expanded: Logisches UND
 categories: [ "Structure" ]
 subCategories: [ "Boolsche Operatoren" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Boolsche Operatoren" ]
 
 
 
-= && Logical AND
+= && Logisches UND
 
 
 // OVERVIEW SECTION STARTS

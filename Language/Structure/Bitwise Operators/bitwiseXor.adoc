@@ -1,6 +1,6 @@
 ---
 title: "^"
-title_expanded: bitwise xor
+title_expanded: Bitweises XOR
 categories: [ "Structure" ]
 subCategories: [ "Bitweise Operatoren" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Bitweise Operatoren" ]
 
 
 
-= ^ Bitwise XOR
+= ^ Bitweises XOR
 
 
 // OVERVIEW SECTION STARTS
