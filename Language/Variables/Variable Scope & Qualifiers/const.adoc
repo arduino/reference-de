@@ -57,7 +57,7 @@ pi = 7;     // Illegal-Konstante darf/kann nicht verändert werden.
 
 [float]
 === Anmerkungen und Warnungen
-*`#define` oderr `const`*
+*`#define` oder `const`*
 
 Du kannst entweder `const` oder link:../../../structure/further-syntax/define[`#define`] für Konstanten verwenden. Für link:../../data-types/array[arrays]
 musst du `const` verwenden. Generell wird `const` vor link:../../../structure/further-syntax/define[`#define`] vorgezogen.
