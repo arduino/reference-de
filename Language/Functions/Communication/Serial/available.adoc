@@ -41,10 +41,10 @@ Der folgende Code gibt ein Zeichen zurück, das über die serielle Schnittstelle
 
 [source,arduino]
 ----
-int incomingByte = 0;	// Für eingehende serielle Daten
+int incomingByte = 0; // Für eingehende serielle Daten
 
 void setup() {
-	Serial.begin(9600);	// Öffnet die serielle Schnittstelle und stellt die Datenrate auf 9600 Bit/s ein
+  Serial.begin(9600); // Öffnet die serielle Schnittstelle und stellt die Datenrate auf 9600 Bit/s ein
 }
 
 void loop() {
