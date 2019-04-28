@@ -44,7 +44,6 @@ Es gibt zwei Möglichkeiten, eine Zeile als Kommentar zu kennzeichnen:
 // An Pin 13 ist an den meisten Arduino-Boards eine LED angeschlossen.
 int led = 13;
 
-
 digitalWrite(led, HIGH); // LED einschalten (HIGH ist der Spannungspegel)
 ----
 [%hardbreaks]
