@@ -176,7 +176,8 @@ Der folgende Code wird funktionieren, wenn er in einer Funktion ausgeführt wird
 const static char long_str[] PROGMEM = "Hi, I would like to tell you a bit about myself.\n"
 ----
 
-=== Das F()-Makro
+[float]
+=== Das `F()`-Makro
 
 Wenn eine Instruktion wie
 
