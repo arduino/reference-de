@@ -15,7 +15,7 @@ subCategories: [ "Datentypen" ]
 Ein Array ist eine Sammlung von Variablen, auf die mit einer Indexnummer zugegriffen wird.
 Arrays in der Programmiersprache C ++, in der Arduino-Skizzen geschrieben sind, sind zwar kompliziert, aber die Verwendung einfacher Arrays ist relativ unkompliziert.
 
-=== Array erstellen (deklarieren)
+=== Array erstellen / deklarieren
 
 Alle folgenden Methoden sind gültige Methoden zum Erstellen (Deklarieren) eines Arrays.
 [source,arduino]
