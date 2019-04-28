@@ -72,7 +72,7 @@ Wenn ein Gleichheitszeichen nach der Anweisung #define einfügt wird, wird ebenf
 
 [source,arduino]
 ----
-#define ledPin  = 3  // Das ist auch ein Fehler
+#define ledPin = 3  // Das ist auch ein Fehler
 ----
 [%hardbreaks]
 
