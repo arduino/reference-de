@@ -49,7 +49,7 @@ int b = ~a;  // Binär: 1111111110011000 = -104
 
 [float]
 === Anmerkungen und Warnungen
-Möglicherweise sind Sie überrascht, als Ergebnis dieses Vorgangs eine negative Zahl wie -104 zu sehen.
+Möglicherweise bist du überrascht, als Ergebnis dieses Vorgangs eine negative Zahl wie -104 zu sehen.
 Dies liegt daran, dass das höchste Bit in einer int-Variablen das sogenannte Vorzeichenbit ist.
 Wenn das höchste Bit 1 ist, wird die Zahl als negativ interpretiert.
 Diese Kodierung von positiven und negativen Zahlen wird als Zweierkomplement bezeichnet.

@@ -42,7 +42,7 @@ int a = 13;
 
 [float]
 === Anmerkungen und Warnungen
-Wenn Sie vergessen, eine Zeile in einem Semikolon zu beenden, wird ein Compiler-Fehler ausgegeben.
+Wenn du vergisst, eine Zeile in einem Semikolon zu beenden, wird ein Compiler-Fehler ausgegeben.
 Der Fehlertext kann offensichtlich sein und sich auf ein fehlendes Semikolon beziehen oder nicht.Wenn ein undurchdringlicher oder
 scheinbar unlogischer Compiler-Fehler auftritt, ist eines der ersten zu überprüfenden Dinge ein fehlendes Semikolon in unmittelbarer Nähe
 vor der Zeile, in der sich der Compiler beschwert hat.
