@@ -108,7 +108,7 @@ Wenn ein Pulldown-Widerstand benutzt wird, ist der Zustand des Schalters `HIGH`,
 [%hardbreaks]
 
 [float]
-===INPUT_PULLUP
+=== INPUT_PULLUP
 Der ATmega-Mikrocontroller auf dem Arduino hat interne Pullup-Widerstände, auf die zugegriffen werden kann. Wenn du diese statt externen Pullup-Widerstände
 verwenden möchtest, kannst du link:../../../functions/digital-io/pinmode[pinMode()] mit der Konstante `INPUT_PULLUP` als Argument verwenden.
 [%hardbreaks]
