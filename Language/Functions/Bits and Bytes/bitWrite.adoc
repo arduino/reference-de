@@ -59,7 +59,9 @@ void setup() {
   Serial.println(x, BIN); // 10000001
 }
 
-void loop() {}
+void loop() {
+  // ...
+}
 ----
 
 --
