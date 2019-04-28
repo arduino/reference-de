@@ -1,6 +1,6 @@
 ---
 title: "{}"
-title_expanded: curly braces
+title_expanded: Geschweifte Klammern
 categories: [ "Structure" ]
 subCategories: [ "Weitere Syntax" ]
 ---
@@ -8,7 +8,7 @@ subCategories: [ "Weitere Syntax" ]
 
 
 
-= {} Curly Braces
+= {} Geschweifte Klammern
 
 
 // OVERVIEW SECTION STARTS

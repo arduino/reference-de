@@ -1,6 +1,6 @@
 ---
 title: ";"
-title_expanded: semicolon
+title_expanded: Semikolon
 categories: [ "Structure" ]
 subCategories: [ "Weitere Syntax" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Weitere Syntax" ]
 
 
 
-= ; Semicolon
+= ; Semikolon
 
 
 // OVERVIEW SECTION STARTS

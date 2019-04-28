@@ -1,6 +1,6 @@
 ---
 title: "/* */"
-title_expanded: block comment
+title_expanded: Kommentarblock
 categories: [ "Structure" ]
 subCategories: [ "Weitere Syntax" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Weitere Syntax" ]
 
 
 
-= /* */ Block Comment
+= /* */ Kommentarblock
 
 
 // OVERVIEW SECTION STARTS

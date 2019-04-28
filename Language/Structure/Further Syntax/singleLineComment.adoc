@@ -1,6 +1,6 @@
 ---
 title: "//"
-title_expanded: single line comment
+title_expanded: Einzeiliger Kommentar
 categories: [ "Structure" ]
 subCategories: [ "Weitere Syntax" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Weitere Syntax" ]
 
 
 
-= // Single Line Comment
+= // Einzeiliger Kommentar
 
 
 // OVERVIEW SECTION STARTS
