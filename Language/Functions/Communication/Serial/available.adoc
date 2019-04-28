@@ -19,11 +19,11 @@ Rufe die Anzahl der zum Lesen verfügbaren Bytes (Zeichen) von der seriellen Sch
 
 [float]
 === Syntax
-`_Serial_.available()`
+`Serial.available()`
 
 [float]
 === Parameter
-`_Serial_`: Serielles Port-Objekt. Siehe die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite].
+`Serial`: Serielles Port-Objekt. Siehe die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite].
 
 [float]
 === Gibt zurück
