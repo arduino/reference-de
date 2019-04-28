@@ -29,6 +29,7 @@ Berechnet das Maximum von zwei Zahlen.
 [float]
 === Parameter
 `x`: Die erste Zahl, beliebiger Datentyp
+
 `y`: Die zweite Zahl, beliebiger Datentyp
 
 [float]

@@ -29,7 +29,9 @@ Beschränkt eine Zahl auf einen Bereich.
 [float]
 === Parameter
 `x`: Die zu beschränkende Zahl, alle Datentypen
+
 `a`: Das unteren Ende des Bereichs, alle Datentypen
+
 `b`: Das obere Ende des Bereichs, alle Datentypen
 
 [float]
