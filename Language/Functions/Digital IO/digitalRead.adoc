@@ -17,7 +17,7 @@ subCategories: [ "Digital I/O" ]
 
 [float]
 === Beschreibung
-Liest einen Wert von einem vorgegebenen Digitalpin ein, entweder link:../../variables/constants/constants/[HIGH] oder link:../../variables/constants/constants/[LOW].
+Liest einen Wert von einem vorgegebenen Digitalpin ein, entweder `HIGH` oder `LOW`.
 [%hardbreaks]
 
 
@@ -32,7 +32,7 @@ Liest einen Wert von einem vorgegebenen Digitalpin ein, entweder link:../../vari
 
 [float]
 === Gibt zurück
-link:../../variables/constants/constants/[HIGH] oder link:../../variables/constants/constants/[LOW]
+`HIGH` oder `LOW`
 
 --
 // OVERVIEW SECTION ENDS
@@ -69,7 +69,7 @@ void loop() {
 
 [float]
 === Anmerkungen und Warnungen
-Wenn der Pin nicht mit irgendetwas verbunden ist, kann ``digitalRead()`` entweder link:../../variables/constants/constants/[HIGH] oder link:../../variables/constants/constants/[LOW] (das passiert völlig zufällig) zurückgeben.
+Wenn der Pin nicht mit irgendetwas verbunden ist, kann ``digitalRead()`` entweder `HIGH` oder `LOW` (das passiert völlig zufällig) zurückgeben.
 
 Die analogen Inputpins können als Digitalpins verwendet werden mit den Namen A0, A1, etc. Eine Ausnahme bilden die Pins A6 und A7 von Arduino Nano, Pro Mini und Mini, die nur als analoge Eingänge verwendet werden können.
 --
