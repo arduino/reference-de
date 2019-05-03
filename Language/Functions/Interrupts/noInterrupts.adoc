@@ -62,16 +62,7 @@ void loop() {
   // Restlicher Code hier
 }
 ----
-
-[float]
-=== Siehe auch
-
-[role="language"]
-* #SPRACHE# link:../../external-interrupts/attachinterrupt[attachInterrupts()]
-* #SPRACHE# link:../../external-interrupts/detachinterrupt[detachInterrupts()]
-
---
-// SEE ALSO SECTION ENDS
+// HOW TO USE SECTION ENDS
 
 
 // SEE ALSO SECTION
@@ -80,6 +71,10 @@ void loop() {
 
 [float]
 === Siehe auch
+
+[role="language"]
+* #SPRACHE# link:../../external-interrupts/attachinterrupt[attachInterrupts()]
+* #SPRACHE# link:../../external-interrupts/detachinterrupt[detachInterrupts()]
 
 --
 // SEE ALSO SECTION ENDS
