@@ -28,9 +28,9 @@ Beachte, dass "123.456" mit 123.46 approximiert wird. Beachte auch, dass Floats 
 [float]
 === Syntax
 [source,arduino]
-----
+
 `myString.toDouble()`
-----
+
 
 [float]
 === Parameter

@@ -27,10 +27,10 @@ Ermöglicht das Auffinden aller Instanzen des Zeichens oder der Zeichenfolge.
 [float]
 === Syntax
 [source,arduino]
-----
+
 `myString.indexOf(val)` +
 `myString.indexOf(val, from)`
-----
+
 
 [float]
 === Parameter

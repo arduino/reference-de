@@ -25,9 +25,9 @@ Ruft eine Kleinbuchstabenversion eines Strings ab. Seit 1.0 ändert `toLowerCase
 [float]
 === Syntax
 [source,arduino]
-----
+
 `myString.toLowerCase()`
-----
+
 
 [float]
 === Parameter

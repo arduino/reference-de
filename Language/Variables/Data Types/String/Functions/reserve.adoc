@@ -25,9 +25,9 @@ Mit der Funktion String `reserve()` kannst du einen Puffer für die Bearbeitung 
 [float]
 === Syntax
 [source,arduino]
-----
+
 `myString.reserve(size)`
-----
+
 
 [float]
 === Parameter

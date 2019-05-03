@@ -25,9 +25,9 @@ Gibt die Länge der Zeichenfolge in Zeichen zurück. (Beachte, dass dies kein na
 [float]
 === Syntax
 [source,arduino]
-----
+
 `myString.length()`
-----
+
 
 [float]
 === Parameter

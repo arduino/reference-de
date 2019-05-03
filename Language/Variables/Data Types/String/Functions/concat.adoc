@@ -25,9 +25,9 @@ Hängt den Parameter an einen String an.
 [float]
 === Syntax
 [source,arduino]
-----
+
 `myString.concat(parameter)`
-----
+
 
 [float]
 === Parameter

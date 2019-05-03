@@ -25,9 +25,9 @@ Kopiert die Zeichen der Zeichenfolge in den angegebenen Puffer.
 [float]
 === Syntax
 [source,arduino]
-----
+
 `myString.getBytes(buf, len)`
-----
+
 
 [float]
 === Parameter

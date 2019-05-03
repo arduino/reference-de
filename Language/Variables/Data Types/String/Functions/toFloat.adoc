@@ -28,9 +28,9 @@ Beachte auch, dass Floats nur eine Genauigkeit von 6 bis 7 Dezimalstellen haben 
 [float]
 === Syntax
 [source,arduino]
-----
+
 `myString.toFloat()`
-----
+
 
 [float]
 === Parameter

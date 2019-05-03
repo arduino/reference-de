@@ -25,9 +25,9 @@ Vergleicht zwei Zeichenfolgen auf Gleichheit. Der Vergleich unterscheidet nicht 
 [float]
 === Syntax
 [source,arduino]
-----
+
 `myString.equalsIgnoreCase(myString2)`
-----
+
 
 [float]
 === Parameter

@@ -25,9 +25,9 @@ Konvertiert einen gültigen String in eine Ganzzahl. Die Eingabezeichenfolge sol
 [float]
 === Syntax
 [source,arduino]
-----
+
 `myString.toInt()`
-----
+
 
 [float]
 === Parameter

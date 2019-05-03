@@ -25,9 +25,9 @@ Testet, ob ein String mit den Zeichen eines anderen Strings beginnt.
 [float]
 === Syntax
 [source,arduino]
-----
+
 `myString.startsWith(myString2)`
-----
+
 
 [float]
 === Parameter

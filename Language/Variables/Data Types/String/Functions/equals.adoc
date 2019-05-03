@@ -25,9 +25,9 @@ Vergleicht zwei Zeichenfolgen auf Gleichheit. Bei dem Vergleich wird zwischen Gr
 [float]
 === Syntax
 [source,arduino]
-----
+
 `myString.equals(myString2)`
-----
+
 
 [float]
 === Parameter

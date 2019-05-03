@@ -27,9 +27,9 @@ Das bedeutet zum Beispiel, dass 'a' vor 'b' liegt, aber nach 'A'. Zahlen stehen 
 [float]
 === Syntax
 [source,arduino]
-----
+
 `myString.compareTo(myString2)`
-----
+
 
 [float]
 === Parameter

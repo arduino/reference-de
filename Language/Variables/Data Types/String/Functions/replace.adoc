@@ -26,9 +26,9 @@ Du kannst auch `replace()` verwenden, um Teilstrings eines Strings durch einen a
 [float]
 === Syntax
 [source,arduino]
-----
+
 `myString.replace(substring1, substring2)`
-----
+
 
 [float]
 === Parameter

@@ -24,6 +24,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Syntax
+[source,arduino]
 `myString.remove(index)` +
 `myString.remove(index, count)`
 

@@ -27,9 +27,9 @@ Wenn du das String-Objekt ändern willst oder wenn es zerstört wird, wird ein z
 [float]
 === Syntax
 [source,arduino]
-----
+
 `myString.c_str()`
-----
+
 
 [float]
 === Parameter

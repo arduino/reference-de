@@ -25,9 +25,9 @@ Ruft eine Version des Strings ab, wobei führende und nachgestellte Leerzeichen 
 [float]
 === Syntax
 [source,arduino]
-----
+
 `myString.trim()`
-----
+
 
 [float]
 === Parameter

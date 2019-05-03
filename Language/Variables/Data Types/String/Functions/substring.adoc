@@ -27,10 +27,10 @@ Wenn der Endindex weggelassen wird, wird der Teilstring bis zum Ende des Strings
 [float]
 === Syntax
 [source,arduino]
-----
+
 `myString.substring(from)` +
 `myString.substring(from, to)`
-----
+
 
 [float]
 === Parameter

@@ -25,9 +25,9 @@ Greift auf ein bestimmtes Zeichen des Strings zu.
 [float]
 === Syntax
 [source,arduino]
-----
+
 `myString.charAt(n)`
-----
+
 
 [float]
 === Parameter

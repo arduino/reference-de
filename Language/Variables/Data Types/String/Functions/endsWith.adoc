@@ -25,9 +25,9 @@ Testet, ob ein String mit den Zeichen eines anderen Strings endet.
 [float]
 === Syntax
 [source,arduino]
-----
+
 `myString.endsWith(myString2)`
-----
+
 
 [float]
 === Parameter
