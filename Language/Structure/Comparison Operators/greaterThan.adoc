@@ -48,7 +48,7 @@ x > y; // Ist true, wenn x größer als y ist und false, wenn x gleich oder klei
 
 [source,arduino]
 ----
-if (x>y) { // Prüft, ob x größer als y ist
+if (x > y) {  // Prüft, ob x größer als y ist
   // Tue etwas nur dann, wenn das Vergleichsergebnis wahr ist
 }
 ----
