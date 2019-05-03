@@ -28,7 +28,7 @@ Liest einen Wert von einem vorgegebenen Digitalpin ein, entweder `HIGH` oder `LO
 
 [float]
 === Parameter
-`pin`: Die Nummer des Digitalpins, die gelesen werden soll.
+`pin`: Die Nummer des Digitalpins, welcher gelesen werden soll.
 
 [float]
 === Gibt zurück
@@ -51,8 +51,8 @@ Setzt pin 13 auf den gleichen Wert wie Pin 7, welcher als Eingang definiert ist.
 
 [source,arduino]
 ----
-int ledPin = 13; // LED verbunden auf Digitalpin 13
-int inPin = 7;   // Button verbunden auf Digitalpin 7
+int ledPin = 13; // LED verbunden mit Digitalpin 13
+int inPin = 7;   // Button verbunden mit Digitalpin 7
 int val = 0;     // Variable, um den gelesenen Wert zu speichern
 
 void setup() {
