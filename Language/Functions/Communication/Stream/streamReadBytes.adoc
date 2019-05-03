@@ -31,7 +31,7 @@ Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, 
 === Parameter
 `stream` : Eine Instanz einer Klasse, die von Stream erbt.
 
-`buffer` : Der Puffer zum Speichern der Bytes (`char[]` or `byte[]`)
+`buffer` : Der Puffer zum Speichern der Bytes (`char[]` oder `byte[]`)
 
 `length` : Die Anzahl der zu lesenden Bytes `(int)`
 

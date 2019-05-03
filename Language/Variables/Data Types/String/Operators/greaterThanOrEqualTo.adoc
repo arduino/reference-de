@@ -1,6 +1,6 @@
 ﻿---
 title: ">="
-title_expanded: greater than or equal to
+title_expanded: Größer als oder gleich
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Operator" ]
 ---

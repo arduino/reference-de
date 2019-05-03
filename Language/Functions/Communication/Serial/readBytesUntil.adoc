@@ -35,7 +35,7 @@ Die Funktion gibt die Zeichen bis zum letzten Zeichen vor dem angegebenen Abschl
 
 `character` : Das zu suchende Zeichen (`char`)
 
-`buffer`: der Puffer zum Speichern der Bytes (`char[]` or `byte[]`)
+`buffer`: der Puffer zum Speichern der Bytes (`char[]` oder `byte[]`)
 
 `length` : die Anzahl der zu lesenden Bytes (`int`)
 

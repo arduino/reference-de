@@ -1,6 +1,6 @@
 ﻿---
 title: "<="
-title_expanded: less than or equal
+title_expanded: Kleiner als oder gleich
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Operator" ]
 ---
