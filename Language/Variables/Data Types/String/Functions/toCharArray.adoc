@@ -38,7 +38,7 @@ Kopiert die Zeichen der Zeichenfolge in den angegebenen Puffer.
 `len`: Die Größe des Puffers (_unsigned int_)
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

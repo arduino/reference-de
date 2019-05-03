@@ -38,7 +38,7 @@ myString == myString2
 `myString, myString2` - Eine String-Variable
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Das n-te Zeichen der Zeichenfolge. Gleich wie `charAt()`.
 `true`: Wenn myString gleich myString2 ist
  

@@ -30,7 +30,7 @@ Berechnet den absoluten Wert einer Zahl.
 `x`: Die Zahl
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `x`: wenn x größer oder gleich 0 ist.
 
 `-x`: wenn x kleiner als 0 ist.

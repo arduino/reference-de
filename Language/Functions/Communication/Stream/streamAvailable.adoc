@@ -29,7 +29,7 @@ Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, 
 `stream` : Eine Instanz einer Klasse, die von Stream erbt.
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `int` : Die Anzahl der zum Lesen verfügbaren Bytes.
 
 --

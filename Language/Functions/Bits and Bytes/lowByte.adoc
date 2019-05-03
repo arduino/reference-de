@@ -31,7 +31,7 @@ Liest das least-significant (rechteste) Bit eines Wortes oder größeren Datenty
 `x`: Wert von beliebigen Typ
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Das geforderte Byte (byte)
 --
 // OVERVIEW SECTION ENDS

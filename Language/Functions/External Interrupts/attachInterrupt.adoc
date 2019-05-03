@@ -88,7 +88,7 @@ Für weitere Informationen zu Interrupts, siehe auch http://gammon.com.au/interr
 * *HIGH* Interrupt wird getriggert, wenn der Pin HIGH ist.
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

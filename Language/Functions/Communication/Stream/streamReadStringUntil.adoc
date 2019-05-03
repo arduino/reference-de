@@ -32,7 +32,7 @@ Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, 
 `terminator` : Das zu suchende Zeichen (`char`)
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Der gesamte String, gelesen von einem Stream bis zum Abschlusszeichen.
 
 --

@@ -36,7 +36,7 @@ Default wird der linke Mausbutton gecheckt.
 * `MOUSE_MIDDLE`
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `boolean` : Ob ein Mausbutton gedrückt ist oder nicht.
 
 --

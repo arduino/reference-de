@@ -33,7 +33,7 @@ Analysiert, ob das Zeichen ein Steuerzeichen ist. Gibt ``true`` zurück, wenn es
 `thisChar`: Variable. *Erlaubter Datentyp:* char
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `true`: Wenn das Zeichen ein Steuerzeichen ist.
 
 --

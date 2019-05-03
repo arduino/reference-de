@@ -46,7 +46,7 @@ Es ist nicht möglich, Töne mit einer Frequenz niedriger als 31Hz zu erstellen.
 [%hardbreaks]
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

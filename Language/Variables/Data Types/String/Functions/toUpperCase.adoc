@@ -34,7 +34,7 @@ Ruft eine Großbuchstabenversion eines Strings ab. Seit 1.0 ändert `toUpperCase
 
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

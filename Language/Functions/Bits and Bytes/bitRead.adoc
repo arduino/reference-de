@@ -34,7 +34,7 @@ Liest ein Bit aus einer Zahlenvariable.
 
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Den Wert des Bits (0 oder 1).
 
 --

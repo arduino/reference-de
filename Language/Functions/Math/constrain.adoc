@@ -35,7 +35,7 @@ Beschränkt eine Zahl auf einen Bereich.
 `b`: Das obere Ende des Bereichs, alle Datentypen
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 x: Wenn x zwischen a und b liegt
 
 a: wenn x kleiner als a ist

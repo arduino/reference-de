@@ -34,7 +34,7 @@ Die Funktion gibt `true` zurück, wenn die Zielzeichenfolge gefunden wird, `fals
 `terminal` : Die Terminalzeichenfolge bei der Suche (`char`)
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `bool`
 
 --

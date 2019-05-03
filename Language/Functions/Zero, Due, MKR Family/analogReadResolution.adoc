@@ -36,7 +36,7 @@ Die Boards *Due, Zero und MKR* verfügen über 12-Bit-ADC-Funktionen, auf die du
 		unterliegen einer Annäherung. Weitere Informationen finden sich im Hinweis unten.
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

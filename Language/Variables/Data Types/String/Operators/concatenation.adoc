@@ -36,7 +36,7 @@ myString3 = myString + myString2
 `myString, myString2, myString3` - Eine String-Variable
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Neuer String, der die Kombination der ursprünglichen zwei Strings darstellt.
 
 --

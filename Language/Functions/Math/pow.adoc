@@ -29,7 +29,7 @@ Dies ist nützlich, um eine exponentielle Abbildung von Werten oder Kurven zu er
 `exponent`: Die Potenz, auf die die Zahl angehoben wird (`float`)
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Das Ergebnis der Potenzierung. (`double`)
 
 --

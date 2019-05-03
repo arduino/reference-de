@@ -31,7 +31,7 @@ Berechnet den Sinus eines Winkels (Im Bogenmaß). Das Ergebnis liegt zwischen -1
 `rad`: Der Winkel im Bogenmaß (`float`).
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Den Sinus des Winkels (`double`).
 
 --

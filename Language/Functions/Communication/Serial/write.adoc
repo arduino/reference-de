@@ -36,7 +36,7 @@ Zum Senden der Zeichen, die die Ziffern einer Zahl darstellen, verwende die link
 `len`: Die Anzahl der Bytes, die vom Array gesendet werden sollen
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `size_t`
 
 `write()` gibt die Anzahl der geschriebenen Bytes zurück, das Lesen dieser Anzahl ist jedoch optional.

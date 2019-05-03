@@ -41,7 +41,7 @@ Das Timing der Funktion wurde empirisch getestet und wird vermutlich bei einem l
 `timeout` (optional): Die Anzahl an Mikrosekunden, die gewartet werden soll, bis ein Impuls gemessen wurde; Default-Wert ist eine Sekunde (unsigned long)
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Die Länge des Impulses (in Mikrosekunden) oder 0, wenn kein Impuls vor dem Timeout gemessen wird (unsigned long)
 
 --

@@ -31,7 +31,7 @@ Berechnet die Quadratwurzel einer Zahl.
 `x`: Die Zahl, beliebiger Datentyp
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Quadratwurzel der Zahl. (double)
 
 --

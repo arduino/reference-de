@@ -35,7 +35,7 @@ Der Defaultbutton von `Mouse.click()` ist der linke Mausbutton.
 * `MOUSE_MIDDLE`
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

@@ -35,7 +35,7 @@ Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, 
 `length` : Länge des Ergebnisses (`size_t`)
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `bool`
 
 --

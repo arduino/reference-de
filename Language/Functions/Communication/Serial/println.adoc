@@ -34,7 +34,7 @@ Dieser Befehl hat die gleiche Form wie link:../print[Serial.print()].
 `format`: Gibt die Basis (für ganzzahlige Datentypen) oder die Anzahl der Dezimalstellen (für Gleitkommatypen) an.
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `size_t`: `println()` gibt die Anzahl der geschriebenen Bytes zurück, das Lesen dieser Anzahl ist jedoch optional
 --
 // OVERVIEW SECTION ENDS

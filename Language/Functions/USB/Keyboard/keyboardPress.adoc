@@ -31,7 +31,7 @@ Bevor `Keyboard.press()` benutzt werden kann, muss link:../keyboardbegin[Keyboar
 `char` : Die Taste, die gedrückt werden soll.
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `size_t` : Die Anzahl der Tastenanschläge, die gesendet wurden.
 
 --

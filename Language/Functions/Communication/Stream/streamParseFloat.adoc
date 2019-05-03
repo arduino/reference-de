@@ -41,7 +41,7 @@ Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, 
 `ignore`: Wird verwendet, um das angegebene Zeichen bei der Suche zu überspringen. Wird beispielsweise verwendet, um Tausenderteiler zu überspringen. Zulässige Datentypen: `char`
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `float`
 
 --

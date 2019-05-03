@@ -63,7 +63,7 @@ String(val, decimalPlaces)
 `decimalPlaces` (*Nur, wenn val float oder double ist*): Die gewünschten Dezimalstellen
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Eine Instanz der String-Klasse.
 
 --

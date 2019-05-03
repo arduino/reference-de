@@ -41,7 +41,7 @@ Du kannst auch `replace()` verwenden, um Teilstrings eines Strings durch einen a
 
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 --
 // OVERVIEW SECTION ENDS

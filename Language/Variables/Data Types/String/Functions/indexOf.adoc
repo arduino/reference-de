@@ -41,7 +41,7 @@ Ermöglicht das Auffinden aller Instanzen des Zeichens oder der Zeichenfolge.
 `from`: Der Index, von dem aus die Suche gestartet werden soll
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Der Index des Werts innerhalb des Strings oder -1, falls nicht gefunden.
 
 --

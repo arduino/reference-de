@@ -39,7 +39,7 @@ char thisChar = myString[n]
 `int n` - Eine numerische Variable
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Das n-te Zeichen der Zeichenfolge. Gleich wie `charAt()`.
 
 --

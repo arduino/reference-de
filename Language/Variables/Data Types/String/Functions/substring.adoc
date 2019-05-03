@@ -42,7 +42,7 @@ Wenn der Endindex weggelassen wird, wird der Teilstring bis zum Ende des Strings
 
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Der Teilstring.
 
 --

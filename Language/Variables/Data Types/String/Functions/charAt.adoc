@@ -37,7 +37,7 @@ Greift auf ein bestimmtes Zeichen des Strings zu.
 
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Das n-te Zeichen der Zeichenfolge.
 
 --

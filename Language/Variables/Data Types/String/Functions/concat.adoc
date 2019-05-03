@@ -36,7 +36,7 @@ Hängt den Parameter an einen String an.
 `parameter`: *Zulässige Datentypen sind* String, string, char, byte, int, unsigned int, long, unsigned long, float, double, __FlashStringHelper(F() macro).
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `true`: Wenn das Anfügen erfolgreich war.
 
 `false`: Sonst

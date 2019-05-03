@@ -33,7 +33,7 @@ Analysiert, ob ein Zeichen eine Zahl ist. Gibt ``true`` zurück, wenn das Zeiche
 `thisChar`: Variable. *Erlaubter Datentyp:* char
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `true`: Wenn das Zeichen eine Zahl ist.
 
 --

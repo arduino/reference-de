@@ -43,7 +43,7 @@ aber nur mit spezifischen Pins.
 (Most Significant Bit First oder Least Significant Bit First)
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Den gelesenen Wert (byte)
 
 --

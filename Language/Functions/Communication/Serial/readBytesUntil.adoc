@@ -40,7 +40,7 @@ Die Funktion gibt die Zeichen bis zum letzten Zeichen vor dem angegebenen Abschl
 `length` : die Anzahl der zu lesenden Bytes (`int`)
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `size_t`
 
 --

@@ -28,7 +28,7 @@ Löst die mit link:../keyboardpress[Keyboard.press()] zuvor gedrückte Taste.
 `key` : Die Taste, die gelöst werden soll. `char`
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `size_t` : Die Anzahl an gelösten Tasten.
 
 --

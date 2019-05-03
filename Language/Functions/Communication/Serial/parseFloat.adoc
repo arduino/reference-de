@@ -41,7 +41,7 @@ Die Funktion wird abgebrochen, wenn sie abgelaufen ist (siehe link:../settimeout
 `ignore`: Wird verwendet, um das angegebene Zeichen bei der Suche zu überspringen. Wird beispielsweise verwendet, um Tausenderteiler zu überspringen. Zulässige Datentypen: `char`
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `float`
 
 --

@@ -36,7 +36,7 @@ Seit Arduino 1.0.1 ist es möglich, den internen Pull-Up-Widerstand mit dem Modu
 //Check how to add links
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

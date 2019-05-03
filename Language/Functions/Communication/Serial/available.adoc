@@ -26,7 +26,7 @@ Rufe die Anzahl der zum Lesen verfügbaren Bytes (Zeichen) von der seriellen Sch
 `Serial`: Serielles Port-Objekt. Siehe die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite].
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Die Anzahl der zum Lesen verfügbaren Bytes.
 --
 // OVERVIEW SECTION ENDS

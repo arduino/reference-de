@@ -35,7 +35,7 @@ while(condition) {
 `condition`: Ein Ausdruck, der auf `true` oder `false` evaluiert.
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

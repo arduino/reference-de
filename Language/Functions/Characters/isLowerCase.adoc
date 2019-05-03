@@ -33,7 +33,7 @@ Analysiert, ob das Zeichen lower case (Kleinbuchstaben) ist. Gibt ``true`` zurü
 `thisChar`: Variable. *Erlaubte Datentypen:* char
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `true`: Ob das Zeichen lower case ist.
 
 --

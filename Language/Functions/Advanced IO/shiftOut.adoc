@@ -41,7 +41,7 @@ aber nur mit spezifischen Pins.
 `value`: Die Daten, die hinausgeshiftet werden sollen. (byte)
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

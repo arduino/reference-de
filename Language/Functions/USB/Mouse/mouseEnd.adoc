@@ -28,7 +28,7 @@ Stoppt die Emulation der Maus auf dem verbundenen Computer. Um die Maus zu start
 Keine
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Ninhts
 
 --

@@ -35,7 +35,7 @@ Auf den meisten Arduino-Boards (Die Boards mit dem ATmega168 oder ATmega328P) fu
 `value`: Die Zykluszeit. Werte zwischen 0 (immer aus) und 255 (immer an) (int)
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

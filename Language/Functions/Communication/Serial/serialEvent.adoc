@@ -48,7 +48,7 @@ void serialEvent3() {
 `Statement(s)`: Alle gültigen Aussagen
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

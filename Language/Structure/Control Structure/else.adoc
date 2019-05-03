@@ -47,7 +47,7 @@ else {
 `condition`: Die Bedingung, die abgeprüft wird. Evaluiert zu `true` oder `false`.
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

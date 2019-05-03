@@ -41,7 +41,7 @@ Ermöglicht das Auffinden aller Instanzen des Zeichens oder der Zeichenfolge.
 
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Der Index von `val` innerhalb des Strings oder -1, falls nicht gefunden.
 
 --

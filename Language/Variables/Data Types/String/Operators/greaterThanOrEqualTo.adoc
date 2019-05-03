@@ -40,7 +40,7 @@ myString >= myString2
 
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `true`: Wenn myString größer oder gleich myString2 ist
 
 `false`: Sonst

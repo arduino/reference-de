@@ -30,7 +30,7 @@ Diese Funktion ist Teil der Stream-Klasse und kann von jeder Klasse aufgerufen w
 `stream` : Eine Instanz einer Klasse, die von Stream erbt
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Eine aus einem Stream gelesene Zeichenfolge.
 
 --

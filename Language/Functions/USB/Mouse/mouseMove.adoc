@@ -32,7 +32,7 @@ Bevor `Mouse.move()` benutzt werden kann, muss link:../mousebegin[Mouse.begin()]
 
 `wheel`: Wie weit das Mausrad gedreht werden soll - `signed char`
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

@@ -30,7 +30,7 @@ title: Serial.readString()
 `_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite].
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Ein String, der aus dem seriellen Puffer gelesen wird.
 
 --

@@ -33,7 +33,7 @@ Analysiert, ob ein Zeichen ein Buchstabe ist. Gibt ``true`` zurück, wenn das Ze
 `thisChar`: Variable. *Erlaubter Datentyp:* char
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `true`: Wenn das Zeichen ein Buchstabe ist.
 
 --

@@ -33,7 +33,7 @@ if (condition) {
 condition: Ein Booleanausdruck, kann `true` oder `false` sein.
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 [float]

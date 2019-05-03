@@ -44,7 +44,7 @@ Keyboard.write(0b01000001); // Das Gleiche in Binärnotation
 ----
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `size_t` : Die Anzahl der gesendeten Bytes.
 
 --

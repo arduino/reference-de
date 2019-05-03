@@ -31,7 +31,7 @@ Unterbricht das Programm für die als Parameter angegebene Zeit (in Millisekunde
 `ms`: die Anzahl der Millisekunden, die angehalten werden sollen (`unsigned long`)
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

@@ -33,7 +33,7 @@ link:../keyboardbegin[Keyboard.begin()] muss aufgerufen werden, bevor `Keyboard.
 `characters` : Ein String, der an den verbundenen Computer gesendet werden soll, gefolgt von newline und carriage return.
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `size_t` : Anzahl an gesendeten Bytes.
 
 --

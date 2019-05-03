@@ -34,7 +34,7 @@ Die Zufallsfunktion generiert Pseudozufallszahlen.
 `max` - Obere Grenze des Zufallswerts, exklusiv
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Eine Zufallszahl zwischen min und max-1 (`long`) .
 
 --

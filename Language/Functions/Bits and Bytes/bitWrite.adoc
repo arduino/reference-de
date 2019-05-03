@@ -35,7 +35,7 @@ Schreibt ein Bit einer Zahlenvariable.
 `b`: Der Wert, der auf das Bit geschrieben werden soll (0 oder 1)
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

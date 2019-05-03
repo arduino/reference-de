@@ -28,7 +28,7 @@ Löst alle zuvor gedrückten Tasten. Siehe link:../keyboardpress[Keyboard.press(
 Keine
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

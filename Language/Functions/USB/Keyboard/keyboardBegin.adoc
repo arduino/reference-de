@@ -28,7 +28,7 @@ Wenn die Funktion mit einem Leonardo- oder Due-Board benutzt wird, startet `Keyb
 Keine
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

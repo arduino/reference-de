@@ -33,7 +33,7 @@ Löscht den Wert (Schreibt 0) eines Bits einer Zahlen-Variable.
 `n`: Welches Bit gelöscht werden soll; Startet bei 0 für das least-significant (rechteste) Bit
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

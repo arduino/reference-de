@@ -35,7 +35,7 @@ Vergleicht zwei Zeichenfolgen auf Gleichheit. Der Vergleich unterscheidet nicht 
 
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `true`: Wenn myString gleich myString2 ist (Groß-/ Kleinschreibung wird ignoriert)
 
 `false`: Sonst

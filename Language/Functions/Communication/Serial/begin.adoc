@@ -62,7 +62,7 @@ Ein optionales zweites Argument konfiguriert die Daten-, Paritäts- und Stoppbit
 `SERIAL_8O2` +
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

@@ -29,7 +29,7 @@ title: Serial.getTimeout()
 None
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Der von `Serial.setTimeout()` festgelegte Timeout-Wert (unsigned long)
 
 --

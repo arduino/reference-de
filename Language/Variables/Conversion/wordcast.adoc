@@ -34,7 +34,7 @@ Konvertiert einen Wert in den link:../../data-types/word[Word]-Datentyp.
 
 `l`: Das low-order (rechteste) byte des Words
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `word`
 
 --

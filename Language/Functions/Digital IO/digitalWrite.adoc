@@ -37,7 +37,7 @@ Wenn du `pinMode()` nicht auf `OUTPUT` setzt, aber eine LED auf den Pin anschlie
 `value`: `HIGH` oder `LOW`
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

@@ -34,7 +34,7 @@ Löst den zuletzt per link:../mousepress[Mouse.press()] gedrückten Button. Der 
 * `MOUSE_MIDDLE`
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

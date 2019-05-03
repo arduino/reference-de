@@ -33,7 +33,7 @@ Analysiert, ob ein Zeichen eine Punktuation ist (Komma, Semikolon, Ausrufezeiche
 `thisChar`: Variable. *Erlaubte Datentypen:* char
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `true`: wenn das Zeichen eine Punktuation ist.
 --
 // OVERVIEW SECTION ENDS

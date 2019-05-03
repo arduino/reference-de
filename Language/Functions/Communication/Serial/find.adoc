@@ -34,7 +34,7 @@ title: Serial.find()
 `length` : Länge des Ziels (`size_t`)
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `bool`
 
 --

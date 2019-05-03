@@ -36,7 +36,7 @@ return value; // Beide Formen davon sind gültig
 `value`: Beliebige Variable oder Parameter (Optional)
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Den Datentyp des Parameters `value`
 
 --

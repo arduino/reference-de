@@ -39,7 +39,7 @@ Legt ein Zeichen für den String fest. Hat keine Auswirkung auf Indizes außerha
 
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

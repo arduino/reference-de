@@ -26,7 +26,7 @@ Gibt die Anzahl von Millisekunden zurück, seit das Arduino-Board das aktuelle P
 Nothing
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Anzahl der Millisekunden seit dem Programmstart (unsigned long)
 
 --

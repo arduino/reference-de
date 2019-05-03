@@ -28,7 +28,7 @@ Ruft die Anzahl der zum Schreiben verfügbaren Bytes (Zeichen) im seriellen Puff
 `_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite].
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Die Anzahl der zum Schreiben verfügbaren Bytes.
 --
 // OVERVIEW SECTION ENDS

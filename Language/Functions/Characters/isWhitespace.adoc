@@ -33,7 +33,7 @@ Analysiert, ob ein Zeichen ein Leerzeichen, formfeed ('\f'), newline ('\n'), car
 `thisChar`: Variable. *Erlaubte Datentypen:* char
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `true`: Wenn das Zeichen ein Leerzeichen ist.
 
 --

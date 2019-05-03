@@ -31,7 +31,7 @@ Weitere Informationen findest du auf der Hauptseite: link:../../stream[Stream-Kl
 `time` : Timeout-Dauer in Millisekunden (`long`).
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

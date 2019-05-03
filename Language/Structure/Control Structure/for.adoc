@@ -39,7 +39,7 @@ for (initialization; condition; increment) {
 `increment`: Wird hochgezählt, wenn die `condition` `true` ist.
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

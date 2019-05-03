@@ -50,7 +50,7 @@ image::http://arduino.cc/en/uploads/Main/ArduinoUno_R3_Front_450px.jpg[caption="
 
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 // Gib ein, was die Funktion zurückgibt (z. B. HIGH oder LOW). Wenn keine Rückgabe erfolgt, schreibe bitte: _Nichts_   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
 Nothing
 

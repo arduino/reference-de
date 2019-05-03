@@ -36,7 +36,7 @@ Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, 
 `terminal` : Die Terminalzeichenfolge bei der Suche `(char)`
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `bool`
 
 --

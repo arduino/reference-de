@@ -31,7 +31,7 @@ Berechnet das Quadrat einer Zahl: Die Zahl, die mit sich selbst multipliziert wi
 `x`: Die Zahl, beliebiger Datentyp
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Den Quadratwert der Zahl. (double)
 
 --

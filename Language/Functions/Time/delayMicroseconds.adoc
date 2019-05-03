@@ -36,7 +36,7 @@ Bei Verzögerungen von mehr als einigen tausend Mikrosekunden sollte stattdessen
 `us`: die Anzahl der Mikrosekunden, die angehalten werden sollen (`unsigned int`)
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

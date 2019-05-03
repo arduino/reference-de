@@ -51,7 +51,7 @@ switch (var) {
 `label1`, `label2`: Konstanten. *Erlaubte Datentypen:* int, char
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

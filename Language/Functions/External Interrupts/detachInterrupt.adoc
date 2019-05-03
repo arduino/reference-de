@@ -33,7 +33,7 @@ Deaktiviert den übergebenen Interrupt.
 `pin`: Die Interruptnummer des Interrupts, der deaktiviert werden soll
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

@@ -37,7 +37,7 @@ Testet, ob ein String mit den Zeichen eines anderen Strings endet.
 
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `true`: Wenn myString mit den Zeichen von myString2 endet
 
 `false`: Sonst

@@ -33,7 +33,7 @@ Analysiert, ob das Zeichen upper case (Großbuchstaben) ist. Gibt ``true`` zurü
 `thisChar`: Variable. *Erlaubte Datentypen:* char
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `true`: Wenn das Zeichen upper case ist.
 
 --

@@ -36,7 +36,7 @@ Mit der Funktion String `reserve()` kannst du einen Puffer für die Bearbeitung 
 `size`: Ein unsigned int, der die Anzahl der Bytes im Speicher deklariert, um sie für die Bearbeitung von Strings zu speichern
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 --
 // OVERVIEW SECTION ENDS

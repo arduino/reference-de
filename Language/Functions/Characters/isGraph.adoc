@@ -33,7 +33,7 @@ Analysiert, ob das Zeichen druckbar ist und einen Inhalt hat (Space ist z.B. dru
 `thisChar`: Variable. *Erlaubter Datentyp:* char
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `true`: Wenn das Zeichen druckbar ist.
 
 --

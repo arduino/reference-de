@@ -38,7 +38,7 @@ while (condition) {
 Keine
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 --
 // OVERVIEW SECTION ENDS

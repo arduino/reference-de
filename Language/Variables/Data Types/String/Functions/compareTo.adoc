@@ -39,7 +39,7 @@ Das bedeutet zum Beispiel, dass 'a' vor 'b' liegt, aber nach 'A'. Zahlen stehen 
 
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `Eine negative Zahl`: Wenn myString vor myString2 steht
 
 `0`: Wenn String gleich myString2 ist

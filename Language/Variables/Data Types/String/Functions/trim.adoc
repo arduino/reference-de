@@ -35,7 +35,7 @@ Ruft eine Version des Strings ab, wobei führende und nachgestellte Leerzeichen 
 
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

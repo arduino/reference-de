@@ -37,7 +37,7 @@ Konfiguriert die Referenzspannung, die für analoge Eingabe-Pins genutzt wird (z
 `type`: Welche Art von Einstellung benutzt werden soll (DEFAULT, INTERNAL, INTERNAL1V1, INTERNAL2V56, oder EXTERNAL).
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

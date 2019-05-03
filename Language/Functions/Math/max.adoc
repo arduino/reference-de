@@ -33,7 +33,7 @@ Berechnet das Maximum von zwei Zahlen.
 `y`: Die zweite Zahl, beliebiger Datentyp
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Der größere der beiden Parameterwerte.
 
 --

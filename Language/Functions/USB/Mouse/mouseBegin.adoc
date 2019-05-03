@@ -30,7 +30,7 @@ Um die Emulation zu beenden, benutze link:../mouseend[Mouse.end()].
 Keine
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

@@ -36,7 +36,7 @@ title: Serial.readBytes()
 `length` : Die Anzahl der zu lesenden Bytes (`int`)
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Die Anzahl der Bytes, die im Puffer abgelegt wurden (`size_t`)
 
 --

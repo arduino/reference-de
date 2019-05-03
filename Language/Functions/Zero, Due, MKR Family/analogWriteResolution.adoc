@@ -59,7 +59,7 @@ Wenn 10 Bit am DAC-Pin gesetzt werden, kann die volle DAC-Auflösung von 1024 We
 		Weitere Informationen finden sich im Hinweis unten.
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

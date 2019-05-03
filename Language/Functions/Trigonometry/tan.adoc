@@ -31,7 +31,7 @@ Berechnet den Tangens eines Winkels (Im Bogenmaß). Das Ergebnis liegt zwischen 
 `rad`: Der Winkel im Bogenmaß (`float`).
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Den Tangens des Winkels (`double`).
 
 --

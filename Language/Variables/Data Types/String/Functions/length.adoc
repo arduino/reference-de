@@ -35,7 +35,7 @@ Gibt die Länge der Zeichenfolge in Zeichen zurück. (Beachte, dass dies kein na
 
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Die Länge der Zeichenfolge in Zeichen.
 
 --

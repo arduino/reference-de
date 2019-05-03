@@ -28,7 +28,7 @@ Stoppt die Tastaturemulation auf dem verbundenen Computer. Um die Emulation zu s
 Keine
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

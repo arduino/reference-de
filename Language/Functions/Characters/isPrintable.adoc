@@ -33,7 +33,7 @@ Analysiert, ob das Zeichen druckbar ist (Also jedes Zeichen, das eine Ausgabe er
 `thisChar`: Variable. *Erlaubte Datentypen:* char
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `true`: Wenn das Zeichen druckbar ist.
 
 --

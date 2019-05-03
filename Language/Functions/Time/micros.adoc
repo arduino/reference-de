@@ -34,7 +34,7 @@ Auf 8-MHz-Arduino-Boards (z. B. dem LilyPad) hat diese Funktion eine Auflösung 
 Nothing
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Gibt die Anzahl der Mikrosekunden zurück, seit das Arduino-Board das aktuelle Programm gestartet hat. (unsigned long)
 
 --

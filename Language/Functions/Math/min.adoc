@@ -33,7 +33,7 @@ Berechnet das Minimum von zwei Zahlen.
 `y`: Die zweite Zahl, beliebiger Datentyp
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Die kleinere der beiden Zahlen.
 
 --

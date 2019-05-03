@@ -30,7 +30,7 @@ title: Serial.setTimeout()
 `time` : Timeout-Dauer in Millisekunden (`long`).
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

@@ -35,7 +35,7 @@ myString1 += data
 `myString1` - Eine String-Variable
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

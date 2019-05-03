@@ -32,7 +32,7 @@ myString != myString2
 ----
 
 [float]
-=== Parameters
+=== Parameter
 `myString, myString2` - Eine String-Variable
 
 [float]

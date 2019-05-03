@@ -31,7 +31,7 @@ Das bedeutet, dass aufeinanderfolgende Aufrufe von `peek()` dasselbe Zeichen zur
 `_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite].
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Das erste verfügbare Byte der eingehenden seriellen Daten (oder -1, wenn keine Daten verfügbar sind). - `int`
 
 --

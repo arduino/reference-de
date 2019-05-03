@@ -38,7 +38,7 @@ Beachte auch, dass Floats nur eine Genauigkeit von 6 bis 7 Dezimalstellen haben 
 
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `float`
 
 Wenn keine gültige Konvertierung durchgeführt werden konnte, weil die Zeichenfolge nicht mit einer Ziffer beginnt, wird eine Null zurückgegeben.

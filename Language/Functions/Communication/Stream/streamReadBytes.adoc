@@ -36,7 +36,7 @@ Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, 
 `length` : Die Anzahl der zu lesenden Bytes `(int)`
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Die Anzahl der Bytes, die im Puffer abgelegt wurden (`size_t`)
 
 --

@@ -33,7 +33,7 @@ Setzt (Schreibt eine 1) ein Bit einer Zahlenvariable.
 `n`: Welches Bit gesetzt werden soll; Startet bei 0 für das least-significant (rechteste) Bit
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

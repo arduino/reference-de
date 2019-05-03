@@ -33,7 +33,7 @@ Dies kann durch Aufrufen von `randomSeed ()` mit einer festen Zahl erreicht werd
 `seed` - eine Zahl übergeben, um die Pseudozufallssequenz zu initialisieren (long).
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

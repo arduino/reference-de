@@ -33,7 +33,7 @@ Analysiert, ob das Zeichen ein Ascii-Zeichen ist. Gibt ```true`` zurück, wenn d
 `thisChar`: Variable. *Erlaubte Datentypen:* char
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `true`: Wenn das Zeichen ein Ascii-Zeichen ist.
 
 --

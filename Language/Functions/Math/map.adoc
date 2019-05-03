@@ -55,7 +55,7 @@ Bruchreste werden abgeschnitten und nicht gerundet oder gemittelt.
 `toHigh`: Die obere Grenze des Zielbereichs des Werts
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Den zugeordneten Wert.
 
 --

@@ -34,7 +34,7 @@ deshalb deaktiviert werden.
 Keine
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Nichts
 
 --

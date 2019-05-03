@@ -35,7 +35,7 @@ x-- ; // Dekrementiert x um eins und gibt den alten Wert von x zurück
 `x`: Variable. *Erlaubte Datentypen:* integer, long (possibly unsigned)
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Den ursprünglichen oder den neu dekrementierten Wert der Variablen.
 
 --

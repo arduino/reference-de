@@ -31,7 +31,7 @@ Konvertiert einen Wert in den link:../../data-types/char[char]-Datentyp.
 `x`: Ein Wert beliebigen Datentyps
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 `char`
 
 --
