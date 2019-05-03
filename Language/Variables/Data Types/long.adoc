@@ -45,7 +45,7 @@ Siehe auch die link:../../constants/integerconstants[Ganzzahlkonstanten]-Seite f
 
 [source,arduino]
 ----
-  long speedOfLight = 186000L; // Auf der Ganzzahlkonstanten-Seite findest du Erläuterungen zu dem 'L'.
+long speedOfLight = 186000L; // Auf der Ganzzahlkonstanten-Seite findest du Erläuterungen zu dem 'L'.
 ----
 
 --
