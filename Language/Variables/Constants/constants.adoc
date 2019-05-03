@@ -1,5 +1,5 @@
 ---
-title: constants
+title: Konstanten
 categories: [ "Variables" ]
 subCategories: [ "Konstanten" ]
 ---
@@ -8,7 +8,7 @@ subCategories: [ "Konstanten" ]
 
 
 
-= Constants
+= Konstanten
 
 
 // OVERVIEW SECTION STARTS
