@@ -20,7 +20,6 @@ Sucht nach der nächsten gültigen Ganzzahl in der eingehenden Seriennummer. Die
 
 Genauer gesagt:
 
-* Anfangszeichen, die keine Ziffern oder Minuszeichen sind, werden übersprungen; +
 * Die Analyse stoppt, wenn für einen konfigurierbaren Timeout-Wert keine Zeichen gelesen wurden oder eine Nicht-Ziffer gelesen wird; +
 * Wenn beim Timeout (siehe link:../settimeout[Serial.setTimeout()]) keine gültigen Ziffern gelesen wurden, wird 0 zurückgegeben.
 [%hardbreaks]
@@ -28,14 +27,22 @@ Genauer gesagt:
 
 [float]
 === Syntax
-`_Serial_.parseInt()` +
-`_Serial_.parseInt(char skipChar)`
+`Serial.parseInt()` +
+`Serial.parseInt(lookahead)` +
+`Serial.parseInt(lookahead, ignore)`
 
 
 [float]
 === Parameter
 `_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Schnittstellen für jedes Board auf der link:../../serial[Serial-Hauptseite]. +
-`skipChar`: Wird verwendet, um das angegebene Zeichen bei der Suche zu überspringen. Wird beispielsweise verwendet, um Tausendertrenner zu überspringen.
+`lookahead`: Der Modus, mit dem im Stream nach vorne nach einer Ganzzahl gesucht wird. Erlaubte Datentypen: `LookaheadMode`.
+Erlaubte `lookahead`-Werte:
+
+* `SKIP_ALL`: Alle Zeichen außer Ziffern oder einem Minuszeichen werden beim Scannen des Streams nach einer Ganzzahl ignoriert. Dies ist der Standardmodus.
+* `SKIP_NONE`: Nichts wird übersprungen und der Stream wird nur dann berührt, wenn das erste wartende Zeichen gültig ist.
+* `SKIP_WHITESPACE`: Nur Registerkarten, Leerzeichen, Zeilenvorschub und Carriage Returns werden übersprungen.
+
+`ignore`: Wird verwendet, um das angegebene Zeichen bei der Suche zu überspringen. Wird beispielsweise verwendet, um Tausenderteiler zu überspringen. Zulässige Datentypen: `char`
 
 [float]
 === Gibt zurück

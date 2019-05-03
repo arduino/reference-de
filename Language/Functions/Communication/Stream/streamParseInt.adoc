@@ -14,11 +14,10 @@ title: Stream.parseInt()
 
 [float]
 === Beschreibung
-`parseInt()` gibt die erste gültige (long) Ganzzahl von der aktuellen Position zurück. Anfangszeichen, die keine Ganzzahlen sind (oder das Minuszeichen), werden übersprungen.
+`parseInt()` gibt die erste gültige (long) Ganzzahl von der aktuellen Position zurück.
 
 Genauergesagt:
 
-* Anfangszeichen, die keine Ziffern oder Minuszeichen sind, werden übersprungen; +
 * Die Analyse stoppt, wenn für einen konfigurierbaren Timeout-Wert keine Zeichen gelesen wurden oder eine Nicht-Ziffer gelesen wird; +
 * Wenn zum Timeout keine gültigen Ziffern gelesen wurden, tritt ein (siehe link:../streamsettimeout[Stream.setTimeout()]) auf und 0 wird zurückgegeben;
 
@@ -28,17 +27,22 @@ Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, 
 
 [float]
 === Syntax
-`stream.parseInt(list)`
-
-`stream.parseInt(''list', char skipchar')`
+`stream.parseInt()` +
+`stream.parseInt(lookahead)` +
+`stream.parseInt(lookahead, ignore)`
 
 [float]
 === Parameter
 `stream` : Eine Instanz einer Klasse, die von Stream erbt.
 
-`list` : Der Stream, um nach Ints zu suchen (`char`)
+`lookahead`: Der Modus, mit dem im Stream nach vorne nach einer Ganzzahl gesucht wird. Erlaubte Datentypen: `LookaheadMode`.
+Erlaubte `lookahead`-Werte:
 
-`skipChar`: Wird verwendet, um das angegebene Zeichen bei der Suche zu überspringen. Wird beispielsweise verwendet, um den Tausenderteiler zu überspringen.
+* `SKIP_ALL`: Alle Zeichen außer Ziffern oder einem Minuszeichen werden beim Scannen des Streams nach einer Ganzzahl ignoriert. Dies ist der Standardmodus.
+* `SKIP_NONE`: Nichts wird übersprungen und der Stream wird nur dann berührt, wenn das erste wartende Zeichen gültig ist.
+* `SKIP_WHITESPACE`: Nur Registerkarten, Leerzeichen, Zeilenvorschub und Carriage Returns werden übersprungen.
+
+`ignore`: Wird verwendet, um das angegebene Zeichen bei der Suche zu überspringen. Wird beispielsweise verwendet, um Tausenderteiler zu überspringen. Zulässige Datentypen: `char`
 
 [float]
 === Gibt zurück
