@@ -24,9 +24,9 @@ Analysiert das Zeichen, ob es ein Leerzeichen ist. Gibt ``true`` zurück, wenn d
 [float]
 === Syntax
 [source,arduino]
-----
+
 `isSpace(thisChar)`
-----
+
 
 [float]
 === Parameter

@@ -24,9 +24,9 @@ Analysiert, ob das Zeichen ein Steuerzeichen ist. Gibt ``true`` zurück, wenn es
 [float]
 === Syntax
 [source,arduino]
-----
+
 `isControl(thisChar)`
-----
+
 
 [float]
 === Parameter

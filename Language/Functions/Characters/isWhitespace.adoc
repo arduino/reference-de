@@ -24,9 +24,9 @@ Analysiert, ob ein Zeichen ein Leerzeichen, formfeed ('\f'), newline ('\n'), car
 [float]
 === Syntax
 [source,arduino]
-----
+
 `isWhitespace(thisChar)`
-----
+
 
 [float]
 === Parameter

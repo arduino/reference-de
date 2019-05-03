@@ -24,9 +24,9 @@ Analysiert, ob ein Zeichen eine Zahl ist. Gibt ``true`` zurück, wenn das Zeiche
 [float]
 === Syntax
 [source,arduino]
-----
-isDigit(thisChar)
-----
+
+`isDigit(thisChar)`
+
 
 [float]
 === Parameter

@@ -24,9 +24,9 @@ Analysiert, ob ein Zeichen eine Punktuation ist (Komma, Semikolon, Ausrufezeiche
 [float]
 === Syntax
 [source,arduino]
-----
+
 `isPunct(thisChar)`
-----
+
 
 [float]
 === Parameter

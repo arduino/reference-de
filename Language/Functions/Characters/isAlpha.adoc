@@ -24,9 +24,9 @@ Analysiert, ob ein Zeichen ein Buchstabe ist. Gibt ``true`` zurück, wenn das Ze
 [float]
 === Syntax
 [source,arduino]
-----
-isAlpha(thisChar)
-----
+
+`isAlpha(thisChar)`
+
 
 [float]
 === Parameter

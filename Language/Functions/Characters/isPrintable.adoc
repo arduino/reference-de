@@ -24,9 +24,9 @@ Analysiert, ob das Zeichen druckbar ist (Also jedes Zeichen, das eine Ausgabe er
 [float]
 === Syntax
 [source,arduino]
-----
+
 `isPrintable(thisChar)`
-----
+
 
 [float]
 === Parameter

@@ -24,9 +24,9 @@ Analysiert, ob das Zeichen ein Ascii-Zeichen ist. Gibt ```true`` zurück, wenn d
 [float]
 === Syntax
 [source,arduino]
-----
+
 `isAscii(thisChar)`
-----
+
 
 [float]
 === Parameter

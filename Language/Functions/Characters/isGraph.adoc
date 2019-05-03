@@ -24,9 +24,9 @@ Analysiert, ob das Zeichen druckbar ist und einen Inhalt hat (Space ist z.B. dru
 [float]
 === Syntax
 [source,arduino]
-----
+
 `isGraph(thisChar)`
-----
+
 
 [float]
 === Parameter
