@@ -75,14 +75,13 @@ Das `return`-Keywort kann dazu dienen, Codeabschnitte zu testen ohne viel Code a
 
 [source,arduino]
 ----
-void loop(){
+void loop() {
+  // Codeidee, die getestet werden soll, hier.
 
-// Codeidee, die getestet werden soll, hier.
+  return;
 
-return;
-
-// Der Rest des Sketches hier.
-// Wird niemals ausgeführt
+  // Der Rest des Sketches hier.
+  // Wird niemals ausgeführt
 }
 ----
 [%hardbreaks]
