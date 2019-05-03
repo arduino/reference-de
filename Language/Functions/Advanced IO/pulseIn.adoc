@@ -17,9 +17,12 @@ subCategories: [ "Advanced I/O" ]
 
 [float]
 === Beschreibung
-Liest einen Stromwert von einem Pin ein (entweder HIGH oder LOW). Wenn *value* z.B. link:../../../variables/constants/constants/[HIGH] ist, wartet `pulseIn()` darauf, dass der Pin auf den Wert link:../../../variables/constants/constants/[HIGH] wechselt, startet einen Timer und wartet anschließend darauf, dass der Pin wieder auf link:../../../variables/constants/constants/[LOW] wechselt. Daraufhin stoppt `pulseIn()` den Timer. Gibt die Länge des Stromflusses in Mikrosekunden zurück. Stoppt und gibt 0 zurück, wenn ein bestimmter Timeout erreicht wird.
+Liest einen Wert von einem vorgegebenen Digitalpin ein, entweder `HIGH` oder `LOW`. Wenn *value* z.B. link:../../../variables/constants/constants/[HIGH] ist,
+wartet `pulseIn()` darauf,dass der Pin auf den Wert link:../../../variables/constants/constants/[HIGH] wechselt, startet einen Timer und wartet anschließend darauf,
+dass der Pin wieder auf link:../../../variables/constants/constants/[LOW] wechselt. Daraufhin stoppt `pulseIn()` den Timer. Gibt die Länge des Impulses in Mikrosekunden zurück.
+Stoppt und gibt 0 zurück, wenn ein bestimmter Timeout erreicht wird.
 
-Das Timing der Funktion wurde empirisch getestet und wird vermutlich bei längeren Stromstößen Fehler werfen. Die Funktion funtioniert mit einer Stromstößen der Länge von 10 Mikrosekunden bis 3 Minuten.
+Das Timing der Funktion wurde empirisch getestet und wird vermutlich bei einem längeren Impuls falsch messen. Die Funktion funtioniert mit Impulsen der Länge von 10 Mikrosekunden bis 3 Minuten.
 [%hardbreaks]
 
 
@@ -31,15 +34,15 @@ Das Timing der Funktion wurde empirisch getestet und wird vermutlich bei länger
 
 [float]
 === Parameter
-`pin`: Die Pinnummer, an der der Stromflusses gelesen werden soll. (int)
+`pin`: Die Pinnummer, an der der Impuls gelesen werden soll. (int)
 
-`value`: Welche Art von Stromfluss gelesen werden soll: Entweder link:../../../variables/constants/constants/[HIGH] oder link:../../../variables/constants/constants/[LOW]. (int)
+`value`: Welche Art von Impuls gelesen werden soll: Entweder link:../../../variables/constants/constants/[HIGH] oder link:../../../variables/constants/constants/[LOW]. (int)
 
-`timeout` (optional): Die Anzahl an Mikrosekunden, die gewartet werden soll, bis ein Stromfluss gemessen wurde; Default-Wert ist eine Sekunde (unsigned long)
+`timeout` (optional): Die Anzahl an Mikrosekunden, die gewartet werden soll, bis ein Impuls gemessen wurde; Default-Wert ist eine Sekunde (unsigned long)
 
 [float]
 === Gibt zurück
-Die Länge des Stromflusses (in Mikrosekunden) oder 0, wenn kein Stromfluss vor dem Timeout gemessen wird (unsigned long)
+Die Länge des Impulses (in Mikrosekunden) oder 0, wenn kein Impuls vor dem Timeout gemessen wird (unsigned long)
 
 --
 // OVERVIEW SECTION ENDS
@@ -54,7 +57,7 @@ Die Länge des Stromflusses (in Mikrosekunden) oder 0, wenn kein Stromfluss vor 
 [float]
 === Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-Das Beispiel gibt den Zeitraum eines Stromstoßes auf Pin 7 aus.
+Das Beispiel gibt den Zeitraum eines Impulses auf Pin 7 aus.
 
 [source,arduino]
 ----

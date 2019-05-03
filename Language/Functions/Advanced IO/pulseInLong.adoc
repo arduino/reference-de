@@ -17,9 +17,14 @@ subCategories: [ "Advanced I/O" ]
 
 [float]
 === Beschreibung
-Liest einen Stromwert von einem Pin ein (entweder HIGH oder LOW). Wenn der *Wert* z.B. *HIGH* ist, wartet `pulseInLong()` darauf, dass der Pin auf den Wert *HIGH* wechselt, startet einen Timer und wartet anschließend darauf, dass der Pin wieder auf *LOW* wechselt. Daraufhin stoppt `pulseInLong()` den Timer. Gibt die Länge des Stromstoßes in Mikrosekunden zurück. Stoppt und gibt 0 zurück, wenn ein bestimmter Timeout erreicht wird.
+Liest einen Wert von einem vorgegebenen Digitalpin ein, entweder `HIGH` oder `LOW`. Wenn der *Wert* z.B. *HIGH* ist, wartet `pulseInLong()` darauf, dass der Pin auf den Wert *HIGH* wechselt,
+startet einen Timer und wartet anschließend darauf, dass der Pin wieder auf *LOW* wechselt. Daraufhin stoppt `pulseInLong()` den Timer. Gibt die Länge des Impulses in Mikrosekunden zurück.
+Stoppt und gibt 0 zurück, wenn ein bestimmter Timeout erreicht wird.
 
-Das Timing der Funktion wurde empirisch getestet und wird vermutlich bei längeren Stromstößen Fehler werfen. Die Funktion funtioniert mit einer Stromstößen der Länge von 10 Mikrosekunden bis 3 Minuten. Bitte beachte auch, dass, wenn ein Pin, der bereits *HIGH* ist, wenn die Funktion aufgerufen wird, zunächst auf *LOW* und dann wieder auf *HIGH* wechselt, bevor die Funktion startet. Diese Routine kann nur benutzt werden, wenn Interrupts aktiviert werden. Die beste Auflösung wird erreicht, wenn große Intervalle verwendet werden.
+Das Timing der Funktion wurde empirisch getestet und wird vermutlich bei einem längeren Impuls falsch messen.
+Die Funktion funtioniert mit einer Stromstößen der Länge von 10 Mikrosekunden bis 3 Minuten.
+Bitte beachte auch, dass, wenn ein Pin, der bereits *HIGH* ist, wenn die Funktion aufgerufen wird, zunächst auf *LOW* und dann wieder auf *HIGH* wechselt, bevor die Funktion startet.
+Diese Routine kann nur benutzt werden, wenn Interrupts aktiviert werden. Die beste Auflösung wird erreicht, wenn große Intervalle verwendet werden.
 [%hardbreaks]
 
 
@@ -31,14 +36,14 @@ Das Timing der Funktion wurde empirisch getestet und wird vermutlich bei länger
 
 [float]
 === Parameter
-`pin`: Die Pinnummer, an der der Stromstoß gelesen werden soll. (int)
+`pin`: Die Pinnummer, an der der Impuls gelesen werden soll. (int)
 
-`value`: Welche Art von Stromstoß gelesen werden soll: Entweder link:../../../variables/constants/constants/[HIGH] oder link:../../../variables/constants/constants/[LOW]. (int)
+`value`: Welche Art von Impuls gelesen werden soll: Entweder link:../../../variables/constants/constants/[HIGH] oder link:../../../variables/constants/constants/[LOW]. (int)
 
-`timeout` (optional): Die Anzahl an Mikrosekunden, die gewartet werden soll, bis ein Stromstoß gemessen wurde; Default-Wert ist eine Sekunde (unsigned long)
+`timeout` (optional): Die Anzahl an Mikrosekunden, die gewartet werden soll, bis ein Impuls gemessen wurde; Default-Wert ist eine Sekunde (unsigned long)
 [float]
 === Gibt zurück
-Die Länge des Stromstoßes (in Mikrosekunden) oder 0, wenn kein Stromstoß vor dem Timeout gemessen wird (unsigned long)
+Die Länge des Impulses (in Mikrosekunden) oder 0, wenn kein Impuls vor dem Timeout gemessen wird (unsigned long)
 
 --
 // OVERVIEW SECTION ENDS
@@ -53,7 +58,7 @@ Die Länge des Stromstoßes (in Mikrosekunden) oder 0, wenn kein Stromstoß vor 
 [float]
 === Beispielcode
 // Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
-Das Beispiel gibt den Zeitraum eines Stromstoßes auf Pin 7 aus.
+Das Beispiel gibt den Zeitraum eines Impulses auf Pin 7 aus.
 
 [source,arduino]
 ----
