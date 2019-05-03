@@ -83,7 +83,7 @@ In diesem Zustand kann z.B. eine LED ausgeschaltet werden, die über einen Vorsc
 [%hardbreaks]
 
 [float]
-== Digitale Pinsmodi: INPUT, INPUT_PULLUP, und OUTPUT
+== Digitale Pinmodi: INPUT, INPUT_PULLUP, und OUTPUT
 Digitalpins können als `INPUT`, `INPUT_PULLUP`, oder `OUTPUT` genutzt werden. Wenn ein Pin mit link:../../../functions/digital-io/pinmode[pinMode()]
 auf einen anderen Modus umgeschalten wird, ändert sich dessen elektrisches Verhalten.
 
