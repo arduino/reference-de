@@ -46,7 +46,7 @@ mit dem (https://de.wikipedia.org/wiki/Zweierkomplement[Zweierkomplement]).
 
 [source,arduino]
 ----
-  unsigned int ledPin = 13;
+unsigned int ledPin = 13;
 ----
 [%hardbreaks]
 

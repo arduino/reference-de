@@ -56,16 +56,16 @@ Wenn du mit floats rechnest, musst du ein Dezimalzeichen hinzufügen, andernfall
 
 [source,arduino]
 ----
-  float myfloat;
-  float sensorCalbrate = 1.117;
+float myfloat;
+float sensorCalbrate = 1.117;
 
-  int x;
-  int y;
-  float z;
+int x;
+int y;
+float z;
 
-  x = 1;
-  y = x / 2;          // y enthält jetzt 0, ints können keine Brüche enthalten
-  z = (float)x / 2.0; // z enthält jetzt .5 (Du musst 2.0 verwenden, nicht 2)
+x = 1;
+y = x / 2;          // y enthält jetzt 0, ints können keine Brüche enthalten
+z = (float)x / 2.0; // z enthält jetzt .5 (Du musst 2.0 verwenden, nicht 2)
 ----
 
 
