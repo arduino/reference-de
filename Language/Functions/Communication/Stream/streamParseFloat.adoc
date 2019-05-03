@@ -14,8 +14,8 @@ title: Stream.parseFloat()
 
 [float]
 === Beschreibung
-`parseFloat()` gibt die erste gültige Gleitkommazahl von der aktuellen Position zurück. Anfangszeichen, die keine Ziffern (oder das Minuszeichen) sind, werden übersprungen.
-`parseFloat()` wird durch das erste Zeichen beendet, das keine Fließkommazahl ist. Die Funktion wird abgebrochen, wenn eine Zeitüberschreitung auftritt (siehe link:../streamsettimeout[Stream.setTimeout()]).
+`parseFloat()` gibt die erste gültige Gleitkommazahl von der aktuellen Position zurück. `parseFloat()` wird durch das erste Zeichen beendet, das keine Fließkommazahl ist.
+Die Funktion wird abgebrochen, wenn eine Zeitüberschreitung auftritt (siehe link:../streamsettimeout[Stream.setTimeout()]).
 
 Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, die von ihr erbt (Wire, Serial usw.). Siehe die link:../../stream[Stream-Klasse] für weitere Informationen.
 [%hardbreaks]
@@ -23,14 +23,22 @@ Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, 
 
 [float]
 === Syntax
-`stream.parseFloat(list)`
+`stream.parseFloat()` +
+`stream.parseFloat(lookahead)` +
+`stream.parseFloat(lookahead, ignore)`
 
 
 [float]
 === Parameter
 `stream` : Eine Instanz einer Klasse, die von Stream erbt.
 
-`list` : Der Stream, in dem nach floats gesucht wird (`char`)
+`lookahead`: Der Modus, mit dem im Stream nach einer Gleitkommazahl gesucht wird. Zulässige Datentypen: `LookaheadMode`. Erlaubte `lookahead`-Werte:
+
+* `SKIP_ALL`: Alle Zeichen außer einem Minuszeichen, Dezimalpunkt oder Ziffern werden ignoriert, wenn der Stream nach einer Gleitkommazahl durchsucht wird. Dies ist der Standardmodus.
+* `SKIP_NONE`: Nichts wird übersprungen und der Stream wird nur dann berührt, wenn das erste wartende Zeichen gültig ist.
+* `SKIP_WHITESPACE`: Nur Registerkarten, Leerzeichen, Zeilenvorschub und Carriage Returns werden übersprungen.
+
+`ignore`: Wird verwendet, um das angegebene Zeichen bei der Suche zu überspringen. Wird beispielsweise verwendet, um Tausenderteiler zu überspringen. Zulässige Datentypen: `char`
 
 [float]
 === Gibt zurück

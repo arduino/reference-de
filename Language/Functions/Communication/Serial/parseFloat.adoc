@@ -14,8 +14,8 @@ title: Serial.parseFloat()
 
 [float]
 === Beschreibung
-`Serial.parseFloat()` gibt die erste gültige Gleitkommazahl aus dem seriellen Puffer zurück. Zeichen, die keine Ziffern (oder das Minuszeichen) sind, werden übersprungen.
-`parseFloat()` wird durch das erste Zeichen beendet, das keine Fließkommazahl ist. Die Funktion wird abgebrochen, wenn eine Zeitüberschreitung auftritt (siehe link:../settimeout[Serial.setTimeout()]).
+`Serial.parseFloat()` gibt die erste gültige Gleitkommazahl aus dem seriellen Puffer zurück. `parseFloat()` wird durch das erste Zeichen beendet, das keine Fließkommazahl ist.
+Die Funktion wird abgebrochen, wenn sie abgelaufen ist (siehe link:../settimeout[Serial.setTimeout()]).
 
 `Serial.parseFloat()` erbt von der link:../../stream[Stream]-Dienstklasse.
 [%hardbreaks]
@@ -23,12 +23,22 @@ title: Serial.parseFloat()
 
 [float]
 === Syntax
-`_Serial_.parseFloat()`
+`Serial.parseFloat()` +
+`Serial.parseFloat(lookahead)` +
+`Serial.parseFloat(lookahead, ignore)`
 
 
 [float]
 === Parameter
 `_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite].
+
+`lookahead`: Der Modus, mit dem im Stream nach einer Gleitkommazahl gesucht wird. Erlaubte Datentypen: `LookaheadMode`. Erlaubte `lookahead`-Werte:
+
+* `SKIP_ALL`: Alle Zeichen außer einem Minuszeichen, Dezimalpunkt oder Ziffern werden ignoriert, wenn der Stream nach einer Gleitkommazahl durchsucht wird. Dies ist der Standardmodus.
+* `SKIP_NONE`: Nichts wird übersprungen und der Stream wird nur dann berührt, wenn das erste wartende Zeichen gültig ist.
+* `SKIP_WHITESPACE`: Nur Registerkarten, Leerzeichen, Zeilenvorschub und Carriage Returns werden übersprungen.
+
+`ignore`: Wird verwendet, um das angegebene Zeichen bei der Suche zu überspringen. Wird beispielsweise verwendet, um Tausenderteiler zu überspringen. Zulässige Datentypen: `char`
 
 [float]
 === Gibt zurück
