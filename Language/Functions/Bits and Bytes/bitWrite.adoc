@@ -50,7 +50,7 @@ Nichts
 Demonstriert die Verwendung von `bitWrite`, indem der Wert einer Variablen vor und nach der Verwendung von `bitWrite()` auf dem seriellen Monitor geschrieben wird.
 
 [source,arduino]
-
+----
 void setup() {
   Serial.begin(9600);
   while (!Serial) {}  // Warten, bis die serielle Schnittstelle verbunden ist. Wird nur für den nativen USB-Anschluss benötigt
