@@ -17,7 +17,7 @@ title: Serial.peek()
 Gibt das nächste Byte (Zeichen) eingehender serieller Daten zurück, ohne sie aus dem internen seriellen Puffer zu entfernen.
 Das bedeutet, dass aufeinanderfolgende Aufrufe von `peek()` dasselbe Zeichen zurückgeben wie der nächste Aufruf von `read()`.
 
-`Serial.peek()` erbt von der link:../../stream[Stream]-Dienstklasse.
+`_Serial_.peek()` erbt von der link:../../stream[Stream]-Dienstklasse.
 [%hardbreaks]
 
 

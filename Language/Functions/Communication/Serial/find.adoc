@@ -14,9 +14,9 @@ title: Serial.find()
 
 [float]
 === Beschreibung
-`Serial.find()` liest Daten aus dem seriellen Puffer, bis das Ziel gefunden wurde. Die Funktion gibt `true` zurück, wenn ein Ziel gefunden wurde, und `false`, wenn das Zeitlimit überschritten wird.
+`_Serial_.find()` liest Daten aus dem seriellen Puffer, bis das Ziel gefunden wurde. Die Funktion gibt `true` zurück, wenn ein Ziel gefunden wurde, und `false`, wenn das Zeitlimit überschritten wird.
 
-`Serial.find()` erbt von der link:../../stream[Stream]-Dienstklasse.
+`_Serial_.find()` erbt von der link:../../stream[Stream]-Dienstklasse.
 [%hardbreaks]
 
 

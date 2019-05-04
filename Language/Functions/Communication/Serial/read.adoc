@@ -16,7 +16,7 @@ title: Serial.read()
 === Beschreibung
 Liest eingehende serielle Daten.
 
-`Serial.read()` erbt von der link:../../stream[Stream]-Dienstklasse.
+`_Serial_.read()` erbt von der link:../../stream[Stream]-Dienstklasse.
 [%hardbreaks]
 
 

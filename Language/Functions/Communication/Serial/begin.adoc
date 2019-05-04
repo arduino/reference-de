@@ -116,7 +116,7 @@ Danke an Jeff Gray für das Mega-Beispiel
 
 [float]
 === Anmerkungen und Warnungen
-Bei seriellen USB-CDC-Anschlüssen (z. B. `Serial` am Leonardo) ist `Serial.begin()` irrelevant. Du kannst eine beliebige Baudrate und Konfiguration für die serielle Kommunikation mit diesen Ports verwenden.
+Bei seriellen USB-CDC-Anschlüssen (z. B. `Serial` am Leonardo) ist `_Serial_.begin()` irrelevant. Du kannst eine beliebige Baudrate und Konfiguration für die serielle Kommunikation mit diesen Ports verwenden.
 Siehe die Liste der verfügbaren seriellen Schnittstellen für jedes Board auf der link:../../serial[Serial-Hauptseite].
 [%hardbreaks]
 

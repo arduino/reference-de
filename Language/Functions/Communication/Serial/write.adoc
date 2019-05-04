@@ -71,9 +71,9 @@ void loop() {
 
 [float]
 === Anmerkungen und Warnungen
-Seit Arduino IDE 1.0 ist die serielle Übertragung asynchron. Wenn im Sendepuffer genügend freier Speicherplatz vorhanden ist, wird `Serial.write()` zurückgegeben, bevor Zeichen seriell übertragen werden.
-Wenn der Sendepuffer voll ist, wird `Serial.write()` blockiert, bis im Puffer genügend Speicherplatz vorhanden ist.
-Um das Blockieren von Aufrufen von `Serial.write()` zu vermeiden, kannst du zunächst den freien Speicherplatz im Sendepuffer mit überprüfen: link:../availableforwrite[availableForWrite()].
+Seit Arduino IDE 1.0 ist die serielle Übertragung asynchron. Wenn im Sendepuffer genügend freier Speicherplatz vorhanden ist, wird `_Serial_.write()` zurückgegeben, bevor Zeichen seriell übertragen werden.
+Wenn der Sendepuffer voll ist, wird `_Serial_.write()` blockiert, bis im Puffer genügend Speicherplatz vorhanden ist.
+Um das Blockieren von Aufrufen von `_Serial_.write()` zu vermeiden, kannst du zunächst den freien Speicherplatz im Sendepuffer mit überprüfen: link:../availableforwrite[availableForWrite()].
 
 --
 // HOW TO USE SECTION ENDS

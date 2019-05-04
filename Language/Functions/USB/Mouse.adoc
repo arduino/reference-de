@@ -33,7 +33,7 @@ Diese Core-Bibliotheken erlauben es 32u4- oder SAMD-basierten Boards (Leonardo, 
 an den verbundenen Computer. Diese Funktionen sollten nur aufgerufen werden, wenn das Programm diese behandeln kann. Es wird deshalb empfohlen, ein Kontrollsystem zu nutzen, z.B. einen physikalischen Schalter
 oder nur auf bestimmte Eingaben zu antworten.
 [%hardbreaks]
-Wenn die Mouse- oder Keyboard-Bibliothek benutzt wird, sollte die Ausgabe zunächst mit `Serial.print()` überprüft werden. Auf diesem Weg kann man sich sicher sein, dass die richtigen Werte an den verbundenen
+Wenn die Mouse- oder Keyboard-Bibliothek benutzt wird, sollte die Ausgabe zunächst mit `_Serial_.print()` überprüft werden. Auf diesem Weg kann man sich sicher sein, dass die richtigen Werte an den verbundenen
 Computer gesendet werden. Die Beispiele liefern weitere Informationen dazu.
 
 // FUNCTIONS SECTION STARTS

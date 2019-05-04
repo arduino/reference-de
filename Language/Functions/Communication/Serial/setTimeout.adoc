@@ -14,9 +14,9 @@ title: Serial.setTimeout()
 
 [float]
 === Beschreibung
-`Serial.setTimeout()` legt die maximalen Millisekunden für das Warten auf serielle Daten fest. Der Standardwert ist 1000 Millisekunden.
+`_Serial_.setTimeout()` legt die maximalen Millisekunden für das Warten auf serielle Daten fest. Der Standardwert ist 1000 Millisekunden.
 
-`Serial.setTimeout()` erbt von der link:../../stream[Stream]-Dienstklasse.
+`_Serial_.setTimeout()` erbt von der link:../../stream[Stream]-Dienstklasse.
 [%hardbreaks]
 
 

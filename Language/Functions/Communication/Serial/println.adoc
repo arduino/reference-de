@@ -85,7 +85,7 @@ void loop() {
 
 [float]
 === Anmerkungen und Warnungen
-Informationen zur Asynchronität von `Serial.println()` findest du im Abschnitt Hinweise und Warnungen von link:../write#howtouse[Serial.write()].
+Informationen zur Asynchronität von `_Serial_.println()` findest du im Abschnitt Hinweise und Warnungen von link:../write#howtouse[Serial.write()].
 
 --
 // HOW TO USE SECTION ENDS

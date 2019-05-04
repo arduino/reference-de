@@ -14,18 +14,18 @@ title: Serial.parseFloat()
 
 [float]
 === Beschreibung
-`Serial.parseFloat()` gibt die erste gültige Gleitkommazahl aus dem seriellen Puffer zurück. `parseFloat()` wird durch das erste Zeichen beendet, das keine Fließkommazahl ist.
+`_Serial_.parseFloat()` gibt die erste gültige Gleitkommazahl aus dem seriellen Puffer zurück. `parseFloat()` wird durch das erste Zeichen beendet, das keine Fließkommazahl ist.
 Die Funktion wird abgebrochen, wenn sie abgelaufen ist (siehe link:../settimeout[Serial.setTimeout()]).
 
-`Serial.parseFloat()` erbt von der link:../../stream[Stream]-Dienstklasse.
+`_Serial_.parseFloat()` erbt von der link:../../stream[Stream]-Dienstklasse.
 [%hardbreaks]
 
 
 [float]
 === Syntax
-`Serial.parseFloat()` +
-`Serial.parseFloat(lookahead)` +
-`Serial.parseFloat(lookahead, ignore)`
+`_Serial_.parseFloat()` +
+`_Serial_.parseFloat(lookahead)` +
+`_Serial_.parseFloat(lookahead, ignore)`
 
 
 [float]

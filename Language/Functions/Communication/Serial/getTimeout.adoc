@@ -14,9 +14,9 @@ title: Serial.getTimeout()
 
 [float]
 === Beschreibung
-`Serial.getTimeout()` gibt den Timeout-Wert zurück, der von `Serial.setTimeout()` gesetzt wurde.
+`_Serial_.getTimeout()` gibt den Timeout-Wert zurück, der von `_Serial_.setTimeout()` gesetzt wurde.
 
-`Serial.getTimeout()` erbt von der link:../../stream[Stream]-Dienstklasse.
+`_Serial_.getTimeout()` erbt von der link:../../stream[Stream]-Dienstklasse.
 [%hardbreaks]
 
 
@@ -30,7 +30,7 @@ None
 
 [float]
 === Rückgabewert
-Der von `Serial.setTimeout()` festgelegte Timeout-Wert (unsigned long)
+Der von `_Serial_.setTimeout()` festgelegte Timeout-Wert (unsigned long)
 
 --
 // OVERVIEW SECTION ENDS

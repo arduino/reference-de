@@ -14,7 +14,7 @@ title: serialEvent()
 
 [float]
 === Beschreibung
-Wird aufgerufen, wenn Daten verfügbar sind. Verwende `Serial.read()`, um diese Daten zu erfassen.
+Wird aufgerufen, wenn Daten verfügbar sind. Verwende `_Serial_.read()`, um diese Daten zu erfassen.
 [%hardbreaks]
 
 

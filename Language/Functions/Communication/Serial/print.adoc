@@ -18,26 +18,26 @@ Druckt Daten an den seriellen Anschluss als von Menschen lesbarer ASCII-Text. Di
 Zahlen werden für jede Ziffer mit einem ASCII-Zeichen gedruckt. Floats werden in ähnlicher Weise als ASCII-Ziffern gedruckt. Die Standardeinstellung ist zwei Dezimalstellen. Bytes werden als einzelnes Zeichen gesendet.
 Zeichen und Zeichenfolgen werden unverändert gesendet. Zum Beispiel:
 
-* `Serial.print(78)` gibt "78" aus +
-* `Serial.print(1.23456)` gibt "1.23" aus +
-* `Serial.print('N')` gibt "N" aus +
-* `Serial.print("Hello world.")` gibt "Hello world."
+* `_Serial_.print(78)` gibt "78" aus +
+* `_Serial_.print(1.23456)` gibt "1.23" aus +
+* `_Serial_.print('N')` gibt "N" aus +
+* `_Serial_.print("Hello world.")` gibt "Hello world."
 
 
 Ein optionaler zweiter Parameter gibt die Basis (Format) an, die verwendet werden soll. Zulässige Werte sind `BIN(Binär, oder Basis 2)`, `OCT(Oktal, oder Basis 8)`, `DEC(Dezimal, oder Basis 10)`, `HEX(Hexadezimal, oder Basis 16)`.
 Bei Gleitkommazahlen gibt dieser Parameter die Anzahl der zu verwendenden Dezimalstellen an. Zum Beispiel:
 
-* `Serial.print(78, BIN)` gibt "1001110" aus +
-* `Serial.print(78, OCT)` gibt "116" aus +
-* `Serial.print(78, DEC)` gibt "78" aus +
-* `Serial.print(78, HEX)` gibt "4E" aus +
-* `Serial.print(1.23456, 0)` gibt "1" aus +
-* `Serial.print(1.23456, 2)` gibt "1.23" aus +
-* `Serial.print(1.23456, 4)` gibt "1.2346"
+* `_Serial_.print(78, BIN)` gibt "1001110" aus +
+* `_Serial_.print(78, OCT)` gibt "116" aus +
+* `_Serial_.print(78, DEC)` gibt "78" aus +
+* `_Serial_.print(78, HEX)` gibt "4E" aus +
+* `_Serial_.print(1.23456, 0)` gibt "1" aus +
+* `_Serial_.print(1.23456, 2)` gibt "1.23" aus +
+* `_Serial_.print(1.23456, 4)` gibt "1.2346"
 
-Du kannst Flash-Speicher-basierte Zeichenfolgen an `Serial.print()` übergeben, indem du Sie mit link:../../../../variables/utilities/progmem[F()] einschließt. Zum Beispiel:
+Du kannst Flash-Speicher-basierte Zeichenfolgen an `_Serial_.print()` übergeben, indem du Sie mit link:../../../../variables/utilities/progmem[F()] einschließt. Zum Beispiel:
 
-`Serial.print(F(“Hello World”))`
+`_Serial_.print(F(“Hello World”))`
 
 Um Daten ohne Umwandlung in ihre Darstellung als Zeichen zu senden, verwende link:../write[Serial.write()].
 [%hardbreaks]
@@ -124,7 +124,7 @@ void loop() {
 
 [float]
 === Anmerkungen und Warnungen
-Informationen zur Asynchronität von `Serial.println()` findest du im Abschnitt Hinweise und Warnungen von link:../write#howtouse[Serial.write()].
+Informationen zur Asynchronität von `_Serial_.println()` findest du im Abschnitt Hinweise und Warnungen von link:../write#howtouse[Serial.write()].
 
 --
 // HOW TO USE SECTION ENDS

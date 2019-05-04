@@ -13,17 +13,17 @@ title: Serial.available()
 === Beschreibung
 Rufe die Anzahl der zum Lesen verfügbaren Bytes (Zeichen) von der seriellen Schnittstelle ab. Dies sind Daten, die bereits eingetroffen sind und im seriellen Empfangspuffer gespeichert sind (der 64 Byte enthält).
 
-`Serial.available()` erbt von der link:../../stream[Stream]-Dienstklasse.
+`_Serial_.available()` erbt von der link:../../stream[Stream]-Dienstklasse.
 [%hardbreaks]
 
 
 [float]
 === Syntax
-`Serial.available()`
+`_Serial_.available()`
 
 [float]
 === Parameter
-`Serial`: Serielles Port-Objekt. Siehe die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite].
+`_Serial_`: Serielles Port-Objekt. Siehe die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite].
 
 [float]
 === Rückgabewert

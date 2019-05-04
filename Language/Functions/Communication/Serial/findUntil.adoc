@@ -14,11 +14,11 @@ title: Serial.findUntil()
 
 [float]
 === Beschreibung
-`Serial.findUntil()` liest Daten aus dem seriellen Puffer, bis eine Zielzeichenfolge mit einer angegebenen Länge oder Terminatorzeichenfolge gefunden wird.
+`_Serial_.findUntil()` liest Daten aus dem seriellen Puffer, bis eine Zielzeichenfolge mit einer angegebenen Länge oder Terminatorzeichenfolge gefunden wird.
 
 Die Funktion gibt `true` zurück, wenn die Zielzeichenfolge gefunden wird, `false`, wenn das Zeitlimit überschritten wird.
 
-`Serial.findUntil()` erbt von der link:../../stream[Stream]-Dienstklasse.
+`_Serial_.findUntil()` erbt von der link:../../stream[Stream]-Dienstklasse.
 [%hardbreaks]
 
 

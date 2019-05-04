@@ -39,7 +39,7 @@ Alle folgenden Angaben sind gültige Deklarationen für Strings.
 
 *Null-Termination*
 
-Im Allgemeinen werden Zeichenfolgen mit einem Nullzeichen (ASCII-Code 0) abgeschlossen. Dadurch können Funktionen (wie `Serial.print()`) erkennen, wo das Ende eines Strings ist.
+Im Allgemeinen werden Zeichenfolgen mit einem Nullzeichen (ASCII-Code 0) abgeschlossen. Dadurch können Funktionen (wie `_Serial_.print()`) erkennen, wo das Ende eines Strings ist.
 Andernfalls würden sie nachfolgende Speicherbytes lesen, die eigentlich nicht Teil der Zeichenfolge sind.
 
 Das bedeutet, dass die Zeichenfolge Platz für ein Zeichen mehr als den gewünschten Text haben muss.

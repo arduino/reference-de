@@ -14,13 +14,13 @@ title: Serial.readBytesUntil()
 
 [float]
 === Beschreibung
-`Serial.readBytesUntil()` liest Zeichen aus dem seriellen Puffer in ein Array.
+`_Serial_.readBytesUntil()` liest Zeichen aus dem seriellen Puffer in ein Array.
 Die Funktion wird beendet, wenn das Abschlusszeichen erkannt wird, die ermittelte Länge gelesen wurde oder das Zeitlimit überschritten wurde (siehe link:../settimeout[Serial.setTimeout()]).
 Die Funktion gibt die Zeichen bis zum letzten Zeichen vor dem angegebenen Abschluss zurück. Das Terminatorzeichen selbst wird nicht im Puffer zurückgegeben.
 
-`Serial.readBytesUntil()` gibt die Anzahl der in den Puffer eingelesenen Zeichen zurück. Eine 0 bedeutet, dass keine gültigen Daten gefunden wurden.
+`_Serial_.readBytesUntil()` gibt die Anzahl der in den Puffer eingelesenen Zeichen zurück. Eine 0 bedeutet, dass keine gültigen Daten gefunden wurden.
 
-`Serial.readBytesUntil()` erbt von der link:../../stream [Stream]-Dienstklasse.
+`_Serial_.readBytesUntil()` erbt von der link:../../stream [Stream]-Dienstklasse.
 [%hardbreaks]
 
 

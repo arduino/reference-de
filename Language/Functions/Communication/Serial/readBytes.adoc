@@ -14,11 +14,11 @@ title: Serial.readBytes()
 
 [float]
 === Beschreibung
-`Serial.readBytes()` liest Zeichen vom seriellen Port in einen Puffer. Die Funktion wird beendet, wenn die ermittelte Länge gelesen wurde oder das Zeitlimit überschritten wurde (siehe link:../settimeout[Serial.setTimeout()]).
+`_Serial_.readBytes()` liest Zeichen vom seriellen Port in einen Puffer. Die Funktion wird beendet, wenn die ermittelte Länge gelesen wurde oder das Zeitlimit überschritten wurde (siehe link:../settimeout[Serial.setTimeout()]).
 
-`Serial.readBytes()` gibt die Anzahl der Zeichen in den Puffer zurück. Eine 0 bedeutet, dass keine gültigen Daten gefunden wurden.
+`_Serial_.readBytes()` gibt die Anzahl der Zeichen in den Puffer zurück. Eine 0 bedeutet, dass keine gültigen Daten gefunden wurden.
 
-`Serial.readBytes()` erbt von der link:../../stream[Stream]-Dienstklasse.
+`_Serial_.readBytes()` erbt von der link:../../stream[Stream]-Dienstklasse.
 [%hardbreaks]
 
 

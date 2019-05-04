@@ -16,7 +16,7 @@ title: Serial.parseInt()
 === Beschreibung
 Sucht nach der nächsten gültigen Ganzzahl in der eingehenden Seriennummer. Die Funktion wird abgebrochen, wenn eine Zeitüberschreitung auftritt (siehe link:../settimeout[Serial.setTimeout()]).
 
-`Serial.parseInt()` erbt von der link:../../stream[Stream]-Dienstklasse.
+`_Serial_.parseInt()` erbt von der link:../../stream[Stream]-Dienstklasse.
 
 Genauer gesagt:
 
@@ -27,9 +27,9 @@ Genauer gesagt:
 
 [float]
 === Syntax
-`Serial.parseInt()` +
-`Serial.parseInt(lookahead)` +
-`Serial.parseInt(lookahead, ignore)`
+`_Serial_.parseInt()` +
+`_Serial_.parseInt(lookahead)` +
+`_Serial_.parseInt(lookahead, ignore)`
 
 
 [float]
