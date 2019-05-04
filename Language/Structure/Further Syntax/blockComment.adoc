@@ -65,7 +65,7 @@ Diese Art von Kommentar wird aufgerufen, da sich dieser über mehrere Zeilen ers
 === Anmerkungen und Warnungen
 Beim Experimentieren mit Code ist das Herauskommentieren von Programmteilen eine bequeme Möglichkeit, fehlerhafte Zeilen zu entfernen.
 Dadurch bleiben die Zeilen im Code erhalten, werden jedoch in Kommentare umgewandelt, sodass der Compiler sie einfach ignoriert.
-Dies kann besonders nützlich sein, wenn Sie versuchen, ein Problem zu finden, oder wenn ein Programm die Kompilierung ablehnt und
+Dies kann besonders nützlich sein, wenn du versuchst, ein Problem zu finden, oder wenn ein Programm die Kompilierung ablehnt und
 der Compilerfehler kryptisch oder nicht hilfreich ist.
 [%hardbreaks]
 

@@ -69,7 +69,7 @@ void loop() {
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="language"]
 * #SPRACHE# link:../../constants/integerconstants[Ganzzahlkonstanten]

@@ -33,7 +33,7 @@ Analysiert, ob ein Zeichen alphanumerisch ist. (Buchstabe oder Zahl). Gibt ``tru
 `thisChar`: Variable. *Erlaubte Datentypen:* char
 
 [float]
-=== Returns
+=== Rückgabewert
 `true`: Wenn das Zeichen alphanumerisch ist.
 
 --
@@ -46,7 +46,7 @@ Analysiert, ob ein Zeichen alphanumerisch ist. (Buchstabe oder Zahl). Gibt ``tru
 --
 
 [float]
-=== Example Code
+=== Beispielcode
 
 [source,arduino]
 ----

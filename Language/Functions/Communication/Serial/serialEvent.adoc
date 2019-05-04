@@ -75,7 +75,7 @@ Nichts
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 [role="example"]
 * #BEISPIEL# http://arduino.cc/en/Tutorial/SerialEvent[Serielle Events^]

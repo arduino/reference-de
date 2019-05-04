@@ -45,7 +45,7 @@ Das erste Byte der eingehenden seriellen Daten ist verfügbar (oder -1, wenn kei
 
 [float]
 === Beispielcode
-// Beschreibe, worum es im Beispielcode geht und fügen Sie relevanten Code hinzu   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
+// Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
 
 
 [source,arduino]
@@ -57,7 +57,7 @@ void setup() {
 }
 
 void loop() {
-  // Daten nur senden, wenn Sie Daten erhalten:
+  // Daten nur senden, wenn Daten erhalten:
   if (Serial.available() > 0) {
     // Lies das eingehende Byte:
     incomingByte = Serial.read();

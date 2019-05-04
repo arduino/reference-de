@@ -32,7 +32,7 @@
 [#name_of_id]
 --
 
-// Fügen Sie hier Ihren Inhalt hinzu.
+// Füge hier Ihren Inhalt hinzu.
 
 // Wenn es sich bei Ihrer Ausgabe um eine HTML-Datei handelt, erstellt dieses Tag ein Wrapper-Div mit der angegebenen ID, z. B.:
 // <div id="name_of_id" class="openblock"></div>
@@ -99,7 +99,7 @@ mailto:webmaster@arduino.cc[Das ist ein E-Mail Link]
 Dies ist `Code` in einem Satz +
 `Dies ist eine ganze Codezeile` +
 
-// HINWEIS: Bitte beachten Sie, dass beim Kopieren und Einfügen von Code am Anfang jeder Codezeile einige Leerzeichen hinzugefügt werden können.
+// HINWEIS: Bitte beachte, dass beim Kopieren und Einfügen von Code am Anfang jeder Codezeile einige Leerzeichen hinzugefügt werden können.
 // In diesem Fall entferne bitte die zusätzlichen Leerzeichen. Vielen Dank!
 
 Dies kann viel mehr Code sein
@@ -139,7 +139,7 @@ for (int i = 0; i <= 99; i++) {
 // Platziere das Bild dort und referenziere es wie unten gezeigt. Bilder können im SVG- und PNG-Format mit einer maximalen Größe von 200 KB vorliegen.
 
 // Ein Bild in eine eigene Zeile einfügen (z.B. ein Blockbild), nutze das image:: Präfix vor dem Dateinamen und eckige Klammern danach []
-// Stellen Sie sicher, dass Sie [%hardbreaks] zwischen Text und Bild einfügen
+// Stelle sicher, dass [%hardbreaks] zwischen Text und Bild eingefügt
 
 Dies ist ein Blockbild mit einer URL
 [%hardbreaks]

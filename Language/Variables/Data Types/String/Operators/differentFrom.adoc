@@ -36,7 +36,7 @@ myString != myString2
 `myString, myString2` - Eine String-Variable
 
 [float]
-=== Returns
+=== Rückgabewert
 `true`: Wenn sich myString von myString2 unterscheidet
 
 `false`: Sonst

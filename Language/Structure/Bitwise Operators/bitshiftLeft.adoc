@@ -55,7 +55,7 @@ int b = a << 3; // Binär: 0000000000101000, oder 40 als Dezimal
 
 [float]
 === Anmerkungen und Warnungen
-Wenn Sie einen Wert x um y Bits (x << y) verschieben, gehen die am weitesten links liegenden y Bits in x verloren.
+Wenn du einen Wert x um y Bits (x << y) verschiebst, gehen die am weitesten links liegenden y Bits in x verloren.
 
 [source,arduino]
 ----
@@ -64,7 +64,7 @@ int y = 14;
 int result = x << y; // Binär: 0100000000000000 - Die erste 1 von 101 wurde verworfen
 ----
 
-Wenn Sie sicher sind, dass keine der Einsen in einem Wert in Vergessenheit gerät, ist ein einfacher Weg, sich den Operator für die linke Verschiebung vorzustellen,
+Wenn du sicher bist, dass keine der Einsen in einem Wert in Vergessenheit gerät, ist ein einfacher Weg, sich den Operator für die linke Verschiebung vorzustellen,
 dass er den linken Operanden mit 2 multipliziert, um die Potenz des rechten Operanden zu erreichen.
 Um beispielsweise Potenzen von 2 zu erzeugen, können die folgenden Ausdrücke verwendet werden:
 

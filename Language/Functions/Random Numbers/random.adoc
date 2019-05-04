@@ -90,7 +90,7 @@ Dies kann durch Aufrufen von `randomSeed ()` mit einer festen Zahl erreicht werd
 
 Der Parameter max sollte entsprechend dem Datentyp der Variablen ausgewählt werden, in der der Wert gespeichert ist.
 In jedem Fall ist das absolute Maximum an die Länge des generierten Werts (32 Bit-2.147.483.647) gebunden.
-Wenn Sie max auf einen höheren Wert setzen, wird beim Kompilieren kein Fehler generiert. Während der Ausführung des Sketches werden jedoch die Zahlen nicht generiert wie erwartet.
+Wenn du max auf einen höheren Wert setzt, wird beim Kompilieren kein Fehler generiert. Während der Ausführung des Sketches werden jedoch die Zahlen nicht generiert wie erwartet.
 
 --
 // HOW TO USE SECTION ENDS

@@ -49,7 +49,7 @@ sensVal = analogRead(0);  // Speichern der (digitalisierten) Eingangsspannung am
 === Anmerkungen und Warnungen
 1. Die Variable auf der linken Seite des Zuweisungsoperators (= Zeichen) muss den darin gespeicherten Wert enthalten können. Wenn er nicht groß genug ist, um einen Wert zu speichern, ist der in der Variablen gespeicherte Wert falsch.
 
-2. Verwechseln Sie den Zuweisungsoperator [=] (einfaches Gleichheitszeichen) nicht mit dem Vergleichsoperator [==] (doppelte Gleichheitszeichen), der bewertet, ob zwei Ausdrücke gleich sind.
+2. Verwechsele den Zuweisungsoperator [=] (einfaches Gleichheitszeichen) nicht mit dem Vergleichsoperator [==] (doppelte Gleichheitszeichen), der bewertet, ob zwei Ausdrücke gleich sind.
 [%hardbreaks]
 
 --

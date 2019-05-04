@@ -38,7 +38,7 @@ myString > myString2
 `myString, myString2` - Eine String-Variable
 
 [float]
-=== Returns
+=== Rückgabewert
 `true`: Wenn myString größer als myString2 ist
 
 `false`: Sonst

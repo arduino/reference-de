@@ -52,7 +52,7 @@ Zum Senden der Zeichen, die die Ziffern einer Zahl darstellen, verwende die link
 --
 [float]
 === Beispielcode
-// Beschreibe, worum es im Beispielcode geht und fügen Sie relevanten Code hinzu   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
+// Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
 
 
 [source,arduino]

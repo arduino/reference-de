@@ -55,7 +55,7 @@ int inputSquared = sq(Serial.parseInt()); // Vermeide dies
 Use this instead:
 [source,arduino]
 ----
-int input = Serial.parseInt(); // Halten Sie andere Operationen außerhalb der sq-Funktion
+int input = Serial.parseInt(); // Halte andere Operationen außerhalb der sq-Funktion
 int inputSquared = sq(input);
 ----
 [%hardbreaks]

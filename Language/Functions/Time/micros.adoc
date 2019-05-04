@@ -63,7 +63,7 @@ void loop() {
   Serial.print("Time: ");
   time = micros();
   Serial.println(time); // gibt die Zeit seit dem Programmstart aus
-  delay(1000);          // Warten Sie eine Sekunde, um keine riesigen Datenmengen zu senden
+  delay(1000);          // Warte eine Sekunde, um keine riesigen Datenmengen zu senden
 }
 ----
 [%hardbreaks]

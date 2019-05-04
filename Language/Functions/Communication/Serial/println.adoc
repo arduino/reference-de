@@ -48,7 +48,7 @@ Dieser Befehl hat die gleiche Form wie link:../print[Serial.print()].
 
 [float]
 === Beispielcode
-// Beschreibe, worum es im Beispielcode geht und fügen Sie relevanten Code hinzu   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
+// Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
 
 
 [source,arduino]
@@ -62,12 +62,12 @@ Dieser Befehl hat die gleiche Form wie link:../print[Serial.print()].
 int analogValue = 0;    // Variable für den analogen Wert
 
 void setup() {
-  // Öffnen Sie die serielle Schnittstelle bei 9600 Bit/s:
+  // Öffne die serielle Schnittstelle bei 9600 Bit/s:
   Serial.begin(9600);
 }
 
 void loop() {
-  // Lesen Sie den Analogeingang an Pin 0:
+  // Lies den Analogeingang an Pin 0:
   analogValue = analogRead(0);
 
   // print it out in many formats:

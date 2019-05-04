@@ -55,7 +55,7 @@ Um Daten ohne Umwandlung in ihre Darstellung als Zeichen zu senden, verwende lin
 `val`: Der zu druckende Wert - Beliebiger Datentyp
 
 [float]
-=== Returns
+=== Rückgabewert
 `size_t`: `print()` gibt die Anzahl der geschriebenen Bytes zurück, das Lesen dieser Anzahl ist jedoch optional.
 
 --
@@ -70,7 +70,7 @@ Um Daten ohne Umwandlung in ihre Darstellung als Zeichen zu senden, verwende lin
 
 [float]
 === Beispielcode
-// Beschreibe, worum es im Beispielcode geht und fügen Sie relevanten Code hinzu   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
+// Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
 
 
 [source,arduino]

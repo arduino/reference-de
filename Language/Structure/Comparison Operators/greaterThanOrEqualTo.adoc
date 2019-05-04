@@ -55,7 +55,7 @@ if (x >= y) { // Prüft, ob x größer als oder gleich y ist
 [%hardbreaks]
 
 [float]
-=== Notes and Warnings
+=== Anmerkungen und Warnungen
 Positive Zahlen sind größer als negative Zahlen.
 [%hardbreaks]
 

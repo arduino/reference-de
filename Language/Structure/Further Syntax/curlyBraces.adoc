@@ -29,7 +29,7 @@ Letztendlich aber, ersetzen dieselben geschweiften Klammern die RETURN-Anweisung
 [%hardbreaks]
 Unausgeglichene geschweifte Klammern können oft zu kryptischen, undurchdringlichen Compiler-Fehlern führen, die in einem großen Programm manchmal schwer zu finden sind.
 Aufgrund ihrer unterschiedlichen Verwendungsmöglichkeiten sind Klammern auch für die Syntax eines Programms unglaublich wichtig.
-Wenn Sie eine oder zwei Zeilen einer Klammer verschieben, hat dies oft einen dramatischen Einfluss auf die Bedeutung eines Programms.
+Wenn du eine oder zwei Zeilen einer Klammer verschiebst, hat dies oft einen dramatischen Einfluss auf die Bedeutung eines Programms.
 [%hardbreaks]
 
 --

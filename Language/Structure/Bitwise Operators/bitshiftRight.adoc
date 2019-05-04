@@ -76,7 +76,7 @@ int x = -16; // Binär: 1111111111110000
 int y = 3;
 int result = (unsigned int)x >> y; // Binär: 0001111111111110
 ----
-Wenn Sie die Vorzeichenerweiterung sorgfältig vermeiden, können Sie den rechten Umschaltoperator `>>` verwenden, um die Division durch Potenzen von 2 zu berechnen. Zum Beispiel:
+Wenn du die Vorzeichenerweiterung sorgfältig vermeidest, kannst du den rechten Umschaltoperator `>>` verwenden, um die Division durch Potenzen von 2 zu berechnen. Zum Beispiel:
 
 [source,arduino]
 ----

@@ -36,7 +36,7 @@ Die Anzahl der zum Lesen verfügbaren Bytes.
 --
 [float]
 === Beispielcode
-// Beschreibe, worum es im Beispielcode geht und fügen Sie relevanten Code hinzu   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
+// Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
 Der folgende Code gibt ein Zeichen zurück, das über die serielle Schnittstelle empfangen wurde.
 
 [source,arduino]

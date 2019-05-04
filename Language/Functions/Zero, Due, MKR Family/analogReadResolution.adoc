@@ -91,11 +91,11 @@ void loop() {
 
 [float]
 === Anmerkungen und Warnungen
-Wenn Sie den Wert von `analogReadResolution()` auf einen höheren Wert als die Fähigkeiten Ihres Boards setzen, meldet der Arduino nur seine höchste Auflösung und füllt die zusätzlichen Bits mit Nullen auf.
+Wenn du den Wert von `analogReadResolution()` auf einen höheren Wert als die Fähigkeiten Ihres Boards setzt, meldet der Arduino nur seine höchste Auflösung und füllt die zusätzlichen Bits mit Nullen auf.
 
 Zum Beispiel: Wenn der Due mit `analogReadResolution(16)` verwendet wird, erhält man eine angenäherte 16-Bit-Zahl. Die ersten 12 Bits enthalten den echten ADC-Wert und die *letzten 4 Bits sind mit Nullen gefüllt*.
 
-Wenn Sie den Wert von `analogReadResolution()` auf einen Wert setzen, der unter den Fähigkeiten Ihres Boards liegt, werden die aus dem ADC gelesenen least significant bits *verworfen*.
+Wenn du den Wert von `analogReadResolution()` auf einen Wert setzt, der unter den Fähigkeiten Ihres Boards liegt, werden die aus dem ADC gelesenen least significant bits *verworfen*.
 
 Durch die Verwendung einer 16-Bit-Auflösung (oder einer anderen *höheren* als den tatsächlichen Hardwarefunktionen) kann man Sketches schreiben, die automatisch mit einem ADC mit höherer Auflösung umgehen,
 wenn diese auf zukünftigen Boards verfügbar sind, ohne dass eine Codezeile geändert werden muss.

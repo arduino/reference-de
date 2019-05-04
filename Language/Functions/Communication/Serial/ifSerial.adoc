@@ -56,7 +56,7 @@ void setup() {
   // Serielle Schnittstelle initialisieren und warten, bis der Port geöffnet ist:
   Serial.begin(9600);
   while (!Serial) {
-    ; // Warten Sie, bis die serielle Schnittstelle verbunden ist. Wird für native USBs benötigt.
+    ; // Warte, bis die serielle Schnittstelle verbunden ist. Wird für native USBs benötigt.
   }
 }
 

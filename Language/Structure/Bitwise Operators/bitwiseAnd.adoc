@@ -58,7 +58,7 @@ Dies führt zu einem binären Wert von 01000100, der als Dezimalzahl 68 ist.
 [%hardbreaks]
 
 Eine der häufigsten Anwendungen von bitweisem AND ist die Auswahl eines bestimmten Bits (oder einiger Bits) aus einem Integer-Wert, der oft als Maskierung bezeichnet wird.
-Unten finden Sie ein Beispiel (spezifisch für die AVR-Architektur).
+Unten findest du ein Beispiel (spezifisch für die AVR-Architektur).
 
 [source,arduino]
 ----
