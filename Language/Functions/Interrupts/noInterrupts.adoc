@@ -70,7 +70,7 @@ void loop() {
 --
 
 [float]
-=== Siehe auchl
+=== Siehe auch
 
 [role="language"]
 * #SPRACHE# link:../../external-interrupts/attachinterrupt[attachInterrupts()]
