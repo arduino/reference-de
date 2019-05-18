@@ -17,7 +17,7 @@ subCategories: [ "Zeichen" ]
 
 [float]
 === Beschreibung
-Analysiert das Zeichen, ob es ein Leerzeichen ist. Gibt ``true`` zurück, wenn das Zeichen ein Leerzeichen ist.
+Analysiert, ob ein Zeichen ein Leerzeichen, formfeed ('\f'), newline ('\n'), carriage return ('\r'), horizontal tab ('\t') oder vertical tab ('\v')) ist. Gibt `true` zurück, wenn das Zeichen ein Leerzeichen ist.
 [%hardbreaks]
 
 
@@ -34,7 +34,7 @@ Analysiert das Zeichen, ob es ein Leerzeichen ist. Gibt ``true`` zurück, wenn d
 
 [float]
 === Rückgabewert
-`true`: wenn das Zeichen ein Leerzeichen ist.
+`true`: wenn das Zeichen ein Leerzeichen, formfeed ('\f'), newline ('\n'), carriage return ('\r'), horizontal tab ('\t') oder vertical tab ('\v')) ist.
 
 --
 // OVERVIEW SECTION ENDS
@@ -50,11 +50,11 @@ Analysiert das Zeichen, ob es ein Leerzeichen ist. Gibt ``true`` zurück, wenn d
 
 [source,arduino]
 ----
-if (isSpace(thisChar)) { // Testet, ob das Zeichen ein Leerzeichen ist.
-	Serial.println("Das Zeichen ist ein Leerzeichen");
+if (isSpace(thisChar)) { // Testet, ob das Zeichen eines der Leerzeichen ist.
+	Serial.println("Das Zeichen ist keines der Leerzeichen");
 }
 else {
-	Serial.println("Das Zeichen ist kein Leerzeichen");
+	Serial.println("Das Zeichen ist eines der Leerzeichen");
 }
 
 ----
