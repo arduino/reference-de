@@ -30,12 +30,13 @@ Die Funktion gibt `true` zurück, wenn die Zielzeichenfolge gefunden wird, `fals
 [float]
 === Parameter
 `_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite]. +
-`target` : Die Zeichenfolge, nach der gesucht werden soll (`char`) +
-`terminal` : Die Terminalzeichenfolge bei der Suche (`char`)
+`target`: Die Zeichenfolge, nach der gesucht werden soll. Erlaubte Datentypen: `char`. +
+`terminal`: Die Terminalzeichenfolge bei der Suche. Erlaubte Datentypen: `char`.
+
 
 [float]
 === Rückgabewert
-`bool`
+Datentyp: `bool`.
 
 --
 // OVERVIEW SECTION ENDS

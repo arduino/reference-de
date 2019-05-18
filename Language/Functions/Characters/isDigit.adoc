@@ -17,20 +17,19 @@ subCategories: [ "Zeichen" ]
 
 [float]
 === Beschreibung
-Analysiert, ob ein Zeichen eine Zahl ist. Gibt ``true`` zurück, wenn das Zeichen eine Zahl ist.
+Analysiert, ob ein Zeichen eine Zahl ist. Gibt `true` zurück, wenn das Zeichen eine Zahl ist.
 [%hardbreaks]
 
 
 [float]
 === Syntax
-[source,arduino]
-
 `isDigit(thisChar)`
 
 
 [float]
 === Parameter
-`thisChar`: Variable. *Erlaubter Datentyp:* char
+`thisChar`: Variable. Erlaubte Datentypen: `char`.
+
 
 [float]
 === Rückgabewert

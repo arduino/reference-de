@@ -26,11 +26,12 @@ Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, 
 
 [float]
 === Parameter
-`stream` : Eine Instanz einer Klasse, die von Stream erbt.
+`stream`: Eine Instanz einer Klasse, die von Stream erbt.
+
 
 [float]
 === Rückgabewert
-`int` : Die Anzahl der zum Lesen verfügbaren Bytes.
+Die Anzahl der zum Lesen verfügbaren Bytes. Datentyp: `int`.
 
 --
 // OVERVIEW SECTION ENDS

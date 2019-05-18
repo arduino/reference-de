@@ -20,8 +20,7 @@ Siehe auch die link:../../constants/integerconstants[Ganzzahlkonstanten]-Seite f
 
 [float]
 === Syntax
-
-`long var = val;`
+`long var = val`
 
 [float]
 === Parameter

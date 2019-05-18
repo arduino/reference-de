@@ -28,11 +28,12 @@ Berechnet den Sinus eines Winkels (Im Bogenmaß). Das Ergebnis liegt zwischen -1
 
 [float]
 === Parameter
-`rad`: Der Winkel im Bogenmaß (`float`).
+`rad`: Der Winkel im Bogenmaß. Erlaubte Datentypen: `float`.
+
 
 [float]
 === Rückgabewert
-Den Sinus des Winkels (`double`).
+Den Sinus des Winkels. Datentyp: `double`.
 
 --
 // OVERVIEW SECTION ENDS

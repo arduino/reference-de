@@ -35,9 +35,10 @@ Die Boards *Due, Zero und MKR* verfügen über 12-Bit-ADC-Funktionen, auf die du
 		Man kann dies zwischen 1 und 32 einstellen. Man kann auch Auflösungen höher als 12 einstellen, aber Werte, die von `analogRead()` zurückgegeben werden,
 		unterliegen einer Annäherung. Weitere Informationen finden sich im Hinweis unten.
 
+
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

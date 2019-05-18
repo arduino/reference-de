@@ -25,11 +25,12 @@ Wenn die Funktion mit einem Leonardo- oder Due-Board benutzt wird, startet `Keyb
 
 [float]
 === Parameter
-Keine
+Keine.
+
 
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

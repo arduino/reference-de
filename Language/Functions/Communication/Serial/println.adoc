@@ -27,15 +27,14 @@ Dieser Befehl hat die gleiche Form wie link:../print[Serial.print()].
 
 [float]
 === Parameter
-`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite].
-
-`val`: Der zu druckende Wert - beliebiger Datentyp
-
+`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite]. +
+`val`: Der zu druckende Wert. Erlaubte Datentypen: Beliebiger Datentyp. +
 `format`: Gibt die Basis (für ganzzahlige Datentypen) oder die Anzahl der Dezimalstellen (für Gleitkommatypen) an.
+
 
 [float]
 === Rückgabewert
-`size_t`: `println()` gibt die Anzahl der geschriebenen Bytes zurück, das Lesen dieser Anzahl ist jedoch optional
+Gibt die Anzahl der geschriebenen Bytes zurück, das Lesen dieser Anzahl ist jedoch optional. Datentyp: `size_t`.
 --
 // OVERVIEW SECTION ENDS
 

@@ -36,7 +36,7 @@ goto label; // Springt zu dem Label.
 
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

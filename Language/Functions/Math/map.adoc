@@ -20,9 +20,9 @@ subCategories: [ "Mathematik" ]
 Bildet eine Zahl von einem Bereich in einen anderen ab. Das heißt, ein Wert von *fromLow* würde auf *toLow*, einen Wert von *fromHigh* bis *toHigh*, Werte zwischen dazwischen auf Werte dazwischen usw. zugeordnet.
 
 Beschränkt die Werte nicht innerhalb des Bereichs, da Werte außerhalb des Bereichs manchmal beabsichtigt und nützlich sind.
-Die `constrain ()`-Funktion kann entweder vor oder nach dieser Funktion verwendet werden, wenn eine Begrenzung der Bereiche gewünscht werden.
+Die `constrain()`-Funktion kann entweder vor oder nach dieser Funktion verwendet werden, wenn eine Begrenzung der Bereiche gewünscht werden.
 
-Beachte, dass die "unteren Grenzen" eines Bereichs größer oder kleiner als die "oberen Grenzen" sein können, sodass die Funktion "map ()" beispielsweise zum Umkehren eines Arrays verwendet werden kann.
+Beachte, dass die "unteren Grenzen" eines Bereichs größer oder kleiner als die "oberen Grenzen" sein können, sodass die Funktion "map()" beispielsweise zum Umkehren eines Arrays verwendet werden kann.
 
 `y = map(x, 1, 50, 50, 1);`
 
@@ -32,7 +32,7 @@ Die Funktion kann auch mit negativen Zahlen gut umgehen, so dass dieses Beispiel
 
 auch valide ist und funktioniert.
 
-Die `map ()` - Funktion verwendet Ganzzahl-Mathematik, so dass keine Brüche generiert werden, wenn die Mathematik möglicherweise darauf hinweist, dass dies der Fall ist.
+Die `map()` - Funktion verwendet Ganzzahl-Mathematik, so dass keine Brüche generiert werden, wenn die Mathematik möglicherweise darauf hinweist, dass dies der Fall ist.
 Bruchreste werden abgeschnitten und nicht gerundet oder gemittelt.
 [%hardbreaks]
 
@@ -44,15 +44,12 @@ Bruchreste werden abgeschnitten und nicht gerundet oder gemittelt.
 
 [float]
 === Parameter
-`value`: Die Nummer, die zugeordnet werden soll
+`value`: Die Nummer, die zugeordnet werden soll. +
+`fromLow`: Die untere Grenze des aktuellen Wertebereichs. +
+`fromHigh`: Die obere Grenze des aktuellen Wertebereichs. +
+`toLow`: Die untere Grenze des Zielbereichs des Werts. +
+`toHigh`: Die obere Grenze des Zielbereichs des Werts.
 
-`fromLow`: Die untere Grenze des aktuellen Wertebereichs
-
-`fromHigh`: Die obere Grenze des aktuellen Wertebereichs
-
-`toLow`: Die untere Grenze des Zielbereichs des Werts
-
-`toHigh`: Die obere Grenze des Zielbereichs des Werts
 
 [float]
 === Rückgabewert
@@ -103,7 +100,7 @@ long map(long x, long in_min, long in_max, long out_min, long out_max)
 === Anmerkungen und Warnungen
 
 Wie bereits erwähnt, verwendet die map()-Funktion Ganzzahl-Mathematik. Dadurch können Brüche unterdrückt werden.
-Zum Beispiel werden Brüche wie 3/2, 4/3, 5/4 trotz ihrer unterschiedlichen tatsächlichen Werte von der Funktion map () als 1 zurückgegeben.
+Zum Beispiel werden Brüche wie 3/2, 4/3, 5/4 trotz ihrer unterschiedlichen tatsächlichen Werte von der Funktion map() als 1 zurückgegeben.
 Wenn also für das Projekt genaue Berechnungen erforderlich sind (z. B. eine auf 3 Dezimalstellen genaue Spannung), sollte man map() vermeiden und die Berechnungen manuell im Code implementieren.
 
 --

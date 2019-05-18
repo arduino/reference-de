@@ -52,7 +52,7 @@ switch (var) {
 
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

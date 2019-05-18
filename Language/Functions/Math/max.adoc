@@ -28,9 +28,9 @@ Berechnet das Maximum von zwei Zahlen.
 
 [float]
 === Parameter
-`x`: Die erste Zahl, beliebiger Datentyp
+`x`: Die erste Zahl. Erlaubte Datentypen: Beliebiger Datentyp. +
+`y`: Die zweite Zahl. Erlaubte Datentypen: Beliebiger Datentyp.
 
-`y`: Die zweite Zahl, beliebiger Datentyp
 
 [float]
 === Rückgabewert

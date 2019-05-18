@@ -35,11 +35,11 @@ while (condition) {
 
 [float]
 === Parameter
-Keine
+Keine.
 
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 --
 // OVERVIEW SECTION ENDS
 

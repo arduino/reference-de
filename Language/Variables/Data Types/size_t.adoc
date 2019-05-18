@@ -19,7 +19,7 @@ Beispiele für die Verwendung von `size_t` sind der Rückgabetyp von link:../../
 
 [float]
 === Syntax
-`size_t var = val;`
+`size_t var = val`
 
 
 [float]

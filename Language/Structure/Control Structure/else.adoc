@@ -48,7 +48,7 @@ else {
 
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

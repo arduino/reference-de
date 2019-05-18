@@ -28,11 +28,12 @@ Berechnet die Quadratwurzel einer Zahl.
 
 [float]
 === Parameter
-`x`: Die Zahl, beliebiger Datentyp
+`x`: Die Zahl. Erlaubte Datentypen: Beliebiger Datentyp.
+
 
 [float]
 === Rückgabewert
-Quadratwurzel der Zahl. (double)
+Quadratwurzel der Zahl. Datentyp: `double`.
 
 --
 // OVERVIEW SECTION ENDS

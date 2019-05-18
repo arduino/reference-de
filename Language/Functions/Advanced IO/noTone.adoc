@@ -31,7 +31,7 @@ Stoppt die Tonerzeugung, die von `tone()` erzeugt wurde. Macht nichts, wenn kein
 
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

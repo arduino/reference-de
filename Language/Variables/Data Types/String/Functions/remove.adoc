@@ -38,7 +38,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

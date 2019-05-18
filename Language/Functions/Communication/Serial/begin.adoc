@@ -27,15 +27,11 @@ Ein optionales zweites Argument konfiguriert die Daten-, Paritäts- und Stoppbit
 `_Serial_.begin(speed, config)`
 
 
-
 [float]
 === Parameter
-`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite].
-
-`speed`: In Bits pro Sekunde (Baud) - `long`
-
-`config`: Setzt Daten, Parität und Stoppbits. Gültige Werte sind:
-
+`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite]. +
+`speed`: In Bits pro Sekunde (Baud). Erlaubte Datentypen: `long`. +
+`config`: Setzt Daten, Parität und Stoppbits. Gültige Werte sind: +
 `SERIAL_5N1` +
 `SERIAL_6N1` +
 `SERIAL_7N1` +
@@ -61,9 +57,10 @@ Ein optionales zweites Argument konfiguriert die Daten-, Paritäts- und Stoppbit
 `SERIAL_7O2` +
 `SERIAL_8O2` +
 
+
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

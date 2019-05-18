@@ -39,7 +39,7 @@ Kopiert die Zeichen der Zeichenfolge in den angegebenen Puffer.
 
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

@@ -30,9 +30,10 @@ Liest das least-significant (rechteste) Bit eines Wortes oder größeren Datenty
 === Parameter
 `x`: Wert von beliebigen Typ
 
+
 [float]
 === Rückgabewert
-Das geforderte Byte (byte)
+Das geforderte Byte. Datentyp: `byte`.
 --
 // OVERVIEW SECTION ENDS
 

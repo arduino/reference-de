@@ -42,7 +42,7 @@ Die Funktion wird abgebrochen, wenn sie abgelaufen ist (siehe link:../settimeout
 
 [float]
 === Rückgabewert
-`float`
+Datentyp: `float`.
 
 --
 // OVERVIEW SECTION ENDS

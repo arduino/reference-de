@@ -27,7 +27,8 @@ Diese Funktion ist Teil der Stream-Klasse und kann von jeder Klasse aufgerufen w
 
 [float]
 === Parameter
-`stream` : Eine Instanz einer Klasse, die von Stream erbt
+`stream`: Eine Instanz einer Klasse, die von Stream erbt
+
 
 [float]
 === Rückgabewert

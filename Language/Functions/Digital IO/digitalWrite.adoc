@@ -32,13 +32,13 @@ Wenn du `pinMode()` nicht auf `OUTPUT` setzt, aber eine LED auf den Pin anschlie
 
 [float]
 === Parameter
-`pin`: Die Pinnummer.
+`pin`: Die Pinnummer. +
+`value`: `HIGH` oder `LOW`.
 
-`value`: `HIGH` oder `LOW`
 
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

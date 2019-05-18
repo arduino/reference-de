@@ -23,16 +23,17 @@ Bevor `Keyboard.press()` benutzt werden kann, muss link:../keyboardbegin[Keyboar
 
 [float]
 === Syntax
-`Keyboard.press()`
+`Keyboard.press(key)`
 
 
 [float]
 === Parameter
-`char` : Die Taste, die gedrückt werden soll.
+`key`: Die Taste, die gedrückt werden soll. Erlaubte Datentypen: `char`.
+
 
 [float]
 === Rückgabewert
-`size_t` : Die Anzahl der Tastenanschläge, die gesendet wurden.
+Die Anzahl der Tastenanschläge, die gesendet wurden. Datentyp: `size_t`.
 
 --
 // OVERVIEW SECTION ENDS

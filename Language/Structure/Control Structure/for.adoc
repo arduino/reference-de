@@ -40,7 +40,7 @@ for (initialization; condition; increment) {
 
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

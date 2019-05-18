@@ -17,20 +17,19 @@ subCategories: [ "Zeichen" ]
 
 [float]
 === Beschreibung
-Analysiert, ob ein Zeichen hexadezimal ist (A-F, 0-9). Gibt ``true`` zurück, wenn das Zeichen hexadezimal ist.
+Analysiert, ob ein Zeichen hexadezimal ist (A-F, 0-9). Gibt `true` zurück, wenn das Zeichen hexadezimal ist.
 [%hardbreaks]
 
 
 [float]
 === Syntax
-[source,arduino]
-
 `isHexadecilamDigit(thisChar)`
 
 
 [float]
 === Parameter
-`thisChar`: Variable. *Erlaubte Datentypen:* char
+`thisChar`: Variable. Erlaubte Datentypen: `char`.
+
 
 [float]
 === Rückgabewert

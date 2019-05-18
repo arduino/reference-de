@@ -31,11 +31,12 @@ Auf 8-MHz-Arduino-Boards (z. B. dem LilyPad) hat diese Funktion eine Auflösung 
 
 [float]
 === Parameter
-Nothing
+Keine.
+
 
 [float]
 === Rückgabewert
-Gibt die Anzahl der Mikrosekunden zurück, seit das Arduino-Board das aktuelle Programm gestartet hat. (unsigned long)
+Gibt die Anzahl der Mikrosekunden zurück, seit das Arduino-Board das aktuelle Programm gestartet hat. Datentyp: `unsigned long`.
 
 --
 // OVERVIEW SECTION ENDS

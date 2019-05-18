@@ -44,7 +44,7 @@ image::http://arduino.cc/en/uploads/Main/ArduinoUno_R3_Front_450px.jpg[caption="
 
 [float]
 === Parameter
-// Liste alle verfügbaren Parameter auf, beschreibe sie bitte einzeln und füge den Datentyp hinzu (z.B. int, boolean, char, String, float, long, double...)  ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
+// Liste alle verfügbaren Parameter auf, beschreibe sie bitte einzeln und füge den Datentyp hinzu (z.B. int, bool, char, String, float, long, double...)  ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
 `pin`: Die Nummer des Pins, auf den geschrieben werden soll. Zulässige Datentypen: int. +
 `value`: Das Tastverhältnis zwischen 0 (immer aus) und 255 (immer an). Zulässige Datentypen: int.
 
@@ -52,7 +52,7 @@ image::http://arduino.cc/en/uploads/Main/ArduinoUno_R3_Front_450px.jpg[caption="
 [float]
 === Rückgabewert
 // Gib ein, was die Funktion zurückgibt (z. B. HIGH oder LOW). Wenn keine Rückgabe erfolgt, schreibe bitte: _Nichts_   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
-Nothing
+Nichts.
 
 --
 // ÜBERSICHTSABSCHNITT ENDET
@@ -94,7 +94,7 @@ void loop() {
 [float]
 === Anmerkungen und Warnungen
 // Füge nützliche Hinweise, Tipps, Vorbehalte, bekannte Probleme und Warnungen zu diesem Referenzbegriff hinzu.
-Dies liegt an den Interaktionen mit den Funktionen `millis ()` und `delay ()`.
+Dies liegt an den Interaktionen mit den Funktionen `millis()` und `delay()`.
 [%hardbreaks]
 image::http://arduino.cc/en/uploads/Main/ArduinoUno_R3_Front_450px.jpg[caption="", title="Ein wunderschöner Arduino UNO"]
 [%hardbreaks]

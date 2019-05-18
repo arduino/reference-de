@@ -29,15 +29,14 @@ Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, 
 
 [float]
 === Parameter
-`stream` : Eine Instanz einer Klasse, die von Stream erbt
+`stream`: Eine Instanz einer Klasse, die von Stream erbt. +
+`target`: Die Zeichenfolge, nach der gesucht werden soll. Erlaubte Datentypen: `char`. +
+`terminal`: Die Terminalzeichenfolge bei der Suche. Erlaubte Datentypen: `size_t`.
 
-`target` : Die Zeichenfolge, nach der gesucht werden soll `(char)`
-
-`terminal` : Die Terminalzeichenfolge bei der Suche `(char)`
 
 [float]
 === Rückgabewert
-`bool`
+Datentyp: `bool`.
 
 --
 // OVERVIEW SECTION ENDS

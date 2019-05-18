@@ -31,18 +31,15 @@ aber nur mit spezifischen Pins.
 
 [float]
 === Parameter
-`dataPin`: Der Pin, auf dem jedes Bit ausgegeben wird (int)
-
-`clockPin`: Der Pin, auf dem das Signal gesetzt wird, um den *dataPin* zu lesen (int)
-
+`dataPin`: Der Pin, auf dem jedes Bit ausgegeben wird. Erlaubte Datentypen: `int`. +
+`clockPin`: Der Pin, auf dem das Signal gesetzt wird, um den *dataPin* zu lesen. Erlaubte Datentypen: `int`. +
 `bitOrder`: Welche Ordnung verwendet werden soll, um zu shiften. Entweder ist dies *MSBFIRST* oder *LSBFIRST*.
-(Most Significant Bit First oder Least Significant Bit First)
-
-`value`: Die Daten, die hinausgeshiftet werden sollen. (byte)
+(Most Significant Bit First oder Least Significant Bit First) +
+`value`: Die Daten, die hinausgeshiftet werden sollen. Erlaubte Datentypen: `byte`.
 
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

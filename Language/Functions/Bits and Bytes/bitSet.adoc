@@ -28,13 +28,12 @@ Setzt (Schreibt eine 1) ein Bit einer Zahlenvariable.
 
 [float]
 === Parameter
-`x`: Die Zahlenvariable, in der das Bit gesetzt werden soll
-
-`n`: Welches Bit gesetzt werden soll; Startet bei 0 für das least-significant (rechteste) Bit
+`x`: Die Zahlenvariable, in der das Bit gesetzt werden soll. +
+`n`: Welches Bit gesetzt werden soll; Startet bei 0 für das least-significant (rechteste) Bit.
 
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

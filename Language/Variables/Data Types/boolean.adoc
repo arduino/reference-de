@@ -20,7 +20,7 @@ Ein `bool` enthält einen von zwei Werten, `true` oder `false`. (Jede `bool`-Var
 
 [float]
 === Syntax
-`bool var = val;`
+`bool var = val`
 
 
 [float]

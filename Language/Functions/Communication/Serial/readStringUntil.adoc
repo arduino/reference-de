@@ -29,11 +29,12 @@ Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, 
 [float]
 === Parameter
 `_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite]. +
-`terminator` : Das zu suchende Zeichen (`char`)
+`terminator`: Das zu suchende Zeichen. Erlaubte Datentypen: `char`.
+
 
 [float]
 === Rückgabewert
-Der gesamte String, vom seriellen Puffer bis zum Abschlusszeichen gelesen.
+Der gesamte `String`, der vom seriellen Puffer bis zum Abschlusszeichen gelesen wird.
 
 --
 // OVERVIEW SECTION ENDS

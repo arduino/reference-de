@@ -21,7 +21,7 @@ Auf dem Arduino Due haben doubles eine Genauigkeit von 8 Byte (64 Bit).
 
 [float]
 === Syntax
-`double var = val;`
+`double var = val`
 
 
 [float]

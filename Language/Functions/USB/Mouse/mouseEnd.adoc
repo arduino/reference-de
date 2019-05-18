@@ -25,11 +25,12 @@ Stoppt die Emulation der Maus auf dem verbundenen Computer. Um die Maus zu start
 
 [float]
 === Parameter
-Keine
+Keine.
+
 
 [float]
 === Rückgabewert
-Ninhts
+Ninhts.
 
 --
 // OVERVIEW SECTION ENDS

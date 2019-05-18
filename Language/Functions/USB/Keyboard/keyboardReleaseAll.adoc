@@ -25,11 +25,12 @@ Löst alle zuvor gedrückten Tasten. Siehe link:../keyboardpress[Keyboard.press(
 
 [float]
 === Parameter
-Keine
+Keine.
+
 
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

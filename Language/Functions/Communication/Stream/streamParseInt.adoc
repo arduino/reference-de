@@ -31,9 +31,10 @@ Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, 
 `stream.parseInt(lookahead)` +
 `stream.parseInt(lookahead, ignore)`
 
+
 [float]
 === Parameter
-`stream` : Eine Instanz einer Klasse, die von Stream erbt.
+`stream`: Eine Instanz einer Klasse, die von Stream erbt.
 
 `lookahead`: Der Modus, mit dem im Stream nach vorne nach einer Ganzzahl gesucht wird. Erlaubte Datentypen: `LookaheadMode`.
 Erlaubte `lookahead`-Werte:
@@ -44,9 +45,10 @@ Erlaubte `lookahead`-Werte:
 
 `ignore`: Wird verwendet, um das angegebene Zeichen bei der Suche zu überspringen. Wird beispielsweise verwendet, um Tausenderteiler zu überspringen. Zulässige Datentypen: `char`
 
+
 [float]
 === Rückgabewert
-`long`
+Datentyp: `long`.
 
 --
 // OVERVIEW SECTION ENDS

@@ -31,17 +31,15 @@ Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, 
 
 [float]
 === Parameter
-`stream` : Eine Instanz einer Klasse, die von Stream erbt.
+`stream`: Eine Instanz einer Klasse, die von Stream erbt. +
+`character`: Das zu suchende Zeichen. Erlaubte Datentypen: `char`. +
+`buffer`: Der Puffer zum Speichern der Bytes.  Erlaubte Datentypen: Array von `char` oder `byte`.+
+`length`: Die Anzahl der zu lesenden Bytes. Erlaubte Datentypen: `size_t`.
 
-`character` : Das zu suchende Zeichen (`char`)
-
-`buffer`: Der Puffer zum Speichern der Bytes (`char[]` oder `byte[]`)
-
-`length` : Die Anzahl der zu lesenden Bytes `(int)`
 
 [float]
 === Rückgabewert
-Die Anzahl der Bytes, die im Puffer abgelegt wurden.
+Die Anzahl der Bytes, die im Puffer abgelegt wurden. Datentyp: `size_t`.
 
 --
 // OVERVIEW SECTION ENDS

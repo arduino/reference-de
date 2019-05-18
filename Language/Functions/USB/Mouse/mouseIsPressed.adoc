@@ -27,17 +27,16 @@ Checkt den aktuellsten Status des Mausbuttons und liefert zurück, ob dieser ged
 === Parameter
 Default wird der linke Mausbutton gecheckt.
 
-`button`: Welcher Mausbutton gecheckt werden soll - `char`
+`button`: Welcher Mausbutton gecheckt werden soll. Erlaubte Datentypen: `char`.
 
 * `MOUSE_LEFT (default)`
-
 * `MOUSE_RIGHT`
-
 * `MOUSE_MIDDLE`
+
 
 [float]
 === Rückgabewert
-`boolean` : Ob ein Mausbutton gedrückt ist oder nicht.
+Ob ein Mausbutton gedrückt ist oder nicht. Datentyp: `bool`.
 
 --
 // OVERVIEW SECTION ENDS

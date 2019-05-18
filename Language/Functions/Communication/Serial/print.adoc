@@ -52,11 +52,12 @@ Um Daten ohne Umwandlung in ihre Darstellung als Zeichen zu senden, verwende lin
 [float]
 === Parameter
 `_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite]. +
-`val`: Der zu druckende Wert - Beliebiger Datentyp
+`val`: Der zu druckende Wert. Erlaubte Datentypen: Beliebiger Datentyp.
+
 
 [float]
 === Rückgabewert
-`size_t`: `print()` gibt die Anzahl der geschriebenen Bytes zurück, das Lesen dieser Anzahl ist jedoch optional.
+Gibt die Anzahl der geschriebenen Bytes zurück, das Lesen dieser Anzahl ist jedoch optional. Datentyp: `size_t`.
 
 --
 // OVERVIEW SECTION ENDS

@@ -36,7 +36,7 @@ Ruft eine Version des Strings ab, wobei führende und nachgestellte Leerzeichen 
 
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

@@ -44,9 +44,10 @@ Erlaubte `lookahead`-Werte:
 
 `ignore`: Wird verwendet, um das angegebene Zeichen bei der Suche zu überspringen. Wird beispielsweise verwendet, um Tausenderteiler zu überspringen. Zulässige Datentypen: `char`
 
+
 [float]
 === Rückgabewert
-`long` : Die nächste gültige ganze Zahl
+Die nächste gültige ganze Zahl. Datentyp: `long`.
 
 --
 // OVERVIEW SECTION ENDS

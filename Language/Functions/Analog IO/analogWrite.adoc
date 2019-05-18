@@ -30,13 +30,12 @@ Auf den meisten Arduino-Boards (Die Boards mit dem ATmega168 oder ATmega328P) fu
 
 [float]
 === Parameter
-`pin`: Der Pin auf den geschrieben werden soll (int)
-
-`value`: Die Zykluszeit. Werte zwischen 0 (immer aus) und 255 (immer an) (int)
+`pin`: Der Pin auf den geschrieben werden soll. Erlaubte Datentypen: `int`. +
+`value`: Die Zykluszeit. Werte zwischen 0 (immer aus) und 255 (immer an). Erlaubte Datentypen: `int`.
 
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

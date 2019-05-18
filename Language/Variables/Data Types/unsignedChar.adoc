@@ -22,7 +22,7 @@ Für die Konsistenz des Arduino-Programmierstils ist der Byte-Datentyp zu bevorz
 
 [float]
 === Syntax
-`unsigned char var = val;`
+`unsigned char var = val`
 
 
 [float]

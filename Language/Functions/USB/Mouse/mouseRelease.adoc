@@ -20,22 +20,21 @@ Löst den zuletzt per link:../mousepress[Mouse.press()] gedrückten Button. Der 
 
 [float]
 === Syntax
-`Mouse.release();` +
-`Mouse.release(button);`
+`Mouse.release()` +
+`Mouse.release(button)`
 
 [float]
 === Parameter
-`button`: Welcher Mausbutton gelöst werden soll - Char
+`button`: Welcher Mausbutton gelöst werden soll. Erlaubte Datentypen: `char`.
 
 * `MOUSE_LEFT` (default)
-
 * `MOUSE_RIGHT`
-
 * `MOUSE_MIDDLE`
+
 
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

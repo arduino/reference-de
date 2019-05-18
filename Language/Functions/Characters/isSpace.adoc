@@ -23,14 +23,13 @@ Analysiert, ob ein Zeichen ein Leerzeichen, formfeed ('\f'), newline ('\n'), car
 
 [float]
 === Syntax
-[source,arduino]
-
 `isSpace(thisChar)`
 
 
 [float]
 === Parameter
-`thisChar`: Variable. *Erlaubte Datentypen:* char
+`thisChar`: Variable. Erlaubte Datentypen: `char`.
+
 
 [float]
 === Rückgabewert

@@ -64,9 +64,10 @@ Arduino SAM Boards (Due)
 === Parameter
 `type`: Welche Art von Einstellung benutzt werden soll (DEFAULT, INTERNAL, INTERNAL1V1, INTERNAL2V56, oder EXTERNAL).
 
+
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

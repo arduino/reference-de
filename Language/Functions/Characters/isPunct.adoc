@@ -17,20 +17,19 @@ subCategories: [ "Zeichen" ]
 
 [float]
 === Beschreibung
-Analysiert, ob ein Zeichen eine Punktuation ist (Komma, Semikolon, Ausrufezeichen, etc.). Gibt ```true`` zurück, wenn das Zeichen eine Punktuation ist.
+Analysiert, ob ein Zeichen eine Punktuation ist (Komma, Semikolon, Ausrufezeichen, etc.). Gibt `true` zurück, wenn das Zeichen eine Punktuation ist.
 [%hardbreaks]
 
 
 [float]
 === Syntax
-[source,arduino]
-
 `isPunct(thisChar)`
 
 
 [float]
 === Parameter
-`thisChar`: Variable. *Erlaubte Datentypen:* char
+`thisChar`: Variable. Erlaubte Datentypen: `char`.
+
 
 [float]
 === Rückgabewert

@@ -27,9 +27,9 @@ Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, 
 
 [float]
 === Parameter
-`stream` : Eine Instanz einer Klasse, die von Stream erbt.
+`stream`: Eine Instanz einer Klasse, die von Stream erbt. +
+`terminator`: Das zu suchende Zeichen. Erlaubte Datentypen: `char`.
 
-`terminator` : Das zu suchende Zeichen (`char`)
 
 [float]
 === Rückgabewert

@@ -28,19 +28,16 @@ Beschränkt eine Zahl auf einen Bereich.
 
 [float]
 === Parameter
-`x`: Die zu beschränkende Zahl, alle Datentypen
+`x`: Die zu beschränkende Zahl. Erlaubte Datentypen: Beliebiger Datentyp. +
+`a`: Das unteren Ende des Bereichs. Erlaubte Datentypen: Beliebiger Datentyp. +
+`b`: Das obere Ende des Bereichs. Erlaubte Datentypen: Beliebiger Datentyp.
 
-`a`: Das unteren Ende des Bereichs, alle Datentypen
-
-`b`: Das obere Ende des Bereichs, alle Datentypen
 
 [float]
 === Rückgabewert
-x: Wenn x zwischen a und b liegt
-
-a: wenn x kleiner als a ist
-
-b: wenn x größer als b ist
+x: Wenn x zwischen a und b liegt. +
+a: Wenn x kleiner als a ist. +
+b: Wenn x größer als b ist.
 
 --
 // OVERVIEW SECTION ENDS

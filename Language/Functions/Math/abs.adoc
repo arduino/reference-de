@@ -25,14 +25,15 @@ Berechnet den absoluten Wert einer Zahl.
 === Syntax
 `abs(x)`
 
+
 [float]
 === Parameter
-`x`: Die Zahl
+`x`: Die Zahl.
+
 
 [float]
 === Rückgabewert
-`x`: wenn x größer oder gleich 0 ist.
-
+`x`: wenn x größer oder gleich 0 ist. +
 `-x`: wenn x kleiner als 0 ist.
 
 --

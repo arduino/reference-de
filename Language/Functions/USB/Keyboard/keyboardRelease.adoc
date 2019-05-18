@@ -25,11 +25,12 @@ Löst die mit link:../keyboardpress[Keyboard.press()] zuvor gedrückte Taste.
 
 [float]
 === Parameter
-`key` : Die Taste, die gelöst werden soll. `char`
+`key`: Die Taste, die gelöst werden soll. Erlaubte Datentypen: `char`.
+
 
 [float]
 === Rückgabewert
-`size_t` : Die Anzahl an gelösten Tasten.
+Die Anzahl an gelösten Tasten. Datentyp: `size_t`.
 
 --
 // OVERVIEW SECTION ENDS

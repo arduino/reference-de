@@ -28,21 +28,18 @@ Das Timing der Funktion wurde empirisch getestet und wird vermutlich bei einem l
 
 [float]
 === Syntax
-`pulseIn(pin, value)`
-
+`pulseIn(pin, value)` +
 `pulseIn(pin, value, timeout)`
 
 [float]
 === Parameter
-`pin`: Die Pinnummer, an der der Impuls gelesen werden soll. (int)
-
-`value`: Welche Art von Impuls gelesen werden soll: Entweder link:../../../variables/constants/constants/[HIGH] oder link:../../../variables/constants/constants/[LOW]. (int)
-
-`timeout` (optional): Die Anzahl an Mikrosekunden, die gewartet werden soll, bis ein Impuls gemessen wurde; Default-Wert ist eine Sekunde (unsigned long)
+`pin`: Die Pinnummer, an der der Impuls gelesen werden soll. Erlaubte Datentypen: `int`. +
+`value`: Welche Art von Impuls gelesen werden soll: Entweder link:../../../variables/constants/constants/[HIGH] oder link:../../../variables/constants/constants/[LOW]. Erlaubte Datentypen: `int`. +
+`timeout` (optional): Die Anzahl an Mikrosekunden, die gewartet werden soll, bis ein Impuls gemessen wurde; Default-Wert ist eine Sekunde. Erlaubte Datentypen: `unsigned long`.
 
 [float]
 === Rückgabewert
-Die Länge des Impulses (in Mikrosekunden) oder 0, wenn kein Impuls vor dem Timeout gemessen wird (unsigned long)
+Die Länge des Impulses (in Mikrosekunden) oder 0, wenn kein Impuls vor dem Timeout gemessen wird. Datentyp: `unsigned long`.
 
 --
 // OVERVIEW SECTION ENDS

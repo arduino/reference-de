@@ -27,12 +27,12 @@ Weitere Informationen findest du auf der Hauptseite: link:../../stream[Stream-Kl
 
 [float]
 === Parameter
-`stream` : Eine Instanz einer Klasse, die von Stream erbt.
-`time` : Timeout-Dauer in Millisekunden (`long`).
+`stream`: Eine Instanz einer Klasse, die von Stream erbt. +
+`time`: Timeout-Dauer in Millisekunden. Erlaubte Datentypen: `long`.
 
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

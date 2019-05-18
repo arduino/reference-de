@@ -18,7 +18,7 @@ Ein Byte speichert eine vorzeichenlose 8-Bit-Zahl von 0 bis 255.
 
 [float]
 === Syntax
-`byte var = val;`
+`byte var = val`
 
 
 [float]

@@ -27,15 +27,13 @@ title: Serial.find()
 
 [float]
 === Parameter
-`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite].
-
-`target` : Die Zeichenfolge, nach der gesucht werden soll (`char`)
-
-`length` : Länge des Ziels (`size_t`)
+`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite]. +
+`target`: Die Zeichenfolge, nach der gesucht werden soll. Erlaubte Datentypen: `char`. +
+`length`: Länge des Ziels. Erlaubte Datentypen: `size_t`.
 
 [float]
 === Rückgabewert
-`bool`
+Datentyp: `bool`.
 
 --
 // OVERVIEW SECTION ENDS

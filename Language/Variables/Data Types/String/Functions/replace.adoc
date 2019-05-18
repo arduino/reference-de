@@ -42,7 +42,7 @@ Du kannst auch `replace()` verwenden, um Teilstrings eines Strings durch einen a
 
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 --
 // OVERVIEW SECTION ENDS
 

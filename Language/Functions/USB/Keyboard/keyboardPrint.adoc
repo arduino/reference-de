@@ -25,15 +25,16 @@ link:../keyboardbegin[Keyboard.begin()] muss aufgerufen werden, bevor `Keyboard.
 `Keyboard.print(character)` +
 `Keyboard.print(characters)`
 
+
 [float]
 === Parameter
-`character` : Ein Char oder Integer, der an den verbundenen Computer gesendet werden soll.
+`character`: Ein `char` oder `int`, der an den verbundenen Computer gesendet werden soll. Erlaubte Datentypen: `char` oder `int`. +
+`characters`: Ein `String`, der an den verbundenen Computer gesendet werden soll, gefolgt von newline und carriage return. Erlaubte Datentypen: `String`.
 
-`characters` : Ein String, der an den verbundenen Computer gesendet werden soll, gefolgt von newline und carriage return.
 
 [float]
 === Rückgabewert
-`size_t` : Anzahl an gesendeten Bytes.
+Anzahl an gesendeten Bytes. Datentyp: `size_t`.
 
 --
 // OVERVIEW SECTION ENDS

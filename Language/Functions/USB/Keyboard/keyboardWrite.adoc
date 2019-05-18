@@ -32,7 +32,7 @@ Für eine Liste an ASCII-Zeichen siehe http://www.asciitable.com/[ASCIITable.com
 
 [float]
 === Parameter
-`character` : Ein Char oder Integer, der an den verbundenen Computer gesendet werden kann. Kann in jeder beliebigen Notation eines Chars gesendet werden.
+`character`: Ein Char oder Integer, der an den verbundenen Computer gesendet werden kann. Kann in jeder beliebigen Notation eines Chars gesendet werden.
 Siehe dazu auch die Beispiele unten.
 
 [source,arduino]
@@ -45,7 +45,7 @@ Keyboard.write(0b01000001); // Das Gleiche in Binärnotation
 
 [float]
 === Rückgabewert
-`size_t` : Die Anzahl der gesendeten Bytes.
+Die Anzahl der gesendeten Bytes. Datentyp: `size_t`.
 
 --
 // OVERVIEW SECTION ENDS

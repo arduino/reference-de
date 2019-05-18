@@ -17,20 +17,19 @@ subCategories: [ "Zeichen" ]
 
 [float]
 === Beschreibung
-Analysiert, ob das Zeichen lower case (Kleinbuchstaben) ist. Gibt ``true`` zurück, wenn das Zeichen lower case ist.
+Analysiert, ob das Zeichen lower case (Kleinbuchstaben) ist. Gibt `true` zurück, wenn das Zeichen lower case ist.
 [%hardbreaks]
 
 
 [float]
 === Syntax
-[source,arduino]
-
 `isLowerCase(thisChar)`
 
 
 [float]
 === Parameter
-`thisChar`: Variable. *Erlaubte Datentypen:* char
+`thisChar`: Variable. Erlaubte Datentypen: `char`.
+
 
 [float]
 === Rückgabewert

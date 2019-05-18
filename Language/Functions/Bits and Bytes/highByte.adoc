@@ -32,7 +32,7 @@ Liest das most-significant (linkeste) Bit eines Wortes (oder das zweitkleinste B
 
 [float]
 === Rückgabewert
-Das geforderte Byte (byte)
+Das geforderte Byte. Datentyp: `byte`.
 
 --
 // OVERVIEW SECTION ENDS

@@ -21,19 +21,19 @@ Bevor `Mouse.move()` benutzt werden kann, muss link:../mousebegin[Mouse.begin()]
 
 [float]
 === Syntax
-`Mouse.move(xVal, yVal, wheel);`
+`Mouse.move(xVal, yVal, wheel)`
 
 
 [float]
 === Parameter
-`xVal`: Wie weit der Mauszeiger auf der X-Achse bewegt werden soll - `signed char`
+`xVal`: Wie weit der Mauszeiger auf der X-Achse bewegt werden soll. Erlaubte Datentypen: `signed char`. +
+`yVal`: Wie weit der Mauszeiger auf der Y-Achse bewegt werden soll. Erlaubte Datentypen: `signed char`. +
+`wheel`: Wie weit das Mausrad gedreht werden soll. Erlaubte Datentypen: `signed char`.
 
-`yVal`: Wie weit der Mauszeiger auf der Y-Achse bewegt werden soll - `signed char`
 
-`wheel`: Wie weit das Mausrad gedreht werden soll - `signed char`
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

@@ -40,7 +40,7 @@ Legt ein Zeichen für den String fest. Hat keine Auswirkung auf Indizes außerha
 
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

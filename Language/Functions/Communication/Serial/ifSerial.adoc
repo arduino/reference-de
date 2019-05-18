@@ -27,13 +27,15 @@ Dies wurde in Arduino IDE 1.0.1 eingeführt.
 === Syntax
 `if (Serial)`
 
+
 [float]
 === Parameter
-Nothing
+Keine.
+
 
 [float]
 === Rückgabewert
-`bool` : Gibt `true` zurück, wenn der angegebene serielle Port verfügbar ist. Dies gibt nur dann `false` zurück, wenn die serielle USB-CDC-Verbindung des Leonardos abgefragt wird, bevor sie fertig ist.
+Gibt `true` zurück, wenn der angegebene serielle Port verfügbar ist. Dies gibt nur dann `false` zurück, wenn die serielle USB-CDC-Verbindung des Leonardos abgefragt wird, bevor sie fertig ist. Datentyp: `bool`.
 
 --
 // OVERVIEW SECTION ENDS

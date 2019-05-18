@@ -41,16 +41,17 @@ Auf den ATmega-basierten Boards (UNO, Nano, Mini, Mega), benötigt das Board cir
 
 [float]
 === Syntax
-
 `analogRead(pin)`
+
 
 [float]
 === Parameter
 `pin`: Der Pinname, von der gelesen werden soll (A0 bis A5 auf den meisten Boards, A0 bis A6 auf dem MKR, A0 bis A7 auf dem Mini und Nano, A0 bis A15 auf dem Mega)
 
+
 [float]
 === Rückgabewert
-Den analog gelesenen Wert auf dem Pin (int). Allerdings ist der Wert limitiert durch die Auflösung des Digital-Konverters (0-1023 für 10 Bit und 0-4095 für 12 Bit).
+Den analog gelesenen Wert auf dem Pin (int). Allerdings ist der Wert limitiert durch die Auflösung des Digital-Konverters (0-1023 für 10 Bit und 0-4095 für 12 Bit). Datentyp: `int`.
 
 --
 // OVERVIEW SECTION ENDS

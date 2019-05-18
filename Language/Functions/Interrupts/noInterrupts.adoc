@@ -31,11 +31,12 @@ deshalb deaktiviert werden.
 
 [float]
 === Parameter
-Keine
+Keine.
+
 
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

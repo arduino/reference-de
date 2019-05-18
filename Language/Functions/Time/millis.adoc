@@ -23,11 +23,12 @@ Gibt die Anzahl von Millisekunden zurück, seit das Arduino-Board das aktuelle P
 
 [float]
 === Parameter
-Nothing
+Keine.
+
 
 [float]
 === Rückgabewert
-Anzahl der Millisekunden seit dem Programmstart (unsigned long)
+Anzahl der Millisekunden seit dem Programmstart. Datentyp: `unsigned long`.
 
 --
 // OVERVIEW SECTION ENDS

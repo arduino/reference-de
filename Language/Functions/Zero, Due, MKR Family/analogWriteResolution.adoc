@@ -58,9 +58,10 @@ Wenn 10 Bit am DAC-Pin gesetzt werden, kann die volle DAC-Auflösung von 1024 We
 		wird der in `analogWrite()` verwendete Wert entweder abgeschnitten, wenn er zu hoch ist, oder mit Nullen aufgefüllt, wenn er zu niedrig ist.
 		Weitere Informationen finden sich im Hinweis unten.
 
+
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

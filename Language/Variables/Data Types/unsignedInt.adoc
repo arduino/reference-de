@@ -27,7 +27,7 @@ mit dem (https://de.wikipedia.org/wiki/Zweierkomplement[Zweierkomplement]).
 
 [float]
 === Syntax
-`unsigned int var = val;`
+`unsigned int var = val`
 
 [float]
 === Parameter

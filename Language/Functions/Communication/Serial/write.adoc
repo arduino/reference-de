@@ -25,21 +25,15 @@ Zum Senden der Zeichen, die die Ziffern einer Zahl darstellen, verwende die link
 
 [float]
 === Parameter
-`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite].
-
-`val`: Ein Wert, der als einzelnes Byte gesendet werden soll
-
-`str`: Eine Zeichenfolge, die als Folge von Bytes gesendet werden soll
-
-`buf`: Ein Array, das als Folge von Bytes gesendet werden soll
-
-`len`: Die Anzahl der Bytes, die vom Array gesendet werden sollen
+`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite]. +
+`val`: Ein Wert, der als einzelnes Byte gesendet werden soll. +
+`str`: Eine Zeichenfolge, die als Folge von Bytes gesendet werden soll. +
+`buf`: Ein Array, das als Folge von Bytes gesendet werden soll. +
+`len`: Die Anzahl der Bytes, die vom Array gesendet werden sollen.
 
 [float]
 === Rückgabewert
-`size_t`
-
-`write()` gibt die Anzahl der geschriebenen Bytes zurück, das Lesen dieser Anzahl ist jedoch optional.
+Gibt die Anzahl der geschriebenen Bytes zurück, das Lesen dieser Anzahl ist jedoch optional. Datentyp: `size_t`.
 
 --
 // OVERVIEW SECTION ENDS

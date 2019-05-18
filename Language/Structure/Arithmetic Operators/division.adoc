@@ -31,9 +31,9 @@ result = numerator / denominator;
 
 [float]
 === Parameter
-`result` : Variable. *Erlaubte Datentypen:* int, float, double, byte, short, long  +
-`numerator` : Variable oder Konstante. *Erlaubte Datentypen:* int, float, double, byte, short, long  +
-`denominator` : *Nicht null* Variable oder Konstante. *Erlaubte Datentypen:* int, float, double, byte, short, long
+`result`: Variable. *Erlaubte Datentypen:* int, float, double, byte, short, long  +
+`numerator`: Variable oder Konstante. *Erlaubte Datentypen:* int, float, double, byte, short, long  +
+`denominator`: *Nicht null* Variable oder Konstante. *Erlaubte Datentypen:* int, float, double, byte, short, long
 [%hardbreaks]
 
 --

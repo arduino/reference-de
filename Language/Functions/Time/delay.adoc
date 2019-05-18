@@ -28,11 +28,12 @@ Unterbricht das Programm für die als Parameter angegebene Zeit (in Millisekunde
 
 [float]
 === Parameter
-`ms`: die Anzahl der Millisekunden, die angehalten werden sollen (`unsigned long`)
+`ms`: die Anzahl der Millisekunden, die angehalten werden sollen. Erlaubte Datentypen: `unsigned long`.
+
 
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

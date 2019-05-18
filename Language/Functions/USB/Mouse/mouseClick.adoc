@@ -28,15 +28,16 @@ Der Defaultbutton von `Mouse.click()` ist der linke Mausbutton.
 
 [float]
 === Parameter
-`button`: Welcher Mausbutton gedrückt werden soll - `char`
+`button`: Welcher Mausbutton gedrückt werden soll. Erlaubte Datentypen: `char`.
 
 * `MOUSE_LEFT` (default)
 * `MOUSE_RIGHT`
 * `MOUSE_MIDDLE`
 
+
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

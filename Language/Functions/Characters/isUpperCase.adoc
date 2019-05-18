@@ -17,20 +17,19 @@ subCategories: [ "Zeichen" ]
 
 [float]
 === Beschreibung
-Analysiert, ob das Zeichen upper case (Großbuchstaben) ist. Gibt ``true`` zurück, wenn das Zeichen upper case ist.
+Analysiert, ob das Zeichen upper case (Großbuchstaben) ist. Gibt `true` zurück, wenn das Zeichen upper case ist.
 [%hardbreaks]
 
 
 [float]
 === Syntax
-[source,arduino]
-
 `isUpperCase(thisChar)`
 
 
 [float]
 === Parameter
-`thisChar`: Variable. *Erlaubte Datentypen:* char
+`thisChar`: Variable. Erlaubte Datentypen: `char`.
+
 
 [float]
 === Rückgabewert

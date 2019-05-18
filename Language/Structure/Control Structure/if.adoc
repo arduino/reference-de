@@ -34,7 +34,7 @@ condition: Ein Booleanausdruck, kann `true` oder `false` sein.
 
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 [float]
 === Beispielcode

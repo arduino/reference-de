@@ -33,11 +33,12 @@ Bei Verzögerungen von mehr als einigen tausend Mikrosekunden sollte stattdessen
 
 [float]
 === Parameter
-`us`: die Anzahl der Mikrosekunden, die angehalten werden sollen (`unsigned int`)
+`us`: die Anzahl der Mikrosekunden, die angehalten werden sollen. Erlaubte Datentypen: `unsigned int`.
+
 
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

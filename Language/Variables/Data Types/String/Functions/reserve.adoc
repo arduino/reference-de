@@ -37,7 +37,7 @@ Mit der Funktion String `reserve()` kannst du einen Puffer für die Bearbeitung 
 
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 --
 // OVERVIEW SECTION ENDS
 

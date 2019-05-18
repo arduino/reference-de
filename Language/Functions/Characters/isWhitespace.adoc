@@ -23,14 +23,13 @@ Analysiert das Zeichen, ob es ein Leerzeichen oder ein Tab (`'\t'`) ist. Gibt `t
 
 [float]
 === Syntax
-[source,arduino]
-
 `isWhitespace(thisChar)`
 
 
 [float]
 === Parameter
-`thisChar`: Variable. *Erlaubte Datentypen:* char
+`thisChar`: Variable. Erlaubte Datentypen: `char`.
+
 
 [float]
 === Rückgabewert

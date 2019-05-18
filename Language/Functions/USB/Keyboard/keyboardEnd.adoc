@@ -25,11 +25,12 @@ Stoppt die Tastaturemulation auf dem verbundenen Computer. Um die Emulation zu s
 
 [float]
 === Parameter
-Keine
+Keine.
+
 
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

@@ -28,11 +28,12 @@ Berechnet den Cosinus eines Winkels (Im Bogenmaß). Das Ergebnis liegt zwischen 
 
 [float]
 === Parameter
-`rad`: Der Winkel im Bogenmaß (`float`).
+`rad`: Der Winkel im Bogenmaß. Erlaubte Datentypen: `float`.
+
 
 [float]
 === Rückgabewert
-Den Cosinus des Winkels (`double`).
+Den Cosinus des Winkels. Datentyp: `double`.
 
 --
 // OVERVIEW SECTION ENDS

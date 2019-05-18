@@ -17,20 +17,19 @@ subCategories: [ "Zeichen" ]
 
 [float]
 === Beschreibung
-Analysiert, ob das Zeichen ein Ascii-Zeichen ist. Gibt ```true`` zurück, wenn das Zeichen ein Ascii-Zeichen ist.
+Analysiert, ob das Zeichen ein Ascii-Zeichen ist. Gibt `true` zurück, wenn das Zeichen ein Ascii-Zeichen ist.
 [%hardbreaks]
 
 
 [float]
 === Syntax
-[source,arduino]
-
 `isAscii(thisChar)`
 
 
 [float]
 === Parameter
-`thisChar`: Variable. *Erlaubte Datentypen:* char
+`thisChar`: Variable. Erlaubte Datentypen: `char`.
+
 
 [float]
 === Rückgabewert

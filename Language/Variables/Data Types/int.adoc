@@ -29,7 +29,7 @@ Es kann unerwartete Komplikationen im Umgang mit dem link:../../../structure/bit
 
 [float]
 === Syntax
-`int var = val;`
+`int var = val`
 
 [float]
 === Parameter

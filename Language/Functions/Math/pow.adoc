@@ -4,6 +4,10 @@ categories: [ "Functions" ]
 subCategories: [ "Mathematik" ]
 ---
 
+
+
+
+
 = pow(base, exponent)
 
 // OVERVIEW SECTION STARTS
@@ -12,7 +16,7 @@ subCategories: [ "Mathematik" ]
 
 [float]
 === Beschreibung
-Berechnet den Wert einer Zahl, die auf eine Potenz erhöht wird. Mit `pow ()` kann eine Zahl auf eine gebrochene Potenz erhöht werden.
+Berechnet den Wert einer Zahl, die auf eine Potenz erhöht wird. Mit `pow()` kann eine Zahl auf eine gebrochene Potenz erhöht werden.
 Dies ist nützlich, um eine exponentielle Abbildung von Werten oder Kurven zu erstellen.
 [%hardbreaks]
 
@@ -24,13 +28,13 @@ Dies ist nützlich, um eine exponentielle Abbildung von Werten oder Kurven zu er
 
 [float]
 === Parameter
-`base`: Die Zahl (`float`)
+`base`: Die Zahl. Erlaubte Datentypen: `float`. +
+`exponent`: Die Potenz, auf die die Zahl angehoben wird. Erlaubte Datentypen: `float`.
 
-`exponent`: Die Potenz, auf die die Zahl angehoben wird (`float`)
 
 [float]
 === Rückgabewert
-Das Ergebnis der Potenzierung. (`double`)
+Das Ergebnis der Potenzierung. Erlaubte Datentypen: `double`.
 
 --
 // OVERVIEW SECTION ENDS

@@ -35,16 +35,14 @@ aber nur mit spezifischen Pins.
 
 [float]
 === Parameter
-`dataPin`: Der Pin, auf dem jedes Bit eingegeben wird (int)
-
-`clockPin`: Der Pin, auf dem das Signal gesetzt wird, um den *dataPin* zu lesen
-
+`dataPin`: Der Pin, auf dem jedes Bit eingegeben wird. Erlaubte Datentypen: `int`. +
+`clockPin`: Der Pin, auf dem das Signal gesetzt wird, um den *dataPin* zu lesen +
 `bitOrder`: Welche Ordnung verwendet werden soll, um zu shiften. Entweder ist dies *MSBFIRST* oder *LSBFIRST*.
 (Most Significant Bit First oder Least Significant Bit First)
 
 [float]
 === Rückgabewert
-Den gelesenen Wert (byte)
+Den gelesenen Wert. Datentyp: `byte`.
 
 --
 // OVERVIEW SECTION ENDS

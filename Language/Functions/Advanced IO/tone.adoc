@@ -31,23 +31,19 @@ Es ist nicht möglich, Töne mit einer Frequenz niedriger als 31Hz zu erstellen.
 
 [float]
 === Syntax
-`tone(pin, frequency)`
-
+`tone(pin, frequency)` +
 `tone(pin, frequency, duration)`
-[%hardbreaks]
 
 [float]
 === Parameter
-`pin`: Der Pin, auf dem der Ton generiert werden soll
-
-`frequency`: Die Frequenz des Tons in Hertz (unsigned int)
-
-`duration`: Die Dauer des Tons in Millisekunden (optional) (unsigned long)
+`pin`: Der Pin, auf dem der Ton generiert werden soll. +
+`frequency`: Die Frequenz des Tons in Hertz. Erlaubte Datentypen: `unsigned int`. +
+`duration`: Die Dauer des Tons in Millisekunden (optional).  Erlaubte Datentypen: `unsigned long`.
 [%hardbreaks]
 
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

@@ -31,7 +31,8 @@ Wenn du mit floats rechnest, musst du ein Dezimalzeichen hinzufügen, andernfall
 
 [float]
 === Syntax
-`float var=val;`
+`float var=val`
+
 
 [float]
 === Parameter

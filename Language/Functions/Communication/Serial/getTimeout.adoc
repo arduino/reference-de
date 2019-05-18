@@ -28,9 +28,10 @@ title: Serial.getTimeout()
 === Parameter
 None
 
+
 [float]
 === Rückgabewert
-Der von `_Serial_.setTimeout()` festgelegte Timeout-Wert (unsigned long)
+Der von `_Serial_.setTimeout()` festgelegte Timeout-Wert. Datentyp: `unsigned long`.
 
 --
 // OVERVIEW SECTION ENDS

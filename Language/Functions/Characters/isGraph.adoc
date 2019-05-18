@@ -17,20 +17,19 @@ subCategories: [ "Zeichen" ]
 
 [float]
 === Beschreibung
-Analysiert, ob das Zeichen druckbar ist und einen Inhalt hat (Space ist z.B. druckbar, hat aber keinen Inhalt). Gibt ``true`` zurück, wenn das Zeichen druckbar ist.
+Analysiert, ob das Zeichen druckbar ist und einen Inhalt hat (Space ist z.B. druckbar, hat aber keinen Inhalt). Gibt `true` zurück, wenn das Zeichen druckbar ist.
 [%hardbreaks]
 
 
 [float]
 === Syntax
-[source,arduino]
-
 `isGraph(thisChar)`
 
 
 [float]
 === Parameter
-`thisChar`: Variable. *Erlaubter Datentyp:* char
+`thisChar`: Variable. Erlaubte Datentypen: `char`.
+
 
 [float]
 === Rückgabewert

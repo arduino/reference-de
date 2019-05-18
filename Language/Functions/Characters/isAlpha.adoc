@@ -17,20 +17,19 @@ subCategories: [ "Zeichen" ]
 
 [float]
 === Beschreibung
-Analysiert, ob ein Zeichen ein Buchstabe ist. Gibt ``true`` zurück, wenn das Zeichen ein Buchstabe (Also keine Zahl oder ein Sonderzeichen) ist.
+Analysiert, ob ein Zeichen ein Buchstabe ist. Gibt `true` zurück, wenn das Zeichen ein Buchstabe (Also keine Zahl oder ein Sonderzeichen) ist.
 [%hardbreaks]
 
 
 [float]
 === Syntax
-[source,arduino]
-
 `isAlpha(thisChar)`
 
 
 [float]
 === Parameter
-`thisChar`: Variable. *Erlaubter Datentyp:* char
+`thisChar`: Variable. Erlaubte Datentypen: `char`.
+
 
 [float]
 === Rückgabewert

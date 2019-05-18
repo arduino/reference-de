@@ -19,7 +19,6 @@ title: Serial.readBytes()
 `_Serial_.readBytes()` gibt die Anzahl der Zeichen in den Puffer zurück. Eine 0 bedeutet, dass keine gültigen Daten gefunden wurden.
 
 `_Serial_.readBytes()` erbt von der link:../../stream[Stream]-Dienstklasse.
-[%hardbreaks]
 
 
 [float]
@@ -29,15 +28,14 @@ title: Serial.readBytes()
 
 [float]
 === Parameter
-`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite].
+`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite]. +
+`buffer`: Der Puffer zum Speichern der Bytes. Erlaubte Datentypen: Array von `char` oder `byte`. +
+`length`: Die Anzahl der zu lesenden Bytes. Erlaubte Datentypen: `int`.
 
-`buffer`: Der Puffer zum Speichern der Bytes (`char[]` oder `byte[]`)
-
-`length` : Die Anzahl der zu lesenden Bytes (`int`)
 
 [float]
 === Rückgabewert
-Die Anzahl der Bytes, die im Puffer abgelegt wurden (`size_t`)
+Die Anzahl der Bytes, die im Puffer abgelegt wurden. Datentyp: `size_t`.
 
 --
 // OVERVIEW SECTION ENDS

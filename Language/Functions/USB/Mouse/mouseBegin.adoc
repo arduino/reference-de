@@ -27,11 +27,12 @@ Um die Emulation zu beenden, benutze link:../mouseend[Mouse.end()].
 
 [float]
 === Parameter
-Keine
+Keine.
+
 
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS

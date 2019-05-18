@@ -17,20 +17,19 @@ subCategories: [ "Zeichen" ]
 
 [float]
 === Beschreibung
-Analysiert, ob das Zeichen druckbar ist (Also jedes Zeichen, das eine Ausgabe erzeugt, auch das Leerzeichen). Gibt ``true`` zurück, wenn das Zeichen druckbar ist.
+Analysiert, ob das Zeichen druckbar ist (Also jedes Zeichen, das eine Ausgabe erzeugt, auch das Leerzeichen). Gibt `true` zurück, wenn das Zeichen druckbar ist.
 [%hardbreaks]
 
 
 [float]
 === Syntax
-[source,arduino]
-
 `isPrintable(thisChar)`
 
 
 [float]
 === Parameter
-`thisChar`: Variable. *Erlaubte Datentypen:* char
+`thisChar`: Variable. Erlaubte Datentypen: `char`.
+
 
 [float]
 === Rückgabewert

@@ -43,13 +43,15 @@ void serialEvent3() {
 }
 ----
 
+
 [float]
 === Parameter
 `Statement(s)`: Alle gültigen Aussagen
 
+
 [float]
 === Rückgabewert
-Nichts
+Nichts.
 
 --
 // OVERVIEW SECTION ENDS
