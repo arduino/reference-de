@@ -19,11 +19,39 @@ subCategories: [ "Analog I/O" ]
 === Beschreibung
 Konfiguriert die Referenzspannung, die für analoge Eingabe-Pins genutzt wird (z.B. Der maximal Wert der Eingangsspannung). Dabei sind die folgenden Optionen verfügbar:
 
+Arduino AVR Boards (Uno, Mega, etc.)
+
 * DEFAULT: Default analoge Einstellung (5 V für 5 V-Arduino; 3,3 V für 3,3 V-Arduinos)
 * INTERNAL: Eingebaute Referenz; Festgelegt auf 1,1 V auf dem ATmega168 oder ATmega328P und 2,56 V auf dem ATmega8 (Nicht verfügbar auf dem Arduino Mega)
 * INTERNAL1V1: Eingebaute Referenz; 1,1 V (Nur Arduino Mega)
 * INTERNAL2V56: Eingebaute Referenz; 2,56 V (Nur Arduino Mega)
 * EXTERNAL: Die Spannung, die auf dem AREF-Pin (nur 0 bis 5 V) angelegt ist, wird als Referenz verwendet.
+
+Arduino SAMD Boards (Zero, etc.)
+
+* AR_DEFAULT: Default analoge Einstellung von 3,3 V
+* AR_INTERNAL: Eingebaute Referenz von 2,23 V
+* AR_INTERNAL1V0: Eingebaute Referenz von 1,0 V
+* AR_INTERNAL1V65: Eingebaute Referenz von 1,65 V
+* AR_INTERNAL2V23: Eingebaute Referenz von 2,23 V
+* AR_EXTERNAL: Die Spannung, die auf dem AREF-Pin angelegt ist, wird als Referenz verwendet.
+
+Arduino megaAVR Boards (Uno WiFi Rev2)
+
+* DEFAULT: Eingebaute Referenz von 0,55 V
+* INTERNAL: Eingebaute Referenz von 0,55 V
+* VDD: Vdd des ATmega4809. 5V auf dem Uno WiFi Rev2
+* INTERNAL0V55: Eingebaute Referenz von 0,55 V
+* INTERNAL1V1: Eingebaute Referenz von 1,1 V
+* INTERNAL1V5: Eingebaute Referenz von 1,5 V
+* INTERNAL2V5: Eingebaute Referenz von 2,5 V
+* INTERNAL4V3: Eingebaute Referenz von 4,3 V
+* EXTERNAL: Die Spannung, die auf dem AREF-Pin (nur 0 bis 5 V) angelegt ist, wird als Referenz verwendet.
+
+Arduino SAM Boards (Due)
+
+* AR_DEFAULT: Default analoge Einstellung von 3,3 V. Dies ist die einzige unterstützte Option für den Due.
+
 [%hardbreaks]
 
 
