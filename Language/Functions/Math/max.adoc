@@ -48,7 +48,7 @@ Der größere der beiden Parameterwerte.
 
 [float]
 === Beispielcode
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+// Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu.   ►►►►► DIESER ABSCHNITT IST VERPFLICHTEND ◄◄◄◄◄
 Der Code stellt sicher, dass sensVal mindestens 20 beträgt.
 
 [source,arduino]

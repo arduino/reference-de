@@ -59,7 +59,7 @@ Es gibt mehrere Möglichkeiten, das zu tun:
 
 [float]
 === Beispielcode
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+// Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu.   ►►►►► DIESER ABSCHNITT IST VERPFLICHTEND ◄◄◄◄◄
 Die LED wird angeschaltet, wenn der Interruptpin den Status ändert.
 
 [source,arduino]

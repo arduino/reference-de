@@ -59,7 +59,7 @@ Die Anzahl der gesendeten Bytes. Datentyp: `size_t`.
 
 [float]
 === Besipielcode
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+// Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu.   ►►►►► DIESER ABSCHNITT IST VERPFLICHTEND ◄◄◄◄◄
 
 Sendet ein ASCII-'A' über die Keyboard-Bibliothek, wenn der angeschlossene Button gedrückt wird.
 

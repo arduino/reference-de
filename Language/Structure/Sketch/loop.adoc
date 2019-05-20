@@ -30,7 +30,7 @@ After creating a link:../setup[setup()] function, which initializes and sets the
 
 [float]
 === Beispielcode
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+// Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu.   ►►►►► DIESER ABSCHNITT IST VERPFLICHTEND ◄◄◄◄◄
 Der Code zeigt ein kleines Beispiel, welches den einen Inputpin festlegt. Bei jedem Durchlauf wird je nach Zustand einen Wert
 auf den seriellen Ausgang geschrieben. Anschließend wartet das Board eine Sekunde und beginnt den Durchlauf von Neuem.
 

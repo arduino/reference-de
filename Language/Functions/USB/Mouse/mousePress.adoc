@@ -54,7 +54,7 @@ Nichts.
 
 [float]
 === Beispielcode
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+// Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu.   ►►►►► DIESER ABSCHNITT IST VERPFLICHTEND ◄◄◄◄◄
 Setzt den Mausbutton und löst ihn wieder abhängig vom gedrückten Schalter an Pin 2 und 3.
 
 [source,arduino]

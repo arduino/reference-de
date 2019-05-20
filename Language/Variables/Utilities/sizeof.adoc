@@ -46,7 +46,7 @@ Nichts.
 
 [float]
 === Beispielcode
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+// Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu.   ►►►►► DIESER ABSCHNITT IST VERPFLICHTEND ◄◄◄◄◄
 Der `sizeof`-Operator ist nützlich, um mit Arrays (wie z.B. Strings) umzugehen. Dort ist es Standard, dass die Größe des Arrays sich ändert, ohne
 dass das ganze restliche Programm umgeschrieben werden muss.
 

@@ -38,7 +38,7 @@ Manchmal macht es auch Sinn, eine Variable direkt in einer for-Schleife zu initi
 
 [float]
 === Beispielcode
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+// Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu.   ►►►►► DIESER ABSCHNITT IST VERPFLICHTEND ◄◄◄◄◄
 Der Code beschreibt den Unterschied zwischen lokalen und globalen Variablen.
 
 [source,arduino]

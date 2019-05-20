@@ -35,7 +35,7 @@ Statische Variablen werden nur einmal erstellt, wenn die Funktion das erste Mal 
 
 [float]
 === Beispielcode
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+// Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu.   ►►►►► DIESER ABSCHNITT IST VERPFLICHTEND ◄◄◄◄◄
 Der Code wandert zufällig zwischen 2 Endpunkten umher.
 
 [source,arduino]

@@ -48,7 +48,7 @@ Anzahl an gesendeten Bytes. Datentyp: `size_t`.
 
 [float]
 === Beispielcode
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+// Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu.   ►►►►► DIESER ABSCHNITT IST VERPFLICHTEND ◄◄◄◄◄
 
 Sendet eine Nachricht über die Keyboard-Bibliothek, wenn der angeschlossene Button gedrückt wird.
 

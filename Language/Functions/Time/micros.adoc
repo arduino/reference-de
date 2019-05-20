@@ -50,7 +50,7 @@ Gibt die Anzahl der Mikrosekunden zurück, seit das Arduino-Board das aktuelle P
 
 [float]
 === Beispielcode
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+// Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu.   ►►►►► DIESER ABSCHNITT IST VERPFLICHTEND ◄◄◄◄◄
 Der Code gibt die Anzahl der Mikrosekunden seit dem Beginn des Arduino-Boards zurück.
 
 [source,arduino]

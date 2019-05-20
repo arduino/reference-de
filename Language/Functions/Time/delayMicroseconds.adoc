@@ -52,7 +52,7 @@ Nichts.
 
 [float]
 === Beispielcode
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+// Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu.   ►►►►► DIESER ABSCHNITT IST VERPFLICHTEND ◄◄◄◄◄
 Der Code konfiguriert Pin 8 als Ausgangspin. Er sendet eine Impulsfolge von ungefähr 100 Mikrosekunden.
 Die Annäherung beruht auf der Ausführung der anderen Anweisungen im Code.
 

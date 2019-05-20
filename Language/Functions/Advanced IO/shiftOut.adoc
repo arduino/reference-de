@@ -53,7 +53,7 @@ Nichts.
 
 [float]
 === Beispielcode
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+// Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu.   ►►►►► DIESER ABSCHNITT IST VERPFLICHTEND ◄◄◄◄◄
 Für eingebaute Schaltkreise beachte das http://arduino.cc/en/Tutorial/ShiftOut[Tutorial, wie man ein 74HC595 Shift-Register verwendet].
 
 [source,arduino]

@@ -49,7 +49,7 @@ Eine Zufallszahl zwischen min und max-1. Datentyp: `long`.
 
 [float]
 === Beispielcode
-// Describe what the example code is all about and add relevant code   ►►►►► THIS SECTION IS MANDATORY ◄◄◄◄◄
+// Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu.   ►►►►► DIESER ABSCHNITT IST VERPFLICHTEND ◄◄◄◄◄
 Der Code generiert Zufallszahlen und zeigt sie an.
 
 [source,arduino]
