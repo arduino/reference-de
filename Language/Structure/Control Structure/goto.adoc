@@ -34,6 +34,7 @@ goto label; // Springt zu dem Label.
 === Parameter
 `label`: Das Label an der Stelle, zu der gesprungen werden soll.
 
+
 [float]
 === Rückgabewert
 Nichts.

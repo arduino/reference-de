@@ -1,0 +1,13 @@
+Describe what the example code is all about and add relevant code
+Add streamGetTimeout.adoc
+Array von `char` oder `byte`.
+Next todo: C:\Users\tim\Documents\Git\reference-de\Language\Variables\Data Types\String\Functions --> CharAt
+
+
+
+Texts
+
+ Erlaubte Datentypen: Beliebiger Datentyp.
+ Datentyp: `int`.
+ Erlaubte Datentypen: `char`.
+ Erlaubte Datentypen: Beliebiger Datentyp.

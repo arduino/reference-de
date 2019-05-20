@@ -42,9 +42,11 @@ else {
 }
 ----
 
+
 [float]
 === Parameter
 `condition`: Die Bedingung, die abgeprüft wird. Evaluiert zu `true` oder `false`.
+
 
 [float]
 === Rückgabewert

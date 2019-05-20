@@ -32,12 +32,8 @@ auf den Wert, den der Ausdruck ergibt, gesetzt.
 
 [float]
 === Beispielcode
+`n = 0.005;  // 0.005 ist eine Gleitkommazahlkonstante`
 
-[source,arduino]
-----
-n = 0.005;  // 0.005 ist eine Gleitkommazahlkonstante
-----
-[%hardbreaks]
 
 [float]
 === Anmerkungen und Warnungen

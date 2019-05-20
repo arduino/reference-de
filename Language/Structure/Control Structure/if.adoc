@@ -30,11 +30,23 @@ if (condition) {
 
 [float]
 === Parameter
-condition: Ein Booleanausdruck, kann `true` oder `false` sein.
+`condition`: Ein Booleanausdruck, kann `true` oder `false` sein.
+
 
 [float]
 === Rückgabewert
 Nichts.
+
+
+--
+// OVERVIEW SECTION ENDS
+
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
 
 [float]
 === Beispielcode

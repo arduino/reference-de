@@ -33,12 +33,8 @@ Wird verwendet, um eine Anweisung zu beenden.
 
 [float]
 === Beispielcode
+`int a = 13`
 
-[source,arduino]
-----
-int a = 13;
-----
-[%hardbreaks]
 
 [float]
 === Anmerkungen und Warnungen

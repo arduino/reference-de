@@ -30,9 +30,11 @@ while(condition) {
 }
 ----
 
+
 [float]
 === Parameter
 `condition`: Ein Ausdruck, der auf `true` oder `false` evaluiert.
+
 
 [float]
 === Rückgabewert

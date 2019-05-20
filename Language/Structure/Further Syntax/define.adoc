@@ -32,12 +32,14 @@ Generell sollte das link:../../../variables/variable-scope\--qualifiers/const[co
 
 [float]
 === Syntax
-[source,arduino]
-----
-#define Konstantenname Wert
-----
-Beachte, dass das # erforderlich ist.
-[%hardbreaks]
+`#define Konstantenname Wert`
+
+
+[float]
+=== Parameter
+`Konstantenname`: Der Name des zu definierenden Makros. +
+`Wert`: Der Wert, der dem Makro zugewiesen werden soll.
+
 
 --
 // OVERVIEW SECTION ENDS

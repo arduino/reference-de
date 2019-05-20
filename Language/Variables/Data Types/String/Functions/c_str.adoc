@@ -33,7 +33,8 @@ Wenn du das String-Objekt ändern willst oder wenn es zerstört wird, wird ein z
 
 [float]
 === Parameter
-`myString`: Eine Variable vom Typ String
+`myString`: Eine Variable vom Typ `String`. Erlaubte Datentypen: `String`.
+
 
 [float]
 === Rückgabewert

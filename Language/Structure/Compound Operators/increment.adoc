@@ -24,15 +24,14 @@ Erhöht den Wert einer Variablen um 1.
 
 [float]
 === Syntax
-[source,arduino]
-----
-x++; // x um eins erhöhen und den alten Wert von x zurückgeben
-++x; // x um eins erhöhen und den neuen Wert von x zurückgeben
-----
+`x++; // x um eins erhöhen und den alten Wert von x zurückgeben` +
+`++x; // x um eins erhöhen und den neuen Wert von x zurückgeben`
+
 
 [float]
 === Parameter
-`x`: Variable. *Erlaubte Datentypen:* integer, long (possibly unsigned)
+`x`: Variable. Erlaubte Datentypen: `int`, `long` (possibly unsigned).
+
 
 [float]
 === Rückgabewert

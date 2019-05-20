@@ -28,14 +28,15 @@ Konvertiert einen Wert in den link:../../data-types/word[Word]-Datentyp.
 
 [float]
 === Parameter
-`x`: Ein Wert beliebigen Datentyps
-
-`h`: Das high-order (linkeste) byte des Words
-
+`x`: Ein Wert beliebigen Typs. Erlaubte Datentypen: Beliebiger Datentyp. +
+`h`: Das high-order (linkeste) byte des Words +
 `l`: Das low-order (rechteste) byte des Words
+
+
 [float]
 === Rückgabewert
-`word`
+Datentyp: `word`.
+
 
 --
 // OVERVIEW SECTION ENDS

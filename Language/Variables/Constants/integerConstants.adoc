@@ -57,64 +57,57 @@ Normalerweise werden Integerkonstanten als Dezimalzahlen behandelt (Basis 10). S
 // HOW TO USE SECTION STARTS
 [#howtouse]
 --
+
 [float]
 == Dezimal (Basis 10)
 Der "Standardfall". Alle Konstanten ohne spezielle Präfixe werden als Dezimalformat interpretiert.
 
+
 [float]
 === Beispielcode:
-[source,arduino]
-----
-n = 101; // = 101 in Dezimal  ((1 * 10^2) + (0 * 10^1) + 1)
-----
-[%hardbreaks]
+`n = 101; // = 101 in Dezimal  ((1 * 10^2) + (0 * 10^1) + 1)`
+
 
 [float]
 == Binär (Basis 2)
 Nur die Zahlen 0 und 1 sind gültig.
 
+
 [float]
 === Beispielcode:
-[source,arduino]
-----
-n = B101; // = 5 in Dezimal  ((1 * 2^2) + (0 * 2^1) + 1)
-----
+`n = B101; // = 5 in Dezimal  ((1 * 2^2) + (0 * 2^1) + 1)`
+
 
 Der Binärformatierer funktioniert nur für Zahlen bis 8 Bit zwischen 0 (B0) und 255 (B11111111). Wenn du eine 16-Bit-Zahl angeben willst,
 solltest du dies in der folgenden Art tun:
 
-[source,arduino]
-----
-myInt = (B11001100 * 256) + B10101010; // B11001100 ist dann das 'High byte'
-----
-[%hardbreaks]
+`myInt = (B11001100 * 256) + B10101010; // B11001100 ist dann das 'High byte'`
+
 
 [float]
 == Octal (Basis 8)
 Nur die Zahlen 0 bis 7 sind erlaubt. Oktalzahlen werden durch das Präfix "0" (Null) identifiziert.
 
+
 [float]
 === Beispielcode:
-[source,arduino]
-----
-n = 0101; // = 65 in Dezimal  ((1 * 8^2) + (0 * 8^1) + 1)
-----
+`n = 0101; // = 65 in Dezimal  ((1 * 8^2) + (0 * 8^1) + 1)`
+
+
 Es ist leicht, unabsichtlich schwer zu findende Fehler in den Code einzubauen, wenn eine führende Null for einer Konstante steht und der
 Compiler diese als Oktalzahl interpretiert.
 [%hardbreaks]
+
 
 [float]
 == Hexadecimal (Basis 16)
 Valide Zeichen sind 0 bis 9 und A bis F: A hat den Wert 10, B den Wert 11, C den Wert 12, D den Wert 13, E den Wert 14 und F den Wert 15.
 A bis F können auch in lower case (a bis f) verwendet werden.
 
+
 [float]
 === Beispielcode:
-[source,arduino]
-----
-n = 0x101; // = 257 in Dezimal  ((1 * 16^2) + (0 * 16^1) + 1)
-----
-[%hardbreaks]
+`n = 0x101; // = 257 in Dezimal  ((1 * 16^2) + (0 * 16^1) + 1)`
 
 
 [float]

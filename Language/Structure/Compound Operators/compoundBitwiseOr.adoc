@@ -31,15 +31,14 @@ Ein Überblick über den bitweisen OR `|` Operator:
 
 [float]
 === Syntax
-[source,arduino]
-----
-x |= y;   // Äquivalent zu x = x | y;
-----
+`x |= y;   // Äquivalent zu x = x | y`
+
 
 [float]
 === Parameter
-`x`: Variable. *Erlaubte Datentypen:* char, int, long +
-`y`: Variable oder Konstante. *Erlaubte Datentypen:* char, int, long
+`x`: Variable. Erlaubte Datentypen: `char`, `int`, `long` +
+`y`: Variable oder Konstante. Erlaubte Datentypen: `char`, `int`, `long`
+
 
 --
 // OVERVIEW SECTION ENDS

@@ -28,11 +28,13 @@ Konvertiert einen Wert in den link:../../data-types/float[float]-Datentyp.
 
 [float]
 === Parameter
-`x`: Ein Wert beliebigen Datentyps
+`x`: Ein Wert beliebigen Typs. Erlaubte Datentypen: Beliebiger Datentyp.
+
 
 [float]
 === Rückgabewert
-`float`
+Datentyp: `float`.
+
 
 --
 // OVERVIEW SECTION ENDS

@@ -24,15 +24,14 @@ Vergleicht die linke Variable mit dem Wert oder der Variablen rechts vom Operato
 
 [float]
 === Syntax
-[source,arduino]
-----
-x >= y; // ist true, wenn x größer als oder gleich y ist und false, wenn x kleiner als y ist
-----
+`x >= y; // Ist true, wenn x größer als oder gleich y ist und false, wenn x kleiner als y ist`
+
 
 [float]
 === Parameter
-`x`: Variable. *Erlaubte Datentypen:* int, float, double, byte, short, long +
-`y`: Variable oder Konstante. *Erlaubte Datentypen:* int, float, double, byte, short, long
+`x`: Variable. Erlaubte Datentypen: `int`, `float`, `double`, `byte`, `short`, `long` +
+`y`: Variable oder Konstante. Erlaubte Datentypen: `int`, `float`, `double`, `byte`, `short`, `long`
+
 
 --
 // OVERVIEW SECTION ENDS

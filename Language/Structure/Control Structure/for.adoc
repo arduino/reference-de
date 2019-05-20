@@ -33,10 +33,11 @@ for (initialization; condition; increment) {
 
 [float]
 === Parameter
-`initialization`: Passiert genau einmal am Anfang der Schleife.
+`initialization`: Passiert genau einmal am Anfang der Schleife. +
 `condition`: Wird bei jedem Schleifendurchlauf getestet. Wenn sie `true` ist, werden alle Statements in den Klammern ausgeführt und `increment` hochgezählt. Wenn
-			 die `condition` `false` ist, wird die Schleife abgebrochen.
+			 die `condition` `false` ist, wird die Schleife abgebrochen. +
 `increment`: Wird hochgezählt, wenn die `condition` `true` ist.
+
 
 [float]
 === Rückgabewert

@@ -23,21 +23,18 @@ Beendet eine Funktion und gibt einen Wert an die aufrufende Funktion zurück, we
 
 [float]
 === Syntax
-[source,arduino]
-----
-return;
-
-return value; // Beide Formen davon sind gültig
-----
+`return` +
+`return value; // Beide Formen davon sind gültig`
 
 
 [float]
 === Parameter
-`value`: Beliebige Variable oder Parameter (Optional)
+`value`: Beliebige Variable oder Parameter. Erlaubte Datentypen: Beliebiger Datentyp.
+
 
 [float]
 === Rückgabewert
-Den Datentyp des Parameters `value`
+Den Datentyp des Parameters `value`.
 
 --
 // OVERVIEW SECTION ENDS

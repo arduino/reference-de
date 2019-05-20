@@ -31,9 +31,8 @@ Greift auf ein bestimmtes Zeichen des Strings zu.
 
 [float]
 === Parameter
-`myString`: Eine Variable vom Typ String
-
-`n`: Eine Variable vom Typ unsigned int
+`myString`: Eine Variable vom Typ `String`. Erlaubte Datentypen: `String`. +
+`n`: Eine Variable. Erlaubte Datentypen: `unsigned int`.
 
 
 [float]
