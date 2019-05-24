@@ -24,16 +24,14 @@ Mit der Funktion String `reserve()` kannst du einen Puffer für die Bearbeitung 
 
 [float]
 === Syntax
-[source,arduino]
-
 `myString.reserve(size)`
 
 
 [float]
 === Parameter
-`myString`: Eine Variable vom Typ String
+`myString`: Eine Variable vom Typ `String`. Erlaubte Datentypen: `String`. +
+`size`: Ein `unsigned int`, der die Anzahl der Bytes im Speicher deklariert, um sie für die Bearbeitung von Strings zu speichern. Erlaubte Datentypen: `unsigned int`.
 
-`size`: Ein unsigned int, der die Anzahl der Bytes im Speicher deklariert, um sie für die Bearbeitung von Strings zu speichern
 
 [float]
 === Rückgabewert

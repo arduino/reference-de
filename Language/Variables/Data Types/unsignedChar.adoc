@@ -27,8 +27,8 @@ Für die Konsistenz des Arduino-Programmierstils ist der Byte-Datentyp zu bevorz
 
 [float]
 === Parameter
-`var`: Variablenname +
-`val`: Der Wert, der der Variablen zugewiesen wird
+`var`: Variablenname. +
+`val`: Der Wert, der der Variablen zugewiesen wird.
 
 --
 // OVERVIEW SECTION ENDS

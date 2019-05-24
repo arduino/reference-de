@@ -12,7 +12,7 @@ subCategories: [ "Datentypen" ]
 
 [float]
 === Beschreibung
-Erstellt eine Instanz der String-Klasse. Es gibt mehrere Versionen, die Strings aus verschiedenen Datentypen erstellen (d. h. als Zeichenfolgen formatieren), darunter:
+Erstellt eine Instanz der `String`-Klasse. Es gibt mehrere Versionen, die `String`s aus verschiedenen Datentypen erstellen (d. h. als Zeichenfolgen formatieren), darunter:
 
 * Eine konstante Zeichenfolge in Anführungszeichen (d. h. ein Char-Array)
 * Ein einzelnes konstantes Zeichen in einfachen Anführungszeichen
@@ -28,7 +28,7 @@ Beim Konstruieren einer Zeichenfolge aus einer Zahl wird eine Zeichenfolge erste
 ----
 String thisString = String(13);
 ----
-Gibt den String "13" zurück. Du kannst jedoch auch andere Basen verwenden. Zum Beispiel:
+Gibt den `String` "13" zurück. Du kannst jedoch auch andere Basen verwenden. Zum Beispiel:
 
 
 [source,arduino]
@@ -58,13 +58,13 @@ String(val, decimalPlaces)
 
 [float]
 === Parameter
-`val`:  Eine Variable, die als String formatiert werden soll - *Zulässige Datentypen:* string, char, byte, int, long, unsigned int, unsigned long, float, double +
-`base` (Optional): Die Basis, in der ein ganzzahliger Wert formatiert werden soll +
-`decimalPlaces` (*Nur, wenn val float oder double ist*): Die gewünschten Dezimalstellen
+`val`:  Eine Variable, die als String formatiert werden soll. Erlaubte Datentypen: `string`, `char`, `byte`, `int`, `long`, `unsigned int`, `unsigned long`, `float`, `double`. +
+`base` (Optional): Die Basis, in der ein ganzzahliger Wert formatiert werden soll. +
+`decimalPlaces` (*Nur, wenn val `float` oder `double` ist*): Die gewünschten Dezimalstellen.
 
 [float]
 === Rückgabewert
-Eine Instanz der String-Klasse.
+Eine Instanz der `String`-Klasse.
 
 --
 // OVERVIEW SECTION ENDS

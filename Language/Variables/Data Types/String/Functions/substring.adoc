@@ -26,19 +26,15 @@ Wenn der Endindex weggelassen wird, wird der Teilstring bis zum Ende des Strings
 
 [float]
 === Syntax
-[source,arduino]
-
 `myString.substring(from)` +
 `myString.substring(from, to)`
 
 
 [float]
 === Parameter
-`myString`: Eine Variable vom Typ String
-
-`from`: Der Index, um den Teilstring zu starten
-
-`to` (optional): Der Index, um den Teilstring vorher zu beenden
+`myString`: Eine Variable vom Typ `String`. Erlaubte Datentypen: `String`. +
+`from`: Der Index, von dem der Teilstring startet. +
+`to` (optional): Der Index, an dem der Teilstring beendet wird.
 
 
 [float]

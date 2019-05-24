@@ -27,21 +27,17 @@ Beachte auch, dass Floats nur eine Genauigkeit von 6 bis 7 Dezimalstellen haben 
 
 [float]
 === Syntax
-[source,arduino]
-
 `myString.toFloat()`
 
 
 [float]
 === Parameter
-`myString`: Eine Variable vom Typ String
+`myString`: Eine Variable vom Typ `String`. Erlaubte Datentypen: `String`.
 
 
 [float]
 === Rückgabewert
-`float`
-
-Wenn keine gültige Konvertierung durchgeführt werden konnte, weil die Zeichenfolge nicht mit einer Ziffer beginnt, wird eine Null zurückgegeben.
+Wenn keine gültige Konvertierung durchgeführt werden konnte, weil die Zeichenfolge nicht mit einer Ziffer beginnt, wird eine Null zurückgegeben. Datentyp: `float`.
 
 --
 // OVERVIEW SECTION ENDS

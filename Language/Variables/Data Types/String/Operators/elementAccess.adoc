@@ -25,18 +25,15 @@ Ermöglicht den Zugriff auf die einzelnen Zeichen einer Zeichenfolge.
 
 [float]
 === Syntax
-[source,arduino]
-----
-char thisChar = myString[n]
-----
+`char thisChar = myString[n]`
+
 
 [float]
 === Parameter
-`char thisChar` - Eine Zeichenvariable
+`char thisChar`: Eine Zeichenvariable. Erlaubte Datentypen: `char`. +
+`myString`: Eine String-Variable. Erlaubte Datentypen: `String`. +
+`int n`: Eine numerische Variable. Erlaubte Datentypen: `int`.
 
-`myString` - Eine String-Variable
-
-`int n` - Eine numerische Variable
 
 [float]
 === Rückgabewert

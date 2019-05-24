@@ -17,15 +17,13 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Beschreibung
-Greift auf ein bestimmtes Zeichen des Strings zu.
+Greift auf ein bestimmtes Zeichen des `String`s zu.
 
 [%hardbreaks]
 
 
 [float]
 === Syntax
-[source,arduino]
-
 `myString.charAt(n)`
 
 

@@ -20,7 +20,7 @@ subCategories: [ "StringObject Operator" ]
 === Beschreibung
 Vergleicht zwei Zeichenfolgen auf Gleichheit.
 Bei dem Vergleich wird zwischen Groß- und Kleinschreibung unterschieden.
-Dies bedeutet, dass der String "hallo" nicht mit dem String "HALLO" übereinstimmt. Funktioniert genauso wie `string.equals()`.
+Dies bedeutet, dass der `String` "hallo" nicht mit dem String "HALLO" übereinstimmt. Funktioniert genauso wie `string.equals()`.
 
 
 [%hardbreaks]
@@ -28,21 +28,20 @@ Dies bedeutet, dass der String "hallo" nicht mit dem String "HALLO" übereinstim
 
 [float]
 === Syntax
-[source,arduino]
-----
-myString == myString2
-----
+`myString == myString2`
+
 
 [float]
 === Parameter
-`myString, myString2` - Eine String-Variable
+`myString`: Eine Variable vom Typ `String`. Erlaubte Datentypen: `String`. +
+`myString2`: Eine weitere Variable vom Typ `String`. Erlaubte Datentypen: `String`.
+
 
 [float]
 === Rückgabewert
-Das n-te Zeichen der Zeichenfolge. Gleich wie `charAt()`.
-`true`: Wenn myString gleich myString2 ist
- 
-`false`: Sonst
+Das n-te Zeichen der Zeichenfolge. Gleich wie `charAt()`. +
+`true`: Wenn `myString` gleich `myString2` ist. + 
+`false`: Sonst.
 --
 
 // OVERVIEW SECTION ENDS

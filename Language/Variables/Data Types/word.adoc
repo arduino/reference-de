@@ -23,8 +23,8 @@ Ein Wort kann eine vorzeichenlose Zahl von mindestens 16 Bits (von 0 bis 65535) 
 
 [float]
 === Parameter
-`var`: Variablennamen +
-`val`: Der Wert, der dieser Variablen zugewiesen werden soll
+`var`: Variablennamen. +
+`val`: Der Wert, der dieser Variablen zugewiesen werden soll.
 
 --
 // OVERVIEW SECTION ENDS

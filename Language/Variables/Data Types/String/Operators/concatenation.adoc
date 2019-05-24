@@ -1,4 +1,4 @@
-﻿---
+---
 title: "+"
 title_expanded: concatenation
 categories: [ "Data Types" ]
@@ -18,7 +18,7 @@ subCategories: [ "StringObject Operator" ]
 
 [float]
 === Beschreibung
-Kombiniert oder verkettet zwei Strings zu einem neuen String. Der zweite String wird an den ersten angehängt und das Ergebnis wird in einen neuen String eingefügt.
+Kombiniert oder verkettet zwei `String`s zu einem neuen `String`. Der zweite `String` wird an den ersten angehängt und das Ergebnis wird in einen neuen `String` eingefügt.
 Funktioniert genauso wie `string.concat()`.
 
 [%hardbreaks]
@@ -26,18 +26,19 @@ Funktioniert genauso wie `string.concat()`.
 
 [float]
 === Syntax
-[source,arduino]
-----
-myString3 = myString + myString2
-----
+`myString3 = myString + myString2`
+
 
 [float]
 === Parameter
-`myString, myString2, myString3` - Eine String-Variable
+`myString`: Eine Variable vom Typ `String`. Erlaubte Datentypen: `String`. +
+`myString2`: Eine weitere Variable vom Typ `String`. Erlaubte Datentypen: `String`. +
+`myString3`: Eine dritte Variable vom Typ `String`. Erlaubte Datentypen: `String`.
+
 
 [float]
 === Rückgabewert
-Neuer String, der die Kombination der ursprünglichen zwei Strings darstellt.
+Neuer `String`, der die Kombination der ursprünglichen zwei `String`s darstellt.
 
 --
 

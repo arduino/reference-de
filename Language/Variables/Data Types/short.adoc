@@ -21,10 +21,11 @@ Auf allen Arduinos (ATMega und ARM-basiert) speichert ein Short einen 16-Bit-Wer
 === Syntax
 `short var = val`
 
+
 [float]
 === Parameter
-`var`: Variablenname +
-`val`: Der Wert, der der Variablen zugewiesen wird
+`var`: Variablenname. +
+`val`: Der Wert, der der Variablen zugewiesen wird.
 [%hardbreaks]
 --
 // OVERVIEW SECTION ENDS

@@ -17,30 +17,26 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Beschreibung
-Testet, ob ein String mit den Zeichen eines anderen Strings endet.
+Testet, ob ein `String` mit den Zeichen eines anderen `String`s endet.
 
 [%hardbreaks]
 
 
 [float]
 === Syntax
-[source,arduino]
-
 `myString.endsWith(myString2)`
 
 
 [float]
 === Parameter
-`myString`: Eine Variable vom Typ String
-
-`myString2`: Eine andere Variable vom Typ String
+`myString`: Eine Variable vom Typ `String`. Erlaubte Datentypen: `String`. +
+`myString2`: Eine andere Variable vom Typ `String`.  Erlaubte Datentypen: `String`.
 
 
 [float]
 === Rückgabewert
-`true`: Wenn myString mit den Zeichen von myString2 endet
-
-`false`: Sonst
+`true`: Wenn `myString` mit den Zeichen von `myString2` endet. +
+`false`: Sonst.
 
 --
 // OVERVIEW SECTION ENDS

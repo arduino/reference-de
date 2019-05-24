@@ -17,9 +17,9 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Beschreibung
-Konvertiert den Inhalt einer Zeichenfolge als nullterminierte Zeichenfolge im C-Stil. Beachte, dass dies direkten Zugriff auf den internen String-Puffer bietet und mit Vorsicht verwendet werden sollte.
+Konvertiert den Inhalt einer Zeichenfolge als nullterminierte Zeichenfolge im C-Stil. Beachte, dass dies direkten Zugriff auf den internen `String`-Puffer bietet und mit Vorsicht verwendet werden sollte.
 Insbesondere sollte die Zeichenfolge niemals über den zurückgegebenen Zeiger geändert werden.
-Wenn du das String-Objekt ändern willst oder wenn es zerstört wird, wird ein zuvor von `c_str()` zurückgegebener Zeiger ungültig und sollte nicht mehr verwendet werden.
+Wenn du das `String`-Objekt ändern willst oder wenn es zerstört wird, wird ein zuvor von `c_str()` zurückgegebener Zeiger ungültig und sollte nicht mehr verwendet werden.
 
 [%hardbreaks]
 
@@ -38,7 +38,7 @@ Wenn du das String-Objekt ändern willst oder wenn es zerstört wird, wird ein z
 
 [float]
 === Rückgabewert
-Ein Zeiger auf die C-Style-Version des aufrufenden Strings.
+Ein Zeiger auf die C-Style-Version des aufrufenden `String`s.
 
 --
 // OVERVIEW SECTION ENDS

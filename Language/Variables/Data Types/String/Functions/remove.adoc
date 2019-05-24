@@ -17,7 +17,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Beschreibung
-Ändert einen String, der die Zeichen aus dem angegebenen Index bis zum Ende des Strings oder aus dem bereitgestellten Index entfernt, um die Anzahl der Indizes zu zählen.
+Ändert einen `String`, der die Zeichen aus dem angegebenen Index bis zum Ende des `String`s oder aus dem bereitgestellten Index entfernt, um die Anzahl der Indizes zu zählen.
 
 [%hardbreaks]
 
@@ -27,13 +27,12 @@ subCategories: [ "StringObject Function" ]
 `myString.remove(index)` +
 `myString.remove(index, count)`
 
+
 [float]
 === Parameter
-`myString`: Eine Variable vom Typ String
-
-`index`: Eine Variable vom Typ unsigned int
-
-`count`: Eine Variable vom Typ unsigned int
+`myString`: Eine Variable vom Typ `String`. Erlaubte Datentypen: `String`. +
+`index`: Eine Variable vom Typ `unsigned int`. Erlaubte Datentypen: `unsigned int`. +
+`count`: Eine Variable vom Typ `unsigned int`. Erlaubte Datentypen: `unsigned int`.
 
 
 [float]

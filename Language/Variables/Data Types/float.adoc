@@ -36,8 +36,8 @@ Wenn du mit floats rechnest, musst du ein Dezimalzeichen hinzufügen, andernfall
 
 [float]
 === Parameter
-`var`: Variablenname +
-`val`: Der Wert, der der Variablen zugewiesen wird
+`var`: Variablenname. +
+`val`: Der Wert, der der Variablen zugewiesen wird.
 [%hardbreaks]
 
 --

@@ -24,18 +24,15 @@ Kopiert die Zeichen der Zeichenfolge in den angegebenen Puffer.
 
 [float]
 === Syntax
-[source,arduino]
-
 `myString.getBytes(buf, len)`
 
 
 [float]
 === Parameter
-`myString`: Eine Variable vom Typ String
+`myString`: Eine Variable vom Typ `String`.  Erlaubte Datentypen: `String`.+
+`buf`: Der Puffer, in den die Zeichen kopiert werden sollen. Erlaubte Datentypen: Array von `byte`.
+`len`: Die Größe des Puffers. Erlaubte Datentypen: `unsigned int`.
 
-`buf`: Der Puffer, in den die Zeichen kopiert werden sollen (_byte []_)
-
-`len`: Die Größe des Puffers (_unsigned int_)
 
 [float]
 === Rückgabewert

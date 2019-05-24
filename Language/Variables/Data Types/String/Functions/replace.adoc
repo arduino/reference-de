@@ -25,19 +25,14 @@ Du kannst auch `replace()` verwenden, um Teilstrings eines Strings durch einen a
 
 [float]
 === Syntax
-[source,arduino]
-
 `myString.replace(substring1, substring2)`
 
 
 [float]
 === Parameter
-`myString`: Eine Variable vom Typ String
-
-`substring1`: Eine andere Variable vom Typ String
-
-`substring2`: Eine andere Variable vom Typ String
-
+`myString`: Eine Variable vom Typ `String`. Erlaubte Datentypen: `String`.+
+`substring1`: Eine andere Variable vom Typ `String`. Erlaubte Datentypen: `String`. +
+`substring2`: Eine andere Variable vom Typ `String`. Erlaubte Datentypen: `String`.
 
 
 [float]

@@ -18,14 +18,16 @@ Wenn du mit ganzzahligen Zahlen rechnest, muss mindestens eine der Zahlen von ei
 Siehe auch die link:../../constants/integerconstants[Ganzzahlkonstanten]-Seite für mehr Details.
 [%hardbreaks]
 
+
 [float]
 === Syntax
 `long var = val`
 
+
 [float]
 === Parameter
-`var`: Variablenname +
-`val`: Der Wert, der der Variablen zugewiesen wird
+`var`: Variablenname. +
+`val`: Der Wert, der der Variablen zugewiesen wird.
 [%hardbreaks]
 --
 // OVERVIEW SECTION ENDS

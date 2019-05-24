@@ -18,13 +18,13 @@ Im Gegensatz zu Standard-Longs werden bei unsigned Longs keine negativen Zahlen 
 
 [float]
 === Syntax
-
 `unsigned long var = val`
+
 
 [float]
 === Parameter
-`var`: Variablenname +
-`val`: Der Wert, der der Variablen zugewiesen wird
+`var`: Variablenname. +
+`val`: Der Wert, der der Variablen zugewiesen wird.
 [%hardbreaks]
 
 --

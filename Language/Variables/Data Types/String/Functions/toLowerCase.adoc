@@ -17,21 +17,19 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Beschreibung
-Ruft eine Kleinbuchstabenversion eines Strings ab. Seit 1.0 ändert `toLowerCase(`) den String anstatt eine neue zurückzugeben.
+Ruft eine Kleinbuchstabenversion eines `String`s ab. Seit 1.0 ändert `toLowerCase(`) den `String` anstatt einen neuen zurückzugeben.
 
 [%hardbreaks]
 
 
 [float]
 === Syntax
-[source,arduino]
-
 `myString.toLowerCase()`
 
 
 [float]
 === Parameter
-`myString`: Eine Variable vom Typ String
+`myString`: Eine Variable vom Typ `String`. Erlaubte Datentypen: `String`.
 
 
 [float]

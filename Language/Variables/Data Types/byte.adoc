@@ -23,8 +23,8 @@ Ein Byte speichert eine vorzeichenlose 8-Bit-Zahl von 0 bis 255.
 
 [float]
 === Parameter
-`var`: Variablenname +
-`val`: Der Wert, der der Variablen zugewiesen wird
+`var`: Variablenname. +
+`val`: Der Wert, der der Variablen zugewiesen wird.
 
 --
 // OVERVIEW SECTION ENDS

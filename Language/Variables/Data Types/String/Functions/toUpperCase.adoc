@@ -17,20 +17,18 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Beschreibung
-Ruft eine Großbuchstabenversion eines Strings ab. Seit 1.0 ändert `toUpperCase()` den String anstatt einen neuen zurückzugeben.
+Ruft eine Großbuchstabenversion eines `String`s ab. Seit 1.0 ändert `toUpperCase()` den `String` anstatt einen neuen zurückzugeben.
 [%hardbreaks]
 
 
 [float]
 === Syntax
-[source,arduino]
-
 `myString.toUpperCase()`
 
 
 [float]
 === Parameter
-`myString`: Eine Variable vom Typ String
+`myString`: Eine Variable vom Typ `String`. Erlaubte Datentypen: `String`.
 
 
 [float]

@@ -24,8 +24,8 @@ Beispiele für die Verwendung von `size_t` sind der Rückgabetyp von link:../../
 
 [float]
 === Parameter
-`var`: Variablenname +
-`val`: Der Wert, der der Variablen zugewiesen wird
+`var`: Variablenname. +
+`val`: Der Wert, der der Variablen zugewiesen wird.
 [%hardbreaks]
 --
 // OVERVIEW SECTION ENDS

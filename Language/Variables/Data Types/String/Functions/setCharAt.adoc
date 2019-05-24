@@ -24,18 +24,14 @@ Legt ein Zeichen für den String fest. Hat keine Auswirkung auf Indizes außerha
 
 [float]
 === Syntax
-[source,arduino]
-
 `myString.setCharAt(index, c)`
 
 
 [float]
 === Parameter
-`myString`: Eine Variable vom Typ String
-
-`index`: Der Index, auf den das Zeichen gesetzt werden soll
-
-`c`: Das Zeichen, das an dem angegebenen Ort gespeichert werden soll
+`myString`: Eine Variable vom Typ `String`. Erlaubte Datentypen: `String`.+
+`index`: Der Index, auf den das Zeichen gesetzt werden soll. +
+`c`: Das Zeichen, das an dem angegebenen Ort gespeichert werden soll. Erlaubte Datentypen: `char`.
 
 
 [float]

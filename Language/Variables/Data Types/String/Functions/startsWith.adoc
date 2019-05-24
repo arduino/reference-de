@@ -24,21 +24,18 @@ Testet, ob ein String mit den Zeichen eines anderen Strings beginnt.
 
 [float]
 === Syntax
-[source,arduino]
-
 `myString.startsWith(myString2)`
 
 
 [float]
 === Parameter
-`myString, myString2`: Eine Variable vom Typ String
+`myString, myString2`: Eine Variable vom Typ `String`. Erlaubte Datentypen: `String`.
 
 
 [float]
 === Rückgabewert
-`true`: Wenn myString mit den Zeichen von myString2 beginnt
-
-`false`: Sonst
+`true`: Wenn `myString` mit den Zeichen von `myString2` beginnt. +
+`false`: Sonst.
 --
 // OVERVIEW SECTION ENDS
 

@@ -25,8 +25,8 @@ Ein `bool` enthält einen von zwei Werten, `true` oder `false`. (Jede `bool`-Var
 
 [float]
 === Parameter
-`var`: Variablenname +
-`val`: Der Wert, der der Variablen zugewiesen wird
+`var`: Variablenname. +
+`val`: Der Wert, der der Variablen zugewiesen wird.
 
 --
 // OVERVIEW SECTION ENDS

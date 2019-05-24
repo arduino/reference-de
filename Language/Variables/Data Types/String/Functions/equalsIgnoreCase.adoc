@@ -24,21 +24,19 @@ Vergleicht zwei Zeichenfolgen auf Gleichheit. Der Vergleich unterscheidet nicht 
 
 [float]
 === Syntax
-[source,arduino]
-
 `myString.equalsIgnoreCase(myString2)`
 
 
 [float]
 === Parameter
-`myString, myString2`: Variablen vom Typ String
+`myString`: Eine Variable vom Typ `String`. Erlaubte Datentypen: `String`. +
+`myString2`: Eine andere Variable vom Typ `String`.  Erlaubte Datentypen: `String`.
 
 
 [float]
 === Rückgabewert
-`true`: Wenn myString gleich myString2 ist (Groß-/ Kleinschreibung wird ignoriert)
-
-`false`: Sonst
+`true`: Wenn `myString` gleich `myString2` ist (Groß-/ Kleinschreibung wird ignoriert). +
+`false`: Sonst.
 --
 // OVERVIEW SECTION ENDS
 

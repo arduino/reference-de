@@ -18,21 +18,20 @@ subCategories: [ "StringObject Operator" ]
 
 [float]
 === Beschreibung
-Es verkettet Strings mit anderen Daten.
+Es verkettet `String`s mit anderen Daten.
 
 [%hardbreaks]
 
 
 [float]
 === Syntax
-[source,arduino]
-----
-myString1 += data
-----
+`myString1 += data`
+
 
 [float]
 === Parameter
-`myString1` - Eine String-Variable
+`myString1`: Eine Variable vom Typ `String`. Erlaubte Datentypen: `String`.
+
 
 [float]
 === Rückgabewert

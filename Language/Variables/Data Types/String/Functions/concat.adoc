@@ -17,29 +17,26 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Beschreibung
-Hängt den Parameter an einen String an.
+Hängt den Parameter an einen `String` an.
 
 [%hardbreaks]
 
 
 [float]
 === Syntax
-[source,arduino]
-
 `myString.concat(parameter)`
 
 
 [float]
 === Parameter
-`myString`: Eine Variable vom Typ String
+`myString`: Eine Variable vom Typ `String`. Erlaubte Datentypen: `String`. +
+`parameter`: Erlaubte Datentypen: `String`, `string`, `char`, `byte`, `int`, `unsigned int`, `long`, `unsigned long`, `float`, `double`, `__FlashStringHelper`(`F()`-Makro).
 
-`parameter`: *Zulässige Datentypen sind* String, string, char, byte, int, unsigned int, long, unsigned long, float, double, __FlashStringHelper(F() macro).
 
 [float]
 === Rückgabewert
-`true`: Wenn das Anfügen erfolgreich war.
-
-`false`: Sonst
+`true`: Wenn das Anfügen erfolgreich war. +
+`false`: Sonst.
 
 --
 // OVERVIEW SECTION ENDS

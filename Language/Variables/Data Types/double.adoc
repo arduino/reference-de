@@ -13,7 +13,7 @@ subCategories: [ "Datentypen" ]
 [float]
 === Beschreibung
 Fließkommazahl mit doppelter Genauigkeit. Auf dem Uno und anderen ATMEGA-basierten Boards belegt dies 4 Bytes.
-Das heißt, die double-Implementierung entspricht genau dem float, ohne dass die Genauigkeit zunimmt.
+Das heißt, die `double`-Implementierung entspricht genau dem float, ohne dass die Genauigkeit zunimmt.
 
 Auf dem Arduino Due haben doubles eine Genauigkeit von 8 Byte (64 Bit).
 [%hardbreaks]
@@ -26,8 +26,8 @@ Auf dem Arduino Due haben doubles eine Genauigkeit von 8 Byte (64 Bit).
 
 [float]
 === Parameter
-`var`: Variablenname +
-`val`: Der Wert, der der Variablen zugewiesen wird
+`var`: Variablenname. +
+`val`: Der Wert, der der Variablen zugewiesen wird.
 
 --
 // OVERVIEW SECTION ENDS

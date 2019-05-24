@@ -24,18 +24,14 @@ Kopiert die Zeichen der Zeichenfolge in den angegebenen Puffer.
 
 [float]
 === Syntax
-[source,arduino]
-
 `myString.toCharArray(buf, len)`
 
 
 [float]
 === Parameter
-`myString`: Eine Variable vom Typ String
-
-`buf`: Der Puffer, in den die Zeichen kopiert werden sollen (_char []_)
-
-`len`: Die Größe des Puffers (_unsigned int_)
+`myString`: Eine Variable vom Typ `String`. Erlaubte Datentypen: `String`. +
+`buf`: Der Puffer, in den die Zeichen kopiert werden sollen. Erlaubte Datentypen: Array von `char`. +
+`len`: Die Größe des Puffers. Erlaubte Datentypen: `unsigned int`.
 
 [float]
 === Rückgabewert

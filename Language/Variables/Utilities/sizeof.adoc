@@ -28,7 +28,8 @@ subCategories: [ "Hilfsmittel" ]
 
 [float]
 === Parameter
-`variable`: Jeder beliebige Variablentyp oder auch ein Array (z.B. int, float, byte)
+`variable`: Erlaubte Datentypen: Beliebiger Datentyp.
+
 
 [float]
 === Rückgabewert

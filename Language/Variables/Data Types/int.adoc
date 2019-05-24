@@ -31,10 +31,11 @@ Es kann unerwartete Komplikationen im Umgang mit dem link:../../../structure/bit
 === Syntax
 `int var = val`
 
+
 [float]
 === Parameter
-`var`: Variablenname +
-`val`: Der Wert, der der Variablen zugewiesen wird
+`var`: Variablenname. +
+`val`: Der Wert, der der Variablen zugewiesen wird.
 [%hardbreaks]
 --
 // OVERVIEW SECTION ENDS

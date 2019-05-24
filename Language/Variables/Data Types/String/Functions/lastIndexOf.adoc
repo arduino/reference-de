@@ -17,7 +17,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Beschreibung
-Sucht ein Zeichen oder eine Zeichenfolge in einer anderen Zeichenfolge. Sucht standardmäßig vom Ende des Strings aus, kann aber auch von einem bestimmten Index aus rückwärts arbeiten.
+Sucht ein Zeichen oder eine Zeichenfolge in einer anderen Zeichenfolge. Sucht standardmäßig vom Ende des `String`s aus, kann aber auch von einem bestimmten Index aus rückwärts arbeiten.
 Ermöglicht das Auffinden aller Instanzen des Zeichens oder der Zeichenfolge.
 
 [%hardbreaks]
@@ -25,19 +25,15 @@ Ermöglicht das Auffinden aller Instanzen des Zeichens oder der Zeichenfolge.
 
 [float]
 === Syntax
-[source,arduino]
-
 `myString.lastIndexOf(val)` +
 `myString.lastIndexOf(val, from)`
 
 
 [float]
 === Parameter
-`myString`: Eine Variable vom Typ String
-
-`val`: Der Wert, nach dem gesucht werden soll - char oder String
-
-`from`: Der Index, um rückwärts zu arbeiten
+`myString`: Eine Variable vom Typ `String`. Erlaubte Datentypen: `String`. +
+`val`: Der Wert, nach dem gesucht werden soll. Erlaubte Datentypen: `char` oder `String`. +
+`from`: Der Index des letzen Vorkommnisses des gesuchten Werts.
 
 
 [float]
