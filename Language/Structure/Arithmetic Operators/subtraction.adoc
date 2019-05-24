@@ -60,9 +60,9 @@ c = a - b; // Die Variable 'c' erhält nach der Ausführung dieser Anweisung ein
 === Anmerkungen und Warnungen
 1. Die Subtraktionsoperation kann überlaufen, wenn das Ergebnis kleiner als das ist, das in dem Datentyp gespeichert werden kann (z. B. ergibt das Subtrahieren von 1 von einer Ganzzahl mit dem Wert -32,768 den Wert 32,767).
 
-2. Wenn eine der Zahlen (Operanden) vom Typ float oder vom Typ double ist, wird für die Berechnung Fließkomma-Mathematik verwendet.
+2. Wenn eine der Zahlen (Operanden) vom Typ `float` oder vom Typ `double` ist, wird für die Berechnung Fließkomma-Mathematik verwendet.
 
-3. Wenn die Operanden vom Datentyp float / double sind und die Variable, die die Differenz speichert, eine Ganzzahl ist, wird nur die Ganzzahl gespeichert und der Bruchteil der Zahl geht verloren.
+3. Wenn die Operanden vom Datentyp `float` / `double` sind und die Variable, die die Differenz speichert, eine Ganzzahl ist, wird nur die Ganzzahl gespeichert und der Bruchteil der Zahl geht verloren.
 
 [source,arduino]
 ----

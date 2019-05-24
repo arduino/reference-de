@@ -17,7 +17,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Beschreibung
-Vergleicht zwei Zeichenfolgen auf Gleichheit. Bei dem Vergleich wird zwischen Groß- und Kleinschreibung unterschieden. Dies bedeutet, dass der String "hallo" nicht mit dem String "HALLO" übereinstimmt.
+Vergleicht zwei Zeichenfolgen auf Gleichheit. Bei dem Vergleich wird zwischen Groß- und Kleinschreibung unterschieden. Dies bedeutet, dass der `String` "hallo" nicht mit dem `String` "HALLO" übereinstimmt.
 
 [%hardbreaks]
 

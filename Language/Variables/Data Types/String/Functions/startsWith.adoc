@@ -17,7 +17,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Beschreibung
-Testet, ob ein String mit den Zeichen eines anderen Strings beginnt.
+Testet, ob ein `String` mit den Zeichen eines anderen `String`s beginnt.
 
 [%hardbreaks]
 

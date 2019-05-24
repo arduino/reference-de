@@ -42,7 +42,7 @@ Auf dem Arduino Due haben doubles eine Genauigkeit von 8 Byte (64 Bit).
 
 [float]
 === Anmerkungen und Warnungen
-Benutzer, die sich Code aus anderen Quellen leihen, der double-Variablen enthält, möchten möglicherweise den Code untersuchen, um zu sehen,
+Benutzer, die sich Code aus anderen Quellen leihen, der `double`-Variablen enthält, möchten möglicherweise den Code untersuchen, um zu sehen,
 ob sich die implizierte Genauigkeit von der tatsächlich bei ATMEGA-basierten Arduinos erreichten unterscheidet.
 [%hardbreaks]
 

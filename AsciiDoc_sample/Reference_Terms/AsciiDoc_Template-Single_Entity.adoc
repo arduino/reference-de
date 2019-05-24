@@ -45,8 +45,8 @@ image::http://arduino.cc/en/uploads/Main/ArduinoUno_R3_Front_450px.jpg[caption="
 [float]
 === Parameter
 // Liste alle verfügbaren Parameter auf, beschreibe sie bitte einzeln und füge den Datentyp hinzu (z.B. int, bool, char, String, float, long, double...)  ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
-`pin`: Die Nummer des Pins, auf den geschrieben werden soll. Zulässige Datentypen: int. +
-`value`: Das Tastverhältnis zwischen 0 (immer aus) und 255 (immer an). Zulässige Datentypen: int.
+`pin`: Die Nummer des Pins, auf den geschrieben werden soll. Erlaubte Datentypen:: `int`. +
+`value`: Das Tastverhältnis zwischen 0 (immer aus) und 255 (immer an). Erlaubte Datentypen:: `int`.
 
 
 [float]

@@ -46,7 +46,7 @@ mit der Arduino IDE Version 13. Frühere Versionen der IDE arbeiten besser, wenn
 `const dataType PROGMEM variableName[] = {};   // aber nicht diese Version!
 
 `PROGMEM` kann auch für einzelne Variablen benutzt werden, dies ist aber nur sinnvoll, wenn ein großer Block von Daten gespeichert werden soll. Normalerweise ist das bei Arrays,
-Strings (die auch Arrays sind) und weiteren komplizierteren Datenstrukturen der Fall.
+`String`s (die auch Arrays sind) und weiteren komplizierteren Datenstrukturen der Fall.
 
 Die Benutzung von `PROGMEM` erfolgt in 2 Schritten. Nachdem die Daten in den Flash-/Programm-Speicher geladen wurden, müssen spezielle Methoden verwendet werden, um diese Variablen
 wieder auszulesen und zu bearbeiten. Diese sind auch in der link:http://www.nongnu.org/avr-libc/user-manual/group\__avr__pgmspace.html[pgmspace.h]-Softwarebibliothek definiert.
@@ -103,10 +103,10 @@ void loop() {
   // ...
 }
 ----
-*Array von Strings*
+*Array von `String`s*
 
-Wenn mit einer großen Menge an Text gearbeitet wird (Beispiel: Projekt mit LCD-Display), ist es häufig nötig, Texte in ein Array von Strings zu packen.
-Dadurch, dass Strings bereits selbst Arrays sind, entsteht dadurch ein 2-dimensionales Array.
+Wenn mit einer großen Menge an Text gearbeitet wird (Beispiel: Projekt mit LCD-Display), ist es häufig nötig, Texte in ein Array von `String`s zu packen.
+Dadurch, dass `String`s bereits selbst Arrays sind, entsteht dadurch ein 2-dimensionales Array.
 
 Diese großen Datenstrukturen können in den Flash-/Programm-Speicher geladen werden. Das Beispiel unten zeigt das.
 
@@ -186,7 +186,7 @@ Wenn eine Instruktion wie
 Serial.print("Write something on  the Serial Monitor");
 ----
 
-benutzt wird, wird der String bevor er auf den seriellen Ausgang geschrieben wird, normalerweise in den RAM gespeichert. Der RAM kann aber sehr leicht volllaufen, wenn der Code
+benutzt wird, wird der `String` bevor er auf den seriellen Ausgang geschrieben wird, normalerweise in den RAM gespeichert. Der RAM kann aber sehr leicht volllaufen, wenn der Code
 sehr viel auf den seriellen Port schreibt. Wenn du noch freien Flash-/Programm-Speicher hast, kannst du dem Compiler sagen, dass er die Werte in den Flash-/Programm-Speicher
 schreiben soll:
 

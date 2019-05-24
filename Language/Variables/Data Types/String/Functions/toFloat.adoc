@@ -17,7 +17,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Beschreibung
-Konvertiert einen gültigen String in einen Float. Die Eingabezeichenfolge sollte mit einer Ziffer beginnen.
+Konvertiert einen gültigen `String` in einen `float`. Die Eingabezeichenfolge sollte mit einer Ziffer beginnen.
 Wenn die Zeichenfolge Nicht-Zahlen als Zeichen enthält, wird die Konvertierung abgebrochen.
 Beispielsweise werden die Zeichenfolgen "123.45", "123" und "123fish" in 123.45, 123.00 und 123.00 konvertiert. Beachte, dass "123.456" mit 123.46 approximiert wird.
 Beachte auch, dass Floats nur eine Genauigkeit von 6 bis 7 Dezimalstellen haben und längere Zeichenfolgen möglicherweise abgeschnitten werden.

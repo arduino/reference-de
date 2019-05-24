@@ -20,7 +20,7 @@ subCategories: [ "StringObject Operator" ]
 === Beschreibung
 Vergleicht zwei Zeichenfolgen auf Gleichheit.
 Bei dem Vergleich wird zwischen Groß- und Kleinschreibung unterschieden.
-Dies bedeutet, dass der `String` "hallo" nicht mit dem String "HALLO" übereinstimmt. Funktioniert genauso wie `string.equals()`.
+Dies bedeutet, dass der `String` "hallo" nicht mit dem `String` "HALLO" übereinstimmt. Funktioniert genauso wie `string.equals()`.
 
 
 [%hardbreaks]

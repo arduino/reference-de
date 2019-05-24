@@ -17,7 +17,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Beschreibung
-Legt ein Zeichen für den String fest. Hat keine Auswirkung auf Indizes außerhalb der vorhandenen Länge des Strings.
+Legt ein Zeichen für den `String` fest. Hat keine Auswirkung auf Indizes außerhalb der vorhandenen Länge des `String`s.
 
 [%hardbreaks]
 

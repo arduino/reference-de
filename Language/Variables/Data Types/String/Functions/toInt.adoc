@@ -34,7 +34,7 @@ Konvertiert einen gültigen `String` in eine Ganzzahl. Die Eingabezeichenfolge s
 
 [float]
 === Rückgabewert
-Wenn keine gültige Konvertierung durchgeführt werden konnte, weil der String nicht mit einer Ganzzahl beginnt, wird eine Null zurückgegeben. Datentyp: `long`.
+Wenn keine gültige Konvertierung durchgeführt werden konnte, weil der `String` nicht mit einer Ganzzahl beginnt, wird eine Null zurückgegeben. Datentyp: `long`.
 
 --
 // OVERVIEW SECTION ENDS

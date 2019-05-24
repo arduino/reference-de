@@ -14,7 +14,7 @@ title: Serial.readString()
 
 [float]
 === Beschreibung
-`_Serial_.readString()` liest Zeichen aus dem seriellen Puffer in einen String. Die Funktion wird abgebrochen, wenn eine Zeitüberschreitung auftritt (siehe link:../settimeout[setTimeout()]).
+`_Serial_.readString()` liest Zeichen aus dem seriellen Puffer in einen `String`. Die Funktion wird abgebrochen, wenn eine Zeitüberschreitung auftritt (siehe link:../settimeout[setTimeout()]).
 
 `_Serial_.readString()` erbt von der link:../../stream[Stream]-Dienstklasse.
 [%hardbreaks]

@@ -12,14 +12,14 @@ subCategories: [ "Datentypen" ]
 
 [float]
 === Beschreibung
-Textzeichenfolgen können auf zwei Arten dargestellt werden. Du kannst den String-Datentyp verwenden, der ab Version 0019 Teil des Kerns ist oder du kannst einen
-String aus einem Array des Typs char erstellen und ihn mit einem Nullterminator abschließen.
-Diese Seite beschreibt die letztere Methode. Für weitere Informationen zum String-Objekt, das mehr Funktionalität auf Kosten von mehr Arbeitsspeicher bietet, siehe die link:../stringobject[string object]-Seite.
+Textzeichenfolgen können auf zwei Arten dargestellt werden. Du kannst den `String`-Datentyp verwenden, der ab Version 0019 Teil des Kerns ist oder du kannst einen
+`String` aus einem Array des Typs char erstellen und ihn mit einem Nullterminator abschließen.
+Diese Seite beschreibt die letztere Methode. Für weitere Informationen zum `String`-Objekt, das mehr Funktionalität auf Kosten von mehr Arbeitsspeicher bietet, siehe die link:../stringobject[string object]-Seite.
 [%hardbreaks]
 
 [float]
 === Syntax
-Alle folgenden Angaben sind gültige Deklarationen für Strings.
+Alle folgenden Angaben sind gültige Deklarationen für `String`s.
 
 `char Str1[15];` +
 `char Str2[8] = {'a', 'r', 'd', 'u', 'i', 'n', 'o'};` +
@@ -28,18 +28,18 @@ Alle folgenden Angaben sind gültige Deklarationen für Strings.
 `char Str5[8] = "arduino";` +
 `char Str6[15] = "arduino";`
 
-*Möglichkeiten zur Deklaration von Strings*
+*Möglichkeiten zur Deklaration von `String`s*
 
 * Deklariere ein Array von Zeichen, ohne es wie in Str1 zu initialisieren
 * Deklariere ein Array von chars (mit einem zusätzlichen char) und der Compiler fügt das erforderliche Nullzeichen wie in Str2 hinzu
 * Füge das Nullzeichen explizit hinzu, Str3
-* Initialisiere mit einer String-Konstante in Anführungszeichen. Der Compiler passt die Größe des Arrays an die String-Konstante und fügt ein abschließendes Nullzeichen an, Str4
+* Initialisiere mit einer `String`-Konstante in Anführungszeichen. Der Compiler passt die Größe des Arrays an die `String`-Konstante und fügt ein abschließendes Nullzeichen an, Str4
 * Initialisiere das Array mit einer expliziten Größen- und Zeichenfolgekonstante, Str5
 * Initialisiere das Array und lasse zusätzlichen Platz für eine größere Zeichenfolge, Str6
 
 *Null-Termination*
 
-Im Allgemeinen werden Zeichenfolgen mit einem Nullzeichen (ASCII-Code 0) abgeschlossen. Dadurch können Funktionen (wie `_Serial_.print()`) erkennen, wo das Ende eines Strings ist.
+Im Allgemeinen werden Zeichenfolgen mit einem Nullzeichen (ASCII-Code 0) abgeschlossen. Dadurch können Funktionen (wie `_Serial_.print()`) erkennen, wo das Ende eines `String`s ist.
 Andernfalls würden sie nachfolgende Speicherbytes lesen, die eigentlich nicht Teil der Zeichenfolge sind.
 
 Das bedeutet, dass die Zeichenfolge Platz für ein Zeichen mehr als den gewünschten Text haben muss.
@@ -52,7 +52,7 @@ Wenn du feststellst, dass sich etwas merkwürdig verhält (mit Zeichen, die sich
 
 *Einfache oder doppelte Anführungszeichen?*
 
-Strings werden immer in doppelten Anführungszeichen ("Abc") und chars in einfachen Anführungszeichen ('A') definiert.
+`String`s werden immer in doppelten Anführungszeichen ("Abc") und chars in einfachen Anführungszeichen ('A') definiert.
 
 *Lange strings umbrechen*
 
@@ -65,10 +65,10 @@ char myString[] = "This is the first line"
 " etcetera";
 ----
 
-*Arrays von strings*
+*Arrays von `String`s*
 
-Wenn du mit großen Textmengen arbeitest, z. B. bei einem Projekt mit LCD-Display, ist es oft praktisch, ein String-Array zu erstellen.
-Da Strings selbst Arrays sind, handelt es sich eigentlich um ein zweidimensionales Array.
+Wenn du mit großen Textmengen arbeitest, z. B. bei einem Projekt mit LCD-Display, ist es oft praktisch, ein `String`-Array zu erstellen.
+Da `String`s selbst Arrays sind, handelt es sich eigentlich um ein zweidimensionales Array.
 
 
 In dem folgenden Code zeigt das Sternchen hinter dem Datentyp `char` "`char*`" an, dass dies ein Array von "`Zeigern`" ist.

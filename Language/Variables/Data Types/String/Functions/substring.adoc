@@ -17,9 +17,9 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Beschreibung
-Ruft einen Teilstring eines Strings ab. Der Startindex ist inklusive (das entsprechende Zeichen ist in der Teilzeichenfolge enthalten).
+Ruft einen Teilstring eines `String`s ab. Der Startindex ist inklusive (das entsprechende Zeichen ist in der Teilzeichenfolge enthalten).
 Der optionale Endindex ist jedoch exklusiv (das entsprechende Zeichen ist nicht in der Teilzeichenfolge enthalten).
-Wenn der Endindex weggelassen wird, wird der Teilstring bis zum Ende des Strings fortgesetzt.
+Wenn der Endindex weggelassen wird, wird der Teilstring bis zum Ende des `String`s fortgesetzt.
 
 [%hardbreaks]
 

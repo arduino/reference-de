@@ -48,7 +48,7 @@ Nichts.
 [float]
 === Beispielcode
 // Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu.   ►►►►► DIESER ABSCHNITT IST VERPFLICHTEND ◄◄◄◄◄
-Der `sizeof`-Operator ist nützlich, um mit Arrays (wie z.B. Strings) umzugehen. Dort ist es Standard, dass die Größe des Arrays sich ändert, ohne
+Der `sizeof`-Operator ist nützlich, um mit Arrays (wie z.B. `String`s) umzugehen. Dort ist es Standard, dass die Größe des Arrays sich ändert, ohne
 dass das ganze restliche Programm umgeschrieben werden muss.
 
 Das Programm gibt einen Text zeichenweise aus. Versuche, den Text zu ändern, das Programm wird weiter funktionieren.
@@ -93,7 +93,7 @@ for (byte i = 0; i < (sizeof(myValues)/sizeof(myValues[0])); i++) {
 }
 ----
 
-Beachte zusätzlich, dass ein richtig formattierter String mit dem `NULL`-Symbol beendet wird, also dem ASCII-Zeichen mit Nummer 0.
+Beachte zusätzlich, dass ein richtig formattierter `String` mit dem `NULL`-Symbol beendet wird, also dem ASCII-Zeichen mit Nummer 0.
 
 --
 // HOW TO USE SECTION ENDS

@@ -17,7 +17,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Beschreibung
-Mit der Funktion String `reserve()` kannst du einen Puffer für die Bearbeitung von Strings zuweisen.
+Mit der Funktion `String.reserve()` kannst du einen Puffer für die Bearbeitung von `String`s zuweisen.
 
 [%hardbreaks]
 
@@ -30,7 +30,7 @@ Mit der Funktion String `reserve()` kannst du einen Puffer für die Bearbeitung 
 [float]
 === Parameter
 `myString`: Eine Variable vom Typ `String`. Erlaubte Datentypen: `String`. +
-`size`: Ein `unsigned int`, der die Anzahl der Bytes im Speicher deklariert, um sie für die Bearbeitung von Strings zu speichern. Erlaubte Datentypen: `unsigned int`.
+`size`: Ein `unsigned int`, der die Anzahl der Bytes im Speicher deklariert, um sie für die Bearbeitung von `String`s zu speichern. Erlaubte Datentypen: `unsigned int`.
 
 
 [float]

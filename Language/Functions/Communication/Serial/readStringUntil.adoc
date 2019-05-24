@@ -14,7 +14,7 @@ title: Serial.readStringUntil()
 
 [float]
 === Beschreibung
-`readStringUntil()` liest Zeichen aus dem seriellen Puffer in einen String. Die Funktion wird abgebrochen, wenn eine Zeitüberschreitung auftritt (siehe link:../settimeout[setTimeout()]).
+`readStringUntil()` liest Zeichen aus dem seriellen Puffer in einen `String`. Die Funktion wird abgebrochen, wenn eine Zeitüberschreitung auftritt (siehe link:../settimeout[setTimeout()]).
 
 Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, die von ihr erbt (Wire, Serial usw.). Siehe die link:../../stream[Stream-Klasse] für weitere Informationen.
 

@@ -14,7 +14,7 @@ title: Stream.readString()
 
 [float]
 === Beschreibung
-`readString()` liest Zeichen aus einem Stream in einen String. Die Funktion wird abgebrochen, wenn eine Zeitüberschreitung auftritt (Siehe link:../streamsettimeout[setTimeout()]).
+`readString()` liest Zeichen aus einem Stream in einen `String`. Die Funktion wird abgebrochen, wenn eine Zeitüberschreitung auftritt (Siehe link:../streamsettimeout[setTimeout()]).
 
 Diese Funktion ist Teil der Stream-Klasse und kann von jeder Klasse aufgerufen werden, die von ihr erbt (Wire, Serial usw.). Siehe die link:../../stream[Stream-Klasse] für weitere Informationen.
 [%hardbreaks]

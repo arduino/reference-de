@@ -14,7 +14,7 @@ title: Stream.readStringUntil()
 
 [float]
 === Beschreibung
-`readStringUntil()` liest Zeichen aus einem Stream in einen String. Die Funktion wird beendet, wenn das Abschlusszeichen erkannt wird oder das Zeitlimit überschritten wird (Siehe link:../streamsettimeout[setTimeout()]).
+`readStringUntil()` liest Zeichen aus einem Stream in einen `String`. Die Funktion wird beendet, wenn das Abschlusszeichen erkannt wird oder das Zeitlimit überschritten wird (Siehe link:../streamsettimeout[setTimeout()]).
 
 Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, die von ihr erbt (Wire, Serial usw.). Siehe die link:../../stream[Stream-Klasse] für weitere Informationen.
 [%hardbreaks]
@@ -33,7 +33,7 @@ Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, 
 
 [float]
 === Rückgabewert
-Der gesamte String, gelesen von einem Stream bis zum Abschlusszeichen.
+Der gesamte `String`, gelesen von einem Stream bis zum Abschlusszeichen.
 
 --
 // OVERVIEW SECTION ENDS

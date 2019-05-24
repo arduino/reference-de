@@ -31,7 +31,7 @@ Eine andere Möglichkeit, dies auszudrücken, ist:
     0  0  0  1    (operand1 & operand2) - Ergebnis
 [%hardbreaks]
 
-In Arduino ist der Typ int ein 16-Bit-Wert. Wenn `&` zwischen zwei int-Ausdrücken verwendet wird, werden 16 UND-Operationen gleichzeitig ausgeführt.
+In Arduino ist der Typ `int` ein 16-Bit-Wert. Wenn `&` zwischen zwei `int`-Ausdrücken verwendet wird, werden 16 UND-Operationen gleichzeitig ausgeführt.
 [%hardbreaks]
 
 --

@@ -14,9 +14,9 @@ subCategories: [ "Datentypen" ]
 === Beschreibung
 Ganzzahlen sind der primäre Datentyp für die Nummernspeicherung.
 
-Auf dem Arduino Uno (und anderen ATmega-basierten Boards) speichert ein int einen 16-Bit-Wert (2 Byte).
+Auf dem Arduino Uno (und anderen ATmega-basierten Boards) speichert ein `int` einen 16-Bit-Wert (2 Byte).
 Dies ergibt einen Bereich von -32,768 bis 32,767 (Minimalwert -2^15 und Maximalwert (2^15) - 1).
-Auf den Arduino Due- und SAMD-basierten Boards (wie MKR1000 und Zero) speichert ein int einen 32-Bit-Wert (4 Byte).
+Auf den Arduino Due- und SAMD-basierten Boards (wie MKR1000 und Zero) speichert ein `int` einen 32-Bit-Wert (4 Byte).
 Dies ergibt einen Bereich von -2,147,483,648 to 2,147,483,647 (Minimalwert -2^31 und Maximalwert (2^31) - 1).
 
 Int speichert negative Zahlen mit einer Technik namens (https://de.wikipedia.org/wiki/Zweierkomplement[Zweierkomplement]).

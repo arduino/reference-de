@@ -1,7 +1,4 @@
 Add streamGetTimeout.adoc
-Array von `char` oder `byte`.
-Next todo: C:\Users\tim\Documents\Git\reference-de\Language\Variables\Data Types\String\Functions --> CharAt
-
 
 
 Texts
@@ -10,3 +7,5 @@ Texts
  Datentyp: `int`.
  Erlaubte Datentypen: `char`.
  Erlaubte Datentypen: Beliebiger Datentyp.
+ Erlaubte Datentypen: Array von `char` oder `byte`.
+ Array von `char` oder `byte`.

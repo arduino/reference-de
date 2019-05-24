@@ -39,7 +39,7 @@ Ermöglicht das Auffinden aller Instanzen des Zeichens oder der Zeichenfolge.
 
 [float]
 === Rückgabewert
-Der Index des Werts innerhalb des Strings oder -1, falls nicht gefunden.
+Der Index des Werts innerhalb des `String`s oder -1, falls nicht gefunden.
 
 --
 // OVERVIEW SECTION ENDS

@@ -17,8 +17,8 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Beschreibung
-Mit der Funktion String `replace()` kannst du alle Instanzen eines bestimmten Zeichens durch ein anderes Zeichen ersetzen.
-Du kannst auch `replace()` verwenden, um Teilstrings eines Strings durch einen anderen Teilstring zu ersetzen.
+Mit der Funktion `String.replace()` kannst du alle Instanzen eines bestimmten Zeichens durch ein anderes Zeichen ersetzen.
+Du kannst auch `replace()` verwenden, um Teilstrings eines `String`s durch einen anderen Teilstring zu ersetzen.
 
 [%hardbreaks]
 
