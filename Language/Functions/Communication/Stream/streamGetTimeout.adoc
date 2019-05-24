@@ -1,0 +1,45 @@
+---
+title: Stream.getTimeout()
+---
+
+
+
+
+= getTimeout()
+
+
+// OVERVIEW SECTION STARTS
+[#overview]
+--
+
+[float]
+=== Beschreibung
+`getTimeout()` gibt den von `setTimeout()` gesetzten Timeout-Wert zurück. Diese Funktion ist Teil der Stream-Klasse und kann von jeder Klasse aufgerufen werden, die von ihr erbt (Wire, Serial usw.).
+Siehe die link:../../stream[Stream-Klassen]-Hauptseite für weitere Informationen.
+[%hardbreaks]
+
+
+[float]
+=== Syntax
+`stream.getTimeout()`
+
+
+[float]
+=== Parameter
+Keine.
+
+
+[float]
+=== Gibt zurück
+Der von `stream.setTimeout()` festgelegte Timeout-Wert. Datentyp: `unsigned long`.
+
+--
+// OVERVIEW SECTION ENDS
+
+
+// HOW TO USE SECTION STARTS
+[#howtouse]
+--
+
+--
+// HOW TO USE SECTION ENDS
