@@ -18,8 +18,8 @@ title: Stream.parseInt()
 
 Genauergesagt:
 
-* Die Analyse stoppt, wenn für einen konfigurierbaren Timeout-Wert keine Zeichen gelesen wurden oder eine Nicht-Ziffer gelesen wird; +
-* Wenn zum Timeout keine gültigen Ziffern gelesen wurden, tritt ein (siehe link:../streamsettimeout[Stream.setTimeout()]) auf und 0 wird zurückgegeben;
+* Die Analyse stoppt, wenn für einen konfigurierbaren Timeout-Wert keine Zeichen gelesen wurden oder eine Nicht-Ziffer gelesen wird. +
+* Wenn zum Timeout keine gültigen Ziffern gelesen wurden, tritt ein (siehe link:../streamsettimeout[Stream.setTimeout()]) auf und 0 wird zurückgegeben.
 
 Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, die von ihr erbt (Wire, Serial usw.). Siehe die link:../../stream[Stream-Klasse] für weitere Informationen.
 [%hardbreaks]
