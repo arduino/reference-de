@@ -22,7 +22,7 @@ Bildet eine Zahl von einem Bereich in einen anderen ab. Das heißt, ein Wert von
 Beschränkt die Werte nicht innerhalb des Bereichs, da Werte außerhalb des Bereichs manchmal beabsichtigt und nützlich sind.
 Die `constrain()`-Funktion kann entweder vor oder nach dieser Funktion verwendet werden, wenn eine Begrenzung der Bereiche gewünscht werden.
 
-Beachte, dass die "unteren Grenzen" eines Bereichs größer oder kleiner als die "oberen Grenzen" sein können, sodass die Funktion "map()" beispielsweise zum Umkehren eines Arrays verwendet werden kann.
+Beachte, dass die "unteren Grenzen" eines Bereichs größer oder kleiner als die "oberen Grenzen" sein können, sodass die Funktion `map()` beispielsweise zum Umkehren eines Arrays verwendet werden kann.
 
 `y = map(x, 1, 50, 50, 1);`
 
