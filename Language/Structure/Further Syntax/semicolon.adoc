@@ -33,7 +33,8 @@ Wird verwendet, um eine Anweisung zu beenden.
 
 [float]
 === Beispielcode
-`int a = 13`
+`int a = 13;` +
+`float b = 17.1;`
 
 
 [float]
