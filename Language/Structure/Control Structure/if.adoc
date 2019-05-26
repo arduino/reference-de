@@ -52,7 +52,7 @@ Nichts.
 === Beispielcode
 // Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu.   ►►►►► DIESER ABSCHNITT IST VERPFLICHTEND ◄◄◄◄◄
 
-Die Klammern nach einem `if`Statement können weggelassen werden. Wenn dies getan wird, wird die nächste Zeile die einzige, die nach der Bedingung
+Die Klammern nach einem `if`-Statement können weggelassen werden. Wenn dies getan wird, wird die nächste Zeile die einzige, die nach der Bedingung
 ausgeführt wird.
 [%hardbreaks]
 
