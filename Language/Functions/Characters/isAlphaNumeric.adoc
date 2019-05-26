@@ -17,7 +17,7 @@ subCategories: [ "Zeichen" ]
 
 [float]
 === Beschreibung
-Analysiert, ob ein Zeichen alphanumerisch ist. (Buchstabe oder Zahl). Gibt `true zurück, wenn das Zeichen eine Zahl oder ein Buchstabe ist. 
+Analysiert, ob ein Zeichen alphanumerisch ist. (Buchstabe oder Zahl). Gibt `true` zurück, wenn das Zeichen eine Zahl oder ein Buchstabe ist. 
 [%hardbreaks]
 
 
