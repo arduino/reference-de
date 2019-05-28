@@ -38,7 +38,7 @@ Wenn du das `String`-Objekt ändern willst oder wenn es zerstört wird, wird ein
 
 [float]
 === Rückgabewert
-Ein Zeiger auf die C-Style-Version des aufrufenden `String`s.
+Ein Zeiger auf die C-Style-Version des aufrufenden Strings.
 
 --
 // OVERVIEW SECTION ENDS

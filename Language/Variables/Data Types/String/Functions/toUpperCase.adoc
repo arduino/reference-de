@@ -17,7 +17,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Beschreibung
-Ruft eine Großbuchstabenversion eines `String`s ab. Seit 1.0 ändert `toUpperCase()` den `String` anstatt einen neuen zurückzugeben.
+Ruft eine Großbuchstabenversion eines Strings ab. Seit 1.0 ändert `toUpperCase()` den `String` anstatt einen neuen zurückzugeben.
 [%hardbreaks]
 
 

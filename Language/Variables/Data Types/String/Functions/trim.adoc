@@ -17,7 +17,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Beschreibung
-Ruft eine Version des `String`s ab, wobei führende und nachgestellte Leerzeichen entfernt werden. Mit Version 1.0 ändert `trim()` den `String` anstatt einen neuen zurückzugeben.
+Ruft eine Version des Strings ab, wobei führende und nachgestellte Leerzeichen entfernt werden. Mit Version 1.0 ändert `trim()` den `String` anstatt einen neuen zurückzugeben.
 
 [%hardbreaks]
 

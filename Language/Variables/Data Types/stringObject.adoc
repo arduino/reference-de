@@ -12,7 +12,7 @@ subCategories: [ "Datentypen" ]
 
 [float]
 === Beschreibung
-Erstellt eine Instanz der `String`-Klasse. Es gibt mehrere Versionen, die `String`s aus verschiedenen Datentypen erstellen (d. h. als Zeichenfolgen formatieren), darunter:
+Erstellt eine Instanz der `String`-Klasse. Es gibt mehrere Versionen, die Strings aus verschiedenen Datentypen erstellen (d. h. als Zeichenfolgen formatieren), darunter:
 
 * Eine konstante Zeichenfolge in Anführungszeichen (d. h. ein Char-Array)
 * Ein einzelnes konstantes Zeichen in einfachen Anführungszeichen
@@ -77,7 +77,7 @@ Eine Instanz der `String`-Klasse.
 
 [float]
 === Beispielcode
-Alle folgenden Angaben sind gültige Deklarationen für `String`s.
+Alle folgenden Angaben sind gültige Deklarationen für Strings.
 [source,arduino]
 ----
 String stringOne = "Hello String";                        // Ein konstanter String

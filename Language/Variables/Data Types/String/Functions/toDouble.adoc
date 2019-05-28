@@ -19,8 +19,8 @@ subCategories: [ "StringObject Function" ]
 === Beschreibung
 Wandelt einen gültigen `String` in ein Double um. Die Eingabezeichenfolge sollte mit einer Ziffer beginnen.
 Wenn der `String` Nicht-Zahlen als Zeichen enthält, wird die Konvertierung abgebrochen.
-Beispielsweise werden die `String`s "123.45", "123" und "123fish" in 123.45, 123.00 und 123.00 konvertiert.
-Beachte, dass "123.456" mit 123.46 approximiert wird. Beachte auch, dass Floats nur eine Genauigkeit von 6-7 Dezimalstellen haben und längere `String`s möglicherweise abgeschnitten werden.
+Beispielsweise werden die Strings "123.45", "123" und "123fish" in 123.45, 123.00 und 123.00 konvertiert.
+Beachte, dass "123.456" mit 123.46 approximiert wird. Beachte auch, dass Floats nur eine Genauigkeit von 6-7 Dezimalstellen haben und längere Strings möglicherweise abgeschnitten werden.
 
 [%hardbreaks]
 

@@ -17,7 +17,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Beschreibung
-Vergleicht zwei `String`s und testet, ob einer vor oder nach dem anderen kommt oder ob sie gleich sind.
+Vergleicht zwei Strings und testet, ob einer vor oder nach dem anderen kommt oder ob sie gleich sind.
 Die Zeichenfolgen werden zeichenweise verglichen, wobei die ASCII-Werte der Zeichen verwendet werden.
 Das bedeutet zum Beispiel, dass 'a' vor 'b' liegt, aber nach 'A'. Zahlen stehen vor Buchstaben.
 

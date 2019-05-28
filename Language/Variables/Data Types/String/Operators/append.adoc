@@ -18,7 +18,7 @@ subCategories: [ "StringObject Operator" ]
 
 [float]
 === Beschreibung
-Es verkettet `String`s mit anderen Daten.
+Es verkettet Strings mit anderen Daten.
 
 [%hardbreaks]
 

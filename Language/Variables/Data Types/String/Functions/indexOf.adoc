@@ -17,7 +17,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Beschreibung
-Sucht ein Zeichen oder eine Zeichenfolge in einer anderen Zeichenfolge. Sucht standardmäßig vom Anfang des `String`s, kann aber auch von einem bestimmten Index aus beginnen.
+Sucht ein Zeichen oder eine Zeichenfolge in einer anderen Zeichenfolge. Sucht standardmäßig vom Anfang des Strings, kann aber auch von einem bestimmten Index aus beginnen.
 Ermöglicht das Auffinden aller Instanzen des Zeichens oder der Zeichenfolge.
 
 
@@ -39,7 +39,7 @@ Ermöglicht das Auffinden aller Instanzen des Zeichens oder der Zeichenfolge.
 
 [float]
 === Rückgabewert
-Der Index des Werts innerhalb des `String`s oder -1, falls nicht gefunden.
+Der Index des Werts innerhalb des Strings oder -1, falls nicht gefunden.
 
 --
 // OVERVIEW SECTION ENDS

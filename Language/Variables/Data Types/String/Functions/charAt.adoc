@@ -17,7 +17,7 @@ subCategories: [ "StringObject Function" ]
 
 [float]
 === Beschreibung
-Greift auf ein bestimmtes Zeichen des `String`s zu.
+Greift auf ein bestimmtes Zeichen des Strings zu.
 
 [%hardbreaks]
 

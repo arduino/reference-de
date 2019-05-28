@@ -18,11 +18,11 @@ subCategories: [ "StringObject Operator" ]
 
 [float]
 === Beschreibung
-Testet, ob die Zeichenfolge links kleiner oder gleich der Zeichenfolge rechts ist. Dieser Operator wertet `String`s in alphabetischer Reihenfolge nach dem ersten Zeichen aus, bei dem sich die beiden unterscheiden.
+Testet, ob die Zeichenfolge links kleiner oder gleich der Zeichenfolge rechts ist. Dieser Operator wertet Strings in alphabetischer Reihenfolge nach dem ersten Zeichen aus, bei dem sich die beiden unterscheiden.
 Also zum Beispiel "a" <"b" und "1" <2 ", aber" 999 ">" 1000 ", weil 9 nach 1 kommt.
 
-Achtung: `String`-Vergleichsoperatoren können beim Vergleichen von numerischen `String`s verwirrend sein, da die Zahlen als `String`s und nicht als Zahlen behandelt werden.
-Wenn du Zahlen numerisch vergleichen musst, vergleiche sie als `int`, `float` oder `long` und nicht als `String`s.
+Achtung: `String`-Vergleichsoperatoren können beim Vergleichen von numerischen Strings verwirrend sein, da die Zahlen als Strings und nicht als Zahlen behandelt werden.
+Wenn du Zahlen numerisch vergleichen musst, vergleiche sie als `int`, `float` oder `long` und nicht als Strings.
 
 [%hardbreaks]
 
