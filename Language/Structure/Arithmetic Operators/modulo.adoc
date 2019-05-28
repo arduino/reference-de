@@ -76,7 +76,7 @@ void loop()
 
 [float]
 === Anmerkungen und Warnungen
-Der Modulo-Operator arbeitet nicht mit float-Werten.
+Der Modulo-Operator arbeitet nicht mit `float`-Werten.
 [%hardbreaks]
 
 --

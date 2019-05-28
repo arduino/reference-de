@@ -24,7 +24,7 @@ Der einzige Zweck von Kommentaren besteht darin, zu helfen (zu verstehen oder si
 [%hardbreaks]
 
 Ein *einzeiliger Kommentar* beginnt mit `//` (zwei nebeneinanderliegende Schrägstriche).
-Dieser Kommentar endet automatisch am Ende einer Zeile. Alles, was bis zum Ende einer Zeile auf "//" folgt, wird vom Compiler ignoriert.
+Dieser Kommentar endet automatisch am Ende einer Zeile. Alles, was bis zum Ende einer Zeile auf `//` folgt, wird vom Compiler ignoriert.
 --
 // OVERVIEW SECTION ENDS
 

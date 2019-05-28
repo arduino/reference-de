@@ -116,9 +116,9 @@ A bis F können auch in lower case (a bis f) verwendet werden.
 
 Per default werdem Integerkonstanten als Integer behandelt. Zur Verwendung von Integerkonstanten als andere Datentypen, siehe die folgenden Formatierer:
 
-  - 'u' oder 'U': Ändert den Datentyp der Konstante auf unsigned int. Beispiel: 33u
-  - a 'l' oder 'L': Ändert den Datentyp der Konstante auf long. Beispiel: 100000L
-  - a 'ul' oder 'UL': Ändert den Datentyp der Konstante auf unsigned long. Beispiel: 32767ul
+  - 'u' oder 'U': Ändert den Datentyp der Konstante auf unsigned int. Beispiel: `33u`
+  - a 'l' oder 'L': Ändert den Datentyp der Konstante auf long. Beispiel: `100000L`
+  - a 'ul' oder 'UL': Ändert den Datentyp der Konstante auf unsigned long. Beispiel: `32767ul`
 
 [%hardbreaks]
 

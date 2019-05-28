@@ -18,7 +18,7 @@ subCategories: [ "Kontrollstruktur" ]
 [float]
 === Beschreibung
 [%hardbreaks]
-Eine `while`-Schleife läuft solange weiter (Eventuell auch unendlich), bis die Bedingung in den Klammern "()" `false` wird. Wenn die Variable in der Schleife
+Eine `while`-Schleife läuft solange weiter (Eventuell auch unendlich), bis die Bedingung in den Klammern `()` `false` wird. Wenn die Variable in der Schleife
 sich nie ändert, läuft die Schleife unendlich. Dies kann z.B. durch das Hochzählen einer Variable oder das Lesen eines Sensorwertes erfolgen.
 
 [float]
