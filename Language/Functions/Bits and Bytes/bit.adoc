@@ -33,7 +33,7 @@ Berechnet den Wert des angegebenen Bits (Bit 0 ist 1, Bit 1 ist 2, Bit 2 ist 4, 
 
 [float]
 === Rückgabewert
-Der Wert des Bits
+Der Wert des Bits.
 
 --
 // OVERVIEW SECTION ENDS

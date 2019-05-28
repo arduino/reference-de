@@ -108,7 +108,7 @@ void setup() {
 void loop() {}
 ----
 [%hardbreaks]
-Danke an Jeff Gray für das Mega-Beispiel
+Danke an Jeff Gray für das Mega-Beispiel.
 
 
 [float]

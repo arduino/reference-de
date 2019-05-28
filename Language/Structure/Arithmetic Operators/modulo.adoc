@@ -31,9 +31,9 @@ Das `%` (Prozent) -Symbol wird zur Ausführung der Modulo-Operation verwendet.
 
 [float]
 === Parameter
-`remainder`: Variable. Erlaubte Datentypen: `int`, `float`, `double` +
-`dividend`: Variable oder Konstante. Erlaubte Datentypen: `int` +
-`divisor`: *Nicht null* Variable oder Konstante. Erlaubte Datentypen: `int`
+`remainder`: Variable. Erlaubte Datentypen: `int`, `float`, `double`. +
+`dividend`: Variable oder Konstante. Erlaubte Datentypen: `int`. +
+`divisor`: *Nicht null* Variable oder Konstante. Erlaubte Datentypen: `int`.
 
 
 --

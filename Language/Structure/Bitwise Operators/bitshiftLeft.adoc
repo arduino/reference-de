@@ -29,8 +29,8 @@ Der Left-Shift-Operator `<<` bewirkt, dass die Bits des linken Operanden um die 
 
 [float]
 === Parameter
-`variable`: Erlaubte Datentypen: `byte`, `int`, `long` +
-`number_of_bits`: Eine Zahl < = 32. Erlaubte Datentypen: `int`
+`variable`: Erlaubte Datentypen: `byte`, `int`, `long`. +
+`number_of_bits`: Eine Zahl < = 32. Erlaubte Datentypen: `int`.
 
 
 --

@@ -29,9 +29,9 @@ subCategories: [ "Arithmetische Operatoren" ]
 
 [float]
 === Parameter
-`difference`: Variable. Erlaubte Datentypen: `int`, `float`, `double`, `byte`, `short`, `long` +
-`operand1`: Variable oder Konstante. Erlaubte Datentypen: `int`, `float`, `double`, `byte`, `short`, `long` +
-`operand2`: Variable oder Konstante. Erlaubte Datentypen: `int`, `float`, `double`, `byte`, `short`, `long`
+`difference`: Variable. Erlaubte Datentypen: `int`, `float`, `double`, `byte`, `short`, `long`. +
+`operand1`: Variable oder Konstante. Erlaubte Datentypen: `int`, `float`, `double`, `byte`, `short`, `long`. +
+`operand2`: Variable oder Konstante. Erlaubte Datentypen: `int`, `float`, `double`, `byte`, `short`, `long`.
 
 
 --

@@ -29,8 +29,8 @@ Dies ist eine praktische Abkürzung, um die Division einer Variablen mit einer a
 
 [float]
 === Parameter
-`x`: Variable. Erlaubte Datentypen: `int`, `float`, `double`, `byte`, `short`, `long` +
-`y`: *nicht null* Variable oder Konstante. Erlaubte Datentypen: `int`, `float`, `double`, `byte`, `short`, `long`
+`x`: Variable. Erlaubte Datentypen: `int`, `float`, `double`, `byte`, `short`, `long`. +
+`y`: *nicht null* Variable oder Konstante. Erlaubte Datentypen: `int`, `float`, `double`, `byte`, `short`, `long`.
 
 
 --

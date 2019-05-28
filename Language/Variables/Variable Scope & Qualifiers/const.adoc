@@ -39,7 +39,7 @@ benutzt werden sollte.
 [float]
 === Beispielcode
 // Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu.   ►►►►► DIESER ABSCHNITT IST VERPFLICHTEND ◄◄◄◄◄
-Der Code zeigt die Verwendung von konstanten Variablen
+Der Code zeigt die Verwendung von konstanten Variablen.
 
 [source,arduino]
 ----

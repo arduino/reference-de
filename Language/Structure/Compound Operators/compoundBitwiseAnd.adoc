@@ -37,8 +37,8 @@ Ein Überblick über den bitweisen AND `&` Operator:
 
 [float]
 === Parameter
-`x`: Variable. Erlaubte Datentypen: `char`, `int`, `long` +
-`y`: Variable oder Konstante. Erlaubte Datentypen: `char`, `int`, `long`
+`x`: Variable. Erlaubte Datentypen: `char`, `int`, `long`. +
+`y`: Variable oder Konstante. Erlaubte Datentypen: `char`, `int`, `long`.
 
 
 --

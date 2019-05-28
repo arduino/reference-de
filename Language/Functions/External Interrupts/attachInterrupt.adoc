@@ -145,7 +145,7 @@ Alte Sketches haben oft direkte Interruptnummern angegeben. Oft wurden Pin 0 (Di
 zeigt, welche Interruptpins auf welchem Board verfügbar sind.
 
 In der Tabelle unten sind die Interruptpins definiert als die Nummer, die an `attachInterrupt()` übergeben wird. Aus historischen Gründen stimmt
-diese Nummerierung nicht immer mit den Inputnummern auf dem ATmega-Chip überein (z.B. int.0 ist INT4 auf dem ATmega2560-Chip)
+diese Nummerierung nicht immer mit den Inputnummern auf dem ATmega-Chip überein (z.B. int.0 ist INT4 auf dem ATmega2560-Chip).
 
 [options="header"]
 |===================================================

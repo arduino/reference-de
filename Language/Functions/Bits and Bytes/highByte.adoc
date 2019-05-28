@@ -28,7 +28,7 @@ Liest das most-significant (linkeste) Bit eines Wortes (oder das zweitkleinste B
 
 [float]
 === Parameter
-`x`: Wert von beliebigen Typ
+`x`: Wert von beliebigen Typ.
 
 [float]
 === Rückgabewert

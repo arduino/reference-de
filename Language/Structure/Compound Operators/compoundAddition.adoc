@@ -29,8 +29,8 @@ Dies ist eine praktische Abkürzung, um eine Variable mit einer anderen Konstant
 
 [float]
 === Parameter
-`x`: Variable. Erlaubte Datentypen: `int`, `float`, `double`, `byte`, `short`, `long` +
-`y`: Variable oder Konstante. Erlaubte Datentypen: `int`, `float`, `double`, `byte`, `short`, `long`
+`x`: Variable. Erlaubte Datentypen: `int`, `float`, `double`, `byte`, `short`, `long`. +
+`y`: Variable oder Konstante. Erlaubte Datentypen: `int`, `float`, `double`, `byte`, `short`, `long`.
 
 
 --

@@ -29,9 +29,9 @@ subCategories: [ "Arithmetische Operatoren" ]
 
 [float]
 === Parameter
-`sum`: Variable. Erlaubte Datentypen: `int`, `float`, `double`, `byte`, `short`, `long` +
-`operand1`: Variable oder Konstante. Erlaubte Datentypen: `int`, `float`, `double`, `byte`, `short`, `long` +
-`operand2`: Variable oder Konstante. Erlaubte Datentypen: `int`, `float`, `double`, `byte`, `short`, `long`
+`sum`: Variable. Erlaubte Datentypen: `int`, `float`, `double`, `byte`, `short`, `long`. +
+`operand1`: Variable oder Konstante. Erlaubte Datentypen: `int`, `float`, `double`, `byte`, `short`, `long`. +
+`operand2`: Variable oder Konstante. Erlaubte Datentypen: `int`, `float`, `double`, `byte`, `short`, `long`.
 --
 // OVERVIEW SECTION ENDS
 
@@ -58,7 +58,7 @@ c = a + b; // Die Variable 'c' erhält einen Wert von 15, nachdem diese Anweisun
 === Anmerkungen und Warnungen
 1. Die Additionsoperation kann überlaufen, wenn das Ergebnis größer ist als das Ergebnis, das im Datentyp gespeichert werden kann (z. B. ergibt das Hinzufügen von 1 zu einer Ganzzahl mit dem Wert 32,767 den Wert -32,768).
 
-2. Wenn eine der Zahlen (Operanden) vom Typ float oder vom Typ double ist, wird für die Berechnung Fließkomma-Mathematik verwendet.
+2. Wenn eine der Zahlen (Operanden) vom Typ `float` oder vom Typ `double` ist, wird für die Berechnung Fließkomma-Mathematik verwendet.
 
 3. Wenn die Operanden vom Datentyp float / double sind und die Variable, die die Summe speichert, eine Ganzzahl ist, wird nur die Ganzzahl gespeichert, der Bruchteil der Zahl geht verloren.
 

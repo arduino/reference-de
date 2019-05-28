@@ -28,7 +28,7 @@ Liest das least-significant (rechteste) Bit eines Wortes oder größeren Datenty
 
 [float]
 === Parameter
-`x`: Wert von beliebigen Typ
+`x`: Wert von beliebigen Typ.
 
 
 [float]

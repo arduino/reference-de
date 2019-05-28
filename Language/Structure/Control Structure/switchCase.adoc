@@ -47,8 +47,8 @@ switch (var) {
 
 [float]
 === Parameter
-`var`: Eine Variable, die mit den eizelnen Fällen verglichen werden sollen. Erlaubte Datentypen: `int`, `char` +
-`label1`, `label2`: Konstanten. Erlaubte Datentypen: `int`, `char`
+`var`: Eine Variable, die mit den eizelnen Fällen verglichen werden sollen. Erlaubte Datentypen: `int`, `char`. +
+`label1`, `label2`: Konstanten. Erlaubte Datentypen: `int`, `char`.
 
 
 [float]

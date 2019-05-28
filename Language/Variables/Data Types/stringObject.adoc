@@ -23,7 +23,7 @@ Erstellt eine Instanz der `String`-Klasse. Es gibt mehrere Versionen, die String
 * Eine konstante `int` oder `long int` Variable, die eine angegebene Basis verwendet
 * Ein `float` oder `double` mit einer bestimmten Anzahl Dezimalstellen
 
-Beim Konstruieren einer Zeichenfolge aus einer Zahl wird eine Zeichenfolge erstellt, die die ASCII-Darstellung dieser Zahl enthält. Der Standard ist also Basis zehn
+Beim Konstruieren einer Zeichenfolge aus einer Zahl wird eine Zeichenfolge erstellt, die die ASCII-Darstellung dieser Zahl enthält. Der Standard ist also Basis zehn:
 [source,arduino]
 ----
 String thisString = String(13);

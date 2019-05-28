@@ -29,8 +29,8 @@ Dies ist eine praktische Abkürzung, um den Rest zu berechnen, wenn eine ganze Z
 
 [float]
 === Parameter
-`x`: Variable. Erlaubte Datentypen: `int` +
-`divisor`: *nicht null* Variable oder Konstante. Erlaubte Datentypen: `int`
+`x`: Variable. Erlaubte Datentypen: `int`. +
+`divisor`: *nicht null* Variable oder Konstante. Erlaubte Datentypen: `int`.
 
 
 --
