@@ -38,7 +38,7 @@ Die Funktion gibt die Zeichen bis zum letzten Zeichen vor dem angegebenen Abschl
 
 [float]
 === Rückgabewert
-`size_t`
+Die Anzahl der Bytes, die im Puffer abgelegt wurden. Datentyp: `size_t`.
 
 --
 // OVERVIEW SECTION ENDS
