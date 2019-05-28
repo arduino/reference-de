@@ -19,7 +19,7 @@ Gesendet werden können ASCII-Zeichen und link:../keyboardmodifiers[Hotkeys].
 
 Nur ASCII-Zeichen, die auf der Tastatur zu finden sind, werden unterstützt. Z.B. ASCII 8 (Rücktaste) würde funktionieren, ASCII25 (Ersetzungszeichen) nicht.
 Wenn Großbuchstaben gesendet werden sollen, sendet `Keyboard.write()` den Shift-Hotkey plus das gewünschte Zeichen. Wenn ein numerischer Wert übergeben wird,
-sendet die Funktion das ASCII-Zeichen, z.B. Keyboard.write(97) wird zu 'a'.
+sendet die Funktion das ASCII-Zeichen, z.B. Keyboard.write(97) wird zu `'a'`.
 
 Für eine Liste an ASCII-Zeichen siehe http://www.asciitable.com/[ASCIITable.com].
 [%hardbreaks]
@@ -61,7 +61,7 @@ Die Anzahl der gesendeten Bytes. Datentyp: `size_t`.
 === Besipielcode
 // Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu.   ►►►►► DIESER ABSCHNITT IST VERPFLICHTEND ◄◄◄◄◄
 
-Sendet ein ASCII-'A' über die Keyboard-Bibliothek, wenn der angeschlossene Button gedrückt wird.
+Sendet ein ASCII-`'A'` über die Keyboard-Bibliothek, wenn der angeschlossene Button gedrückt wird.
 
 [source,arduino]
 ----

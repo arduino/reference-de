@@ -52,7 +52,7 @@ Wenn du feststellst, dass sich etwas merkwürdig verhält (mit Zeichen, die sich
 
 *Einfache oder doppelte Anführungszeichen?*
 
-Strings werden immer in doppelten Anführungszeichen ("Abc") und chars in einfachen Anführungszeichen ('A') definiert.
+Strings werden immer in doppelten Anführungszeichen ("Abc") und chars in einfachen Anführungszeichen (`'A'`) definiert.
 
 *Lange strings umbrechen*
 

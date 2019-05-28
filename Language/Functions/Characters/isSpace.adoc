@@ -17,7 +17,7 @@ subCategories: [ "Zeichen" ]
 
 [float]
 === Beschreibung
-Analysiert, ob ein Zeichen ein Leerzeichen, formfeed ('\f'), newline ('\n'), carriage return ('\r'), horizontal tab ('\t') oder vertical tab ('\v')) ist. Gibt `true` zurück, wenn das Zeichen ein Leerzeichen ist.
+Analysiert, ob ein Zeichen ein Leerzeichen, formfeed (`'\f'`), newline (`'\n'`), carriage return (`'\r'`), horizontal tab (`'\t'`) oder vertical tab (`'\v'`)) ist. Gibt `true` zurück, wenn das Zeichen ein Leerzeichen ist.
 [%hardbreaks]
 
 
@@ -33,7 +33,7 @@ Analysiert, ob ein Zeichen ein Leerzeichen, formfeed ('\f'), newline ('\n'), car
 
 [float]
 === Rückgabewert
-`true`: wenn das Zeichen ein Leerzeichen, formfeed ('\f'), newline ('\n'), carriage return ('\r'), horizontal tab ('\t') oder vertical tab ('\v')) ist.
+`true`: wenn das Zeichen ein Leerzeichen, formfeed (`'\f'`), newline (`'\n'`), carriage return (`'\r'`), horizontal tab (`'\t'`) oder vertical tab (`'\v'`)) ist.
 
 --
 // OVERVIEW SECTION ENDS

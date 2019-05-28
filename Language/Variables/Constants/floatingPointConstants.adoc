@@ -37,7 +37,7 @@ auf den Wert, den der Ausdruck ergibt, gesetzt.
 
 [float]
 === Anmerkungen und Warnungen
-Gleitkommazahlkonstanten können auch wissenschaftliche Notationen enthalten. 'E' und 'e' werden als Exponentenindikatoren verwendet.
+Gleitkommazahlkonstanten können auch wissenschaftliche Notationen enthalten. `'E'` und `'e'` werden als Exponentenindikatoren verwendet.
 [%hardbreaks]
 
 |===

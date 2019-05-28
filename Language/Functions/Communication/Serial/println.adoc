@@ -14,7 +14,7 @@ title: Serial.println()
 
 [float]
 === Beschreibung
-Druckt Daten an den seriellen Anschluss als von Menschen lesbarer ASCII-Text, gefolgt von einem Carriage-Return (ASCII 13 oder '\r') und einem Zeilenvorschubzeichen (ASCII 10 oder '\n').
+Druckt Daten an den seriellen Anschluss als von Menschen lesbarer ASCII-Text, gefolgt von einem Carriage-Return (ASCII 13 oder `'\r'`) und einem Zeilenvorschubzeichen (ASCII 10 oder `'\n'`).
 Dieser Befehl hat die gleiche Form wie link:../print[Serial.print()].
 [%hardbreaks]
 

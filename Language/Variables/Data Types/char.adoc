@@ -12,10 +12,10 @@ subCategories: [ "Datentypen" ]
 
 [float]
 === Beschreibung
-Ein Datentyp zum Speichern eines Zeichenwerts. Zeichenliterale werden in einfache Anführungszeichen geschrieben: 'A' (für mehrere Zeichen - Zeichenfolgen - verwende doppelte Anführungszeichen: "ABC").
+Ein Datentyp zum Speichern eines Zeichenwerts. Zeichenliterale werden in einfache Anführungszeichen geschrieben: `'A'` (für mehrere Zeichen - Zeichenfolgen - verwende doppelte Anführungszeichen: "ABC").
 
 Zeichen werden jedoch als Zahlen gespeichert. Du kannst die spezifische Kodierung im link:https://www.arduino.cc/en/Reference/ASCIIchart[ASCII-Chart] sehen.
-Dies bedeutet, dass es möglich ist, Zeichen zu berechnen, bei denen der ASCII-Wert des Zeichens verwendet wird (z. B. hat 'A' + 1 den Wert 66, da der ASCII-Wert des Großbuchstaben A 65 ist).
+Dies bedeutet, dass es möglich ist, Zeichen zu berechnen, bei denen der ASCII-Wert des Zeichens verwendet wird (z. B. hat `'A'` + 1 den Wert 66, da der ASCII-Wert des Großbuchstaben A 65 ist).
 Siehe link:../../../functions/communication/serial/println[`_Serial_.println`] für weitere Informationen, wie Zeichen in Zahlen übersetzt werden.
 
 Die Größe des `char`-Datentyps beträgt mindestens 8 Bit. Es wird empfohlen, `char` nur zum Speichern von Zeichen zu verwenden. Verwende für einen vorzeichenlosen 1-Byte-Datentyp (8 Bit) den link:../byte[byte]-Datentyp.
