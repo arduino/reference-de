@@ -32,7 +32,7 @@ Wenn du `pinMode()` nicht auf `OUTPUT` setzt, aber eine LED auf den Pin anschlie
 
 [float]
 === Parameter
-`pin`: Die Pinnummer. +
+`pin`: Die Arduino-Pinnummer. +
 `value`: `HIGH` oder `LOW`.
 
 

@@ -77,7 +77,7 @@ Für weitere Informationen zu Interrupts, siehe auch http://gammon.com.au/interr
 [float]
 === Parameter
 `interrupt`: Die Interruptnummer. Erlaubte Datentypen: `int`.+
-`pin`: Die Pinnummer. +
+`pin`: Die Arduino-Pinnummer. +
 `ISR`: Die Interrupt Service Routine, die aufgerufen werden soll. Die Funktion darf keine Parameter haben und nichts zurückgeben. +
 `mode`: Definiert, wann der Interrupt getriggert werden soll. 4 Konstanten sind dafür definiert: +
 

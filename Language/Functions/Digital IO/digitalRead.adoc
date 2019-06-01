@@ -28,7 +28,7 @@ Liest einen Wert von einem vorgegebenen Digitalpin ein, entweder `HIGH` oder `LO
 
 [float]
 === Parameter
-`pin`: Die Nummer des Digitalpins, welcher gelesen werden soll.
+`pin`: Die Nummer des Arduino-Digitalpins, welcher gelesen werden soll.
 
 
 [float]
