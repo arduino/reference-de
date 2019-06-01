@@ -27,7 +27,7 @@ Deaktiviert den übergebenen Interrupt.
 [float]
 === Parameter
 `interrupt`: Die Interruptnummer des Interrupts, der deaktiviert werden soll (Siehe link:../attachinterrupt[attachInterrupt()] für weitere Informationen). +
-`pin`: Die Interruptnummer des Interrupts, der deaktiviert werden soll.
+`pin`: Die Arduino-Pinnummer des Interrupts, der deaktiviert werden soll.
 
 
 [float]
