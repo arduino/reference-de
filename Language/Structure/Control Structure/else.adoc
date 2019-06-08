@@ -68,13 +68,13 @@ Der folgende Code testet einige Werte in den Bedingungen ab. Im Detail handelt e
 [source,arduino]
 ----
 if (temperature >= 70) {
-  //Schalte das System ab
+  // Schalte das System ab.
 }
-else if (temperature >= 60 && temperature < 70) {
-  //Schicke dem Benutzer eine Warnung
+else if (temperature >= 60) // 60 <= temperature < 70
+  // Schicke dem Benutzer eine Warnung.
 }
-else {
-  //Keine Probleme erkannt.
+else { // temperature < 60
+  // Keine Probleme erkannt.
 }
 ----
 
