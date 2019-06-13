@@ -15,18 +15,6 @@ subCategories: [ "Datentypen" ]
 Datentyp für Fließkommazahlen, eine Zahl mit Dezimalpunkt.
 Fließkommazahlen werden häufig zur Annäherung an analoge und kontinuierliche Werte verwendet, da sie eine höhere Auflösung als ganze Zahlen haben.
 Fließkommazahlen können bis zu 3.4028235E+38 und bis zu -3.4028235E+38 betragen. Sie werden als 32 Bit (4 Byte) Informationen gespeichert.
-
-Floats haben eine Genauigkeit von nur 6-7 Dezimalstellen. Das bedeutet die Gesamtzahl der Ziffern, nicht die Zahl rechts vom Dezimalpunkt.
-Im Gegensatz zu anderen Plattformen, bei denen du durch die Verwendung eines `double`s (z. B. bis zu 15 Ziffern) eine höhere Genauigkeit erzielen kannst, hat `double` auf dem Arduino die gleiche Größe wie float.
-
-Fließkommazahlen sind nicht genau und können beim Vergleich zu seltsamen Ergebnissen führen. Zum Beispiel kann 6.0 / 3.0 nicht gleich 2.0 sein.
-Du solltest stattdessen überprüfen, ob der absolute Wert der Differenz zwischen den Zahlen geringer als eine kleine Zahl ist.
-
-Die Gleitkomma-Mathematik ist bei Berechnungen auch viel langsamer als die Ganzzahl-Mathematik.
-Es sollte also vermieden werden, wenn beispielsweise eine Schleife für eine kritische Timing-Funktion mit Höchstgeschwindigkeit laufen muss.
-Programmierer gehen oft etwas in die Länge und konvertieren Gleitkomma-Berechnungen in Ganzzahl-Mathematik, um die Geschwindigkeit zu erhöhen.
-
-Wenn du mit floats rechnest, musst du ein Dezimalzeichen hinzufügen, andernfalls wird es als `int` behandelt. Siehe die link:../../constants/floatingpointconstants[Fließpunkt]-Konstanten-Seite für weitere Informationen.
 [%hardbreaks]
 
 [float]
@@ -68,16 +56,56 @@ x = 1;
 y = x / 2;          // y enthält jetzt 0, ints können keine Brüche enthalten
 z = (float)x / 2.0; // z enthält jetzt .5 (Du musst 2.0 verwenden, nicht 2)
 ----
+[%hardbreaks]
 
+[float]
+=== Anmerkungen und Warnungen
+Wenn du mit floats rechnest, musst du ein Dezimalzeichen hinzufügen, andernfalls wird es als `int` behandelt. Siehe die link:../../constants/floatingpointconstants[Fließpunkt]-Konstanten-Seite für weitere Informationen.
+
+Floats haben eine Genauigkeit von nur 6-7 Dezimalstellen. Das bedeutet die Gesamtzahl der Ziffern, nicht die Zahl rechts vom Dezimalpunkt.
+Im Gegensatz zu anderen Plattformen, bei denen du durch die Verwendung eines `double`s (z. B. bis zu 15 Ziffern) eine höhere Genauigkeit erzielen kannst, hat `double` auf dem Arduino die gleiche Größe wie `float`.
+
+Fließkommazahlen sind nicht genau und können beim Vergleich zu seltsamen Ergebnissen führen. Zum Beispiel kann `6.0 / 3.0` nicht gleich `2.0` sein.
+Du solltest stattdessen überprüfen, ob der absolute Wert der Differenz zwischen den Zahlen geringer als eine kleine Zahl ist.
+
+Die Konvertierung von Gleitkomma- in Ganzzahl-Mathematik führt zu Kürzungen:
+[source,arduino]
+----
+float x = 2.9; // Eine float-Variable
+int y = x;  // 2
+----
+
+Wenn du stattdessen während des Konvertierungsprozesses abrunden möchtest, musst du `0,5` addieren:
+
+[source,arduino]
+----
+float x = 2.9;
+int y = x + 0.5;  // 3
+----
+
+oder die `round()`-Funktion nutzen:
+
+[source,arduino]
+----
+float x = 2.9;
+int y = round(x);  // 3
+----
+
+Die Gleitkomma-Mathematik ist bei Berechnungen auch viel langsamer als die Ganzzahl-Mathematik.
+Es sollte also vermieden werden, wenn beispielsweise eine Schleife für eine kritische Timing-Funktion mit Höchstgeschwindigkeit laufen muss.
+Programmierer gehen oft etwas in die Länge und konvertieren Gleitkomma-Berechnungen in Ganzzahl-Mathematik, um die Geschwindigkeit zu erhöhen.
 
 --
 // HOW TO USE SECTION ENDS
+
+
 
 
 // SEE ALSO SECTION STARTS
 [#see_also]
 --
 
+[%hardbreaks]
 [float]
 === Siehe auch
 
