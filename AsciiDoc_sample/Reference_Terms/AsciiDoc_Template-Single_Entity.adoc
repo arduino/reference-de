@@ -12,8 +12,6 @@ subCategories: [ "Name der Unterkategorie" ]
 
 
 
-
-
 // SEITENTITEL
 = Titel
 
@@ -69,7 +67,6 @@ Nichts.
 // Beschreibe, worum es im Beispielcode geht, und füge relevanten Code hinzu   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
 Stellt den Ausgang der LED proportional zum vom Potentiometer gelesenen Wert ein.
 
-
 [source,arduino]
 // Füge relevanten Code hinzu, der die Verwendung des Referenzbegriffs veranschaulicht.
 // Bitte beachte, dass beim Kopieren und Einfügen von Code am Anfang jeder Codezeile einige Leerzeichen hinzugefügt werden können.
@@ -103,6 +100,7 @@ image::http://arduino.cc/en/uploads/Main/ArduinoUno_R3_Front_450px.jpg[caption="
 // HOW-TO-USE-ABSCHNITT ENDET
 
 
+
 // SIEHE-AUCH-ABSCHNITT SECTION STARTET
 [#see_also]
 --
@@ -112,7 +110,6 @@ image::http://arduino.cc/en/uploads/Main/ArduinoUno_R3_Front_450px.jpg[caption="
 // Verknüpfe relevanten Inhalt nach Kategorie, z. B. andere Referenzbegriffe (Bitte füge den Tag #SPRACHE# hinzu).
 // Für Definitionen bitte das Tag #DEFINITION# hinzufügen und für Beispiele für Projekte und Tutorials
 // das Tag #BEISPIEL# hinzufügen. ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
-
 
 [role="language"]
 // Wenn du eine Verknüpfung zu einem anderen Referenzbegriff oder allgemein zu einer relativen Verknüpfung herstellen möchtest, verwende die unten gezeigte Syntax.
@@ -134,4 +131,3 @@ image::http://arduino.cc/en/uploads/Main/ArduinoUno_R3_Front_450px.jpg[caption="
 
 --
 // SIEHE-AUCH-ABSCHNITT ENDET
-
