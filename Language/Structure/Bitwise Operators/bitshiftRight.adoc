@@ -12,7 +12,7 @@ subCategories: [ "Bitweise Operatoren" ]
 = >> Bitshift rechts
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -34,11 +34,11 @@ Der rechte Right-Shift-Operator bewirkt, dass die Bits des linken Operanden um d
 
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -84,10 +84,10 @@ int y = x >> 3; // Integer-Division von 1000 durch 8, wodurch y = 125.
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -100,4 +100,4 @@ int y = x >> 3; // Integer-Division von 1000 durch 8, wodurch y = 125.
 * #BEISPIEL# http://www.arduino.cc/playground/Code/BitMath[BitMath-Tutorial^]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

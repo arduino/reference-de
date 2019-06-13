@@ -12,7 +12,7 @@ subCategories: [ "Boolsche Operatoren" ]
 = || Logisches ODER
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -22,11 +22,11 @@ subCategories: [ "Boolsche Operatoren" ]
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -49,10 +49,10 @@ Verwechsle nicht das boolesche || (Doppel-Pipe) Operator mit dem bitweisen OR-Op
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -63,4 +63,4 @@ Verwechsle nicht das boolesche || (Doppel-Pipe) Operator mit dem bitweisen OR-Op
 * #SPRACHE# link:../../bitwise-operators/bitwiseor[| Bitweises OR]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

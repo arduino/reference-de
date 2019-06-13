@@ -11,7 +11,7 @@ subCategories: [ "Variablenscope und Bezeichner" ]
 = volatile keyword
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -48,12 +48,12 @@ Es gibt mehrere Möglichkeiten, das zu tun:
 
 [%hardbreaks]
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -103,10 +103,10 @@ ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
 
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION STARTS
+// SIEHE-AUCH-ABSCHNITT SECTION STARTS
 [#see_also]
 --
 
@@ -117,4 +117,4 @@ ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
 * #SPRACHE# link:../../../functions/external-interrupts/attachinterrupt[attachInterrupt]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

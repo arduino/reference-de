@@ -6,7 +6,7 @@ subCategories: [ "Datentypen" ]
 
 = string
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -76,12 +76,12 @@ Alle Array-Namen sind eigentlich Zeiger, daher ist dies zum Erstellen eines Arra
 die für Anfänger schwer verständlich sind, aber es ist nicht notwendig,Zeiger im Detail zu verstehen, um sie hier effektiv zu verwenden.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -109,9 +109,9 @@ void loop() {
 
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
-// SEE ALSO SECTION STARTS
+// SIEHE-AUCH-ABSCHNITT SECTION STARTS
 [#see_also]
 --
 
@@ -122,4 +122,4 @@ void loop() {
 * #SPRACHE# link:../../utilities/progmem[PROGMEM]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

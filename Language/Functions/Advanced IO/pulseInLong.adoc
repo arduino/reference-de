@@ -11,7 +11,7 @@ subCategories: [ "Advanced I/O" ]
 = pulseInLong()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -44,12 +44,12 @@ Diese Routine kann nur benutzt werden, wenn Interrupts aktiviert werden. Die bes
 Die Länge des Impulses (in Mikrosekunden) oder 0, wenn kein Impuls vor dem Timeout gemessen wird. Datentyp: `unsigned long`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -80,10 +80,10 @@ void loop() {
 Diese Funktion verlässt sich auf `micros()` und kann somit in link:../../interrupts/nointerrupts[noInterrupts()] Kontexten nicht verwendet werden.
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -91,4 +91,4 @@ Diese Funktion verlässt sich auf `micros()` und kann somit in link:../../interr
 === Siehe auch
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

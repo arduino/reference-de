@@ -8,7 +8,7 @@ title: Serial.readBytes()
 = Serial.readBytes()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -38,10 +38,10 @@ title: Serial.readBytes()
 Die Anzahl der Bytes, die im Puffer abgelegt wurden. Datentyp: `size_t`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -53,4 +53,4 @@ Die Anzahl der Bytes, die im Puffer abgelegt wurden. Datentyp: `size_t`.
 * #SPRACHE# link:../../stream/streamreadbytes[stream.readBytes()]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

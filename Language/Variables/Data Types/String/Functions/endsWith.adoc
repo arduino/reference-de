@@ -1,5 +1,5 @@
 ---
-title: "endsWith()"
+title: "ENDETWith()"
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Function" ]
 ---
@@ -8,10 +8,10 @@ subCategories: [ "StringObject Function" ]
 
 
 
-= endsWith()
+= ENDETWith()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -24,7 +24,7 @@ Testet, ob ein `String` mit den Zeichen eines anderen Strings endet.
 
 [float]
 === Syntax
-`myString.endsWith(myString2)`
+`myString.ENDETWith(myString2)`
 
 
 [float]
@@ -39,14 +39,14 @@ Testet, ob ein `String` mit den Zeichen eines anderen Strings endet.
 `false`: Sonst.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -56,4 +56,4 @@ Testet, ob ein `String` mit den Zeichen eines anderen Strings endet.
 [role="example"]
 * #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

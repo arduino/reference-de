@@ -11,7 +11,7 @@ subCategories: [ "Trigonometrie" ]
 = sin(rad)
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -36,10 +36,10 @@ Berechnet den Sinus eines Winkels (Im Bogenmaß). Das Ergebnis liegt zwischen -1
 Den Sinus des Winkels. Datentyp: `double`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -51,4 +51,4 @@ Den Sinus des Winkels. Datentyp: `double`.
 * #SPRACHE# link:../../../variables/data-types/double[double]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

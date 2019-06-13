@@ -11,7 +11,7 @@ subCategories: [ "StringObject Function" ]
 = toInt()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -37,14 +37,14 @@ Konvertiert einen gültigen `String` in eine Ganzzahl. Die Eingabezeichenfolge s
 Wenn keine gültige Konvertierung durchgeführt werden konnte, weil der `String` nicht mit einer Ganzzahl beginnt, wird eine Null zurückgegeben. Datentyp: `long`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -54,4 +54,4 @@ Wenn keine gültige Konvertierung durchgeführt werden konnte, weil der `String`
 [role="example"]
 * #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

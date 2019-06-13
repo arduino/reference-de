@@ -11,7 +11,7 @@ subCategories: [ "Konstanten" ]
 = Konstanten
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -136,16 +136,16 @@ Die meisten Arduinos haben einen Pin, der eine on-board LED über einen Vorschal
 Die meisten Boards haben die LED auf Digitalpin 13 verbunden.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 // SEE ALSO  SECTION BEGINS
 [#see_also]
@@ -157,4 +157,4 @@ Die meisten Boards haben die LED auf Digitalpin 13 verbunden.
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

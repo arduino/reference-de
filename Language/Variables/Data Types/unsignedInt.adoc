@@ -6,7 +6,7 @@ subCategories: [ "Datentypen" ]
 
 = unsigned int
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -23,7 +23,7 @@ mit dem (https://de.wikipedia.org/wiki/Zweierkomplement[Zweierkomplement]).
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 [float]
 === Syntax
@@ -36,7 +36,7 @@ mit dem (https://de.wikipedia.org/wiki/Zweierkomplement[Zweierkomplement]).
 `val`: Der Wert, der der Variablen zugewiesen wird.
 [%hardbreaks]
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -65,10 +65,10 @@ x = x + 1; // x enthält jetzt 0
 
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION STARTS
+// SIEHE-AUCH-ABSCHNITT SECTION STARTS
 [#see_also]
 --
 
@@ -79,4 +79,4 @@ x = x + 1; // x enthält jetzt 0
 * #SPRACHE# link:../../constants/integerconstants[Ganzzahlkonstanten]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

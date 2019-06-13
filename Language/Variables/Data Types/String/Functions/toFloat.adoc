@@ -11,7 +11,7 @@ subCategories: [ "StringObject Function" ]
 = toFloat()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -40,14 +40,14 @@ Beachte auch, dass Floats nur eine Genauigkeit von 6 bis 7 Dezimalstellen haben 
 Wenn keine gültige Konvertierung durchgeführt werden konnte, weil die Zeichenfolge nicht mit einer Ziffer beginnt, wird eine Null zurückgegeben. Datentyp: `float`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -57,4 +57,4 @@ Wenn keine gültige Konvertierung durchgeführt werden konnte, weil die Zeichenf
 [role="example"]
 * #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

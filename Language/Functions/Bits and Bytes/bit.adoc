@@ -11,7 +11,7 @@ subCategories: [ "Bits und Bytes" ]
 = bit()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -36,10 +36,10 @@ Berechnet den Wert des angegebenen Bits (Bit 0 ist 1, Bit 1 ist 2, Bit 2 ist 4, 
 Der Wert des Bits.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -47,4 +47,4 @@ Der Wert des Bits.
 === Siehe auch
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

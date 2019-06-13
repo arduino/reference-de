@@ -6,7 +6,7 @@ subCategories: [ "Datentypen" ]
 
 = double
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -30,12 +30,12 @@ Auf dem Arduino Due haben doubles eine Genauigkeit von 8 Byte (64 Bit).
 `val`: Der Wert, der der Variablen zugewiesen wird.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -47,12 +47,12 @@ ob sich die implizierte Genauigkeit von der tatsächlich bei ATMEGA-basierten Ar
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -60,4 +60,4 @@ ob sich die implizierte Genauigkeit von der tatsächlich bei ATMEGA-basierten Ar
 === Siehe auch
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

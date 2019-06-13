@@ -11,7 +11,7 @@ subCategories: [ "StringObject Function" ]
 = lastIndexOf()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -41,14 +41,14 @@ Ermöglicht das Auffinden aller Instanzen des Zeichens oder der Zeichenfolge.
 Der Index von `val` innerhalb des Strings oder -1, falls nicht gefunden.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -58,4 +58,4 @@ Der Index von `val` innerhalb des Strings oder -1, falls nicht gefunden.
 [role="example"]
 * #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

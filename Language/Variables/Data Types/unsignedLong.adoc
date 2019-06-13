@@ -6,7 +6,7 @@ subCategories: [ "Datentypen" ]
 
 = unsigned long
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -28,12 +28,12 @@ Im Gegensatz zu Standard-Longs werden bei unsigned Longs keine negativen Zahlen 
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -61,10 +61,10 @@ void loop() {
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION STARTS
+// SIEHE-AUCH-ABSCHNITT SECTION STARTS
 [#see_also]
 --
 
@@ -75,4 +75,4 @@ void loop() {
 * #SPRACHE# link:../../constants/integerconstants[Ganzzahlkonstanten]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

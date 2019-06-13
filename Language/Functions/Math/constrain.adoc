@@ -11,7 +11,7 @@ subCategories: [ "Mathematik" ]
 = constrain(x, a, b)
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -40,12 +40,12 @@ a: Wenn x kleiner als a ist. +
 b: Wenn x größer als b ist.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -78,10 +78,10 @@ int constrainedInput = constrain(input, minimumValue, maximumValue);
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -89,4 +89,4 @@ int constrainedInput = constrain(input, minimumValue, maximumValue);
 === Siehe auch
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

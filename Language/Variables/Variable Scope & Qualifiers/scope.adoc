@@ -7,7 +7,7 @@ subCategories: [ "Variablenscope und Bezeichner" ]
 = Variable Scope
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -27,12 +27,12 @@ Manchmal macht es auch Sinn, eine Variable direkt in einer for-Schleife zu initi
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -63,10 +63,10 @@ void loop() {
 
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -74,4 +74,4 @@ void loop() {
 === Siehe auch
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

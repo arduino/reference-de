@@ -11,7 +11,7 @@ subCategories: [ "Bits und Bytes" ]
 = bitRead()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -37,10 +37,10 @@ Liest ein Bit aus einer Zahlenvariable.
 Den Wert des Bits (0 oder 1).
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -48,4 +48,4 @@ Den Wert des Bits (0 oder 1).
 === Siehe auch
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

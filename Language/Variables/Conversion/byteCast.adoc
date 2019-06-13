@@ -11,7 +11,7 @@ subCategories: [ "Umwandlung" ]
 = byte()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -38,11 +38,11 @@ Datentyp: `byte`.
 
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// SEE ALSO SECTION BEGINS
+// SIEHE-AUCH-ABSCHNITT SECTION BEGINS
 [#see_also]
 --
 
@@ -53,4 +53,4 @@ Datentyp: `byte`.
 * #SPRACHE# link:../../data-types/byte[byte]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

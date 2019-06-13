@@ -11,7 +11,7 @@ subCategories: [ "Kontrollstruktur" ]
 = switch...case statement
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -56,12 +56,12 @@ switch (var) {
 Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -88,7 +88,7 @@ switch (var) {
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
 
@@ -102,4 +102,4 @@ switch (var) {
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

@@ -6,7 +6,7 @@ subCategories: [ "Datentypen" ]
 
 = float
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -29,12 +29,12 @@ Fließkommazahlen können bis zu 3.4028235E+38 und bis zu -3.4028235E+38 betrage
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -96,12 +96,12 @@ Es sollte also vermieden werden, wenn beispielsweise eine Schleife für eine kri
 Programmierer gehen oft etwas in die Länge und konvertieren Gleitkomma-Berechnungen in Ganzzahl-Mathematik, um die Geschwindigkeit zu erhöhen.
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
 
 
-// SEE ALSO SECTION STARTS
+// SIEHE-AUCH-ABSCHNITT SECTION STARTS
 [#see_also]
 --
 
@@ -112,4 +112,4 @@ Programmierer gehen oft etwas in die Länge und konvertieren Gleitkomma-Berechnu
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

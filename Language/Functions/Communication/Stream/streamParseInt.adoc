@@ -8,7 +8,7 @@ title: Stream.parseInt()
 = parseInt()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -51,4 +51,4 @@ Erlaubte `lookahead`-Werte:
 Datentyp: `long`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET

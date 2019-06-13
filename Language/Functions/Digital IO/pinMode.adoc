@@ -11,7 +11,7 @@ subCategories: [ "Digital I/O" ]
 = pinMode()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -39,12 +39,12 @@ Seit Arduino 1.0.1 ist es möglich, den internen Pull-Up-Widerstand mit dem Modu
 Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -72,10 +72,10 @@ void loop() {
 Die analogen Inputpins können als Digitalpins verwendet werden mit den Namen A0, A1, etc.
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -86,4 +86,4 @@ Die analogen Inputpins können als Digitalpins verwendet werden mit den Namen A0
 * #BEISPIEL#-Tutorial: (http://arduino.cc/en/Tutorial/DigitalPins[Beschreibung der digitalen Pins^])
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

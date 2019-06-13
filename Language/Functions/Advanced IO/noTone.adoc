@@ -10,7 +10,7 @@ aliases: [ /language/functions/advanced-io/noTone/ ]
 = noTone()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -34,12 +34,12 @@ Stoppt die Tonerzeugung, die von `tone()` erzeugt wurde. Macht nichts, wenn kein
 Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -49,10 +49,10 @@ Wenn du verschiedene Töne auf mehreren Pins spielen willst, musst du zunächst 
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -60,4 +60,4 @@ Wenn du verschiedene Töne auf mehreren Pins spielen willst, musst du zunächst 
 === Siehe auch
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

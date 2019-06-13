@@ -11,7 +11,7 @@ subCategories: [ "Variablenscope und Bezeichner" ]
 = Static
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -24,12 +24,12 @@ Statische Variablen werden nur einmal erstellt, wenn die Funktion das erste Mal 
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -99,4 +99,4 @@ int randomWalk(int moveSize) {
 
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET

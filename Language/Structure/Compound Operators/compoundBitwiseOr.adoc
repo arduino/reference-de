@@ -12,7 +12,7 @@ subCategories: [ "Verbundoperatoren" ]
 = |= Zusammengesetztes Bitweises ODER
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -41,11 +41,11 @@ Ein Überblick über den bitweisen OR `|` Operator:
 
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -101,12 +101,12 @@ myByte |= B00000011 == B10101011;
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
 
 
-//SEE ALSO SECTION BEGINS
+//SIEHE-AUCH-ABSCHNITT SECTION BEGINS
 [#see_also]
 --
 
@@ -117,4 +117,4 @@ myByte |= B00000011 == B10101011;
 * #SPRACHE#  link:../../bitwise-operators/bitwiseor[& Bitweises OR]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

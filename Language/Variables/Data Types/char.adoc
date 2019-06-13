@@ -6,7 +6,7 @@ subCategories: [ "Datentypen" ]
 
 = char
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -22,12 +22,12 @@ Die Größe des `char`-Datentyps beträgt mindestens 8 Bit. Es wird empfohlen, `
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -43,10 +43,10 @@ char myChar = 65; // Beide sind gleichwertig
 
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION STARTS
+// SIEHE-AUCH-ABSCHNITT SECTION STARTS
 [#see_also]
 --
 
@@ -57,4 +57,4 @@ char myChar = 65; // Beide sind gleichwertig
 * #SPRACHE# link:../../../functions/communication/serial/println[Serial.println]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

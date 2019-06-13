@@ -12,7 +12,7 @@ subCategories: [ "Bitweise Operatoren" ]
 = & Bitweises UND
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -35,11 +35,11 @@ In Arduino ist der Typ `int` ein 16-Bit-Wert. Wenn `&` zwischen zwei `int`-Ausdr
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -66,10 +66,10 @@ PORTD = PORTD & B00000011;  // Löschen der Bits 2 - 7 und Pins PD0 und PD1 (xx 
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -84,4 +84,4 @@ PORTD = PORTD & B00000011;  // Löschen der Bits 2 - 7 und Pins PD0 und PD1 (xx 
 * #BEISPIEL# https://www.arduino.cc/playground/Code/BitMath[BitMath-Tutorial^]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

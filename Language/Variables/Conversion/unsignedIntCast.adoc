@@ -11,7 +11,7 @@ subCategories: [ "Umwandlung" ]
 = (unsigned int)
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -36,12 +36,12 @@ Konvertiert einen Wert in den link:../../data-types/unsignedint[unsigned int]-Da
 Datentyp: `unsigned int`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -53,4 +53,4 @@ Datentyp: `unsigned int`.
 
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

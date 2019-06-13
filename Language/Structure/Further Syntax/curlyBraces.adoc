@@ -11,7 +11,7 @@ subCategories: [ "Weitere Syntax" ]
 = {} Geschweifte Klammern
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -33,12 +33,12 @@ Wenn du eine oder zwei Zeilen einer Klammer verschiebst, hat dies oft einen dram
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -99,11 +99,11 @@ else {
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
 
-// SEE ALSO SECTION BEGINS
+// SIEHE-AUCH-ABSCHNITT SECTION BEGINS
 [#see_also]
 --
 
@@ -112,4 +112,4 @@ else {
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

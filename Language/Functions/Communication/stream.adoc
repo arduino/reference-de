@@ -10,7 +10,7 @@ subCategories: [ "Kommunikation" ]
 = Stream
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -30,7 +30,7 @@ Zu den Bibliotheken, die Stream verwenden, gehören:
 
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 // FUNCTIONS SECTION STARTS
@@ -58,10 +58,10 @@ link:../stream/streamsettimeout[setTimeout()]
 '''
 
 --
-// FUNCTIONS SECTION ENDS
+// FUNCTIONS SECTION ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -69,4 +69,4 @@ link:../stream/streamsettimeout[setTimeout()]
 === See also
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

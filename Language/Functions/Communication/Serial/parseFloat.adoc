@@ -8,7 +8,7 @@ title: Serial.parseFloat()
 = Serial.parseFloat()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -45,10 +45,10 @@ Die Funktion wird abgebrochen, wenn sie abgelaufen ist (siehe link:../settimeout
 Datentyp: `float`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -60,4 +60,4 @@ Datentyp: `float`.
 * #SPRACHE# link:../../stream/streamparsefloat[Stream.parseFloat()]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

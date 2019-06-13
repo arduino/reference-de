@@ -12,7 +12,7 @@ subCategories: [ "Arithmetische Operatoren" ]
 = * Multiplikation
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -35,12 +35,12 @@ subCategories: [ "Arithmetische Operatoren" ]
 
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -74,12 +74,12 @@ c = a * b; // Die Variable 'c' speichert nur den Wert 36 und nicht das erwartete
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
 
 
-// SEE ALSO SECTION STARTS
+// SIEHE-AUCH-ABSCHNITT SECTION STARTS
 [#see_also]
 --
 
@@ -89,4 +89,4 @@ c = a * b; // Die Variable 'c' speichert nur den Wert 36 und nicht das erwartete
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

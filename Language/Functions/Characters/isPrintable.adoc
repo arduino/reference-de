@@ -11,7 +11,7 @@ subCategories: [ "Zeichen" ]
 = isPrintable(thisChar)
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -36,11 +36,11 @@ Analysiert, ob das Zeichen druckbar ist (Also jedes Zeichen, das eine Ausgabe er
 `true`: Wenn das Zeichen druckbar ist.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -59,10 +59,10 @@ else {
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -76,4 +76,4 @@ else {
 * #SPRACHE# link:../../communication/serial/read[read()]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

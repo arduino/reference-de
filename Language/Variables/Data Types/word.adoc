@@ -6,7 +6,7 @@ subCategories: [ "Datentypen" ]
 
 = word
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -27,12 +27,12 @@ Ein Wort kann eine vorzeichenlose Zahl von mindestens 16 Bits (von 0 bis 65535) 
 `val`: Der Wert, der dieser Variablen zugewiesen werden soll.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -47,10 +47,10 @@ word w = 10000;
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -58,4 +58,4 @@ word w = 10000;
 === Siehe auch
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

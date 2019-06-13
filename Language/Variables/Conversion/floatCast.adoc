@@ -11,7 +11,7 @@ subCategories: [ "Umwandlung" ]
 = float()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -38,12 +38,12 @@ Datentyp: `float`.
 
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -53,11 +53,11 @@ Siehe die Referenz des Datentyps link:../../data-types/float[float] für Details
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
 
-// SEE ALSO SECTION BEGINS
+// SIEHE-AUCH-ABSCHNITT SECTION BEGINS
 [#see_also]
 --
 
@@ -69,4 +69,4 @@ Siehe die Referenz des Datentyps link:../../data-types/float[float] für Details
 * #SPRACHE# link:../../data-types/float[float]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

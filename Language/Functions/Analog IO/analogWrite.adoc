@@ -11,7 +11,7 @@ subCategories: [ "Analog I/O" ]
 = analogWrite()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -57,12 +57,12 @@ bevor du `analogWrite()` nutzt. Die `analogWrite()`-Funktion hat nichts mit anal
 Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -95,10 +95,10 @@ um diese PWM-Ausgaben zu generieren. In kleinen Zyklen (z.B. 0 bis 10) ist der E
 d.h. dass z.B. bei Wert 0 die LED trotzdem leuchtet.
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -115,4 +115,4 @@ d.h. dass z.B. bei Wert 0 die LED trotzdem leuchtet.
 * #BEISPIEL# http://arduino.cc/en/Tutorial/Blink[Blinken^]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

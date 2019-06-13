@@ -6,7 +6,7 @@ subCategories: [ "Externe Interrupts" ]
 
 = attachInterrupt()
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -94,9 +94,9 @@ Für weitere Informationen zu Interrupts, siehe auch http://gammon.com.au/interr
 Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -157,10 +157,10 @@ diese Nummerierung nicht immer mit den Inputnummern auf dem ATmega-Chip überein
 Für Due, Zero, MKR1000 und 101 Boards gilt: *Interruptnummer = Pinnummer*.
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -168,4 +168,4 @@ Für Due, Zero, MKR1000 und 101 Boards gilt: *Interruptnummer = Pinnummer*.
 === Siehe auch
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

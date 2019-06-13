@@ -12,7 +12,7 @@ subCategories: [ "Boolsche Operatoren" ]
 = && Logisches UND
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -22,11 +22,11 @@ subCategories: [ "Boolsche Operatoren" ]
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -47,10 +47,10 @@ if (digitalRead(2) == HIGH && digitalRead(3) == HIGH) { // Wenn beide Werte HIGH
 Stelle sicher, dass der booleschen AND-Operator && (doppeltes kaufmännisches Und) nicht mit dem bitweisen AND-Operator & (einfaches kaufmännisches Und) verwechselt wird. Sie sind völlig verschieden.
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -61,4 +61,4 @@ Stelle sicher, dass der booleschen AND-Operator && (doppeltes kaufmännisches Un
 * #SPRACHE# link:../../bitwise-operators/bitwiseand[& (Bitweises UND)]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

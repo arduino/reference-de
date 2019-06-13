@@ -11,7 +11,7 @@ subCategories: [ "Kontrollstruktur" ]
 = if...else
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -53,11 +53,11 @@ else {
 Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 [float]
@@ -79,11 +79,11 @@ else { // temperature < 60
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
 
-// SEE ALSO SECTION BEGINS
+// SIEHE-AUCH-ABSCHNITT SECTION BEGINS
 [#see_also]
 --
 
@@ -93,4 +93,4 @@ else { // temperature < 60
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

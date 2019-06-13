@@ -11,7 +11,7 @@ subCategories: [ "Bits und Bytes" ]
 = bitClear()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -36,10 +36,10 @@ Löscht den Wert (Schreibt 0) eines Bits einer Zahlen-Variable.
 Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -47,4 +47,4 @@ Nichts.
 === Siehe auch
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

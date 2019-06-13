@@ -8,7 +8,7 @@ title: Stream.setTimeout()
 = setTimeout()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -35,10 +35,10 @@ Weitere Informationen findest du auf der Hauptseite: link:../../stream[Stream-Kl
 Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -58,10 +58,10 @@ Stream-Funktionen, die den mit `setTimeout()` eingestellten Timeout-Wert verwend
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -69,4 +69,4 @@ Stream-Funktionen, die den mit `setTimeout()` eingestellten Timeout-Wert verwend
 === See also
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

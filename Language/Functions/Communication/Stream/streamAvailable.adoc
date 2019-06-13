@@ -7,7 +7,7 @@ title: Stream.available()
 = available()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -34,4 +34,4 @@ Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, 
 Die Anzahl der zum Lesen verfügbaren Bytes. Datentyp: `int`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET

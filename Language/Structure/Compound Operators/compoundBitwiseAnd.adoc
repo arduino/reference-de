@@ -12,7 +12,7 @@ subCategories: [ "Verbundoperatoren" ]
 = &= Zusammengesetztes Bitweises AND
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -42,11 +42,11 @@ Ein Überblick über den bitweisen AND `&` Operator:
 
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -104,12 +104,12 @@ myByte &= B11111100; // Ergibt B10101000
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
 
 
-// SEE ALSO SECTION BEGINS
+// SIEHE-AUCH-ABSCHNITT SECTION BEGINS
 [#see_also]
 --
 
@@ -120,4 +120,4 @@ myByte &= B11111100; // Ergibt B10101000
 * #SPRACHE#  link:../../bitwise-operators/bitwiseand[& Bitweises AND]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

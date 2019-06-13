@@ -12,7 +12,7 @@ subCategories: [ "Weitere Syntax" ]
 = // Einzeiliger Kommentar
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -26,12 +26,12 @@ Der einzige Zweck von Kommentaren besteht darin, zu helfen (zu verstehen oder si
 Ein *einzeiliger Kommentar* beginnt mit `//` (zwei nebeneinanderliegende Schrägstriche).
 Dieser Kommentar endet automatisch am Ende einer Zeile. Alles, was bis zum Ende einer Zeile auf `//` folgt, wird vom Compiler ignoriert.
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -57,12 +57,12 @@ Dies kann besonders nützlich sein, wenn Sie versuchen, ein Problem zu finden, o
 
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
 
 
-// SEE ALSO SECTION BEGINS
+// SIEHE-AUCH-ABSCHNITT SECTION BEGINS
 [#see_also]
 --
 
@@ -72,4 +72,4 @@ Dies kann besonders nützlich sein, wenn Sie versuchen, ein Problem zu finden, o
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

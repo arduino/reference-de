@@ -12,7 +12,7 @@ subCategories: [ "Verbundoperatoren" ]
 = -- Dekrement
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -39,11 +39,11 @@ Den ursprünglichen oder den neu dekrementierten Wert der Variablen.
 
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -58,11 +58,11 @@ y = x--; // x enthält 0, aber y enthält noch 1
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
 
-// SEE ALSO SECTION BEGINS
+// SIEHE-AUCH-ABSCHNITT SECTION BEGINS
 [#see_also]
 --
 
@@ -72,4 +72,4 @@ y = x--; // x enthält 0, aber y enthält noch 1
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

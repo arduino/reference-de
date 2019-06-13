@@ -12,7 +12,7 @@ subCategories: [ "USB" ]
 = Mouse
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -22,7 +22,7 @@ Die `mouse`-Funktionen ermöglichen es, auf 32u4- oder SAMD-micro-basiertend Boa
 Wenn man die Mauszeigerposition ändert, so ist die neue Position immer relativ zu der vorhergehenden Position.
 [%hardbreaks]
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 [float]
@@ -55,10 +55,10 @@ link:../mouse/mouseispressed[Mouse.isPressed()]
 '''
 
 --
-// FUNCTIONS SECTION ENDS
+// FUNCTIONS SECTION ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -71,5 +71,5 @@ link:../mouse/mouseispressed[Mouse.isPressed()]
 * #BEISPIEL# http://www.arduino.cc/en/Tutorial/JoystickMouseControl[JoystickMouseControl^]: Steuert den Mauszeiger eines Computers mit einem Joystick, wenn ein Button gedrückt wird.
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET
 

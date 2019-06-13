@@ -11,7 +11,7 @@ subCategories: [ "Analog I/O" ]
 = analogReference()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -70,12 +70,12 @@ Arduino SAM Boards (Due)
 Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -91,10 +91,10 @@ Alternativ kannst du die externe Referenzspannung auf dem AREF-Pin über einen 5
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -105,4 +105,4 @@ Alternativ kannst du die externe Referenzspannung auf dem AREF-Pin über einen 5
 * #BEISPIEL# http://arduino.cc/en/Tutorial/AnalogInputPins[Beschreibung der analogen Eingangspins^]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

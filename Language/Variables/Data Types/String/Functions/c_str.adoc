@@ -11,7 +11,7 @@ subCategories: [ "StringObject Function" ]
 = c_str()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -41,14 +41,14 @@ Wenn du das `String`-Objekt ändern willst oder wenn es zerstört wird, wird ein
 Ein Zeiger auf die C-Style-Version des aufrufenden Strings.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -58,4 +58,4 @@ Ein Zeiger auf die C-Style-Version des aufrufenden Strings.
 [role="example"]
 * #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

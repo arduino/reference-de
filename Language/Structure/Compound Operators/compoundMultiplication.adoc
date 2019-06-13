@@ -12,7 +12,7 @@ subCategories: [ "Verbundoperatoren" ]
 = *= Zusammengesetzte Multiplikation
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -34,11 +34,11 @@ Dies ist eine praktische Abkürzung, um eine Multiplikation einer Variablen mit 
 
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -53,12 +53,12 @@ x *= 2; // x enthält jetzt 4
 
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
 
 
-//SEE ALSO SECTION BEGINS
+//SIEHE-AUCH-ABSCHNITT SECTION BEGINS
 [#see_also]
 --
 
@@ -69,4 +69,4 @@ x *= 2; // x enthält jetzt 4
 * #SPRACHE#  link:../../arithmetic-operators/multiplication[Normale Multiplikation]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

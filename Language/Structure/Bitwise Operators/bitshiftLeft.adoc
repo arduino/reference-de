@@ -12,7 +12,7 @@ subCategories: [ "Bitweise Operatoren" ]
 = << Bitshift links
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -34,11 +34,11 @@ Der Left-Shift-Operator `<<` bewirkt, dass die Bits des linken Operanden um die 
 
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -103,12 +103,12 @@ void printOut1(int c) {
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
 
 
-//SEE ALSO SECTION STARTS
+//SIEHE-AUCH-ABSCHNITT SECTION STARTS
 [#see_also]
 --
 
@@ -121,5 +121,5 @@ void printOut1(int c) {
 * #BEISPIEL# https://www.arduino.cc/playground/Code/BitMath[BitMath-Tutorial^]
 
 --
-//SEE ALSO SECTION ENDS
+//SIEHE-AUCH-ABSCHNITT SECTION ENDET
 

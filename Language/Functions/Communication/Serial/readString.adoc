@@ -8,7 +8,7 @@ title: Serial.readString()
 = readString()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -35,10 +35,10 @@ title: Serial.readString()
 Ein `String`, der aus dem seriellen Puffer gelesen wird.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -60,4 +60,4 @@ Ein `String`, der aus dem seriellen Puffer gelesen wird.
 * #SPRACHE# link:../parsefloat[parseFloat()]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

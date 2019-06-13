@@ -8,7 +8,7 @@ title: Serial.end()
 = end()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -34,4 +34,4 @@ Um die serielle Kommunikation wieder zu aktivieren, rufe link:../begin[Serial.be
 Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET

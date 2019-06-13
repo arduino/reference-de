@@ -12,7 +12,7 @@ subCategories: [ "Arithmetische Operatoren" ]
 = % Modulo
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -37,11 +37,11 @@ Das `%` (Prozent) -Symbol wird zur Ausführung der Modulo-Operation verwendet.
 
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -80,9 +80,9 @@ Der Modulo-Operator arbeitet nicht mit `float`-Werten.
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
-// SEE ALSO SECTION STARTS
+// SIEHE-AUCH-ABSCHNITT SECTION STARTS
 [#see_also]
 --
 
@@ -92,4 +92,4 @@ Der Modulo-Operator arbeitet nicht mit `float`-Werten.
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

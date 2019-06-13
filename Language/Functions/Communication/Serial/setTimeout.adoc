@@ -8,7 +8,7 @@ title: Serial.setTimeout()
 = Serial.setTimeout()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -36,9 +36,9 @@ title: Serial.setTimeout()
 Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -58,9 +58,9 @@ Serielle Funktionen, die den eingestellten Timeout-Wert verwenden `_Serial_.setT
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -72,4 +72,4 @@ Serielle Funktionen, die den eingestellten Timeout-Wert verwenden `_Serial_.setT
 * #SPRACHE# link:../../stream/streamsettimeout[stream.setTimeout()]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

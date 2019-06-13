@@ -6,7 +6,7 @@ subCategories: [ "Analog I/O" ]
 
 = analogRead()
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -54,10 +54,10 @@ Auf den ATmega-basierten Boards (UNO, Nano, Mini, Mega), benötigt das Board cir
 Den analog gelesenen Wert auf dem Pin (int). Allerdings ist der Wert limitiert durch die Auflösung des Digital-Konverters (0-1023 für 10 Bit und 0-4095 für 12 Bit). Datentyp: `int`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -87,10 +87,10 @@ void loop() {
 Wenn der analoge Pin nicht verbunden ist, wird der zurückgegebene Wert schwanken basierend auf mehreren Faktoren (z.B. Die Werte der anderen analogen Pins, Wie nahe die Hand am Board ist, etc.).
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -101,4 +101,4 @@ Wenn der analoge Pin nicht verbunden ist, wird der zurückgegebene Wert schwanke
 * #SPRACHE# link:../../zero-due-mkr-family/analogreadresolution[analogReadResolution()]
 * #BEISPIEL# https://www.arduino.cc/en/Tutorial/AnalogInputPins[Beschreibung der analogen Eingangspins^]
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

@@ -11,7 +11,7 @@ subCategories: [ "Mathematik" ]
 = abs(x)
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -37,12 +37,12 @@ Berechnet den absoluten Wert einer Zahl.
 `-x`: wenn x kleiner als 0 ist.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -62,10 +62,10 @@ a++;    // Andere Mathematik außerhalb der Funktion benutzen
 
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -73,4 +73,4 @@ a++;    // Andere Mathematik außerhalb der Funktion benutzen
 === Siehe auch
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

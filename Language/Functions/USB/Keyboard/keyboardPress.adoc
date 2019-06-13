@@ -8,7 +8,7 @@ title: Keyboard.press()
 = Keyboard.press()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -36,12 +36,12 @@ Bevor `Keyboard.press()` benutzt werden kann, muss link:../keyboardbegin[Keyboar
 Die Anzahl der Tastenanschläge, die gesendet wurden. Datentyp: `size_t`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -85,4 +85,4 @@ void loop() {
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET

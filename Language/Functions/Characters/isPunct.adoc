@@ -11,7 +11,7 @@ subCategories: [ "Zeichen" ]
 = isPunct(thisChar)
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -35,11 +35,11 @@ Analysiert, ob ein Zeichen eine Punktuation ist (Komma, Semikolon, Ausrufezeiche
 === Rückgabewert
 `true`: wenn das Zeichen eine Punktuation ist.
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -58,10 +58,10 @@ else {
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -75,4 +75,4 @@ else {
 * #SPRACHE# link:../../communication/serial/read[read()]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

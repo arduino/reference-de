@@ -12,7 +12,7 @@ subCategories: [ "Weitere Syntax" ]
 = #define
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -42,12 +42,12 @@ Generell sollte das link:../../../variables/variable-scope\--qualifiers/const[co
 
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -79,12 +79,12 @@ Wenn ein Gleichheitszeichen nach der Anweisung #define einfügt wird, wird ebenf
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
 
 
-// SEE ALSO SECTION BEGINS
+// SIEHE-AUCH-ABSCHNITT SECTION BEGINS
 [#see_also]
 --
 
@@ -96,4 +96,4 @@ Wenn ein Gleichheitszeichen nach der Anweisung #define einfügt wird, wird ebenf
 * #SPRACHE#	link:../../../variables/constants/constants[Konstanten]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

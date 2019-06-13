@@ -11,7 +11,7 @@ subCategories: [ "Advanced I/O" ]
 = tone()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -46,12 +46,12 @@ Es ist nicht möglich, Töne mit einer Frequenz niedriger als 31Hz zu erstellen.
 Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -61,10 +61,10 @@ Wenn du verschiedene Töne auf mehreren Pins spielen willst, musst du zunächst 
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -82,4 +82,4 @@ Wenn du verschiedene Töne auf mehreren Pins spielen willst, musst du zunächst 
 * #BEISPIEL# http://arduino.cc/en/Tutorial/PWM[PWM^]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

@@ -8,7 +8,7 @@ title: Serial.peek()
 = peek()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -36,10 +36,10 @@ Das bedeutet, dass aufeinanderfolgende Aufrufe von `peek()` dasselbe Zeichen zur
 Das erste verfügbare Byte der eingehenden seriellen Daten (oder -1, wenn keine Daten verfügbar sind). Datentyp: `int`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -60,4 +60,4 @@ Das erste verfügbare Byte der eingehenden seriellen Daten (oder -1, wenn keine 
 * #SPRACHE# link:../../stream/streampeek[Stream.peek()]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

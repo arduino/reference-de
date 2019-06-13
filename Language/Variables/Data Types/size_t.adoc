@@ -6,7 +6,7 @@ subCategories: [ "Datentypen" ]
 
 = size_t
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -28,9 +28,9 @@ Beispiele für die Verwendung von `size_t` sind der Rückgabetyp von link:../../
 `val`: Der Wert, der der Variablen zugewiesen wird.
 [%hardbreaks]
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
-// SEE ALSO SECTION STARTS
+// SIEHE-AUCH-ABSCHNITT SECTION STARTS
 [#see_also]
 --
 
@@ -39,4 +39,4 @@ Beispiele für die Verwendung von `size_t` sind der Rückgabetyp von link:../../
 
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

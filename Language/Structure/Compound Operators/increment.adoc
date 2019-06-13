@@ -12,7 +12,7 @@ subCategories: [ "Verbundoperatoren" ]
 = ++ Inkrement
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -38,11 +38,11 @@ Erhöht den Wert einer Variablen um 1.
 Den ursprünglichen oder den neu inkrementierten Wert der Variablen.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -57,10 +57,10 @@ y = x++; // x enthält 4, aber y enthält noch 3
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -70,4 +70,4 @@ y = x++; // x enthält 4, aber y enthält noch 3
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

@@ -6,7 +6,7 @@ subCategories: [ "Datentypen" ]
 
 = unsigned char
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -31,12 +31,12 @@ Für die Konsistenz des Arduino-Programmierstils ist der Byte-Datentyp zu bevorz
 `val`: Der Wert, der der Variablen zugewiesen wird.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -51,10 +51,10 @@ unsigned char myChar = 240;
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION STARTS
+// SIEHE-AUCH-ABSCHNITT SECTION STARTS
 [#see_also]
 --
 
@@ -65,4 +65,4 @@ unsigned char myChar = 240;
 * #SPRACHE# link:../../../functions/communication/serial/println[Serial.println]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

@@ -11,7 +11,7 @@ subCategories: [ "Zeit" ]
 = delayMicroseconds()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -41,12 +41,12 @@ Bei Verzögerungen von mehr als einigen tausend Mikrosekunden sollte stattdessen
 Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -81,10 +81,10 @@ Wir können nicht garantieren, dass `delayMicroseconds()` genau für kürzere Ve
 `delayMicroseconds()` deaktiviert ab Arduino 0018 keine Interrupts mehr.
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -92,4 +92,4 @@ Wir können nicht garantieren, dass `delayMicroseconds()` genau für kürzere Ve
 === Siehe auch
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

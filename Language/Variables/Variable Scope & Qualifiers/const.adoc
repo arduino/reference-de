@@ -11,7 +11,7 @@ subCategories: [ "Variablenscope und Bezeichner" ]
 = const keyword
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -27,12 +27,12 @@ benutzt werden sollte.
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -64,10 +64,10 @@ musst du `const` verwenden. Generell wird `const` vor link:../../../structure/fu
 
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION STARTS
+// SIEHE-AUCH-ABSCHNITT SECTION STARTS
 [#see_also]
 --
 
@@ -78,4 +78,4 @@ musst du `const` verwenden. Generell wird `const` vor link:../../../structure/fu
 * #SPRACHE# link:../../../structure/further-syntax/define[#define]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

@@ -6,7 +6,7 @@ subCategories: [ "Datentypen" ]
 
 = byte
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -27,19 +27,19 @@ Ein Byte speichert eine vorzeichenlose 8-Bit-Zahl von 0 bis 255.
 `val`: Der Wert, der der Variablen zugewiesen wird.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
-// SEE ALSO SECTION STARTS
+// SIEHE-AUCH-ABSCHNITT SECTION STARTS
 [#see_also]
 --
 
@@ -50,4 +50,4 @@ Ein Byte speichert eine vorzeichenlose 8-Bit-Zahl von 0 bis 255.
 * #SPRACHE# link:../../conversion/bytecast[byte()]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

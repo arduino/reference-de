@@ -12,7 +12,7 @@ subCategories: [ "StringObject Operator" ]
 = == Vergleich
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -44,14 +44,14 @@ Das n-te Zeichen der Zeichenfolge. Gleich wie `charAt()`. +
 `false`: Sonst.
 --
 
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -61,4 +61,4 @@ Das n-te Zeichen der Zeichenfolge. Gleich wie `charAt()`. +
 [role="example"]
 * #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

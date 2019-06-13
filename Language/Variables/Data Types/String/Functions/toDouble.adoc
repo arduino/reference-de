@@ -11,7 +11,7 @@ subCategories: [ "StringObject Function" ]
 = toDouble()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -40,14 +40,14 @@ Beachte, dass "123.456" mit 123.46 approximiert wird. Beachte auch, dass Floats 
 Wenn keine gültige Konvertierung durchgeführt werden konnte, weil der `String` nicht mit einer Ziffer beginnt, wird eine Null zurückgegeben. Datentyp: `double`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -57,4 +57,4 @@ Wenn keine gültige Konvertierung durchgeführt werden konnte, weil der `String`
 [role="example"]
 * #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

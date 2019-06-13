@@ -11,7 +11,7 @@ subCategories: [ "Advanced I/O" ]
 = shiftIn()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -45,12 +45,12 @@ aber nur mit spezifischen Pins.
 Den gelesenen Wert. Datentyp: `byte`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -58,4 +58,4 @@ Den gelesenen Wert. Datentyp: `byte`.
 === Siehe auch
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

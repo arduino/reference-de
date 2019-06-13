@@ -12,7 +12,7 @@ subCategories: [ "Weitere Syntax" ]
 = /* */ Kommentarblock
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -29,12 +29,12 @@ Diese Art von Kommentar wird aufgerufen, da sich dieser über mehrere Zeilen ers
 // NOTE TO THE EDITOR: The '\' before the '*' in certain places are to escape the '*' from making the text bolder.
 // In places were '\' is not used before '*', it is not actually required.
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -70,12 +70,12 @@ der Compilerfehler kryptisch oder nicht hilfreich ist.
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
 
 
-// SEE ALSO SECTION BEGINS
+// SIEHE-AUCH-ABSCHNITT SECTION BEGINS
 [#see_also]
 --
 
@@ -84,4 +84,4 @@ der Compilerfehler kryptisch oder nicht hilfreich ist.
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

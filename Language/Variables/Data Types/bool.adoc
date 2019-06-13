@@ -6,7 +6,7 @@ subCategories: [ "Datentypen" ]
 
 = bool
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -29,12 +29,12 @@ Ein `bool` enthält einen von zwei Werten, `true` oder `false`. (Jede `bool`-Var
 `val`: Der Wert, der der Variablen zugewiesen wird.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -66,10 +66,10 @@ void loop() {
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION STARTS
+// SIEHE-AUCH-ABSCHNITT SECTION STARTS
 [#see_also]
 --
 
@@ -80,4 +80,4 @@ void loop() {
 * #SPRACHE# link:../../../variables/constants/constants[Konstanten]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

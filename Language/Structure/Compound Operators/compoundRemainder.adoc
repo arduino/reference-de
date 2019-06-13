@@ -12,7 +12,7 @@ subCategories: [ "Verbundoperatoren" ]
 = %= Zusammengesetzter Rest
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -34,11 +34,11 @@ Dies ist eine praktische Abkürzung, um den Rest zu berechnen, wenn eine ganze Z
 
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -61,11 +61,11 @@ Daher ist das Ergebnis von `x% = 10` nicht immer zwischen 0 und 9, wenn x negati
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
 
-//SEE ALSO SECTION BEGINS
+//SIEHE-AUCH-ABSCHNITT SECTION BEGINS
 [#see_also]
 --
 
@@ -76,4 +76,4 @@ Daher ist das Ergebnis von `x% = 10` nicht immer zwischen 0 und 9, wenn x negati
 * #SPRACHE#  link:../../arithmetic-operators/remainder[Rest]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

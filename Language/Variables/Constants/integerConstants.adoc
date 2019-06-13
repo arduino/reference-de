@@ -11,7 +11,7 @@ subCategories: [ "Konstanten" ]
 = Integer-Konstanten
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -50,11 +50,11 @@ Normalerweise werden Integerkonstanten als Dezimalzahlen behandelt (Basis 10). S
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -123,12 +123,12 @@ Per default werdem Integerkonstanten als Integer behandelt. Zur Verwendung von I
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
 
 
-// SEE ALSO SECTION BEGINS
+// SIEHE-AUCH-ABSCHNITT SECTION BEGINS
 [#see_also]
 --
 
@@ -138,4 +138,4 @@ Per default werdem Integerkonstanten als Integer behandelt. Zur Verwendung von I
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

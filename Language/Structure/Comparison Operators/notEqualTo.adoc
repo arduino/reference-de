@@ -12,7 +12,7 @@ subCategories: [ "Vergleichsoperatoren" ]
 = != Ungleich
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -34,11 +34,11 @@ Vergleicht die linke Variable mit dem Wert oder der Variablen rechts vom Operato
 
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -55,12 +55,12 @@ if (x != y) { / Prüft, ob x nicht gleich y ist
 
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -71,4 +71,4 @@ if (x != y) { / Prüft, ob x nicht gleich y ist
 
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

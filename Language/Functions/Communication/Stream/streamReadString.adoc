@@ -8,7 +8,7 @@ title: Stream.readString()
 = readString()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -35,4 +35,4 @@ Diese Funktion ist Teil der Stream-Klasse und kann von jeder Klasse aufgerufen w
 Eine aus einem Stream gelesene Zeichenfolge.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET

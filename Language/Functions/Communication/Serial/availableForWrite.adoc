@@ -8,7 +8,7 @@ title: Serial.availableForWrite()
 = availableForWrite()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -32,10 +32,10 @@ Ruft die Anzahl der zum Schreiben verfügbaren Bytes (Zeichen) im seriellen Puff
 === Rückgabewert
 Die Anzahl der zum Schreiben verfügbaren Bytes.
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -55,4 +55,4 @@ Die Anzahl der zum Schreiben verfügbaren Bytes.
 * #SPRACHE# link:../../stream/streamavailable[Stream.available()]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

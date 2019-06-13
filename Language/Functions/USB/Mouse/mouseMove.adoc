@@ -8,7 +8,7 @@ title: Mouse.move()
 = Mouse.move()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -36,12 +36,12 @@ Bevor `Mouse.move()` benutzt werden kann, muss link:../mousebegin[Mouse.begin()]
 Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -127,10 +127,10 @@ Wenn das `Mouse.move()`-Kommando benutzt wird, übernimmt der Arduino die Tastat
 Ein Button, um die Funktion notfalls zu sperren, ist sinnvoll.
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -145,4 +145,4 @@ Ein Button, um die Funktion notfalls zu sperren, ist sinnvoll.
 * #SPRACHE# link:../mouseispressed[Mouse.isPressed()]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

@@ -8,7 +8,7 @@ title: Serial.parseInt()
 = parseInt()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -50,10 +50,10 @@ Erlaubte `lookahead`-Werte:
 Die nächste gültige ganze Zahl. Datentyp: `long`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -74,4 +74,4 @@ Die nächste gültige ganze Zahl. Datentyp: `long`.
 * #SPRACHE# link:../../stream/streamparsefloat[Stream.parseFloat()]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

@@ -8,7 +8,7 @@ title: Serial.print()
 = print()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -60,12 +60,12 @@ Um Daten ohne Umwandlung in ihre Darstellung als Zeichen zu senden, verwende lin
 Gibt die Anzahl der geschriebenen Bytes zurück, das Lesen dieser Anzahl ist jedoch optional. Datentyp: `size_t`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -128,10 +128,10 @@ void loop() {
 Informationen zur Asynchronität von `_Serial_.println()` findest du im Abschnitt Hinweise und Warnungen von link:../write#howtouse[Serial.write()].
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -151,4 +151,4 @@ Informationen zur Asynchronität von `_Serial_.println()` findest du im Abschnit
 * #SPRACHE# link:https://www.arduino.cc/en/Tutorial/Memory[Memory]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

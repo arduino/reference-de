@@ -12,7 +12,7 @@ subCategories: [ "Boolsche Operatoren" ]
 = ! Logisches NICHT
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -22,11 +22,11 @@ subCategories: [ "Boolsche Operatoren" ]
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -55,10 +55,10 @@ x = !y; // Der invertierte Wert von y wird in x gespeichert
 Das bitweise NOT ~ (Tilde) sieht sehr anders aus als das boolesche NOT ! (Ausrufezeichen oder "Knall", wie die Programmierer sagen), aber man muss immer noch wissen, welches man will.
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -69,4 +69,4 @@ Das bitweise NOT ~ (Tilde) sieht sehr anders aus als das boolesche NOT ! (Ausruf
 * #SPRACHE# link:../../bitwise-operators/bitwisenot[~ Bitweises NOT]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

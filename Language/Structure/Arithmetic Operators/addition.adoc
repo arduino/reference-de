@@ -12,7 +12,7 @@ subCategories: [ "Arithmetische Operatoren" ]
 = + Addition
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -33,12 +33,12 @@ subCategories: [ "Arithmetische Operatoren" ]
 `operand1`: Variable oder Konstante. Erlaubte Datentypen: `int`, `float`, `double`, `byte`, `short`, `long`. +
 `operand2`: Variable oder Konstante. Erlaubte Datentypen: `int`, `float`, `double`, `byte`, `short`, `long`.
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -71,12 +71,12 @@ c = a + b; // Die Variable 'c' speichert nur den Wert 12 gegenüber der erwartet
 ----
 [%hardbreaks]
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -86,4 +86,4 @@ c = a + b; // Die Variable 'c' speichert nur den Wert 12 gegenüber der erwartet
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

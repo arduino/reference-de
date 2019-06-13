@@ -11,7 +11,7 @@ subCategories: [ "Mathematik" ]
 = sqrt(x)
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 Berechnet die Quadratwurzel einer Zahl.
 [#overview]
 --
@@ -36,10 +36,10 @@ Berechnet die Quadratwurzel einer Zahl.
 Quadratwurzel der Zahl. Datentyp: `double`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -47,4 +47,4 @@ Quadratwurzel der Zahl. Datentyp: `double`.
 === Siehe auch
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

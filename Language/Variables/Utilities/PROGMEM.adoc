@@ -11,7 +11,7 @@ subCategories: [ "Hilfsmittel" ]
 = PROGMEM
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -52,12 +52,12 @@ Die Benutzung von `PROGMEM` erfolgt in 2 Schritten. Nachdem die Daten in den Fla
 wieder auszulesen und zu bearbeiten. Diese sind auch in der link:http://www.nongnu.org/avr-libc/user-manual/group\__avr__pgmspace.html[pgmspace.h]-Softwarebibliothek definiert.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -196,9 +196,9 @@ Serial.print(F("Write something on the Serial Monitor that is stored in FLASH"))
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
-// SEE ALSO SECTION STARTS
+// SIEHE-AUCH-ABSCHNITT SECTION STARTS
 [#see_also]
 --
 
@@ -213,4 +213,4 @@ Serial.print(F("Write something on the Serial Monitor that is stored in FLASH"))
 * #DEFINITION# link:../../data-types/string[string]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

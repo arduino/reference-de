@@ -6,7 +6,7 @@ subCategories: [ "Zeit" ]
 
 = millis()
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -31,12 +31,12 @@ Keine.
 Anzahl der Millisekunden seit dem Programmstart. Datentyp: `unsigned long`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -68,10 +68,10 @@ Es können logische Fehler auftreten, wenn ein Programmierer versucht, mit klein
 Sogar mit Vorzeichen versehene `long`-Werte können auf Fehler stoßen, da ihr Maximalwert die Hälfte des vorzeichenlosen Gegenstücks ist.
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -82,4 +82,4 @@ Sogar mit Vorzeichen versehene `long`-Werte können auf Fehler stoßen, da ihr M
 * #BEISPIEL# http://arduino.cc/en/Tutorial/BlinkWithoutDelay[Blinken ohne Verzögerung^]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

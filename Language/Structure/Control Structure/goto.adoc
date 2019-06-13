@@ -11,7 +11,7 @@ subCategories: [ "Kontrollstruktur" ]
 = goto
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -40,12 +40,12 @@ goto label; // Springt zu dem Label.
 Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -80,12 +80,12 @@ Manchmal kann ein `goto` nützlich sein. Z.B um aus einer hohen Schleifentiefe w
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
 
 
-// SEE ALSO SECTION BEGINS
+// SIEHE-AUCH-ABSCHNITT SECTION BEGINS
 [#see_also]
 --
 
@@ -94,4 +94,4 @@ Manchmal kann ein `goto` nützlich sein. Z.B um aus einer hohen Schleifentiefe w
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

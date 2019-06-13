@@ -11,7 +11,7 @@ subCategories: [ "Zufallszahlen" ]
 = random()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -38,12 +38,12 @@ Die Zufallsfunktion generiert Pseudozufallszahlen.
 Eine Zufallszahl zwischen min und max-1. Datentyp: `long`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -93,10 +93,10 @@ In jedem Fall ist das absolute Maximum an die Länge des generierten Werts (32 B
 Wenn du max auf einen höheren Wert setzt, wird beim Kompilieren kein Fehler generiert. Während der Ausführung des Sketches werden jedoch die Zahlen nicht generiert wie erwartet.
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -104,4 +104,4 @@ Wenn du max auf einen höheren Wert setzt, wird beim Kompilieren kein Fehler gen
 === Siehe auch
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

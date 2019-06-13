@@ -8,7 +8,7 @@ title: Stream.readBytes()
 = readBytes()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -39,4 +39,4 @@ Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, 
 Die Anzahl der Bytes, die im Puffer abgelegt wurden. Datentyp: `size_t`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET

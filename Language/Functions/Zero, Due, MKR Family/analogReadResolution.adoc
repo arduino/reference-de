@@ -10,7 +10,7 @@ subCategories: [ "Zero-, Due-, MKR-Familie" ]
 = analogReadResolution()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -41,12 +41,12 @@ Die Boards *Due, Zero und MKR* verfügen über 12-Bit-ADC-Funktionen, auf die du
 Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -102,10 +102,10 @@ Durch die Verwendung einer 16-Bit-Auflösung (oder einer anderen *höheren* als 
 wenn diese auf zukünftigen Boards verfügbar sind, ohne dass eine Codezeile geändert werden muss.
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -119,4 +119,4 @@ wenn diese auf zukünftigen Boards verfügbar sind, ohne dass eine Codezeile ge�
 * #SPRACHE# link:../../analog-io/analogread[analogRead()]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

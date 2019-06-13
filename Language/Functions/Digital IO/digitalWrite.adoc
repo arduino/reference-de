@@ -11,7 +11,7 @@ subCategories: [ "Digital I/O" ]
 = digitalWrite()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -41,12 +41,12 @@ Wenn du `pinMode()` nicht auf `OUTPUT` setzt, aber eine LED auf den Pin anschlie
 Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -76,10 +76,10 @@ Die analogen Inputpins können als Digitalpins verwendet werden mit den Namen A0
 als analoge Inputs genutzt werden können.
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -90,4 +90,4 @@ als analoge Inputs genutzt werden können.
 * #BEISPIEL#-Tutorial: (http://arduino.cc/en/Tutorial/DigitalPins[Beschreibung der digitalen Pins^])
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

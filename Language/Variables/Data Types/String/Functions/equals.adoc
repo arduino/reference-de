@@ -11,7 +11,7 @@ subCategories: [ "StringObject Function" ]
 = equals()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -38,14 +38,14 @@ Vergleicht zwei Zeichenfolgen auf Gleichheit. Bei dem Vergleich wird zwischen Gr
 `true`: Wenn `myString` gleich `myString2` ist. +
 `false`: Sonst.
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -55,4 +55,4 @@ Vergleicht zwei Zeichenfolgen auf Gleichheit. Bei dem Vergleich wird zwischen Gr
 [role="example"]
 * #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

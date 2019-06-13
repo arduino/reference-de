@@ -5,7 +5,7 @@ title: Serial.available()
 = available()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -31,9 +31,9 @@ Rufe die Anzahl der zum Lesen verfügbaren Bytes (Zeichen) von der seriellen Sch
 === Rückgabewert
 Die Anzahl der zum Lesen verfügbaren Bytes.
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 [float]
@@ -89,10 +89,10 @@ void loop() {
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -112,4 +112,4 @@ void loop() {
 * #SPRACHE# link:../../stream/streamavailable[Stream.available()]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

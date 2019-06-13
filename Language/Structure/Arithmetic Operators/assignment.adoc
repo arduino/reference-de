@@ -12,7 +12,7 @@ subCategories: [ "Arithmetische Operatoren" ]
 = = Zuweisung (Einzelnes Gleichheitszeichen)
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -24,12 +24,12 @@ Der Zuweisungsoperator weist den Mikrocontroller an, den Wert oder Ausdruck auf 
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -53,9 +53,9 @@ sensVal = analogRead(0);  // Speichern der (digitalisierten) Eingangsspannung am
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
-// SEE ALSO SECTION STARTS
+// SIEHE-AUCH-ABSCHNITT SECTION STARTS
 [#see_also]
 --
 
@@ -69,4 +69,4 @@ sensVal = analogRead(0);  // Speichern der (digitalisierten) Eingangsspannung am
 * #SPRACHE#  link:../../../variables/data-types/long[long]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

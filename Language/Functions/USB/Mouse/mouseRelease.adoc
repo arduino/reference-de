@@ -8,7 +8,7 @@ title: Mouse.release()
 = Mouse.release()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -37,12 +37,12 @@ Löst den zuletzt per link:../mousepress[Mouse.press()] gedrückten Button. Der 
 Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -83,10 +83,10 @@ Wenn das `Mouse.release()`-Kommando benutzt wird, übernimmt der Arduino die Tas
 Ein Button, um die Funktion notfalls zu sperren, ist sinnvoll.
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -101,4 +101,4 @@ Ein Button, um die Funktion notfalls zu sperren, ist sinnvoll.
 * #SPRACHE# link:../mouseispressed[Mouse.isPressed()]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

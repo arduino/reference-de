@@ -11,7 +11,7 @@ subCategories: [ "Digital I/O" ]
 = digitalRead()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -36,12 +36,12 @@ Liest einen Wert von einem vorgegebenen Digitalpin ein, entweder `HIGH` oder `LO
 `HIGH` oder `LOW`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -74,10 +74,10 @@ Wenn der Pin nicht mit irgendetwas verbunden ist, kann ``digitalRead()`` entwede
 
 Die analogen Inputpins können als Digitalpins verwendet werden mit den Namen A0, A1, etc. Eine Ausnahme bilden die Pins A6 und A7 von Arduino Nano, Pro Mini und Mini, die nur als analoge Eingänge verwendet werden können.
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -88,4 +88,4 @@ Die analogen Inputpins können als Digitalpins verwendet werden mit den Namen A0
 * #BEISPIEL#-Tutorial: (http://arduino.cc/en/Tutorial/DigitalPins[Beschreibung der digitalen Pins^])
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

@@ -10,7 +10,7 @@ subCategories: [ "USB" ]
 = Keyboard
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -23,7 +23,7 @@ Die Bibliothek unterstützt die Verwendung von Hotkey. Hotkeys verändern das Ve
 link:../keyboard/keyboardmodifiers[Siehe hier] für weitere Informationen über die unterstützten Tasten und deren Benutzung.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 [float]
 === Anmerkungen und Warnungen
@@ -56,10 +56,10 @@ link:../keyboard/keyboardwrite[Keyboard.write()]
 '''
 
 --
-// FUNCTIONS SECTION ENDS
+// FUNCTIONS SECTION ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -74,4 +74,4 @@ link:../keyboard/keyboardwrite[Keyboard.write()]
 * #BEISPIEL# http://www.arduino.cc/en/Tutorial/KeyboardReprogram[KeyboardReprogram^]: Öffnet ein neues Fenster in der Arduino IDE und lädt ein simples Blinkprogramm auf das Board.
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

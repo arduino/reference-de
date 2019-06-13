@@ -10,7 +10,7 @@ subCategories: [ "Zero-, Due-, MKR-Familie" ]
 = analogWriteResolution()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -64,12 +64,12 @@ Wenn 10 Bit am DAC-Pin gesetzt werden, kann die volle DAC-Auflösung von 1024 We
 Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -132,10 +132,10 @@ werden die fehlenden Bits *mit Nullen aufgefüllt*, um die erforderliche Hardwar
 Zum Beispiel: Wenn der Due mit `analogWriteResolution(8)` auf einem 12-Bit-DAC-Pin verwendet wird,
 fügt der Arduino dem 8-Bit-Wert, der in `analogWrite()` verwendet wird, 4 Null-Bits hinzu, um die erforderlichen 12 Bit zu erhalten.
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -151,4 +151,4 @@ fügt der Arduino dem 8-Bit-Wert, der in `analogWrite()` verwendet wird, 4 Null-
 * #BEISPIEL# http://arduino.cc/en/Tutorial/AnalogInputPins[Beschreibung der analogen Inputpins^]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

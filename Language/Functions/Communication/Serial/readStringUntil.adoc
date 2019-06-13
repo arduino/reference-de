@@ -8,7 +8,7 @@ title: Serial.readStringUntil()
 = readStringUntil()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -37,10 +37,10 @@ Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, 
 Der gesamte `String`, der vom seriellen Puffer bis zum Abschlusszeichen gelesen wird.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -50,10 +50,10 @@ Das Abschlusszeichen wird aus dem seriellen Puffer gelöscht.
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -75,4 +75,4 @@ Das Abschlusszeichen wird aus dem seriellen Puffer gelöscht.
 * #SPRACHE# link:../../stream/streamparsefloat[stream.parseFloat()]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

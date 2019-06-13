@@ -11,7 +11,7 @@ subCategories: [ "Zeit" ]
 = micros()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -39,12 +39,12 @@ Keine.
 Gibt die Anzahl der Mikrosekunden zurück, seit das Arduino-Board das aktuelle Programm gestartet hat. Datentyp: `unsigned long`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -74,10 +74,10 @@ void loop() {
 Es gibt 1.000 Mikrosekunden in einer Millisekunde und 1.000.000 Mikrosekunden in einer Sekunde.
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -85,4 +85,4 @@ Es gibt 1.000 Mikrosekunden in einer Millisekunde und 1.000.000 Mikrosekunden in
 === Siehe auch
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

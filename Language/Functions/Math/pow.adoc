@@ -10,7 +10,7 @@ subCategories: [ "Mathematik" ]
 
 = pow(base, exponent)
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -37,10 +37,10 @@ Dies ist nützlich, um eine exponentielle Abbildung von Werten oder Kurven zu er
 Das Ergebnis der Potenzierung. Erlaubte Datentypen: `double`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -56,10 +56,10 @@ Siehe auch den (http://arduino.cc/playground/Main/Fscale[fscale]) Sketch für ei
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -71,4 +71,4 @@ Siehe auch den (http://arduino.cc/playground/Main/Fscale[fscale]) Sketch für ei
 * #DEFENITION# link:../../../variables/data-types/double[double]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

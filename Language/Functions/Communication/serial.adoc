@@ -10,7 +10,7 @@ subCategories: [ "Kommunikation" ]
 = Serial()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -41,7 +41,7 @@ Um sie zur Kommunikation mit einem externen seriellen TTL-Gerät zu verwenden, v
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 // FUNCTIONS SECTION STARTS
@@ -77,7 +77,7 @@ link:../serial/serialevent[serialEvent()]
 '''
 
 --
-// FUNCTIONS SECTION ENDS
+// FUNCTIONS SECTION ENDET
 
 
 // SEEALSO SECTION STARTS
@@ -98,4 +98,4 @@ link:../serial/serialevent[serialEvent()]
 
 
 --
-// SEEALSO SECTION ENDS
+// SEEALSO SECTION ENDET

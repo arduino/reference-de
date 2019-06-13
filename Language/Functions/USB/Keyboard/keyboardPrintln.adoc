@@ -8,7 +8,7 @@ title: Keyboard.println()
 = Keyboard.println()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -38,10 +38,10 @@ link:../keyboardbegin[Keyboard.begin()] muss aufgerufen werden, bevor `Keyboard.
 Anzahl an gesendeten Bytes. Datentyp: `size_t`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -79,4 +79,4 @@ Wenn das `Keyboard.println()`-Kommando benutzt wird, übernimmt der Arduino die 
 Ein Button, um die Funktion notfalls zu sperren, ist sinnvoll.
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET

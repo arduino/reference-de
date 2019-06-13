@@ -11,7 +11,7 @@ subCategories: [ "Bits und Bytes" ]
 = lowByte()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -35,10 +35,10 @@ Liest das least-significant (rechteste) Bit eines Wortes oder größeren Datenty
 === Rückgabewert
 Das geforderte Byte. Datentyp: `byte`.
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -49,4 +49,4 @@ Das geforderte Byte. Datentyp: `byte`.
 * #SPRACHE# link:../../../variables/data-types/word[word()]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

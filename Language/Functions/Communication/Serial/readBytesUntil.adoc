@@ -8,7 +8,7 @@ title: Serial.readBytesUntil()
 = Serial.readBytesUntil()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -41,10 +41,10 @@ Die Funktion gibt die Zeichen bis zum letzten Zeichen vor dem angegebenen Abschl
 Die Anzahl der Bytes, die im Puffer abgelegt wurden. Datentyp: `size_t`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -54,10 +54,10 @@ Das Abschlusszeichen wird aus dem seriellen Puffer gelöscht.
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -69,4 +69,4 @@ Das Abschlusszeichen wird aus dem seriellen Puffer gelöscht.
 * #SPRACHE# link:../../stream/streamreadbytesuntil[Stream.readBytesUntil()]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

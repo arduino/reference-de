@@ -6,7 +6,7 @@ subCategories: [ "Datentypen" ]
 
 = Arrays
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -80,10 +80,10 @@ for (byte i = 0; i < 5; i = i + 1) {
 [%hardbreaks]
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -92,10 +92,10 @@ for (byte i = 0; i < 5; i = i + 1) {
 Ein vollständiges Programm, das die Verwendung von Arrays demonstriert, findest du im (http://www.arduino.cc/en/Tutorial/KnightRider[Knight Rider-Beispiel]) des (http://www.arduino.cc/en/Main/LearnArduino[Tutorials]).
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION STARTS
+// SIEHE-AUCH-ABSCHNITT SECTION STARTS
 [#see_also]
 --
 
@@ -107,4 +107,4 @@ Ein vollständiges Programm, das die Verwendung von Arrays demonstriert, findest
 
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

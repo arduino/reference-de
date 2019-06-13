@@ -6,7 +6,7 @@ subCategories: [ "Datentypen" ]
 
 = String()
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -67,11 +67,11 @@ String(val, decimalPlaces)
 Eine Instanz der `String`-Klasse.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -93,7 +93,7 @@ String stringOne =  String(5.698, 3);                     // Ein float mit Dezim
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
 [float]
@@ -104,7 +104,7 @@ String stringOne =  String(5.698, 3);                     // Ein float mit Dezim
 * #SPRACHE# link:../string/functions/compareto[compareTo()]
 * #SPRACHE# link:../string/functions/concat[concat()]
 * #SPRACHE# link:../string/functions/c_str[c_str()]
-* #SPRACHE# link:../string/functions/endswith[endsWith()]
+* #SPRACHE# link:../string/functions/ENDETwith[ENDETWith()]
 * #SPRACHE# link:../string/functions/equals[equals()]
 * #SPRACHE# link:../string/functions/equalsignorecase[equalsIgnoreCase()]
 * #SPRACHE# link:../string/functions/getbytes[getBytes()]
@@ -143,7 +143,7 @@ String stringOne =  String(5.698, 3);                     // Ein float mit Dezim
 * #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 
 
-// SEE ALSO SECTION STARTS
+// SIEHE-AUCH-ABSCHNITT SECTION STARTS
 [#see_also]
 --
 
@@ -153,4 +153,4 @@ String stringOne =  String(5.698, 3);                     // Ein float mit Dezim
 [role="language"]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

@@ -11,7 +11,7 @@ subCategories: [ "Hilfsmittel" ]
 = sizeof
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -36,12 +36,12 @@ subCategories: [ "Hilfsmittel" ]
 Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -96,10 +96,10 @@ for (byte i = 0; i < (sizeof(myValues)/sizeof(myValues[0])); i++) {
 Beachte zusätzlich, dass ein richtig formattierter `String` mit dem `NULL`-Symbol beendet wird, also dem ASCII-Zeichen mit Nummer 0.
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -107,4 +107,4 @@ Beachte zusätzlich, dass ein richtig formattierter `String` mit dem `NULL`-Symb
 === Siehe auch
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

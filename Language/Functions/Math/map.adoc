@@ -11,7 +11,7 @@ subCategories: [ "Mathematik" ]
 = map(value, fromLow, fromHigh, toLow, toHigh)
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -56,12 +56,12 @@ Bruchreste werden abgeschnitten und nicht gerundet oder gemittelt.
 Den zugeordneten Wert.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -104,10 +104,10 @@ Zum Beispiel werden Brüche wie 3/2, 4/3, 5/4 trotz ihrer unterschiedlichen tats
 Wenn also für das Projekt genaue Berechnungen erforderlich sind (z. B. eine auf 3 Dezimalstellen genaue Spannung), sollte man map() vermeiden und die Berechnungen manuell im Code implementieren.
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -115,4 +115,4 @@ Wenn also für das Projekt genaue Berechnungen erforderlich sind (z. B. eine auf
 === Siehe auch
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

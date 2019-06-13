@@ -11,7 +11,7 @@ subCategories: [ "StringObject Function" ]
 = startsWith()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -37,14 +37,14 @@ Testet, ob ein `String` mit den Zeichen eines anderen Strings beginnt.
 `true`: Wenn `myString` mit den Zeichen von `myString2` beginnt. +
 `false`: Sonst.
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -54,4 +54,4 @@ Testet, ob ein `String` mit den Zeichen eines anderen Strings beginnt.
 [role="example"]
 * #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

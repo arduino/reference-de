@@ -11,7 +11,7 @@ subCategories: [ "Mathematik" ]
 = max(x, y)
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -37,12 +37,12 @@ Berechnet das Maximum von zwei Zahlen.
 Der größere der beiden Parameterwerte.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -72,10 +72,10 @@ a--;       // Andere Mathematik außerhalb der Funktion halten
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -83,4 +83,4 @@ a--;       // Andere Mathematik außerhalb der Funktion halten
 === Siehe auch
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

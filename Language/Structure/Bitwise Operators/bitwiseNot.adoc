@@ -12,7 +12,7 @@ subCategories: [ "Bitweise Operatoren" ]
 = ~ Bitweises NICHT
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -29,11 +29,11 @@ In anderen Worten:
     1  0   ~operand1
 [%hardbreaks]
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -61,7 +61,7 @@ Das Vorzeichenbit in einem vorzeichenbehafteten ganzzahligen Ausdruck kann manch
 [%hardbreaks]
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
 
@@ -78,4 +78,4 @@ Das Vorzeichenbit in einem vorzeichenbehafteten ganzzahligen Ausdruck kann manch
 * #BEISPIEL# https://www.arduino.cc/playground/Code/BitMath[BitMath-Tutorial^]
 
 --
-//SEE ALSO SECTION ENDS
+//SIEHE-AUCH-ABSCHNITT SECTION ENDET

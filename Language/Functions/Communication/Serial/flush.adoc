@@ -8,7 +8,7 @@ title: Serial.flush()
 = flush()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -35,10 +35,10 @@ Wartet, bis die Übertragung der ausgehenden seriellen Daten abgeschlossen ist. 
 Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -58,4 +58,4 @@ Nichts.
 * #SPRACHE# link:../../stream/streamflush[stream.flush()]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

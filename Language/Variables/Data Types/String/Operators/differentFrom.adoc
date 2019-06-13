@@ -12,7 +12,7 @@ subCategories: [ "StringObject Operator" ]
 = != Anders als
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -42,14 +42,14 @@ Dies bedeutet, dass der `String` "hallo" nicht mit dem `String` "HALLO" überein
 
 --
 
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -59,4 +59,4 @@ Dies bedeutet, dass der `String` "hallo" nicht mit dem `String` "HALLO" überein
 [role="example"]
 * #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples#strings[String-Tutorials^]
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET

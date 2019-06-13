@@ -5,7 +5,7 @@ title: Serial.write()
 = write()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -36,12 +36,12 @@ Zum Senden der Zeichen, die die Ziffern einer Zahl darstellen, verwende die link
 Gibt die Anzahl der geschriebenen Bytes zurück, das Lesen dieser Anzahl ist jedoch optional. Datentyp: `size_t`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 [float]
@@ -70,4 +70,4 @@ Wenn der Sendepuffer voll ist, wird `_Serial_.write()` blockiert, bis im Puffer 
 Um das Blockieren von Aufrufen von `_Serial_.write()` zu vermeiden, kannst du zunächst den freien Speicherplatz im Sendepuffer mit überprüfen: link:../availableforwrite[availableForWrite()].
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET

@@ -8,7 +8,7 @@ title: Keyboard.release()
 = Keyboard.release()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -33,12 +33,12 @@ Löst die mit link:../keyboardpress[Keyboard.press()] zuvor gedrückte Taste.
 Die Anzahl an gelösten Tasten. Datentyp: `size_t`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
 
 
 
-// HOW TO USE SECTION STARTS
+// HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
 
@@ -83,4 +83,4 @@ void loop() {
 ----
 
 --
-// HOW TO USE SECTION ENDS
+// HOW-TO-USE-ABSCHNITT ENDET

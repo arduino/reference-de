@@ -8,7 +8,7 @@ title: Serial.findUntil()
 = Serial.findUntil()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
@@ -39,9 +39,9 @@ Die Funktion gibt `true` zurück, wenn die Zielzeichenfolge gefunden wird, `fals
 Datentyp: `bool`.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
-// SEE ALSO SECTION
+// SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
 
@@ -53,4 +53,4 @@ Datentyp: `bool`.
 * #SPRACHE# link:../../stream/streamfinduntil[stream.findUntil()]
 
 --
-// SEE ALSO SECTION ENDS
+// SIEHE-AUCH-ABSCHNITT SECTION ENDET
