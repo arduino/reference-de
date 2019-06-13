@@ -23,8 +23,8 @@ Konvertiert einen Wert in den link:../../data-types/word[Word]-Datentyp.
 
 [float]
 === Syntax
-`word(x)` +
-`word(h, l)`
+`word(h, l)` +
+`(word)x` (Typ-Konvertierung wie in C)
 
 [float]
 === Parameter

@@ -23,7 +23,8 @@ Konvertiert einen Wert in den link:../../data-types/float[float]-Datentyp.
 
 [float]
 === Syntax
-`float(x)`
+`float(x)` +
+`(float)x` (Typ-Konvertierung wie in C)
 
 
 [float]
