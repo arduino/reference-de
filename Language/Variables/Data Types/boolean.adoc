@@ -1,10 +1,10 @@
 ---
-title: bool
+title: boolean
 categories: [ "Variables" ]
 subCategories: [ "Datentypen" ]
 ---
 
-= bool
+= boolean
 
 // OVERVIEW SECTION STARTS
 [#overview]
@@ -12,61 +12,15 @@ subCategories: [ "Datentypen" ]
 
 [float]
 === Beschreibung
-Ein `bool` enthält einen von zwei Werten, `true` oder `false`. (Jede `bool`-Variable belegt ein Byte Speicher.)
+`boolean` ist ein nicht standardmäßiger Typalias für link:../../../variables/data-types/bool[bool], welcher von Arduino definiert wurde. Es wird empfohlen, stattdessen den Standardtyp `bool` zu verwenden, der identisch ist.
 
 
 [%hardbreaks]
-
-
-[float]
-=== Syntax
-`bool var = val`
-
-
-[float]
-=== Parameter
-`var`: Variablenname. +
-`val`: Der Wert, der der Variablen zugewiesen wird.
 
 --
 // OVERVIEW SECTION ENDS
 
 
-
-
-// HOW TO USE SECTION STARTS
-[#howtouse]
---
-
-[float]
-=== Beispielcode
-// Beschreibe, worum es im Beispielcode geht, und füge relevanten Code hinzu   ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
-Dieser Code zeigt, wie der `bool`-Datentyp verwendet wird.
-
-[source,arduino]
-----
-int LEDpin = 5;     // LED auf Pin 5
-int switchPin = 13; // Momentschalter auf 13, andere Seite mit Masse verbunden
-
-bool running = false;
-
-void setup() {
-  pinMode(LEDpin, OUTPUT);
-  pinMode(switchPin, INPUT);
-  digitalWrite(switchPin, HIGH); // Pullup-Widerstand einschalten
-}
-
-void loop() {
-  if (digitalRead(switchPin) == LOW) {  // Schalter wird gedrückt - Pullup hält den Pin normalerweise hoch
-    delay(100);                    // Verzögerung zum Entprellen des Schalters
-    running = !running;            // Laufvariable umschalten
-    digitalWrite(LEDpin, running); // Über LED anzeigen
-  }
-}
-----
-
---
-// HOW TO USE SECTION ENDS
 
 
 // SEE ALSO SECTION STARTS
@@ -77,7 +31,6 @@ void loop() {
 === Siehe auch
 
 [role="language"]
-* #SPRACHE# link:../../../variables/constants/constants[Konstanten]
 
 --
 // SEE ALSO SECTION ENDS

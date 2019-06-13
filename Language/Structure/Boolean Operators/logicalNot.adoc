@@ -32,7 +32,7 @@ subCategories: [ "Boolsche Operatoren" ]
 
 [float]
 === Beispielcode
-Dieser Operator kann in einer link:../../control-structure/if/[if]-Anweisung verwendet werden.
+Dieser Operator kann in einer link:../../control-structure/if[if]-Anweisung verwendet werden.
 
 [source,arduino]
 ----

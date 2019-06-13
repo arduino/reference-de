@@ -36,7 +36,7 @@ Diese Routine kann nur benutzt werden, wenn Interrupts aktiviert werden. Die bes
 [float]
 === Parameter
 `pin`: Die Arduino-Pinnummer, an der der Impuls gelesen werden soll. Erlaubte Datentypen: `int`. +
-`value`: Welche Art von Impuls gelesen werden soll: Entweder link:../../../variables/constants/constants/[HIGH] oder link:../../../variables/constants/constants/[LOW]. Erlaubte Datentypen: `int`. +
+`value`: Welche Art von Impuls gelesen werden soll: Entweder link:../../../variables/constants/constants[HIGH] oder link:../../../variables/constants/constants[LOW]. Erlaubte Datentypen: `int`. +
 `timeout` (optional): Die Anzahl an Mikrosekunden, die gewartet werden soll, bis ein Impuls gemessen wurde; Default-Wert ist eine Sekunde. Erlaubte Datentypen: `unsigned long`.
 
 [float]
