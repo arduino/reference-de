@@ -22,7 +22,7 @@ Wird für die Kommunikation zwischen dem Arduino-Board und einem Computer oder a
 | Board                | USB CDC Name                     	   | Serielle Pins                     | Serial1 Pins     | Serial2 Pins       | Serial3 Pins
 | Uno, Nano, Mini      |                                  	   | 0(RX), 1(TX)                      |                  |                    |
 | Mega                 |                                  	   | 0(RX), 1(TX)                      | 19(RX), 18(TX)   | 17(RX), 16(TX)     | 15(RX), 14(TX)
-| Leonardo, Micro, Yún | Serielle Schnittstelle           	   | 0(RX), 1(TX)                      |                  |                    |
+| Leonardo, Micro, Yún | Serielle Schnittstelle           	   |                                   | 0(RX), 1(TX)     |                    |
 | Uno WiFi Rev.2       |                                  	   | An USB angeschlossen              | 0(RX), 1(TX)     | Verbunden mit NINA |
 | MKR boards           | Serielle Schnittstelle           	   |                                   | 13(RX), 14(TX)   |                    |
 | Zero                 | SerialUSB (Nur nativer USB-Anschluss) | Verbunden mit dem Programmierport | 0(RX), 1(TX)     |                    |
