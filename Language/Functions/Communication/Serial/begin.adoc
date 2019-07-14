@@ -35,12 +35,12 @@ Ein optionales zweites Argument konfiguriert die Daten-, Paritäts- und Stoppbit
 `SERIAL_5N1` +
 `SERIAL_6N1` +
 `SERIAL_7N1` +
-`SERIAL_8N1` (the default) +
+`SERIAL_8N1`: (Default) +
 `SERIAL_5N2` +
 `SERIAL_6N2` +
 `SERIAL_7N2` +
 `SERIAL_8N2` +
-`SERIAL_5E1` +
+`SERIAL_5E1`: Gerade Parität +
 `SERIAL_6E1` +
 `SERIAL_7E1` +
 `SERIAL_8E1` +
@@ -48,7 +48,7 @@ Ein optionales zweites Argument konfiguriert die Daten-, Paritäts- und Stoppbit
 `SERIAL_6E2` +
 `SERIAL_7E2` +
 `SERIAL_8E2` +
-`SERIAL_5O1` +
+`SERIAL_5O1`: Ungerade Parität +
 `SERIAL_6O1` +
 `SERIAL_7O1` +
 `SERIAL_8O1` +
