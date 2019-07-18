@@ -17,7 +17,7 @@ subCategories: [ "Umwandlung" ]
 
 [float]
 === Beschreibung
-Konvertiert einen Wert in den link:../../data-types/int[int]-Datentyp.
+Konvertiert einen Wert in den `link:../../data-types/int[int]`-Datentyp.
 [%hardbreaks]
 
 
@@ -34,7 +34,7 @@ Konvertiert einen Wert in den link:../../data-types/int[int]-Datentyp.
 
 [float]
 === Rückgabewert
-Datentyp: `int`.
+Datentyp: link:../../data-types/int[`int`].
 
 
 --
@@ -51,7 +51,7 @@ Datentyp: `int`.
 === Siehe auch
 
 [role="language"]
-* #SPRACHE# link:../../data-types/int[int]
+* #SPRACHE# link:../../data-types/int[`int`]
 
 
 --

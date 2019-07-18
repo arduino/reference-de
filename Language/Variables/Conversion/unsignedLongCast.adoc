@@ -17,7 +17,7 @@ subCategories: [ "Umwandlung" ]
 
 [float]
 === Beschreibung
-Konvertiert einen Wert in den link:../../data-types/unsignedlong[unsigned long]-Datentyp.
+Konvertiert einen Wert in den `link:../../data-types/unsignedlong[unsigned long]`-Datentyp.
 [%hardbreaks]
 
 
@@ -33,7 +33,7 @@ Konvertiert einen Wert in den link:../../data-types/unsignedlong[unsigned long]-
 
 [float]
 === Rückgabewert
-Datentyp: `unsigned long`.
+Datentyp: link:../../data-types/unsignedlong[`unsigned long`].
 
 --
 // ÜBERSICHTSABSCHNITT ENDET
@@ -49,7 +49,7 @@ Datentyp: `unsigned long`.
 === Siehe auch
 
 [role="language"]
-* #LANGUAGE# link:../../data-types/unsignedlong[unsigned long]
+* #LANGUAGE# link:../../data-types/unsignedlong[`unsigned long`]
 
 
 --

@@ -17,7 +17,7 @@ subCategories: [ "Umwandlung" ]
 
 [float]
 === Beschreibung
-Konvertiert einen Wert in den link:../../data-types/word[Word]-Datentyp.
+Konvertiert einen Wert in den `link:../../data-types/word[word]`-Datentyp.
 [%hardbreaks]
 
 
@@ -35,7 +35,7 @@ Konvertiert einen Wert in den link:../../data-types/word[Word]-Datentyp.
 
 [float]
 === Rückgabewert
-Datentyp: `word`.
+Datentyp: link:../../data-types/word[`word`].
 
 
 --
@@ -52,7 +52,7 @@ Datentyp: `word`.
 === Siehe auch
 
 [role="language"]
-* #SPRACHE# link:../../data-types/word[word]
+* #SPRACHE# link:../../data-types/word[`word`]
 
 
 --
