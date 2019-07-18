@@ -17,7 +17,7 @@ subCategories: [ "Umwandlung" ]
 
 [float]
 === Beschreibung
-Konvertiert einen Wert in den link:../../data-types/char[char]-Datentyp.
+Konvertiert einen Wert in den `link:../../data-types/char[char]`-Datentyp.
 [%hardbreaks]
 
 
@@ -34,7 +34,7 @@ Konvertiert einen Wert in den link:../../data-types/char[char]-Datentyp.
 
 [float]
 === Rückgabewert
-Datentyp: `char`.
+Datentyp: link:../../data-types/char[`char`].
 
 
 --
@@ -50,7 +50,7 @@ Datentyp: `char`.
 === Siehe auch
 
 [role="language"]
-* #SPRACHE# link:../../data-types/char[char]
+* #SPRACHE# link:../../data-types/char[`char`]
 
 --
 // SIEHE-AUCH-ABSCHNITT SECTION ENDET
