@@ -21,8 +21,8 @@ Das `const`-Keywort steht für Konstanten. Es ist ein Variablenkennzeichner, der
 Das bedeutet, dass die Variable wie alle anderen Variablen des gleichen Typs benutzt werden kann, aber dass der Wert unveränderlich ist. Wenn du der Variable einen
 neuen Wert zuweist, bekommst du einen Compiler-Fehler.
 
-Konstanten, die mit `const` versehen sind, folgen den Regeln des link:../scope[Variablenscopes]. Dieses Vorgehen und die Fallen bei der Verwendung von
-link:../../../structure/further-syntax/define[`#define`] sorgt dafür, dass `const` bevorzugt vor link:../../../structure/further-syntax/define[`#define`]
+Konstanten, die mit `const` versehen sind, folgen den Regeln des `link:../scope[Variablenscopes]`. Dieses Vorgehen und die Fallen bei der Verwendung von
+`link:../../../structure/further-syntax/define[#define]` sorgt dafür, dass `const` bevorzugt vor link:../../../structure/further-syntax/define[`#define`]
 benutzt werden sollte.
 [%hardbreaks]
 
@@ -59,7 +59,7 @@ pi = 7;     // Illegal-Konstante darf/kann nicht verändert werden.
 === Anmerkungen und Warnungen
 *`#define` oder `const`*
 
-Du kannst entweder `const` oder link:../../../structure/further-syntax/define[`#define`] für Konstanten verwenden. Für link:../../data-types/array[Arrays]
+Du kannst entweder `const` oder link:../../../structure/further-syntax/define[`#define`] für Konstanten verwenden. Für `link:../../data-types/array[Arrays]`
 musst du `const` verwenden. Generell wird `const` vor link:../../../structure/further-syntax/define[`#define`] vorgezogen.
 
 
@@ -75,7 +75,7 @@ musst du `const` verwenden. Generell wird `const` vor link:../../../structure/fu
 === Siehe auch
 
 [role="language"]
-* #SPRACHE# link:../../../structure/further-syntax/define[#define]
+* #SPRACHE# link:../../../structure/further-syntax/define[`#define`]
 
 --
 // SIEHE-AUCH-ABSCHNITT SECTION ENDET
