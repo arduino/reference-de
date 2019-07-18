@@ -45,21 +45,21 @@ Wenn von einem Digitalpin gelesen oder auf einen Digitalpin geschrieben wird, gi
 [float]
 === HIGH
 Die Bedeutung von `HIGH` (In Bezug auf den Pin) ist unterschiedlich, je nachdem, ob der Pin als `INPUT` oder `OUTPUT` definiert ist.
-Wenn ein Pin als `INPUT` mit link:../../../functions/digital-io/pinmode[pinMode()] definiert wird und mit
-link:../../../functions/digital-io/digitalread[digitalRead()] gelesen wird, gibt der Arduino (ATmega) `HIGH` zurück, wenn:
+Wenn ein Pin als `INPUT` mit `link:../../../functions/digital-io/pinmode[pinMode()]` definiert wird und mit
+`link:../../../functions/digital-io/digitalread[digitalRead()]` gelesen wird, gibt der Arduino (ATmega) `HIGH` zurück, wenn:
 
   - eine Spannung größer als 3,0V an dem Pin anliegt (5V-Boards)
   - eine Spannung größer als 2,0V an dem Pin anliegt (3,3V-Boards)
 [%hardbreaks]
 
-Ein Pin kann mit link:../../../functions/digital-io/pinmode[pinMode()] auch als `INPUT` definiert werden und mit
-link:../../../functions/digital-io/digitalwrite[digitalWrite()] auf `HIGH` gesetzt werden. Das aktiviert den internen 20K-Pullup-Widerstand,
+Ein Pin kann mit `link:../../../functions/digital-io/pinmode[pinMode()]` auch als `INPUT` definiert werden und mit
+`link:../../../functions/digital-io/digitalwrite[digitalWrite()]` auf `HIGH` gesetzt werden. Das aktiviert den internen 20K-Pullup-Widerstand,
 welcher den Inputpin auf `HIGH` zieht, bis dieser von extern wieder auf `LOW` gesetzt wird. So funktioniert auch `INPUT_PULLUP`. Die genaue
 Definition davon findest du weiter unten.
 [%hardbreaks]
 
-Wenn ein Pin mit link:../../../functions/digital-io/pinmode[pinMode()] als `OUTPUT` definiert wird und mit
-link:../../../functions/digital-io/digitalwrite[digitalWrite()] auf `HIGH` gesetzt wird, liegen an dem Pin:
+Wenn ein Pin mit `link:../../../functions/digital-io/pinmode[pinMode()]` als `OUTPUT` definiert wird und mit
+`link:../../../functions/digital-io/digitalwrite[digitalWrite()]` auf `HIGH` gesetzt wird, liegen an dem Pin:
 
   - 5V an (5V-Boards)
   - 3,3V an (3,3V-Boards)
@@ -70,26 +70,26 @@ In diesem Zustand kann z.B. eine LED angeschaltet werden, die über einen Vorsch
 [float]
 === LOW
 Die Bedeutung von `LOW` (In Bezug auf den Pin) ist ebenfalls unterschiedlich, je nachdem, ob der Pin als `INPUT` oder `OUTPUT` definiert ist.
-Wenn ein Pin als `INPUT` mit link:../../../functions/digital-io/pinmode[pinMode()] definiert wird und mit
-link:../../../functions/digital-io/digitalread[digitalRead()] gelesen wird, gibt der Arduino (ATmega) `LOW` zurück, wenn:
+Wenn ein Pin als `INPUT` mit `link:../../../functions/digital-io/pinmode[pinMode()]` definiert wird und mit
+`link:../../../functions/digital-io/digitalread[digitalRead()]` gelesen wird, gibt der Arduino (ATmega) `LOW` zurück, wenn:
 
   - eine Spannung kleiner als 1,5V an dem Pin anliegt (5V-Boards)
   - eine Spannung kleiner als 1,0V (circa) an dem Pin anliegt (3,3V-Boards)
 
-Wenn ein Pin mit link:../../../functions/digital-io/pinmode[pinMode()] als `OUTPUT` definiert wird und mit
-link:../../../functions/digital-io/digitalwrite[digitalWrite()] auf `LOW` gesetzt wird, liegen an ihm 0V an (Auf 5V- und 3,3V-Boards).
+Wenn ein Pin mit `link:../../../functions/digital-io/pinmode[pinMode()]` als `OUTPUT` definiert wird und mit
+`link:../../../functions/digital-io/digitalwrite[digitalWrite()]` auf `LOW` gesetzt wird, liegen an ihm 0V an (Auf 5V- und 3,3V-Boards).
   
 In diesem Zustand kann z.B. eine LED ausgeschaltet werden, die über einen Vorschaltwiderstand auf Masse verbunden ist.
 [%hardbreaks]
 
 [float]
 == Digitale Pinmodi: INPUT, INPUT_PULLUP, und OUTPUT
-Digitalpins können als `INPUT`, `INPUT_PULLUP`, oder `OUTPUT` genutzt werden. Wenn ein Pin mit link:../../../functions/digital-io/pinmode[pinMode()]
+Digitalpins können als `INPUT`, `INPUT_PULLUP`, oder `OUTPUT` genutzt werden. Wenn ein Pin mit `link:../../../functions/digital-io/pinmode[pinMode()]`
 auf einen anderen Modus umgeschalten wird, ändert sich dessen elektrisches Verhalten.
 
 [float]
 === INPUT
-Arduino (ATmega)-Pins, die mit link:../../../functions/digital-io/pinmode[pinMode()] als `INPUT` definiert werden, sind in einem _hochohmigen_ Zustand.
+Arduino (ATmega)-Pins, die mit `link:../../../functions/digital-io/pinmode[pinMode()]` als `INPUT` definiert werden, sind in einem _hochohmigen_ Zustand.
 Inputpins stellen sehr geringe Zusatzanforderungen an die Schaltung, die sie benutzen. Lediglich ein Vorschaltwiderstand von 100MOhm vor dem Pin ist nötig.
 Das macht sie sehr nützlich, um Sensoren auszulesen.
 [%hardbreaks]
@@ -110,7 +110,7 @@ Wenn ein Pulldown-Widerstand benutzt wird, ist der Zustand des Schalters `HIGH`,
 [float]
 === INPUT_PULLUP
 Der ATmega-Mikrocontroller auf dem Arduino hat interne Pullup-Widerstände, auf die zugegriffen werden kann. Wenn du diese statt externen Pullup-Widerstände
-verwenden möchtest, kannst du link:../../../functions/digital-io/pinmode[pinMode()] mit der Konstante `INPUT_PULLUP` als Argument verwenden.
+verwenden möchtest, kannst du `link:../../../functions/digital-io/pinmode[pinMode()]` mit der Konstante `INPUT_PULLUP` als Argument verwenden.
 [%hardbreaks]
 
 Siehe auch das http://arduino.cc/en/Tutorial/DigitalReadSerial[Digital Read Serial^]-Tutorial für weitere Informationen.
@@ -122,7 +122,7 @@ oder über der maximalen Spannungsversorgung des Mikrocontrollers liegen (5V ode
 
 [float]
 === OUTPUT
-Pins, die mit link:../../../functions/digital-io/pinmode[pinMode()] als `OUTPUT` definiert werden, sind in einem _niederohmigen_ Zustand. Das bedeutet, dass sie einen
+Pins, die mit `link:../../../functions/digital-io/pinmode[pinMode()]` als `OUTPUT` definiert werden, sind in einem _niederohmigen_ Zustand. Das bedeutet, dass sie einen
 wesentlichen Teil an Spannung an andere Schaltkreise weitergeben können. ATmega-Pins können Strom bis 40 mA aufnehmen oder abgeben. Das macht sie nützlich, um z.B. LEDs
 zu versorgen, da diese üblicherweise 40 mA nutzen. Motoren z.B. (Alles, das mehr als 40mA benötigt), brauchen dagegen einen Transistor.
 [%hardbreaks]
