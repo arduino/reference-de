@@ -17,7 +17,7 @@ subCategories: [ "Umwandlung" ]
 
 [float]
 === Beschreibung
-Konvertiert einen Wert in den link:../../data-types/byte[byte]-Datentyp.
+Konvertiert einen Wert in den `link:../../data-types/byte[byte]`-Datentyp.
 [%hardbreaks]
 
 
@@ -50,7 +50,7 @@ Datentyp: `byte`.
 === Siehe auch
 
 [role="language"]
-* #SPRACHE# link:../../data-types/byte[byte]
+* #SPRACHE# link:../../data-types/byte[`byte`]
 
 --
 // SIEHE-AUCH-ABSCHNITT SECTION ENDET
