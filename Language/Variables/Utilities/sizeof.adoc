@@ -33,7 +33,7 @@ subCategories: [ "Hilfsmittel" ]
 
 [float]
 === Rückgabewert
-Nichts.
+Die Anzahl der Bytes in einer Variablen oder die Bytes, die in einem Array belegt sind. Datentyp: `link:../../data-types/size_t[size_t]`.
 
 --
 // ÜBERSICHTSABSCHNITT ENDET
