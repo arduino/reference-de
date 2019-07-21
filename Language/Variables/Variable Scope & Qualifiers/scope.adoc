@@ -17,13 +17,13 @@ Variablen in der C++-Programmiersprache, auf die Arduino aufbaut, haben eine Eig
 wie z.B. BASIC, sind in C nicht alle Variablen _global_ verfügar.
 
 Eine globale Variable ist eine Variable, die vo jeder Funktion in dem Programm "gesehen" werden kann. Lokale Variablen sind nur gültig in der Funktion, in der
-sie deklariert wurden und können von außerhalb nicht verändert werden. In der Arduino-Umgebung ist jede Variable, die außerhalb einer Funktion (z.B. setup(), loop(), etc. )
+sie deklariert wurden und können von außerhalb nicht verändert werden. In der Arduino-Umgebung ist jede Variable, die außerhalb einer Funktion (z.B. `link:../../../structure/sketch/setup[setup()]`, `link:../../../structure/sketch/loop[loop()]`, etc. )
 definiert wird, eine _globale_ Variable.
 
 Wenn Programme größer und komplexer werden, sind lokale Variablen eine Möglichkeit, sicherzustellen, dass nur die Funktion Zugriff auf die Variable hat, die dies wirklich benötigt.
 Das verhindert unter Anderem, dass Funktionen unabsichtlich die Variablen anderer Funktionen ändern und damit unvorhersehbare Ergebnisse produzieren.
 
-Manchmal macht es auch Sinn, eine Variable direkt in einer for-Schleife zu initialisieren. Diese Variable ist dann nur innerhalb der for-Schleife gültig.
+Manchmal macht es auch Sinn, eine Variable direkt in einer `link:../../../structure/control-structure/for[for]`-Schleife zu initialisieren. Diese Variable ist dann nur innerhalb der link:../../../structure/control-structure/for[`for`]-Schleife gültig.
 [%hardbreaks]
 
 --
