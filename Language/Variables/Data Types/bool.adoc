@@ -12,7 +12,7 @@ subCategories: [ "Datentypen" ]
 
 [float]
 === Beschreibung
-Ein `bool` enthält einen von zwei Werten, `true` oder `false`. (Jede `bool`-Variable belegt ein Byte Speicher.)
+Ein `bool` enthält einen von zwei Werten, `link:../../constants/constants[true]` oder `link:../../constants/constants[false]`. (Jede `bool`-Variable belegt ein Byte Speicher.)
 
 
 [%hardbreaks]
