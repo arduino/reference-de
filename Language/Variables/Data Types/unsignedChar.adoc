@@ -12,11 +12,11 @@ subCategories: [ "Datentypen" ]
 
 [float]
 === Beschreibung
-Ein vorzeichenloser Datentyp belegt 1 Byte Speicher. Genauso wie der link:../byte[byte]-Datentyp.
+Ein vorzeichenloser Datentyp belegt 1 Byte Speicher. Genauso wie der `link:../byte[byte]`-Datentyp.
 
 Der vorzeichenlose char-Datentyp codiert Zahlen von 0 bis 255.
 
-Für die Konsistenz des Arduino-Programmierstils ist der Byte-Datentyp zu bevorzugen.
+Für die Konsistenz des Arduino-Programmierstils ist der link:../byte[`byte`]-Datentyp zu bevorzugen.
 [%hardbreaks]
 
 
