@@ -23,7 +23,7 @@ Int speichert negative Zahlen mit einer Technik namens (https://de.wikipedia.org
 Das höchste Bit, manchmal auch als "Vorzeichen" bezeichnet, kennzeichnet die Zahl als negative Zahl. Die restlichen Bits werden invertiert und 1 wird hinzugefügt.
 
 Der Arduino kümmert sich um den Umgang mit negativen Zahlen für dich, damit arithmetische Operationen auf die erwartete Weise transparent arbeiten.
-Es kann unerwartete Komplikationen im Umgang mit dem link:../../../structure/bitwise-operators/bitshiftright[Rechten Bitshift-Operator] (>>) geben.
+Es kann unerwartete Komplikationen im Umgang mit dem link:../../../structure/bitwise-operators/bitshiftright[Rechten Bitshift-Operator] (`>>`) geben.
 [%hardbreaks]
 
 
@@ -73,7 +73,7 @@ void loop() {
 Wenn vorzeichenbehaftete Variablen ihre maximale oder minimale Kapazität überschreiten, _laufen sie über_ (Overflow).
 Das Ergebnis eines Überlaufs ist unvorhersehbar, daher sollte dies vermieden werden.
 Ein typisches Symptom für einen Überlauf ist die Variable, die von ihrer maximalen Kapazität auf das Minimum "umgedreht" wird oder umgekehrt, dies ist jedoch nicht immer der Fall.
-Wenn du dieses Verhalten wünscht, verwende link:../unsignedint[unsigned int].
+Wenn du dieses Verhalten wünscht, verwende `link:../unsignedint[unsigned int]`.
 
 
 --
