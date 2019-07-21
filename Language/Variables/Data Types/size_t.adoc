@@ -13,7 +13,7 @@ subCategories: [ "Datentypen" ]
 [float]
 === Beschreibung
 `size_t` ist ein Datentyp, der die Größe eines Objekts in Bytes darstellen kann.
-Beispiele für die Verwendung von `size_t` sind der Rückgabetyp von link:../../utilities/sizeof[sizeof()] and link:../../../functions/communication/serial/print[Serial.print()].
+Beispiele für die Verwendung von `size_t` sind der Rückgabetyp von `link:../../utilities/sizeof[sizeof()]` and `link:../../../functions/communication/serial/print[Serial.print()]`.
 [%hardbreaks]
 
 
