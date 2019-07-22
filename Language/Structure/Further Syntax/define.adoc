@@ -27,7 +27,7 @@ Dies kann jedoch einige unerwünschte Nebenwirkungen haben, wenn zum Beispiel ei
 In diesem Fall würde der Text durch die #definierte Nummer (oder den Text) ersetzt.
 [%hardbreaks]
 
-Generell sollte das link:../../../variables/variable-scope\--qualifiers/const[const]-Schlüsselwort für die Definition von Konstanten bevorzugt und anstelle von `#define` verwendet werden.
+Generell sollte das `link:../../../variables/variable-scope\--qualifiers/const[const]`-Schlüsselwort für die Definition von Konstanten bevorzugt und anstelle von `#define` verwendet werden.
 [%hardbreaks]
 
 [float]
