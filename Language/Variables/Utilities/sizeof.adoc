@@ -82,7 +82,7 @@ void loop() {
 
 [float]
 === Anmerkungen und Warnungen
-`sizeof` gibt die Anzahl an Bytes zurück. Für Arrays größerer Variablentypen, wie z.B. Integer, sieht die Schleife wie folgt aus:
+`sizeof` gibt die Anzahl an Bytes zurück. Für Arrays größerer Variablentypen, wie z.B. link:../../data-types/int[`int`], sieht die Schleife wie folgt aus:
 
 [source,arduino]
 ----
