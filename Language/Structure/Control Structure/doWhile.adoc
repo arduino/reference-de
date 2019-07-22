@@ -18,7 +18,7 @@ subCategories: [ "Kontrollstruktur" ]
 [float]
 === Beschreibung
 [%hardbreaks]
-`do...while` funktioniert genauso wie eine link:../while[while]-Schleife. Der einzige Unterschied ist, dass `do...while` immer mindestens einmal ausgeführt wird,
+`do...while` funktioniert genauso wie eine `link:../while[while]`-Schleife. Der einzige Unterschied ist, dass `do...while` immer mindestens einmal ausgeführt wird,
 da die Bedingung erst am Schluss der Schleife getestet wird.
 
 [float]
@@ -33,7 +33,7 @@ do {
 
 [float]
 === Parameter
-`condition`: Ein Ausdruck, der auf `true` oder `false` evaluiert.
+`condition`: Ein Ausdruck, der auf `link:../../../variables/constants/constants[true]` oder `link:../../../variables/constants/constants[false]` evaluiert.
 
 
 [float]
