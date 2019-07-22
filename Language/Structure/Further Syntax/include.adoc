@@ -25,7 +25,7 @@ Dadurch erhält der Programmierer Zugriff auf eine große Gruppe von Standard-C-
 Die Hauptreferenzseite für AVR C-Bibliotheken (AVR ist eine Referenz auf die Atmel-Chips, auf denen der Arduino basiert) ist http://www.nongnu.org/avr-libc/user-manual/modules.html[hier^].
 [%hardbreaks]
 
-Beachte, dass `#include`, ähnlich wie link:../define[`#define`] kein Semikolon-Abschlusszeichen enthält und der Compiler bei der Eingabe kryptische Fehlermeldungen ausgibt.
+Beachte, dass `#include`, ähnlich wie `link:../define[#define]` kein Semikolon-Abschlusszeichen enthält und der Compiler bei der Eingabe kryptische Fehlermeldungen ausgibt.
 [%hardbreaks]
 
 --
