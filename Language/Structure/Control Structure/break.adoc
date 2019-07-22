@@ -18,8 +18,8 @@ subCategories: [ "Kontrollstruktur" ]
 [float]
 === Beschreibung
 [%hardbreaks]
-`break` wird benutzt, um aus link:../for[for-], link:../while[while-] oder link:../dowhile[do...while-]Schleifen zu springen, wobei
-die normalen `condition` übersprungen werden. Es wird auch benutzt, um aus link:../switchcase[switch case]-Statements zu springen.
+`break` wird benutzt, um aus `link:../for[for]`, `link:../while[while]` oder `link:../dowhile[do...while]`-Schleifen zu springen, wobei
+die normalen `condition` übersprungen werden. Es wird auch benutzt, um aus `link:../switchcase[switch case]`-Statements zu springen.
 [%hardbreaks]
 
 [float]
@@ -53,7 +53,7 @@ Nichts.
 === Beispielcode
 // Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu.   ►►►►► DIESER ABSCHNITT IST VERPFLICHTEND ◄◄◄◄◄
 
-Der folgende Code springt aus der `for`-Schleife, wenn der Sensorwert den Threshold übersteigt.
+Der folgende Code springt aus der link:../for[`for`]-Schleife, wenn der Sensorwert den Threshold übersteigt.
 
 [source,arduino]
 ----
