@@ -18,7 +18,7 @@ subCategories: [ "Kontrollstruktur" ]
 [float]
 === Beschreibung
 [%hardbreaks]
-Das `continue`-Statement überspringt die restliche Iteration einer Schleife (link:../for[for], link:../while[while], oder link:../dowhile[do...while]).
+Das `continue`-Statement überspringt die restliche Iteration einer Schleife (`link:../for[for]`, `link:../while[while]` oder `link:../dowhile[do...while]`).
 Das `continue`-Statement checkt anschließend die `condition` und durchläuft die Schleife erneut, bis die Abbruchbedingung erreicht ist.
 [%hardbreaks]
 
