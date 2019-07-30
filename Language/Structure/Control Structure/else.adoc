@@ -17,7 +17,7 @@ subCategories: [ "Kontrollstruktur" ]
 
 [float]
 === Beschreibung
-`if...else` erlaubt mehr Optionen als das einfache link:../if[if]. Es erlaubt, mehrere Variablen hintereinander abzufragen. Der `else`-Teil wird dann ausgeführt,
+`if...else` erlaubt mehr Optionen als das einfache `link:../if[if]`. Es erlaubt, mehrere Variablen hintereinander abzufragen. Der `else`-Teil wird dann ausgeführt,
 wenn die Bedingung im `if`-Teil `false` ist. Auf den `else`-Teil kann wieder ein `if` folgen, sodass viele sich gegenseitig ausschließende Konditionen gestestet werden können.
 [%hardbreaks]
 
