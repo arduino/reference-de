@@ -39,7 +39,7 @@ Alle folgenden Angaben sind gültige Deklarationen für Strings.
 
 *Null-Termination*
 
-Im Allgemeinen werden Zeichenfolgen mit einem Nullzeichen (ASCII-Code 0) abgeschlossen. Dadurch können Funktionen (wie `_Serial_.print()`) erkennen, wo das Ende eines Strings ist.
+Im Allgemeinen werden Zeichenfolgen mit einem Nullzeichen (ASCII-Code 0) abgeschlossen. Dadurch können Funktionen (wie `link:../../../functions/communication/serial/print[_Serial_.print()]`) erkennen, wo das Ende eines Strings ist.
 Andernfalls würden sie nachfolgende Speicherbytes lesen, die eigentlich nicht Teil der Zeichenfolge sind.
 
 Das bedeutet, dass die Zeichenfolge Platz für ein Zeichen mehr als den gewünschten Text haben muss.
@@ -71,7 +71,7 @@ Wenn du mit großen Textmengen arbeitest, z. B. bei einem Projekt mit LCD-Displa
 Da Strings selbst Arrays sind, handelt es sich eigentlich um ein zweidimensionales Array.
 
 
-In dem folgenden Code zeigt das Sternchen hinter dem Datentyp `char` "`char*`" an, dass dies ein Array von "`Zeigern`" ist.
+In dem folgenden Code zeigt das Sternchen hinter dem Datentyp `link:../char[char]` "`char*`" an, dass dies ein Array von "`Zeigern`" ist.
 Alle Array-Namen sind eigentlich Zeiger, daher ist dies zum Erstellen eines Arrays aus Arrays erforderlich. Zeiger sind eine der eher esoterischen Komponenten von C ++,
 die für Anfänger schwer verständlich sind, aber es ist nicht notwendig,Zeiger im Detail zu verstehen, um sie hier effektiv zu verwenden.
 
