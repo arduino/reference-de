@@ -58,7 +58,7 @@ void setup() {
 void loop() {
   Serial.write(45); // Sende ein Byte mit dem Wert 45
 
-  int bytesSent = Serial.write(“hello”); // Sende die Zeichenfolge "Hallo" und gib die Länge der Zeichenfolge zurück.
+  int bytesSent = Serial.write("hello"); // Sende die Zeichenfolge "Hallo" und gib die Länge der Zeichenfolge zurück.
 }
 ----
 [%hardbreaks]

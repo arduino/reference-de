@@ -37,7 +37,7 @@ Bei Gleitkommazahlen gibt dieser Parameter die Anzahl der zu verwendenden Dezima
 
 Du kannst Flash-Speicher-basierte Zeichenfolgen an `_Serial_.print()` übergeben, indem du Sie mit link:../../../../variables/utilities/progmem[F()] einschließt. Zum Beispiel:
 
-`_Serial_.print(F(“Hello World”))`
+`_Serial_.print(F("Hello World"))`
 
 Um Daten ohne Umwandlung in ihre Darstellung als Zeichen zu senden, verwende link:../write[Serial.write()].
 [%hardbreaks]
