@@ -12,12 +12,12 @@ subCategories: [ "Datentypen" ]
 
 [float]
 === Beschreibung
-Auf Uno und anderen ATMEGA-basierten Boards sind vorzeichenlose Ganzzahlen (`unsigned int`) die gleichen wie `int`s, da sie einen 2-Byte-Wert speichern.
+Auf Uno und anderen ATMEGA-basierten Boards sind vorzeichenlose Ganzzahlen (`unsigned int`) die gleichen wie `int`, da sie einen 2-Byte-Wert speichern.
 Anstatt negative Zahlen zu speichern, speichern sie jedoch nur positive Werte, was einen Bereich von 0 bis 65,535 (2^16 - 1) ergibt.
 
 The Due stores a 4 byte (32-bit) value, ranging from 0 bis 4,294,967,295 (2^32 - 1).
 
-Der Unterschied zwischen vorzeichenlosen `int`s und `signed int`s liegt in der Art und Weise, wie das höchste Bit, manchmal als "Vorzeichen" bezeichnet, interpretiert wird.
+Der Unterschied zwischen vorzeichenlosen `int` und `signed int` liegt in der Art und Weise, wie das höchste Bit, manchmal als "Vorzeichen" bezeichnet, interpretiert wird.
 Wenn im Arduino `int`-Typ (der mit Vorzeichen versehen ist) das High-Bit eine "1" ist, wird die Zahl als negative Zahl interpretiert und die anderen 15 Bits werden interpretiert
 mit dem (https://de.wikipedia.org/wiki/Zweierkomplement[Zweierkomplement]).
 [%hardbreaks]

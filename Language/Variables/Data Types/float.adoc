@@ -63,7 +63,7 @@ z = (float)x / 2.0; // z enthält jetzt .5 (Du musst 2.0 verwenden, nicht 2)
 Wenn du mit floats rechnest, musst du ein Dezimalzeichen hinzufügen, andernfalls wird es als `int` behandelt. Siehe die link:../../constants/floatingpointconstants[Fließpunkt]-Konstanten-Seite für weitere Informationen.
 
 Floats haben eine Genauigkeit von nur 6-7 Dezimalstellen. Das bedeutet die Gesamtzahl der Ziffern, nicht die Zahl rechts vom Dezimalpunkt.
-Im Gegensatz zu anderen Plattformen, bei denen du durch die Verwendung eines `double`s (z. B. bis zu 15 Ziffern) eine höhere Genauigkeit erzielen kannst, hat `double` auf dem Arduino die gleiche Größe wie `float`.
+Im Gegensatz zu anderen Plattformen, bei denen du durch die Verwendung eines `double` (z. B. bis zu 15 Ziffern) eine höhere Genauigkeit erzielen kannst, hat `double` auf dem Arduino die gleiche Größe wie `float`.
 
 Fließkommazahlen sind nicht genau und können beim Vergleich zu seltsamen Ergebnissen führen. Zum Beispiel kann `6.0 / 3.0` nicht gleich `2.0` sein.
 Du solltest stattdessen überprüfen, ob der absolute Wert der Differenz zwischen den Zahlen geringer als eine kleine Zahl ist.
