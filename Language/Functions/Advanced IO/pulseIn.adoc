@@ -22,7 +22,7 @@ wartet `pulseIn()` darauf,dass der Pin auf den Wert link:../../../variables/cons
 dass der Pin wieder auf link:../../../variables/constants/constants[LOW] wechselt. Daraufhin stoppt `pulseIn()` den Timer. Gibt die Länge des Impulses in Mikrosekunden zurück.
 Stoppt und gibt 0 zurück, wenn ein bestimmter Timeout erreicht wird.
 
-Das Timing der Funktion wurde empirisch getestet und wird vermutlich bei einem längeren Impuls falsch messen. Die Funktion funtioniert mit Impulsen der Länge von 10 Mikrosekunden bis 3 Minuten.
+Das Timing der Funktion wurde empirisch getestet und wird vermutlich bei einem längeren Impuls falsch messen. Die Funktion funktioniert mit Impulsen der Länge von 10 Mikrosekunden bis 3 Minuten.
 [%hardbreaks]
 
 
