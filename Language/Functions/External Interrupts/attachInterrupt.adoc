@@ -20,14 +20,17 @@ als ersten Parameter für `attachInterrupt()`.
 
 [options="header"]
 |===================================================
-|Board                                 |Benutzbare Digitalpins für Interrupts
 |Uno, Nano, Mini, andere 328-basierte  |2, 3
+|Uno WiFi Rev.2                        |Alle Digital-Pins
+|Uno WiFi Rev.2, Nano Every            |Alle Digital-Pins
 |Mega, Mega2560, MegaADK               |2, 3, 18, 19, 20, 21
 |Micro, Leonardo, andere 32u4-basierte |0, 1, 2, 3, 7
-|Zero                                  |Alle Digitalpins, außer 4
-|MKR1000 Rev.1                         |0, 1, 4, 5, 6, 7, 8, 9, A1, A2
-|Due                                   |Alle Digitalpins
-|101                                   |Alle Digitalpins (Nur die Pins 2, 5, 7, 8, 10, 11, 12, 13 funktionieren mit *CHANGE*)
+|Zero                                  |Alle Digital-Pins außer Pin 4
+|MKR Family-Boards                     |0, 1, 4, 5, 6, 7, 8, 9, A1, A2
+|Nano 33 IoT                           |2, 3, 9, 10, 11, 13, 15, A5, A7
+|Nano 33 BLE, Nano 33 BLE Sense        |Alle Pins
+|Due                                   |Alle Digital-Pins
+|101                                   |Alle Digital-Pins (Nur Pins 2, 5, 7, 8, 10, 11, 12, 13 funktionieren mit *CHANGE*)
 |===================================================
 
 [%hardbreaks]
