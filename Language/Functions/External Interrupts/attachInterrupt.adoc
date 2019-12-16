@@ -20,6 +20,7 @@ als ersten Parameter für `attachInterrupt()`.
 
 [options="header"]
 |===================================================
+|Board                                 |Benutzbare Digitalpins für Interrupts
 |Uno, Nano, Mini, andere 328-basierte  |2, 3
 |Uno WiFi Rev.2                        |Alle Digital-Pins
 |Uno WiFi Rev.2, Nano Every            |Alle Digital-Pins
