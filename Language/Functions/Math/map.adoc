@@ -40,7 +40,7 @@ Bruchreste werden abgeschnitten und nicht gerundet oder gemittelt.
 [float]
 === Syntax
 
-
+`map(value, fromLow, fromHigh, toLow, toHigh)`
 
 [float]
 === Parameter
