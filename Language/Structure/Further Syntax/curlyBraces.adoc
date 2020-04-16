@@ -2,7 +2,7 @@
 title: "{}"
 title_expanded: Geschweifte Klammern
 categories: [ "Structure" ]
-subCategories: [ "Weitere Syntax" ]
+subCategories: [ "Further Syntax" ]
 ---
 
 

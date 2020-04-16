@@ -2,7 +2,7 @@
 title: ";"
 title_expanded: Semikolon
 categories: [ "Structure" ]
-subCategories: [ "Weitere Syntax" ]
+subCategories: [ "Further Syntax" ]
 ---
 
 

@@ -2,7 +2,7 @@
 title: "!="
 title_expanded: Ungleich
 categories: [ "Structure" ]
-subCategories: [ "Vergleichsoperatoren" ]
+subCategories: [ "Comparison Operators" ]
 ---
 
 

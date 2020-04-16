@@ -2,7 +2,7 @@
 title: "||"
 title_expanded: Logisches ODER
 categories: [ "Structure" ]
-subCategories: [ "Boolsche Operatoren" ]
+subCategories: [ "Boolean Operators" ]
 ---
 
 

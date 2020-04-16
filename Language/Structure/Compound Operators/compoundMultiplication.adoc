@@ -2,7 +2,7 @@
 title: "*="
 title_expanded: Zusammengesetzte Multiplikation
 categories: [ "Structure" ]
-subCategories: [ "Verbundoperatoren" ]
+subCategories: [ "Compound Operators" ]
 ---
 
 

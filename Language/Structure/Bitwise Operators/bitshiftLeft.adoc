@@ -2,7 +2,7 @@
 title: "<<"
 title_expanded: Bitshift links
 categories: [ "Structure" ]
-subCategories: [ "Bitweise Operatoren" ]
+subCategories: [ "Bitwise Operators" ]
 ---
 
 

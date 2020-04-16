@@ -2,7 +2,7 @@
 title: "*"
 title_expanded: Dereferenzoperator
 categories: [ "Structure" ]
-subCategories: [ "Zeiger-Operatoren" ]
+subCategories: [ "Pointer Access Operators" ]
 ---
 
 

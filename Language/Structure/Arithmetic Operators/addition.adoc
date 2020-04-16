@@ -2,7 +2,7 @@
 title: "+"
 title_expanded: Addition
 categories: [ "Structure" ]
-subCategories: [ "Arithmetische Operatoren" ]
+subCategories: [ "Arithmetic Operators" ]
 ---
 
 

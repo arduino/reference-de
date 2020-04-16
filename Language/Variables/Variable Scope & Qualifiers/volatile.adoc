@@ -1,7 +1,7 @@
 ---
 title: volatile
 categories: [ "Variables" ]
-subCategories: [ "Variablenscope und Bezeichner" ]
+subCategories: [ "Data Types" ]
 ---
 
 

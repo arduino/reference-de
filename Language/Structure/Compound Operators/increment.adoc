@@ -2,7 +2,7 @@
 title: "++"
 title_expanded: Inkrement
 categories: [ "Structure" ]
-subCategories: [ "Verbundoperatoren" ]
+subCategories: [ "Compound Operators" ]
 ---
 
 

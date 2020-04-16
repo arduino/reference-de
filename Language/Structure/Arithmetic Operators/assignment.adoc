@@ -2,7 +2,7 @@
 title: "="
 title_expanded: Zuweisung
 categories: [ "Structure" ]
-subCategories: [ "Arithmetische Operatoren" ]
+subCategories: [ "Arithmetic Operators" ]
 ---
 
 

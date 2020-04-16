@@ -2,7 +2,7 @@
 title: "/* */"
 title_expanded: Kommentarblock
 categories: [ "Structure" ]
-subCategories: [ "Weitere Syntax" ]
+subCategories: [ "Further Syntax" ]
 ---
 
 

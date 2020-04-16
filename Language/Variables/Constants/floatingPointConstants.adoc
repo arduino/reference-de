@@ -1,7 +1,7 @@
 ---
 title: Gleitkommazahlkonstanten
 categories: [ "Variables" ]
-subCategories: [ "Konstanten" ]
+subCategories: [ "Constants" ]
 ---
 
 

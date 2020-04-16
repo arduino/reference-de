@@ -1,7 +1,7 @@
 ---
 title: PROGMEM
 categories: [ "Variables" ]
-subCategories: [ "Hilfsmittel" ]
+subCategories: [ "Utilities" ]
 ---
 
 

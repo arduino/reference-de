@@ -2,7 +2,7 @@
 title: ">="
 title_expanded: Größer oder gleich
 categories: [ "Structure" ]
-subCategories: [ "Vergleichsoperatoren" ]
+subCategories: [ "Comparison Operators" ]
 ---
 
 

@@ -2,7 +2,7 @@
 title: "|"
 title_expanded: Bitweises OR
 categories: [ "Structure" ]
-subCategories: [ "Bitweise Operatoren" ]
+subCategories: [ "Bitwise Operators" ]
 ---
 
 

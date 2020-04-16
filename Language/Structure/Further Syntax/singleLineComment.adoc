@@ -2,7 +2,7 @@
 title: "//"
 title_expanded: Einzeiliger Kommentar
 categories: [ "Structure" ]
-subCategories: [ "Weitere Syntax" ]
+subCategories: [ "Further Syntax" ]
 ---
 
 

@@ -2,7 +2,7 @@
 title: "+="
 title_expanded: Zusammengesetzte Addition
 categories: [ "Structure" ]
-subCategories: [ "Verbundoperatoren" ]
+subCategories: [ "Compound Operators" ]
 ---
 
 

@@ -2,7 +2,7 @@
 title: "/"
 title_expanded: Division
 categories: [ "Structure" ]
-subCategories: [ "Arithmetische Operatoren" ]
+subCategories: [ "Arithmetic Operators" ]
 ---
 
 

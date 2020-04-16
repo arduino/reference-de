@@ -2,7 +2,7 @@
 title: "|="
 title_expanded: Zusammengesetztes Bitweises ODER
 categories: [ "Structure" ]
-subCategories: [ "Verbundoperatoren" ]
+subCategories: [ "Compound Operators" ]
 ---
 
 

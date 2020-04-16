@@ -2,7 +2,7 @@
 title: "%="
 title_expanded: Zusammengesetzter Rest
 categories: [ "Structure" ]
-subCategories: [ "Verbundoperatoren" ]
+subCategories: [ "Compound Operators" ]
 ---
 
 

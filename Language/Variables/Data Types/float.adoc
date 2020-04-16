@@ -1,7 +1,7 @@
 ---
 title: float
 categories: [ "Variables" ]
-subCategories: [ "Datentypen" ]
+subCategories: [ "Data Types" ]
 ---
 
 = float
