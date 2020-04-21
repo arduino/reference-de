@@ -104,7 +104,7 @@ wird. Siehe auch das http://arduino.cc/en/Tutorial/DigitalReadSerial[Digital Rea
 Wenn ein Pulldown-Widerstand benutzt wird, ist der Zustand des Schalters `LOW`, wenn der Schalter offen ist und `HIGH`, wenn der Schalter geschlossen ist.
 [%hardbreaks]
 
-Wenn ein Pulldown-Widerstand benutzt wird, ist der Zustand des Schalters `HIGH`, wenn der Schalter offen ist und `LOW`, wenn der Schalter geschlossen ist.
+Wenn ein Pullup-Widerstand benutzt wird, ist der Zustand des Schalters `HIGH`, wenn der Schalter offen ist und `LOW`, wenn der Schalter geschlossen ist.
 [%hardbreaks]
 
 [float]
