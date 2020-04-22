@@ -113,7 +113,7 @@ Der ATmega-Mikrocontroller auf dem Arduino hat interne Pullup-Widerstände, auf 
 verwenden möchtest, kannst du `link:../../../functions/digital-io/pinmode[pinMode()]` mit der Konstante `INPUT_PULLUP` als Argument verwenden.
 [%hardbreaks]
 
-Siehe auch das http://arduino.cc/en/Tutorial/DigitalReadSerial[Digital Read Serial^]-Tutorial für weitere Informationen.
+Siehe auch das http://arduino.cc/en/Tutorial/InputPullupSerial[Input Pullup Serial^]-Tutorial für weitere Informationen.
 [%hardbreaks]
 
 Pins, die als `INPUT` oder `INPUT_PULLUP` definiert sind, können beschädigt oder zerstört werden, wenn diese Spannungen ausgesetzt werden, die negativ sind
