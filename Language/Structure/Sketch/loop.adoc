@@ -17,7 +17,8 @@ subCategories: [ "Sketch" ]
 
 [float]
 === Beschreibung
-After creating a `link:../setup[setup()]` function, which initializes and sets the initial values, the `loop()` function does precisely what its name suggests, and loops consecutively, allowing your program to change and respond. Use it to actively control the Arduino board.
+Während in der `link:../setup[setup()]` Funktion Variablen, Pins und Bibliotheken einmalig initialisiert werden, macht die `loop()` Funktion genau das was ihr Name vermuten lässt. Sie ist eine Endlosschleife die nach jedem Durchlauf erneut aufgerufen wird. Dadurch kann dein Programm Variablen verändern, Daten lesen oder darauf reagieren.
+Hier steuerst du was dein Board machen soll.
 [%hardbreaks]
 
 --
