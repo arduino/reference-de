@@ -33,12 +33,45 @@ Löscht den Wert (Schreibt 0) eines Bits einer Zahlen-Variable.
 
 [float]
 === Rückgabewert
-Nichts.
+`x`: Der Wert der numerischen Variablen nach dem Löschen des Bits an Position `n`.
 
 --
 // ÜBERSICHTSABSCHNITT ENDET
 
 
+
+// HOW-TO-USE-ABSCHNITT STARTET
+[#howtouse]
+--
+
+[float]
+=== Beispielcode
+Gibt das Ergebnis von `bitClear (x, n)` aus und verwendet zwei vorgegebenen ganzen Zahlen. Die binäre Darstellung von 6 ist 0110. Wenn also `n=1` ist, wird das zweite Bit von rechts auf 0 gesetzt. Danach bleibt 0100 in binär, so dass 4 zurückgegeben wird.
+
+[source,arduino]
+----
+void setup() {
+  Serial.begin(9600);
+  while (!Serial) {
+    ; // Wartet, bis die serielle Schnittstelle hergestellt ist. Wird nur für den nativen USB-Anschluss benötigt.
+  }
+
+  int x = 6;
+  int n = 1;
+  Serial.print(bitClear(x, n)); // Drucke die Ausgabe von bitClear(x,n) auf den seriellen Monitor.
+}
+
+void loop() {
+}
+----
+[%hardbreaks]
+
+--
+// HOW-TO-USE-ABSCHNITT ENDET
+
+
+
+// SEE ALSO SECTION
 // SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
