@@ -22,16 +22,18 @@ unterschiedlicher Geschwindigkeit laufen zu lassen. Nach Aufruf von `analogWrite
 bis der nächste Aufruf von `analogWrite()` (oder `digitalRead()` oder `digitalWrite()`) auf dem gleichen Pin erfolgt.
 [options="header"]
 |====================================================================================================
-| Board                | PWM-Pins                        | PWM-Frequenz
-| Uno, Nano, Mini      | 3, 5, 6, 9, 10, 11              | 490 Hz (Pins 5 und 6: 980 Hz)
-| Mega                 | 2 - 13, 44 - 46                 | 490 Hz (Pins 4 und 13: 980 Hz)
-| Leonardo, Micro, Yún | 3, 5, 6, 9, 10, 11, 13          | 490 Hz (Pins 3 und 11: 980 Hz)
-| Uno WiFi Rev.2       | 3, 5, 6, 9, 10                  | 976 Hz
-| MKR boards *         | 0 - 8, 10, A3 (18), A4 (19)     | 732 Hz
-| MKR1000 WiFi *       | 0 - 8, 10, 11, A3 (18), A4 (19) | 732 Hz
-| Zero *               | 3 - 13, A0 (14), A1 (15)        | 732 Hz
-| Due **               | 2-13                            | 1000 Hz
-| 101                  | 3, 5, 6, 9                      | Pins 3 und 9: 490 Hz, Pins 5 und 6: 980 Hz
+| Board                      | PWM-Pins                        | PWM-Frequenz
+| Uno, Nano, Mini            | 3, 5, 6, 9, 10, 11              | 490 Hz (Pins 5 und 6: 980 Hz)
+| Mega                       | 2 - 13, 44 - 46                 | 490 Hz (Pins 4 und 13: 980 Hz)
+| Leonardo, Micro, Yún       | 3, 5, 6, 9, 10, 11, 13          | 490 Hz (Pins 3 und 11: 980 Hz)
+| Uno WiFi Rev.2, Nano Every | 3, 5, 6, 9, 10                  | 976 Hz
+| MKR boards *               | 0 - 8, 10, A3 (18), A4 (19)     | 732 Hz
+| MKR1000 WiFi *             | 0 - 8, 10, 11, A3 (18), A4 (19) | 732 Hz
+| Zero *                     | 3 - 13, A0 (14), A1 (15)        | 732 Hz
+| Nano 33 IoT *              | 2, 3, 5, 6, 9 - 12, A2, A3, A5  | 732 Hz
+| Nano 33 BLE/BLE Sense      | 1 - 13, A0 - A7                 | 500 Hz
+| Due **                     | 2-13                            | 1000 Hz
+| 101                        | 3, 5, 6, 9                      | Pins 3 und 9: 490 Hz, Pins 5 und 6: 980 Hz
 |====================================================================================================
 {empty}* Zusätzlich zu den oben erwähnten PWM-Funktionen für die Pins verfügen die MKR- und Zero-Boards über einen echten Analogausgang, wenn `analogWrite()` auf dem `DAC0` (`A0`)-Pin benutzt wird. +
 {empty}** Zusätzlich zu den oben erwähnten PWM-Funktionen für die Pins verfügt das Due-Board über einen echten Analogausgang, wenn `analogWrite()` auf den `DAC0` und `DAC1`-Pins benutzt wird.
