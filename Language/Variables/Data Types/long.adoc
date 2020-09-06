@@ -14,7 +14,7 @@ subCategories: [ "Data Types" ]
 === Beschreibung
 Long-Variablen sind Variablen mit erweiterter Größe für die Nummernspeicherung und speichern 32 Bit (4 Byte), von -2,147,483,648 bis 2,147,483,647.
 
-Wenn du mit ganzzahligen Zahlen rechnest, muss mindestens eine der Zahlen von einem L gefolgt werden, wodurch eine long-Zahl erzwungen wird.
+Wenn du mit ganzzahligen Zahlen rechnest, muss mindestens einer der Werte vom Typ `long` sein, entweder ein Integer gefolgt von einem L oder eine long-Variable. Dadurch wird eine Long-Zahl erzwungen.
 Siehe auch die link:../../constants/integerconstants[Ganzzahlkonstanten]-Seite für mehr Details.
 [%hardbreaks]
 
@@ -25,7 +25,7 @@ Siehe auch die link:../../constants/integerconstants[Ganzzahlkonstanten]-Seite f
 
 
 [float]
-=== Parameter
+=== Beschreibung
 `var`: Variablenname. +
 `val`: Der Wert, der der Variablen zugewiesen wird.
 [%hardbreaks]
@@ -46,7 +46,7 @@ Siehe auch die link:../../constants/integerconstants[Ganzzahlkonstanten]-Seite f
 
 [source,arduino]
 ----
-long speedOfLight = 186000L; // Auf der Ganzzahlkonstanten-Seite findest du Erläuterungen zu dem 'L'.
+long speedOfLight_km_s = 300000L; // Auf der Ganzzahlkonstanten-Seite findest du Erläuterungen zu dem 'L'.
 ----
 
 --
