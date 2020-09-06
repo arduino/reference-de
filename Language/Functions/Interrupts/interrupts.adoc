@@ -17,7 +17,7 @@ subCategories: [ "Interrupts" ]
 
 [float]
 === Beschreibung
-Aktiviert Interrupts (nachdem diese mit link:../nointerrupts[nointerrupts()] deaktiviert wurden). Interrupts erlauben bestimmten wichtigen Tasks, im Hintergrund zu laufen
+Aktiviert Interrupts (nachdem diese mit link:../noInterrupts[noInterrupts()] deaktiviert wurden). Interrupts erlauben bestimmten wichtigen Tasks, im Hintergrund zu laufen
 und sind somit per default aktiviert. Wenn Interrupts deaktiviert werden, werden einige Funktionen nicht funktionieren und eingehende Kommunikation wird
 möglicherweise ignoriert. Interrupts beeinflussen die Geschwindigkeit und das Timing im Code minimal. Für besonders zeitkritische Codeabschnitte sollten sie
 deshalb deaktiviert werden.
