@@ -39,7 +39,7 @@ bis der nächste Aufruf von `analogWrite()` (oder `digitalRead()` oder `digitalW
 {empty}** Zusätzlich zu den oben erwähnten PWM-Funktionen für die Pins verfügt das Due-Board über einen echten Analogausgang, wenn `analogWrite()` auf den `DAC0` und `DAC1`-Pins benutzt wird.
 
 [%hardbreaks]
-Du musst einen Pin explizit als Ausgabepin über `pinMode()` festlegen,
+Du musst einen Pin nicht explizit als Ausgabepin über `pinMode()` festlegen,
 bevor du `analogWrite()` nutzt. Die `analogWrite()`-Funktion hat nichts mit analogen Pins oder der `analogRead`-Funktion zu tun.
 [%hardbreaks]
 
