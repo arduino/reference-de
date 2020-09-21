@@ -28,6 +28,18 @@ Die Hauptreferenzseite für AVR C-Bibliotheken (AVR ist eine Referenz auf die At
 Beachte, dass `#include`, ähnlich wie `link:../define[#define]` kein Semikolon-Abschlusszeichen enthält und der Compiler bei der Eingabe kryptische Fehlermeldungen ausgibt.
 [%hardbreaks]
 
+
+[float]
+=== Syntax
+`#include <LibraryFile.h>` +
+`#include "LocalFile.h"`
+
+
+[float]
+=== Parameter
+`LibraryFile.h`: Wenn die Syntax der spitzen Klammern verwendet wird, werden die Bibliothekspfade nach der Datei durchsucht. +
+`LocalFile.h`: Wenn die Syntax in doppelten Anführungszeichen verwendet wird, wird der Ordner der Datei mit der Direktive `#include` nach der angegebenen Datei durchsucht. Anschließend wird in den Bibliothekspfaden gesucht, wenn sie nicht im lokalen Pfad gefunden wurden. Verwende diese Syntax für Header-Dateien im Ordner des Sketches.
+
 --
 // ÜBERSICHTSABSCHNITT ENDET
 
