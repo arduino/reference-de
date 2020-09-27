@@ -60,40 +60,49 @@ Es gibt mehrere Möglichkeiten, das zu tun:
 [float]
 === Beispielcode
 // Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu.   ►►►►► DIESER ABSCHNITT IST VERPFLICHTEND ◄◄◄◄◄
-Die LED wird angeschaltet, wenn der Interruptpin den Status ändert.
+Der Modifikator `volatile` stellt sicher, dass Änderungen an der Variablen `state` sofort in `loop()` sichtbar sind.
+Ohne den Modifikator `volatile` kann die Variable `state` beim Eingeben der Funktion in ein Register geladen werden und wird erst nach Beendigung der Funktion aktualisiert.
 
 [source,arduino]
 ----
-// Initialisiere den Pin der LED auf Pin 13
-int pin = 13;
-// Intitialisiere den Status als volatile auf LOW
-volatile int state = LOW;
+// Die LED wird angeschaltet, wenn der Interrupt-Pin den Status ändert.
+volatile byte changed = 0;
 
 void setup() {
-  // Deklariere den Pin als Outputpin
-  pinMode(pin, OUTPUT);
-  // Setze einen Interrupt auf Pin 0, wenn
-  attachInterrupt(digitalPinToInterrupt(2), blink, CHANGE);
+  // Deklariere den LED-Pin als Output-Pin
+  pinMode(LED_BUILTIN, OUTPUT);
+  // Setze einen Interrupt
+  attachInterrupt(digitalPinToInterrupt(2), toggle, CHANGE);
 }
 
 void loop() {
-  // Schreibe den Status auf den Pin zurück
-  digitalWrite(pin, state);
+  if (changed == 1) {
+    // toggle() wurde vom Interrupt aus aufgerufen!
+    // changed auf 0 zurücksetzen
+    changed = 0;
+    // LED für 200 ms blinken lassen
+    digitalWrite(LED_BUILTIN, HIGH);
+    delay(200);
+    digitalWrite(LED_BUILTIN, LOW);
+  }
 }
 
-void blink() {
+void toggle() {
   // Invertiere den Status, dass die LED blinkt
-  state = !state;
+  changed = 1;
 }
 
 ----
 
+Verwenden Sie das Makro `ATOMIC_BLOCK`, um auf eine Variable zuzugreifen, deren Größe größer ist als der 8-Bit-Datenbus des Mikrocontrollers.
+Das Makro stellt sicher, dass die Variable in einer atomaren Operation gelesen wird, d.H. ihr Inhalt kann nicht geändert werden, während sie gelesen wird.
 
 [source,arduino]
 ----
 #include <util/atomic.h> // Diese Bibliothek fügt das ATOMIC_BLOCK-Makro ein.
 volatile int input_from_interrupt;
 
+// Irgendwo im Code, z.B. in loop()
 ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
   // Code mit geblockten Interrupts hier (Mehrere atomare Operationen hintereinander werden nicht durch Interrupts unterbrochen)
   int result = input_from_interrupt;
