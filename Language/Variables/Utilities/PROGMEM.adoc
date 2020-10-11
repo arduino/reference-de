@@ -32,7 +32,7 @@ standardmäßig enthalten. Solltest du eine IDE-Version niedriger als 1.0 (von 2
 
 [float]
 === Syntax
-const dataType variableName[] PROGMEM = {data0, data1, data3...};`
+`const dataType variableName[] PROGMEM = {data0, data1, data3...};`
 
 `dataType` - Beliebiger Variablentyp
 `variableName` - Der Variablenname
@@ -43,7 +43,7 @@ mit der Arduino IDE Version 13. Frühere Versionen der IDE arbeiten besser, wenn
 
 `const dataType variableName[] PROGMEM = {};   // Benutze dies` +
 `const PROGMEM  dataType  variableName[] = {}; // oder das,`+
-`const dataType PROGMEM variableName[] = {};   // aber nicht diese Version!
+`const dataType PROGMEM variableName[] = {};   // aber nicht diese Version!`
 
 `PROGMEM` kann auch für einzelne Variablen benutzt werden, dies ist aber nur sinnvoll, wenn ein großer Block von Daten gespeichert werden soll. Normalerweise ist das bei Arrays,
 Strings (die auch Arrays sind) und weiteren komplizierteren Datenstrukturen der Fall.
