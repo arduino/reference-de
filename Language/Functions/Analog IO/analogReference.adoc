@@ -52,7 +52,7 @@ Arduino SAM Boards (Due)
 
 * AR_DEFAULT: Default analoge Einstellung von 3,3 V. Dies ist die einzige unterstützte Option für den Due.
 
-Arduino mbed-fähige Boards (Nur Nano 33 BLE): Nur verfügbar, wenn die _Arduino mbed-fähige_-Plattform verwendet wird und nicht, wenn die _Arduino nRF528x Boards (Mbed OS)_-Plattform verwendet wird.
+Arduino mbed-fähige Boards (Nur Nano 33 BLE): Verfügbar, wenn die _Arduino mbed-fähige_-Plattform verwendet wird oder, wenn die _Arduino nRF528x Boards (Mbed OS)_-Plattform (in Version 1.1.6 oder neuer) verwendet wird.
 
 * AR_VDD: Die Standardreferenz von 3,3 V.
 * AR_INTERNAL: Eingebaute Referenz von 0,6 V
