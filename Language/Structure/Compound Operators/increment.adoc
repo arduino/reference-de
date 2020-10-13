@@ -24,8 +24,8 @@ Erhöht den Wert einer Variablen um 1.
 
 [float]
 === Syntax
-`x++; // x um eins erhöhen und den alten Wert von x zurückgeben` +
-`++x; // x um eins erhöhen und den neuen Wert von x zurückgeben`
+`x{plus}{plus}; // x um eins erhöhen und den alten Wert von x zurückgeben` +
+`{plus}{plus}x; // x um eins erhöhen und den neuen Wert von x zurückgeben`
 
 
 [float]
