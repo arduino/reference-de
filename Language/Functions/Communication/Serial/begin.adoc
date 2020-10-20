@@ -115,6 +115,8 @@ Danke an Jeff Gray für das Mega-Beispiel.
 === Anmerkungen und Warnungen
 Bei seriellen USB-CDC-Anschlüssen (z. B. `Serial` am Leonardo) ist `_Serial_.begin()` irrelevant. Du kannst eine beliebige Baudrate und Konfiguration für die serielle Kommunikation mit diesen Ports verwenden.
 Siehe die Liste der verfügbaren seriellen Schnittstellen für jedes Board auf der link:../../serial[Serial-Hauptseite].
+
+Der einzige `config`-Wert, der für `Serial1` auf den Arduino Nano 33 BLE- und Nano 33 BLE Sense-Boards unterstützt wird, ist `SERIAL_8N1`.
 [%hardbreaks]
 
 --
