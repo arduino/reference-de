@@ -16,11 +16,12 @@ subCategories: [ "Zero, Due & MKR Family" ]
 
 [float]
 === Beschreibung
-`analogReadResolution()` ist eine Erweiterung der Analog-API für die Arduino Due-, Zero- und MKR-Familie.
+`analogReadResolution()` ist eine Erweiterung der Analog-API für die Zero-, Due- und MKR-Familie sowie die Arduino  Nano 33 (BLE und IoT) und Portenta.
 
 Legt die Größe (in Bits) des von `analogRead()` zurückgegebenen Werts fest. Der Standardwert ist 10 Bit (gibt Werte zwischen 0-1023 zurück), um die Abwärtskompatibilität mit AVR-basierten Boards zu gewährleisten.
 
-Die Boards *Due, Zero und MKR* verfügen über 12-Bit-ADC-Funktionen, auf die durch Ändern der Auflösung auf 12 zugegriffen werden kann. Dadurch werden Werte von `analogRead()` zwischen 0 und 4095 zurückgegeben.
+Die Boards *Zero, Due, MKR und Nano 33 (BLE und IoT)* verfügen über 12-Bit-ADC-Funktionen, auf die durch Ändern der Auflösung auf 12 zugegriffen werden kann. Dadurch werden Werte von `analogRead()` zwischen 0 und 4095 zurückgegeben.
+Der *Portenta H7* verfügt über einen 16-Bit-ADC, der Werte zwischen 0 und 65535 zulässt.
 [%hardbreaks]
 
 
@@ -31,9 +32,7 @@ Die Boards *Due, Zero und MKR* verfügen über 12-Bit-ADC-Funktionen, auf die du
 
 [float]
 === Parameter
-`bits`: bestimmt die Auflösung (in Bits) des von der Funktion `analogRead()` zurückgegebenen Wert.
-		Man kann dies zwischen 1 und 32 einstellen. Man kann auch Auflösungen höher als 12 einstellen, aber Werte, die von `analogRead()` zurückgegeben werden,
-		unterliegen einer Annäherung. Weitere Informationen finden sich im Hinweis unten.
+`bits`: bestimmt die Auflösung (in Bits) des von der Funktion `analogRead()` zurückgegebenen Wert. Man kann dies zwischen 1 und 32 einstellen. Man kann auch Auflösungen höher als die unterstützten 12 oder 16 Bit einstellen, aber Werte, die von `analogRead()` zurückgegeben werden, unterliegen einer Rundung. Weitere Informationen finden sich im Hinweis unten.
 
 
 [float]
