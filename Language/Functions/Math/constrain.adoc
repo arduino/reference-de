@@ -29,7 +29,7 @@ Beschränkt eine Zahl auf einen Bereich.
 [float]
 === Parameter
 `x`: Die zu beschränkende Zahl. Erlaubte Datentypen: Beliebiger Datentyp. +
-`a`: Das unteren Ende des Bereichs. Erlaubte Datentypen: Beliebiger Datentyp. +
+`a`: Das untere Ende des Bereichs. Erlaubte Datentypen: Beliebiger Datentyp. +
 `b`: Das obere Ende des Bereichs. Erlaubte Datentypen: Beliebiger Datentyp.
 
 
