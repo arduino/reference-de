@@ -18,7 +18,7 @@ Gibt die Anzahl von Millisekunden zurück, seit das Arduino-Board das aktuelle P
 
 [float]
 === Syntax
-`time = millis()`
+`myTime = millis()`
 
 
 [float]
@@ -47,15 +47,15 @@ Der Code liest die Millisekunden seit Beginn des Sketches des Arduino-Boards und
 
 [source,arduino]
 ----
-unsigned long time;
+unsigned long myTime;
 
 void setup() {
   Serial.begin(9600);
 }
 void loop() {
   Serial.print("Time: ");
-  time = millis();
-  Serial.println(time);// Gibt die Zeit seit dem Programmstart aus
+  myTime = millis();
+  Serial.println(myTime);// Gibt die Zeit seit dem Programmstart aus
   delay(1000);         // Eine Sekunde warten, um keine riesigen Datenmengen zu senden
 }
 ----
