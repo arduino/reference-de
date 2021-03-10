@@ -58,17 +58,14 @@ ausgeführt wird.
 
 [source,arduino]
 ----
-if (x > 120) {
-  digitalWrite(LEDpin, HIGH);
-}
+if (x > 120) digitalWrite(LEDpin, HIGH);
 
-if (x > 120) {
-  digitalWrite(LEDpin, HIGH);
-}
 
-if (x > 120) {
+if (x > 120) 
   digitalWrite(LEDpin, HIGH);
-}
+
+
+if (x > 120) {  digitalWrite(LEDpin, HIGH);}
 
 if (x > 120) {
   digitalWrite(LEDpin1, HIGH);
