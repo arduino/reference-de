@@ -104,7 +104,7 @@ String stringOne =  String(5.698, 3);                     // Ein float mit Dezim
 * #SPRACHE# link:../string/functions/compareto[compareTo()]
 * #SPRACHE# link:../string/functions/concat[concat()]
 * #SPRACHE# link:../string/functions/c_str[c_str()]
-* #SPRACHE# link:../string/functions/ENDETwith[ENDETWith()]
+* #SPRACHE# link:../string/functions/endsWith[endsWith()]
 * #SPRACHE# link:../string/functions/equals[equals()]
 * #SPRACHE# link:../string/functions/equalsignorecase[equalsIgnoreCase()]
 * #SPRACHE# link:../string/functions/getbytes[getBytes()]
