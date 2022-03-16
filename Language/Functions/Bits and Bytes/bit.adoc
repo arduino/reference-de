@@ -17,7 +17,7 @@ subCategories: [ "Bits and Bytes" ]
 
 [float]
 === Beschreibung
-Berechnet den Wert des angegebenen Bits (Bit 0 ist 1, Bit 1 ist 2, Bit 2 ist 4, etc.).
+Berechnet die Wertigkeit des angegebenen Bits (Bit 0 ist 1, Bit 1 ist 2, Bit 2 ist 4, etc.).
 [%hardbreaks]
 
 
