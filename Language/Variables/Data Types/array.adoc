@@ -37,7 +37,7 @@ Beachte, dass beim Deklarieren eines Arrays vom Typ `char` ein weiteres Element 
 === Zugriff auf ein Array
 Arrays sind nullindiziert, das heißt, bezogen auf die Array-Initialisierung oben, befindet sich das erste Element des Arrays am Index 0.
 
-`mySensVals[0] == 2, mySensVals[1] == 4,` and so forth.
+`mySensVals[0] == 2, mySensVals[1] == 4,` und so weiter.
 
 Das bedeutet auch, dass in einem Array mit zehn Elementen der Index neun das letzte Element ist. Daher:
 
