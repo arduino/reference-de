@@ -56,13 +56,15 @@ Liest in do-while-Schleife 100 Mal einen Sensorwert aus.
 
 [source,arduino]
 ----
-// Initialisiere x mit Wert 0
+// Initialisiere x und i mit Wert 0
 int x = 0;
+int i = 0;
 
 do {
   delay(50);          // Warte 50 Millieskunden, bis der Sensor wieder einen stabilen Wert liefert.
   x = readSensor();   // Lies den Sensorwert
-} while (x < 100);    // Wiederhole das ganze 100 Mal
+  i++;
+} while (i < 100);    // Wiederhole den Vorgang 100 Mal
 ----
 
 
