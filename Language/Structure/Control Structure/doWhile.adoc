@@ -63,7 +63,7 @@ int i = 0;
 do {
   delay(50);          // Warte 50 Millieskunden, bis der Sensor wieder einen stabilen Wert liefert.
   x = readSensor();   // Lies den Sensorwert
-  i++;
+  i++;                // Erhöhe i um 1
 } while (i < 100);    // Wiederhole den Vorgang 100 Mal
 ----
 
