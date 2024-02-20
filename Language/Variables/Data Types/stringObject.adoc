@@ -115,7 +115,7 @@ String stringOne =  String(5.698, 3);                     // Ein float mit Dezim
 * #SPRACHE# link:../string/functions/replace[replace()]
 * #SPRACHE# link:../string/functions/reserve[reserve()]
 * #SPRACHE# link:../string/functions/setcharat[setCharAt()]
-* #SPRACHE# link:../string/functions/startswith[StartsWith()]
+* #SPRACHE# link:../string/functions/startswith[startsWith()]
 * #SPRACHE# link:../string/functions/substring[substring()]
 * #SPRACHE# link:../string/functions/tochararray[toCharArray()]
 * #SPRACHE# link:../string/functions/todouble[toDouble()]
