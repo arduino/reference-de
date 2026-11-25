@@ -54,7 +54,7 @@ Wenn 10 Bit am DAC-Pin gesetzt werden, kann die volle DAC-Auflösung von 1024 We
 [float]
 === Parameter
 `bits`: bestimmt die Auflösung (in Bits) der Werte, die in der Funktion `analogWrite()` verwendet werden.
-		Der Wert kann zwischen 1 und 32 liegen. Wenn eine höhere oder niedrigere Auflösung als die Hardwarefunktionen Ihres Boards gewählt wird,
+		Der Wert kann zwischen 1 und 32 liegen. Wenn eine höhere oder niedrigere Auflösung als die Hardwarefunktionen deines Boards gewählt wird,
 		wird der in `analogWrite()` verwendete Wert entweder abgeschnitten, wenn er zu hoch ist, oder mit Nullen aufgefüllt, wenn er zu niedrig ist.
 		Weitere Informationen finden sich im Hinweis unten.
 

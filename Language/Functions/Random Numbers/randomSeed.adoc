@@ -20,7 +20,7 @@ subCategories: [ "Random Numbers" ]
 `randomSeed()` initialisiert den Pseudozufallszahlengenerator, wodurch er an einem beliebigen Punkt in seiner Zufallsfolge startet.
 Diese Sequenz ist, obwohl sie sehr lang und zufällig ist, immer dieselbe.
 
-Wenn es für eine von `random()` erzeugte Folge von Werten wichtig ist, dass diese bei nachfolgenden Ausführungen eines Skecthes unterschiedlich ist,
+Wenn es für eine von `random()` erzeugte Folge von Werten wichtig ist, dass diese bei nachfolgenden Ausführungen eines Sketches unterschiedlich ist,
 verwende `randomSeed()`, um den Zufallszahlengenerator mit einer ziemlich zufälligen Eingabe zu initialisieren, z. B. `analogRead()` auf einem nicht verbundenen Pin.
 
 Umgekehrt kann es gelegentlich nützlich sein, Pseudozufallssequenzen zu verwenden, die sich genau wiederholen.

@@ -45,7 +45,7 @@ HID wird von den folgenden Boards unterstützt:
 === Anmerkungen und Warnungen
 Diese Core-Bibliotheken erlauben es 32u4- oder SAMD-basierten Boards (Leonardo, Esplora, Zero, Due und MKR Family), als native Maus und/oder Tastatur auf dem verbundenen Computer zu erscheinen.
 [%hardbreaks]
-*Achtung: Wenn die Maus oder Tastatur permanent läuft, wird es schwer, das Board noch zu programmieren. Funktionen wie `Mouse.move()` und `Keyboard.print()` bewegen den Cursor oder senden Tastenanschläge
+*Achtung*: Wenn die Maus oder Tastatur permanent läuft, wird es schwer, das Board noch zu programmieren. Funktionen wie `Mouse.move()` und `Keyboard.print()` bewegen den Cursor oder senden Tastenanschläge
 an den verbundenen Computer. Diese Funktionen sollten nur aufgerufen werden, wenn das Programm diese behandeln kann. Es wird deshalb empfohlen, ein Kontrollsystem zu nutzen, z.B. einen physikalischen Schalter
 oder nur auf bestimmte Eingaben zu antworten.
 [%hardbreaks]

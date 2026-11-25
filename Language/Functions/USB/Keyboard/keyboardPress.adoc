@@ -16,7 +16,7 @@ title: Keyboard.press()
 === Beschreibung
 Wenn die Funktion aufgerufen wird, funktioniert sie, wie wenn eine Taste auf der Computertastatur gedrückt und gehalten wird.
 Die Funktion ist sinnvoll, wenn link:../keyboardmodifiers[Modifikatortasten] verwendet werden sollen. Um den Tastenanschlag zu beenden,
-benutze link:../keyboardrelease[Keyboard.release()] oderr link:../keyboardreleaseall[Keyboard.releaseAll()].
+benutze link:../keyboardrelease[Keyboard.release()] oder link:../keyboardreleaseall[Keyboard.releaseAll()].
 Bevor `Keyboard.press()` benutzt werden kann, muss link:../keyboardbegin[Keyboard.begin()] aufgerufen werden.
 [%hardbreaks]
 
