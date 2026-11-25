@@ -4,14 +4,13 @@ title: requestFrom()
 
 = requestFrom
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
-
--- 
+--
 
 [float]
-=== Description
-This function is used by the controller device to request bytes from a peripheral device. The bytes may then be retrieved with the `available()` and `read()` functions. As of Arduino 1.0.1, `requestFrom()` accepts a boolean argument changing its behavior for compatibility with certain I2C devices. If true, `requestFrom()` sends a stop message after the request, releasing the I2C bus. If false, `requestFrom()` sends a restart message after the request. The bus will not be released, which prevents another master device from requesting between messages. This allows one master device to send multiple requests while in control. The default value is true.
+=== Beschreibung
+Diese Funktion wird vom Controller verwendet, um Bytes von einem Peripheriegerät anzufordern. Die Bytes können dann mit den Funktionen `available()` und `read()` abgerufen werden. Die Methode `requestFrom()` akzeptiert ein boolesches Argument, das ihr Verhalten für die Kompatibilität mit bestimmten I2C-Geräten ändert. Bei true sendet `requestFrom()` nach der Anforderung eine Stopp-Nachricht und gibt den I2C-Bus frei. Bei false sendet `requestFrom()` nach der Anforderung eine Restart-Nachricht. Der Bus wird dann nicht freigegeben, sodass kein anderer Controller zwischen den Nachrichten Daten anfordern kann. So kann ein Controller mehrere Anforderungen senden, solange er den Bus kontrolliert. Der Standardwert ist true.
 
 [float]
 === Syntax
@@ -20,14 +19,14 @@ This function is used by the controller device to request bytes from a periphera
 `Wire.requestFrom(address, quantity, stop)`
 
 [float]
-=== Parameters
-* _address_: the 7-bit slave address of the device to request bytes from.
-* _quantity_: the number of bytes to request.
-* _stop_: true or false. true will send a stop message after the request, releasing the bus. False will continually send a restart after the request, keeping the connection active.
+=== Parameter
+* _address_: die 7-Bit-Adresse des Peripheriegeräts, von dem Bytes angefordert werden.
+* _quantity_: die Anzahl der anzufordernden Bytes.
+* _stop_: true oder false. Bei true wird nach der Anforderung eine Stopp-Nachricht gesendet und der Bus freigegeben. Bei false wird nach der Anforderung fortlaufend ein Restart gesendet und die Verbindung bleibt aktiv.
 
 [float]
-=== Returns
-* _byte_ : the number of bytes returned from the peripheral device.
+=== Rückgabewert
+* _byte_: die Anzahl der vom Peripheriegerät zurückgegebenen Bytes.
 
 --
-//OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET

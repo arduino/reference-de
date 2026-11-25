@@ -4,27 +4,27 @@ title: onRequest()
 
 = onRequest
 
-//OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
 [float]
-=== Description
-This function registers a function to be called when a controller device requests data from a peripheral device.
+=== Beschreibung
+Diese Funktion registriert eine Funktion, die aufgerufen wird, wenn ein Controller Daten von einem Peripheriegerät anfordert.
 
 [float]
 === Syntax
 `Wire.onRequest(handler)`
 
 [float]
-=== Parameters 
+=== Parameter
 
-* _handler_: the function to be called, takes no parameters and returns nothing.
+* _handler_: die aufzurufende Funktion. Sie hat keine Parameter und gibt nichts zurück.
 
 [float]
-=== Returns 
+=== Rückgabewert
 
-None.
+Nichts.
 
 --
-//OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET

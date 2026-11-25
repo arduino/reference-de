@@ -4,27 +4,27 @@ title: available()
 
 = available
 
-//OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
 [float]
-=== Description
-This function returns the number of bytes available for retrieval with `read()`. This function should be called on a controller device after a call to `requestFrom()` or on a peripheral inside the `onReceive()` handler. `available()` inherits from the Stream utility class.
+=== Beschreibung
+Diese Funktion gibt die Anzahl der Bytes zurück, die mit `read()` abgerufen werden können. Sie sollte auf einem Controller nach einem Aufruf von `requestFrom()` oder auf einem Peripheriegerät innerhalb des `onReceive()`-Handlers aufgerufen werden. `available()` erbt von der Stream-Dienstklasse.
 
 [float]
-=== Syntax 
+=== Syntax
 `Wire.available()`
 
 [float]
-=== Parameters 
+=== Parameter
 
-None. 
+Keine.
 
 [float]
-=== Returns 
+=== Rückgabewert
 
-The number of bytes available for reading.
+Die Anzahl der zum Lesen verfügbaren Bytes.
 
 --
-//OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT ENDET

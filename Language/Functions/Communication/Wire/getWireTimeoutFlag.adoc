@@ -3,16 +3,16 @@ title: getWireTimeoutFlag()
 ---
 = getWireTimeoutFlag
 
-//OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
 [float]
-=== Description
+=== Beschreibung
 
-Checks whether a timeout has occured since the last time the flag was cleared.
+Prüft, ob seit dem letzten Zurücksetzen des Flags ein Timeout aufgetreten ist.
 
-This flag is set is set whenever a timeout occurs and cleared when `Wire.clearWireTimeoutFlag()` is called, or when the timeout is changed using `Wire.setWireTimeout()`.
+Dieses Flag wird bei jedem Timeout gesetzt. Es wird zurückgesetzt, wenn `Wire.clearWireTimeoutFlag()` aufgerufen oder der Timeout mit `Wire.setWireTimeout()` geändert wird.
 
 
 [float]
@@ -21,17 +21,17 @@ This flag is set is set whenever a timeout occurs and cleared when `Wire.clearWi
 `Wire.getWireTimeoutFlag()`
 
 [float]
-=== Parameters
-None.
+=== Parameter
+Keine.
 
 [float]
-=== Returns
-* bool: The current value of the flag
+=== Rückgabewert
+* bool: Der aktuelle Wert des Flags.
 
 [float]
-=== Portability Notes
-This function was not available in the original version of the Wire library and might still not be available on all platforms. Code that needs to be portable across platforms and versions can use the `WIRE_HAS_TIMEOUT` macro, which is only defined when `Wire.setWireTimeout()`, `Wire.getWireTimeoutFlag()` and `Wire.clearWireTimeout()` are all available.
+=== Hinweise zur Portabilität
+Diese Funktion war in der ursprünglichen Version der Wire-Bibliothek nicht vorhanden und ist möglicherweise noch nicht auf allen Plattformen verfügbar. Code, der über Plattformen und Versionen hinweg portabel sein muss, kann das Makro `WIRE_HAS_TIMEOUT` verwenden. Es ist nur definiert, wenn `Wire.setWireTimeout()`, `Wire.getWireTimeoutFlag()` und `Wire.clearWireTimeout()` alle verfügbar sind.
 
 --
 
-//OVERVIEW SECTION ENDS 
+// ÜBERSICHTSABSCHNITT ENDET

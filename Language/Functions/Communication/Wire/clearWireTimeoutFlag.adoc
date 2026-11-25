@@ -3,16 +3,16 @@ title: clearWireTimeoutFlag()
 ---
 = clearWireTimeoutFlag
 
-//OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
 [float]
-=== Description
+=== Beschreibung
 
-Clears the timeout flag.
+Setzt das Timeout-Flag zurück.
 
-Timeouts might not be enabled by default. See the documentation for `Wire.setWireTimeout()` for more information on how to configure timeouts and how they work.
+Timeouts sind möglicherweise standardmäßig nicht aktiviert. In der Dokumentation zu `Wire.setWireTimeout()` erfährst du mehr darüber, wie du Timeouts konfigurierst und wie sie funktionieren.
 
 
 [float]
@@ -21,17 +21,17 @@ Timeouts might not be enabled by default. See the documentation for `Wire.setWir
 `Wire.clearTimeout()`
 
 [float]
-=== Parameters
-None.
+=== Parameter
+Keine.
 
 [float]
-=== Returns
-* bool: The current value of the flag
+=== Rückgabewert
+Nichts.
 
 [float]
-=== Portability Notes
-This function was not available in the original version of the Wire library and might still not be available on all platforms. Code that needs to be portable across platforms and versions can use the `WIRE_HAS_TIMEOUT` macro, which is only defined when `Wire.setWireTimeout()`, `Wire.getWireTimeoutFlag()` and `Wire.clearWireTimeout()` are all available.
+=== Hinweise zur Portabilität
+Diese Funktion war in der ursprünglichen Version der Wire-Bibliothek nicht vorhanden und ist möglicherweise noch nicht auf allen Plattformen verfügbar. Code, der über Plattformen und Versionen hinweg portabel sein muss, kann das Makro `WIRE_HAS_TIMEOUT` verwenden. Es ist nur definiert, wenn `Wire.setWireTimeout()`, `Wire.getWireTimeoutFlag()` und `Wire.clearWireTimeout()` alle verfügbar sind.
 
 --
 
-//OVERVIEW SECTION ENDS 
+// ÜBERSICHTSABSCHNITT ENDET

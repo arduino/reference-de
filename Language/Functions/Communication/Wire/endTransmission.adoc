@@ -4,31 +4,33 @@ title: endTransmission()
 
 = endTransmission
 
-//OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
 [float]
-=== Description
-This function ends a transmission to a peripheral device that was begun by `beginTransmission()` and transmits the bytes that were queued by `write()`. As of Arduino 1.0.1, `endTransmission()` accepts a boolean argument changing its behavior for compatibility with certain I2C devices. If true, `endTransmission()` sends a stop message after transmission, releasing the I2C bus. If false, `endTransmission()` sends a restart message after transmission. The bus will not be released, which prevents another controller device from transmitting between messages. This allows one controller device to send multiple transmissions while in control. The default value is true.
+=== Beschreibung
+Diese Funktion beendet eine Übertragung an ein Peripheriegerät, die mit `beginTransmission()` begonnen wurde, und überträgt die Bytes, die mit `write()` in die Warteschlange gestellt wurden. Die Methode `endTransmission()` akzeptiert ein boolesches Argument, das ihr Verhalten für die Kompatibilität mit bestimmten I2C-Geräten ändert. Bei true sendet `endTransmission()` nach der Übertragung eine Stopp-Nachricht und gibt den I2C-Bus frei. Bei false sendet `endTransmission()` nach der Übertragung eine Restart-Nachricht. Der Bus wird dann nicht freigegeben, sodass kein anderer Controller zwischen den Nachrichten übertragen kann. So kann ein Controller mehrere Übertragungen senden, solange er den Bus kontrolliert. Der Standardwert ist true.
 
 [float]
 === Syntax
 `Wire.endTransmission()`
+
 `Wire.endTransmission(stop)`
 
 [float]
-=== Parameters
+=== Parameter
 
-* _stop_: true or false. True will send a stop message, releasing the bus after transmission. False will send a restart, keeping the connection active.
+* _stop_: true oder false. Bei true wird eine Stopp-Nachricht gesendet und der Bus nach der Übertragung freigegeben. Bei false wird ein Restart gesendet und die Verbindung bleibt aktiv.
+
 [float]
-=== Returns
+=== Rückgabewert
 
-* _0_: success.
-* _1_: data too long to fit in transmit buffer.
-* _2_: received NACK on transmit of address.
-* _3_: received NACK on transmit of data.
-* _4_: other error.
-* _5_: timeout
+* _0_: Erfolg.
+* _1_: Die Daten sind zu lang für den Sendepuffer.
+* _2_: NACK beim Senden der Adresse empfangen.
+* _3_: NACK beim Senden der Daten empfangen.
+* _4_: Anderer Fehler.
+* _5_: Timeout.
 --
-//OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET

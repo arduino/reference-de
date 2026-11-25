@@ -4,58 +4,62 @@ title: write()
 
 = write
 
-//OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
 [float]
-=== Description
-This function writes data from a peripheral device in response to a request from a controller device, or queues bytes for transmission from a controller to peripheral device (in-between calls to `beginTransmission()` and `endTransmission()`).
+=== Beschreibung
+Diese Funktion schreibt Daten von einem Peripheriegerät als Antwort auf eine Anforderung eines Controllers oder stellt Bytes für die Übertragung von einem Controller an ein Peripheriegerät in die Warteschlange (zwischen den Aufrufen von `beginTransmission()` und `endTransmission()`).
 
 [float]
 === Syntax
 `Wire.write(value)`
+
 `Wire.write(string)`
+
 `Wire.write(data, length)`
 
 [float]
-=== Parameters
-* _value_: a value to send as a single byte.
-* _string_: a string to send as a series of bytes.
-* _data_: an array of data to send as bytes.
-* _length_: the number of bytes to transmit.
-  
-[float]
-=== Returns 
+=== Parameter
+* _value_: ein Wert, der als einzelnes Byte gesendet wird.
+* _string_: eine Zeichenfolge, die als Folge von Bytes gesendet wird.
+* _data_: ein Array mit Daten, die als Bytes gesendet werden.
+* _length_: die Anzahl der zu übertragenden Bytes.
 
-The number of bytes written (reading this number is optional).
 [float]
-=== Example
+=== Rückgabewert
 
-```
+Die Anzahl der geschriebenen Bytes (diese Zahl auszulesen ist optional).
+
+[float]
+=== Beispielcode
+
+[source,arduino]
+----
 #include <Wire.h>
 
 byte val = 0;
 
 void setup() {
-  Wire.begin(); // Join I2C bus
+  Wire.begin(); // I2C-Bus beitreten
 }
 
 void loop() {
-    Wire.beginTransmission(44);  // Transmit to device number 44 (0x2C)
+    Wire.beginTransmission(44);  // An Gerät Nummer 44 (0x2C) übertragen
 
-    Wire.write(val);             // Sends value byte  
-    Wire.endTransmission();      // Stop transmitting
+    Wire.write(val);             // Wert-Byte senden
+    Wire.endTransmission();      // Übertragung beenden
 
-    val++;                       // Increment value
+    val++;                       // Wert erhöhen
 
-    // if reached 64th position (max)
+    // Wenn die 64. Position (Maximum) erreicht ist
     if(val == 64) {
-        val = 0;                   // Start over from lowest value
+        val = 0;                   // Wieder beim niedrigsten Wert beginnen
     }
-    
+
     delay(500);
 }
-```
+----
 --
-//OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET

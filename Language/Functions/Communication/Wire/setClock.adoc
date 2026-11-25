@@ -4,25 +4,25 @@ title: setClock()
 
 = setClock
 
-//OVERVIEW SECTION STARTS 
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
 [float]
-=== Description
-This function modifies the clock frequency for I2C communication. I2C peripheral devices have no minimum working clock frequency, however 100KHz is usually the baseline.
+=== Beschreibung
+Diese Funktion ändert die Taktfrequenz für die I2C-Kommunikation. I2C-Peripheriegeräte haben keine minimale Taktfrequenz, üblicherweise gelten aber 100 kHz als Grundwert.
 
 [float]
-=== Syntax 
+=== Syntax
 `Wire.setClock(clockFrequency)`
 
 [float]
-=== Parameters 
-* _clockFrequency_: the value (in Hertz) of the desired communication clock. Accepted values are 100000 (standard mode) and 400000 (fast mode). Some processors also support 10000 (low speed mode), 1000000 (fast mode plus) and 3400000 (high speed mode). Please refer to the specific processor documentation to make sure the desired mode is supported.
+=== Parameter
+* _clockFrequency_: der Wert (in Hertz) des gewünschten Kommunikationstakts. Zulässige Werte sind 100000 (Standard Mode) und 400000 (Fast Mode). Einige Prozessoren unterstützen auch 10000 (Low Speed Mode), 1000000 (Fast Mode Plus) und 3400000 (High Speed Mode). Prüfe in der Dokumentation des jeweiligen Prozessors, ob der gewünschte Modus unterstützt wird.
 
 [float]
-=== Returns 
+=== Rückgabewert
 
-None.
+Nichts.
 --
-//OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET

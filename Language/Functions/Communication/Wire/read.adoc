@@ -4,51 +4,52 @@ title: read()
 
 = read
 
-//OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
 [float]
-=== Description
-This function reads a byte that was transmitted from a peripheral device to a controller device after a call to `requestFrom()` or was transmitted from a controller device to a peripheral device. `read()` inherits from the Stream utility class.
+=== Beschreibung
+Diese Funktion liest ein Byte, das nach einem Aufruf von `requestFrom()` von einem Peripheriegerät an einen Controller übertragen wurde oder das von einem Controller an ein Peripheriegerät übertragen wurde. `read()` erbt von der Stream-Dienstklasse.
 
 [float]
-=== Syntax 
+=== Syntax
 `Wire.read()`
 
 [float]
-=== Parameters 
+=== Parameter
 
-None. 
-
-[float]
-=== Returns 
-
-The next byte received.
+Keine.
 
 [float]
-=== Example 
+=== Rückgabewert
 
-```
+Das nächste empfangene Byte.
+
+[float]
+=== Beispielcode
+
+[source,arduino]
+----
 #include <Wire.h>
 
 void setup() {
-  Wire.begin();             // Join I2C bus (address is optional for controller device)
-  Serial.begin(9600);       // Start serial for output
+  Wire.begin();             // I2C-Bus beitreten (Adresse ist für den Controller optional)
+  Serial.begin(9600);       // Serielle Schnittstelle für die Ausgabe starten
 }
 
 void loop() {
-    Wire.requestFrom(2, 6);    // Request 6 bytes from slave device number two
-    
-    // Slave may send less than requested
+    Wire.requestFrom(2, 6);    // 6 Bytes vom Peripheriegerät Nummer 2 anfordern
+
+    // Das Peripheriegerät sendet eventuell weniger als angefordert
     while(Wire.available()) {
-        char c = Wire.read();    // Receive a byte as character
-        Serial.print(c);         // Print the character
+        char c = Wire.read();    // Ein Byte als Zeichen empfangen
+        Serial.print(c);         // Das Zeichen ausgeben
     }
 
     delay(500);
 }
-```
+----
 
 --
-//OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET

@@ -3,16 +3,16 @@ title: end()
 ---
 = end
 
-//OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
 [float]
-=== Description
+=== Beschreibung
 
-Disable the Wire library, reversing the effect of `Wire.begin()`. To use the Wire library again after this, call `Wire.begin()` again.
+Deaktiviert die Wire-Bibliothek und macht damit die Wirkung von `Wire.begin()` rückgängig. Um die Wire-Bibliothek danach wieder zu verwenden, rufe erneut `Wire.begin()` auf.
 
-*Note:* This function was not available in the original version of the Wire library and might still not be available on all platforms. Code that needs to be portable across platforms and versions can use the `WIRE_HAS_END` macro, which is only defined when `Wire.end()` is available.
+*Hinweis:* Diese Funktion war in der ursprünglichen Version der Wire-Bibliothek nicht vorhanden und ist möglicherweise noch nicht auf allen Plattformen verfügbar. Code, der über Plattformen und Versionen hinweg portabel sein muss, kann das Makro `WIRE_HAS_END` verwenden, das nur definiert ist, wenn `Wire.end()` verfügbar ist.
 
 [float]
 === Syntax
@@ -20,12 +20,12 @@ Disable the Wire library, reversing the effect of `Wire.begin()`. To use the Wir
 `Wire.end()`
 
 [float]
-=== Parameters
-None.
+=== Parameter
+Keine.
 
 [float]
-=== Returns
-None. 
+=== Rückgabewert
+Nichts.
 --
 
-//OVERVIEW SECTION ENDS 
+// ÜBERSICHTSABSCHNITT ENDET

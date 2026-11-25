@@ -8,60 +8,60 @@ subCategories: [ "Communication" ]
 = Wire
 
 
-//OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
 [float]
-=== Description
+=== Beschreibung
 
 
-This library allows you to communicate with I2C/TWI devices. On the Arduino boards with the R3 layout (1.0 pinout), the SDA (data line) and SCL (clock line) are on the pin headers close to the AREF pin. The Arduino Due has two I2C/TWI interfaces SDA1 and SCL1 are near to the AREF pin and the additional one is on pins 20 and 21.
+Mit dieser Bibliothek kannst du mit I2C-Geräten kommunizieren. I2C steht auf allen Arduino-Boards zur Verfügung. I2C ist ein sehr verbreitetes Protokoll, das vor allem zum Lesen und Senden von Daten von und zu externen I2C-Komponenten verwendet wird. Mehr dazu erfährst du in link:https://docs.arduino.cc/learn/communication/wire[diesem Artikel zu Arduino & I2C].
 
-As a reference the table below shows where TWI pins are located on various Arduino boards.
-
-[cols="1,1"]
-|===
-|Board
-|I2C/TWI pins 
-
-|UNO, Ethernet 
-|A4 (SDA), A5 (SCL)   
-
-|Mega2560   
-|20 (SDA), 21 (SCL) 
-
-|Leonardo   
-|20 (SDA), 21 (SCL), SDA1, SCL1
-|=== 
+Aufgrund des Hardware-Designs und verschiedener Unterschiede in der Architektur liegen die I2C-Pins an unterschiedlichen Stellen. Die folgende Pin-Übersicht zeigt die Standard-Pins sowie zusätzliche Anschlüsse, die auf bestimmten Boards verfügbar sind.
 
 
-As of Arduino 1.0, the library inherits from the Stream functions, making it consistent with other read/write libraries. Because of this, `send()` and `receive()` have been replaced with `read()` and `write()`.
+|================================================================================================================================================
+| Board                               | I2C-Standard        | I2C1                      | I2C2                 | Hinweise
+| UNO R3, UNO R3 SMD, UNO Mini Ltd    | A4(SDA), A5(SCL)    |                           |                      | I2C ist auch über die SDA/SCL-Pins (digitale Pinleiste) verfügbar.
+| UNO R4 Minima, UNO R4 WiFi          | A4(SDA), A5(SCL)    | Qwiic: D27(SDA), D26(SCL) |                      | I2C ist auch über die SDA/SCL-Pins (digitale Pinleiste) verfügbar.
+| UNO WiFi Rev2, Zero                 | 20(SDA), 21(SCL)    |                           |                      |
+| Leonardo, Micro, Yún Rev2           | D2(SDA), D3(SCL)    |                           |                      |
+| Nano-Boards                         | A4(SDA), A5(SCL)    |                           |                      |
+| MKR-Boards                          | D11(SDA), D12(SCL)  |                           |                      |
+| GIGA R1 WiFi                        | 20(SDA), 21(SCL)    |  D102(SDA1), D101 (SCL1)  | D9(SDA2), D8 (SCL2)  | Verwende `Wire1.begin()` für I2C1 und `Wire2.begin()` für I2C2.
+| Due                                 | 20(SDA), 21(SCL)    |  D70(SDA1), D71(SCL1)     |                      | Verwende `Wire1.begin()` für I2C1.
+| Mega 2560 Rev3                      | D20(SDA), D21(SCL)  |                           |                      |
+|================================================================================================================================================
 
-Recent versions of the Wire library can use timeouts to prevent a lockup in the face of certain problems on the bus, but this is not enabled by default (yet) in current versions. It is recommended to always enable these timeouts when using the Wire library. See the Wire.setWireTimeout function for more details.
 
-*Note:* There are both 7 and 8-bit versions of I2C addresses. 7 bits identify the device, and the eighth bit determines if it's being written to or read from. The Wire library uses 7 bit addresses throughout. If you have a datasheet or sample code that uses 8-bit address, you'll want to drop the low bit (i.e. shift the value one bit to the right), yielding an address between 0 and 127. However the addresses from 0 to 7 are not used because are reserved so the first address that can be used is 8. Please note that a pull-up resistor is needed when connecting SDA/SCL pins. Please refer to the examples for more information. MEGA 2560 board has pull-up resistors on pins 20 and 21 onboard. 
+Diese Bibliothek erbt von den Stream-Funktionen und verhält sich damit wie andere Bibliotheken zum Lesen und Schreiben. Deshalb wurden `send()` und `receive()` durch `read()` und `write()` ersetzt.
 
-*The Wire library implementation uses a 32 byte buffer, therefore any communication should be within this limit. Exceeding bytes in a single transmission will just be dropped.*
+Neuere Versionen der Wire-Bibliothek können Timeouts verwenden, um bei bestimmten Problemen auf dem Bus ein Hängenbleiben zu verhindern. In aktuellen Versionen ist das aber (noch) nicht standardmäßig aktiviert. Es wird empfohlen, diese Timeouts bei der Verwendung der Wire-Bibliothek immer zu aktivieren. Weitere Details findest du bei der Funktion Wire.setWireTimeout.
 
-To use this library:
+*Hinweis:* Es gibt I2C-Adressen in einer 7-Bit- und einer 8-Bit-Variante. 7 Bits identifizieren das Gerät, und das achte Bit legt fest, ob auf das Gerät geschrieben oder von ihm gelesen wird. Die Wire-Bibliothek verwendet durchgehend 7-Bit-Adressen. Wenn dein Datenblatt oder Beispielcode eine 8-Bit-Adresse verwendet, lässt du das niederwertigste Bit weg (verschiebst den Wert also um ein Bit nach rechts) und erhältst eine Adresse zwischen 0 und 127. Die Adressen 0 bis 7 werden allerdings nicht verwendet, weil sie reserviert sind. Die erste nutzbare Adresse ist daher 8. Beachte, dass beim Anschließen der SDA/SCL-Pins ein Pullup-Widerstand benötigt wird. Weitere Informationen findest du in den Beispielen. Das MEGA-2560-Board hat Pullup-Widerstände an den Pins 20 und 21 direkt auf der Platine.
+
+*Die Wire-Bibliothek verwendet einen 32-Byte-Puffer, daher muss jede Kommunikation innerhalb dieser Grenze bleiben. Überzählige Bytes einer einzelnen Übertragung werden einfach verworfen.*
+
+So verwendest du diese Bibliothek:
 
 `#include <Wire.h>`
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
-//FUNCTION SECTION STARTS
+// FUNKTIONSABSCHNITT STARTET
 [#functions]
 --
 
 '''
 [float]
-=== Functions
+=== Funktionen
 link:../wire/begin[begin()] +
 link:../wire/end[end()] +
 link:../wire/requestfrom[requestFrom()] +
 link:../wire/begintransmission[beginTransmission()] +
+link:../wire/endtransmission[endTransmission()] +
 link:../wire/write[write()] +
 link:../wire/available[available()] +
 link:../wire/read[read()] +
@@ -75,4 +75,4 @@ link:../wire/getwiretimeoutflag[getWireTimeoutFlag()]
 '''
 
 --
-// FUNCTION SECTION ENDS
+// FUNKTIONSABSCHNITT ENDET

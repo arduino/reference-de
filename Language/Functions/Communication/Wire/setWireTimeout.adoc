@@ -3,16 +3,16 @@ title: setWireTimeout()
 ---
 = setWireTimeout
 
-//OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
 [float]
-=== Description
+=== Beschreibung
 
-Sets the timeout for Wire transmissions in master mode.
+Legt den Timeout für Wire-Übertragungen im Controller-Modus fest.
 
-*Note:* these timeouts are almost always an indication of an underlying problem, such as misbehaving devices, noise, insufficient shielding, or other electrical problems. These timeouts will prevent your sketch from locking up, but not solve these problems. In such situations there will often (also) be data corruption which doesn't result in a timeout or other error and remains undetected. So when a timeout happens, it is likely that some data previously read or written is also corrupted. Additional measures might be needed to more reliably detect such issues (e.g. checksums or reading back written values) and recover from them (e.g. full system reset). This timeout and such additional measures should be seen as a last line of defence, when possible the underlying cause should be fixed instead.
+*Hinweis:* Diese Timeouts sind fast immer ein Zeichen für ein tieferliegendes Problem, etwa fehlerhaft arbeitende Geräte, Störsignale, unzureichende Abschirmung oder andere elektrische Probleme. Die Timeouts verhindern, dass dein Sketch hängen bleibt, beheben diese Probleme aber nicht. In solchen Situationen kommt es oft (auch) zu Datenfehlern, die keinen Timeout oder anderen Fehler auslösen und unerkannt bleiben. Wenn ein Timeout auftritt, sind also wahrscheinlich auch einige zuvor gelesene oder geschriebene Daten fehlerhaft. Unter Umständen sind zusätzliche Maßnahmen nötig, um solche Probleme zuverlässiger zu erkennen (z. B. Prüfsummen oder das Zurücklesen geschriebener Werte) und den Betrieb danach wiederherzustellen (z. B. ein vollständiger Neustart des Systems). Dieser Timeout und solche zusätzlichen Maßnahmen sind als letzte Verteidigungslinie zu verstehen. Wenn möglich, solltest du stattdessen die eigentliche Ursache beheben.
 
 [float]
 === Syntax
@@ -22,24 +22,25 @@ Sets the timeout for Wire transmissions in master mode.
 `Wire.setWireTimeout()`
 
 [float]
-=== Parameters
-* `timeout a timeout`: timeout in microseconds, if zero then timeout checking is disabled
-* `reset_on_timeout`: if true then Wire hardware will be automatically reset on timeout
+=== Parameter
+* `timeout`: Timeout in Mikrosekunden. Bei null ist die Timeout-Prüfung deaktiviert.
+* `reset_on_timeout`: Bei true wird die Wire-Hardware bei einem Timeout automatisch zurückgesetzt.
 
-When this function is called without parameters, a default timeout is configured that should be sufficient to prevent lockups in a typical single-master configuration.
-
-[float]
-=== Returns
-None. 
+Wird diese Funktion ohne Parameter aufgerufen, wird ein Standard-Timeout eingestellt, der in einer typischen Konfiguration mit nur einem Controller ausreichen sollte, um ein Hängenbleiben zu verhindern.
 
 [float]
-=== Example Code
+=== Rückgabewert
+Nichts.
 
-```
+[float]
+=== Beispielcode
+
+[source,arduino]
+----
 #include <Wire.h>
 
 void setup() {
-  Wire.begin(); // join i2c bus (address optional for master)
+  Wire.begin(); // I2C-Bus beitreten (Adresse ist für den Controller optional)
   #if defined(WIRE_HAS_TIMEOUT)
     Wire.setWireTimeout(3000 /* us */, true /* reset_on_timeout */);
   #endif
@@ -48,25 +49,25 @@ void setup() {
 byte x = 0;
 
 void loop() {
-  /* First, send a command to the other device */
-  Wire.beginTransmission(8); // transmit to device #8
-  Wire.write(123);           // send command
-  byte error = Wire.endTransmission(); // run transaction
+  /* Zuerst einen Befehl an das andere Gerät senden */
+  Wire.beginTransmission(8); // An Gerät Nr. 8 übertragen
+  Wire.write(123);           // Befehl senden
+  byte error = Wire.endTransmission(); // Transaktion ausführen
   if (error) {
-    Serial.println("Error occured when writing");
+    Serial.println("Error occurred when writing");
     if (error == 5)
       Serial.println("It was a timeout");
   }
 
   delay(100);
 
-  /* Then, read the result */
+  /* Dann das Ergebnis lesen */
   #if defined(WIRE_HAS_TIMEOUT)
   Wire.clearWireTimeoutFlag();
   #endif
-  byte len = Wire.requestFrom(8, 1); // request 1 byte from device #8
+  byte len = Wire.requestFrom(8, 1); // 1 Byte von Gerät Nr. 8 anfordern
   if (len == 0) {
-    Serial.println("Error occured when reading");
+    Serial.println("Error occurred when reading");
     #if defined(WIRE_HAS_TIMEOUT)
     if (Wire.getWireTimeoutFlag())
       Serial.println("It was a timeout");
@@ -75,31 +76,31 @@ void loop() {
 
   delay(100);
 }
-```
+----
 
 [float]
-=== Notes and Warnings
+=== Anmerkungen und Warnungen
 
-How this timeout is implemented might vary between different platforms, but typically a timeout condition is triggered when waiting for (some part of) the transaction to complete (e.g. waiting for the bus to become available again, waiting for an ACK bit, or maybe waiting for the entire transaction to be completed).
+Wie dieser Timeout umgesetzt ist, kann sich zwischen den Plattformen unterscheiden. Typischerweise wird ein Timeout aber ausgelöst, während auf den Abschluss (eines Teils) der Transaktion gewartet wird, z. B. darauf, dass der Bus wieder frei wird, auf ein ACK-Bit oder auch auf den Abschluss der gesamten Transaktion.
 
-When such a timeout condition occurs, the transaction is aborted and `endTransmission()` or `requestFrom()` will return an error code or zero bytes respectively. While this will not resolve the bus problem by itself (i.e. it does not remove a short-circuit), it will at least prevent blocking potentially indefinitely and allow your software to detect and maybe solve this condition.
+Tritt ein solcher Timeout auf, wird die Transaktion abgebrochen, und `endTransmission()` gibt einen Fehlercode bzw. `requestFrom()` null Bytes zurück. Das behebt das Problem auf dem Bus zwar nicht von selbst (ein Kurzschluss bleibt z. B. bestehen), verhindert aber zumindest ein möglicherweise endloses Blockieren und ermöglicht deiner Software, diesen Zustand zu erkennen und eventuell zu beheben.
 
-If `reset_on_timeout` was set to true and the platform supports this, the Wire hardware is also reset, which can help to clear any incorrect state inside the Wire hardware module. For example, on the AVR platform, this can be required to restart communications after a noise-induced timeout.
+Wenn `reset_on_timeout` auf true gesetzt wurde und die Plattform dies unterstützt, wird außerdem die Wire-Hardware zurückgesetzt. Das kann helfen, einen fehlerhaften Zustand im Wire-Hardwaremodul zu beseitigen. Auf der AVR-Plattform kann das zum Beispiel nötig sein, um die Kommunikation nach einem durch Störsignale verursachten Timeout wieder aufzunehmen.
 
-When a timeout is triggered, a flag is set that can be queried with `getWireTimeoutFlag()` and must be cleared manually using `clearWireTimeoutFlag()` (and is also cleared when `setWireTimeout()` is called).
+Wenn ein Timeout ausgelöst wird, wird ein Flag gesetzt, das du mit `getWireTimeoutFlag()` abfragen kannst und mit `clearWireTimeoutFlag()` manuell zurücksetzen musst. Es wird auch beim Aufruf von `setWireTimeout()` zurückgesetzt.
 
-Note that this timeout can also trigger while waiting for clock stretching or waiting for a second master to complete its transaction. So make sure to adapt the timeout to accomodate for those cases if needed. A typical timeout would be 25ms (which is the maximum clock stretching allowed by the SMBus protocol), but (much) shorter values will usually also work.
+Beachte, dass dieser Timeout auch ausgelöst werden kann, während auf das Ende eines Clock Stretchings gewartet wird oder darauf, dass ein zweiter Controller seine Transaktion abschließt. Passe den Timeout bei Bedarf so an, dass er auch diese Fälle abdeckt. Ein typischer Timeout wäre 25 ms (das maximale Clock Stretching, das das SMBus-Protokoll erlaubt), aber (viel) kürzere Werte funktionieren in der Regel auch.
 
 
 [float]
-=== Portability Notes
+=== Hinweise zur Portabilität
 
-This function was not available in the original version of the Wire library and might still not be available on all platforms. Code that needs to be portable across platforms and versions can use the `WIRE_HAS_TIMEOUT` macro, which is only defined when `Wire.setWireTimeout()`, `Wire.getWireTimeoutFlag()` and `Wire.clearWireTimeout()` are all available.
+Diese Funktion war in der ursprünglichen Version der Wire-Bibliothek nicht vorhanden und ist möglicherweise noch nicht auf allen Plattformen verfügbar. Code, der über Plattformen und Versionen hinweg portabel sein muss, kann das Makro `WIRE_HAS_TIMEOUT` verwenden. Es ist nur definiert, wenn `Wire.setWireTimeout()`, `Wire.getWireTimeoutFlag()` und `Wire.clearWireTimeout()` alle verfügbar sind.
 
-When this timeout feature was introduced on the AVR platform, it was initially kept disabled by default for compatibility, expecting it to become enabled at a later point. This means the default value of the timeout can vary between (versions of) platforms. The default timeout settings are available from the `WIRE_DEFAULT_TIMEOUT` and `WIRE_DEFAULT_RESET_WITH_TIMEOUT` macro.
+Als diese Timeout-Funktion auf der AVR-Plattform eingeführt wurde, blieb sie aus Kompatibilitätsgründen zunächst standardmäßig deaktiviert, in der Erwartung, dass sie später aktiviert wird. Der Standardwert des Timeouts kann sich daher zwischen Plattformen (und deren Versionen) unterscheiden. Die Standardeinstellungen für den Timeout stehen über die Makros `WIRE_DEFAULT_TIMEOUT` und `WIRE_DEFAULT_RESET_WITH_TIMEOUT` zur Verfügung.
 
-If you require the timeout to be disabled, it is recommended you disable it by default using `setWireTimeout(0)`, even though that is currently the default.
+Wenn der Timeout deaktiviert sein muss, empfiehlt es sich, ihn mit `setWireTimeout(0)` ausdrücklich zu deaktivieren, auch wenn das derzeit der Standard ist.
 
 --
 
-//OVERVIEW SECTION ENDS 
+// ÜBERSICHTSABSCHNITT ENDET
