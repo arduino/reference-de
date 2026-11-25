@@ -5,13 +5,13 @@ title: SPI.begin()
 = SPI.begin()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
 [float]
-=== Description
-Initializes the SPI bus by setting SCK, MOSI, and SS to outputs, pulling SCK and MOSI low, and SS high.
+=== Beschreibung
+Initialisiert den SPI-Bus: SCK, MOSI und SS werden als Ausgänge gesetzt, SCK und MOSI auf LOW und SS auf HIGH gezogen.
 
 
 [float]
@@ -20,14 +20,14 @@ Initializes the SPI bus by setting SCK, MOSI, and SS to outputs, pulling SCK and
 
 
 [float]
-=== Parameters
-None.
+=== Parameter
+Keine.
 
 
 [float]
-=== Returns
-None.
+=== Rückgabewert
+Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 

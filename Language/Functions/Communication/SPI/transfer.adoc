@@ -4,14 +4,14 @@ title: SPI.transfer()
 
 = SPI.transfer()
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
 [float]
-=== Description
+=== Beschreibung
 
-SPI transfer is based on a simultaneous send and receive: the received data is returned in receivedVal (or receivedVal16). In case of buffer transfers the received data is stored in the buffer in-place (the old data is replaced with the data received).
+Eine SPI-Übertragung beruht auf gleichzeitigem Senden und Empfangen: Die empfangenen Daten werden in receivedVal (bzw. receivedVal16) zurückgegeben. Bei der Übertragung eines Puffers werden die empfangenen Daten direkt im Puffer abgelegt (die alten Daten werden durch die empfangenen ersetzt).
 
 [float]
 === Syntax
@@ -24,17 +24,17 @@ SPI transfer is based on a simultaneous send and receive: the received data is r
 
 
 [float]
-=== Parameters
+=== Parameter
 
-* val: the byte to send out over the bus
-* val16: the two bytes variable to send out over the bus
-* buffer: the array of data to be transferred
+* val: das Byte, das über den Bus gesendet werden soll
+* val16: die Zwei-Byte-Variable, die über den Bus gesendet werden soll
+* buffer: das Array mit den zu übertragenden Daten
 
 
 [float]
-=== Returns
-The received data.
+=== Rückgabewert
+Die empfangenen Daten.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 

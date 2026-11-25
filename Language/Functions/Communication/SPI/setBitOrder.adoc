@@ -5,15 +5,15 @@ title: SPI.setBitOrder()
 = SPI.setBitOrder()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
 [float]
-=== Description
-This function should not be used in new projects. Use link:../spisettings[SPISettings]. with link:../begintransaction[SPI.beginTransaction()]. to configure SPI parameters.
+=== Beschreibung
+Diese Funktion sollte in neuen Projekten nicht mehr verwendet werden. Konfiguriere die SPI-Parameter stattdessen mit link:../spisettings[SPISettings] und link:../begintransaction[SPI.beginTransaction()].
 
-Sets the order of the bits shifted out of and into the SPI bus, either LSBFIRST (least-significant bit first) or MSBFIRST (most-significant bit first). 
+Legt die Bitreihenfolge fest, in der die Bits über den SPI-Bus hinaus- und hineingeschoben werden: entweder LSBFIRST (niederwertigstes Bit zuerst) oder MSBFIRST (höchstwertiges Bit zuerst).
 
 
 [float]
@@ -22,14 +22,14 @@ Sets the order of the bits shifted out of and into the SPI bus, either LSBFIRST 
 
 
 [float]
-=== Parameters
-order: either LSBFIRST or MSBFIRST
+=== Parameter
+order: entweder LSBFIRST oder MSBFIRST
 
 
 [float]
-=== Returns
-None.
+=== Rückgabewert
+Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 

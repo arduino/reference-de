@@ -5,13 +5,13 @@ title: SPI.end()
 = SPI.end()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
 [float]
-=== Description
-Disables the SPI bus (leaving pin modes unchanged).
+=== Beschreibung
+Deaktiviert den SPI-Bus (die Pin-Modi bleiben unverändert).
 
 
 [float]
@@ -20,14 +20,14 @@ Disables the SPI bus (leaving pin modes unchanged).
 
 
 [float]
-=== Parameters
-None.
+=== Parameter
+Keine.
 
 
 [float]
-=== Returns
-None.
+=== Rückgabewert
+Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 

@@ -4,14 +4,14 @@ title: SPI.usingInterrupt()
 
 = SPI.usingInterrupt()
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
 [float]
-=== Description
+=== Beschreibung
 
-If your program will perform SPI transactions within an interrupt, call this function to register the interrupt number or name with the SPI library. This allows `SPI.beginTransaction()` to prevent usage conflicts. Note that the interrupt specified in the call to usingInterrupt() will be disabled on a call to `beginTransaction()` and re-enabled in `endTransaction().`
+Wenn dein Sketch SPI-Transaktionen innerhalb eines Interrupts ausführt, rufe diese Funktion auf, um die Nummer oder den Namen des Interrupts bei der SPI-Bibliothek zu registrieren. So kann `SPI.beginTransaction()` Konflikte bei der Nutzung verhindern. Beachte, dass der beim Aufruf von `usingInterrupt()` angegebene Interrupt durch `beginTransaction()` deaktiviert und durch `endTransaction()` wieder aktiviert wird.
 
 [float]
 === Syntax
@@ -20,14 +20,14 @@ If your program will perform SPI transactions within an interrupt, call this fun
 
 
 [float]
-=== Parameters
+=== Parameter
 
-interruptNumber: the associated interrupt number.
+interruptNumber: die zugehörige Interrupt-Nummer.
 
 [float]
-=== Returns
-None.
+=== Rückgabewert
+Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 

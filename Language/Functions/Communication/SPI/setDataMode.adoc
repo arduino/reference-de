@@ -4,15 +4,15 @@ title: SPI.setDataMode()
 
 = SPI.setDataMode()
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
 [float]
-=== Description
-This function should not be used in new projects. Use link:../spisettings[SPISettings]. with link:../begintransaction[SPI.beginTransaction()]. to configure SPI parameters.
+=== Beschreibung
+Diese Funktion sollte in neuen Projekten nicht mehr verwendet werden. Konfiguriere die SPI-Parameter stattdessen mit link:../spisettings[SPISettings] und link:../begintransaction[SPI.beginTransaction()].
 
-Sets the SPI data mode: that is, clock polarity and phase. See the Wikipedia article on http://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus:[SPI] for details.
+Legt den SPI-Datenmodus fest, also Taktpolarität und Taktphase. Details findest du im Wikipedia-Artikel zu https://de.wikipedia.org/wiki/Serial_Peripheral_Interface[SPI].
 
 [float]
 === Syntax
@@ -20,7 +20,7 @@ Sets the SPI data mode: that is, clock polarity and phase. See the Wikipedia art
 
 
 [float]
-=== Parameters
+=== Parameter
 
 mode:
 
@@ -30,12 +30,12 @@ mode:
 * SPI_MODE3
 
 
-chipSelectPin - peripheral device CS pin (Arduino Due only)
+chipSelectPin - CS-Pin des Peripheriegeräts (nur Arduino Due)
 
 [float]
-=== Returns
-None.
+=== Rückgabewert
+Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 

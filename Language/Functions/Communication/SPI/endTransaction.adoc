@@ -5,13 +5,13 @@ title: SPI.endTransaction()
 = SPI.endTransaction()
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
 [float]
-=== Description
-Stop using the SPI bus. Normally this is called after de-asserting the chip select, to allow other libraries to use the SPI bus.
+=== Beschreibung
+Beendet die Nutzung des SPI-Busses. Normalerweise wird die Funktion aufgerufen, nachdem das Chip-Select-Signal zurückgenommen wurde, damit andere Bibliotheken den SPI-Bus verwenden können.
 
 
 [float]
@@ -20,14 +20,14 @@ Stop using the SPI bus. Normally this is called after de-asserting the chip sele
 
 
 [float]
-=== Parameters
-None.
+=== Parameter
+Keine.
 
 
 [float]
-=== Returns
-None.
+=== Rückgabewert
+Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 

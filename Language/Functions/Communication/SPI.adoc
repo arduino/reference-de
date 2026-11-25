@@ -8,37 +8,54 @@ subCategories: [ "Communication" ]
 = SPI
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
 [float]
-=== Description
+=== Beschreibung
+Mit dieser Bibliothek kannst du mit SPI-Geräten kommunizieren, der Arduino arbeitet dabei als Controller. Die Bibliothek ist in jeder Arduino-Plattform (avr, megaavr, mbed, samd, sam, arc32) enthalten, *du musst sie also nicht separat installieren*.
 
-
-This library allows you to communicate with SPI devices, with the Arduino as the controller device. This library is bundled with every Arduino platform (avr, megaavr, mbed, samd, sam, arc32), so *you do not need to install* the library separately.
-
-To use this library
+Um die Bibliothek zu verwenden, binde sie so ein:
 
 `#include <SPI.h>`
 
-To read more about Arduino and SPI, you can visit the https://docs.arduino.cc/learn/communication/spi[Arduino & Serial Peripheral Interface (SPI)] guide.
+Mehr über Arduino und SPI erfährst du in der Anleitung https://docs.arduino.cc/learn/communication/spi[Arduino & Serial Peripheral Interface (SPI)].
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
+// HOW-TO-USE-ABSCHNITT STARTET
+[#howtouse]
+--
+|================================================================================================================================================
+|                                                    Boards                                            | Standard-SPI-Pins                           | Zusätzliche SPI-Pins | Hinweise
+| UNO R3, UNO R3 SMD, UNO WiFi Rev2, UNO Mini Ltd| 10(CS), 11(COPI), 12(CIPO), 13(SCK) | | SPI-Pins am ICSP-Header verfügbar
+| UNO R4 Minima, UNO R4 WiFi| 10(CS), 11(COPI), 12(CIPO), 13(SCK) | | SPI-Pins am ICSP-Header verfügbar
+| Leonardo, Yún Rev2, Zero| 10(CS), 11(COPI), 12(CIPO), 13(SCK) | | SPI-Pins am ICSP-Header verfügbar
+| Micro                | 14(CIPO), 15(SCK), 16(COPI)      | |
+| Nano-Boards          | 11(COPI), 12(CIPO), 13(SCK)      | |
+| MKR-Boards           | 8(COPI), 9(SCK), 10(CIPO)        | |
+| Due                  | 74(CIPO), 75(MOSI), 76(SCK) | SPI-Pins am eigenen SPI-Header verfügbar |
+| GIGA R1 WiFi         | 89(CIPO), 90(COPI), 91(SCK) | 12(CIPO), 11(COPI), 13(SCK), 10(CS) | Die Pins 89, 90 und 91 befinden sich am SPI-Header
+| Mega 2560 Rev3       | 50(CIPO), 51(COPI), 52(SCK), 53(CS) |  | SPI-Pins am ICSP-Header verfügbar
+|================================================================================================================================================
 
-// FUNCTIONS SECTION STARTS
+--
+// HOW-TO-USE-ABSCHNITT ENDET
+
+// FUNKTIONSABSCHNITT STARTET
 [#functions]
 --
 
 '''
 
 [float]
-=== Functions
+=== Funktionen
 link:../spi/spisettings[SPISettings] +
 link:../spi/begin[begin()] +
 link:../spi/begintransaction[beginTransaction()] +
+link:../spi/endtransaction[endTransaction()] +
 link:../spi/end[end()] +
 link:../spi/setbitorder[setBitOrder()] +
 link:../spi/setclockdivider[setClockDivider()] +
@@ -49,4 +66,4 @@ link:../spi/usinginterrupt[usingInterrupt()]
 '''
 
 --
-// SEEALSO SECTION ENDS
+// FUNKTIONSABSCHNITT ENDET

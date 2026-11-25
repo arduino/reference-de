@@ -5,39 +5,39 @@ title: SPISettings
 = SPISettings
 
 
-// OVERVIEW SECTION STARTS
+// ÜBERSICHTSABSCHNITT STARTET
 [#overview]
 --
 
 [float]
-=== Description
-The `SPISettings` object is used to configure the SPI port for your SPI device. All 3 parameters are combined to a single `SPISettings` object, which is given to `SPI.beginTransaction()`.
+=== Beschreibung
+Mit dem Objekt `SPISettings` konfigurierst du den SPI-Port für dein SPI-Gerät. Alle 3 Parameter werden in einem einzigen `SPISettings`-Objekt zusammengefasst, das an `SPI.beginTransaction()` übergeben wird.
 
-When all of your settings are constants, SPISettings should be used directly in `SPI.beginTransaction()`. See the syntax section below. For constants, this syntax results in smaller and faster code.
+Wenn alle deine Einstellungen Konstanten sind, solltest du SPISettings direkt in `SPI.beginTransaction()` verwenden, siehe den Abschnitt Syntax unten. Bei Konstanten ergibt diese Schreibweise kleineren und schnelleren Code.
 
-If any of your settings are variables, you may create a SPISettings object to hold the 3 settings. Then you can give the object name to SPI.beginTransaction(). Creating a named SPISettings object may be more efficient when your settings are not constants, especially if the maximum speed is a variable computed or configured, rather than a number you type directly into your sketch.
+Wenn eine deiner Einstellungen eine Variable ist, kannst du ein SPISettings-Objekt anlegen, das die 3 Einstellungen enthält. Den Namen dieses Objekts übergibst du dann an SPI.beginTransaction(). Ein benanntes SPISettings-Objekt kann effizienter sein, wenn deine Einstellungen keine Konstanten sind, besonders wenn die maximale Geschwindigkeit eine berechnete oder konfigurierte Variable ist und keine Zahl, die du direkt in deinen Sketch schreibst.
 
 [float]
 === Syntax
 `SPI.beginTransaction(SPISettings(14000000, MSBFIRST, SPI_MODE0))`
-Note: Best if all 3 settings are constants
+Hinweis: Am besten, wenn alle 3 Einstellungen Konstanten sind
 
 `SPISettings mySetting(speedMaximum, dataOrder, dataMode)`
-Note: Best when any setting is a variable''
+Hinweis: Am besten, wenn eine der Einstellungen eine Variable ist
 
 
 [float]
-=== Parameters
+=== Parameter
 
-`speedMaximum`: The maximum speed of communication. For a SPI chip rated up to 20 MHz, use 20000000. +
-`dataOrder`: MSBFIRST or LSBFIRST +
-`dataMode`: SPI_MODE0, SPI_MODE1, SPI_MODE2, or SPI_MODE3
+`speedMaximum`: Die maximale Geschwindigkeit der Kommunikation. Für einen SPI-Chip, der für bis zu 20 MHz ausgelegt ist, verwendest du 20000000. +
+`dataOrder`: MSBFIRST oder LSBFIRST +
+`dataMode`: SPI_MODE0, SPI_MODE1, SPI_MODE2 oder SPI_MODE3
 
 
 [float]
-=== Returns
-None.
+=== Rückgabewert
+Nichts.
 
 --
-// OVERVIEW SECTION ENDS
+// ÜBERSICHTSABSCHNITT ENDET
 
