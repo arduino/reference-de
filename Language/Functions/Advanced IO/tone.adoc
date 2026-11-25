@@ -17,13 +17,13 @@ subCategories: [ "Advanced I/O" ]
 
 [float]
 === Beschreibung
-Generiert einen Ton mit der angegebenen Frequenz (und 50% duty cycle) auf einem Pin. Eine Dauer des Tons kann festgelegt werden; Sonst wird der Ton abgespielt, bis ein link:../notone[noTone()] aufgerufen wird.
+Generiert einen Ton mit der angegebenen Frequenz (und 50% Tastgrad) auf einem Pin. Eine Dauer des Tons kann festgelegt werden; sonst wird der Ton abgespielt, bis ein link:../notone[noTone()] aufgerufen wird.
 Der Pin kann an einen Piezo oder an einen Lautsprecher angeschlossen werden, um Töne abzuspielen.
 
 Nur ein Ton kann gleichzeitig abgespielt werden. Wenn bereits ein Ton auf einem anderen Pin abgespielt wird, hat `tone()` auf einem 2. Pin keinen Effekt. Wenn der Ton auf dem gleichen Pin gespielt wird, setzt
 der Aufruf der Funktion die Frequenz des Tons.
 
-Die Nutzung der `tone()` Funktion interferiert mit PWM outputs auf Pin 3 und 11 (Auf Boards außer dem Arduino Mega).
+Die Nutzung der `tone()` Funktion interferiert mit PWM-Ausgängen auf Pin 3 und 11 (auf Boards außer dem Arduino Mega).
 
 Es ist nicht möglich, Töne mit einer Frequenz niedriger als 31Hz zu erstellen. Für technische Details, siehe https://github.com/bhagman/Tone#ugly-details[Brett Hagman's post].
 [%hardbreaks]
@@ -78,8 +78,8 @@ Nichts.
 * #SPRACHE# link:../../analog-io/analogwrite[analogWrite()]
 
 [role="example"]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples/toneMelody[Töne^]
-* #BEISPIEL# https://www.arduino.cc/en/Tutorial/tonePitchFollower[Tonleiter^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples/toneMelody[Melodie^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/tonePitchFollower[Pitch Follower^]
 * #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples/toneKeyboard[Einfaches Keyboard^]
 * #BEISPIEL# https://www.arduino.cc/en/Tutorial/BuiltInExamples/toneMultiple[Mehrere Töne^]
 * #BEISPIEL# https://www.arduino.cc/en/Tutorial/PWM[PWM^]

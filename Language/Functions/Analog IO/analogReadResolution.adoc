@@ -20,7 +20,7 @@ subCategories: [ "Analog I/O" ]
 
 Legt die Größe (in Bits) des von `analogRead()` zurückgegebenen Werts fest. Der Standardwert ist 10 Bit (gibt Werte zwischen 0-1023 zurück), um die Abwärtskompatibilität mit AVR-basierten Boards zu gewährleisten.
 
-Die Boards *Zero, Due, MKR und Nano 33 (BLE und IoT)* verfügen über 12-Bit-ADC-Funktionen, auf die durch Ändern der Auflösung auf 12 zugegriffen werden kann. Dadurch werden Werte von `analogRead()` zwischen 0 und 4095 zurückgegeben.
+Die Boards *Zero, Due, MKR und Nano 33 (BLE und IoT)* verfügen über 12-Bit-ADC-Funktionen, auf die durch Ändern der Auflösung auf 12 zugegriffen werden kann. Dadurch werden Werte von `analogRead()` zwischen 0 und 4095 zurückgegeben. +
 Der *Portenta H7* verfügt über einen 16-Bit-ADC, der Werte zwischen 0 und 65535 zulässt.
 [%hardbreaks]
 
@@ -32,7 +32,7 @@ Der *Portenta H7* verfügt über einen 16-Bit-ADC, der Werte zwischen 0 und 6553
 
 [float]
 === Parameter
-`bits`: bestimmt die Auflösung (in Bits) des von der Funktion `analogRead()` zurückgegebenen Wert. Man kann dies zwischen 1 und 32 einstellen. Man kann auch Auflösungen höher als die unterstützten 12 oder 16 Bit einstellen, aber Werte, die von `analogRead()` zurückgegeben werden, unterliegen einer Rundung. Weitere Informationen finden sich im Hinweis unten.
+`bits`: bestimmt die Auflösung (in Bits) des von der Funktion `analogRead()` zurückgegebenen Werts. Man kann dies zwischen 1 und 32 einstellen. Man kann auch Auflösungen höher als die unterstützten 12 oder 16 Bit einstellen, aber Werte, die von `analogRead()` zurückgegeben werden, unterliegen einer Rundung. Weitere Informationen finden sich im Hinweis unten.
 
 
 [float]

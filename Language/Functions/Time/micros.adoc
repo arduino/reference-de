@@ -18,9 +18,9 @@ subCategories: [ "Time" ]
 [float]
 === Beschreibung
 Gibt die Anzahl der Mikrosekunden zurück, seit das Arduino-Board das aktuelle Programm gestartet hat.
-Diese Zahl läuft nach ca. 70 Minuten über (Nullstellen).
+Diese Zahl läuft nach ca. 70 Minuten über (beginnt wieder bei null).
 Auf den Boards der Arduino-Portenta-Familie hat diese Funktion auf allen Kernen eine Auflösung von einer Mikrosekunde.
-Auf 16-MHz-Arduino-Boards (z. B. Duemilanove und Nano) hat diese Funktion eine Auflösung von vier Mikrosekunden (d. H. Der zurückgegebene Wert ist immer ein Vielfaches von vier).
+Auf 16-MHz-Arduino-Boards (z. B. Duemilanove und Nano) hat diese Funktion eine Auflösung von vier Mikrosekunden (d. h. der zurückgegebene Wert ist immer ein Vielfaches von vier).
 Auf 8-MHz-Arduino-Boards (z. B. dem LilyPad) hat diese Funktion eine Auflösung von acht Mikrosekunden.
 [%hardbreaks]
 

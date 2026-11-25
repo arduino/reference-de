@@ -76,7 +76,7 @@ Nichts.
 [float]
 === Beispielcode
 // Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu.   ►►►►► DIESER ABSCHNITT IST VERPFLICHTEND ◄◄◄◄◄
-Der Code zeigt, wie ADC mit unterschiedlichen Auflösungen verwendet wird.
+Der Code zeigt, wie `analogWrite()` mit unterschiedlichen PWM-Auflösungen verwendet wird.
 
 [source,arduino]
 ----
@@ -122,12 +122,12 @@ void loop() {
 
 [float]
 === Anmerkungen und Warnungen
-Wenn der Wert von `analogWriteResolution()` auf einen höheren Wert als die Fähigkeiten des Boards gesetzt werden,
-werden die zusätzlichen Bits vom Arduino verworfen. Zum Beispiel: Wenn beim Due `analogWriteResolution (16)` auf einem 12-Bit-DAC-Pin verwendet wird,
+Wenn der Wert von `analogWriteResolution()` auf einen höheren Wert als die Fähigkeiten des Boards gesetzt wird,
+werden die zusätzlichen Bits vom Arduino verworfen. Zum Beispiel: Wenn beim Due `analogWriteResolution(16)` auf einem 12-Bit-DAC-Pin verwendet wird,
 werden nur die ersten 12 Bits der an `analogWrite()` übergebenen Werte verwendet und die *letzten 4 Bits werden verworfen*.
 
 
-Wenn der Wert von `analogWriteResolution()` auf einen niedrigeren Wert als die Fähigkeiten des Boards gesetzt werden,
+Wenn der Wert von `analogWriteResolution()` auf einen niedrigeren Wert als die Fähigkeiten des Boards gesetzt wird,
 werden die fehlenden Bits *mit Nullen aufgefüllt*, um die erforderliche Hardware-Größe zu füllen.
 Zum Beispiel: Wenn der Due mit `analogWriteResolution(8)` auf einem 12-Bit-DAC-Pin verwendet wird,
 fügt der Arduino dem 8-Bit-Wert, der in `analogWrite()` verwendet wird, 4 Null-Bits hinzu, um die erforderlichen 12 Bit zu erhalten.

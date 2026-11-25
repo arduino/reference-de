@@ -19,7 +19,7 @@ subCategories: [ "Advanced I/O" ]
 === Beschreibung
 `pulseInLong()` ist eine Alternative zu link:../pulsein[pulseIn()], die besser mit langen Impulsen und mit durch Interrupts beeinflussten Situationen umgehen kann.
 
-Liest einen Impuls (entweder `HIGH` oder `LOW`) an einem Pin ein. Wenn der *Wert* z.B. *HIGH* ist, wartet `pulseInLong()` darauf, dass der Pin von *LOW* auf *HIGH* wechselt,
+Liest einen Impuls (entweder `HIGH` oder `LOW`) an einem Pin ein. Wenn *value* z.B. *HIGH* ist, wartet `pulseInLong()` darauf, dass der Pin von *LOW* auf *HIGH* wechselt,
 startet einen Timer und wartet anschließend darauf, dass der Pin wieder auf *LOW* wechselt. Daraufhin stoppt `pulseInLong()` den Timer. Gibt die Länge des Impulses in Mikrosekunden zurück.
 Stoppt und gibt 0 zurück, wenn ein bestimmter Timeout erreicht wird.
 
@@ -38,11 +38,11 @@ Diese Routine kann nur benutzt werden, wenn Interrupts aktiviert werden. Die bes
 === Parameter
 `pin`: Die Arduino-Pinnummer, an der der Impuls gelesen werden soll. Erlaubte Datentypen: `int`. +
 `value`: Welche Art von Impuls gelesen werden soll: Entweder link:../../../variables/constants/highlow[HIGH] oder link:../../../variables/constants/highlow[LOW]. Erlaubte Datentypen: `int`. +
-`timeout` (optional): Die Anzahl an Mikrosekunden, die gewartet werden soll, bis ein Impuls gemessen wurde; Default-Wert ist eine Sekunde. Erlaubte Datentypen: `unsigned long`.
+`timeout` (optional): Die Anzahl an Mikrosekunden, die gewartet werden soll, bis ein Impuls beginnt; Default-Wert ist eine Sekunde. Erlaubte Datentypen: `unsigned long`.
 
 [float]
 === Rückgabewert
-Die Länge des Impulses (in Mikrosekunden) oder 0, wenn kein Impuls vor dem Timeout gemessen wird. Datentyp: `unsigned long`.
+Die Länge des Impulses (in Mikrosekunden) oder 0, wenn vor dem Timeout kein Impuls begonnen hat. Datentyp: `unsigned long`.
 
 --
 // ÜBERSICHTSABSCHNITT ENDET

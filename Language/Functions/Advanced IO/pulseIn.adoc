@@ -37,11 +37,11 @@ Hinweis: Wenn du den optionalen `timeout` verwendest, wird der Code schneller au
 === Parameter
 `pin`: Die Arduino-Pinnummer, an der der Impuls gelesen werden soll. Erlaubte Datentypen: `int`. +
 `value`: Welche Art von Impuls gelesen werden soll: Entweder link:../../../variables/constants/highlow[HIGH] oder link:../../../variables/constants/highlow[LOW]. Erlaubte Datentypen: `int`. +
-`timeout` (optional): Die Anzahl an Mikrosekunden, die gewartet werden soll, bis ein Impuls gemessen wurde; Default-Wert ist eine Sekunde. Erlaubte Datentypen: `unsigned long`.
+`timeout` (optional): Die Anzahl an Mikrosekunden, die gewartet werden soll, bis ein Impuls beginnt; Default-Wert ist eine Sekunde. Erlaubte Datentypen: `unsigned long`.
 
 [float]
 === Rückgabewert
-Die Länge des Impulses (in Mikrosekunden) oder 0, wenn kein Impuls vor dem Timeout gemessen wird. Datentyp: `unsigned long`.
+Die Länge des Impulses (in Mikrosekunden) oder 0, wenn vor dem Timeout kein Impuls begonnen hat. Datentyp: `unsigned long`.
 
 --
 // ÜBERSICHTSABSCHNITT ENDET

@@ -12,14 +12,14 @@ subCategories: [ "Analog I/O" ]
 
 [float]
 === Beschreibung
-Liest den Wert vom angegebenen analogen Pin ein. Die Arduino-Boards enthalten einen 10-Bit-Analog-zu-Digital-Konverter.
+Liest den Wert vom angegebenen analogen Pin ein. Die Arduino-Boards enthalten einen mehrkanaligen 10-Bit-Analog-zu-Digital-Konverter.
 D.h. das Board mappt Eingangsspannungen zwischen 0 und der Betriebsspannung (5 V oder 3,3 V) auf Integer-Werte zwischen 0 und 1023.
 Die erreichte Auflösung ist damit z.B. auf einem Arduino UNO 5 V / 1024 Teile oder 0,0049 V (4,9 mV) per Teil.
 Siehe dazu auch die Tabelle unterhalb für die benutzbaren Pins, Betriebsspannung und die maximale Auflösung für einige Arduino-Boards.
 
 Die Eingangsbreite kann mit link:../analogreference[analogReference()] geändert werden, die Auflösung mit link:../analogreadresolution[analogReadResolution()] (Nur für Arduino Zero, Due und MKR).
 
-Auf den ATmega-basierten Boards (UNO, Nano, Mini, Mega), benötigt das Board circa 100 Mikrosekunden (0,0001 s), um einen analogen Inputpin zu lesen. Damit ist die maximale Lesegeschwindigkeit 10000 Lesevorgänge pro Sekunde.
+Auf den ATmega-basierten Boards (UNO, Nano, Mini, Mega) benötigt das Board circa 100 Mikrosekunden (0,0001 s), um einen analogen Inputpin zu lesen. Damit ist die maximale Lesegeschwindigkeit circa 10000 Lesevorgänge pro Sekunde.
 
 [options="header"]
 |===================================================
@@ -38,7 +38,7 @@ Auf den ATmega-basierten Boards (UNO, Nano, Mini, Mega), benötigt das Board cir
 |MKR-Familie                      |3,3 Volt          |A0 bis A6     |12 Bit**
 |===================================================
 
-*A0 bis A5 sind auf dem Board benannt, A6 bis A11 sind auf den Pins 4, 6, 8, 9, 10, und 12 verfügbar +
+*A0 bis A5 sind auf dem Board benannt, A6 bis A11 sind auf den Pins 4, 6, 8, 9, 10 und 12 verfügbar +
 **Die standardmäßige Auflösung von `analogRead()` ist bei diesen Boards 10 Bit aus Kompatibilitätsgründen. Mit link:../analogreadresolution[analogReadResolution()] kann die Auflösung auf einen höheren Wert geändert werden.
 
 [%hardbreaks]
@@ -72,7 +72,8 @@ Der Code liest die Spannung auf einem Analogpin und zeigt diese an.
 
 [source,arduino]
 ----
-int analogPin = A3; // Pin, der gelesen werden soll: Pin A3
+int analogPin = A3; // Schleifer (mittlerer Anschluss) des Potentiometers an Analogpin 3
+                    // äußere Anschlüsse an Masse und +5V
 int val = 0; // Variable, die den gelesenen Wert speichert
 
 void setup() {

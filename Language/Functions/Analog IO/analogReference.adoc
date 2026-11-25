@@ -17,7 +17,7 @@ subCategories: [ "Analog I/O" ]
 
 [float]
 === Beschreibung
-Konfiguriert die Referenzspannung, die für analoge Eingabe-Pins genutzt wird (z.B. Der maximal Wert der Eingangsspannung). Dabei sind die folgenden Optionen verfügbar:
+Konfiguriert die Referenzspannung, die für analoge Eingabe-Pins genutzt wird (d. h. der obere Wert des Eingangsbereichs). Dabei sind die folgenden Optionen verfügbar:
 
 Arduino AVR Boards (Uno, Mega, Leonardo, etc.)
 
@@ -65,8 +65,8 @@ Arduino Mbed OS Nano Boards (Nano 33 BLE), Arduino Mbed OS Edge Boards (Edge Con
 
 * AR_VDD: Die Standardreferenz von 3,3 V.
 * AR_INTERNAL: Eingebaute Referenz von 0,6 V
-* AR_INTERNAL1V2: 1.2 V Referenz (interne 0.6 V Referenz mit Faktor 2)
-* AR_INTERNAL2V4: 2.4 V Referenz (interne 0.6 V Referenz mit Faktor 4)
+* AR_INTERNAL1V2: 1,2 V Referenz (interne 0,6 V Referenz mit Faktor 2)
+* AR_INTERNAL2V4: 2,4 V Referenz (interne 0,6 V Referenz mit Faktor 4)
 
 [%hardbreaks]
 
@@ -99,10 +99,9 @@ Nichts.
 === Anmerkungen und Warnungen
 Wenn die Referenzspannung geändert wird, können die ersten Messwerte von `analogRead()` fehlerhaft sein.
 
-* Benutze niemals Spannungen geringer als 0 V oder höher als 5 V für externe Referenzspannungen auf dem AREF-Pin! Wenn du eine externe Referenzspannung auf dem AREF-Pin nutzen willst, musst du zunächst die analoge Referenzspannung auf EXTERNAL setzen, bevor du `analogRead()` nutzen kannst.
-* Sonst kann es dazu führen, dass auf dem Board ein Kurzschluss entsteht zwischen interner und auf dem AREF-Pin angelegter Spannung. Dies kann eine Beschädigung des Mikrokontrollers oder Boards zur Folge haben.
+*Benutze niemals Spannungen geringer als 0 V oder höher als 5 V für externe Referenzspannungen auf dem AREF-Pin! Wenn du eine externe Referenzspannung auf dem AREF-Pin nutzen willst, musst du zunächst die analoge Referenzspannung auf EXTERNAL setzen, bevor du `analogRead()` nutzen kannst.* Sonst führt das zu einem Kurzschluss auf dem Board zwischen interner und auf dem AREF-Pin angelegter Spannung. Dies kann eine Beschädigung des Mikrokontrollers oder Boards zur Folge haben.
 
-Alternativ kannst du die externe Referenzspannung auf dem AREF-Pin über einen 5k-Widerstand verbinden. Das hat den Vorteil, dass du zwischen externer und interner Referenzspannung wechseln kannst. Beachte auch, dass sich dadurch die Nutzungsspannung ändert, weil der AREF-Pin einen internen 32K-Widerstand besitzt. Diese 2 Widerstände funktionieren als Spannungsteiler. Wenn also 2,5 V durch den Widerstand fließen, werden auf dem AREF-Pin 2.5 * 32 / (32 + 5) V = ~2.2 V anliegen.
+Alternativ kannst du die externe Referenzspannung auf dem AREF-Pin über einen 5k-Widerstand verbinden. Das hat den Vorteil, dass du zwischen externer und interner Referenzspannung wechseln kannst. Beachte auch, dass sich dadurch die Referenzspannung ändert, weil der AREF-Pin einen internen 32K-Widerstand besitzt. Diese 2 Widerstände funktionieren als Spannungsteiler. Wenn also 2,5 V über den Widerstand angelegt werden, werden auf dem AREF-Pin 2.5 * 32 / (32 + 5) V = ~2.2 V anliegen.
 
 [%hardbreaks]
 

@@ -19,10 +19,13 @@ subCategories: [ "Digital I/O" ]
 === Beschreibung
 Schreibt einen `HIGH`- oder `LOW`-Wert auf einen Digitalpin.
 
-Wenn der Pin mit `pinMode()` als Outputpin gesetzt wird, wird die Spannung auf den Wert 5V (oder 3,3V) für `HIGH` gesetzt, 0V für `LOW`. Es wird empfohlen, den Pin mit `pinMode()` auf `INPUT_PULLUP` zu setzen, um den internen Pull-Up-Widerstand zu nutzen. Für mehr Informationen siehe: http://arduino.cc/en/Tutorial/DigitalPins[Tutorial zu Digitalpins^].
+Wenn der Pin mit `pinMode()` als Outputpin gesetzt wird, wird die Spannung auf den Wert 5V (oder 3,3V) für `HIGH` gesetzt, 0V für `LOW`.
 [%hardbreaks]
 
-Wenn du `pinMode()` nicht auf `OUTPUT` setzt, aber eine LED auf den Pin anschließt, kann die LED mit `digitalWrite(HIGH)` gedimmt erscheinen. Wenn `pinMode()` nicht explicit gesetzt wird, verwendet `digitalWrite()` den Pull-Up-Widerstand, der als eine Art großer spannungslimitierender Widerstand wirkt.
+Wenn der Pin als `INPUT` konfiguriert ist, aktiviert (`HIGH`) oder deaktiviert (`LOW`) `digitalWrite()` den internen Pull-Up-Widerstand des Inputpins. Es wird empfohlen, den Pin mit `pinMode()` auf `INPUT_PULLUP` zu setzen, um den internen Pull-Up-Widerstand zu nutzen. Für mehr Informationen siehe: http://arduino.cc/en/Tutorial/DigitalPins[Tutorial zu Digitalpins^].
+[%hardbreaks]
+
+Wenn du `pinMode()` nicht auf `OUTPUT` setzt, aber eine LED auf den Pin anschließt, kann die LED mit `digitalWrite(HIGH)` gedimmt erscheinen. Wenn `pinMode()` nicht explizit gesetzt wird, verwendet `digitalWrite()` den Pull-Up-Widerstand, der als eine Art großer strombegrenzender Widerstand wirkt.
 [%hardbreaks]
 
 [float]
@@ -72,8 +75,7 @@ void loop() {
 
 [float]
 === Anmerkungen und Warnungen
-Die analogen Inputpins können als Digitalpins verwendet werden mit den Namen A0, A1, etc. Die Ausnahme sind der Arduino Nano, Pro Mini, und die Arduino Mini-Pins A6 und A7, welche nur
-als analoge Inputs genutzt werden können.
+Die analogen Inputpins können als Digitalpins verwendet werden mit den Namen A0, A1, etc. Eine Ausnahme bilden die Pins A6 und A7 von Arduino Nano, Pro Mini und Mini, die nur als analoge Eingänge verwendet werden können.
 
 --
 // HOW-TO-USE-ABSCHNITT ENDET
@@ -87,7 +89,7 @@ als analoge Inputs genutzt werden können.
 === Siehe auch
 
 [role="example"]
-* #BEISPIEL#-Tutorial: (http://arduino.cc/en/Tutorial/DigitalPins[Beschreibung der digitalen Pins^])
+* #BEISPIEL# http://arduino.cc/en/Tutorial/DigitalPins[Beschreibung der digitalen Pins^]
 
 --
 // SIEHE-AUCH-ABSCHNITT SECTION ENDET

@@ -13,10 +13,9 @@ subCategories: [ "Advanced I/O" ]
 
 [float]
 === Beschreibung
-Shiftet ein Byte von Daten hinaus, ein Bit pro Zeiteinheit. Beginnt entweder mit dem most significant bit (linkestes Bit) oder dem least significant bit (rechtestes Bit). Für jedes Bit wird der clock pin *HIGH* geschalten.
-Anschließend wird das nächste Bit gelesen und der clock pin auf *LOW* gesetzt.
+Shiftet ein Byte von Daten hinaus, ein Bit pro Zeiteinheit. Beginnt entweder mit dem most significant bit (linkestes Bit) oder dem least significant bit (rechtestes Bit). Jedes Bit wird nacheinander auf den data pin geschrieben. Danach wird der clock pin gepulst (erst *HIGH*, dann *LOW* geschaltet), um anzuzeigen, dass das Bit verfügbar ist.
 
-Wenn du mit einem Gerät arbeitest, das bei steigender Flanke die clock auslöst, musst du darauf achten, dass der clock pin *LOW* ist, bevor das erste Mal `shiftIn()` aufgerufen wird. Das ist z.B. möglich mit einem
+Wenn du mit einem Gerät arbeitest, das bei steigender Flanke die clock auslöst, musst du darauf achten, dass der clock pin *LOW* ist, bevor `shiftOut()` aufgerufen wird. Das ist z.B. möglich mit einem
 Aufruf von `digitalWrite(clockPin, LOW)`.
 
 Bemerkung: Das ist eine Softwareimplementierung; Arduino bietet auch eine link:https://www.arduino.cc/en/Reference/SPI[SPI-Bibliothek] an, die eine Hardwareimplementierung benutzt. Diese ist zwar schneller, funktioniert
@@ -32,7 +31,7 @@ aber nur mit spezifischen Pins.
 [float]
 === Parameter
 `dataPin`: Der Pin, auf dem jedes Bit ausgegeben wird. Erlaubte Datentypen: `int`. +
-`clockPin`: Der Pin, auf dem das Signal gesetzt wird, um den *dataPin* zu lesen. Erlaubte Datentypen: `int`. +
+`clockPin`: Der Pin, der umgeschaltet wird, sobald der *dataPin* auf den richtigen Wert gesetzt wurde. Erlaubte Datentypen: `int`. +
 `bitOrder`: Welche Ordnung verwendet werden soll, um zu shiften. Entweder ist dies *MSBFIRST* oder *LSBFIRST*.
 (Most Significant Bit First oder Least Significant Bit First) +
 `value`: Die Daten, die hinausgeshiftet werden sollen. Erlaubte Datentypen: `byte`.
@@ -54,7 +53,7 @@ Nichts.
 [float]
 === Beispielcode
 // Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu.   ►►►►► DIESER ABSCHNITT IST VERPFLICHTEND ◄◄◄◄◄
-Für eingebaute Schaltkreise beachte das http://arduino.cc/en/Tutorial/ShiftOut[Tutorial, wie man ein 74HC595 Shift-Register verwendet].
+Die zugehörige Schaltung findest du im http://arduino.cc/en/Tutorial/ShiftOut[Tutorial, wie man ein 74HC595 Shift-Register verwendet].
 
 [source,arduino]
 ----
@@ -64,7 +63,7 @@ Für eingebaute Schaltkreise beachte das http://arduino.cc/en/Tutorial/ShiftOut[
 //  Date    : 25 Oct, 2006                                      //
 //  Version : 1.0                                               //
 //  Notes   : Code, um mit einem 74HC595 Shift Register         //
-//          : von 0 to 255 zu zählen                            //
+//          : von 0 bis 255 zu zählen                           //
 //****************************************************************
 
 //Pin verbunden mit ST_CP des 74HC595
@@ -84,11 +83,11 @@ void setup() {
 void loop() {
   //Zähler-Routine
   for (int j = 0; j < 256; j++) {
-	//Register pin grounden und low halten, solange übertragen wird
+    //Register pin grounden und low halten, solange übertragen wird
     digitalWrite(latchPin, LOW);
     shiftOut(dataPin, clockPin, LSBFIRST, j);
-	//Register pin auf high setzen, um dem Chip zu signalisieren, dass
-	//er nicht mehr länger Informationen lesen muss
+    //Register pin auf high setzen, um dem Chip zu signalisieren, dass
+    //er nicht mehr länger Informationen lesen muss
     digitalWrite(latchPin, HIGH);
     delay(1000);
   }
@@ -100,7 +99,7 @@ void loop() {
 === Anmerkungen und Warnungen
 Der dataPin und der clockPin müssen vorher als Outputs konfiguriert sein. Dies wird mit dem Aufruf von link:../../digital-io/pinmode[pinMode()] erreicht.
 
-shiftOut shiftet aktuell maximal 1 Byte (8 bits) hinaus. Wenn Werte größer 255 hinausgeshiftet werden sollen, benötigt das Register 2 Schritte.
+shiftOut shiftet aktuell maximal 1 Byte (8 bits) hinaus. Wenn Werte größer 255 hinausgeshiftet werden sollen, sind zwei Aufrufe nötig.
 [source,arduino]
 ----
 // Beispiel für MSBFIRST:
@@ -114,7 +113,7 @@ shiftOut(dataPin, clock, MSBFIRST, data);
 data = 500;
 // Low byte hinausshiften
 shiftOut(dataPin, clock, LSBFIRST, data);
-// Low byte hinausshiften
+// High byte hinausshiften
 shiftOut(dataPin, clock, LSBFIRST, (data >> 8));
 ----
 [%hardbreaks]

@@ -18,7 +18,7 @@ subCategories: [ "Analog I/O" ]
 [float]
 === Beschreibung
 Schreibt einen Analogwert (http://arduino.cc/en/Tutorial/PWM[PWM-Welle]) auf einen Pin. Kann z.B. benutzt werden, um eine LED mit verschiedener Helligkeit leuchten zu lassen oder einen Motor mit
-unterschiedlicher Geschwindigkeit laufen zu lassen. Nach Aufruf von `analogWrite()` generiert die Funktion eine stetige Rechteckwelle mit angegebenem Zyklus,
+unterschiedlicher Geschwindigkeit laufen zu lassen. Nach Aufruf von `analogWrite()` generiert die Funktion eine stetige Rechteckwelle mit dem angegebenen Tastgrad,
 bis der nächste Aufruf von `analogWrite()` (oder `digitalRead()` oder `digitalWrite()`) auf dem gleichen Pin erfolgt.
 
 [options="header"]
@@ -45,8 +45,8 @@ bis der nächste Aufruf von `analogWrite()` (oder `digitalRead()` oder `digitalW
 +****+ Es können nur 4 verschiedene Pins gleichzeitig verwendet werden. Wenn du PWM auf mehr als 4 Pins aktivierst, bricht der laufende Sketch ab, und du musst das Board zurücksetzen, um wieder einen neuen Sketch hochladen zu können. +
 
 [%hardbreaks]
-Du musst einen Pin nicht explizit als Ausgabepin über `pinMode()` festlegen,
-bevor du `analogWrite()` nutzt. Die `analogWrite()`-Funktion hat nichts mit analogen Pins oder der `analogRead`-Funktion zu tun.
+Du musst einen Pin nicht explizit als Ausgabepin über `pinMode()` festlegen, bevor du `analogWrite()` nutzt.
+Die `analogWrite()`-Funktion hat nichts mit analogen Pins oder der `analogRead`-Funktion zu tun.
 [%hardbreaks]
 
 
@@ -58,7 +58,7 @@ bevor du `analogWrite()` nutzt. Die `analogWrite()`-Funktion hat nichts mit anal
 [float]
 === Parameter
 `pin`: Der Arduino-Pin auf den geschrieben werden soll. Erlaubte Datentypen: `int`. +
-`value`: Die Zykluszeit. Werte zwischen 0 (immer aus) und 255 (immer an). Erlaubte Datentypen: `int`.
+`value`: Der Tastgrad. Werte zwischen 0 (immer aus) und 255 (immer an). Erlaubte Datentypen: `int`.
 
 [float]
 === Rückgabewert
@@ -98,8 +98,8 @@ void loop() {
 
 [float]
 === Anmerkungen und Warnungen
-Die PWM-Ausgaben auf Pins 5 und 6 werden höhere Zyklen als erwartet haben. Dies passiert, weil die Funktionen `millis()` und `delay()` den gleichen internen Timer nutzen,
-um diese PWM-Ausgaben zu generieren. In kleinen Zyklen (z.B. 0 bis 10) ist der Effekt am stärksten und kann dazu führen, dass der Wert 0 die Spannung auf Pin 5 und 6 nicht komplett wegnimmt,
+Die PWM-Ausgaben auf Pins 5 und 6 werden einen höheren Tastgrad als erwartet haben. Dies passiert, weil die Funktionen `millis()` und `delay()` den gleichen internen Timer nutzen,
+der auch diese PWM-Ausgaben erzeugt. Bei kleinem Tastgrad (z.B. 0 bis 10) ist der Effekt am stärksten und kann dazu führen, dass der Wert 0 die Spannung auf Pin 5 und 6 nicht komplett wegnimmt,
 d.h. dass z.B. bei Wert 0 die LED trotzdem leuchtet.
 
 --

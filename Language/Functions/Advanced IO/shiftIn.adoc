@@ -17,7 +17,7 @@ subCategories: [ "Advanced I/O" ]
 
 [float]
 === Beschreibung
-Shiftet ein Byte von Daten, ein Bit pro Zeiteinheit. Beginnt entweder mit dem most significant bit (linkestes Bit) oder dem least significant bit (rechtestes Bit). Für jedes Bit wird der clock pin *HIGH* geschalten.
+Shiftet ein Byte von Daten, ein Bit pro Zeiteinheit. Beginnt entweder mit dem most significant bit (linkestes Bit) oder dem least significant bit (rechtestes Bit). Für jedes Bit wird der clock pin *HIGH* geschaltet.
 Anschließend wird das nächste Bit gelesen und der clock pin auf *LOW* gesetzt.
 
 Wenn du mit einem Gerät arbeitest, das bei steigender Flanke die clock auslöst, musst du darauf achten, dass der clock pin *LOW* ist, bevor das erste Mal `shiftIn()` aufgerufen wird. Das ist z.B. möglich mit einem

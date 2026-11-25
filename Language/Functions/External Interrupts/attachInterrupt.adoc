@@ -42,7 +42,7 @@ als ersten Parameter für `attachInterrupt()`.
 [float]
 === Anmerkungen und Warnungen
 
-Innerhalb der vom Interrupt ausgelösten Funktion wird `delay()` nicht funktionieren und `millis()` nicht hochzählen. Empfangene Serielle Daten
+Innerhalb der vom Interrupt ausgelösten Funktion wird `delay()` nicht funktionieren und `millis()` nicht hochzählen. Empfangene serielle Daten
 in der Funktion können verloren gehen. Variablen, die innerhalb der Funktion verarbeitet werden, sollten als `volatile` gekennzeichnet werden.
 Siehe dazu auch den Abschnitt zu Interrupt Service Routinen weiter unten.
 [%hardbreaks]
@@ -50,26 +50,27 @@ Siehe dazu auch den Abschnitt zu Interrupt Service Routinen weiter unten.
 [float]
 == Benutzung von Interrupts
 Interrupts sind nützlich, um bestimmte Tasks in Microkontrollerprogrammen automatisch ablaufen zu lassen und können helfen, Timingprobleme zu lösen.
-Gute Beispiele dafür sind das Lesen eines Drehgebers sowie das Einlesen von Benutzereinaben.
+Gute Beispiele dafür sind das Lesen eines Drehgebers sowie das Einlesen von Benutzereingaben.
 
 Wenn du z.B. sicherstellen willst, dass das Programm alle Stromimpulse eines Drehgebers messen kann, wäre es sehr schwer ein Programm zu schreiben, das
 noch andere Aufgaben zusätzlich erfüllt, weil das Programm sonst immer den Sensor pollen (d.h. permanent abfragen) müsste. Andere Sensoren haben eine
-ähnliche Interfacedynamik: Das Auslesen eines Geräuschsensors oder eines Infrarotsensors funktioniert ähnlich. Interrupts können dabei helfen, dass
+ähnliche Interfacedynamik, etwa ein Geräuschsensor, der ein Klicken erkennen soll, oder eine Infrarot-Gabellichtschranke (Photo-Interrupter),
+die einen Münzeinwurf erkennen soll. Interrupts können dabei helfen, dass
 der Microkontroller andere weitere Aufgaben zusätzlich ausführen kann, trotzdem aber keine Eingaben verliert.
 
 [float]
 == Über Interrupt Service Routinen
-Interrupt Service Routinen sind spezielle Funktionen, die einige eindeutige Limitierungen haben als "normale" Funktionen: Interrupt Service Routinen können
+Interrupt Service Routinen sind spezielle Funktionen mit einigen Einschränkungen, die andere Funktionen nicht haben: Interrupt Service Routinen können
 keine Parameter besitzen und sollten nichts zurückgeben. Interrupt Service Routinen sollten generell so kurz und schnell wie möglich sein.
 
 Wenn dein Sketch mehrere Interrupt Service Routinen benutzt, kann nur eine auf einmal laufen. Andere Interrupts werden aufgerufen, nachdem die erste Interrupt
 Service Routine beendet ist. Die Reihenfolge hängt dabei von der Priorität der Routinen ab.
 
-`millis()` verlässt sich zum Zählen auf Interrupts, wird also in einer Interrupt Service Routine niemels hochzählen. `delay()` benutzt ebenfalls Interrupts
+`millis()` verlässt sich zum Zählen auf Interrupts, wird also in einer Interrupt Service Routine niemals hochzählen. `delay()` benutzt ebenfalls Interrupts
 und wird deshalb gar nicht in einer Interrupt Service Routine funktionieren. `micros()` wird anfangs gut funktionieren, aber nach circa 1 bis 2 ms sich
 unvorhersehbar verhalten. `delayMicroseconds()` benutzt keine Zähler und wird deshalb normal funktionieren.
 
-Normalerweise werden globale Variablen benutzt, um Daten zwischen Interrupt Service Routinen und dem Hauptprogramm zu tauschen. Dass die Variablen dabei
+Normalerweise werden globale Variablen benutzt, um Daten zwischen Interrupt Service Routinen und dem Hauptprogramm zu tauschen. Damit die Variablen dabei
 korrekt geändert werden, sollten sie als `volatile` deklariert werden.
 
 Für weitere Informationen zu Interrupts, siehe auch http://gammon.com.au/interrupts[Nick Gammon's Anmerkungen].
@@ -92,7 +93,9 @@ Für weitere Informationen zu Interrupts, siehe auch http://gammon.com.au/interr
 * *CHANGE* Interrupt wird getriggert, wenn der Pin den Wert ändert +
 * *RISING* Interrupt wird getriggert, wenn der Pin von LOW auf HIGH wechselt, +
 * *FALLING* Interrupt wird getriggert, wenn der Pin von HIGH auf LOW wechselt. +
- Die Due-, Zero- und MKR1000-Boards erlauben zusätzlich: +
+
+Die Due-, Zero- und MKR1000-Boards erlauben zusätzlich: +
+
 * *HIGH* Interrupt wird getriggert, wenn der Pin HIGH ist.
 
 
@@ -145,21 +148,21 @@ void blink() {
 
 [float]
 === Interruptnummern
-Im Normalfall solltest du `digitalPinToInterrupt(pin)` benutzen anstatt den Interruptnummer direkt zu setzen. Die Interruptpins und deren Mapping
+Im Normalfall solltest du `digitalPinToInterrupt(pin)` benutzen anstatt die Interruptnummer direkt zu setzen. Die Interruptpins und deren Mapping
 variiert von Board zu Board. Wenn der Sketch also auf einem anderen Board ausgeführt werden soll, kann es schnell zu Problemen kommen.
 
 Alte Sketches haben oft direkte Interruptnummern angegeben. Oft wurde die Nummer 0 (für Digitalpin 2) oder die Nummer 1 (für Digitalpin 3) verwendet. Die Tabelle unten
 zeigt, welche Interruptpins auf welchem Board verfügbar sind.
 
 In der Tabelle unten sind die Interruptpins definiert als die Nummer, die an `attachInterrupt()` übergeben wird. Aus historischen Gründen stimmt
-diese Nummerierung nicht immer mit den Inputnummern auf dem ATmega-Chip überein (z.B. int.0 ist INT4 auf dem ATmega2560-Chip).
+diese Nummerierung nicht immer mit der Interrupt-Nummerierung auf dem ATmega-Chip überein (z.B. int.0 ist INT4 auf dem ATmega2560-Chip).
 
 [options="header"]
 |===================================================
 |Board                          | int.0   | int.1   | int.2   | int.3   | int.4   | int.5
-|Uno, Ethernet                  | 2 | 3 | | | |
+|Uno, Ethernet                  | 2 | 3 | | | | |
 |Mega2560                       | 2 | 3 | 21 | 20 | 19 | 18
-|32u4 based (e.g Leonardo, Micro) | 3 | 2 | 0 | 1 | 7 |
+|32u4-basiert (z. B. Leonardo, Micro) | 3 | 2 | 0 | 1 | 7 |
 |===================================================
 
 Für Uno WiFi Rev2, Due, Zero, MKR Family und 101 Boards gilt: *Interruptnummer = Pinnummer*.
