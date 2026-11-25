@@ -36,7 +36,7 @@ Gibt den `String` "13" zurück. Du kannst jedoch auch andere Basen verwenden. Zu
 String thisString = String(13, HEX);
 ----
 
-Gibt den String "D" zurück. Dies ist die hexadezimale Darstellung des Dezimalwerts 13. Oder, wenn du das Binärformat bevorzugst:
+Gibt den String "d" zurück. Dies ist die hexadezimale Darstellung des Dezimalwerts 13. Oder, wenn du das Binärformat bevorzugst:
 
 [source,arduino]
 ----
@@ -104,7 +104,7 @@ String stringOne =  String(5.698, 3);                     // Ein float mit Dezim
 * #SPRACHE# link:../string/functions/compareto[compareTo()]
 * #SPRACHE# link:../string/functions/concat[concat()]
 * #SPRACHE# link:../string/functions/c_str[c_str()]
-* #SPRACHE# link:../string/functions/endsWith[endsWith()]
+* #SPRACHE# link:../string/functions/endswith[endsWith()]
 * #SPRACHE# link:../string/functions/equals[equals()]
 * #SPRACHE# link:../string/functions/equalsignorecase[equalsIgnoreCase()]
 * #SPRACHE# link:../string/functions/getbytes[getBytes()]

@@ -65,7 +65,7 @@ Wenn du mit floats rechnest, musst du ein Dezimalzeichen hinzufügen, andernfall
 Floats haben eine Genauigkeit von nur 6-7 Dezimalstellen. Das bedeutet die Gesamtzahl der Ziffern, nicht die Zahl rechts vom Dezimalpunkt.
 Im Gegensatz zu anderen Plattformen, bei denen du durch die Verwendung eines `double` (z. B. bis zu 15 Ziffern) eine höhere Genauigkeit erzielen kannst, hat `double` auf dem Arduino die gleiche Größe wie `float`.
 
-Fließkommazahlen sind nicht genau und können beim Vergleich zu seltsamen Ergebnissen führen. Zum Beispiel kann `6.0 / 3.0` nicht gleich `2.0` sein.
+Fließkommazahlen sind nicht genau und können beim Vergleich zu seltsamen Ergebnissen führen. Zum Beispiel ist `9.0 / 0.3` möglicherweise nicht ganz gleich `30.0`.
 Du solltest stattdessen überprüfen, ob der absolute Wert der Differenz zwischen den Zahlen geringer als eine kleine Zahl ist.
 
 Die Konvertierung von Gleitkomma- in Ganzzahl-Mathematik führt zu Kürzungen:

@@ -20,17 +20,21 @@ Arrays in der Programmiersprache C ++, in der Arduino-Skizzen geschrieben sind, 
 Alle folgenden Methoden sind gültige Methoden zum Erstellen (Deklarieren) eines Arrays.
 [source,arduino]
 ----
+  // Deklariert ein Array mit vorgegebener Länge, ohne die Werte zu initialisieren:
   int myInts[6];
-  int myPins[] = {2, 4, 8, 3, 6};
-  int mySensVals[6] = {2, 4, -8, 3, 2};
+
+  // Deklariert ein Array, ohne explizit eine Größe zu wählen (der Compiler
+  // zählt die Elemente und erstellt ein Array der entsprechenden Größe):
+  int myPins[] = {2, 4, 8, 3, 6, 4};
+
+  // Deklariert ein Array mit vorgegebener Länge und initialisiert seine Werte:
+  int mySensVals[5] = {2, 4, -8, 3, 2};
+
+  // Ein Array vom Typ char muss beim Deklarieren ein Element länger sein,
+  // damit es das erforderliche abschließende Nullzeichen aufnehmen kann:
   char message[6] = "hello";
 ----
-Du kannst ein Array deklarieren, ohne es wie in `myInts` initialisieren zu müssen.
-{empty} +
-In `myPins` deklarieren wir ein Array, ohne explizit eine Größe zu wählen. Der Compiler zählt die Elemente und erstellt ein Array der entsprechenden Größe.
-{empty} +
-Schließlich können wir das Array wie in `mySensVals` sowohl initialisieren als auch skalieren.
-Beachte, dass beim Deklarieren eines Arrays vom Typ `char` ein weiteres Element als Initialisierung erforderlich ist, um das erforderliche Nullzeichen zu enthalten.
+
 [%hardbreaks]
 
 [float]
@@ -89,7 +93,7 @@ for (byte i = 0; i < 5; i = i + 1) {
 
 [float]
 === Beispielcode
-Ein vollständiges Programm, das die Verwendung von Arrays demonstriert, findest du im (http://www.arduino.cc/en/Tutorial/KnightRider[Knight Rider-Beispiel]) des (http://www.arduino.cc/en/Main/LearnArduino[Tutorials]).
+Ein vollständiges Programm, das die Verwendung von Arrays demonstriert, findest du im (https://docs.arduino.cc/built-in-examples/control-structures/Arrays[Beispiel How to Use Arrays]) der (https://docs.arduino.cc/built-in-examples[Built-in Examples]).
 
 --
 // HOW-TO-USE-ABSCHNITT ENDET

@@ -12,7 +12,7 @@ subCategories: [ "Data Types" ]
 
 [float]
 === Beschreibung
-Textzeichenfolgen können auf zwei Arten dargestellt werden. Du kannst den `String`-Datentyp verwenden, der ab Version 0019 Teil des Kerns ist oder du kannst einen
+Textzeichenfolgen können auf zwei Arten dargestellt werden. Du kannst den `String`-Datentyp verwenden oder du kannst einen
 `String` aus einem Array des Typs char erstellen und ihn mit einem Nullterminator abschließen.
 Diese Seite beschreibt die letztere Methode. Für weitere Informationen zum `String`-Objekt, das mehr Funktionalität auf Kosten von mehr Arbeitsspeicher bietet, siehe die link:../stringobject[string object]-Seite.
 [%hardbreaks]

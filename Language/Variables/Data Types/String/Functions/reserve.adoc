@@ -35,7 +35,7 @@ Mit der Funktion `String.reserve()` kannst du einen Puffer für die Bearbeitung 
 
 [float]
 === Rückgabewert
-Nichts.
+`1` bei Erfolg, `0` bei einem Fehler.
 --
 // ÜBERSICHTSABSCHNITT ENDET
 

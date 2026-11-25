@@ -25,7 +25,7 @@ Siehe auch die link:../../constants/integerconstants[Ganzzahlkonstanten]-Seite f
 
 
 [float]
-=== Beschreibung
+=== Parameter
 `var`: Variablenname. +
 `val`: Der Wert, der der Variablen zugewiesen wird.
 [%hardbreaks]

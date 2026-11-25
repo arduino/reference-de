@@ -12,7 +12,7 @@ subCategories: [ "Data Types" ]
 
 [float]
 === Beschreibung
-Ein `bool` enthält einen von zwei Werten, `link:../../constants/constants[true]` oder `link:../../constants/constants[false]`. (Jede `bool`-Variable belegt ein Byte Speicher.)
+Ein `bool` enthält einen von zwei Werten, `link:../../constants/truefalse[true]` oder `link:../../constants/truefalse[false]`. (Jede `bool`-Variable belegt ein Byte Speicher.)
 
 
 [%hardbreaks]
@@ -76,8 +76,6 @@ void loop() {
 [float]
 === Siehe auch
 
-[role="language"]
-* #SPRACHE# link:../../../variables/constants/constants[Konstanten]
 
 --
 // SIEHE-AUCH-ABSCHNITT SECTION ENDET

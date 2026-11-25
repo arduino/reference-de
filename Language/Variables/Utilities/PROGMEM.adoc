@@ -17,16 +17,20 @@ subCategories: [ "Utilities" ]
 
 [float]
 === Beschreibung
-Speichere Daten im Flash-/Programm-Speicher statt im SRAM. Eine Beschreibung der unterschiedlichen Arten von Speicher des Arduinos
-findest du http://www.arduino.cc/playground/Learning/Memory[hier].
+Behalte konstante Daten ausschließlich im Flash-/Programm-Speicher, statt sie beim Programmstart in den SRAM zu kopieren. Eine Beschreibung der unterschiedlichen Arten von Speicher des Arduinos
+findest du https://www.arduino.cc/en/Tutorial/Foundations/Memory[hier].
 
 `PROGMEM` ist ein Variablenmodifikator, welcher nur mit den Datentypen in link:http://www.nongnu.org/avr-libc/user-manual/group\__avr__pgmspace.html[pgmspace.h]
-verwendet werden sollte. Es ist eine Anweisung an den Compiler, um die Daten im Flash-/Programm-Speicher statt im SRAM zu speichern.
+verwendet werden sollte. Es weist den Compiler an, die Daten ausschließlich im Flash-/Programm-Speicher zu behalten, statt sie wie sonst üblich beim Start in den SRAM zu kopieren.
 
-`PROGMEM` gehört zur link:http://www.nongnu.org/avr-libc/user-manual/group\__avr__pgmspace.html[pgmspace.h]-Softwarebibliothek. Diese ist in allen modernen IDE-Versionen
-standardmäßig enthalten. Solltest du eine IDE-Version niedriger als 1.0 (von 2011) besitzen, musst du die Bibliothek erst händisch einbinden. Dies funktioniert wie folgt:
+`PROGMEM` gehört zur link:http://www.nongnu.org/avr-libc/user-manual/group\__avr__pgmspace.html[pgmspace.h]-Softwarebibliothek. Diese wird in der Arduino IDE automatisch eingebunden.
 
-`#include <avr/pgmspace.h>`
+[float]
+==== Wichtiger Hinweis!
+
+`PROGMEM` ist _nur_ bei AVR-Boards (Uno Rev3, Leonardo usw.) nützlich. Neuere Boards (Due, MKR WiFi 1010, GIGA R1 WiFi usw.) nutzen automatisch den Flash-/Programm-Speicher,
+wenn eine Variable als `const` deklariert wird. Aus Gründen der Abwärtskompatibilität kann `PROGMEM` aber auch mit neueren Boards verwendet werden. Diese Implementierung
+befindet sich derzeit link:https://github.com/arduino/ArduinoCore-API/blob/master/api/deprecated-avr-comp/avr/pgmspace.h[hier].
 [%hardbreaks]
 
 
@@ -48,8 +52,8 @@ mit der Arduino IDE Version 13. Frühere Versionen der IDE arbeiten besser, wenn
 `PROGMEM` kann auch für einzelne Variablen benutzt werden, dies ist aber nur sinnvoll, wenn ein großer Block von Daten gespeichert werden soll. Normalerweise ist das bei Arrays,
 Strings (die auch Arrays sind) und weiteren komplizierteren Datenstrukturen der Fall.
 
-Die Benutzung von `PROGMEM` erfolgt in 2 Schritten. Nachdem die Daten in den Flash-/Programm-Speicher geladen wurden, müssen spezielle Methoden verwendet werden, um diese Variablen
-wieder auszulesen und zu bearbeiten. Diese sind auch in der link:http://www.nongnu.org/avr-libc/user-manual/group\__avr__pgmspace.html[pgmspace.h]-Softwarebibliothek definiert.
+Die Benutzung von `PROGMEM` erfolgt in 2 Schritten. Eine mit `PROGMEM` definierte Variable kann nicht wie eine normale Variable im SRAM gelesen werden: Du musst sie
+mit speziellen Funktionen auslesen, die ebenfalls in der link:http://www.nongnu.org/avr-libc/user-manual/group\__avr__pgmspace.html[pgmspace.h]-Softwarebibliothek definiert sind.
 
 --
 // ÜBERSICHTSABSCHNITT ENDET
@@ -91,7 +95,8 @@ void setup() {
   Serial.println(); // Schreibe eine neue Zeile
 
   // Lies einen Char
-  for (byte k = 0; k < strlen_P(signMessage); k++) {
+  int signMessageLength = strlen_P(signMessage);
+  for (byte k = 0; k < signMessageLength; k++) {
     myChar = pgm_read_byte_near(signMessage + k); // Lies den signMessage-Wert wieder aus dem Flash-/Programm-Speicher
     Serial.print(myChar); // Gib den gelesenen Wert aus
   }
@@ -150,7 +155,7 @@ void loop() {
 
   // Iteriere über das Array: 6-mal, da 6 Strings im Array sind
   for (int i = 0; i < 6; i++) {
-    strcpy_P(buffer, (char*)pgm_read_word(&(string_table[i]))); // Casts und Dereferenzierung des Speichers
+    strcpy_P(buffer, (char*)pgm_read_ptr(&(string_table[i]))); // Casts und Dereferenzierung des Speichers
     Serial.println(buffer); // Gib den gelesenen Wert aus
     delay(500); // Warte eine halbe Sekunde
   }
@@ -187,8 +192,8 @@ Serial.print("Write something on  the Serial Monitor");
 ----
 
 benutzt wird, wird der `String` bevor er auf den seriellen Ausgang geschrieben wird, normalerweise in den RAM gespeichert. Der RAM kann aber sehr leicht volllaufen, wenn der Code
-sehr viel auf den seriellen Port schreibt. Wenn du noch freien Flash-/Programm-Speicher hast, kannst du dem Compiler sagen, dass er die Werte in den Flash-/Programm-Speicher
-schreiben soll:
+sehr viel auf den seriellen Port schreibt. Das lässt sich vermeiden, indem Strings erst dann aus dem Flash-/Programm-Speicher geladen werden, wenn sie gebraucht werden.
+Mit der folgenden Syntax kannst du einfach angeben, dass der String beim Start nicht in den RAM kopiert werden soll:
 
 [source,arduino]
 ----
@@ -206,7 +211,7 @@ Serial.print(F("Write something on the Serial Monitor that is stored in FLASH"))
 === Siehe auch
 
 [role="example"]
-* #BEISPIEL# https://www.arduino.cc/playground/Learning/Memory[Arten von Speicher auf dem Arduino^]
+* #BEISPIEL# https://www.arduino.cc/en/Tutorial/Foundations/Memory[Arten von Speicher auf dem Arduino^]
 
 [role="definition"]
 * #DEFINITION# link:../../data-types/array[array]
