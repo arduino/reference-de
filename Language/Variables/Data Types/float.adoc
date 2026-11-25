@@ -75,7 +75,7 @@ float x = 2.9; // Eine float-Variable
 int y = x;  // 2
 ----
 
-Wenn du stattdessen während des Konvertierungsprozesses abrunden möchtest, musst du `0,5` addieren:
+Wenn du stattdessen während des Konvertierungsprozesses runden möchtest, musst du `0.5` addieren:
 
 [source,arduino]
 ----

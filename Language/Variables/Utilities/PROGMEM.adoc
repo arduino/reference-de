@@ -25,6 +25,12 @@ verwendet werden sollte. Es weist den Compiler an, die Daten ausschließlich im 
 
 `PROGMEM` gehört zur link:http://www.nongnu.org/avr-libc/user-manual/group\__avr__pgmspace.html[pgmspace.h]-Softwarebibliothek. Diese wird in der Arduino IDE automatisch eingebunden.
 
+`PROGMEM` kann auch für einzelne Variablen benutzt werden, dies ist aber nur sinnvoll, wenn ein großer Block von Daten gespeichert werden soll. Normalerweise ist das bei Arrays,
+Strings (die auch Arrays sind) und weiteren komplizierteren Datenstrukturen der Fall.
+
+Die Benutzung von `PROGMEM` erfolgt in 2 Schritten. Eine mit `PROGMEM` definierte Variable kann nicht wie eine normale Variable im SRAM gelesen werden: Du musst sie
+mit speziellen Funktionen auslesen, die ebenfalls in der link:http://www.nongnu.org/avr-libc/user-manual/group\__avr__pgmspace.html[pgmspace.h]-Softwarebibliothek definiert sind.
+
 [float]
 ==== Wichtiger Hinweis!
 
@@ -38,22 +44,19 @@ befindet sich derzeit link:https://github.com/arduino/ArduinoCore-API/blob/maste
 === Syntax
 `const dataType variableName[] PROGMEM = {data0, data1, data3...};`
 
-`dataType` - Beliebiger Variablentyp
-`variableName` - Der Variablenname
-
 `PROGMEM` ist ein variabler Modifikator, weshalb die Arduino-IDE alle folgenden synonymen Versionen der Syntax akzeptiert. Durch Experimente wurde allerdings festgestellt,
 dass in einigen Versionen der Arduino-IDE (Durch die unterschiedlichen GCC-Versionen) an einigen Stellen funktioniert und an anderen nicht. Die Beispiele unten funktionieren
 mit der Arduino IDE Version 13. Frühere Versionen der IDE arbeiten besser, wenn `PROGMEM` nach dem Variablennamen eingefügt wird.
 
 `const dataType variableName[] PROGMEM = {};   // Benutze dies` +
-`const PROGMEM  dataType  variableName[] = {}; // oder das,`+
+`const PROGMEM  dataType  variableName[] = {}; // oder das,` +
 `const dataType PROGMEM variableName[] = {};   // aber nicht diese Version!`
 
-`PROGMEM` kann auch für einzelne Variablen benutzt werden, dies ist aber nur sinnvoll, wenn ein großer Block von Daten gespeichert werden soll. Normalerweise ist das bei Arrays,
-Strings (die auch Arrays sind) und weiteren komplizierteren Datenstrukturen der Fall.
 
-Die Benutzung von `PROGMEM` erfolgt in 2 Schritten. Eine mit `PROGMEM` definierte Variable kann nicht wie eine normale Variable im SRAM gelesen werden: Du musst sie
-mit speziellen Funktionen auslesen, die ebenfalls in der link:http://www.nongnu.org/avr-libc/user-manual/group\__avr__pgmspace.html[pgmspace.h]-Softwarebibliothek definiert sind.
+[float]
+=== Parameter
+`dataType`: Erlaubte Datentypen: jeder Variablentyp. +
+`variableName`: Der Name deines Daten-Arrays.
 
 --
 // ÜBERSICHTSABSCHNITT ENDET

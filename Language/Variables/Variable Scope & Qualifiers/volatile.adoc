@@ -61,7 +61,7 @@ Es gibt mehrere Möglichkeiten, das zu tun:
 === Beispielcode
 // Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu.   ►►►►► DIESER ABSCHNITT IST VERPFLICHTEND ◄◄◄◄◄
 Der Modifikator `volatile` stellt sicher, dass Änderungen an der Variablen `changed` sofort in `loop()` sichtbar sind.
-Ohne den Modifikator `volatile` kann die Variable `changed` beim Eingeben der Funktion in ein Register geladen werden und wird erst nach Beendigung der Funktion aktualisiert.
+Ohne den Modifikator `volatile` kann die Variable `changed` beim Eintritt in die Funktion in ein Register geladen werden und wird erst nach Beendigung der Funktion aktualisiert.
 
 [source,arduino]
 ----

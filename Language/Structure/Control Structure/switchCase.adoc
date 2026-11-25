@@ -40,7 +40,7 @@ switch (var) {
     break;
   default:
     // Statement(s)
-    break; // Wird nicht benötigt, wenn Statement(s) vorhanden sind
+    break;
 }
 ----
 
@@ -86,7 +86,7 @@ switch (var) {
   default:
     // Tue etwas, im Defaultfall
     // Dieser Fall ist optional
-    break; // Wird nicht benötigt, wenn Statement(s) vorhanden sind
+    break;
 }
 ----
 [%hardbreaks]

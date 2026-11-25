@@ -19,8 +19,8 @@ Erstellt eine Instanz der `String`-Klasse. Es gibt mehrere Versionen, die String
 * Eine andere Instanz des `String`-Objekts
 * Ein konstanter `int` oder `long int`
 * Ein konstanter `int` oder `long int`, der eine angegebene Basis verwendet
-* Eine konstante `int` oder `long int` Variable
-* Eine konstante `int` oder `long int` Variable, die eine angegebene Basis verwendet
+* Eine `int` oder `long int` Variable
+* Eine `int` oder `long int` Variable, die eine angegebene Basis verwendet
 * Ein `float` oder `double` mit einer bestimmten Anzahl Dezimalstellen
 
 Beim Konstruieren einer Zeichenfolge aus einer Zahl wird eine Zeichenfolge erstellt, die die ASCII-Darstellung dieser Zahl enthält. Der Standard ist also Basis zehn:
