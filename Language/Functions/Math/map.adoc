@@ -17,12 +17,12 @@ subCategories: [ "Math" ]
 
 [float]
 === Beschreibung
-Bildet eine Zahl von einem Bereich in einen anderen ab. Das heißt, ein Wert von *fromLow* würde auf *toLow*, einen Wert von *fromHigh* bis *toHigh*, Werte zwischen dazwischen auf Werte dazwischen usw. zugeordnet.
+Bildet eine Zahl von einem Bereich in einen anderen ab. Das heißt, ein Wert von *fromLow* würde auf *toLow*, ein Wert von *fromHigh* auf *toHigh*, Werte dazwischen auf Werte dazwischen usw. zugeordnet.
 
 Beschränkt die Werte nicht innerhalb des Bereichs, da Werte außerhalb des Bereichs manchmal beabsichtigt und nützlich sind.
 Die `constrain()`-Funktion kann entweder vor oder nach dieser Funktion verwendet werden, wenn eine Begrenzung der Bereiche gewünscht werden.
 
-Beachte, dass die "unteren Grenzen" eines Bereichs größer oder kleiner als die "oberen Grenzen" sein können, sodass die Funktion `map()` beispielsweise zum Umkehren eines Arrays verwendet werden kann.
+Beachte, dass die "unteren Grenzen" eines Bereichs größer oder kleiner als die "oberen Grenzen" sein können, sodass die Funktion `map()` zum Umkehren eines Zahlenbereichs verwendet werden kann, zum Beispiel:
 
 `y = map(x, 1, 50, 50, 1);`
 

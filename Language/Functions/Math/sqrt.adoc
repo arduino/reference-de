@@ -12,12 +12,12 @@ subCategories: [ "Math" ]
 
 
 // ÜBERSICHTSABSCHNITT STARTET
-Berechnet die Quadratwurzel einer Zahl.
 [#overview]
 --
 
 [float]
 === Beschreibung
+Berechnet die Quadratwurzel einer Zahl.
 [%hardbreaks]
 
 

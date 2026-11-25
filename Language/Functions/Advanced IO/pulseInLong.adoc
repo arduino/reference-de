@@ -19,13 +19,12 @@ subCategories: [ "Advanced I/O" ]
 === Beschreibung
 `pulseInLong()` ist eine Alternative zu link:../pulsein[pulseIn()], die besser mit langen Impulsen und mit durch Interrupts beeinflussten Situationen umgehen kann.
 
-Liest einen Wert von einem vorgegebenen Digitalpin ein, entweder `HIGH` oder `LOW`. Wenn der *Wert* z.B. *HIGH* ist, wartet `pulseInLong()` darauf, dass der Pin auf den Wert *HIGH* wechselt,
+Liest einen Impuls (entweder `HIGH` oder `LOW`) an einem Pin ein. Wenn der *Wert* z.B. *HIGH* ist, wartet `pulseInLong()` darauf, dass der Pin von *LOW* auf *HIGH* wechselt,
 startet einen Timer und wartet anschließend darauf, dass der Pin wieder auf *LOW* wechselt. Daraufhin stoppt `pulseInLong()` den Timer. Gibt die Länge des Impulses in Mikrosekunden zurück.
 Stoppt und gibt 0 zurück, wenn ein bestimmter Timeout erreicht wird.
 
 Das Timing der Funktion wurde empirisch getestet und wird vermutlich bei kürzeren Impulsen falsch messen.
 Die Funktion funktioniert mit Impulsen der Länge von 10 Mikrosekunden bis 3 Minuten.
-Bitte beachte auch, dass, wenn ein Pin, der bereits *HIGH* ist, wenn die Funktion aufgerufen wird, zunächst auf *LOW* und dann wieder auf *HIGH* wechselt, bevor die Funktion startet.
 Diese Routine kann nur benutzt werden, wenn Interrupts aktiviert werden. Die beste Auflösung wird erreicht, wenn große Intervalle verwendet werden.
 [%hardbreaks]
 

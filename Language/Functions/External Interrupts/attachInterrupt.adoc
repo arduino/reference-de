@@ -148,7 +148,7 @@ void blink() {
 Im Normalfall solltest du `digitalPinToInterrupt(pin)` benutzen anstatt den Interruptnummer direkt zu setzen. Die Interruptpins und deren Mapping
 variiert von Board zu Board. Wenn der Sketch also auf einem anderen Board ausgeführt werden soll, kann es schnell zu Problemen kommen.
 
-Alte Sketches haben oft direkte Interruptnummern angegeben. Oft wurden die Nummer 0 (für Digitalpin 2) oder die Nummer 1 (für Digitalpin 3) verwendet. Die Tabelle unten
+Alte Sketches haben oft direkte Interruptnummern angegeben. Oft wurde die Nummer 0 (für Digitalpin 2) oder die Nummer 1 (für Digitalpin 3) verwendet. Die Tabelle unten
 zeigt, welche Interruptpins auf welchem Board verfügbar sind.
 
 In der Tabelle unten sind die Interruptpins definiert als die Nummer, die an `attachInterrupt()` übergeben wird. Aus historischen Gründen stimmt

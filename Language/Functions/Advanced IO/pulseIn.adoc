@@ -17,8 +17,8 @@ subCategories: [ "Advanced I/O" ]
 
 [float]
 === Beschreibung
-Liest einen Wert von einem vorgegebenen Digitalpin ein, entweder `HIGH` oder `LOW`. Wenn *value* z.B. link:../../../variables/constants/highlow[HIGH] ist,
-wartet `pulseIn()` darauf, dass der Pin auf den Wert link:../../../variables/constants/highlow[HIGH] wechselt, startet einen Timer und wartet anschließend darauf,
+Liest einen Impuls (entweder `HIGH` oder `LOW`) an einem Pin ein. Wenn *value* z.B. link:../../../variables/constants/highlow[HIGH] ist,
+wartet `pulseIn()` darauf, dass der Pin von link:../../../variables/constants/highlow[LOW] auf link:../../../variables/constants/highlow[HIGH] wechselt, startet einen Timer und wartet anschließend darauf,
 dass der Pin wieder auf link:../../../variables/constants/highlow[LOW] wechselt. Daraufhin stoppt `pulseIn()` den Timer. Gibt die Länge des Impulses in Mikrosekunden zurück.
 Stoppt und gibt 0 zurück, wenn ein bestimmter Timeout erreicht wird.
 
