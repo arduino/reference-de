@@ -63,6 +63,14 @@ void loop() {
   // Restlicher Code hier
 }
 ----
+[%hardbreaks]
+
+
+[float]
+=== Anmerkungen und Warnungen
+Beachte, dass das Deaktivieren der Interrupts auf Arduino-Boards mit nativer USB-Unterstützung (z.B. link:https://docs.arduino.cc/hardware/leonardo[Leonardo^]) dazu führt,
+dass das Board nicht mehr im Port-Menü erscheint, weil dadurch auch seine USB-Funktion deaktiviert wird.
+
 --
 // HOW-TO-USE-ABSCHNITT ENDET
 

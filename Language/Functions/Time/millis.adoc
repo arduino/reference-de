@@ -63,9 +63,13 @@ void loop() {
 
 [float]
 === Anmerkungen und Warnungen
-Bitte beachte, dass der Rückgabewert für `millis()` ein `unsigned long`-Wert ist.
+
+* Bitte beachte, dass der Rückgabewert für `millis()` ein `unsigned long`-Wert ist.
 Es können logische Fehler auftreten, wenn ein Programmierer versucht, mit kleineren Datentypen (z. B. `int`) zu rechnen.
 Sogar mit Vorzeichen versehene `long`-Werte können auf Fehler stoßen, da ihr Maximalwert die Hälfte des vorzeichenlosen Gegenstücks ist.
+* `millis()` wird (bei 16-MHz-AVR-Chips und einigen anderen) alle 1,024 Millisekunden erhöht und dann alle 41 oder 42 Ticks um 2 (statt um 1) erhöht, um wieder synchron zu laufen. Dadurch werden einige `millis()`-Werte übersprungen. Für genaue Zeitmessungen über kurze Intervalle verwendest du besser `micros()`.
+* `millis()` läuft nach etwa 49 Tagen über und beginnt wieder bei 0 (`micros()` nach etwa 71 Minuten).
+* Wenn die Timer des Mikrocontrollers umkonfiguriert werden, kann `millis()` ungenaue Werte liefern. Die Cores "Arduino AVR Boards" und "Arduino megaAVR Boards" verwenden Timer0, um `millis()` zu erzeugen. Die Cores "Arduino ARM (32-bits) Boards" und "Arduino SAMD (32-bits ARM Cortex-M0+) Boards" verwenden den SysTick-Timer.
 
 --
 // HOW-TO-USE-ABSCHNITT ENDET

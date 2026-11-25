@@ -41,7 +41,7 @@ Die *MKR-Familie* verfügt über die folgenden Hardwarefunktionen:
 * 4 Pins, die standardmäßig auf 8-Bit-PWM eingestellt sind, wie auf den AVR-basierten Boards. Diese können auf 12-Bit-Auflösung geändert werden.
 * 1 Pin mit 10-Bit-DAC (Digital-Analog-Wandler)
 
-Wenn die Schreibauflösung auf 12 Bit gesetzt wird, kann Sie `analogWrite()` mit Werten zwischen 0 und 4095 für PWM-Signale verwendet werden.
+Wenn die Schreibauflösung auf 12 Bit gesetzt wird, kann `analogWrite()` mit Werten zwischen 0 und 4095 für PWM-Signale verwendet werden.
 Wenn 10 Bit am DAC-Pin gesetzt werden, kann die volle DAC-Auflösung von 1024 Werten benutzt werden.
 [%hardbreaks]
 

@@ -27,6 +27,15 @@ Arduino AVR Boards (Uno, Mega, Leonardo, etc.)
 * INTERNAL2V56: Eingebaute Referenz; 2,56 V (Nur Arduino Mega)
 * EXTERNAL: Die Spannung, die auf dem AREF-Pin (nur 0 bis 5 V) angelegt ist, wird als Referenz verwendet.
 
+Arduino Renesas Boards (UNO R4, Portenta C33)
+
+* AR_DEFAULT: Default analoge Einstellung von 5 V.
+* AR_INTERNAL: Eingebaute Referenz von 1,5 V auf dem RA4M1 des UNO R4
+* AR_INTERNAL_1_5V: Eingebaute Referenz von 1,5 V auf dem R7FA6M5 des Portenta C33
+* AR_INTERNAL_2_0V: Eingebaute Referenz von 2,0 V auf dem R7FA6M5 des Portenta C33
+* AR_INTERNAL_2_5V: Eingebaute Referenz von 2,5 V auf dem R7FA6M5 des Portenta C33
+* AR_EXTERNAL: Die Spannung, die auf dem AREF-Pin (nur 0 bis 5 V) angelegt ist, wird als Referenz verwendet.
+
 Arduino SAMD Boards (Zero, etc.)
 
 * AR_DEFAULT: Default analoge Einstellung von 3,3 V
@@ -52,7 +61,7 @@ Arduino SAM Boards (Due)
 
 * AR_DEFAULT: Default analoge Einstellung von 3,3 V. Dies ist die einzige unterstützte Option für den Due.
 
-Arduino mbed-fähige Boards (Nur Nano 33 BLE): Verfügbar, wenn die _Arduino mbed-fähige_-Plattform verwendet wird oder, wenn die _Arduino nRF528x Boards (Mbed OS)_-Plattform (in Version 1.1.6 oder neuer) verwendet wird.
+Arduino Mbed OS Nano Boards (Nano 33 BLE), Arduino Mbed OS Edge Boards (Edge Control)
 
 * AR_VDD: Die Standardreferenz von 3,3 V.
 * AR_INTERNAL: Eingebaute Referenz von 0,6 V
@@ -69,7 +78,7 @@ Arduino mbed-fähige Boards (Nur Nano 33 BLE): Verfügbar, wenn die _Arduino mbe
 
 [float]
 === Parameter
-`type`: Welche Art von Einstellung benutzt werden soll (DEFAULT, INTERNAL, INTERNAL1V1, INTERNAL2V56, oder EXTERNAL).
+`type`: Welche Art von Einstellung benutzt werden soll (siehe die Liste der Optionen in der Beschreibung).
 
 
 [float]

@@ -13,29 +13,33 @@ subCategories: [ "Analog I/O" ]
 [float]
 === Beschreibung
 Liest den Wert vom angegebenen analogen Pin ein. Die Arduino-Boards enthalten einen 10-Bit-Analog-zu-Digital-Konverter.
-D.h. das Board mappt Eingangsspannungen zwischen 0 und 5 V auf Integer-Werte zwischen 0 und 1023.
+D.h. das Board mappt Eingangsspannungen zwischen 0 und der Betriebsspannung (5 V oder 3,3 V) auf Integer-Werte zwischen 0 und 1023.
 Die erreichte Auflösung ist damit z.B. auf einem Arduino UNO 5 V / 1024 Teile oder 0,0049 V (4,9 mV) per Teil.
 Siehe dazu auch die Tabelle unterhalb für die benutzbaren Pins, Betriebsspannung und die maximale Auflösung für einige Arduino-Boards.
 
-Die Eingangsbreite can mit link:../analogreference[analogReference()] geändert werden, die Auflösung mit link:../../zero-due-mkr-family/analogreadresolution[analogReadResolution()] (Nur für Arduino Zero, Due und MKR).
+Die Eingangsbreite kann mit link:../analogreference[analogReference()] geändert werden, die Auflösung mit link:../analogreadresolution[analogReadResolution()] (Nur für Arduino Zero, Due und MKR).
 
 Auf den ATmega-basierten Boards (UNO, Nano, Mini, Mega), benötigt das Board circa 100 Mikrosekunden (0,0001 s), um einen analogen Inputpin zu lesen. Damit ist die maximale Lesegeschwindigkeit 10000 Lesevorgänge pro Sekunde.
 
 [options="header"]
 |===================================================
-|Board                     |Betriebsspannung  |Nutzbare Pins |Maximale Auflösung
-|Uno                       |5 Volt            |A0 to A5      |10 Bit
-|Mini, Nano                |5 Volt            |A0 to A7      |10 Bit
-|Mega, Mega2560, MegaADK   |5 Volt            |A0 to A14     |10 Bit
-|Micro                     |5 Volt            |A0 to A11*    |10 Bit
-|Leonardo                  |5 Volt            |A0 to A11*    |10 Bit
-|Zero                      |3.3 Volt          |A0 to A5      |12 Bit**
-|Due                       |3.3 Volt          |A0 to A11     |12 Bit**
-|MKR-Familie               |3.3 Volt          |A0 to A6      |12 Bit**
+|Board                            |Betriebsspannung  |Nutzbare Pins |Maximale Auflösung
+|UNO R3                           |5 Volt            |A0 bis A5     |10 Bit
+|UNO R4 (Minima, WiFi)            |5 Volt            |A0 bis A5     |14 Bit**
+|Mini                             |5 Volt            |A0 bis A7     |10 Bit
+|Nano, Nano Every                 |5 Volt            |A0 bis A7     |10 Bit
+|Nano 33 (IoT, BLE, RP2040, ESP32)|3,3 Volt          |A0 bis A7     |12 Bit**
+|Mega, Mega2560, MegaADK          |5 Volt            |A0 bis A14    |10 Bit
+|Micro                            |5 Volt            |A0 bis A11*   |10 Bit
+|Leonardo                         |5 Volt            |A0 bis A11*   |10 Bit
+|Zero                             |3,3 Volt          |A0 bis A5     |12 Bit**
+|Due                              |3,3 Volt          |A0 bis A11    |12 Bit**
+|GIGA R1                          |3,3 Volt          |A0 bis A11    |16 Bit**
+|MKR-Familie                      |3,3 Volt          |A0 bis A6     |12 Bit**
 |===================================================
 
-*A0 bis A5 sind auf dem Board benannt, A6 bis A11 sind auf den Pins 4, 6, 8, 9, 10, und 12 verfügbar
-**Die standardmäßige Auflösung von `analogRead()` ist bei diesen Boards 10 Bit aus Kompabilitätsgründen. Mit link:../../zero-due-mkr-family/analogreadresolution[analogReadResolution()] kann die Auflösung auf 12 Bit geändert werden.
+*A0 bis A5 sind auf dem Board benannt, A6 bis A11 sind auf den Pins 4, 6, 8, 9, 10, und 12 verfügbar +
+**Die standardmäßige Auflösung von `analogRead()` ist bei diesen Boards 10 Bit aus Kompatibilitätsgründen. Mit link:../analogreadresolution[analogReadResolution()] kann die Auflösung auf einen höheren Wert geändert werden.
 
 [%hardbreaks]
 
@@ -46,7 +50,7 @@ Auf den ATmega-basierten Boards (UNO, Nano, Mini, Mega), benötigt das Board cir
 
 [float]
 === Parameter
-`pin`: Der Pinname, von der gelesen werden soll (A0 bis A5 auf den meisten Boards, A0 bis A6 auf dem MKR, A0 bis A7 auf dem Mini und Nano, A0 bis A15 auf dem Mega)
+`pin`: Der Name des analogen Eingangspins, von dem gelesen werden soll.
 
 
 [float]
@@ -98,7 +102,7 @@ Wenn der analoge Pin nicht verbunden ist, wird der zurückgegebene Wert schwanke
 === Siehe auch
 
 [role="language"]
-* #SPRACHE# link:../../zero-due-mkr-family/analogreadresolution[analogReadResolution()]
+* #SPRACHE# link:../analogreadresolution[analogReadResolution()]
 * #BEISPIEL# https://www.arduino.cc/en/Tutorial/AnalogInputPins[Beschreibung der analogen Eingangspins^]
 --
 // SIEHE-AUCH-ABSCHNITT SECTION ENDET

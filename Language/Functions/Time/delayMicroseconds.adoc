@@ -20,7 +20,7 @@ subCategories: [ "Time" ]
 Hält das Programm für die als Parameter angegebene Zeit (in Mikrosekunden) an.
 Es gibt tausend Mikrosekunden in einer Millisekunde und eine Million Mikrosekunden in einer Sekunde.
 
-Derzeit ist der größte Wert, der eine genaue Verzögerung erzeugt, 16383.
+Derzeit ist der größte Wert, der eine genaue Verzögerung erzeugt, 16383. Größere Werte können eine extrem kurze Verzögerung erzeugen.
 Dies könnte sich in zukünftigen Arduino-Releases ändern.
 Bei Verzögerungen von mehr als einigen tausend Mikrosekunden sollte stattdessen `delay()` verwendet werden.
 [%hardbreaks]
@@ -75,10 +75,9 @@ void loop() {
 
 [float]
 === Anmerkungen und Warnungen
-Diese Funktion arbeitet im Bereich von 3 Mikrosekunden und mehr sehr genau.
-Wir können nicht garantieren, dass `delayMicroseconds()` genau für kürzere Verzögerungszeiten funktionieren.
-
-`delayMicroseconds()` deaktiviert ab Arduino 0018 keine Interrupts mehr.
+Diese Funktion arbeitet im Bereich von 3 bis 16383 Mikrosekunden sehr genau.
+Wir können nicht garantieren, dass `delayMicroseconds()` genau für kürzere Verzögerungszeiten funktioniert.
+Größere Verzögerungszeiten können tatsächlich zu einer extrem kurzen Verzögerung führen.
 
 --
 // HOW-TO-USE-ABSCHNITT ENDET

@@ -20,18 +20,21 @@ als ersten Parameter für `attachInterrupt()`.
 
 [options="header"]
 |===================================================
-|Board                                 |Benutzbare Digitalpins für Interrupts
-|Uno, Nano, Mini, andere 328-basierte  |2, 3
-|Uno WiFi Rev.2                        |Alle Digital-Pins
-|Uno WiFi Rev.2, Nano Every            |Alle Digital-Pins
-|Mega, Mega2560, MegaADK               |2, 3, 18, 19, 20, 21
-|Micro, Leonardo, andere 32u4-basierte |0, 1, 2, 3, 7
-|Zero                                  |Alle Digital-Pins außer Pin 4
-|MKR Family-Boards                     |0, 1, 4, 5, 6, 7, 8, 9, A1, A2
-|Nano 33 IoT                           |2, 3, 9, 10, 11, 13, 15, A5, A7
-|Nano 33 BLE, Nano 33 BLE Sense        |Alle Pins
-|Due                                   |Alle Digital-Pins
-|101                                   |Alle Digital-Pins (Nur Pins 2, 5, 7, 8, 10, 11, 12, 13 funktionieren mit *CHANGE*)
+|Board                                            |Benutzbare Digitalpins für Interrupts| Anmerkungen
+|Uno Rev3, Nano, Mini, andere 328-basierte        |2, 3|
+|UNO R4 Minima, UNO R4 WiFi                       |2, 3|
+|Uno WiFi Rev2, Nano Every                        |Alle Digital-Pins|
+|Mega, Mega2560, MegaADK                          |2, 3, 18, 19, 20, 21 |(*Pins 20 & 21* können nicht für Interrupts verwendet werden, solange sie für die I2C-Kommunikation benutzt werden. Außerdem haben sie externe Pull-Up-Widerstände, die nicht deaktiviert werden können.)
+|Micro, Leonardo                                  |0, 1, 2, 3, 7|
+|Zero                                             |0-3, 5-13, A0-A5| Pin 4 kann nicht als Interrupt verwendet werden.
+|MKR Family-Boards                                |0, 1, 4, 5, 6, 7, 8, 9, A1, A2|
+|Nano 33 IoT                                      |2, 3, 9, 10, 11, 13, A1, A5, A7|
+|Nano 33 BLE, Nano 33 BLE Sense (rev 1 & 2)       |Alle Pins|
+|Nano RP2040 Connect                              |0-13, A0-A5|
+|Nano ESP32                                       |Alle Pins|
+|GIGA R1 WiFi                                     |Alle Pins|
+|Due                                              |Alle Digital-Pins|
+|101                                              |Alle Digital-Pins | (Nur Pins 2, 5, 7, 8, 10, 11, 12, 13 funktionieren mit *CHANGE*)
 |===================================================
 
 [%hardbreaks]
@@ -145,7 +148,7 @@ void blink() {
 Im Normalfall solltest du `digitalPinToInterrupt(pin)` benutzen anstatt den Interruptnummer direkt zu setzen. Die Interruptpins und deren Mapping
 variiert von Board zu Board. Wenn der Sketch also auf einem anderen Board ausgeführt werden soll, kann es schnell zu Problemen kommen.
 
-Alte Sketches haben oft direkte Interruptnummern angegeben. Oft wurden Pin 0 (Digitalpin 2) oder Pin 1 (Digitalpin 3) verwendet. Die Tabelle unten
+Alte Sketches haben oft direkte Interruptnummern angegeben. Oft wurden die Nummer 0 (für Digitalpin 2) oder die Nummer 1 (für Digitalpin 3) verwendet. Die Tabelle unten
 zeigt, welche Interruptpins auf welchem Board verfügbar sind.
 
 In der Tabelle unten sind die Interruptpins definiert als die Nummer, die an `attachInterrupt()` übergeben wird. Aus historischen Gründen stimmt
@@ -158,7 +161,8 @@ diese Nummerierung nicht immer mit den Inputnummern auf dem ATmega-Chip überein
 |Mega2560                       | 2 | 3 | 21 | 20 | 19 | 18
 |32u4 based (e.g Leonardo, Micro) | 3 | 2 | 0 | 1 | 7 |
 |===================================================
-Für Due, Zero, MKR1000 und 101 Boards gilt: *Interruptnummer = Pinnummer*.
+
+Für Uno WiFi Rev2, Due, Zero, MKR Family und 101 Boards gilt: *Interruptnummer = Pinnummer*.
 
 --
 // HOW-TO-USE-ABSCHNITT ENDET
