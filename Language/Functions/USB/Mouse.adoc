@@ -18,7 +18,7 @@ subCategories: [ "USB" ]
 
 [float]
 === Beschreibung
-Die `mouse`-Funktionen ermöglichen es, auf 32u4- oder SAMD-micro-basierend Boards den Mauszeiger auf einem verbundenen Computer über dessen nativen USB-Port zu steuern.
+Die `mouse`-Funktionen ermöglichen es, auf 32u4- oder SAMD-micro-basierten Boards den Mauszeiger auf einem verbundenen Computer über dessen nativen USB-Port zu steuern.
 Wenn man die Mauszeigerposition ändert, so ist die neue Position immer relativ zu der vorhergehenden Position.
 [%hardbreaks]
 --
