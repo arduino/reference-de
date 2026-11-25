@@ -1,5 +1,5 @@
 ---
-title: "ENDETWith()"
+title: "endsWith()"
 categories: [ "Data Types" ]
 subCategories: [ "StringObject Function" ]
 ---
@@ -8,7 +8,7 @@ subCategories: [ "StringObject Function" ]
 
 
 
-= ENDETWith()
+= endsWith()
 
 
 // ÜBERSICHTSABSCHNITT STARTET
@@ -24,7 +24,7 @@ Testet, ob ein `String` mit den Zeichen eines anderen Strings endet.
 
 [float]
 === Syntax
-`myString.ENDETWith(myString2)`
+`myString.endsWith(myString2)`
 
 
 [float]

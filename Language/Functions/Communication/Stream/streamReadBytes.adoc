@@ -14,7 +14,7 @@ title: Stream.readBytes()
 
 [float]
 === Beschreibung
-`readBytes()` liest Zeichen aus einem Stream in einen Puffer. Die Funktion wird beendet, wenn die ermittelte Länge gelesen wurde oder das Zeitlimit überschritten wurde (siehe link:../streamSetTimeout[setTimeout()]).
+`readBytes()` liest Zeichen aus einem Stream in einen Puffer. Die Funktion wird beendet, wenn die ermittelte Länge gelesen wurde oder das Zeitlimit überschritten wurde (siehe link:../streamsettimeout[setTimeout()]).
 
 `readBytes()` gibt die Anzahl der Bytes in den Puffer zurück. Eine 0 bedeutet, dass keine gültigen Daten gefunden wurden.
 
