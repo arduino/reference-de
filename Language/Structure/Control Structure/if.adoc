@@ -112,6 +112,7 @@ enthält. Daraufhin evaluiert die If-Bedingung zu 10. 10 ist immer `true`, da je
 === Siehe auch
 
 [role="language"]
+* #SPRACHE# link:../else[else]
 
 --
 // SIEHE-AUCH-ABSCHNITT SECTION ENDET

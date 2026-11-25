@@ -58,7 +58,7 @@ Eine der häufigsten Anwendungen von Bitwise OR ist das Setzen mehrerer Bits in 
 // Hinweis: Dieser Code ist spezifisch für die AVR-Architektur
 // Richtungsbits für Pin 2 bis 7 setzen, PD0 und PD1 unberührt lassen (xx | 00 == xx)
 // Wie pinMode(pin, OUTPUT) für Pin 2 bis 7 beim Uno oder Nano
-DDRD = DDRD | B11111100;
+DDRD = DDRD | 0b11111100;
 ----
 
 --

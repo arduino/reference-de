@@ -18,7 +18,7 @@ subCategories: [ "Compound Operators" ]
 
 [float]
 === Beschreibung
-Der zusammengesetzte bitweise OR-Operator `| =` wird häufig mit einer Variablen und einer Konstante verwendet, um bestimmte Bits in einer Variablen "zu setzen" (auf 1 zu setzen).
+Der zusammengesetzte bitweise OR-Operator `|=` wird häufig mit einer Variablen und einer Konstante verwendet, um bestimmte Bits in einer Variablen "zu setzen" (auf 1 zu setzen).
 [%hardbreaks]
 
 Ein Überblick über den bitweisen OR `|` Operator:
@@ -54,13 +54,13 @@ Ein Überblick über den bitweisen OR `|` Operator:
 Bits, die "bitweise verODERt" mit 0 sind, bleiben unverändert, wenn myByte eine Byte-Variable ist:
 [source,arduino]
 ----
-myByte | B00000000 = myByte;
+myByte | 0b00000000 = myByte;
 ----
 
 Bits, die "bitweise verODERt" mit 1 sind, werden auf 1 gesetzt:
 [source,arduino]
 ----
-myByte | B11111111 = B11111111;
+myByte | 0b11111111 = 0b11111111;
 ----
 [%hardbreaks]
 
@@ -68,11 +68,11 @@ myByte | B11111111 = B11111111;
 === Anmerkungen und Warnungen
 Da es sich um einen bitweisen Operator handelt, ist es sinnvoll, den binären Formatierer mit Konstanten zu verwenden.
 Die Zahlen haben in anderen Darstellungen immer noch den gleichen Wert, sie sind einfach nicht so leicht zu verstehen.
-Außerdem wird B00000000 zur Verdeutlichung gezeigt, aber Null in einem beliebigen Zahlenformat ist Null.
+Außerdem wird 0b00000000 zur Verdeutlichung gezeigt, aber Null in einem beliebigen Zahlenformat ist Null.
 [%hardbreaks]
 
 Um die Bits 0 und 1 einer Variablen zu setzen, während der Rest der Variablen unverändert bleibt,
-verwende den zusammengesetzten bitweisen OR-Operator (| =) mit der Konstanten B00000011
+verwende den zusammengesetzten bitweisen OR-Operator (|=) mit der Konstanten 0b00000011
 
    1  0  1  0  1  0  1  0    Variable
    0  0  0  0  0  0  1  1    Maske
@@ -96,8 +96,8 @@ Hier ist die gleiche Darstellung mit den Variablenbits durch das Symbol x ersetz
 Also ergibt:
 [source,arduino]
 ----
-myByte =  B10101010;
-myByte |= B00000011 == B10101011;
+myByte =  0b10101010;
+myByte |= 0b00000011 == 0b10101011;
 ----
 
 --
@@ -114,7 +114,7 @@ myByte |= B00000011 == B10101011;
 === Siehe auch
 
 [role="language"]
-* #SPRACHE#  link:../../bitwise-operators/bitwiseor[& Bitweises OR]
+* #SPRACHE#  link:../../bitwise-operators/bitwiseor[| Bitweises OR]
 
 --
 // SIEHE-AUCH-ABSCHNITT SECTION ENDET

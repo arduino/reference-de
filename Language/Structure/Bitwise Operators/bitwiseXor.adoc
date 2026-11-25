@@ -24,7 +24,7 @@ Eine bitweise XOR-Operation führt nur dann zu einer 1, wenn die Eingangsbits un
 Andernfalls ergibt sich eine 0.
 [%hardbreaks]
 
-Precisely,
+Genauer:
 
     0  0  1  1    operand1
     0  1  0  1    operand2
@@ -53,7 +53,7 @@ int z = x ^ y; // Binär: 0110, oder dezimal 6
 [%hardbreaks]
 
 Der ^ -Operator wird häufig verwendet, um einige der Bits in einem ganzzahligen Ausdruck umzuschalten (d. H. Von 0 auf 1 oder von 1 auf 0 zu wechseln).
-Wenn in einer bitweisen ODER-Operation eine 1 im Maskenbit vorhanden ist, wird dieses Bit invertiert.
+Wenn in einer bitweisen XOR-Operation eine 1 im Maskenbit vorhanden ist, wird dieses Bit invertiert.
 Wenn es eine 0 gibt, wird das Bit nicht invertiert und bleibt gleich.
 
 [source,arduino]
@@ -61,12 +61,12 @@ Wenn es eine 0 gibt, wird das Bit nicht invertiert und bleibt gleich.
 // Hinweis: Dieser Code verwendet Register, die für AVR-Mikrocontroller spezifisch sind (Uno, Nano, Leonardo, Mega usw.).
 // Es wird für andere Architekturen nicht kompilieren
 void setup() {
-  DDRB = DDRB | B00100000; // Setzen von PB5 (Pin 13 beim Uno / Nano, Pin 9 beim Leonardo / Micro, Pin 11 beim Mega) als OUTPUT
+  DDRB = DDRB | 0b00100000; // Setzen von PB5 (Pin 13 beim Uno / Nano, Pin 9 beim Leonardo / Micro, Pin 11 beim Mega) als OUTPUT
   Serial.begin(9600);
 }
 
 void loop() {
-  PORTB = PORTB ^ B00100000;  // PB5 invertieren, andere unberührt lassen
+  PORTB = PORTB ^ 0b00100000;  // PB5 invertieren, andere unberührt lassen
   delay(100);
 }
 ----

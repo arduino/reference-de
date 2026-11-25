@@ -1,6 +1,6 @@
 ---
 title: "%"
-title_expanded: Modulo
+title_expanded: Rest
 categories: [ "Structure" ]
 subCategories: [ "Arithmetic Operators" ]
 ---
@@ -9,7 +9,7 @@ subCategories: [ "Arithmetic Operators" ]
 
 
 
-= % Modulo
+= % Rest
 
 
 // ÜBERSICHTSABSCHNITT STARTET
@@ -18,15 +18,15 @@ subCategories: [ "Arithmetic Operators" ]
 
 [float]
 === Beschreibung
-Die Operation *Modulo* berechnet den Rest, wenn eine ganze Zahl durch eine andere geteilt wird.
+Die *Rest*-Operation berechnet den Rest, wenn eine ganze Zahl durch eine andere geteilt wird.
 Dies ist nützlich, um eine Variable innerhalb eines bestimmten Bereichs zu halten (z. B. die Größe eines Arrays).
-Das `%` (Prozent) -Symbol wird zur Ausführung der Modulo-Operation verwendet.
+Das Symbol `%` (Prozent) wird zur Ausführung der Rest-Operation verwendet.
 [%hardbreaks]
 
 
 [float]
 === Syntax
-`remainder = dividend % divisor`
+`remainder = dividend % divisor;`
 
 
 [float]
@@ -51,10 +51,12 @@ Das `%` (Prozent) -Symbol wird zur Ausführung der Modulo-Operation verwendet.
 [source,arduino]
 ----
 int x = 0;
-x = 7 % 5;    // x enthält jetzt 2
-x = 9 % 5;    // x enthält jetzt 4
-x = 5 % 5;    // x enthält jetzt 0
-x = 4 % 5;    // x enthält jetzt 4
+x = 7 % 5;  // x enthält jetzt 2
+x = 9 % 5;  // x enthält jetzt 4
+x = 5 % 5;  // x enthält jetzt 0
+x = 4 % 5;  // x enthält jetzt 4
+x = -4 % 5; // x enthält jetzt -4
+x = 4 % -5; // x enthält jetzt 4
 ----
 
 [source,arduino]
@@ -66,17 +68,19 @@ int i = 0;
 
 void setup() {}
 
-void loop()
-{
+void loop() {
   values[i] = analogRead(0);
-  i = (i + 1) % 10;   // Modulo-Operator überschreibt Variable
+  i = (i + 1) % 10; // Rest-Operator lässt die Variable wieder bei 0 beginnen
 }
 ----
 [%hardbreaks]
 
 [float]
 === Anmerkungen und Warnungen
-Der Modulo-Operator arbeitet nicht mit `float`-Werten.
+1. Der Rest-Operator arbeitet nicht mit `float`-Werten.
+
+2. Wenn der *erste* Operand negativ ist, ist das Ergebnis negativ (oder null).
+Daher liegt das Ergebnis von `x % 10` nicht immer zwischen 0 und 9, wenn `x` negativ sein kann.
 [%hardbreaks]
 
 --

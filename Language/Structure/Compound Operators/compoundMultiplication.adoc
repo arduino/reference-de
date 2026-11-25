@@ -48,7 +48,7 @@ Dies ist eine praktische Abkürzung, um eine Multiplikation einer Variablen mit 
 [source,arduino]
 ----
 x = 2;
-x *= 2; // x enthält jetzt 4
+x *= 3; // x enthält jetzt 6
 ----
 
 

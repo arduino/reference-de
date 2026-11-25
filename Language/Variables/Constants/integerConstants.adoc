@@ -1,5 +1,5 @@
 ---
-title: Integer-Konstanten
+title: Integer Constants
 categories: [ "Variables" ]
 subCategories: [ "Constants" ]
 ---
@@ -33,9 +33,9 @@ Normalerweise werden Integerkonstanten als Dezimalzahlen behandelt (Basis 10). S
 |
 
 |2 (Binär)
-|B1111011
-|Führendes 'B'
-|Funktioniert nur mit 8-Bit-Werten (0 bis 255); Nur die Ziffern 0&1 sind gültig
+|0b1111011
+|Führendes "0b"
+|Nur die Ziffern 0&1 sind gültig
 
 |8 (Oktal)
 |0173
@@ -75,13 +75,7 @@ Nur die Zahlen 0 und 1 sind gültig.
 
 [float]
 === Beispielcode:
-`n = B101; // = 5 in Dezimal  ((1 * 2^2) + (0 * 2^1) + 1)`
-
-
-Der Binärformatierer funktioniert nur für Zahlen bis 8 Bit zwischen 0 (B0) und 255 (B11111111). Wenn du eine 16-Bit-Zahl angeben willst,
-solltest du dies in der folgenden Art tun:
-
-`myInt = (B11001100 * 256) + B10101010; // B11001100 ist dann das 'High byte'`
+`n = 0b101; // = 5 in Dezimal  ((1 * 2^2) + (0 * 2^1) + 1)`
 
 
 [float]

@@ -18,7 +18,7 @@ subCategories: [ "Bitwise Operators" ]
 
 [float]
 === Beschreibung
-Der rechte Right-Shift-Operator bewirkt, dass die Bits des linken Operanden um die durch den rechten Operanden angegebene Anzahl von Positionen *nach rechts* verschoben werden.
+Der Right-Shift-Operator `>>` bewirkt, dass die Bits des linken Operanden um die durch den rechten Operanden angegebene Anzahl von Positionen *nach rechts* verschoben werden.
 [%hardbreaks]
 
 
@@ -29,8 +29,8 @@ Der rechte Right-Shift-Operator bewirkt, dass die Bits des linken Operanden um d
 
 [float]
 === Parameter
-`variable`: Erlaubte Datentypen: `byte`, `int`, `long`. +
-`number_of_bits`: Eine Zahl < = 32. Erlaubte Datentypen: `int`.
+`variable`: Erlaubte Datentypen: jeder Ganzzahltyp (`byte`, `short`, `int`, `long`, `unsigned short`...). +
+`number_of_bits`: Eine positive Zahl, die kleiner als die Bitbreite von `variable` ist. Erlaubte Datentypen: `int`.
 
 
 --
@@ -48,39 +48,46 @@ Der rechte Right-Shift-Operator bewirkt, dass die Bits des linken Operanden um d
 [source,arduino]
 ----
 int a = 40;     // Binär: 0000000000101000
-int b = a >> 3; // Binär: 0000000000000101, oder 5 dezimal
+int b = a >> 3; // Binär: 0000000000000101, dezimal: 5
 ----
 [%hardbreaks]
 
 [float]
 === Anmerkungen und Warnungen
-Wenn x um y Bits (x >> y) nach rechts verschoben wird und das höchste Bit in x eine 1 ist, hängt das Verhalten vom genauen Datentyp von x ab.
-Wenn x vom Typ int ist, ist das höchste Bit das Vorzeichenbit, das bestimmt, ob x negativ ist oder nicht, wie oben diskutiert wurde.
-In diesem Fall wird das Vorzeichenbit aus esoterischen historischen Gründen in niedrigere Bits kopiert:
+Wenn du `x` um `y` Bits nach rechts verschiebst (`x >> y`), "fallen" die `y` am weitesten rechts liegenden Bits von `x` heraus und werden verworfen.
+Hat `x` einen vorzeichenlosen Typ (z. B. `unsigned int`), werden die `y` am weitesten links liegenden Bits des Ergebnisses mit Nullen aufgefüllt.
+Hat `x` einen vorzeichenbehafteten Typ (z. B. `int`), ist sein am weitesten links liegendes Bit das Vorzeichenbit, das bestimmt, ob der Wert positiv oder negativ ist.
+In diesem Fall werden die `y` am weitesten links liegenden Bits des Ergebnisses mit Kopien des Vorzeichenbits aufgefüllt.
+Dieses Verhalten, "Vorzeichenerweiterung" genannt, sorgt dafür, dass das Ergebnis dasselbe Vorzeichen wie `x` hat.
 
 [source,arduino]
 ----
-int x = -16; // Binär: 1111111111110000
+int x = -16;          // Binär: 1111111111110000
 int y = 3;
-int result = x >> y; // Binär: 1111111111111110
+int result = x >> y;  // Binär: 1111111111111110, dezimal: -2
 ----
-Dieses Verhalten, das als Zeichenerweiterung bezeichnet wird, ist häufig nicht das gewünschte Verhalten.
-Stattdessen möchte man möglicherweise, dass Nullen von links nach innen verschoben werden.
-Es stellt sich heraus, dass die Rechtsverschiebungsregeln für vorzeichenlose int-Ausdrücke unterschiedlich sind.
-Man kann also eine Typumwandlung verwenden, um zu verhindern, dass die von links kopierten Werte verwendet werden:
+Das ist möglicherweise nicht das gewünschte Verhalten.
+Wenn stattdessen Nullen von links nachgeschoben werden sollen, kannst du eine Typumwandlung verwenden, um die Vorzeichenerweiterung zu unterdrücken:
 
 [source,arduino]
 ----
-int x = -16; // Binär: 1111111111110000
+int x = -16;                        // Binär: 1111111111110000
 int y = 3;
-int result = (unsigned int)x >> y; // Binär: 0001111111111110
+int result = (unsigned int)x >> y;  // Binär: 0001111111111110, dezimal: 8190
 ----
-Wenn du die Vorzeichenerweiterung sorgfältig vermeidest, kannst du den rechten Umschaltoperator `>>` verwenden, um die Division durch Potenzen von 2 zu berechnen. Zum Beispiel:
+Durch die Vorzeichenerweiterung führt der Right-Shift-Operator `>>` eine Division durch Potenzen von 2 aus, auch bei negativen Zahlen. Zum Beispiel:
 
 [source,arduino]
 ----
-int x = 1000;
-int y = x >> 3; // Integer-Division von 1000 durch 8, wodurch y = 125.
+int x = -1000;
+int y = x >> 3; // Integer-Division von -1000 durch 8, ergibt y = -125.
+----
+Beachte aber die Rundung bei negativen Zahlen:
+[source,arduino]
+----
+int x = -1001;
+int y = x >> 3; // Division durch Verschieben rundet immer ab, ergibt y = -126
+int z = x / 8;  // Divisionsoperator rundet in Richtung null, ergibt z = -125
 ----
 
 --

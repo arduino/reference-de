@@ -62,7 +62,7 @@ Unten findest du ein Beispiel (spezifisch für die AVR-Architektur).
 
 [source,arduino]
 ----
-PORTD = PORTD & B00000011;  // Löschen der Bits 2 - 7 und Pins PD0 und PD1 (xx & 11 == xx) nicht ändern.
+PORTD = PORTD & 0b00000011;  // Löschen der Bits 2 - 7 und Pins PD0 und PD1 (xx & 11 == xx) nicht ändern.
 ----
 
 --

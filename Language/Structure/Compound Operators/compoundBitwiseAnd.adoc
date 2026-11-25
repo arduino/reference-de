@@ -18,7 +18,7 @@ subCategories: [ "Compound Operators" ]
 
 [float]
 === Beschreibung
-Der zusammengesetzte bitweise AND-Operator `& =` wird häufig mit einer Variablen und einer Konstanten verwendet, um bestimmte Bits in einer Variablen in den Zustand LOW (auf 0) zu bringen.
+Der zusammengesetzte bitweise AND-Operator `&=` wird häufig mit einer Variablen und einer Konstanten verwendet, um bestimmte Bits in einer Variablen in den Zustand LOW (auf 0) zu bringen.
 Dies wird in Programmierhandbüchern oft als "Löschen" oder "Zurücksetzen" der Bits bezeichnet.
 [%hardbreaks]
 
@@ -56,14 +56,14 @@ Bits, die "bitweise verUNDet" mit 0 sind, werden auf 0 zurückgesetzt, wenn myBy
 
 [source,arduino]
 ----
-myByte & B00000000 = 0;
+myByte & 0b00000000 = 0;
 ----
 
 Bits die "bitweise verUNDet" mit 1 sind, werden nicht verändert:
 
 [source,arduino]
 ----
-myByte & B11111111 = myByte;
+myByte & 0b11111111 = myByte;
 ----
 [%hardbreaks]
 
@@ -71,10 +71,10 @@ myByte & B11111111 = myByte;
 === Anmerkungen und Warnungen
 Da es sich um einen bitweisen Operator handelt, ist es sinnvoll, den binären Formatierer mit Konstanten zu verwenden.
 Die Zahlen haben in anderen Darstellungen immer noch den gleichen Wert, sie sind einfach nicht so leicht zu verstehen.
-Außerdem wird B00000000 zur Verdeutlichung gezeigt, aber Null in einem beliebigen Zahlenformat ist Null.
+Außerdem wird 0b00000000 zur Verdeutlichung gezeigt, aber Null in einem beliebigen Zahlenformat ist Null.
 
 Um die Bits 0 & 1 einer Variablen zu löschen (auf Null zu setzen), während der Rest der Variablen unverändert bleibt,
-verwende den zusammengesetzten bitweisen AND-Operator (& =) mit der Konstanten B11111100
+verwende den zusammengesetzten bitweisen AND-Operator (&=) mit der Konstanten 0b11111100
 
    1  0  1  0  1  0  1  0    Variable
    1  1  1  1  1  1  0  0    Maske
@@ -97,8 +97,8 @@ Hier ist die gleiche Darstellung, wobei die Bits der Variablen durch das Symbol 
 Also ergibt:
 [source,arduino]
 ----
-myByte =  B10101010;
-myByte &= B11111100; // Ergibt B10101000
+myByte =  0b10101010;
+myByte &= 0b11111100; // Ergibt 0b10101000
 ----
 
 [%hardbreaks]

@@ -93,7 +93,6 @@ Wenn ein Gleichheitszeichen nach der Anweisung #define einfügt wird, wird ebenf
 
 [role="language"]
 * #SPRACHE#	link:../../../variables/variable-scope-qualifiers/const[const]
-* #SPRACHE#	link:../../../variables/constants/constants[Konstanten]
 
 --
 // SIEHE-AUCH-ABSCHNITT SECTION ENDET

@@ -1,0 +1,120 @@
+---
+title: "^="
+title_expanded: Zusammengesetztes Bitweises XOR
+categories: [ "Structure" ]
+subCategories: [ "Compound Operators" ]
+---
+
+
+
+
+
+= ^= Zusammengesetztes Bitweises XOR
+
+
+// ÜBERSICHTSABSCHNITT STARTET
+[#overview]
+--
+
+[float]
+=== Beschreibung
+Der zusammengesetzte bitweise XOR-Operator `^=` wird häufig mit einer Variablen und einer Konstanten verwendet, um bestimmte Bits in einer Variablen umzuschalten (zu invertieren).
+[%hardbreaks]
+
+Ein Überblick über den bitweisen XOR `^` Operator:
+
+   0  0  1  1    operand1
+   0  1  0  1    operand2
+   ----------
+   0  1  1  0    (operand1 ^ operand2) - Ergebnis
+[%hardbreaks]
+
+[float]
+=== Syntax
+`x ^= y; // Äquivalent zu x = x ^ y`
+
+
+[float]
+=== Parameter
+`x`: Variable. Erlaubte Datentypen: `char`, `int`, `long`. +
+`y`: Variable oder Konstante. Erlaubte Datentypen: `char`, `int`, `long`.
+
+
+--
+// ÜBERSICHTSABSCHNITT ENDET
+
+
+
+// HOW-TO-USE-ABSCHNITT STARTET
+[#howtouse]
+--
+
+[float]
+=== Beispielcode
+Bits, die mit 0 "bitweise verXORt" werden, bleiben unverändert. Wenn myByte eine Byte-Variable ist, gilt also:
+[source,arduino]
+----
+myByte ^ 0b00000000 = myByte;
+----
+
+Bits, die mit 1 "bitweise verXORt" werden, werden umgeschaltet:
+[source,arduino]
+----
+myByte ^ 0b11111111 = ~myByte;
+----
+[%hardbreaks]
+
+[float]
+=== Anmerkungen und Warnungen
+Da es sich um einen bitweisen Operator handelt, ist es sinnvoll, den binären Formatierer mit Konstanten zu verwenden.
+Die Zahlen haben in anderen Darstellungen immer noch den gleichen Wert, sie sind einfach nicht so leicht zu verstehen.
+Außerdem wird 0b00000000 zur Verdeutlichung gezeigt, aber Null in einem beliebigen Zahlenformat ist Null.
+[%hardbreaks]
+
+Um die Bits 0 und 1 einer Variablen umzuschalten, während der Rest der Variablen unverändert bleibt,
+verwende den zusammengesetzten bitweisen XOR-Operator (^=) mit der Konstanten 0b00000011
+
+   1  0  1  0  1  0  1  0    Variable
+   0  0  0  0  0  0  1  1    Maske
+   ----------------------
+   1  0  1  0  1  0  0  1
+
+    Bits unverändert
+                     Bits umgeschaltet
+
+
+Hier ist die gleiche Darstellung mit den Variablenbits durch das Symbol x ersetzt. ~x steht für das Komplement von x.
+
+   x  x  x  x  x  x  x  x    Variable
+   0  0  0  0  0  0  1  1    Maske
+   ----------------------
+   x  x  x  x  x  x ~x ~x
+
+    Bits unverändert
+                     Bits umgeschaltet
+
+Also ergibt:
+[source,arduino]
+----
+myByte =  0b10101010;
+myByte ^= 0b00000011 == 0b10101001;
+----
+
+--
+// HOW-TO-USE-ABSCHNITT ENDET
+
+
+
+
+// SIEHE-AUCH-ABSCHNITT SECTION STARTET
+[#see_also]
+--
+
+[float]
+=== Siehe auch
+
+[role="language"]
+* #SPRACHE#  link:../../bitwise-operators/bitwisexor[^ Bitweises XOR]
+
+--
+// SIEHE-AUCH-ABSCHNITT ENDET
