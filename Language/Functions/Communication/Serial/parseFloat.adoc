@@ -36,7 +36,7 @@ Die Funktion wird abgebrochen, wenn sie abgelaufen ist (siehe link:../settimeout
 
 * `SKIP_ALL`: Alle Zeichen außer einem Minuszeichen, Dezimalpunkt oder Ziffern werden ignoriert, wenn der Stream nach einer Gleitkommazahl durchsucht wird. Dies ist der Standardmodus.
 * `SKIP_NONE`: Nichts wird übersprungen und der Stream wird nur dann berührt, wenn das erste wartende Zeichen gültig ist.
-* `SKIP_WHITESPACE`: Nur Registerkarten, Leerzeichen, Zeilenvorschub und Carriage Returns werden übersprungen.
+* `SKIP_WHITESPACE`: Nur Tabulatoren, Leerzeichen, Zeilenvorschub und Carriage Returns werden übersprungen.
 
 `ignore`: Wird verwendet, um das angegebene Zeichen bei der Suche zu überspringen. Wird beispielsweise verwendet, um Tausenderteiler zu überspringen. Zulässige Datentypen: `char`.
 
