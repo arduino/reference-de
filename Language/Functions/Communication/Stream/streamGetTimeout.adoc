@@ -30,7 +30,7 @@ Keine.
 
 
 [float]
-=== Gibt zurück
+=== Rückgabewert
 Der von `stream.setTimeout()` festgelegte Timeout-Wert. Datentyp: `unsigned long`.
 
 --

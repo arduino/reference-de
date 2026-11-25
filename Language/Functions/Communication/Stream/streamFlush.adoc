@@ -16,7 +16,7 @@ title: Stream.flush()
 === Beschreibung
 `flush()` löscht den Puffer, sobald alle ausgehenden Zeichen gesendet wurden.
 
-Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, die von ihr erbt (Wire, Serial usw.). Siehe die link:../../stream[Stream-Klasse] für weitere Informationen.
+Diese Funktion ist Teil der Stream-Klasse und kann von jeder Klasse aufgerufen werden, die von ihr erbt (Wire, Serial usw.). Siehe die link:../../stream[Stream-Klasse] für weitere Informationen.
 [%hardbreaks]
 
 

@@ -16,7 +16,7 @@ title: Stream.find()
 === Beschreibung
 `find()` liest Daten aus dem Stream, bis das Ziel gefunden wurde. Die Funktion gibt `true` zurück, wenn das Ziel gefunden wurde, und `false`, wenn das Zeitlimit überschritten wird (siehe link:../streamsettimeout[Stream.setTimeout()]).
 
-Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, die von ihr erbt (Wire, Serial usw.). Siehe die link:../../stream[Stream-Klasse] für weitere Informationen.
+Diese Funktion ist Teil der Stream-Klasse und kann von jeder Klasse aufgerufen werden, die von ihr erbt (Wire, Serial usw.). Siehe die link:../../stream[Stream-Klasse] für weitere Informationen.
 [%hardbreaks]
 
 
@@ -30,7 +30,7 @@ Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, 
 === Parameter
 `stream`: Eine Instanz einer Klasse, die von Stream erbt. +
 `target`: Die Zeichenfolge, nach der gesucht werden soll. Erlaubte Datentypen: `char`. +
-`length`: Länge des Ergebnisses. Erlaubte Datentypen: `size_t`.
+`length`: Länge des Ziels. Erlaubte Datentypen: `size_t`.
 
 
 [float]

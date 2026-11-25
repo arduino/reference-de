@@ -21,7 +21,7 @@ Zeichen und Zeichenfolgen werden unverändert gesendet. Zum Beispiel:
 * `_Serial_.print(78)` gibt "78" aus +
 * `_Serial_.print(1.23456)` gibt "1.23" aus +
 * `_Serial_.print('N')` gibt "N" aus +
-* `_Serial_.print("Hello world.")` gibt "Hello world."
+* `_Serial_.print("Hello world.")` gibt "Hello world." aus
 
 
 Ein optionaler zweiter Parameter gibt die Basis (Format) an, die verwendet werden soll. Zulässige Werte sind `BIN(Binär, oder Basis 2)`, `OCT(Oktal, oder Basis 8)`, `DEC(Dezimal, oder Basis 10)`, `HEX(Hexadezimal, oder Basis 16)`.
@@ -33,7 +33,7 @@ Bei Gleitkommazahlen gibt dieser Parameter die Anzahl der zu verwendenden Dezima
 * `_Serial_.print(78, HEX)` gibt "4E" aus +
 * `_Serial_.print(1.23456, 0)` gibt "1" aus +
 * `_Serial_.print(1.23456, 2)` gibt "1.23" aus +
-* `_Serial_.print(1.23456, 4)` gibt "1.2346"
+* `_Serial_.print(1.23456, 4)` gibt "1.2346" aus
 
 Du kannst Flash-Speicher-basierte Zeichenfolgen an `_Serial_.print()` übergeben, indem du sie mit link:../../../../variables/utilities/progmem[F()] einschließt. Zum Beispiel:
 
@@ -84,7 +84,7 @@ void setup() {
 }
 
 void loop() {
-  // print labels
+  // Beschriftungen ausgeben
   Serial.print("NO FORMAT");  // Gibt einen Text aus
   Serial.print("\t");         // Gibt einen Tab aus
 

@@ -16,9 +16,9 @@ title: Stream.readBytes()
 === Beschreibung
 `readBytes()` liest Zeichen aus einem Stream in einen Puffer. Die Funktion wird beendet, wenn die ermittelte Länge gelesen wurde oder das Zeitlimit überschritten wurde (siehe link:../streamsettimeout[setTimeout()]).
 
-`readBytes()` gibt die Anzahl der Bytes in den Puffer zurück. Eine 0 bedeutet, dass keine gültigen Daten gefunden wurden.
+`readBytes()` gibt die Anzahl der in den Puffer geschriebenen Bytes zurück. Eine 0 bedeutet, dass keine gültigen Daten gefunden wurden.
 
-Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, die von ihr erbt (Wire, Serial usw.). Siehe die link:../../stream[Stream-Klasse] für weitere Informationen.
+Diese Funktion ist Teil der Stream-Klasse und kann von jeder Klasse aufgerufen werden, die von ihr erbt (Wire, Serial usw.). Siehe die link:../../stream[Stream-Klasse] für weitere Informationen.
 [%hardbreaks]
 
 

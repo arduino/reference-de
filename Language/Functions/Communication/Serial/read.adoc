@@ -32,7 +32,7 @@ Liest eingehende serielle Daten.
 
 [float]
 === Rückgabewert
-Das erste Byte der eingehenden seriellen Daten ist verfügbar (oder -1, wenn keine Daten verfügbar sind). Datentyp: `int`.
+Das erste verfügbare Byte der eingehenden seriellen Daten (oder -1, wenn keine Daten verfügbar sind). Datentyp: `int`.
 
 --
 // ÜBERSICHTSABSCHNITT ENDET
@@ -58,7 +58,7 @@ void setup() {
 }
 
 void loop() {
-  // Daten nur senden, wenn Daten erhalten:
+  // Daten nur senden, wenn Daten empfangen wurden:
   if (Serial.available() > 0) {
     // Lies das eingehende Byte:
     incomingByte = Serial.read();

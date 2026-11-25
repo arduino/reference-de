@@ -16,7 +16,7 @@ subCategories: [ "Communication" ]
 
 [float]
 === Beschreibung
-Wird für die Kommunikation zwischen dem Arduino-Board und einem Computer oder anderen Geräten verwendet. Alle Arduino-Boards haben mindestens eine serielle Schnittstelle (auch als UART oder USART bezeichnet) und andere haben mehrere.
+Wird für die Kommunikation zwischen dem Arduino-Board und einem Computer oder anderen Geräten verwendet. Alle Arduino-Boards haben mindestens eine serielle Schnittstelle (auch als UART oder USART bezeichnet), manche haben mehrere.
 
 [options="header"]
 |================================================================================================================================================
@@ -52,7 +52,7 @@ Auf älteren Boards (Uno, Nano, Mini und Mega) werden die Pins 0 und 1 für die 
 [%hardbreaks]
 Du kannst den eingebauten seriellen Monitor der Arduino-Umgebung verwenden, um mit einem Arduino-Board zu kommunizieren. Klicke in der Symbolleiste auf die Schaltfläche für den seriellen Monitor und wähle dieselbe Baudrate aus, die für den Aufruf von `begin()` verwendet wird.
 [%hardbreaks]
-Die serielle Kommunikation an den Pins TX / RX verwendet TTL-Logikpegel (5 V oder 3,3 V je nach Board). Verbinde diese Pins nicht direkt mit einer seriellen RS232-Schnittstelle. Sie arbeiten mit +/- 12 V und können dein Arduino-Board beschädigen.
+Die serielle Kommunikation an den Pins TX / RX verwendet TTL-Logikpegel (5 V oder 3,3 V je nach Board). Verbinde diese Pins nicht direkt mit einer seriellen RS232-Schnittstelle. RS232-Schnittstellen arbeiten mit +/- 12 V und können dein Arduino-Board beschädigen.
 [%hardbreaks]
 Um diese zusätzlichen seriellen Anschlüsse für die Kommunikation mit deinem PC zu verwenden, benötigst du einen zusätzlichen USB-zu-Seriell-Adapter, da diese nicht an den USB-zu-Seriell-Adapter des Mega angeschlossen sind.
 Um sie zur Kommunikation mit einem externen seriellen TTL-Gerät zu verwenden, verbinde den TX-Pin mit dem RX-Pin deines Geräts, den RX mit dem TX-Pin deines Geräts und die Masse deines Mega mit der Masse deines Geräts.

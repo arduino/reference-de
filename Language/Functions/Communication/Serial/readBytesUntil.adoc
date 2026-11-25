@@ -16,7 +16,7 @@ title: Serial.readBytesUntil()
 === Beschreibung
 `_Serial_.readBytesUntil()` liest Zeichen aus dem seriellen Puffer in ein Array.
 
-Die Funktion bricht ab (Überprüfungen werden in dieser Reihenfolge durchgeführt), wenn die ermittelte Länge gelesen wurde, wenn die Zeit abgelaufen ist (siehe link:../settimeout[Serial.setTimeout()]) oder wenn das Terminatorzeichen erkannt wurde (In diesem Fall gibt die Funktion die Zeichen bis zum letzten Zeichen vor dem angegebenen Terminatorzeichen zurück). Das Terminatorzeichen selbst wird nicht im Puffer zurückgegeben.
+Die Funktion bricht ab (Überprüfungen werden in dieser Reihenfolge durchgeführt), wenn die ermittelte Länge gelesen wurde, wenn die Zeit abgelaufen ist (siehe link:../settimeout[Serial.setTimeout()]) oder wenn das Terminatorzeichen erkannt wurde (in diesem Fall gibt die Funktion die Zeichen bis zum letzten Zeichen vor dem angegebenen Terminatorzeichen zurück). Das Terminatorzeichen selbst wird nicht im Puffer zurückgegeben.
 
 `_Serial_.readBytesUntil()` gibt die Anzahl der in den Puffer eingelesenen Zeichen zurück. Eine 0 bedeutet, dass der Parameter `length` \<= 0 ist, dass vor jeder anderen Eingabe eine Zeitüberschreitung aufgetreten ist oder dass vor jeder anderen Eingabe ein Terminatorzeichen gefunden wurde.
 

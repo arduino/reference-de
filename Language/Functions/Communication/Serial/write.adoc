@@ -65,7 +65,7 @@ void loop() {
 
 [float]
 === Anmerkungen und Warnungen
-Die serielle Übertragung ist asynchron. Wenn im Sendepuffer genügend freier Speicherplatz vorhanden ist, wird `_Serial_.write()` zurückgegeben, bevor Zeichen seriell übertragen werden.
+Die serielle Übertragung ist asynchron. Wenn im Sendepuffer genügend freier Speicherplatz vorhanden ist, kehrt `_Serial_.write()` zurück, bevor Zeichen seriell übertragen werden.
 Wenn der Sendepuffer voll ist, wird `_Serial_.write()` blockiert, bis im Puffer genügend Speicherplatz vorhanden ist.
 Um blockierende Aufrufe von `_Serial_.write()` zu vermeiden, kannst du zunächst mit link:../availableforwrite[availableForWrite()] prüfen, wie viel Platz im Sendepuffer frei ist.
 

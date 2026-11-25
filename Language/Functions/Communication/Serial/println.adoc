@@ -69,7 +69,7 @@ void loop() {
   // Lies den Analogeingang an Pin 0:
   analogValue = analogRead(0);
 
-  // print it out in many formats:
+  // In verschiedenen Formaten ausgeben:
   Serial.println(analogValue);       // Drucken als ASCII-codierte Dezimalzahl
   Serial.println(analogValue, DEC);  // Drucken als ASCII-codierte Dezimalzahl
   Serial.println(analogValue, HEX);  // Drucken als ASCII-codierte Hexadezimalzahl

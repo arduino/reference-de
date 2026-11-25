@@ -50,7 +50,7 @@ void setup() {
 }
 
 void loop() {
-  // Antworten, wenn Daten erhalten werden:
+  // Nur antworten, wenn Daten empfangen werden:
   if (Serial.available() > 0) {
     // Lies das eingehende Byte:
     incomingByte = Serial.read();

@@ -14,9 +14,9 @@ title: Stream.peek()
 
 [float]
 === Beschreibung
-Liest ein Byte aus der Datei, ohne zum nächsten zu gelangen. Das bedeutet, dass aufeinanderfolgende Aufrufe von `peek()` denselben Wert zurückgeben, der nächste Wert wird über `read()` gelesen.
+Liest ein Byte aus der Datei, ohne zum nächsten zu gelangen. Das bedeutet, dass aufeinanderfolgende Aufrufe von `peek()` denselben Wert zurückgeben wie der nächste Aufruf von `read()`.
 
-Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, die von ihr erbt (Wire, Serial usw.). Siehe die link:../../stream[Stream-Klasse] für weitere Informationen.
+Diese Funktion ist Teil der Stream-Klasse und kann von jeder Klasse aufgerufen werden, die von ihr erbt (Wire, Serial usw.). Siehe die link:../../stream[Stream-Klasse] für weitere Informationen.
 [%hardbreaks]
 
 

@@ -44,7 +44,7 @@ Nichts.
 
 [float]
 === Anmerkungen und Warnungen
-Serielle Funktionen, die den eingestellten Timeout-Wert verwenden `_Serial_.setTimeout()`:
+Serielle Funktionen, die den mit `_Serial_.setTimeout()` eingestellten Timeout-Wert verwenden:
 
 * `_Serial_.find()`
 * `_Serial_.findUntil()`
