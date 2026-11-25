@@ -1,0 +1,73 @@
+---
+title: INPUT | INPUT_PULLUP | OUTPUT
+categories: [ "Variables" ]
+subCategories: [ "Constants" ]
+---
+
+= INPUT | INPUT_PULLUP | OUTPUT
+
+// ÜBERSICHTSABSCHNITT STARTET
+[#overview]
+--
+
+[float]
+== Digitale Pinmodi: INPUT, INPUT_PULLUP und OUTPUT
+Digitalpins können als `INPUT`, `INPUT_PULLUP` oder `OUTPUT` genutzt werden. Wenn ein Pin mit link:../../../functions/digital-io/pinmode[`pinMode()`] auf einen anderen Modus umgeschaltet wird, ändert sich sein elektrisches Verhalten.
+
+--
+// ÜBERSICHTSABSCHNITT ENDET
+
+// HOW-TO-USE-ABSCHNITT STARTET
+[#howtouse]
+--
+
+[float]
+=== INPUT
+Arduino (ATmega)-Pins, die mit link:../../../functions/digital-io/pinmode[`pinMode()`] als `INPUT` definiert werden, sind in einem _hochohmigen_ Zustand. Als `INPUT` definierte Pins belasten die Schaltung, an der sie messen, nur äußerst gering, ungefähr so wie ein Vorschaltwiderstand von 100 Megaohm vor dem Pin. Das macht sie nützlich, um Sensoren auszulesen.
+[%hardbreaks]
+
+Wenn ein Pin als `INPUT` definiert ist und einen Schalter einliest, ist der Inputpin bei offenem Schalter nicht festgelegt ("floating") und liefert unvorhersehbare Ergebnisse. Um ein korrektes Einlesen zu garantieren, wenn der Schalter offen ist, muss ein Pullup- oder Pulldown-Widerstand benutzt werden. Der Sinn dieses Widerstands ist es, den Pin auf einen definierten Zustand zu ziehen, wenn der Schalter offen ist. Üblicherweise wird dazu ein 10KOhm-Widerstand verwendet, da dieser klein genug ist, um einen schwebenden Eingang zuverlässig zu verhindern, und zugleich groß genug, um nicht zu viel Strom zu ziehen, wenn der Schalter geschlossen ist. Siehe auch das http://arduino.cc/en/Tutorial/DigitalReadSerial[Digital Read Serial^]-Tutorial für weitere Informationen.
+[%hardbreaks]
+
+Wenn ein Pulldown-Widerstand benutzt wird, ist der Inputpin `LOW`, wenn der Schalter offen ist, und `HIGH`, wenn der Schalter geschlossen ist.
+[%hardbreaks]
+
+Wenn ein Pullup-Widerstand benutzt wird, ist der Inputpin `HIGH`, wenn der Schalter offen ist, und `LOW`, wenn der Schalter geschlossen ist.
+[%hardbreaks]
+
+[float]
+=== INPUT_PULLUP
+Der ATmega-Mikrocontroller auf dem Arduino hat interne Pullup-Widerstände (Widerstände, die intern mit der Versorgungsspannung verbunden sind), auf die zugegriffen werden kann. Wenn du diese statt externer Pullup-Widerstände verwenden möchtest, kannst du link:../../../functions/digital-io/pinmode[`pinMode()`] mit der Konstante `INPUT_PULLUP` als Argument verwenden.
+[%hardbreaks]
+
+Ein Anwendungsbeispiel findest du im http://arduino.cc/en/Tutorial/InputPullupSerial[Input Pullup Serial^]-Tutorial.
+[%hardbreaks]
+
+Pins, die als `INPUT` oder `INPUT_PULLUP` definiert sind, können beschädigt oder zerstört werden, wenn sie Spannungen ausgesetzt werden, die negativ sind oder über der positiven Versorgungsspannung liegen (5V oder 3,3V).
+[%hardbreaks]
+
+[float]
+=== OUTPUT
+Pins, die mit link:../../../functions/digital-io/pinmode[`pinMode()`] als `OUTPUT` definiert werden, sind in einem _niederohmigen_ Zustand. Das bedeutet, dass sie anderen Schaltungen eine beträchtliche Menge Strom liefern können. ATmega-Pins können bis zu 40 mA (Milliampere) Strom an andere Bauteile oder Schaltungen abgeben (source) oder von ihnen aufnehmen (sink). Das macht sie nützlich, um z.B. LEDs zu versorgen, da diese üblicherweise weniger als 40 mA benötigen. Lasten über 40 mA (z.B. Motoren) benötigen einen Transistor oder eine andere Schnittstellenschaltung.
+[%hardbreaks]
+
+Outputpins können beschädigt oder zerstört werden, wenn sie mit Masse oder mit der positiven Versorgungsspannung verbunden werden.
+[%hardbreaks]
+
+
+--
+// HOW-TO-USE-ABSCHNITT ENDET
+
+
+
+// SIEHE-AUCH-ABSCHNITT SECTION STARTET
+[#see_also]
+--
+
+[float]
+=== Siehe auch
+
+[role="language"]
+
+--
+// SIEHE-AUCH-ABSCHNITT ENDET

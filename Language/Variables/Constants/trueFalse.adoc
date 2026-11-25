@@ -1,0 +1,47 @@
+---
+title: 'true | false'
+categories: [ "Variables" ]
+subCategories: [ "Constants" ]
+---
+
+= true | false
+
+// ÜBERSICHTSABSCHNITT STARTET
+[#overview]
+--
+
+Um Wahr- und Falschwerte darzustellen, sind in der Arduinosprache zwei Konstanten definiert: `true` und `false`.
+
+[float]
+=== true
+Häufig wird behauptet, dass `true` als 1 definiert ist. Das ist zwar richtig, allerdings hat `true` eine weiterreichende Definition. Jeder Integer, der nicht 0 (Null) ist, ist im booleschen Sinne `true`. Also sind auch -1, 2 und -200 im booleschen Sinne `true`.
+[%hardbreaks]
+
+Beachte, dass die Konstanten `true` und `false` im Gegensatz zu `HIGH`, `LOW`, `INPUT` und `OUTPUT` kleingeschrieben werden.
+[%hardbreaks]
+
+
+[float]
+=== false
+`false` ist die einfacher zu definierende der beiden Konstanten. `false` ist als 0 (Null) definiert.
+[%hardbreaks]
+
+Beachte, dass die Konstanten `true` und `false` im Gegensatz zu `HIGH`, `LOW`, `INPUT` und `OUTPUT` kleingeschrieben werden.
+[%hardbreaks]
+
+--
+// ÜBERSICHTSABSCHNITT ENDET
+
+
+
+// SIEHE-AUCH-ABSCHNITT SECTION STARTET
+[#see_also]
+--
+
+[float]
+=== Siehe auch
+
+[role="language"]
+
+--
+// SIEHE-AUCH-ABSCHNITT ENDET

@@ -1,0 +1,59 @@
+---
+title: HIGH | LOW
+categories: [ "Variables" ]
+subCategories: [ "Constants" ]
+---
+
+= HIGH | LOW
+
+// ÜBERSICHTSABSCHNITT STARTET
+[#overview]
+--
+
+[float]
+== Pinlevel: HIGH und LOW
+Wenn von einem Digitalpin gelesen oder auf einen Digitalpin geschrieben wird, gibt es nur zwei mögliche Werte, die der Pin annehmen kann oder auf die er gesetzt werden kann: `HIGH` und `LOW`. Diese entsprechen `true` und `false` sowie `1` und `0`.
+
+[float]
+=== HIGH
+Die Bedeutung von `HIGH` (in Bezug auf den Pin) ist unterschiedlich, je nachdem, ob der Pin als `INPUT` oder `OUTPUT` definiert ist. Wenn ein Pin als `INPUT` mit `link:../../../functions/digital-io/pinmode[pinMode()]` definiert wird und mit `link:../../../functions/digital-io/digitalread[digitalRead()]` gelesen wird, gibt der Arduino (ATmega) `HIGH` zurück, wenn:
+
+  - eine Spannung größer als 3,0V an dem Pin anliegt (5V-Boards)
+  - eine Spannung größer als 2,0V an dem Pin anliegt (3,3V-Boards)
+[%hardbreaks]
+
+Ein Pin kann mit link:../../../functions/digital-io/pinmode[`pinMode()`] auch als `INPUT` definiert und anschließend mit `link:../../../functions/digital-io/digitalwrite[digitalWrite()]` auf `HIGH` gesetzt werden. Das aktiviert den internen 20K-Pullup-Widerstand, der den Inputpin auf `HIGH` zieht (_pull up_), sofern er nicht von einer externen Schaltung auf `LOW` gezogen wird. Alternativ lässt sich das erreichen, indem `INPUT_PULLUP` als Argument an die Funktion link:../../../functions/digital-io/pinmode[`pinMode()`] übergeben wird. Mehr dazu findest du unter link:../inputoutputpullup[INPUT | INPUT_PULLUP | OUTPUT].
+[%hardbreaks]
+
+Wenn ein Pin mit link:../../../functions/digital-io/pinmode[`pinMode()`] als `OUTPUT` definiert und mit link:../../../functions/digital-io/digitalwrite[`digitalWrite()`] auf `HIGH` gesetzt wird, liegen an dem Pin:
+
+  - 5V an (5V-Boards)
+  - 3,3V an (3,3V-Boards)
+
+In diesem Zustand kann der Pin Strom liefern und z.B. eine LED zum Leuchten bringen, die über einen Vorschaltwiderstand mit Masse verbunden ist.
+[%hardbreaks]
+
+[float]
+=== LOW
+Die Bedeutung von `LOW` (in Bezug auf den Pin) ist ebenfalls unterschiedlich, je nachdem, ob der Pin als `INPUT` oder `OUTPUT` definiert ist. Wenn ein Pin als `INPUT` mit link:../../../functions/digital-io/pinmode[`pinMode()`] definiert wird und mit link:../../../functions/digital-io/digitalread[`digitalRead()`] gelesen wird, gibt der Arduino (ATmega) `LOW` zurück, wenn:
+
+  - eine Spannung kleiner als 1,5V an dem Pin anliegt (5V-Boards)
+  - eine Spannung kleiner als 1,0V (circa) an dem Pin anliegt (3,3V-Boards)
+
+Wenn ein Pin mit link:../../../functions/digital-io/pinmode[`pinMode()`] als `OUTPUT` definiert und mit link:../../../functions/digital-io/digitalwrite[`digitalWrite()`] auf `LOW` gesetzt wird, liegen an ihm 0V an (auf 5V- und 3,3V-Boards). In diesem Zustand kann der Pin Strom aufnehmen und z.B. eine LED zum Leuchten bringen, die über einen Vorschaltwiderstand mit +5V (oder +3,3V) verbunden ist.
+
+--
+// ÜBERSICHTSABSCHNITT ENDET
+
+
+// SIEHE-AUCH-ABSCHNITT SECTION STARTET
+[#see_also]
+--
+
+[float]
+=== Siehe auch
+
+[role="language"]
+
+--
+// SIEHE-AUCH-ABSCHNITT ENDET
