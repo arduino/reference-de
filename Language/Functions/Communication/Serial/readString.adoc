@@ -27,7 +27,7 @@ title: Serial.readString()
 
 [float]
 === Parameter
-`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite].
+`_Serial_`: Serielles Port-Objekt. Siehe die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:https://www.arduino.cc/reference/de/language/functions/communication/serial/[Serial-Hauptseite].
 
 
 [float]
@@ -38,6 +38,44 @@ Ein `String`, der aus dem seriellen Puffer gelesen wird.
 // ÜBERSICHTSABSCHNITT ENDET
 
 
+// HOW-TO-USE-ABSCHNITT STARTET
+[#howtouse]
+--
+
+[float]
+=== Beispielcode
+Zeigt die Verwendung von `Serial.readString()`.
+
+[source,arduino]
+----
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  Serial.println("Enter data:");
+  while (Serial.available() == 0) {}     // Warten, bis Daten verfügbar sind
+  String teststr = Serial.readString();  // Lesen bis zur Zeitüberschreitung
+  teststr.trim();                        // Leerraum wie \r und \n am Ende des Strings entfernen
+  if (teststr == "red") {
+    Serial.println("A primary color");
+  } else {
+    Serial.println("Something else");
+  }
+}
+----
+[%hardbreaks]
+
+
+[float]
+=== Anmerkungen und Warnungen
+Die Funktion bricht nicht vorzeitig ab, wenn die Daten Zeilenendezeichen enthalten. Der zurückgegebene `String` kann Carriage-Return- und/oder Zeilenvorschubzeichen enthalten, wenn diese empfangen wurden.
+[%hardbreaks]
+
+--
+// HOW-TO-USE-ABSCHNITT ENDET
+
+
 // SIEHE-AUCH-ABSCHNITT SECTION
 [#see_also]
 --
@@ -46,7 +84,7 @@ Ein `String`, der aus dem seriellen Puffer gelesen wird.
 === Siehe auch
 
 [role="language"]
-* #SPRACHE# link:../../serial[Serial]
+* #SPRACHE# link:https://www.arduino.cc/reference/de/language/functions/communication/serial/[Serial]
 * #SPRACHE# link:../begin[begin()]
 * #SPRACHE# link:../end[end()]
 * #SPRACHE# link:../available[available()]

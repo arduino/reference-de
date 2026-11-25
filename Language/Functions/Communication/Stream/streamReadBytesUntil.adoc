@@ -18,7 +18,7 @@ title: Stream.readBytesUntil()
 oder das Zeitlimit überschritten wurde (siehe link:../streamsettimeout[setTimeout()]). Die Funktion gibt die Zeichen bis zum letzten Zeichen vor dem angegebenen Abschlusszeichen zurück.
 Der Terminator selbst wird nicht im Puffer zurückgegeben.
 
-`readBytesUntil()` gibt die Anzahl der Bytes in den Puffer zurück. Eine 0 bedeutet, dass keine gültigen Daten gefunden wurden.
+`readBytesUntil()` gibt die Anzahl der Bytes zurück, die im Puffer abgelegt wurden. Eine 0 bedeutet, dass das Abschlusszeichen nicht gefunden wurde oder dass davor keine Daten stehen.
 
 Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, die von ihr erbt (Wire, Serial usw.). Siehe die link:../../stream[Stream-Klasse] für weitere Informationen.
 [%hardbreaks]
@@ -33,13 +33,13 @@ Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, 
 === Parameter
 `stream`: Eine Instanz einer Klasse, die von Stream erbt. +
 `character`: Das zu suchende Zeichen. Erlaubte Datentypen: `char`. +
-`buffer`: Der Puffer zum Speichern der Bytes.  Erlaubte Datentypen: Array von `char` oder `byte`.+
+`buffer`: Der Puffer zum Speichern der Bytes.  Erlaubte Datentypen: Array von `char` oder `byte`. +
 `length`: Die Anzahl der zu lesenden Bytes. Erlaubte Datentypen: `size_t`.
 
 
 [float]
 === Rückgabewert
-Die Anzahl der Bytes, die im Puffer abgelegt wurden. Datentyp: `size_t`.
+Die Anzahl der Bytes (ohne das Abschlusszeichen), die im Puffer abgelegt wurden, wenn das Abschlusszeichen gefunden wurde. Datentyp: `size_t`.
 
 --
 // ÜBERSICHTSABSCHNITT ENDET

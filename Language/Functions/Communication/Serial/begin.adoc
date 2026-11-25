@@ -29,7 +29,7 @@ Ein optionales zweites Argument konfiguriert die Daten-, Paritäts- und Stoppbit
 
 [float]
 === Parameter
-`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite]. +
+`_Serial_`: Serielles Port-Objekt. Siehe die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:https://www.arduino.cc/reference/de/language/functions/communication/serial/[Serial-Hauptseite]. +
 `speed`: In Bits pro Sekunde (Baud). Erlaubte Datentypen: `long`. +
 `config`: Setzt Daten, Parität und Stoppbits. Gültige Werte sind: +
 `SERIAL_5N1` +
@@ -114,7 +114,7 @@ Danke an Jeff Gray für das Mega-Beispiel.
 [float]
 === Anmerkungen und Warnungen
 Bei seriellen USB-CDC-Anschlüssen (z. B. `Serial` am Leonardo) ist `_Serial_.begin()` irrelevant. Du kannst eine beliebige Baudrate und Konfiguration für die serielle Kommunikation mit diesen Ports verwenden.
-Siehe die Liste der verfügbaren seriellen Schnittstellen für jedes Board auf der link:../../serial[Serial-Hauptseite].
+Siehe die Liste der verfügbaren seriellen Schnittstellen für jedes Board auf der link:https://www.arduino.cc/reference/de/language/functions/communication/serial/[Serial-Hauptseite].
 
 Der einzige `config`-Wert, der für `Serial1` auf den Arduino Nano 33 BLE- und Nano 33 BLE Sense-Boards unterstützt wird, ist `SERIAL_8N1`.
 [%hardbreaks]

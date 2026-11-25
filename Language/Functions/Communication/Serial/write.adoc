@@ -25,7 +25,7 @@ Zum Senden der Zeichen, die die Ziffern einer Zahl darstellen, verwende die link
 
 [float]
 === Parameter
-`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite]. +
+`_Serial_`: Serielles Port-Objekt. Siehe die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:https://www.arduino.cc/reference/de/language/functions/communication/serial/[Serial-Hauptseite]. +
 `val`: Ein Wert, der als einzelnes Byte gesendet werden soll. +
 `str`: Eine Zeichenfolge, die als Folge von Bytes gesendet werden soll. +
 `buf`: Ein Array, das als Folge von Bytes gesendet werden soll. +
@@ -58,16 +58,16 @@ void setup() {
 void loop() {
   Serial.write(45); // Sende ein Byte mit dem Wert 45
 
-  int bytesSent = Serial.write("hello"); // Sende die Zeichenfolge "Hallo" und gib die Länge der Zeichenfolge zurück.
+  int bytesSent = Serial.write("hello"); // Sende die Zeichenfolge "hello" und gib die Länge der Zeichenfolge zurück.
 }
 ----
 [%hardbreaks]
 
 [float]
 === Anmerkungen und Warnungen
-Seit Arduino IDE 1.0 ist die serielle Übertragung asynchron. Wenn im Sendepuffer genügend freier Speicherplatz vorhanden ist, wird `_Serial_.write()` zurückgegeben, bevor Zeichen seriell übertragen werden.
+Die serielle Übertragung ist asynchron. Wenn im Sendepuffer genügend freier Speicherplatz vorhanden ist, wird `_Serial_.write()` zurückgegeben, bevor Zeichen seriell übertragen werden.
 Wenn der Sendepuffer voll ist, wird `_Serial_.write()` blockiert, bis im Puffer genügend Speicherplatz vorhanden ist.
-Um das Blockieren von Aufrufen von `_Serial_.write()` zu vermeiden, kannst du zunächst den freien Speicherplatz im Sendepuffer mit überprüfen: link:../availableforwrite[availableForWrite()].
+Um blockierende Aufrufe von `_Serial_.write()` zu vermeiden, kannst du zunächst mit link:../availableforwrite[availableForWrite()] prüfen, wie viel Platz im Sendepuffer frei ist.
 
 --
 // HOW-TO-USE-ABSCHNITT ENDET

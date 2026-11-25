@@ -28,13 +28,14 @@ Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, 
 
 [float]
 === Parameter
-`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite]. +
+`_Serial_`: Serielles Port-Objekt. Siehe die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:https://www.arduino.cc/reference/de/language/functions/communication/serial/[Serial-Hauptseite]. +
 `terminator`: Das zu suchende Zeichen. Erlaubte Datentypen: `char`.
 
 
 [float]
 === Rückgabewert
 Der gesamte `String`, der vom seriellen Puffer bis zum Abschlusszeichen gelesen wird.
+Wenn das Abschlusszeichen nicht gefunden wird oder vor dem Abschlusszeichen keine Daten stehen, wird `NULL` zurückgegeben.
 
 --
 // ÜBERSICHTSABSCHNITT ENDET
@@ -47,6 +48,7 @@ Der gesamte `String`, der vom seriellen Puffer bis zum Abschlusszeichen gelesen 
 [float]
 === Anmerkungen und Warnungen
 Das Abschlusszeichen wird aus dem seriellen Puffer gelöscht.
+Wenn das Abschlusszeichen nicht gefunden wird, werden alle gelesenen Zeichen verworfen.
 [%hardbreaks]
 
 --
@@ -61,7 +63,7 @@ Das Abschlusszeichen wird aus dem seriellen Puffer gelöscht.
 === Siehe auch
 
 [role="language"]
-* #SPRACHE# link:../../serial[Serial]
+* #SPRACHE# link:https://www.arduino.cc/reference/de/language/functions/communication/serial/[Serial]
 * #SPRACHE# link:../begin[begin()]
 * #SPRACHE# link:../end[end()]
 * #SPRACHE# link:../available[available()]

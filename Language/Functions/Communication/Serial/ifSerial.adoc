@@ -19,7 +19,6 @@ Gibt an, ob der angegebene serielle Port bereit ist.
 Auf den Boards mit nativem USB-Anschluss zeigt `if (Serial)` (oder `if (SerialUSB)` auf dem Due) an, ob die serielle USB-CDC-Verbindung geöffnet ist.
 Bei allen anderen Boards und den Nicht-USB-CDC-Anschlüssen wird immer `true` zurückgegeben.
 
-Dies wurde in Arduino IDE 1.0.1 eingeführt.
 [%hardbreaks]
 
 
@@ -66,6 +65,10 @@ void loop() {
   // Normal weitermachen
 }
 ----
+
+[float]
+=== Anmerkungen und Warnungen
+Diese Funktion fügt eine Verzögerung von 10 ms ein, um Situationen abzufangen, in denen die Verbindung "offen, aber noch nicht ganz bereit" ist. Verwende sie nicht in Schleifen, die sehr häufig durchlaufen werden.
 
 --
 // HOW-TO-USE-ABSCHNITT ENDET

@@ -34,6 +34,7 @@ Diese Funktion ist Teil der Stream-Klasse und wird von jeder Klasse aufgerufen, 
 [float]
 === Rückgabewert
 Der gesamte `String`, gelesen von einem Stream bis zum Abschlusszeichen.
+Wenn das Abschlusszeichen nicht gefunden wird oder vor dem Abschlusszeichen keine Daten stehen, wird `NULL` zurückgegeben.
 
 --
 // ÜBERSICHTSABSCHNITT ENDET
@@ -46,6 +47,7 @@ Der gesamte `String`, gelesen von einem Stream bis zum Abschlusszeichen.
 [float]
 === Anmerkungen und Warnungen
 Das Abschlusszeichen wird aus dem Stream entfernt.
+Wenn das Abschlusszeichen nicht gefunden wird, werden alle gelesenen Zeichen verworfen.
 [%hardbreaks]
 
 --

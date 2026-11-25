@@ -28,7 +28,7 @@ title: Serial.readBytes()
 
 [float]
 === Parameter
-`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite]. +
+`_Serial_`: Serielles Port-Objekt. Siehe die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:https://www.arduino.cc/reference/de/language/functions/communication/serial/[Serial-Hauptseite]. +
 `buffer`: Der Puffer zum Speichern der Bytes. Erlaubte Datentypen: Array von `char` oder `byte`. +
 `length`: Die Anzahl der zu lesenden Bytes. Erlaubte Datentypen: `int`.
 

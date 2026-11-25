@@ -35,7 +35,7 @@ Bei Gleitkommazahlen gibt dieser Parameter die Anzahl der zu verwendenden Dezima
 * `_Serial_.print(1.23456, 2)` gibt "1.23" aus +
 * `_Serial_.print(1.23456, 4)` gibt "1.2346"
 
-Du kannst Flash-Speicher-basierte Zeichenfolgen an `_Serial_.print()` übergeben, indem du Sie mit link:../../../../variables/utilities/progmem[F()] einschließt. Zum Beispiel:
+Du kannst Flash-Speicher-basierte Zeichenfolgen an `_Serial_.print()` übergeben, indem du sie mit link:../../../../variables/utilities/progmem[F()] einschließt. Zum Beispiel:
 
 `_Serial_.print(F("Hello World"))`
 
@@ -51,7 +51,7 @@ Um Daten ohne Umwandlung in ihre Darstellung als Zeichen zu senden, verwende lin
 
 [float]
 === Parameter
-`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite]. +
+`_Serial_`: Serielles Port-Objekt. Siehe die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:https://www.arduino.cc/reference/de/language/functions/communication/serial/[Serial-Hauptseite]. +
 `val`: Der zu druckende Wert. Erlaubte Datentypen: Beliebiger Datentyp.
 
 
@@ -103,7 +103,7 @@ void loop() {
   for (int x = 0; x < 64; x++) { // nur ein Teil des ASCII-Diagramms, ändere es entsprechend
     // Ausgabe in verschiedenen Formaten:
     Serial.print(x);       // Gibt eine ASCII-codierte Dezimalzahl aus - wie "DEC"
-    Serial.print("\t\t");  // Gibt zwei Tabs aus, um die Textlänge auszugeben
+    Serial.print("\t\t");  // Gibt zwei Tabs aus, um die Länge der Beschriftung auszugleichen
 
     Serial.print(x, DEC);  // Ausgabe als ASCII-codierte Dezimalzahl
     Serial.print("\t");    // Gibt einen Tab aus
@@ -125,7 +125,7 @@ void loop() {
 
 [float]
 === Anmerkungen und Warnungen
-Informationen zur Asynchronität von `_Serial_.println()` findest du im Abschnitt Hinweise und Warnungen von link:../write#howtouse[Serial.write()].
+Informationen zur Asynchronität von `_Serial_.print()` findest du im Abschnitt Hinweise und Warnungen von link:../write#howtouse[Serial.write()].
 
 --
 // HOW-TO-USE-ABSCHNITT ENDET

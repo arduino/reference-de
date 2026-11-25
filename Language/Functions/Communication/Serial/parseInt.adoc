@@ -14,7 +14,7 @@ title: Serial.parseInt()
 
 [float]
 === Beschreibung
-Sucht nach der nächsten gültigen Ganzzahl in der eingehenden Seriennummer. Die Funktion wird abgebrochen, wenn eine Zeitüberschreitung auftritt (siehe link:../settimeout[Serial.setTimeout()]).
+Sucht nach der nächsten gültigen Ganzzahl in den eingehenden seriellen Daten. Die Funktion wird abgebrochen, wenn eine Zeitüberschreitung auftritt (siehe link:../settimeout[Serial.setTimeout()]).
 
 `_Serial_.parseInt()` erbt von der link:../../stream[Stream]-Dienstklasse.
 
@@ -34,7 +34,7 @@ Genauer gesagt:
 
 [float]
 === Parameter
-`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Schnittstellen für jedes Board auf der link:../../serial[Serial-Hauptseite]. +
+`_Serial_`: Serielles Port-Objekt. Siehe die Liste der verfügbaren seriellen Schnittstellen für jedes Board auf der link:https://www.arduino.cc/reference/de/language/functions/communication/serial/[Serial-Hauptseite]. +
 `lookahead`: Der Modus, mit dem im Stream nach vorne nach einer Ganzzahl gesucht wird. Erlaubte Datentypen: `LookaheadMode`.
 Erlaubte `lookahead`-Werte:
 

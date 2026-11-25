@@ -14,9 +14,9 @@ title: Serial.flush()
 
 [float]
 === Beschreibung
-Wartet, bis die Übertragung der ausgehenden seriellen Daten abgeschlossen ist. (Vor Arduino 1.0 wurden stattdessen alle gepufferten eingehenden seriellen Daten entfernt.)
+Wartet, bis die Übertragung der ausgehenden seriellen Daten abgeschlossen ist.
 
-`flush()` erbt von der link:../../stream[Stream]-Dienstklasse.
+`flush()` erbt von der link:../../stream/streamflush[Stream]-Dienstklasse.
 [%hardbreaks]
 
 
@@ -27,7 +27,7 @@ Wartet, bis die Übertragung der ausgehenden seriellen Daten abgeschlossen ist. 
 
 [float]
 === Parameter
-`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite].
+`_Serial_`: Serielles Port-Objekt. Siehe die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:https://www.arduino.cc/reference/de/language/functions/communication/serial/[Serial-Hauptseite].
 
 
 [float]

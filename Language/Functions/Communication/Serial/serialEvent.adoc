@@ -14,7 +14,9 @@ title: serialEvent()
 
 [float]
 === Beschreibung
-Wird aufgerufen, wenn Daten verfügbar sind. Verwende `_Serial_.read()`, um diese Daten zu erfassen.
+Wird am Ende von link:../../../../structure/sketch/loop[`loop()`] aufgerufen, wenn Daten verfügbar sind. Verwende `_Serial_.read()`, um diese Daten zu erfassen.
+
+*Bitte beachte:* Die meisten modernen Boards unterstützen diese Methode nicht. Siehe "Anmerkungen und Warnungen" weiter unten auf dieser Seite.
 [%hardbreaks]
 
 
@@ -27,7 +29,9 @@ void serialEvent() {
    // Statement(s)
 }
 ----
-Für Boards mit zusätzlichen seriellen Anschlüssen (siehe Liste der verfügbaren seriellen Anschlüsse für jede Karte auf der link:../../serial[Serial-Hauptseite]):
+
+Die Boards Mega 2560 R3 und Due haben zusätzliche serielle Anschlüsse. Diese erreichst du, indem du die entsprechende Nummer an das Ende des Funktionsnamens anhängst.
+
 [source,arduino]
 ----
 void serialEvent1() {
@@ -46,7 +50,7 @@ void serialEvent3() {
 
 [float]
 === Parameter
-`Statement(s)`: Alle gültigen Aussagen.
+`Statement(s)`: Alle gültigen Anweisungen.
 
 
 [float]
@@ -62,11 +66,9 @@ Nichts.
 
 [float]
 === Anmerkungen und Warnungen
-`serialEvent()` funktioniert nicht mit dem Leonardo, Micro oder Yún.
+Bitte beachte, dass `serialEvent()` auf modernen Arduino-Boards *nicht funktioniert*. Die einzigen Boards, die es nachweislich unterstützen (Stand: 06.12.2023), sind *UNO R3*, *Nano*, *Mega 2560 R3* und *Due*.
 
-`serialEvent()` und `serialEvent1()` funktionieren nicht auf den Arduino-SAMD-Boards.
-
-`serialEvent()`, `serialEvent1()`, `serialEvent2()`, und `serialEvent3()` funktionieren nicht auf dem Arduino Due.
+Stattdessen kannst du die Methode link:../available[`available()`] verwenden. Die Beispiele dort zeigen, wie du serielle Daten nur dann liest, wenn sie verfügbar sind, ähnlich wie `serialEvent()` implementiert ist.
 [%hardbreaks]
 
 --

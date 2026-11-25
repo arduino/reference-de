@@ -23,8 +23,8 @@ Für Funktionen wie `print()` erbt Stream von der Print-Klasse.
 
 Zu den Bibliotheken, die Stream verwenden, gehören:
 
-* link:../serial[Serial]
-* link:https://www.arduino.cc/en/Reference/Wire[Wire]
+* link:https://www.arduino.cc/reference/de/language/functions/communication/serial/[Serial]
+* link:https://www.arduino.cc/reference/de/language/functions/communication/wire/[Wire]
 * link:https://www.arduino.cc/en/Reference/Ethernet[Ethernet]
 * link:https://www.arduino.cc/en/Reference/SD[SD]
 
@@ -66,7 +66,7 @@ link:../stream/streamsettimeout[setTimeout()]
 --
 
 [float]
-=== See also
+=== Siehe auch
 
 --
 // SIEHE-AUCH-ABSCHNITT SECTION ENDET

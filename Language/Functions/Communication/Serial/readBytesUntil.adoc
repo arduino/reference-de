@@ -18,7 +18,7 @@ title: Serial.readBytesUntil()
 
 Die Funktion bricht ab (Überprüfungen werden in dieser Reihenfolge durchgeführt), wenn die ermittelte Länge gelesen wurde, wenn die Zeit abgelaufen ist (siehe link:../settimeout[Serial.setTimeout()]) oder wenn das Terminatorzeichen erkannt wurde (In diesem Fall gibt die Funktion die Zeichen bis zum letzten Zeichen vor dem angegebenen Terminatorzeichen zurück). Das Terminatorzeichen selbst wird nicht im Puffer zurückgegeben.
 
-`_Serial_.readBytesUntil()` gibt die Anzahl der in den Puffer eingelesenen Zeichen zurück. Eine 0 bedeutet, dass keine gültigen Daten gefunden wurden.
+`_Serial_.readBytesUntil()` gibt die Anzahl der in den Puffer eingelesenen Zeichen zurück. Eine 0 bedeutet, dass der Parameter `length` \<= 0 ist, dass vor jeder anderen Eingabe eine Zeitüberschreitung aufgetreten ist oder dass vor jeder anderen Eingabe ein Terminatorzeichen gefunden wurde.
 
 `_Serial_.readBytesUntil()` erbt von der link:../../stream[Stream]-Dienstklasse.
 [%hardbreaks]
@@ -31,7 +31,7 @@ Die Funktion bricht ab (Überprüfungen werden in dieser Reihenfolge durchgefüh
 
 [float]
 === Parameter
-`_Serial_`: Serielles Port-Objekt. Die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:../../serial[Serial-Hauptseite]. +
+`_Serial_`: Serielles Port-Objekt. Siehe die Liste der verfügbaren seriellen Anschlüsse für jedes Board auf der link:https://www.arduino.cc/reference/de/language/functions/communication/serial/[Serial-Hauptseite]. +
 `character`: Das zu suchende Zeichen. Erlaubte Datentypen: `char`. +
 `buffer`: Der Puffer zum Speichern der Bytes. Erlaubte Datentypen: Array von `char` oder `byte`. +
 `length`: Die Anzahl der zu lesenden Bytes. Erlaubte Datentypen: `int`. +
@@ -50,7 +50,7 @@ Die Anzahl der Bytes, die im Puffer abgelegt wurden. Datentyp: `size_t`.
 
 [float]
 === Anmerkungen und Warnungen
-Das Abschlusszeichen wird aus dem seriellen Puffer gelöscht.
+Das Abschlusszeichen wird aus dem seriellen Puffer gelöscht, es sei denn, die Anzahl der gelesenen und in den Puffer kopierten Zeichen ist gleich `length`.
 [%hardbreaks]
 
 --
