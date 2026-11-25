@@ -18,7 +18,7 @@ subCategories: [ "Arithmetic Operators" ]
 
 [float]
 === Beschreibung
-Das einfache Gleichheitszeichen `=` in der Programmiersprache C ++ wird als Zuweisungsoperator bezeichnet.
+Das einfache Gleichheitszeichen `=` in der Programmiersprache C++ wird als Zuweisungsoperator bezeichnet.
 Es hat eine andere Bedeutung als in der Algebra, wo es eine Gleichung oder Gleichheit angibt.
 Der Zuweisungsoperator weist den Mikrocontroller an, den Wert oder Ausdruck auf der rechten Seite des Gleichheitszeichens auszuwerten und in der Variablen links vom Gleichheitszeichen zu speichern.
 [%hardbreaks]

@@ -14,7 +14,7 @@ subCategories: [ "Data Types" ]
 === Beschreibung
 Ein short ist ein 16-Bit-Datentyp.
 
-Auf allen Arduinos (ATMega und ARM-basiert) speichert ein Short einen 16-Bit-Wert (2 Byte). Dies ergibt einen Bereich von -32,768 bis 32,767 (Minimalwert von -2^15 und Maximalwert von (2^15) - 1).
+Auf allen Arduinos (ATMega und ARM-basiert) speichert ein Short einen 16-Bit-Wert (2 Byte). Dies ergibt einen Bereich von -32.768 bis 32.767 (Minimalwert von -2^15 und Maximalwert von (2^15) - 1).
 [%hardbreaks]
 
 [float]

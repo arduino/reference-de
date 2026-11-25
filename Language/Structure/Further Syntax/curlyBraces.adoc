@@ -17,14 +17,14 @@ subCategories: [ "Further Syntax" ]
 
 [float]
 === Beschreibung
-Geschweifte Klammern (auch als "geschweifte Klammern" oder "geschweifte Klammern" bezeichnet) sind ein Hauptbestandteil der Programmiersprache C ++.
+Geschweifte Klammern (auch einfach "Klammern" genannt, englisch "curly braces" oder "curly brackets") sind ein Hauptbestandteil der Programmiersprache C++.
 Sie werden in mehreren verschiedenen Konstrukten verwendet (siehe unten), was für Anfänger manchmal verwirrend sein kann.
 Auf eine öffnende geschweifte Klammer `{` muss immer eine schließende geschweifte Klammer `}` folgen.
 Dies ist eine Bedingung, die oft als ausgeglichene Klammern bezeichnet wird.
 Die Arduino IDE (Integrated Development Environment) enthält eine praktische Funktion zum Überprüfen des Gleichgewichts von geschweiften Klammern.
 Wähle einfach eine geschweifte Klammer aus oder klicke auf die Einfügemarke unmittelbar nach einer geschweiften Klammer. Der logische Begleiter wird hervorgehoben.
 [%hardbreaks]
-Anfänger und Programmierer, die aus der BASIC-Sprache zu C ++ kommen, finden Klammern oft verwirrend oder abschreckend.
+Anfänger und Programmierer, die aus der BASIC-Sprache zu C++ kommen, finden Klammern oft verwirrend oder abschreckend.
 Letztendlich aber, ersetzen dieselben geschweiften Klammern die RETURN-Anweisung in einer Subroutine (Funktion), die ENDIF-Anweisung in einer Bedingung und die NEXT-Anweisung in einer FOR-Schleife.
 [%hardbreaks]
 Unausgeglichene geschweifte Klammern können oft zu kryptischen, undurchdringlichen Compiler-Fehlern führen, die in einem großen Programm manchmal schwer zu finden sind.

@@ -18,7 +18,7 @@ subCategories: [ "Bitwise Operators" ]
 
 [float]
 === Beschreibung
-Der bitweise NOT-Operator in C ++ ist das Tilde-Zeichen `~`. Im Gegensatz zu `&` und `|` wird der bitweise NOT-Operator auf einen einzelnen Operanden rechts davon angewendet.
+Der bitweise NOT-Operator in C++ ist das Tilde-Zeichen `~`. Im Gegensatz zu `&` und `|` wird der bitweise NOT-Operator auf einen einzelnen Operanden rechts davon angewendet.
 Bitweises NOT ändert jedes Bit in sein Gegenteil: 0 wird 1 und 1 wird 0.
 [%hardbreaks]
 

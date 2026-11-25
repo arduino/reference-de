@@ -13,7 +13,7 @@ subCategories: [ "Data Types" ]
 [float]
 === Beschreibung
 Long-Variablen ohne Vorzeichen sind Variablen mit erweiterter Größe für die Nummernspeicherung und speichern 32 Bit (4 Byte).
-Im Gegensatz zu Standard-Longs werden bei unsigned Longs keine negativen Zahlen gespeichert, sodass der Bereich zwischen 0 und 4,294,967,295 (2^32 - 1) liegt.
+Im Gegensatz zu Standard-Longs werden bei unsigned Longs keine negativen Zahlen gespeichert, sodass der Bereich zwischen 0 und 4.294.967.295 (2^32 - 1) liegt.
 [%hardbreaks]
 
 [float]

@@ -67,7 +67,7 @@ int checkSensor() {
 }
 ----
 
-Das `return`-Keywort kann dazu dienen, Codeabschnitte zu testen ohne viel Code auskommentieren zu müssen.
+Das `return`-Schlüsselwort kann dazu dienen, Codeabschnitte zu testen ohne viel Code auskommentieren zu müssen.
 
 
 [source,arduino]
