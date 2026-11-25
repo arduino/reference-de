@@ -17,10 +17,10 @@ subCategories: [ "Variable Scope & Qualifiers" ]
 
 [float]
 === Beschreibung
-Das `static`-Keywort ermöglicht es, dass Variablen nur für eine Funktion sichtbar sind. Anders als lokale Variablen, die bei jedem Funktionsaufruf neu belegt werden,
+Das `static`-Schlüsselwort ermöglicht es, dass Variablen nur für eine Funktion sichtbar sind. Anders als lokale Variablen, die bei jedem Funktionsaufruf neu belegt werden,
 behalten statische Variablen deren Wert über das Funktionsende hinaus bei.
 
-Statische Variablen werden nur einmal erstellt, wenn die Funktion das erste Mal aufgerufen wird.
+Statische Variablen werden nur einmal erstellt und initialisiert, wenn die Funktion das erste Mal aufgerufen wird.
 [%hardbreaks]
 
 --
@@ -43,7 +43,7 @@ Der Code wandert zufällig zwischen 2 Endpunkten umher.
 /* RandomWalk
 * Paul Badger 2007
 * RandomWalk wandert zufällig zwischen 2 Endpunkten umher.
-* Die maximale Bewegug pro Schritt wird über "stepsize" festgelegt.
+* Die maximale Bewegung pro Schritt wird über "stepsize" festgelegt.
 * Eine statische Variable wird dazu um einen zufälligen Wert hoch- bzw.
 * heruntergezählt.
 * Das ist auch bekannt als "pink noise" und "drunken walk".
@@ -56,7 +56,6 @@ Der Code wandert zufällig zwischen 2 Endpunkten umher.
 int stepsize;
 // Variable zur Speicherung des aktuellen Ergebnisses der RandomWalk-Funktion
 int thisTime;
-int total;
 
 void setup() {
   // Initialisiere die serielle Verbindung
@@ -100,3 +99,14 @@ int randomWalk(int moveSize) {
 
 --
 // HOW-TO-USE-ABSCHNITT ENDET
+
+
+// SIEHE-AUCH-ABSCHNITT STARTET
+[#see_also]
+--
+
+[float]
+=== Siehe auch
+
+--
+// SIEHE-AUCH-ABSCHNITT ENDET

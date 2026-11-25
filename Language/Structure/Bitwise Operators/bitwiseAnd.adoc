@@ -18,7 +18,7 @@ subCategories: [ "Bitwise Operators" ]
 
 [float]
 === Beschreibung
-Der bitweise AND-Operator in C ++ ist ein einzelnes kaufmännisches Und `&`, das zwischen zwei anderen Ganzzahlausdrücken verwendet wird.
+Der bitweise AND-Operator in C++ ist ein einzelnes kaufmännisches Und `&`, das zwischen zwei anderen Ganzzahlausdrücken verwendet wird.
 Das Bitweise AND bearbeitet die Bitpositionen der umgebenden Ausdrücke unabhängig voneinander gemäß dieser Regel:
 Wenn beide Eingangsbits 1 sind, ist das resultierende Ergebnis 1, andernfalls ist das Ergebnis 0.
 [%hardbreaks]

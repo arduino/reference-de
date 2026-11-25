@@ -19,7 +19,7 @@ Fließkommazahlen können bis zu 3.4028235E+38 und bis zu -3.4028235E+38 betrage
 
 [float]
 === Syntax
-`float var=val`
+`float var = val;`
 
 
 [float]
@@ -93,7 +93,7 @@ int y = round(x);  // 3
 
 Die Gleitkomma-Mathematik ist bei Berechnungen auch viel langsamer als die Ganzzahl-Mathematik.
 Es sollte also vermieden werden, wenn beispielsweise eine Schleife für eine kritische Timing-Funktion mit Höchstgeschwindigkeit laufen muss.
-Programmierer gehen oft etwas in die Länge und konvertieren Gleitkomma-Berechnungen in Ganzzahl-Mathematik, um die Geschwindigkeit zu erhöhen.
+Programmierer nehmen oft einigen Aufwand auf sich und konvertieren Gleitkomma-Berechnungen in Ganzzahl-Mathematik, um die Geschwindigkeit zu erhöhen.
 
 --
 // HOW-TO-USE-ABSCHNITT ENDET

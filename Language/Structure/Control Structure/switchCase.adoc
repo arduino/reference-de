@@ -22,8 +22,8 @@ Im Detail vergleicht `switch case` die Variablenwerte mit denen in den `case`-St
 `case`-Statement ausgeführt.
 [%hardbreaks]
 
-Das link:../break[break]-Keywort beendet das `switch case`-Statement und wird üblicherweise am Ende jedes `case`-Statements verwendet. Wenn kein link:../break[break]-Keywort
-verwendet wird, führt `switch case` alle Statements aus, bis ein link:../break[break]-Keywort auftaucht oder das `switch case` zu Ende ist.
+Das link:../break[break]-Schlüsselwort beendet das `switch case`-Statement und wird üblicherweise am Ende jedes `case`-Statements verwendet. Wenn kein link:../break[break]-Schlüsselwort
+verwendet wird, führt `switch case` alle Statements aus, bis ein link:../break[break]-Schlüsselwort auftaucht oder das `switch case` zu Ende ist.
 [%hardbreaks]
 
 

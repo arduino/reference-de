@@ -33,7 +33,7 @@ Alle folgenden Angaben sind gültige Deklarationen für Strings.
 * Deklariere ein Array von Zeichen, ohne es wie in Str1 zu initialisieren
 * Deklariere ein Array von chars (mit einem zusätzlichen char) und der Compiler fügt das erforderliche Nullzeichen wie in Str2 hinzu
 * Füge das Nullzeichen explizit hinzu, Str3
-* Initialisiere mit einer `String`-Konstante in Anführungszeichen. Der Compiler passt die Größe des Arrays an die `String`-Konstante und fügt ein abschließendes Nullzeichen an, Str4
+* Initialisiere mit einer Zeichenkettenkonstante in Anführungszeichen. Der Compiler passt die Größe des Arrays an die Zeichenkettenkonstante und fügt ein abschließendes Nullzeichen an, Str4
 * Initialisiere das Array mit einer expliziten Größen- und Zeichenfolgekonstante, Str5
 * Initialisiere das Array und lasse zusätzlichen Platz für eine größere Zeichenfolge, Str6
 
@@ -47,7 +47,7 @@ Aus diesem Grund müssen Str2 und Str5 acht Zeichen haben, obwohl "Arduino" nur 
 Str4 wird automatisch in acht Zeichen umgewandelt, eines für die zusätzliche Null. In Str3 haben wir das Nullzeichen (geschrieben als '\0') selbst explizit eingefügt.
 
 Beachte, dass es möglich ist, eine Zeichenfolge ohne ein abschließendes Nullzeichen zu verwenden (z. B. wenn du die Länge von Str2 mit sieben statt mit acht angegeben hättest).
-Dadurch werden die meisten Funktionen, die Zeichenfolgen verwenden, nicht mehr richtig funktionieren.
+Dadurch werden die meisten Funktionen, die Zeichenfolgen verwenden, nicht mehr richtig funktionieren, daher solltest du das nicht absichtlich tun.
 Wenn du feststellst, dass sich etwas merkwürdig verhält (mit Zeichen, die sich nicht in der Zeichenfolge befinden), kann dies jedoch das Problem sein.
 
 *Einfache oder doppelte Anführungszeichen?*
@@ -67,13 +67,13 @@ char myString[] = "This is the first line"
 
 *Arrays von Strings*
 
-Wenn du mit großen Textmengen arbeitest, z. B. bei einem Projekt mit LCD-Display, ist es oft praktisch, ein `String`-Array zu erstellen.
+Wenn du mit großen Textmengen arbeitest, z. B. bei einem Projekt mit LCD-Display, ist es oft praktisch, ein Array von Strings zu erstellen.
 Da Strings selbst Arrays sind, handelt es sich eigentlich um ein zweidimensionales Array.
 
 
 In dem folgenden Code zeigt das Sternchen hinter dem Datentyp `link:../char[char]` "`char*`" an, dass dies ein Array von "`Zeigern`" ist.
-Alle Array-Namen sind eigentlich Zeiger, daher ist dies zum Erstellen eines Arrays aus Arrays erforderlich. Zeiger sind eine der eher esoterischen Komponenten von C ++,
-die für Anfänger schwer verständlich sind, aber es ist nicht notwendig,Zeiger im Detail zu verstehen, um sie hier effektiv zu verwenden.
+Alle Array-Namen sind eigentlich Zeiger, daher ist dies zum Erstellen eines Arrays aus Arrays erforderlich. Zeiger sind eine der eher esoterischen Komponenten von C++,
+die für Anfänger schwer verständlich sind, aber es ist nicht notwendig, Zeiger im Detail zu verstehen, um sie hier effektiv zu verwenden.
 
 --
 // ÜBERSICHTSABSCHNITT ENDET

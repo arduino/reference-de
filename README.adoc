@@ -7,7 +7,7 @@ Alle Referenz-Dateien existieren im AsciiDoc format.
 Danke, dass du die Zeit findest, zum Arduino-Projekt beizutragen. Das hilft der ganzen Arduino Community sehr weiter. Wenn du mehr lesen willst, wie du deinen Beitrag leisten kannst, sieh dir https://create.arduino.cc/projecthub/Arduino_Genuino/contribute-to-the-arduino-reference-af7c37[dieses Schritt-für-Schritt-Tutorial] an.
 
 == Inhalte erstellen und editieren
-Wenn du neuen Inhalt bereitstellen willst, erstelle eine neue Datei (Mit deinem Lieblings-Code-Editor) und speichere die Datei als .asdoc-Format.
+Wenn du neuen Inhalt bereitstellen willst, erstelle eine neue Datei (Mit deinem Lieblings-Code-Editor) und speichere die Datei als .adoc-Format.
 Bitte benutze keine Klammern oder andere Sonderzeichen im Dateinamen.
 Unter https://raw.githubusercontent.com/arduino/reference-de/master/AsciiDoc_sample/AsciiDoc_Dictionary/AsciiDoc_Template-Dictionary.adoc[`reference-de/AsciiDoc_sample/AsciiDoc_Dictionary`] findest du einen Überblick über die AsciiDoc-Syntax.
 Diese schließt Titel, Text, Links, Bilder, Tabellen, Programmcode und viele andere eingebettete Typen (Videos, Präsentationen, Audio und Code) ein. Eine Vorschau dazu findest du https://www.arduino.cc/reference/de/asciidoc_sample/asciidoc_dictionary/asciidoc_template-dictionary/[hier].
@@ -15,7 +15,7 @@ Diese schließt Titel, Text, Links, Bilder, Tabellen, Programmcode und viele and
 Wenn du zur Arduino-Referenz Beitrag leisten willst oder Inhalte ändern, kannst du 2 Templates in reference-de/AsciiDoc_sample/Reference_Terms finden:
 
 * Nutze https://raw.githubusercontent.com/arduino/reference-de/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Single_Entity.adoc[`AsciiDoc_Template-Single_Entity.adoc`] (Gerenderte Version https://www.arduino.cc/reference/de/asciidoc_sample/reference_terms/asciidoc_template-single_entity/[hier]) für Begriffe wie link:http://arduino.cc/de/Reference/AnalogWrite[analogWrite].
-* Nutze https://raw.githubusercontent.com/arduino/reference-de/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Parent_Of_Entities.adoc[`AsciiDoc_Template-Parent_Of_Entities.adoc`] (Gerenderte Version https://www.arduino.cc/reference/de/asciidoc_sample/reference_terms/asciidoc_template-parent_of_entities/[hier]) für Gruppen oder Funktionen wie link:http://arduino.cc/de/Reference/Serial[Serial].
+* Nutze https://raw.githubusercontent.com/arduino/reference-de/master/AsciiDoc_sample/Reference_Terms/AsciiDoc_Template-Parent_Of_Entities.adoc[`AsciiDoc_Template-Parent_Of_Entities.adoc`] (Gerenderte Version https://www.arduino.cc/reference/de/asciidoc_sample/reference_terms/asciidoc_template-parent_of_entities/[hier]) für Gruppen von Funktionen wie link:http://arduino.cc/de/Reference/Serial[Serial].
 
 Bitte beachte, dass jede Datei in der Referenz mindestens eine Beschreibung, Beispielcode und Links zu anderen relevanten Informationen enthält (Siehe Also Abschnitt).
 
@@ -56,6 +56,6 @@ Im **Language**-Ordner folgt der Dateibaum der gleichen Struktur wie die link:ht
 
 === Lizenz
 
-Bitte beachte, dass dein Beitrag zur Arduino-Referenz unter der Creative Commons Attribution-Share Alike 3.0 License lizensiert wird. Siehe https://creativecommons.org/licenses/by-sa/3.0/deed.de
+Bitte beachte, dass dein Beitrag zur Arduino-Referenz unter der Creative Commons Attribution-Share Alike 3.0 License lizenziert wird. Siehe https://creativecommons.org/licenses/by-sa/3.0/deed.de
 
 image:https://i.creativecommons.org/l/by-sa/3.0/88x31.png[Creative Commons Lizenzvertrag, title="Creative Commons Lizenzvertrag"] Dieses Werk ist lizenziert unter einer link:https://creativecommons.org/licenses/by-sa/3.0/deed.de[Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 3.0 Unported Lizenz].

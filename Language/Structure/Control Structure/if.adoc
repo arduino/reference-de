@@ -90,7 +90,7 @@ Die Statements in der `condition` müssen dabei mindestens einen der Operatoren 
  x <= y (x ist kleiner als oder gleich zu y)
  x >= y (x ist größer als oder gleich zu y)
 
-Achtung: Nicht zufällig ein einzelnes `=`-Zeichen in der Bedingung verwenden (z.B. `if (x = 10)`). Ein einfaches `=`-Zeichen ist ein Zuweisungsoperator und setzt `x` auf 10.
+Achtung: Nicht versehentlich ein einzelnes `=`-Zeichen in der Bedingung verwenden (z.B. `if (x = 10)`). Ein einfaches `=`-Zeichen ist ein Zuweisungsoperator und setzt `x` auf 10.
 Benutze stattdessen `==` (z.B. `if (x == 10)`). Dies vergleicht die Werte von `x` und der Konstante 10. Das 2. Beispiel wird nur `true`, wenn `x` genau gleich 10 ist, das
 1. Statement wird immer `true`.
  

@@ -1,8 +1,8 @@
 ---
-title: Titel der Entität
+title: Entity Title
 title_expanded: Weniger als oder gleich
 categories: [ "Structure" ]
-subCategories: [ "Name der Unterkategorie" ]
+subCategories: [ "Subcategory Name" ]
 ---
 // ARDUINO SPRACHE REFERENCE TAG (oben))   ►►►►► IMMER IN DIE DATEI EINFÜGEN ◄◄◄◄◄
 // Titel wird im Index aller Referenzbegriffe angezeigt
@@ -23,10 +23,10 @@ subCategories: [ "Name der Unterkategorie" ]
 
 [float]
 === Beschreibung
-// Beschreiben, wofür diese Gruppe von Referenzbegriffen verwendet wird.	►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
+// Beschreibe, was dieser Referenzbegriff tut und wofür er verwendet wird.	►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
 Schreibt einen analogen Wert (http://arduino.cc/en/Tutorial/PWM[PWM wave]) in einen Pin.
 Kann verwendet werden, um eine LED mit unterschiedlichen Helligkeiten zu beleuchten oder einen Motor mit verschiedenen Geschwindigkeiten zu betreiben.
-Nach einem Aufruf von `analogWrite()` erzeugt der Pin bis zum nächsten Aufruf von `analogWrite()` (oder einem Aufruf von `digitalRead() 'oder` digitalWrite()) eine stetige Rechteckwelle des angegebenen Arbeitszyklus auf dem gleichen Pin).
+Nach einem Aufruf von `analogWrite()` erzeugt der Pin bis zum nächsten Aufruf von `analogWrite()` (oder einem Aufruf von `digitalRead()` oder `digitalWrite()` auf demselben Pin) eine stetige Rechteckwelle mit dem angegebenen Tastgrad.
 Die Frequenz des PWM-Signals an den meisten Pins beträgt ungefähr 490 Hz. Bei den Uno- und ähnlichen Boards haben die Pins 5 und 6 eine Frequenz von ungefähr 980 Hz.
 [%hardbreaks]
 
@@ -43,9 +43,9 @@ image::http://arduino.cc/en/uploads/Main/ArduinoUno_R3_Front_450px.jpg[caption="
 [float]
 === Parameter
 // Liste alle verfügbaren Parameter auf, beschreibe sie bitte einzeln und füge den Datentyp hinzu (z.B. int, bool, char, String, float, long, double...)  ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
-`pin`: Die Nummer des Pins, auf den geschrieben werden soll. Erlaubte Datentypen:: `int`.
+`pin`: Die Nummer des Pins, auf den geschrieben werden soll. Erlaubte Datentypen: `int`.
 
-`value`: Das Tastverhältnis zwischen 0 (immer aus) und 255 (immer an). Erlaubte Datentypen:: `int`.
+`value`: Der Tastgrad zwischen 0 (immer aus) und 255 (immer an). Erlaubte Datentypen: `int`.
 
 
 [float]
@@ -82,7 +82,7 @@ void setup() {
 }
 
 void loop() {
-  val = analogRead(analogPin);   // Lese den Eingangspin
+  val = analogRead(analogPin);   // Lies den Eingangspin
   analogWrite(ledPin, val / 4);  // AnalogRead-Werte gehen von 0 bis 1023, AnalogWrite-Werte von 0 bis 255
 }
 ----

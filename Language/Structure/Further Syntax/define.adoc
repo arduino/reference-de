@@ -18,12 +18,12 @@ subCategories: [ "Further Syntax" ]
 
 [float]
 === Beschreibung
-`#define` ist eine nützliche C ++ - Komponente, mit der der Programmierer einem konstanten Wert einen Namen geben kann, bevor das Programm kompiliert wird.
+`#define` ist eine nützliche C++-Komponente, mit der der Programmierer einem konstanten Wert einen Namen geben kann, bevor das Programm kompiliert wird.
 Definierte Konstanten in Arduino belegen keinen Programmspeicherplatz auf dem Chip.
 Der Compiler ersetzt zur Kompilierzeit Verweise auf diese Konstanten durch den definierten Wert.
 [%hardbreaks]
 
-Dies kann jedoch einige unerwünschte Nebenwirkungen haben, wenn zum Beispiel ein konstanter Name, der #defined wurde, in einer anderen Konstanten- oder Variablenname enthalten ist.
+Dies kann jedoch einige unerwünschte Nebenwirkungen haben, wenn zum Beispiel ein konstanter Name, der #defined wurde, in einem anderen Konstanten- oder Variablennamen enthalten ist.
 In diesem Fall würde der Text durch die #definierte Nummer (oder den Text) ersetzt.
 [%hardbreaks]
 
@@ -63,14 +63,14 @@ Generell sollte das `link:../../../variables/variable-scope-qualifiers/const[con
 
 [float]
 === Anmerkungen und Warnungen
-Es gibt kein Semikolon nach der Anweisung #define. Wenn eines hinzufügt wird, so wirft der Compiler weiter unten auf der Seite kryptische Fehler aus.
+Es gibt kein Semikolon nach der Anweisung #define. Wenn eines hinzugefügt wird, so wirft der Compiler weiter unten auf der Seite kryptische Fehler aus.
 
 [source,arduino]
 ----
 #define ledPin 3;    // Das ist ein Fehler
 ----
 
-Wenn ein Gleichheitszeichen nach der Anweisung #define einfügt wird, wird ebenfalls ein kryptischer Compiler-Fehler weiter unten auf der Seite generiert.
+Wenn ein Gleichheitszeichen nach der Anweisung #define eingefügt wird, wird ebenfalls ein kryptischer Compiler-Fehler weiter unten auf der Seite generiert.
 
 [source,arduino]
 ----

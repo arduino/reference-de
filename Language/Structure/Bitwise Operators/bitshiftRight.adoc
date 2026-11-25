@@ -24,7 +24,7 @@ Der Right-Shift-Operator `>>` bewirkt, dass die Bits des linken Operanden um die
 
 [float]
 === Syntax
-`variable >> number_of_bits`
+`variable >> number_of_bits;`
 
 
 [float]

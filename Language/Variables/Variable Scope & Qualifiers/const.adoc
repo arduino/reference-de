@@ -17,7 +17,7 @@ subCategories: [ "Variable Scope & Qualifiers" ]
 
 [float]
 === Beschreibung
-Das `const`-Keywort steht für Konstanten. Es ist ein Variablenkennzeichner, der das Verhalten der Variable verändert. In diesem Fall wird die Variable "_read-only_".
+Das `const`-Schlüsselwort steht für Konstanten. Es ist ein Variablenkennzeichner, der das Verhalten der Variable verändert. In diesem Fall wird die Variable "_read-only_".
 Das bedeutet, dass die Variable wie alle anderen Variablen des gleichen Typs benutzt werden kann, aber dass der Wert unveränderlich ist. Wenn du der Variable einen
 neuen Wert zuweist, bekommst du einen Compiler-Fehler.
 
@@ -51,7 +51,7 @@ float x;
 // ....
 
 x = pi * 2; // Das ist erlaubt.
-pi = 7;     // Illegal-Konstante darf/kann nicht verändert werden.
+pi = 7;     // Nicht erlaubt: Eine Konstante kann nicht verändert werden.
 ----
 [%hardbreaks]
 

@@ -34,9 +34,9 @@ for (initialization; condition; increment) {
 [float]
 === Parameter
 `initialization`: Passiert genau einmal am Anfang der Schleife. +
-`condition`: Wird bei jedem Schleifendurchlauf getestet. Wenn sie `link:../../../variables/constants/truefalse[true]` ist, werden alle Statements in den Klammern ausgeführt und `increment` hochgezählt. Wenn
+`condition`: Wird bei jedem Schleifendurchlauf getestet. Wenn sie `link:../../../variables/constants/truefalse[true]` ist, werden alle Statements in den Klammern und `increment` ausgeführt. Wenn
 			 die `condition` `link:../../../variables/constants/truefalse[false]` ist, wird die Schleife abgebrochen. +
-`increment`: Wird hochgezählt, wenn die `condition` link:../../../variables/constants/truefalse[`true`] ist.
+`increment`: Wird bei jedem Schleifendurchlauf ausgeführt, wenn die `condition` link:../../../variables/constants/truefalse[`true`] ist.
 
 
 [float]

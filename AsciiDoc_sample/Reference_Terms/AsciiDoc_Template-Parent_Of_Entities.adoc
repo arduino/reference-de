@@ -1,7 +1,7 @@
 ---
-title: Übergeordneter Titel der Entität
+title: Parent of Entity Title
 categories: [ "Functions" ]
-subCategories: [ "Name der Unterkategorie" ]
+subCategories: [ "Subcategory Name" ]
 ---
 // ARDUINO SPRACHE REFERENCE TAG (oben)   ►►►►► IMMER IN DIE DATEI EINFÜGEN ◄◄◄◄◄
 // Titel wird im Index aller Referenzbegriffe angezeigt
@@ -23,22 +23,22 @@ subCategories: [ "Name der Unterkategorie" ]
 [float]
 === Beschreibung
 // Beschreiben, wofür diese Gruppe von Referenzbegriffen verwendet wird. ►►►►► DIESER ABSCHNITT IST OBLIGATORISCH ◄◄◄◄◄
-Wird für die Kommunikation zwischen dem Arduino-Board und einem Computer oder underen Geräten verwendet. Alle Arduino-Karten haben mindestens eine serielle Schnittstelle (auch UART oder USART genannt): Seriell.
+Wird für die Kommunikation zwischen dem Arduino-Board und einem Computer oder anderen Geräten verwendet. Alle Arduino-Karten haben mindestens eine serielle Schnittstelle (auch UART oder USART genannt): Serial.
 Der Arduino kommuniziert über die digitalen Pins 0 (RX) und 1 (TX) sowie mit dem Computer über USB. Wenn diese Funktionen verwendet werden, können daher nicht die Pins 0 und 1 für die digitale Eingabe oder
 Ausgabe verwendet werden. +
 Du kannst den eingebauten seriellen Monitor der Arduino-Umgebung verwenden, um mit einem Arduino-Board zu kommunizieren. Klicke in der Symbolleiste auf die Schaltfläche für den seriellen Monitor,
 und wähle dieselbe Baudrate aus, die für den Aufruf von `begin()` verwendet wurde.
 [%hardbreaks]
-Der *Arduino Mega* hat drei zusätzliche serielle Ports: `Seriell1` auf den Pins 19 (RX) und 18 (TX), `Seriell2` auf den Pins 17 (RX) und 16 (TX), `Seriall3` auf den Pins 15 (RX) und 14 (TX).
+Der *Arduino Mega* hat drei zusätzliche serielle Ports: `Serial1` auf den Pins 19 (RX) und 18 (TX), `Serial2` auf den Pins 17 (RX) und 16 (TX), `Serial3` auf den Pins 15 (RX) und 14 (TX).
 Um diese Pins für die Kommunikation mit dem PC zu verwenden, benötigst du einen zusätzlichen USB-zu-Seriell-Adapter, da sie nicht an den USB-an-Seriell-Adapter des Mega angeschlossen sind.
 Um mit einem externen seriellen TTL-Gerät zu kommunizieren, verbinde den TX-Pin mit dem RX-Pin des Geräts, den RX mit dem TX-Pin des Geräts und die Masse des Mega mit der Masse des Geräts.
 (Verbinde diese Pins nicht direkt mit einer seriellen RS232-Schnittstelle. Diese arbeiten mit +/- 12 V und können das Arduino-Board beschädigen.)
 [%hardbreaks]
-Der *Arduino DUE* verfügt über drei zusätzliche serielle 3.3V-TTL-Ports: `Seriall1` auf den Pins 19 (RX) und 18 (TX); `Seriell2` auf den Pins 17 (RX) und 16 (TX), `Seriall3` auf den Pins 15 (RX) und 14 (TX).
+Der *Arduino DUE* verfügt über drei zusätzliche serielle 3.3V-TTL-Ports: `Serial1` auf den Pins 19 (RX) und 18 (TX); `Serial2` auf den Pins 17 (RX) und 16 (TX), `Serial3` auf den Pins 15 (RX) und 14 (TX).
 Die Pins 0 und 1 sind auch mit den entsprechenden Pins des seriellen ATmega16U2-USB-zu-TTL-Chips verbunden, der mit dem USB-Debug-Port verbunden ist.
 Zusätzlich gibt es einen nativen seriellen USB-Port auf dem SAM3X chip (SerialUSB).
 [%hardbreaks]
-Das *Arduino Leonardo* Board benutzt `Seriall1` zur Kommunikation über TTL (5V) seriell auf den Pins 0 (RX) und 1 (TX). `Seriell1` ist für die USB-CDC-Kommunikation reserviert.
+Das *Arduino Leonardo* Board benutzt `Serial1` zur Kommunikation über TTL (5V) seriell auf den Pins 0 (RX) und 1 (TX). `Serial` ist für die USB-CDC-Kommunikation reserviert.
 Weitere Informationen findest du auf der Leonardo-Einführungsseite und der Hardware-Seite.
 
 --

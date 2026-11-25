@@ -27,14 +27,14 @@ Im Detail zeigt `volatile` dem Compiler, dass er die Variable aus dem RAM und ni
 in den Registern ungenau sein.
 
 Eine Variable sollte als `volatile` deklariert werden, wenn sie von irgendwo anders geändert werden kann außer in dem Codeteil, in dem sie auftaucht. Beispiele dafür sind
-Threads, die parallel ausgeführt werden. Im Arduino kann das nur bei Interrupts vorkommen, in sogennanten Interrupt Service Routinen.
+Threads, die parallel ausgeführt werden. Im Arduino kann das nur bei Interrupts vorkommen, in sogenannten Interrupt Service Routinen.
 [%hardbreaks]
 
 [float]
 === int oder long volatile Variablen
 Wenn die Variable größer als Byte ist (also z.B. ein 16-Bit-Integer oder ein 32-Bit-Long), kann der Mikrocontroller sie nicht in einem Durchgang lesen, da es ein
-8-Bit-Mikrocontroller ist. Das bedeutet, das während das Hauptprogramm die ersten 8 Bit der Variable liest, kann der Interrupt bereits die zweiten 8 Bit geändert haben.
-Das kann zufällig und unvorhersehbare Ergebnisse liefern.
+8-Bit-Mikrocontroller ist. Das bedeutet, dass während das Hauptprogramm die ersten 8 Bit der Variable liest, kann der Interrupt bereits die zweiten 8 Bit geändert haben.
+Das kann zufällige und unvorhersehbare Ergebnisse liefern.
 
 Gegenmaßnahme:
 
@@ -44,7 +44,7 @@ Es gibt mehrere Möglichkeiten, das zu tun:
 
 1. #SPRACHE# link:../../../functions/interrupts/nointerrupts[noInterrupts]
 
-2. Das ATOMIC_BLOCK-Makro. Atomare Operationen sind einzelne MCU-Operationen-Die kleinste mögliche Einheit.
+2. Das ATOMIC_BLOCK-Makro. Atomare Operationen sind einzelne MCU-Operationen, die kleinste mögliche Einheit.
 
 [%hardbreaks]
 --
@@ -93,8 +93,8 @@ void toggle() {
 
 ----
 
-Verwenden Sie das Makro `ATOMIC_BLOCK`, um auf eine Variable zuzugreifen, deren Größe größer ist als der 8-Bit-Datenbus des Mikrocontrollers.
-Das Makro stellt sicher, dass die Variable in einer atomaren Operation gelesen wird, d.H. ihr Inhalt kann nicht geändert werden, während sie gelesen wird.
+Verwende das Makro `ATOMIC_BLOCK`, um auf eine Variable zuzugreifen, deren Größe größer ist als der 8-Bit-Datenbus des Mikrocontrollers.
+Das Makro stellt sicher, dass die Variable in einer atomaren Operation gelesen wird, d. h. ihr Inhalt kann nicht geändert werden, während sie gelesen wird.
 
 [source,arduino]
 ----

@@ -52,7 +52,7 @@ int z = x ^ y; // Binär: 0110, oder dezimal 6
 ----
 [%hardbreaks]
 
-Der ^ -Operator wird häufig verwendet, um einige der Bits in einem ganzzahligen Ausdruck umzuschalten (d. H. Von 0 auf 1 oder von 1 auf 0 zu wechseln).
+Der ^ -Operator wird häufig verwendet, um einige der Bits in einem ganzzahligen Ausdruck umzuschalten (d. h. von 0 auf 1 oder von 1 auf 0 zu wechseln).
 Wenn in einer bitweisen XOR-Operation eine 1 im Maskenbit vorhanden ist, wird dieses Bit invertiert.
 Wenn es eine 0 gibt, wird das Bit nicht invertiert und bleibt gleich.
 

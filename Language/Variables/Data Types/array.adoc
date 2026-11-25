@@ -13,7 +13,7 @@ subCategories: [ "Data Types" ]
 [float]
 === Beschreibung
 Ein Array ist eine Sammlung von Variablen, auf die mit einer Indexnummer zugegriffen wird.
-Arrays in der Programmiersprache C ++, in der Arduino-Skizzen geschrieben sind, sind zwar kompliziert, aber die Verwendung einfacher Arrays ist relativ unkompliziert.
+Arrays in der Programmiersprache C++, in der Arduino-Sketches geschrieben sind, sind zwar kompliziert, aber die Verwendung einfacher Arrays ist relativ unkompliziert.
 [float]
 === Array erstellen / deklarieren
 
@@ -51,13 +51,13 @@ int myArray[10]={9, 3, 2, 4, 3, 2, 7, 8, 9, 11};
 // myArray[9] enthält 11
 // myArray[10] ist ungültig und enthält zufällige Informationen (andere Speicheradresse)
 ----
-Aus diesem Grund solltet du beim Zugriff auf Arrays vorsichtig sein.
-Beim Zugriff auf das Ende eines Arrays (mit einer Indexnummer, die größer ist als die von dir deklarierte Arraygröße - 1), wird aus dem Speicher gelesen, der für andere Zwecke verwendet wird.
+Aus diesem Grund solltest du beim Zugriff auf Arrays vorsichtig sein.
+Beim Zugriff über das Ende eines Arrays hinaus (mit einer Indexnummer, die größer ist als die von dir deklarierte Arraygröße - 1), wird aus dem Speicher gelesen, der für andere Zwecke verwendet wird.
 Das Lesen an diesen Orten wird wahrscheinlich nicht viel bewirken, außer ungültige Daten liefern. Das Schreiben in zufällige Speicherorte ist definitiv eine schlechte Idee und
 kann oft zu unglücklichen Ergebnissen wie Abstürzen oder Programmstörungen führen. Dies kann auch ein schwieriger Fehler sein.
 [%hardbreaks]
 
-Im Gegensatz zu BASIC oder JAVA überprüft der C ++ - Compiler nicht, ob der Array-Zugriff innerhalb der zulässigen Grenzen der von Ihnen angegebenen Array-Größe liegt.
+Im Gegensatz zu BASIC oder JAVA überprüft der C++-Compiler nicht, ob der Array-Zugriff innerhalb der zulässigen Grenzen der von dir angegebenen Array-Größe liegt.
 [%hardbreaks]
 
 [float]

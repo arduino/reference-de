@@ -18,7 +18,7 @@ subCategories: [ "Bitwise Operators" ]
 
 [float]
 === Beschreibung
-Der bitweise OR-Operator in C ++ ist das vertikale Balkensymbol |.
+Der bitweise OR-Operator in C++ ist das vertikale Balkensymbol |.
 Wie der Operator & auch berechnet | jedes Bit in den beiden umgebenden Integer-Ausdrücken unabhängig.
 Das bitweise ODER von zwei Bits ist 1, wenn eines oder beide der Eingangsbits 1 sind, andernfalls 0.
 [%hardbreaks]

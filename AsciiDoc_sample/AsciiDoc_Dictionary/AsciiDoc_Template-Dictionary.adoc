@@ -7,7 +7,7 @@
 
 
 // GENERELLE RICHTLINIEN
-// Das [Leerzeichen]+ sendet Text in eine neue Zeile, d.h. es erzeugt in der HTML-Ausgabe ein <br>, z. B .:
+// Das [Leerzeichen]+ sendet Text in eine neue Zeile, d.h. es erzeugt in der HTML-Ausgabe ein <br>, z. B.:
 // Dies ist ein Text. +
 // Dies ist ein anderer Text in einer neuen Zeile
 
@@ -32,9 +32,9 @@
 [#name_of_id]
 --
 
-// Füge hier Ihren Inhalt hinzu.
+// Füge hier deinen Inhalt hinzu.
 
-// Wenn es sich bei Ihrer Ausgabe um eine HTML-Datei handelt, erstellt dieses Tag ein Wrapper-Div mit der angegebenen ID, z. B.:
+// Wenn es sich bei deiner Ausgabe um eine HTML-Datei handelt, erstellt dieses Tag ein Wrapper-Div mit der angegebenen ID, z. B.:
 // <div id="name_of_id" class="openblock"></div>
 
 --
@@ -68,9 +68,9 @@ _Dies ist kursiver <em> Text_ +
 '''
 
 // LINKS
-// Bitte beachte, dass alle externen Links in einem neuen Fenster/Tab geöffnet werden müssen, indem du ^ vor den letzten eckigen Klammern hinzufügen
+// Bitte beachte, dass alle externen Links in einem neuen Fenster/Tab geöffnet werden müssen, indem du ^ vor den letzten eckigen Klammern hinzufügst
 http://arduino.cc[Das ist ein externer <a href> Link^] in einem neuen Tab +
-link:../index.html[Das ist eine relativer <a href> Link] +
+link:../index.html[Das ist ein relativer <a href> Link] +
 mailto:webmaster@arduino.cc[Das ist ein E-Mail Link]
 [%hardbreaks]
 
@@ -86,7 +86,7 @@ mailto:webmaster@arduino.cc[Das ist ein E-Mail Link]
 [%hardbreaks]
 
 . Das
-. is
+. ist
 .. eine
 .. ge-
 ... ord-
