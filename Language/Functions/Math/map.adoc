@@ -53,7 +53,7 @@ Bruchreste werden abgeschnitten und nicht gerundet oder gemittelt.
 
 [float]
 === Rückgabewert
-Den zugeordneten Wert.
+Den zugeordneten Wert. Datentyp: `long`.
 
 --
 // ÜBERSICHTSABSCHNITT ENDET
@@ -113,6 +113,15 @@ Wenn also für das Projekt genaue Berechnungen erforderlich sind (z. B. eine auf
 
 [float]
 === Siehe auch
+
+[role="language"]
+* #SPRACHE# link:../abs[abs()]
+* #SPRACHE# link:../constrain[constrain()]
+* #SPRACHE# link:../max[max()]
+* #SPRACHE# link:../min[min()]
+* #SPRACHE# link:../pow[pow()]
+* #SPRACHE# link:../sq[sq()]
+* #SPRACHE# link:../sqrt[sqrt()]
 
 --
 // SIEHE-AUCH-ABSCHNITT SECTION ENDET

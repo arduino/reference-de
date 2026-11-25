@@ -45,7 +45,34 @@ Berechnet den absoluten Wert einer Zahl.
 // HOW-TO-USE-ABSCHNITT STARTET
 [#howtouse]
 --
+[float]
+=== Beispielcode
+// Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu.   ►►►►► DIESER ABSCHNITT IST VERPFLICHTEND ◄◄◄◄◄
+Gibt den absoluten Wert der Variablen `x` auf dem seriellen Monitor aus.
 
+[source,arduino]
+----
+void setup() {
+  Serial.begin(9600);
+  while (!Serial) {
+    ;  // Wartet, bis die serielle Schnittstelle verbunden ist. Wird nur für den nativen USB-Anschluss benötigt.
+  }
+  int x = 42;
+  Serial.print("The absolute value of ");
+  Serial.print(x);
+  Serial.print(" is ");
+  Serial.println(abs(x));
+  x = -42;
+  Serial.print("The absolute value of ");
+  Serial.print(x);
+  Serial.print(" is ");
+  Serial.println(abs(x));
+}
+
+void loop() {
+}
+----
+[%hardbreaks]
 
 [float]
 === Anmerkungen und Warnungen
@@ -71,6 +98,15 @@ a++;    // Andere Mathematik außerhalb der Funktion benutzen
 
 [float]
 === Siehe auch
+
+[role="language"]
+* #SPRACHE# link:../constrain[constrain()]
+* #SPRACHE# link:../map[map()]
+* #SPRACHE# link:../max[max()]
+* #SPRACHE# link:../min[min()]
+* #SPRACHE# link:../pow[pow()]
+* #SPRACHE# link:../sq[sq()]
+* #SPRACHE# link:../sqrt[sqrt()]
 
 --
 // SIEHE-AUCH-ABSCHNITT SECTION ENDET

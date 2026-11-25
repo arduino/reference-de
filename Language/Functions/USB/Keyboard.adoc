@@ -19,11 +19,28 @@ subCategories: [ "USB" ]
 Die `keyboard`-Funktionen ermöglichen es, 32u4- oder SAMD-micro-basiertend boards, Tastenanschläge an einen verbundenen Computer über dessen nativen USB-Port zu senden.
 [%hardbreaks]
 *Anmerkung: Nicht jedes mögliche ASCII-Zeichen kann eingegeben werden. Besonders die Nichtdruckbaren Zeichen können nicht über die Bilbiothek eingegeben werden.* +
-Die Bibliothek unterstützt die Verwendung von Hotkey. Hotkeys verändern das Verhalten anderer Tasten, wenn diese gleichzeitig gedrückt werden.
+Die Bibliothek unterstützt die Verwendung von Modifikatortasten. Modifikatortasten verändern das Verhalten anderer Tasten, wenn diese gleichzeitig gedrückt werden.
 link:../keyboard/keyboardmodifiers[Siehe hier] für weitere Informationen über die unterstützten Tasten und deren Benutzung.
 
 --
 // ÜBERSICHTSABSCHNITT ENDET
+
+[float]
+=== Kompatible Hardware
+HID wird von den folgenden Boards unterstützt:
+[options="header"]
+|=================================================================================================
+| Board                                                                | Unterstützte Pins
+| link:https://docs.arduino.cc/hardware/leonardo[Leonardo]             | Alle digitalen und analogen Pins
+| link:https://docs.arduino.cc/hardware/micro[Micro]                   | Alle digitalen und analogen Pins
+| link:https://docs.arduino.cc/hardware/due[Due]                       | Alle digitalen und analogen Pins
+| link:https://docs.arduino.cc/hardware/zero[Zero]                     | Alle digitalen und analogen Pins
+| link:https://docs.arduino.cc/hardware/uno-r4-minima[UNO R4 Minima]   | Alle digitalen und analogen Pins
+| link:https://docs.arduino.cc/hardware/uno-r4-wifi[UNO R4 WiFi]       | Alle digitalen und analogen Pins
+| link:https://docs.arduino.cc/hardware/giga-r1-wifi[Giga R1]          | Alle digitalen und analogen Pins
+| link:https://docs.arduino.cc/hardware/nano-esp32[Nano ESP32]         | Alle digitalen und analogen Pins
+| link:https://docs.arduino.cc/#mkr-family[MKR Family]                 | Alle digitalen und analogen Pins
+|=================================================================================================
 
 [float]
 === Anmerkungen und Warnungen

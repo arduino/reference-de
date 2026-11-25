@@ -35,7 +35,7 @@ Dies kann durch Aufrufen von `randomSeed()` mit einer festen Zahl erreicht werde
 
 [float]
 === Parameter
-`seed` - eine Zahl übergeben, um die Pseudozufallssequenz zu initialisieren. Erlaubte Datentypen: `long`.
+`seed`: Eine Zahl ungleich 0, mit der die Pseudozufallssequenz initialisiert wird. Erlaubte Datentypen: `unsigned long`.
 
 
 [float]
@@ -72,6 +72,11 @@ void loop() {
   delay(50);
 }
 ----
+[%hardbreaks]
+
+[float]
+=== Anmerkungen und Warnungen
+Wenn `seed` 0 ist, hat `randomSeed(seed)` keine Wirkung.
 
 --
 // HOW-TO-USE-ABSCHNITT ENDET

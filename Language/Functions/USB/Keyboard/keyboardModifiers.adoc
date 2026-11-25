@@ -1,11 +1,11 @@
 ---
-title: Keyboard Modifiers
+title: Keyboard Modifiers and Special Keys
 ---
 
 
 
 
-= Keyboard Modifiers
+= Modifikatortasten und Sondertasten
 
 
 // ÜBERSICHTSABSCHNITT STARTET
@@ -14,46 +14,108 @@ title: Keyboard Modifiers
 
 [float]
 === Beschreibung
-Die `Keyboard.write()`-, `Keyboard.press()`- und `Keyboard.release()`-Kommandos funktionieren nicht mit jedem ASCII-Zeichen, nur mit denen, die auf einer Tastatur verfügbar sind.
-Die Rücktaste funktioniert z.B., aber viele andere Nichtdruckbare Zeichen produzieren unvorhersagbares Verhalten. Für Großbuchstanben (und andere Spezialzeichen) muss die Shift-
-und zusätzlich die gewünschte andere Taste gesendet werden (Funktioniert also genauso wie auf der Tastatur, wenn beide Tasten gedrückt werden).
+Wenn du den Funktionen `Keyboard.write()`, `Keyboard.press()` und `Keyboard.release()` ein druckbares ASCII-Zeichen als Argument übergibst, simulieren sie das Betätigen der entsprechenden Tasten. Diese Funktionen können auch ASCII-Zeichen verarbeiten, für die eine Taste zusammen mit Shift oder, auf internationalen Tastaturen, AltGr gedrückt werden muss. Zum Beispiel:
+[source,arduino]
+----
+Keyboard.write('a');  // Taste 'A' drücken und loslassen
+Keyboard.write('A');  // Shift und 'A' drücken, dann beide loslassen
+----
+Eine typische Tastatur hat aber viele Tasten, die keinem druckbaren ASCII-Zeichen entsprechen. Um diese Tasten zu simulieren, stellt die Bibliothek eine Reihe von Makros bereit, die du `Keyboard.write()`, `Keyboard.press()` und `Keyboard.release()` als Argument übergeben kannst. Die Tastenkombination Shift+F2 erzeugst du zum Beispiel so:
+[source,arduino]
+----
+Keyboard.press(KEY_LEFT_SHIFT);  // Shift drücken und halten
+Keyboard.press(KEY_F2);          // F2 drücken und halten
+Keyboard.releaseAll();           // Beide loslassen
+----
+Beachte: Um mehrere Tasten gleichzeitig zu drücken, musst du link:../keyboardpress[`Keyboard.press()`] statt link:../keyboardwrite[`Keyboard.write()`] verwenden, denn `Keyboard.write()` „tippt“ die Tasten nur an (es drückt sie und lässt sie sofort wieder los).
 [%hardbreaks]
-Ein Hotkey ist eine spezielle Taste auf einer Computertastatur, welche die normale Aktion einer Taste verändert, wenn beide in Kombination gedrückt werden.
-[%hardbreaks]
-Für mehr Informationen zu ASCII-Zeichen siehe http://www.asciitable.com/[asciitable.com]
-[%hardbreaks]
-Benutze link:../keyboardpress[Keyboard.press]() für viele Tastenanschläge.
-[%hardbreaks]
-Die Hotkey-Definitionen sind unten aufgelistet:
-[%hardbreaks]
+Die verfügbaren Makros sind unten aufgelistet:
 
+[float]
+=== Modifikatortasten
+Diese Tasten verändern die normale Wirkung einer anderen Taste, wenn beide zusammen gedrückt werden.
 
 |===
-|Hotkey	|Hexadezimalwert	|Dezimalwert
+|Taste	|Hexadezimalwert	|Dezimalwert	|Anmerkungen
 
-|KEY_LEFT_CTRL  |0x80 |128
-|KEY_LEFT_SHIFT |0x81 |129
-|KEY_LEFT_ALT   |0x82 |130
-|KEY_LEFT_GUI   |0x83 |131
-|KEY_RIGHT_CTRL |0x84 |132
-|KEY_RIGHT_SHIFT |0x85 |133
-|KEY_RIGHT_ALT  |0x86 |134
-|KEY_RIGHT_GUI  |0x87 |135
+|KEY_LEFT_CTRL  |0x80 |128 |
+|KEY_LEFT_SHIFT |0x81 |129 |
+|KEY_LEFT_ALT   |0x82 |130 |Option (⌥) auf dem Mac
+|KEY_LEFT_GUI   |0x83 |131 |Betriebssystem-Logo, Command (⌘) auf dem Mac
+|KEY_RIGHT_CTRL |0x84 |132 |
+|KEY_RIGHT_SHIFT |0x85 |133 |
+|KEY_RIGHT_ALT  |0x86 |134 |auch AltGr, Option (⌥) auf dem Mac
+|KEY_RIGHT_GUI  |0x87 |135 |Betriebssystem-Logo, Command (⌘) auf dem Mac
+|===
+
+[float]
+=== Sondertasten
+Das sind alle Tasten, die keinem druckbaren ASCII-Zeichen entsprechen und keine Modifikatortasten sind.
+
+[float]
+==== Im alphanumerischen Tastenblock
+
+|===
+|Taste	|Hexadezimalwert	|Dezimalwert
+
+|KEY_TAB        |0xB3 |179
+|KEY_CAPS_LOCK  |0xC1 |193
+|KEY_BACKSPACE  |0xB2 |178
+|KEY_RETURN     |0xB0 |176
+|KEY_MENU       |0xED |237
+|===
+
+[float]
+==== Navigationsblock
+
+|===
+|Taste	|Hexadezimalwert	|Dezimalwert
+
+|KEY_INSERT     |0xD1 |209
+|KEY_DELETE     |0xD4 |212
+|KEY_HOME       |0xD2 |210
+|KEY_END        |0xD5 |213
+|KEY_PAGE_UP    |0xD3 |211
+|KEY_PAGE_DOWN  |0xD6 |214
 |KEY_UP_ARROW   |0xDA |218
 |KEY_DOWN_ARROW |0xD9 |217
 |KEY_LEFT_ARROW |0xD8 |216
 |KEY_RIGHT_ARROW |0xD7 |215
-|KEY_BACKSPACE  |0xB2 |178
-|KEY_TAB        |0xB3 |179
-|KEY_RETURN     |0xB0 |176
+|===
+
+[float]
+==== Ziffernblock
+
+|===
+|Taste	|Hexadezimalwert	|Dezimalwert
+
+|KEY_NUM_LOCK   |0xDB |219
+|KEY_KP_SLASH   |0xDC |220
+|KEY_KP_ASTERISK |0xDD |221
+|KEY_KP_MINUS   |0xDE |222
+|KEY_KP_PLUS    |0xDF |223
+|KEY_KP_ENTER   |0xE0 |224
+|KEY_KP_1       |0xE1 |225
+|KEY_KP_2       |0xE2 |226
+|KEY_KP_3       |0xE3 |227
+|KEY_KP_4       |0xE4 |228
+|KEY_KP_5       |0xE5 |229
+|KEY_KP_6       |0xE6 |230
+|KEY_KP_7       |0xE7 |231
+|KEY_KP_8       |0xE8 |232
+|KEY_KP_9       |0xE9 |233
+|KEY_KP_0       |0xEA |234
+|KEY_KP_DOT     |0xEB |235
+|===
+
+[float]
+==== Escape- und Funktionstasten
+Die Bibliothek kann Funktionstasten bis F24 simulieren.
+
+|===
+|Taste	|Hexadezimalwert	|Dezimalwert
+
 |KEY_ESC        |0xB1 |177
-|KEY_INSERT     |0xD1 |209
-|KEY_DELETE     |0xD4 |212
-|KEY_PAGE_UP    |0xD3 |211
-|KEY_PAGE_DOWN  |0xD6 |214
-|KEY_HOME       |0xD2 |210
-|KEY_END        |0xD5 |213
-|KEY_CAPS_LOCK  |0xC1 |193
 |KEY_F1         |0xC2 |194
 |KEY_F2         |0xC3 |195
 |KEY_F3         |0xC4 |196
@@ -79,6 +141,38 @@ Die Hotkey-Definitionen sind unten aufgelistet:
 |KEY_F23        |0xFA |250
 |KEY_F24        |0xFB |251
 |===
+
+[float]
+==== Steuertasten über dem Navigationsblock
+Das sind die drei Tasten, die über dem Navigationsblock liegen.
+
+|===
+|Taste	|Hexadezimalwert	|Dezimalwert	|Anmerkungen
+
+|KEY_PRINT_SCREEN |0xCE |206 |Print Screen oder PrtSc / SysRq (auf deutschen Tastaturen Druck / S-Abf)
+|KEY_SCROLL_LOCK  |0xCF |207 |
+|KEY_PAUSE        |0xD0 |208 |Pause / Break (auf deutschen Tastaturen Pause / Untbr)
+|===
+
+[float]
+==== Internationale Tastaturlayouts
+
+Einige nationale Layouts definieren zusätzliche Tasten. Das schwedische und das dänische Layout definieren zum Beispiel `KEY_A_RING` als `0xB7`. Das ist die Taste rechts neben „P“, die auf diesen Layouts mit „Å“ und auf dem US-Layout mit „{“/„[“ beschriftet ist. Um diese Definitionen zu verwenden, musst du die passende Datei Keyboard_*.h einbinden. Zum Beispiel:
+
+[source,arduino]
+----
+#include <Keyboard.h>
+#include <Keyboard_sv_SE.h> // Zusätzliche Tastendefinitionen des schwedischen Layouts
+
+void setup() {
+  Keyboard.begin(KeyboardLayout_sv_SE); // Schwedisches Layout verwenden
+  Keyboard.write(KEY_A_RING);
+}
+
+void loop() {} // Schleife, die nichts tut
+----
+
+Die Liste der layoutspezifischen Tastendefinitionen findest du in der jeweiligen Datei Keyboard_*.h in den Quellen der Bibliothek.
 
 --
 // ÜBERSICHTSABSCHNITT ENDET

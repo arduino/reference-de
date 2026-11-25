@@ -28,7 +28,7 @@ Berechnet die Wertigkeit des angegebenen Bits (Bit 0 ist 1, Bit 1 ist 2, Bit 2 i
 
 [float]
 === Parameter
-`n`: Das Bit, von dem der Wert berechnet werden soll.
+`n`: Das Bit, von dem der Wert berechnet werden soll. Beachte, dass `n` zwischen 0 und 31 liegen muss (32 Bit).
 
 
 [float]

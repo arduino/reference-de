@@ -47,7 +47,7 @@ Die kleinere der beiden Zahlen.
 --
 
 [float]
-=== Besipielcode
+=== Beispielcode
 // Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu.   ►►►►► DIESER ABSCHNITT IST VERPFLICHTEND ◄◄◄◄◄
 Der Code stellt sicher, dass der Wert niemals über 100 hinausgeht.
 
@@ -81,6 +81,15 @@ a++;         // Andere Mathematik außerhalb der Funktion halten
 
 [float]
 === Siehe auch
+
+[role="language"]
+* #SPRACHE# link:../abs[abs()]
+* #SPRACHE# link:../constrain[constrain()]
+* #SPRACHE# link:../map[map()]
+* #SPRACHE# link:../max[max()]
+* #SPRACHE# link:../pow[pow()]
+* #SPRACHE# link:../sq[sq()]
+* #SPRACHE# link:../sqrt[sqrt()]
 
 --
 // SIEHE-AUCH-ABSCHNITT SECTION ENDET

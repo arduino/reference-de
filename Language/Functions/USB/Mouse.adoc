@@ -24,6 +24,22 @@ Wenn man die Mauszeigerposition ändert, so ist die neue Position immer relativ 
 --
 // ÜBERSICHTSABSCHNITT ENDET
 
+[float]
+=== Kompatible Hardware
+HID wird von den folgenden Boards unterstützt:
+[options="header"]
+|=================================================================================================
+| Board                                                                | Unterstützte Pins
+| link:https://docs.arduino.cc/hardware/leonardo[Leonardo]             | Alle digitalen und analogen Pins
+| link:https://docs.arduino.cc/hardware/micro[Micro]                   | Alle digitalen und analogen Pins
+| link:https://docs.arduino.cc/hardware/due[Due]                       | Alle digitalen und analogen Pins
+| link:https://docs.arduino.cc/hardware/zero[Zero]                     | Alle digitalen und analogen Pins
+| link:https://docs.arduino.cc/hardware/uno-r4-minima[UNO R4 Minima]   | Alle digitalen und analogen Pins
+| link:https://docs.arduino.cc/hardware/uno-r4-wifi[UNO R4 WiFi]       | Alle digitalen und analogen Pins
+| link:https://docs.arduino.cc/hardware/giga-r1-wifi[Giga R1]          | Alle digitalen und analogen Pins
+| link:https://docs.arduino.cc/hardware/nano-esp32[Nano ESP32]         | Alle digitalen und analogen Pins
+| link:https://docs.arduino.cc/#mkr-family[MKR Family]                 | Alle digitalen und analogen Pins
+|=================================================================================================
 
 [float]
 === Anmerkungen und Warnungen
@@ -33,7 +49,7 @@ Diese Core-Bibliotheken erlauben es 32u4- oder SAMD-basierten Boards (Leonardo, 
 an den verbundenen Computer. Diese Funktionen sollten nur aufgerufen werden, wenn das Programm diese behandeln kann. Es wird deshalb empfohlen, ein Kontrollsystem zu nutzen, z.B. einen physikalischen Schalter
 oder nur auf bestimmte Eingaben zu antworten.
 [%hardbreaks]
-Wenn die Mouse- oder Keyboard-Bibliothek benutzt wird, sollte die Ausgabe zunächst mit `_Serial_.print()` überprüft werden. Auf diesem Weg kann man sich sicher sein, dass die richtigen Werte an den verbundenen
+Wenn die Mouse- oder Keyboard-Bibliothek benutzt wird, sollte die Ausgabe zunächst mit link:../../communication/serial/print[Serial.print()] überprüft werden. Auf diesem Weg kann man sich sicher sein, dass die richtigen Werte an den verbundenen
 Computer gesendet werden. Die Beispiele liefern weitere Informationen dazu.
 
 // FUNCTIONS SECTION STARTS

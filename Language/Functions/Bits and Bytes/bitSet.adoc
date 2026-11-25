@@ -33,10 +33,41 @@ Setzt (Schreibt eine 1) ein Bit einer Zahlenvariable.
 
 [float]
 === Rückgabewert
-Nichts.
+`x`: Der Wert der numerischen Variablen nach dem Setzen des Bits an Position `n`.
 
 --
 // ÜBERSICHTSABSCHNITT ENDET
+
+
+
+// HOW-TO-USE-ABSCHNITT STARTET
+[#howtouse]
+--
+
+[float]
+=== Beispielcode
+Gibt das Ergebnis von `bitSet(x,n)` für zwei vorgegebene ganze Zahlen aus. Die binäre Darstellung von 4 ist 0100. Wenn also `n=1` ist, wird das zweite Bit von rechts auf 1 gesetzt. Danach ergibt sich binär 0110, also wird 6 zurückgegeben.
+
+[source,arduino]
+----
+void setup() {
+  Serial.begin(9600);
+  while (!Serial) {
+    ; // Wartet, bis die serielle Schnittstelle verbunden ist. Wird nur für den nativen USB-Anschluss benötigt.
+  }
+
+  int x = 4;
+  int n = 1;
+  Serial.print(bitSet(x, n)); // Gibt das Ergebnis von bitSet(x,n) aus
+}
+
+void loop() {
+}
+----
+[%hardbreaks]
+
+--
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
 // SIEHE-AUCH-ABSCHNITT SECTION
@@ -45,6 +76,9 @@ Nichts.
 
 [float]
 === Siehe auch
+
+[role="language"]
+* #SPRACHE# link:../bitclear[bitClear()]
 
 --
 // SIEHE-AUCH-ABSCHNITT SECTION ENDET

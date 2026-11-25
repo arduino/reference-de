@@ -53,7 +53,7 @@ Dieser Code führt zu falschen Ergebnissen:
 int inputSquared = sq(Serial.parseInt()); // Vermeide dies
 ----
 
-Use this instead:
+Benutze stattdessen diesen Code:
 [source,arduino]
 ----
 int input = Serial.parseInt(); // Halte andere Operationen außerhalb der sq-Funktion
@@ -71,6 +71,15 @@ int inputSquared = sq(input);
 
 [float]
 === Siehe auch
+
+[role="language"]
+* #SPRACHE# link:../abs[abs()]
+* #SPRACHE# link:../constrain[constrain()]
+* #SPRACHE# link:../map[map()]
+* #SPRACHE# link:../max[max()]
+* #SPRACHE# link:../min[min()]
+* #SPRACHE# link:../pow[pow()]
+* #SPRACHE# link:../sqrt[sqrt()]
 
 --
 // SIEHE-AUCH-ABSCHNITT SECTION ENDET

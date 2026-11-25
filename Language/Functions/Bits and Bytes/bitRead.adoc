@@ -17,7 +17,7 @@ subCategories: [ "Bits and Bytes" ]
 
 [float]
 === Beschreibung
-Liest ein Bit aus einer Zahlenvariable.
+Liest ein Bit aus einer Variablen, z. B. `bool` oder `int`. Beachte, dass `float` und `double` nicht unterstützt werden. Du kannst die Bits von Variablen bis zu einem `unsigned long long` (64 Bit / 8 Byte) lesen.
 [%hardbreaks]
 
 
@@ -38,6 +38,64 @@ Den Wert des Bits (0 oder 1).
 
 --
 // ÜBERSICHTSABSCHNITT ENDET
+
+
+
+// HOW-TO-USE-ABSCHNITT STARTET
+[#howtouse]
+--
+
+[float]
+=== Beispielcode
+
+Dieser Beispielcode zeigt, wie du zwei Variablen liest, einen aufwärts und einen abwärts zählenden Zähler, und von beiden den binären und den dezimalen Wert ausgibst.
+
+Die Funktion `readBit()` geht in einer Schleife durch jedes Bit der Variablen (beginnend mit dem rechten Bit) und gibt es aus.
+
+[source,arduino]
+----
+long negative_var = -0;  //
+unsigned long long positive_var = 0;
+
+//vordefinierte Größen für die Schleife über die Bits
+//z. B. hat long_size 32 Bit (also 0-31). Deshalb ziehen wir "1" ab.
+const int bool_size = (1 - 1);
+const int int_size = (8 - 1);
+const int long_size = (32 - 1);
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  //Funktion readBit aufrufen und die positive bzw. negative Variable übergeben
+  readBit("Positive ", positive_var);
+  readBit("Negative ", negative_var);
+  Serial.println();
+
+  //Variablen erhöhen und verringern
+  negative_var--;
+  positive_var++;
+
+  delay(1000);
+}
+
+/*Diese Funktion nimmt eine Variable, gibt sie Bit für Bit aus (beginnend von rechts)
+und gibt danach zum Vergleich die Dezimalzahl aus.*/
+void readBit(String direction, long counter) {
+  Serial.print(direction + "Binary Number: ");
+  //Schleife über jedes Bit
+  for (int b = long_size; b >= 0; b--) {
+    byte bit = bitRead(counter, b);
+    Serial.print(bit);
+  }
+  Serial.print(" Decimal Number: ");
+  Serial.println(counter);
+}
+----
+
+--
+// HOW-TO-USE-ABSCHNITT ENDET
 
 
 // SIEHE-AUCH-ABSCHNITT SECTION

@@ -17,7 +17,7 @@ subCategories: [ "Bits and Bytes" ]
 
 [float]
 === Beschreibung
-Schreibt ein Bit einer Zahlenvariable.
+Schreibt in ein Bit einer Variablen, z. B. `bool`, `int` oder `long`. Beachte, dass `float` und `double` nicht unterstützt werden. Du kannst in die Bits von Variablen bis zu einem `unsigned long` (32 Bit / 4 Byte) schreiben.
 [%hardbreaks]
 
 

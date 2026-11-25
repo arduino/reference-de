@@ -46,5 +46,14 @@ Quadratwurzel der Zahl. Datentyp: `double`.
 [float]
 === Siehe auch
 
+[role="language"]
+* #SPRACHE# link:../abs[abs()]
+* #SPRACHE# link:../constrain[constrain()]
+* #SPRACHE# link:../map[map()]
+* #SPRACHE# link:../max[max()]
+* #SPRACHE# link:../min[min()]
+* #SPRACHE# link:../pow[pow()]
+* #SPRACHE# link:../sq[sq()]
+
 --
 // SIEHE-AUCH-ABSCHNITT SECTION ENDET

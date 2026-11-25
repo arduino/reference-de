@@ -34,7 +34,7 @@ Dies ist nützlich, um eine exponentielle Abbildung von Werten oder Kurven zu er
 
 [float]
 === Rückgabewert
-Das Ergebnis der Potenzierung. Erlaubte Datentypen: `double`.
+Das Ergebnis der Potenzierung. Datentyp: `double`.
 
 --
 // ÜBERSICHTSABSCHNITT ENDET
@@ -66,9 +66,14 @@ Siehe auch den (http://arduino.cc/playground/Main/Fscale[fscale]) Sketch für ei
 [float]
 === Siehe auch
 
-[role="definition"]
-* #DEFINITION# link:../../../variables/data-types/float[float]
-* #DEFENITION# link:../../../variables/data-types/double[double]
+[role="language"]
+* #SPRACHE# link:../abs[abs()]
+* #SPRACHE# link:../constrain[constrain()]
+* #SPRACHE# link:../map[map()]
+* #SPRACHE# link:../max[max()]
+* #SPRACHE# link:../min[min()]
+* #SPRACHE# link:../sq[sq()]
+* #SPRACHE# link:../sqrt[sqrt()]
 
 --
 // SIEHE-AUCH-ABSCHNITT SECTION ENDET

@@ -20,12 +20,28 @@ Wenn die Funktion mit einem Leonardo- oder Due-Board benutzt wird, startet `Keyb
 
 [float]
 === Syntax
-`Keyboard.begin()`
+`Keyboard.begin()` +
+`Keyboard.begin(layout)`
 
 
 [float]
 === Parameter
-Keine.
+`layout`: Das zu verwendende Tastaturlayout. Dieser Parameter ist optional, der Standardwert ist `KeyboardLayout_en_US`.
+
+
+[float]
+=== Tastaturlayouts
+Die Bibliothek unterstützt derzeit die folgenden nationalen Tastaturlayouts:
+
+* `KeyboardLayout_da_DK`: Dänemark
+* `KeyboardLayout_de_DE`: Deutschland
+* `KeyboardLayout_en_US`: USA
+* `KeyboardLayout_es_ES`: Spanien
+* `KeyboardLayout_fr_FR`: Frankreich
+* `KeyboardLayout_hu_HU`: Ungarn
+* `KeyboardLayout_it_IT`: Italien
+* `KeyboardLayout_pt_PT`: Portugal
+* `KeyboardLayout_sv_SE`: Schweden
 
 
 [float]
@@ -68,6 +84,11 @@ void loop() {
   }
 }
 ----
+
+
+[float]
+=== Anmerkungen und Warnungen
+Eigene Layouts kannst du erstellen, indem du ein bestehendes Layout kopierst und anpasst. Die Anleitung dazu steht in der Datei KeyboardLayout.h der Keyboard-Bibliothek.
 
 --
 // HOW-TO-USE-ABSCHNITT ENDET

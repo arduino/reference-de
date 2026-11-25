@@ -53,7 +53,7 @@ Der Code stellt sicher, dass sensVal mindestens 20 beträgt.
 
 [source,arduino]
 ----
-sensVal = max(senVal, 20); // Ordnet sensVal dem größeren Wert von sensVal oder 20 zu
+sensVal = max(sensVal, 20); // Ordnet sensVal dem größeren Wert von sensVal oder 20 zu
                            // (Stellt sicher, dass sensVal mindestens 20 ist)
 ----
 [%hardbreaks]
@@ -81,6 +81,15 @@ a--;       // Andere Mathematik außerhalb der Funktion halten
 
 [float]
 === Siehe auch
+
+[role="language"]
+* #SPRACHE# link:../abs[abs()]
+* #SPRACHE# link:../constrain[constrain()]
+* #SPRACHE# link:../map[map()]
+* #SPRACHE# link:../min[min()]
+* #SPRACHE# link:../pow[pow()]
+* #SPRACHE# link:../sq[sq()]
+* #SPRACHE# link:../sqrt[sqrt()]
 
 --
 // SIEHE-AUCH-ABSCHNITT SECTION ENDET
