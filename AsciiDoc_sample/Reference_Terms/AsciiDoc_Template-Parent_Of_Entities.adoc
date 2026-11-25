@@ -94,7 +94,7 @@ http://arduino.cc[serialEvent()]
 
 [role="language"]
 // Wenn du eine Verknüpfung zu einem anderen Referenzbegriff oder allgemein zu einer relativen Verknüpfung herstellen möchtest, verwende die unten gezeigte Syntax.
-// Bitte beachte, dass das Dateiformat nach Attributen subsitiert wird.
+// Bitte beachte, dass das Dateiformat nach Attributen substituiert wird.
 // Bitte beachte, dass Leerzeichen, die in Ordner-/Dateinamen gefunden werden, immer durch %20 ersetzt werden müssen.
 // Der gesamte Link zu den Referenzseiten muss unabhängig von den Ordnern und Dateien in diesem Repository klein geschrieben werden.
 * #SPRACHE# link:../AsciiDoc_Template-Single_Entity[Einzelne Einheit]
