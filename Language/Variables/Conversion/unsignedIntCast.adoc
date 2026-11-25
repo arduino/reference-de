@@ -49,7 +49,7 @@ Datentyp: link:../../data-types/unsignedint[`unsigned int`].
 === Siehe auch
 
 [role="language"]
-* #LANGUAGE# link:../../data-types/unsignedint[`unsigned int`]
+* #SPRACHE# link:../../data-types/unsignedint[`unsigned int`]
 
 
 --
