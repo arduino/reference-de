@@ -30,7 +30,7 @@ Keine.
 
 [float]
 === Hinweise zur Portabilität
-Diese Funktion war in der ursprünglichen Version der Wire-Bibliothek nicht vorhanden und ist möglicherweise noch nicht auf allen Plattformen verfügbar. Code, der über Plattformen und Versionen hinweg portabel sein muss, kann das Makro `WIRE_HAS_TIMEOUT` verwenden. Es ist nur definiert, wenn `Wire.setWireTimeout()`, `Wire.getWireTimeoutFlag()` und `Wire.clearWireTimeout()` alle verfügbar sind.
+Diese Funktion war in der ursprünglichen Version der Wire-Bibliothek nicht vorhanden und ist möglicherweise noch nicht auf allen Plattformen verfügbar. Code, der über Plattformen und Versionen hinweg portabel sein muss, kann das Makro `WIRE_HAS_TIMEOUT` verwenden. Es ist nur definiert, wenn `Wire.setWireTimeout()`, `Wire.getWireTimeoutFlag()` und `Wire.clearWireTimeoutFlag()` alle verfügbar sind.
 
 --
 

@@ -95,7 +95,7 @@ Beachte, dass dieser Timeout auch ausgelöst werden kann, während auf das Ende 
 [float]
 === Hinweise zur Portabilität
 
-Diese Funktion war in der ursprünglichen Version der Wire-Bibliothek nicht vorhanden und ist möglicherweise noch nicht auf allen Plattformen verfügbar. Code, der über Plattformen und Versionen hinweg portabel sein muss, kann das Makro `WIRE_HAS_TIMEOUT` verwenden. Es ist nur definiert, wenn `Wire.setWireTimeout()`, `Wire.getWireTimeoutFlag()` und `Wire.clearWireTimeout()` alle verfügbar sind.
+Diese Funktion war in der ursprünglichen Version der Wire-Bibliothek nicht vorhanden und ist möglicherweise noch nicht auf allen Plattformen verfügbar. Code, der über Plattformen und Versionen hinweg portabel sein muss, kann das Makro `WIRE_HAS_TIMEOUT` verwenden. Es ist nur definiert, wenn `Wire.setWireTimeout()`, `Wire.getWireTimeoutFlag()` und `Wire.clearWireTimeoutFlag()` alle verfügbar sind.
 
 Als diese Timeout-Funktion auf der AVR-Plattform eingeführt wurde, blieb sie aus Kompatibilitätsgründen zunächst standardmäßig deaktiviert, in der Erwartung, dass sie später aktiviert wird. Der Standardwert des Timeouts kann sich daher zwischen Plattformen (und deren Versionen) unterscheiden. Die Standardeinstellungen für den Timeout stehen über die Makros `WIRE_DEFAULT_TIMEOUT` und `WIRE_DEFAULT_RESET_WITH_TIMEOUT` zur Verfügung.
 
