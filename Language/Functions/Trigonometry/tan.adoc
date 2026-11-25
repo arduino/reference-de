@@ -17,7 +17,7 @@ subCategories: [ "Trigonometry" ]
 
 [float]
 === Beschreibung
-Berechnet den Tangens eines Winkels (Im Bogenmaß). Das Ergebnis liegt zwischen undendlich und negativ unendlich.
+Berechnet den Tangens eines Winkels (im Bogenmaß). Das Ergebnis liegt zwischen unendlich und negativ unendlich.
 [%hardbreaks]
 
 

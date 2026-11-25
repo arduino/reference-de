@@ -14,7 +14,7 @@ title: Mouse.isPressed()
 
 [float]
 === Beschreibung
-Checkt den aktuellsten Status des Mausbuttons und liefert zurück, ob dieser gedrückt ist.
+Checkt den aktuellen Status aller Mausbuttons und liefert zurück, ob einer davon gedrückt ist.
 [%hardbreaks]
 
 

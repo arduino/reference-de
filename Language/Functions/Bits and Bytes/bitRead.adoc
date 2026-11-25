@@ -50,7 +50,7 @@ Den Wert des Bits (0 oder 1).
 
 Dieser Beispielcode zeigt, wie du zwei Variablen liest, einen aufwärts und einen abwärts zählenden Zähler, und von beiden den binären und den dezimalen Wert ausgibst.
 
-Die Funktion `readBit()` geht in einer Schleife durch jedes Bit der Variablen (beginnend mit dem rechten Bit) und gibt es aus.
+Die Funktion `readBit()` geht in einer Schleife durch jedes Bit der Variablen (beginnend mit dem linken, höchstwertigen Bit) und gibt es aus.
 
 [source,arduino]
 ----
@@ -80,7 +80,7 @@ void loop() {
   delay(1000);
 }
 
-/*Diese Funktion nimmt eine Variable, gibt sie Bit für Bit aus (beginnend von rechts)
+/*Diese Funktion nimmt eine Variable, gibt sie Bit für Bit aus (beginnend von links)
 und gibt danach zum Vergleich die Dezimalzahl aus.*/
 void readBit(String direction, long counter) {
   Serial.print(direction + "Binary Number: ");

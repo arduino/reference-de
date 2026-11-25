@@ -16,9 +16,9 @@ subCategories: [ "USB" ]
 
 [float]
 === Beschreibung
-Die `keyboard`-Funktionen ermöglichen es, 32u4- oder SAMD-micro-basiertend boards, Tastenanschläge an einen verbundenen Computer über dessen nativen USB-Port zu senden.
+Die `keyboard`-Funktionen ermöglichen es, 32u4- oder SAMD-micro-basierend boards, Tastenanschläge an einen verbundenen Computer über dessen nativen USB-Port zu senden.
 [%hardbreaks]
-*Anmerkung: Nicht jedes mögliche ASCII-Zeichen kann eingegeben werden. Besonders die Nichtdruckbaren Zeichen können nicht über die Bilbiothek eingegeben werden.* +
+*Anmerkung: Nicht jedes mögliche ASCII-Zeichen kann eingegeben werden. Besonders die nicht druckbaren Zeichen können nicht über die Bibliothek eingegeben werden.* +
 Die Bibliothek unterstützt die Verwendung von Modifikatortasten. Modifikatortasten verändern das Verhalten anderer Tasten, wenn diese gleichzeitig gedrückt werden.
 link:../keyboard/keyboardmodifiers[Siehe hier] für weitere Informationen über die unterstützten Tasten und deren Benutzung.
 
@@ -46,12 +46,9 @@ HID wird von den folgenden Boards unterstützt:
 === Anmerkungen und Warnungen
 Diese Core-Bibliotheken erlauben es 32u4- oder SAMD-basierten Boards (Leonardo, Esplora, Zero, Due und MKR Family), als native Maus und/oder Tastatur auf dem verbundenen Computer zu erscheinen.
 [%hardbreaks]
-*Achtung*: Wenn die Maus oder Tastatur permanent läuft, wird es schwer, das Board noch zu programmieren. Funktionen wie `Mouse.move()` und `Keyboard.print()` bewegen den Cursor oder senden Tastenanschläge
-an den verbundenen Computer. Diese Funktionen sollten nur aufgerufen werden, wenn das Programm diese behandeln kann. Es wird deshalb empfohlen, ein Kontrollsystem zu nutzen, z.B. einen physikalischen Schalter
-oder nur auf bestimmte Eingaben zu antworten. Die Beispiele liefern weitere Informationen dazu.
+*Achtung*: Wenn die Maus oder Tastatur permanent läuft, wird es schwer, das Board noch zu programmieren. Funktionen wie `Mouse.move()` und `Keyboard.print()` bewegen den Cursor oder senden Tastenanschläge an den verbundenen Computer. Diese Funktionen sollten nur aufgerufen werden, wenn das Programm diese behandeln kann. Es wird deshalb empfohlen, ein Kontrollsystem zu nutzen, z.B. einen physikalischen Schalter oder nur auf bestimmte Eingaben zu antworten. Die Beispiele liefern weitere Informationen dazu.
 [%hardbreaks]
-Wenn die Mouse- oder Keyboard-Bibliothek benutzt wird, sollte die Ausgabe zunächst mit link:../../communication/serial/print[Serial.print()] überprüft werden. Auf diesem Weg kann man sich sicher sein, dass die richtigen Werte an den verbundenen
-Computer gesendet werden.
+Wenn die Mouse- oder Keyboard-Bibliothek benutzt wird, sollte die Ausgabe zunächst mit link:../../communication/serial/print[Serial.print()] überprüft werden. Auf diesem Weg kann man sich sicher sein, dass die richtigen Werte an den verbundenen Computer gesendet werden.
 
 // FUNCTIONS SECTION STARTS
 [#functions]

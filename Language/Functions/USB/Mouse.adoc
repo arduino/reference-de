@@ -18,7 +18,7 @@ subCategories: [ "USB" ]
 
 [float]
 === Beschreibung
-Die `mouse`-Funktionen ermöglichen es, auf 32u4- oder SAMD-micro-basiertend Boards den Mauszeiger auf einem verbundenem Computer über dessen nativen USB-Port zu steuern.
+Die `mouse`-Funktionen ermöglichen es, auf 32u4- oder SAMD-micro-basierend Boards den Mauszeiger auf einem verbundenen Computer über dessen nativen USB-Port zu steuern.
 Wenn man die Mauszeigerposition ändert, so ist die neue Position immer relativ zu der vorhergehenden Position.
 [%hardbreaks]
 --
@@ -45,12 +45,9 @@ HID wird von den folgenden Boards unterstützt:
 === Anmerkungen und Warnungen
 Diese Core-Bibliotheken erlauben es 32u4- oder SAMD-basierten Boards (Leonardo, Esplora, Zero, Due und MKR Family), als native Maus und/oder Tastatur auf dem verbundenen Computer zu erscheinen.
 [%hardbreaks]
-*Achtung*: Wenn die Maus oder Tastatur permanent läuft, wird es schwer, das Board noch zu programmieren. Funktionen wie `Mouse.move()` und `Keyboard.print()` bewegen den Cursor oder senden Tastenanschläge
-an den verbundenen Computer. Diese Funktionen sollten nur aufgerufen werden, wenn das Programm diese behandeln kann. Es wird deshalb empfohlen, ein Kontrollsystem zu nutzen, z.B. einen physikalischen Schalter
-oder nur auf bestimmte Eingaben zu antworten.
+*Achtung*: Wenn die Maus oder Tastatur permanent läuft, wird es schwer, das Board noch zu programmieren. Funktionen wie `Mouse.move()` und `Keyboard.print()` bewegen den Cursor oder senden Tastenanschläge an den verbundenen Computer. Diese Funktionen sollten nur aufgerufen werden, wenn das Programm diese behandeln kann. Es wird deshalb empfohlen, ein Kontrollsystem zu nutzen, z.B. einen physikalischen Schalter oder nur auf bestimmte Eingaben zu antworten.
 [%hardbreaks]
-Wenn die Mouse- oder Keyboard-Bibliothek benutzt wird, sollte die Ausgabe zunächst mit link:../../communication/serial/print[Serial.print()] überprüft werden. Auf diesem Weg kann man sich sicher sein, dass die richtigen Werte an den verbundenen
-Computer gesendet werden. Die Beispiele liefern weitere Informationen dazu.
+Wenn die Mouse- oder Keyboard-Bibliothek benutzt wird, sollte die Ausgabe zunächst mit link:../../communication/serial/print[Serial.print()] überprüft werden. Auf diesem Weg kann man sich sicher sein, dass die richtigen Werte an den verbundenen Computer gesendet werden. Die Beispiele liefern weitere Informationen dazu.
 
 // FUNCTIONS SECTION STARTS
 [#functions]

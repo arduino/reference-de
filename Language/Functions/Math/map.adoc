@@ -20,7 +20,7 @@ subCategories: [ "Math" ]
 Bildet eine Zahl von einem Bereich in einen anderen ab. Das heißt, ein Wert von *fromLow* würde auf *toLow*, ein Wert von *fromHigh* auf *toHigh*, Werte dazwischen auf Werte dazwischen usw. zugeordnet.
 
 Beschränkt die Werte nicht innerhalb des Bereichs, da Werte außerhalb des Bereichs manchmal beabsichtigt und nützlich sind.
-Die `constrain()`-Funktion kann entweder vor oder nach dieser Funktion verwendet werden, wenn eine Begrenzung der Bereiche gewünscht werden.
+Die `constrain()`-Funktion kann entweder vor oder nach dieser Funktion verwendet werden, wenn eine Begrenzung der Bereiche gewünscht wird.
 
 Beachte, dass die "unteren Grenzen" eines Bereichs größer oder kleiner als die "oberen Grenzen" sein können, sodass die Funktion `map()` zum Umkehren eines Zahlenbereichs verwendet werden kann, zum Beispiel:
 
@@ -32,7 +32,7 @@ Die Funktion kann auch mit negativen Zahlen gut umgehen, so dass dieses Beispiel
 
 auch valide ist und funktioniert.
 
-Die `map()` - Funktion verwendet Ganzzahl-Mathematik, so dass keine Brüche generiert werden, wenn die Mathematik möglicherweise darauf hinweist, dass dies der Fall ist.
+Die `map()`-Funktion verwendet Ganzzahl-Mathematik, so dass keine Brüche generiert werden, wenn die Mathematik möglicherweise darauf hinweist, dass dies der Fall ist.
 Bruchreste werden abgeschnitten und nicht gerundet oder gemittelt.
 [%hardbreaks]
 
@@ -44,7 +44,7 @@ Bruchreste werden abgeschnitten und nicht gerundet oder gemittelt.
 
 [float]
 === Parameter
-`value`: Die Nummer, die zugeordnet werden soll. +
+`value`: Die Zahl, die zugeordnet werden soll. +
 `fromLow`: Die untere Grenze des aktuellen Wertebereichs. +
 `fromHigh`: Die obere Grenze des aktuellen Wertebereichs. +
 `toLow`: Die untere Grenze des Zielbereichs des Werts. +

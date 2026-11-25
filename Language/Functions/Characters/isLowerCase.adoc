@@ -33,7 +33,7 @@ Analysiert, ob das Zeichen lower case (Kleinbuchstaben) ist. Gibt `true` zurück
 
 [float]
 === Rückgabewert
-`true`: Ob das Zeichen lower case ist.
+`true`: Wenn das Zeichen lower case ist.
 
 --
 // ÜBERSICHTSABSCHNITT ENDET
@@ -49,7 +49,7 @@ Analysiert, ob das Zeichen lower case (Kleinbuchstaben) ist. Gibt `true` zurück
 
 [source,arduino]
 ----
-if (isLowerCase(thisChar)) { // Testet, ob das Zeichen lower case ist
+if (isLowerCase(myChar)) { // Testet, ob das Zeichen lower case ist
 	Serial.println("Das Zeichen ist lower case");
 }
 else {

@@ -85,7 +85,7 @@ void loop() {
 
 [float]
 === Anmerkungen und Warnungen
-Wenn das `Mouse.press()`-Kommando benutzt wird, übernimmt der Arduino die Tastatur! Stelle sicher, dass du Kontrolle über die Tastatur hast, bevor du das Kommando verwendest.
+Wenn das `Mouse.press()`-Kommando benutzt wird, übernimmt der Arduino die Maus! Stelle sicher, dass du Kontrolle über die Maus hast, bevor du das Kommando verwendest.
 Ein Button, um die Funktion notfalls zu sperren, ist sinnvoll.
 
 --

@@ -76,7 +76,7 @@ void loop() {
 
 [float]
 === Anmerkungen und Warnungen
-Es sollten keine anderen Funktionen innerhalb der Klammern verwendet werden. Dies kann zu falschen Ergebnissen führen.
+Wegen der Art, wie `abs()` implementiert ist, sollten keine anderen Funktionen innerhalb der Klammern verwendet werden. Dies kann zu falschen Ergebnissen führen.
 
 [source,arduino]
 ----

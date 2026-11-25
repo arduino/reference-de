@@ -49,7 +49,7 @@ Analysiert, ob ein Zeichen alphanumerisch ist. (Buchstabe oder Zahl). Gibt `true
 
 [source,arduino]
 ----
-if (isAlphaNumeric(thisChar)) { // Testet, ob das Zeichen alphanumerisch ist.
+if (isAlphaNumeric(myChar)) { // Testet, ob das Zeichen alphanumerisch ist.
 	Serial.println("Das Zeichen ist alphanumerisch");
 }
 else {

@@ -17,7 +17,7 @@ title: Keyboard.write()
 Sendet einen Tastenanschlag an einen verbundenen Computer. Das ist das gleiche wie eine Taste zu drücken und wieder loszulassen.
 Gesendet werden können ASCII-Zeichen sowie link:../keyboardmodifiers[Modifikatortasten und Sondertasten].
 
-Nur ASCII-Zeichen, die auf der Tastatur zu finden sind, werden unterstützt. Z.B. ASCII 8 (Rücktaste) würde funktionieren, ASCII25 (Ersetzungszeichen) nicht.
+Nur ASCII-Zeichen, die auf der Tastatur zu finden sind, werden unterstützt. Z.B. ASCII 8 (Rücktaste) würde funktionieren, ASCII 25 (Ersetzungszeichen) nicht.
 Wenn Großbuchstaben gesendet werden sollen, sendet `Keyboard.write()` die Shift-Taste plus das gewünschte Zeichen. Wenn ein numerischer Wert übergeben wird,
 sendet die Funktion das ASCII-Zeichen, z.B. Keyboard.write(97) wird zu `'a'`.
 

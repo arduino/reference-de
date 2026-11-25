@@ -49,7 +49,7 @@ Analysiert, ob das Zeichen upper case (Großbuchstaben) ist. Gibt `true` zurück
 
 [source,arduino]
 ----
-if (isUpperCase(thisChar)) { // Testet, ob das Zeichen upper case ist.
+if (isUpperCase(myChar)) { // Testet, ob das Zeichen upper case ist.
 	Serial.println("Das Zeichen ist upper case");
 }
 else {

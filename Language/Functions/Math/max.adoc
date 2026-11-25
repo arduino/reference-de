@@ -62,7 +62,7 @@ sensVal = max(sensVal, 20); // Ordnet sensVal dem größeren Wert von sensVal od
 === Anmerkungen und Warnungen
 Vielleicht kontra-intuitiv wird `max()` häufig verwendet, um das untere Ende des Bereichs einer Variablen zu beschränken, während `min()` verwendet wird, um das obere Ende des Bereichs zu beschränken.
 
-Es sollten keine anderen Funktionen innerhalb der Klammern verwendet werden. Dies kann zu falschen Ergebnissen führen.
+Wegen der Art, wie `max()` implementiert ist, sollten keine anderen Funktionen innerhalb der Klammern verwendet werden. Dies kann zu falschen Ergebnissen führen.
 [source,arduino]
 ----
 max(a--, 0); // Vermeide dies - führt zu falschen Ergebnissen

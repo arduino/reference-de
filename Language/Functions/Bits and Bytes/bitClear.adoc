@@ -17,7 +17,7 @@ subCategories: [ "Bits and Bytes" ]
 
 [float]
 === Beschreibung
-Löscht den Wert (Schreibt 0) eines Bits einer Zahlen-Variable.
+Löscht den Wert (schreibt 0) eines Bits einer Zahlen-Variable.
 [%hardbreaks]
 
 
@@ -28,8 +28,8 @@ Löscht den Wert (Schreibt 0) eines Bits einer Zahlen-Variable.
 
 [float]
 === Parameter
-`x`: Die Zahlenvariable, deren Wert gelöscht werden soll. +
-`n`: Welches Bit gelöscht werden soll; Startet bei 0 für das least-significant (rechteste) Bit.
+`x`: Die Zahlenvariable, in der das Bit gelöscht werden soll. +
+`n`: Welches Bit gelöscht werden soll; startet bei 0 für das least-significant (rechteste) Bit.
 
 [float]
 === Rückgabewert
@@ -46,7 +46,7 @@ Löscht den Wert (Schreibt 0) eines Bits einer Zahlen-Variable.
 
 [float]
 === Beispielcode
-Gibt das Ergebnis von `bitClear (x, n)` aus und verwendet zwei vorgegebenen ganzen Zahlen. Die binäre Darstellung von 6 ist 0110. Wenn also `n=1` ist, wird das zweite Bit von rechts auf 0 gesetzt. Danach bleibt 0100 in binär, so dass 4 zurückgegeben wird.
+Gibt das Ergebnis von `bitClear (x, n)` aus und verwendet zwei vorgegebene ganze Zahlen. Die binäre Darstellung von 6 ist 0110. Wenn also `n=1` ist, wird das zweite Bit von rechts auf 0 gesetzt. Danach bleibt 0100 in binär, so dass 4 zurückgegeben wird.
 
 [source,arduino]
 ----

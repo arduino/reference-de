@@ -30,7 +30,7 @@ Keine.
 
 [float]
 === Rückgabewert
-Ninhts.
+Nichts.
 
 --
 // ÜBERSICHTSABSCHNITT ENDET
@@ -45,7 +45,7 @@ Ninhts.
 [float]
 === Beispielcode
 // Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu.   ►►►►► DIESER ABSCHNITT IST VERPFLICHTEND ◄◄◄◄◄
-Sendet einen linken Mausclick, wenn der Button gedrückt wird und beendet die Emulation anschließend.
+Sendet einen linken Mausklick, wenn der Button gedrückt wird und beendet die Emulation anschließend.
 
 [source,arduino]
 ----

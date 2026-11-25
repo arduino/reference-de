@@ -23,7 +23,7 @@ Analysiert, ob ein Zeichen hexadezimal ist (A-F, 0-9). Gibt `true` zurück, wenn
 
 [float]
 === Syntax
-`isHexadecilamDigit(thisChar)`
+`isHexadecimalDigit(thisChar)`
 
 
 [float]
@@ -49,7 +49,7 @@ Analysiert, ob ein Zeichen hexadezimal ist (A-F, 0-9). Gibt `true` zurück, wenn
 
 [source,arduino]
 ----
-if (isHexadecimalDigit(thisChar)) { // Testet, ob das Zeichen hexadezimal ist
+if (isHexadecimalDigit(myChar)) { // Testet, ob das Zeichen hexadezimal ist
 	Serial.println("Das Zeichen ist hexadezimal");
 }
 else {

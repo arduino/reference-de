@@ -49,7 +49,7 @@ Analysiert, ob das Zeichen ein Ascii-Zeichen ist. Gibt `true` zurück, wenn das 
 
 [source,arduino]
 ----
-if (isAscii(thisChar)) { // Testet, ob das Zeichen ein Ascii-Zeichen ist.
+if (isAscii(myChar)) { // Testet, ob das Zeichen ein Ascii-Zeichen ist.
 	Serial.println("Das Zeichen ist ein Ascii-Zeichen.");
 }
 else {

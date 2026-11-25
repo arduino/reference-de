@@ -62,7 +62,7 @@ void setup() {
   // Wenn der analoge Eingangspin 0 nicht verbunden ist, wird zufälliges analoges
   // Rauschen mit randomSeed() benutzt, um verschiedene Seed-Zahlen bei jedem
   // Lauf des Sketches zu generieren.
-  // randomSeed() ruft dann die random()-Funktion auf.
+  // randomSeed() mischt dann die Zufallsfunktion durch.
   randomSeed(analogRead(0));
 }
 
@@ -89,7 +89,7 @@ Umgekehrt kann es gelegentlich nützlich sein, Pseudozufallssequenzen zu verwend
 Dies kann durch Aufrufen von `randomSeed()` mit einer festen Zahl erreicht werden, bevor die Zufallssequenz gestartet wird.
 
 Der Parameter max sollte entsprechend dem Datentyp der Variablen ausgewählt werden, in der der Wert gespeichert ist.
-In jedem Fall ist das absolute Maximum an die Länge des generierten Werts (32 Bit-2.147.483.647) gebunden.
+In jedem Fall ist das absolute Maximum an den Datentyp `long` des erzeugten Werts (32 Bit, 2.147.483.647) gebunden.
 Wenn du max auf einen höheren Wert setzt, wird beim Kompilieren kein Fehler generiert. Während der Ausführung des Sketches werden jedoch die Zahlen nicht generiert wie erwartet.
 
 --

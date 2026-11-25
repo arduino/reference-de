@@ -17,7 +17,7 @@ subCategories: [ "Bits and Bytes" ]
 
 [float]
 === Beschreibung
-Liest das most-significant (linkeste) Bit eines Wortes (oder das zweitkleinste Bit eines größeren Datentypes).
+Liest das most-significant (linkeste) Byte eines Wortes (oder das zweitniedrigste Byte eines größeren Datentypes).
 [%hardbreaks]
 
 
@@ -28,7 +28,7 @@ Liest das most-significant (linkeste) Bit eines Wortes (oder das zweitkleinste B
 
 [float]
 === Parameter
-`x`: Wert von beliebigen Typ.
+`x`: Wert von beliebigem Typ.
 
 [float]
 === Rückgabewert

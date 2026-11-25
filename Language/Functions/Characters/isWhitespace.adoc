@@ -49,7 +49,7 @@ Analysiert das Zeichen, ob es ein Leerzeichen oder ein Tab (`'\t'`) ist. Gibt `t
 
 [source,arduino]
 ----
-if (isWhitespace(thisChar)) { // Testet, ob das Zeichen ein Leerzeichen oder ein Tab (`'\t'`) ist.
+if (isWhitespace(myChar)) { // Testet, ob das Zeichen ein Leerzeichen oder ein Tab ('\t') ist.
 	Serial.println("Das Zeichen ist ein Leerzeichen oder ein Tab");
 }
 else {

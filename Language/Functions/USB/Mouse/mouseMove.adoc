@@ -55,13 +55,13 @@ Bewegt den Mauszeiger anhand der analogen Eingänge.
 ----
 #include <Mouse.h>
 
-const int xAxis = A1;        // Analoger sensor für die X-Achse
-const int yAxis = A2;        // Analoger sensor für die Y-Achse
+const int xAxis = A1;        // Analoger Sensor für die X-Achse
+const int yAxis = A2;        // Analoger Sensor für die Y-Achse
 
-int range = 12;              // Ausgabebreite der X- und Y-Bewegung
+int range = 12;              // Ausgabebereich der X- und Y-Bewegung
 int responseDelay = 2;       // Antwortverzögerung der Maus in ms
-int threshold = range / 4;   // Wartethreshold
-int center = range/2;        // Warteposition
+int threshold = range / 4;   // Ruheschwelle
+int center = range/2;        // Ruheposition
 int minima[] = {1023, 1023}; // Aktuelle analogRead Minima für {x, y}
 int maxima[] = {0, 0};       // Aktuelle analogRead Maxima für {x, y}
 int axis[] = {xAxis, yAxis}; // Pinnummern für {x, y}
@@ -72,7 +72,7 @@ void setup() {
 }
 
 void loop() {
-  // Lies uns skaliere beide Achsen:
+  // Lies und skaliere beide Achsen:
   int xReading = readAxis(0);
   int yReading = readAxis(1);
 
@@ -83,11 +83,11 @@ void loop() {
 
 /*
 	Liest eine Achse (0 oder 1 für x oder y) und skaliert die
-	analoge Eingabebreite auf eine Breite von 0 bis <range>
+	analogen Eingabebereich auf einen Bereich von 0 bis <range>
 */
 
 int readAxis(int axisNumber) {
-  int distance = 0; // Distanz von der Bildschirmmitte zum Rand
+  int distance = 0; // Abstand von der Mitte des Ausgabebereichs
 
   // Lies den analogen Inputpin
   int reading = analogRead(axis[axisNumber]);
@@ -101,10 +101,10 @@ int readAxis(int axisNumber) {
     maxima[axisNumber] = reading;
   }
 
-  // Mappe den gelesenen Wert von der Eingabebreite auf die Ausgabebreite:
+  // Mappe den gelesenen Wert vom Eingabebereich auf den Ausgabebereich:
   reading = map(reading, minima[axisNumber], maxima[axisNumber], 0, range);
 
-  // Wenn die Ausgabe außerhalbe des Wartethresholds liegt,
+  // Wenn die Ausgabe außerhalb der Ruheschwelle liegt,
   // nutze sie als Distanz:
   if (abs(reading - center) > threshold) {
     distance = (reading - center);
@@ -123,7 +123,7 @@ int readAxis(int axisNumber) {
 
 [float]
 === Anmerkungen und Warnungen
-Wenn das `Mouse.move()`-Kommando benutzt wird, übernimmt der Arduino die Tastatur! Stelle sicher, dass du Kontrolle über die Tastatur hast, bevor du das Kommando verwendest.
+Wenn das `Mouse.move()`-Kommando benutzt wird, übernimmt der Arduino die Maus! Stelle sicher, dass du Kontrolle über die Maus hast, bevor du das Kommando verwendest.
 Ein Button, um die Funktion notfalls zu sperren, ist sinnvoll.
 
 --

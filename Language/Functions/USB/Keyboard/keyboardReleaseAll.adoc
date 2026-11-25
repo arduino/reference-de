@@ -70,7 +70,7 @@ void loop() {
     delay(500);
   }
   delay(1000);
-  // Erstelle ein neues Dokument: (STRG + N):
+  // Erstelle ein neues Dokument:
   Keyboard.press(ctrlKey);
   Keyboard.press('n');
   delay(100);

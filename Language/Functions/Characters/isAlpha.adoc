@@ -17,7 +17,7 @@ subCategories: [ "Characters" ]
 
 [float]
 === Beschreibung
-Analysiert, ob ein Zeichen ein Buchstabe ist. Gibt `true` zurück, wenn das Zeichen ein Buchstabe (Also keine Zahl oder ein Sonderzeichen) ist.
+Analysiert, ob ein Zeichen ein Buchstabe ist. Gibt `true` zurück, wenn das Zeichen ein Buchstabe (also keine Zahl und kein Sonderzeichen) ist.
 [%hardbreaks]
 
 
@@ -49,7 +49,7 @@ Analysiert, ob ein Zeichen ein Buchstabe ist. Gibt `true` zurück, wenn das Zeic
 
 [source,arduino]
 ----
-if (isAlpha(thisChar)) { // Testet, ob der char ein Buchstabe ist
+if (isAlpha(myChar)) { // Testet, ob der char ein Buchstabe ist
 	Serial.println("Das Zeichen ist ein Buchstabe");
 }
 else {

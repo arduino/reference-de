@@ -17,7 +17,7 @@ subCategories: [ "Bits and Bytes" ]
 
 [float]
 === Beschreibung
-Liest das least-significant (rechteste) Bit eines Wortes oder größeren Datentypes.
+Liest das least-significant (rechteste) Byte eines Wortes oder größeren Datentypes.
 [%hardbreaks]
 
 
@@ -28,7 +28,7 @@ Liest das least-significant (rechteste) Bit eines Wortes oder größeren Datenty
 
 [float]
 === Parameter
-`x`: Wert von beliebigen Typ.
+`x`: Wert von beliebigem Typ.
 
 
 [float]

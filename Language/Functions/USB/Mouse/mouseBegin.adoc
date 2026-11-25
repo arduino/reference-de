@@ -15,7 +15,7 @@ title: Mouse.begin()
 
 [float]
 === Beschreibung
-Beginnt mit der Emulation der Maus auf dem verbundenen Computer. `begin()` muss aufgerufen, bevor eine andere Funktion der Bibliothek benutzt werden kann.
+Beginnt mit der Emulation der Maus auf dem verbundenen Computer. `begin()` muss aufgerufen werden, bevor eine andere Funktion der Bibliothek benutzt werden kann.
 Um die Emulation zu beenden, benutze link:../mouseend[Mouse.end()].
 [%hardbreaks]
 

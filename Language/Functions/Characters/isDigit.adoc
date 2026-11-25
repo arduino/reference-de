@@ -49,7 +49,7 @@ Analysiert, ob ein Zeichen eine Zahl ist. Gibt `true` zurück, wenn das Zeichen 
 
 [source,arduino]
 ----
-if (isDigit(thisChar)) { // Testet, ob das Zeichen eine Zahl ist.
+if (isDigit(myChar)) { // Testet, ob das Zeichen eine Zahl ist.
 	Serial.println("Das Zeichen ist eine Zahl");
 }
 else {

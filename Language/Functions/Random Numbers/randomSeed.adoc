@@ -55,7 +55,7 @@ Nichts.
 [float]
 === Beispielcode
 // Beschreibe, worum es im Beispielcode geht und füge relevanten Code hinzu.   ►►►►► DIESER ABSCHNITT IST VERPFLICHTEND ◄◄◄◄◄
-Der Code generiert eine Pseudo-Zufallszahl und sendet die erzeugte Nummer an die serielle Schnittstelle.
+Der Code generiert eine Pseudo-Zufallszahl und sendet die erzeugte Zahl an die serielle Schnittstelle.
 
 [source,arduino]
 ----

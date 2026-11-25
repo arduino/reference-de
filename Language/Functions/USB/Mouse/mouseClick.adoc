@@ -14,7 +14,7 @@ title: Mouse.click()
 
 [float]
 === Beschreibung
-Sendet einen Mausklick an den verbundenen Computer. Dies ist das Gleiche wie den Button zu drücken und sofort wieder loszulassen.
+Sendet dem verbundenen Computer einen Mausklick an der Position des Mauszeigers. Dies ist das Gleiche wie den Button zu drücken und sofort wieder loszulassen.
 
 Der Defaultbutton von `Mouse.click()` ist der linke Mausbutton.
 [%hardbreaks]
@@ -76,7 +76,7 @@ void loop() {
 
 [float]
 === Anmerkungen und Warnungen
-Wenn das `Mouse.click()`-Kommando benutzt wird, übernimmt der Arduino die Tastatur! Stelle sicher, dass du Kontrolle über die Tastatur hast, bevor du das Kommando verwendest.
+Wenn das `Mouse.click()`-Kommando benutzt wird, übernimmt der Arduino die Maus! Stelle sicher, dass du Kontrolle über die Maus hast, bevor du das Kommando verwendest.
 Ein Button, um die Funktion notfalls zu sperren, ist sinnvoll.
 
 --

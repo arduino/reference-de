@@ -61,7 +61,7 @@ sensVal = constrain(sensVal, 10, 150);    // Begrenzt den Bereich der Sensorwert
 
 [float]
 === Anmerkungen und Warnungen
-Es sollten keine anderen Funktionen innerhalb der Klammern verwendet werden. Dies kann zu falschen Ergebnissen führen.
+Wegen der Art, wie `constrain()` implementiert ist, sollten keine anderen Funktionen innerhalb der Klammern verwendet werden. Dies kann zu falschen Ergebnissen führen.
 
 Dieser Code führt zu falschen Ergebnissen:
 [source,arduino]
