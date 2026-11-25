@@ -23,8 +23,8 @@ Aufgrund des Hardware-Designs und verschiedener Unterschiede in der Architektur 
 
 |================================================================================================================================================
 | Board                               | I2C-Standard        | I2C1                      | I2C2                 | Hinweise
-| UNO R3, UNO R3 SMD, UNO Mini Ltd    | A4(SDA), A5(SCL)    |                           |                      | I2C ist auch über die SDA/SCL-Pins (digitale Pinleiste) verfügbar.
-| UNO R4 Minima, UNO R4 WiFi          | A4(SDA), A5(SCL)    | Qwiic: D27(SDA), D26(SCL) |                      | I2C ist auch über die SDA/SCL-Pins (digitale Pinleiste) verfügbar.
+| UNO R3, UNO R3 SMD, UNO Mini Ltd    | A4(SDA), A5(SCL)    |                           |                      | I2C ist auch über die SDA/SCL-Pins (digitaler Header) verfügbar.
+| UNO R4 Minima, UNO R4 WiFi          | A4(SDA), A5(SCL)    | Qwiic: D27(SDA), D26(SCL) |                      | I2C ist auch über die SDA/SCL-Pins (digitaler Header) verfügbar.
 | UNO WiFi Rev2, Zero                 | 20(SDA), 21(SCL)    |                           |                      |
 | Leonardo, Micro, Yún Rev2           | D2(SDA), D3(SCL)    |                           |                      |
 | Nano-Boards                         | A4(SDA), A5(SCL)    |                           |                      |
